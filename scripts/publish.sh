@@ -25,8 +25,8 @@ fi
 
 cd "$PUBLIC_REPO"
 
-# Clean existing content (except .git)
-find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} +
+# Clean existing content (except .git and .github)
+find . -maxdepth 1 ! -name '.git' ! -name '.github' ! -name '.' -exec rm -rf {} +
 
 # Copy publishable content
 echo "Copying content..."

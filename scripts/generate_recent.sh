@@ -28,9 +28,9 @@ while IFS='|' read -r timestamp filepath; do
     # Get filename without path for display
     filename=$(basename "$filepath")
 
-    # Create relative path for link (from docs/translations perspective)
-    # Remove 'translations/' prefix since we're already in that context
-    linkpath="${filepath#translations/}"
+    # Create relative path for link (from translations/meta/ perspective)
+    # Need to go up one level (../) since we're in translations/meta/
+    linkpath="../${filepath#translations/}"
 
     # Extract title from first # heading if possible, otherwise use filename
     title=$(grep -m1 "^# " "$filepath" 2>/dev/null | sed 's/^# //')
