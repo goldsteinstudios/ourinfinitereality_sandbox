@@ -12,6 +12,10 @@ COMMIT_MSG="${1:-Update published content}"
 
 echo "Publishing to ourinfinitereality.com..."
 
+# Generate recently updated page before publishing
+echo "Generating recently updated page..."
+"$PRIVATE_REPO/scripts/generate_recent.sh"
+
 # Ensure public repo exists
 if [ ! -d "$PUBLIC_REPO" ]; then
     echo "Cloning public repo..."
