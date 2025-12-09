@@ -28,9 +28,9 @@ while IFS='|' read -r timestamp filepath; do
     # Get filename without path for display
     filename=$(basename "$filepath")
 
-    # Create relative path for link (from translations/meta/ perspective)
-    # Need to go up one level (../) since we're in translations/meta/
-    linkpath="../${filepath#translations/}"
+    # Create absolute path for MkDocs (from site root)
+    # MkDocs wants paths like /translations/chapters/file/ (no .md)
+    linkpath="/${filepath%.md}/"
 
     # Extract title from first # heading if possible, otherwise use filename
     title=$(grep -m1 "^# " "$filepath" 2>/dev/null | sed 's/^# //')
