@@ -65,8 +65,10 @@ copyright: >
 
 nav:
   - Home: index.md
-  - Recently Updated: translations/meta/recently_updated.md
-  - Selected Essays: translations/selected_essays.md
+  - Selected Essays: selected_essays.md
+  - Essays:
+    - Overview: essays/index.md
+    - Why Water?: essays/why_water.md
   - Translations:
     - Overview: translations/README.md
     - Chapters:
@@ -114,7 +116,6 @@ nav:
       - Technology Index: translations/lexicon/06_technology_index.md
       - Glossary: translations/glossary.md
   - Framework:
-    - Why Water?: translations/meta/why_water_2025-12-09.md
     - Recursive Structural Model: translations/meta/recursive_structural_model.md
     - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
     - Chapter 25 - Rosetta Stone: translations/meta/chapter25_rosetta_stone_2025-12-07.md
