@@ -22,9 +22,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-  font:
-    text: IBM Plex Sans
-    code: IBM Plex Mono
+  font: false  # Using custom fonts in extra.css
   features:
     - navigation.tabs
     - navigation.sections

@@ -1,5 +1,153 @@
 /* Custom styles for Our Infinite Reality */
 
+/* ==========================================================================
+   TYPOGRAPHY
+
+   Font stack: Canela Text (if self-hosted) → Georgia → serif
+
+   To use Canela: place font files in docs/stylesheets/fonts/ and uncomment
+   the @font-face rules below. You'll need the following weights:
+   - CanelaText-Regular.woff2
+   - CanelaText-RegularItalic.woff2
+   - CanelaMedium.woff2 (or CanelaText-Medium)
+   ========================================================================== */
+
+/* Uncomment these if you have Canela font files:
+@font-face {
+  font-family: 'Canela Text';
+  src: url('fonts/CanelaText-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela Text';
+  src: url('fonts/CanelaText-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Canela Text';
+  src: url('fonts/CanelaText-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* Font family variables */
+:root {
+  --font-canela: 'Canela Text', Georgia, serif;
+  --font-georgia: Georgia, 'Times New Roman', serif;
+}
+
+/* Page Title - Canela Text Regular, All Caps */
+.md-typeset h1 {
+  font-family: var(--font-canela);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 2.5rem;  /* ~40px, scaled for web */
+}
+
+/* Part/Section Title - Canela Text Regular, All Caps */
+.md-typeset h1 + p strong:first-child,
+.md-typeset .part-title {
+  font-family: var(--font-canela);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1.75rem;  /* ~28px */
+}
+
+/* Subheading - Canela Text Regular Italic */
+.md-typeset h2 {
+  font-family: var(--font-canela);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125rem;  /* 18px */
+}
+
+/* Author line */
+.md-typeset .author,
+.md-typeset em:first-child {
+  font-family: var(--font-canela);
+  font-weight: 400;
+  font-size: 1.125rem;  /* 18px */
+}
+
+/* Chapter Name - Canela Regular Italic */
+.md-typeset .chapter-name {
+  font-family: var(--font-canela);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.375rem;  /* 22px */
+}
+
+/* Chapter Subtitle - Georgia Italic */
+.md-typeset .chapter-subtitle {
+  font-family: var(--font-georgia);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75rem;  /* 12px */
+}
+
+/* Header 1 (h3 in markdown) - Canela Medium */
+.md-typeset h3 {
+  font-family: var(--font-canela);
+  font-weight: 500;
+  font-size: 1rem;  /* 16px */
+}
+
+/* Header 2 (h4 in markdown) - Georgia Italic */
+.md-typeset h4 {
+  font-family: var(--font-georgia);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.8125rem;  /* 13px */
+}
+
+/* Header 3 (h5 in markdown) - Georgia Italic */
+.md-typeset h5 {
+  font-family: var(--font-georgia);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75rem;  /* 12px */
+}
+
+/* Body text - Georgia Regular */
+.md-typeset,
+.md-typeset p,
+.md-typeset li {
+  font-family: var(--font-georgia);
+  font-weight: 400;
+  font-size: 0.875rem;  /* 14px, slightly larger than 12 for readability */
+  line-height: 1.7;
+}
+
+/* Block quotes - Georgia Italic */
+.md-typeset blockquote {
+  font-family: var(--font-georgia);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.75rem;  /* 12px, keeping close to spec but readable */
+  border-left: 3px solid #ccc;
+  padding-left: 1em;
+  margin-left: 0;
+}
+
+.md-typeset blockquote p {
+  font-size: inherit;
+  font-style: inherit;
+}
+
+/* ==========================================================================
+   LIST FIXES
+   ========================================================================== */
+
 /* Fix bullet list line breaking - ensure list items display on separate lines */
 ul li,
 ol li,
