@@ -42,6 +42,7 @@ plugins:
 markdown_extensions:
   - tables
   - admonition
+  - def_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -111,7 +112,9 @@ nav:
       - Concept Index: translations/lexicon/04_concept_index.md
       - Pinyin Index: translations/lexicon/05_pinyin_index.md
       - Technology Index: translations/lexicon/06_technology_index.md
+      - Glossary: translations/glossary.md
   - Framework:
+    - Why Water?: translations/meta/why_water_2025-12-09.md
     - Recursive Structural Model: translations/meta/recursive_structural_model.md
     - Synthesis: translations/meta/framework_synthesis_2025-12-07.md
     - Chapter 25 - Rosetta Stone: translations/meta/chapter25_rosetta_stone_2025-12-07.md

@@ -4,6 +4,13 @@
 
 ---
 
+## Start Here
+
+### [Why Water?](./meta/why_water_2025-12-09.md)
+What an ancient text saw that we forgot to notice. Water doesn't have an agenda—it just responds to conditions. That makes it the cleanest window onto patterns that operate everywhere. The character 治 (zhì) = water + platform = governance as channeling. Dujiangyan: a 2,300-year-old irrigation system that still works because it's aligned with how water actually moves.
+
+---
+
 ## Introductory
 
 ### [What Our Ancient Ancestors Knew](./00_introduction.md)
@@ -56,7 +63,9 @@ Integration of all structural insights. The perpendicularity constraint. The 妙
 
 ## How to Read These Essays
 
-**If you're new:** Start with "What Our Ancient Ancestors Knew" for the core insight.
+**If you're new:** Start with "Why Water?" for the core insight in accessible form.
+
+**If you want the full picture:** Read "What Our Ancient Ancestors Knew" next.
 
 **If you want proof:** Read "Chapter 25: Rosetta Stone" for explicit geometric validation.
 
