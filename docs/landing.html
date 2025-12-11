@@ -501,10 +501,16 @@
     let currentSphere = 'root';
     let path = ['root'];
     let scene, camera, renderer;
-    let sphereGroup, nodeObjs = [];
+    let sphereGroup;
+    let layers = [];  // Stack of { sphereId, nodes: [{mesh, data, isRoot}...], group: THREE.Group }
     let hoveredNode = null;
     let isDragging = false;
     let lastMouse = { x: 0, y: 0 };
+
+    // Visual constants for nested layers
+    const LAYER_SCALE_RATIO = 0.35;  // Each parent layer is 35% size of child
+    const PARENT_OPACITY = 0.25;     // Faded parent layers
+    const TRANSITION_MS = 500;       // Animation duration
 
     // ═══════════════════════════════════════════════════════════════
     // THREE.JS SETUP
@@ -523,32 +529,12 @@
         renderer.setClearColor(0x1a1a1e);
         container.appendChild(renderer.domElement);
 
-        // Group for rotation
+        // Group for rotation - all layers live inside this
         sphereGroup = new THREE.Group();
         scene.add(sphereGroup);
 
-        // Wireframe sphere - more visible
-        const sphereGeo = new THREE.SphereGeometry(1, 32, 32);
-        const sphereMat = new THREE.MeshBasicMaterial({
-            color: 0x555566,
-            wireframe: true,
-            transparent: true,
-            opacity: 0.25
-        });
-        sphereGroup.add(new THREE.Mesh(sphereGeo, sphereMat));
-
-        // Center glow - the unnamed void
-        const glowGeo = new THREE.SphereGeometry(0.06, 32, 32);
-        const glowMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.8 });
-        const centerGlow = new THREE.Mesh(glowGeo, glowMat);
-        sphereGroup.add(centerGlow);
-
-        const haloGeo = new THREE.SphereGeometry(0.15, 32, 32);
-        const haloMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.15 });
-        sphereGroup.add(new THREE.Mesh(haloGeo, haloMat));
-
-        // Create nodes
-        createNodes(rootNodes, true);
+        // Create root layer (includes wireframe, center glow, and root nodes)
+        addLayer('root', rootNodes, true);
 
         // Events
         renderer.domElement.addEventListener('mousedown', onMouseDown);
@@ -567,11 +553,33 @@
         animate();
     }
 
-    function createNodes(nodes, isRoot) {
-        // Clear old
-        nodeObjs.forEach(o => sphereGroup.remove(o.mesh));
-        nodeObjs = [];
+    function addLayer(sphereId, nodes, isRoot) {
+        const group = new THREE.Group();
+        const layerNodes = [];
 
+        // Add wireframe sphere for this layer
+        const sphereGeo = new THREE.SphereGeometry(1, 32, 32);
+        const sphereMat = new THREE.MeshBasicMaterial({
+            color: 0x555566,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.25
+        });
+        const wireframe = new THREE.Mesh(sphereGeo, sphereMat);
+        group.add(wireframe);
+
+        // Add center glow only for root layer
+        if (isRoot) {
+            const glowGeo = new THREE.SphereGeometry(0.06, 32, 32);
+            const glowMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.8 });
+            group.add(new THREE.Mesh(glowGeo, glowMat));
+
+            const haloGeo = new THREE.SphereGeometry(0.15, 32, 32);
+            const haloMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.15 });
+            group.add(new THREE.Mesh(haloGeo, haloMat));
+        }
+
+        // Create nodes for this layer
         nodes.forEach(n => {
             const r = n.r || 1;
             const theta = n.θ * Math.PI * 2;
@@ -582,12 +590,10 @@
             const z = r * Math.sin(phi) * Math.sin(theta);
 
             const conf = n.conf || 1;
-            // Larger, more visible nodes
             const size = isRoot ? 0.10 : (0.05 + conf * 0.05);
 
             const geo = new THREE.SphereGeometry(size, 24, 24);
             const mat = new THREE.MeshBasicMaterial({
-                // Brighter, more saturated colors
                 color: new THREE.Color().setHSL(0.12, 0.7, 0.45 + conf * 0.30),
                 transparent: true,
                 opacity: 0.6 + conf * 0.35
@@ -595,10 +601,98 @@
 
             const mesh = new THREE.Mesh(geo, mat);
             mesh.position.set(x, y, z);
-            sphereGroup.add(mesh);
+            group.add(mesh);
 
-            nodeObjs.push({ mesh, data: n, isRoot });
+            // Store base opacity for later scaling
+            layerNodes.push({ mesh, data: n, isRoot, baseOpacity: mat.opacity });
         });
+
+        sphereGroup.add(group);
+        layers.push({ sphereId, nodes: layerNodes, group, wireframe });
+
+        // Animate to new scale/opacity configuration
+        animateLayerScales();
+    }
+
+    function updateLayerScales(animate = false) {
+        const currentDepth = layers.length - 1;
+
+        layers.forEach((layer, i) => {
+            const depthFromCurrent = currentDepth - i;
+
+            // Parent layers: smaller, faded
+            const targetScale = depthFromCurrent === 0 ? 1 : Math.pow(LAYER_SCALE_RATIO, depthFromCurrent);
+            const targetOpacity = depthFromCurrent === 0 ? 1 : PARENT_OPACITY;
+
+            layer.group.scale.setScalar(targetScale);
+
+            // Update wireframe opacity
+            layer.wireframe.material.opacity = 0.25 * targetOpacity;
+
+            // Update node opacities
+            layer.nodes.forEach(n => {
+                n.mesh.material.opacity = n.baseOpacity * targetOpacity;
+            });
+        });
+    }
+
+    function animateLayerScales() {
+        const startTime = performance.now();
+        const currentDepth = layers.length - 1;
+
+        // Capture start states
+        const startStates = layers.map(layer => ({
+            scale: layer.group.scale.x,
+            wireframeOpacity: layer.wireframe.material.opacity,
+            nodeOpacities: layer.nodes.map(n => n.mesh.material.opacity)
+        }));
+
+        // Calculate target states
+        const targetStates = layers.map((layer, i) => {
+            const depthFromCurrent = currentDepth - i;
+            const targetScale = depthFromCurrent === 0 ? 1 : Math.pow(LAYER_SCALE_RATIO, depthFromCurrent);
+            const targetOpacity = depthFromCurrent === 0 ? 1 : PARENT_OPACITY;
+            return {
+                scale: targetScale,
+                wireframeOpacity: 0.25 * targetOpacity,
+                nodeOpacities: layer.nodes.map(n => n.baseOpacity * targetOpacity)
+            };
+        });
+
+        function step(now) {
+            const t = Math.min(1, (now - startTime) / TRANSITION_MS);
+            // easeInOutQuad
+            const ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+            layers.forEach((layer, i) => {
+                const start = startStates[i];
+                const target = targetStates[i];
+
+                // Interpolate scale
+                const scale = start.scale + (target.scale - start.scale) * ease;
+                layer.group.scale.setScalar(scale);
+
+                // Interpolate wireframe opacity
+                layer.wireframe.material.opacity = start.wireframeOpacity + (target.wireframeOpacity - start.wireframeOpacity) * ease;
+
+                // Interpolate node opacities
+                layer.nodes.forEach((n, j) => {
+                    n.mesh.material.opacity = start.nodeOpacities[j] + (target.nodeOpacities[j] - start.nodeOpacities[j]) * ease;
+                });
+            });
+
+            if (t < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+    }
+
+    function removeLayersAbove(targetIndex) {
+        // Remove all layers deeper than target
+        while (layers.length > targetIndex + 1) {
+            const layer = layers.pop();
+            sphereGroup.remove(layer.group);
+        }
+        animateLayerScales();
     }
 
     // ═══════════════════════════════════════════════════════════════
@@ -682,6 +776,13 @@
     }
 
     function handleNodeClick(hit) {
+        // If clicking a parent layer node, navigate back out to that layer
+        if (hit.layerIndex !== undefined && hit.layerIndex < layers.length - 1) {
+            exitTo(layers[hit.layerIndex].sphereId);
+            return;
+        }
+
+        // Otherwise, normal behavior
         if (hit.isRoot && hit.data.to && nested[hit.data.to]) {
             enterSphere(hit.data.to);
         } else {
@@ -697,9 +798,15 @@
         );
         const raycaster = new THREE.Raycaster();
         raycaster.setFromCamera(mouse, camera);
-        const hits = raycaster.intersectObjects(nodeObjs.map(o => o.mesh));
-        if (hits.length) {
-            return nodeObjs.find(o => o.mesh === hits[0].object);
+
+        // Check all layers, prioritizing innermost (current) layer
+        for (let i = layers.length - 1; i >= 0; i--) {
+            const meshes = layers[i].nodes.map(n => n.mesh);
+            const hits = raycaster.intersectObjects(meshes);
+            if (hits.length) {
+                const node = layers[i].nodes.find(n => n.mesh === hits[0].object);
+                if (node) return { ...node, layerIndex: i };
+            }
         }
         return null;
     }
@@ -712,9 +819,15 @@
         );
         const raycaster = new THREE.Raycaster();
         raycaster.setFromCamera(mouse, camera);
-        const hits = raycaster.intersectObjects(nodeObjs.map(o => o.mesh));
-        if (hits.length) {
-            return nodeObjs.find(o => o.mesh === hits[0].object);
+
+        // Check all layers, prioritizing innermost (current) layer
+        for (let i = layers.length - 1; i >= 0; i--) {
+            const meshes = layers[i].nodes.map(n => n.mesh);
+            const hits = raycaster.intersectObjects(meshes);
+            if (hits.length) {
+                const node = layers[i].nodes.find(n => n.mesh === hits[0].object);
+                if (node) return { ...node, layerIndex: i };
+            }
         }
         return null;
     }
@@ -726,7 +839,8 @@
     function enterSphere(id) {
         currentSphere = id;
         path.push(id);
-        createNodes(nested[id].nodes, false);
+        // Add new layer instead of replacing
+        addLayer(id, nested[id].nodes, false);
         updateBreadcrumb();
         document.getElementById('return-btn').classList.add('visible');
         updateURL();
@@ -735,14 +849,16 @@
     function exitTo(id) {
         const idx = path.indexOf(id);
         if (idx >= 0) {
+            // Remove layers deeper than target
+            removeLayersAbove(idx);
+
             path = path.slice(0, idx + 1);
             currentSphere = id;
+
             if (id === 'root') {
-                createNodes(rootNodes, true);
                 document.getElementById('return-btn').classList.remove('visible');
-            } else {
-                createNodes(nested[id].nodes, false);
             }
+
             updateBreadcrumb();
             hideInfo();
             updateURL();
@@ -868,11 +984,17 @@
     function restoreFromURL() {
         const state = parseURL();
 
-        // Navigate to sphere if not root
-        if (state.sphere !== 'root' && nested[state.sphere]) {
-            path = state.path;
-            currentSphere = state.sphere;
-            createNodes(nested[state.sphere].nodes, false);
+        // Navigate to sphere if not root - add each layer in the path
+        if (state.path.length > 1) {
+            // Skip 'root' which is already layer 0
+            for (let i = 1; i < state.path.length; i++) {
+                const sphereId = state.path[i];
+                if (nested[sphereId]) {
+                    path.push(sphereId);
+                    currentSphere = sphereId;
+                    addLayer(sphereId, nested[sphereId].nodes, false);
+                }
+            }
             updateBreadcrumb();
             document.getElementById('return-btn').classList.add('visible');
         }
