@@ -4,6 +4,19 @@ node_modules/
 *.log
 dist/
 build/
+
+# Data extracts (large generated files)
 research/work/ARCHIVE/exported_chat_dumps_12.5.25/
 data/extracted_voice_chatgpt/
 data/extracted_voice_combined/
+data/physics_extracts/
+
+# Generated bundles and docsets
+docset_*.md
+notebooklm_bundle_*/
+notebooklm_docs/
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
