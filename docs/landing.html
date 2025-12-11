@@ -13,7 +13,7 @@
         }
 
         body {
-            background: #0a0a0a;
+            background: #1a1a1e;
             color: #e8e4d9;
             font-family: 'Georgia', serif;
             overflow: hidden;
@@ -136,34 +136,6 @@
             opacity: 1;
         }
 
-        /* Center label */
-        #center-label {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            opacity: 0.5;
-            transition: all 0.4s ease;
-            pointer-events: none;
-        }
-
-        #center-label.highlight {
-            opacity: 1;
-        }
-
-        #center-label .main {
-            font-size: 1.8rem;
-            color: #c9a959;
-            margin-bottom: 0.3rem;
-        }
-
-        #center-label .sub {
-            font-size: 0.85rem;
-            color: #666;
-            font-style: italic;
-        }
-
         /* Node labels that appear on hover */
         .node-label {
             position: absolute;
@@ -182,41 +154,6 @@
         .node-label.visible {
             opacity: 1;
             transform: translateY(0);
-        }
-
-        /* Framework selector */
-        #framework-selector {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 0.5rem;
-            pointer-events: auto;
-            opacity: 0;
-            animation: fadeIn 0.5s ease forwards 1s;
-        }
-
-        .framework-btn {
-            padding: 0.4rem 0.9rem;
-            background: rgba(20, 20, 20, 0.8);
-            border: 1px solid #333;
-            color: #666;
-            font-family: 'Georgia', serif;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .framework-btn:hover {
-            border-color: #c9a959;
-            color: #c9a959;
-        }
-
-        .framework-btn.active {
-            border-color: #c9a959;
-            color: #c9a959;
-            background: rgba(201, 169, 89, 0.1);
         }
 
         /* Info panel */
@@ -337,11 +274,11 @@
         /* Navigation hint */
         #nav-hint {
             position: absolute;
-            bottom: 4.5rem;
+            bottom: 2rem;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.8rem;
-            color: #444;
+            color: #666;
             opacity: 0;
             animation: fadeIn 0.5s ease forwards 1.5s;
         }
@@ -371,32 +308,6 @@
             border-color: #c9a959;
             color: #c9a959;
         }
-
-        /* Orientation toast */
-        #toast {
-            position: fixed;
-            bottom: 6rem;
-            left: 50%;
-            transform: translateX(-50%) translateY(20px);
-            padding: 0.6rem 1.2rem;
-            background: rgba(20, 20, 20, 0.95);
-            border: 1px solid #333;
-            color: #888;
-            font-size: 0.85rem;
-            opacity: 0;
-            transition: all 0.3s ease;
-            pointer-events: none;
-            white-space: nowrap;
-        }
-
-        #toast.visible {
-            opacity: 1;
-            transform: translateX(-50%) translateY(0);
-        }
-
-        #toast .term {
-            color: #c9a959;
-        }
     </style>
 </head>
 <body>
@@ -415,11 +326,6 @@
 
     <!-- UI -->
     <div id="ui-overlay">
-        <div id="center-label">
-            <div class="main">∅</div>
-            <div class="sub">impossible center</div>
-        </div>
-
         <div id="breadcrumb">
             <span data-sphere="root">⊙</span>
         </div>
@@ -435,19 +341,9 @@
             </div>
         </div>
 
-        <div id="framework-selector">
-            <button class="framework-btn active" data-fw="universal">◎</button>
-            <button class="framework-btn" data-fw="ddj">道</button>
-            <button class="framework-btn" data-fw="math">∑</button>
-            <button class="framework-btn" data-fw="physics">⚛</button>
-            <button class="framework-btn" data-fw="bio">❧</button>
-        </div>
-
         <div id="nav-hint">drag · scroll · click</div>
 
         <button id="return-btn">↩ return</button>
-
-        <div id="toast"></div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -456,55 +352,33 @@
     // DATA - The sphere model
     // ═══════════════════════════════════════════════════════════════
 
-    const vocab = {
-        universal: { nothing: "∅", something: "•", center: "◎", pattern: "≋" },
-        ddj: { nothing: "無", something: "有", center: "常無", pattern: "道" },
-        math: { nothing: "0", something: "1", center: "0", pattern: "=" },
-        physics: { nothing: "vacuum", something: "matter", center: "singularity", pattern: "law" },
-        bio: { nothing: "potential", something: "life", center: "origin", pattern: "genome" }
-    };
-
-    // Dynamic center complements - what the center shows when hovering a "something" node
-    const centerComplements = {
-        "you-wu": { universal: "nothing", ddj: "無", math: "0", physics: "void", bio: "potential" },
-        "one-zero": { universal: "null", ddj: "無", math: "0", physics: "vacuum", bio: "void" },
-        "matter-void": { universal: "emptiness", ddj: "虛", math: "0", physics: "vacuum", bio: "space" },
-        "life-death": { universal: "latent", ddj: "死", math: "possible", physics: "potential", bio: "genotype" },
-        "ke-chang": { universal: "implicit", ddj: "常", math: "axiom", physics: "conserved", bio: "encoded" },
-        "miao-jiao": { universal: "boundary", ddj: "徼", math: "limit", physics: "particle", bio: "membrane" }
-    };
-
-    // Root sphere nodes - the fundamental contrasts (per spec Section 3.3)
+    // Root sphere nodes - 5 nodes, same contrast in different domain vocabularies
+    // Each shows 有/無 (something/nothing) in its native language
     const rootNodes = [
         {
-            id: "you-wu", θ: 0, φ: 0.5,
-            labels: { universal: "something / nothing", ddj: "有 / 無", math: "1 / 0", physics: "matter / void", bio: "life / potential" },
+            id: "ddj", θ: 0, φ: 0.5,
+            label: "有 / 無",
             to: "ddj"
         },
         {
-            id: "one-zero", θ: 0.167, φ: 0.5,
-            labels: { universal: "unity / null", ddj: "一 / 無", math: "1 / 0", physics: "particle / vacuum", bio: "cell / void" },
+            id: "math", θ: 0.2, φ: 0.5,
+            label: "1 / 0",
             to: "math"
         },
         {
-            id: "matter-void", θ: 0.333, φ: 0.5,
-            labels: { universal: "form / emptiness", ddj: "形 / 虛", math: "+/ 0", physics: "matter / antimatter", bio: "body / space" },
+            id: "physics", θ: 0.4, φ: 0.5,
+            label: "something / nothing",
             to: "physics"
         },
         {
-            id: "life-death", θ: 0.5, φ: 0.5,
-            labels: { universal: "manifest / latent", ddj: "生 / 死", math: "actual / possible", physics: "kinetic / potential", bio: "phenotype / genotype" },
+            id: "bio", θ: 0.6, φ: 0.5,
+            label: "self / other",
             to: "bio"
         },
         {
-            id: "ke-chang", θ: 0.667, φ: 0.5,
-            labels: { universal: "explicit / implicit", ddj: "可 / 常", math: "theorem / axiom", physics: "measured / conserved", bio: "expressed / encoded" },
-            to: "framework"
-        },
-        {
-            id: "miao-jiao", θ: 0.833, φ: 0.5,
-            labels: { universal: "pattern / boundary", ddj: "妙 / 徼", math: "relation / limit", physics: "field / particle", bio: "flow / membrane" },
-            to: "geometry"
+            id: "rsm", θ: 0.8, φ: 0.5,
+            label: "center / periphery",
+            to: "rsm"
         }
     ];
 
@@ -516,7 +390,6 @@
     const nested = {
         ddj: {
             name: "Dao De Jing",
-            center: { universal: "void", ddj: "無", math: "0", physics: "vacuum", bio: "potential" },
             nodes: [
                 { id: "ch1", title: "Chapter 1: Coordinate System", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'direct',
                   text: "道可道非常道 — The pattern that can be patterned is not the constant pattern. Establishes the 可/常 and 無/有 axes.",
@@ -543,7 +416,6 @@
         },
         math: {
             name: "Mathematics",
-            center: { universal: "zero", ddj: "無", math: "0", physics: "null", bio: "potential" },
             nodes: [
                 { id: "euler", title: "e^(iπ) + 1 = 0", θ: 0, φ: 0.5, r: 0.3, conf: 0.9, eff: 3, source: 'synthesis',
                   text: "All five constants meeting at nothing. e = continuous growth, i = orthogonal turn, π = closure, 1 = identity, 0 = origin.",
@@ -558,7 +430,6 @@
         },
         physics: {
             name: "Physics",
-            center: { universal: "vacuum", ddj: "虛", math: "0", physics: "vacuum", bio: "void" },
             nodes: [
                 { id: "energy", title: "Energy IS Rotation", θ: 0, φ: 0.5, r: 0.35, conf: 0.75, eff: 4, source: 'ai-assisted',
                   text: "Energy = rotation rate. Conservation = rotation must complete. E=mc² encodes rotation-mass equivalence.",
@@ -576,7 +447,6 @@
         },
         bio: {
             name: "Biology",
-            center: { universal: "potential", ddj: "種", math: "0", physics: "latent", bio: "potential" },
             nodes: [
                 { id: "tree", title: "Hollow Pith, Standing Tree", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'direct',
                   text: "The pith can rot away; the tree stands. Growth rings around a hollow center. Chapter 11 written in wood.",
@@ -589,38 +459,31 @@
                   link: "framework/plant_axioms.html" }
             ]
         },
-        framework: {
-            name: "RSM Framework",
-            center: { universal: "paradox", ddj: "玄", math: "∞∩0", physics: "singularity", bio: "origin" },
+        rsm: {
+            name: "RSM",
             nodes: [
                 { id: "core", title: "Core Grammar", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'synthesis',
                   text: "P₀ → O₁ → G₁ → P₁ → O₂. The minimum sequence that generates stable recursive structure.",
                   link: "framework/recursive_structural_model.html" },
-                { id: "guardrails", title: "Six Guardrails", θ: 0.33, φ: 0.5, r: 0.4, conf: 0.9, eff: 2, source: 'synthesis',
-                  text: "G1: No privileged frame. G2: Preserve paradox. G3: Cross-domain. G4: Scale humility. G5: Invitation > assertion. G6: Describe, don't prescribe.",
-                  link: "framework/falsification.html" },
-                { id: "parallels", title: "18 Frameworks, One Pattern", θ: 0.66, φ: 0.5, r: 0.5, conf: 0.75, eff: 4, source: 'ai-assisted',
-                  text: "Wheeler, Bohm, Rovelli, Hofstadter, Varela... Same structural pattern, different vocabularies.",
-                  link: "framework/academic_parallels.html" },
-                { id: "ke-chang-analysis", title: "可/常 Scale Recursion", θ: 0.5, φ: 0.25, r: 0.35, conf: 0.9, eff: 2, source: 'synthesis',
-                  text: "Every 可 (expressible) is a 常 (invariant) at its own level. Frame-relativity all the way up and down.",
-                  link: "framework/chapter25_rosetta_stone.html" }
-            ]
-        },
-        geometry: {
-            name: "Geometry",
-            center: { universal: "center", ddj: "中", math: "origin", physics: "singularity", bio: "seed" },
-            nodes: [
-                { id: "sphere", title: "The Paradox Sphere", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'synthesis',
+                { id: "sphere", title: "The Paradox Sphere", θ: 0.125, φ: 0.45, r: 0.35, conf: 0.95, eff: 2, source: 'synthesis',
                   text: "Paradoxes aren't contradictions — they're poles on a sphere. Walk from one to the other without contradiction.",
                   link: "framework/geometry.html" },
-                { id: "why-three", title: "Why Three Dimensions", θ: 0.25, φ: 0.5, r: 0.35, conf: 0.85, eff: 3, source: 'extrapolation',
-                  text: "Three dimensions are the minimum needed for stable circulation. Not arbitrary — structurally necessary.",
-                  link: "framework/geometry.html" },
-                { id: "hollow", title: "The Hollow Center", θ: 0.5, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'synthesis',
+                { id: "hollow", title: "The Hollow Center", θ: 0.25, φ: 0.55, r: 0.3, conf: 0.95, eff: 2, source: 'synthesis',
                   text: "The center is hollow because if it were solid, it would need a foundation. And there are no foundations.",
                   link: "framework/geometry.html" },
-                { id: "falsification", title: "What Would Prove This Wrong", θ: 0.75, φ: 0.5, r: 0.45, conf: 0.9, eff: 2, source: 'direct',
+                { id: "guardrails", title: "Six Guardrails", θ: 0.375, φ: 0.5, r: 0.4, conf: 0.9, eff: 2, source: 'synthesis',
+                  text: "G1: No privileged frame. G2: Preserve paradox. G3: Cross-domain. G4: Scale humility. G5: Invitation > assertion. G6: Describe, don't prescribe.",
+                  link: "framework/falsification.html" },
+                { id: "ke-chang-analysis", title: "可/常 Scale Recursion", θ: 0.5, φ: 0.45, r: 0.35, conf: 0.9, eff: 2, source: 'synthesis',
+                  text: "Every 可 (expressible) is a 常 (invariant) at its own level. Frame-relativity all the way up and down.",
+                  link: "framework/chapter25_rosetta_stone.html" },
+                { id: "why-three", title: "Why Three Dimensions", θ: 0.625, φ: 0.55, r: 0.4, conf: 0.85, eff: 3, source: 'extrapolation',
+                  text: "Three dimensions are the minimum needed for stable circulation. Not arbitrary — structurally necessary.",
+                  link: "framework/geometry.html" },
+                { id: "parallels", title: "18 Frameworks, One Pattern", θ: 0.75, φ: 0.5, r: 0.5, conf: 0.75, eff: 4, source: 'ai-assisted',
+                  text: "Wheeler, Bohm, Rovelli, Hofstadter, Varela... Same structural pattern, different vocabularies.",
+                  link: "framework/academic_parallels.html" },
+                { id: "falsification", title: "What Would Prove This Wrong", θ: 0.875, φ: 0.45, r: 0.45, conf: 0.9, eff: 2, source: 'direct',
                   text: "Testable claims. Structural inconsistency or empirical failure would falsify this. Not disagreement.",
                   link: "framework/falsification.html" }
             ]
@@ -631,7 +494,6 @@
     // STATE
     // ═══════════════════════════════════════════════════════════════
 
-    let currentFw = 'universal';
     let currentSphere = 'root';
     let path = ['root'];
     let scene, camera, renderer;
@@ -654,31 +516,31 @@
         renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-        renderer.setClearColor(0x0a0a0a);
+        renderer.setClearColor(0x1a1a1e);
         container.appendChild(renderer.domElement);
 
         // Group for rotation
         sphereGroup = new THREE.Group();
         scene.add(sphereGroup);
 
-        // Wireframe sphere
-        const sphereGeo = new THREE.SphereGeometry(1, 48, 48);
+        // Wireframe sphere - more visible
+        const sphereGeo = new THREE.SphereGeometry(1, 32, 32);
         const sphereMat = new THREE.MeshBasicMaterial({
-            color: 0x333333,
+            color: 0x555566,
             wireframe: true,
             transparent: true,
-            opacity: 0.08
+            opacity: 0.25
         });
         sphereGroup.add(new THREE.Mesh(sphereGeo, sphereMat));
 
-        // Center glow
-        const glowGeo = new THREE.SphereGeometry(0.08, 32, 32);
-        const glowMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.7 });
+        // Center glow - the unnamed void
+        const glowGeo = new THREE.SphereGeometry(0.06, 32, 32);
+        const glowMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.8 });
         const centerGlow = new THREE.Mesh(glowGeo, glowMat);
         sphereGroup.add(centerGlow);
 
-        const haloGeo = new THREE.SphereGeometry(0.2, 32, 32);
-        const haloMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.1 });
+        const haloGeo = new THREE.SphereGeometry(0.15, 32, 32);
+        const haloMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.15 });
         sphereGroup.add(new THREE.Mesh(haloGeo, haloMat));
 
         // Create nodes
@@ -716,13 +578,15 @@
             const z = r * Math.sin(phi) * Math.sin(theta);
 
             const conf = n.conf || 1;
-            const size = isRoot ? 0.07 : (0.04 + conf * 0.04);
+            // Larger, more visible nodes
+            const size = isRoot ? 0.10 : (0.05 + conf * 0.05);
 
             const geo = new THREE.SphereGeometry(size, 24, 24);
             const mat = new THREE.MeshBasicMaterial({
-                color: new THREE.Color().setHSL(0.12, 0.6, 0.35 + conf * 0.35),
+                // Brighter, more saturated colors
+                color: new THREE.Color().setHSL(0.12, 0.7, 0.45 + conf * 0.30),
                 transparent: true,
-                opacity: 0.4 + conf * 0.5
+                opacity: 0.6 + conf * 0.35
             });
 
             const mesh = new THREE.Mesh(geo, mat);
@@ -757,13 +621,11 @@
             if (hoveredNode !== hit.data) {
                 hoveredNode = hit.data;
                 showLabel(hit, e);
-                updateCenter(hit.data);
                 renderer.domElement.style.cursor = 'pointer';
             }
         } else {
             hoveredNode = null;
             hideLabel();
-            resetCenter();
             renderer.domElement.style.cursor = isDragging ? 'grabbing' : 'grab';
         }
     }
@@ -860,7 +722,6 @@
         path.push(id);
         createNodes(nested[id].nodes, false);
         updateBreadcrumb();
-        resetCenter();
         document.getElementById('return-btn').classList.add('visible');
         updateURL();
     }
@@ -877,7 +738,6 @@
                 createNodes(nested[id].nodes, false);
             }
             updateBreadcrumb();
-            resetCenter();
             hideInfo();
             updateURL();
         }
@@ -899,54 +759,22 @@
     // ═══════════════════════════════════════════════════════════════
 
     function showLabel(hit, e) {
-        let label = document.querySelector('.node-label');
-        if (!label) {
-            label = document.createElement('div');
-            label.className = 'node-label';
-            document.getElementById('ui-overlay').appendChild(label);
+        let labelEl = document.querySelector('.node-label');
+        if (!labelEl) {
+            labelEl = document.createElement('div');
+            labelEl.className = 'node-label';
+            document.getElementById('ui-overlay').appendChild(labelEl);
         }
-        const text = hit.isRoot ? (hit.data.labels[currentFw] || hit.data.id) : hit.data.title;
-        label.textContent = text;
-        label.style.left = (e.clientX + 15) + 'px';
-        label.style.top = (e.clientY - 10) + 'px';
-        label.classList.add('visible');
+        const text = hit.isRoot ? hit.data.label : hit.data.title;
+        labelEl.textContent = text;
+        labelEl.style.left = (e.clientX + 15) + 'px';
+        labelEl.style.top = (e.clientY - 10) + 'px';
+        labelEl.classList.add('visible');
     }
 
     function hideLabel() {
         const label = document.querySelector('.node-label');
         if (label) label.classList.remove('visible');
-    }
-
-    function updateCenter(data) {
-        const el = document.getElementById('center-label');
-        el.classList.add('highlight');
-        if (data.labels) {
-            // Root node - show the complement (nothing) in center when hovering "something"
-            const complement = centerComplements[data.id];
-            if (complement) {
-                el.querySelector('.main').textContent = complement[currentFw];
-                el.querySelector('.sub').textContent = vocab[currentFw].nothing;
-            } else {
-                el.querySelector('.main').textContent = vocab[currentFw].center;
-                el.querySelector('.sub').textContent = 'click to explore';
-            }
-        } else {
-            // Nested node - show node title in center
-            el.querySelector('.main').textContent = data.title || data.id;
-            el.querySelector('.sub').textContent = 'click for details';
-        }
-    }
-
-    function resetCenter() {
-        const el = document.getElementById('center-label');
-        el.classList.remove('highlight');
-        // Use sphere-specific center label if in nested sphere
-        if (currentSphere !== 'root' && nested[currentSphere]?.center) {
-            el.querySelector('.main').textContent = nested[currentSphere].center[currentFw];
-        } else {
-            el.querySelector('.main').textContent = vocab[currentFw].center;
-        }
-        el.querySelector('.sub').textContent = 'impossible center';
     }
 
     function showInfo(data) {
@@ -992,57 +820,28 @@
         document.getElementById('info-panel').classList.remove('visible');
     }
 
-    function setFramework(fw) {
-        currentFw = fw;
-        document.querySelectorAll('.framework-btn').forEach(b => {
-            b.classList.toggle('active', b.dataset.fw === fw);
-        });
-        resetCenter();
-        updateURL();
-        showToast(fw);
-    }
-
-    // Orientation toast per spec Section 4.2
-    let toastTimeout;
-    function showToast(fw) {
-        const toast = document.getElementById('toast');
-        const v = vocab[fw];
-        toast.innerHTML = `In this framework: <span class="term">${v.nothing}</span> = nothing, <span class="term">${v.something}</span> = something`;
-        toast.classList.add('visible');
-        clearTimeout(toastTimeout);
-        toastTimeout = setTimeout(() => toast.classList.remove('visible'), 2500);
-    }
-
-    // URL state management per spec Section 4.4
+    // URL state management
     function updateURL() {
         const pathStr = path.length > 1 ? path.slice(1).join('/') : '';
-        const hash = pathStr ? `#/${pathStr}?fw=${currentFw}` : `#/?fw=${currentFw}`;
-        history.replaceState(null, '', hash);
+        const hash = pathStr ? `#/${pathStr}` : '';
+        history.replaceState(null, '', hash || window.location.pathname);
     }
 
     function parseURL() {
         const hash = window.location.hash;
-        if (!hash || hash === '#/') return { sphere: 'root', fw: 'universal', path: ['root'] };
+        if (!hash || hash === '#/') return { sphere: 'root', path: ['root'] };
 
-        const [pathPart, query] = hash.slice(2).split('?');
+        const pathPart = hash.slice(2);
         const pathSegments = pathPart ? pathPart.split('/').filter(Boolean) : [];
-        const params = new URLSearchParams(query || '');
 
         return {
             sphere: pathSegments[pathSegments.length - 1] || 'root',
-            fw: params.get('fw') || 'universal',
             path: ['root', ...pathSegments]
         };
     }
 
     function restoreFromURL() {
         const state = parseURL();
-        currentFw = state.fw;
-
-        // Restore framework button state
-        document.querySelectorAll('.framework-btn').forEach(b => {
-            b.classList.toggle('active', b.dataset.fw === currentFw);
-        });
 
         // Navigate to sphere if not root
         if (state.sphere !== 'root' && nested[state.sphere]) {
@@ -1052,8 +851,6 @@
             updateBreadcrumb();
             document.getElementById('return-btn').classList.add('visible');
         }
-
-        resetCenter();
     }
 
     function onResize() {
@@ -1079,10 +876,6 @@
         // Restore state from URL after init
         setTimeout(restoreFromURL, 100);
     };
-
-    document.querySelectorAll('.framework-btn').forEach(b => {
-        b.onclick = () => setFramework(b.dataset.fw);
-    });
 
     document.querySelector('#info-panel .close-btn').onclick = hideInfo;
     document.getElementById('return-btn').onclick = () => exitTo('root');
