@@ -1,569 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Infinite Reality</title>
-  <meta name="description" content="What if reality really is infinite? A pattern discovered across physics, biology, ancient Chinese, and the shape of good conversations.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Infinite Reality</title>
+    <meta name="description" content="What if reality really is infinite? A pattern discovered across physics, biology, ancient Chinese, and the shape of good conversations.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        body {
+            background: #0a0a0a;
+            color: #e8e4d9;
+            font-family: 'Georgia', serif;
+            overflow: hidden;
+        }
 
-  <style>
-    /* ============================================
-       ROOT & RESET
-       ============================================ */
+        /* Opening symbol */
+        #opening {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+            transition: opacity 0.8s ease;
+        }
 
-    :root {
-      --color-void: #0a0a0b;
-      --color-dark: #141416;
-      --color-mid: #1a1a1d;
-      --color-text-dim: #6b6b70;
-      --color-text: #e8e6e3;
-      --color-text-bright: #f5f4f2;
-      --color-accent: #a89f91;
+        #opening.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
 
-      --font-serif: 'Cormorant Garamond', Georgia, serif;
-      --font-sans: 'Inter', -apple-system, sans-serif;
+        #symbol {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
 
-      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-    }
+        #symbol-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #c9a959;
+            border-radius: 50%;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.5s;
+        }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        #symbol-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            background: #c9a959;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 0s;
+            box-shadow: 0 0 20px rgba(201, 169, 89, 0.4);
+        }
 
-    html {
-      font-size: 18px;
-      scroll-behavior: smooth;
-    }
+        #symbol-orbiter {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background: #e8e4d9;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 1.5s, orbit 12s linear infinite 2s;
+        }
 
-    body {
-      font-family: var(--font-serif);
-      background: var(--color-void);
-      color: var(--color-text);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
 
-    /* ============================================
-       SECTIONS
-       ============================================ */
+        @keyframes orbit {
+            from { transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg); }
+        }
 
-    section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 4rem 2rem;
-      position: relative;
-    }
+        #hint {
+            position: absolute;
+            bottom: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9rem;
+            color: #555;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 3s;
+        }
 
-    .section-inner {
-      max-width: 44rem;
-      width: 100%;
-    }
+        /* Sphere container */
+        #sphere-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
 
-    .section-wide {
-      max-width: 64rem;
-      width: 100%;
-    }
+        #sphere-container.visible {
+            opacity: 1;
+        }
 
-    /* ============================================
-       TYPOGRAPHY
-       ============================================ */
+        /* UI Overlay */
+        #ui-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 0.5s ease 0.5s;
+        }
 
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
-      font-weight: 400;
-      line-height: 1.3;
-      letter-spacing: -0.01em;
-    }
+        #ui-overlay.visible {
+            opacity: 1;
+        }
 
-    h2 {
-      font-size: clamp(1.3rem, 3vw, 1.6rem);
-      font-weight: 400;
-      line-height: 1.4;
-    }
+        /* Center label */
+        #center-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            opacity: 0.5;
+            transition: all 0.4s ease;
+            pointer-events: none;
+        }
 
-    p {
-      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-      font-weight: 400;
-      margin-bottom: 1.5rem;
-    }
+        #center-label.highlight {
+            opacity: 1;
+        }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+        #center-label .main {
+            font-size: 1.8rem;
+            color: #c9a959;
+            margin-bottom: 0.3rem;
+        }
 
-    .text-dim { color: var(--color-text-dim); }
-    .text-bright { color: var(--color-text-bright); }
-    .text-center { text-align: center; }
+        #center-label .sub {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
 
-    .text-small {
-      font-size: 0.95rem;
-      font-family: var(--font-sans);
-      font-weight: 300;
-    }
+        /* Node labels that appear on hover */
+        .node-label {
+            position: absolute;
+            padding: 0.4rem 0.8rem;
+            background: rgba(10, 10, 10, 0.85);
+            border: 1px solid #333;
+            color: #c9a959;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
 
-    /* ============================================
-       REVEAL ANIMATIONS
-       ============================================ */
+        .node-label.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-    .reveal {
-      opacity: 0;
-      transform: translateY(2rem);
-      transition: opacity 0.9s var(--ease-out),
-                  transform 0.9s var(--ease-out);
-    }
+        /* Framework selector */
+        #framework-selector {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            pointer-events: auto;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards 1s;
+        }
 
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+        .framework-btn {
+            padding: 0.4rem 0.9rem;
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid #333;
+            color: #666;
+            font-family: 'Georgia', serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-    .reveal-delay-1 { transition-delay: 0.15s; }
-    .reveal-delay-2 { transition-delay: 0.3s; }
-    .reveal-delay-3 { transition-delay: 0.45s; }
+        .framework-btn:hover {
+            border-color: #c9a959;
+            color: #c9a959;
+        }
 
-    .reveal-stagger .reveal-item {
-      opacity: 0;
-      transform: translateY(1.5rem);
-      transition: opacity 0.7s var(--ease-out),
-                  transform 0.7s var(--ease-out);
-    }
+        .framework-btn.active {
+            border-color: #c9a959;
+            color: #c9a959;
+            background: rgba(201, 169, 89, 0.1);
+        }
 
-    .reveal-stagger.visible .reveal-item:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0s; }
-    .reveal-stagger.visible .reveal-item:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 0.15s; }
-    .reveal-stagger.visible .reveal-item:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.3s; }
-    .reveal-stagger.visible .reveal-item:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.45s; }
-    .reveal-stagger.visible .reveal-item:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 0.6s; }
-    .reveal-stagger.visible .reveal-item:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 0.75s; }
-    .reveal-stagger.visible .reveal-item:nth-child(7) { opacity: 1; transform: translateY(0); transition-delay: 0.9s; }
+        /* Info panel */
+        #info-panel {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            max-width: 320px;
+            background: rgba(10, 10, 10, 0.95);
+            border: 1px solid #333;
+            padding: 1.25rem;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
 
-    /* ============================================
-       SCROLL INDICATOR
-       ============================================ */
+        #info-panel.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
-    .scroll-indicator {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0.4;
-      animation: pulse 2s var(--ease-in-out) infinite;
-    }
+        #info-panel h3 {
+            color: #c9a959;
+            font-size: 1.1rem;
+            margin-bottom: 0.6rem;
+            font-weight: normal;
+            line-height: 1.3;
+        }
 
-    .scroll-indicator svg {
-      width: 24px;
-      height: 24px;
-      stroke: var(--color-text);
-      stroke-width: 1.5;
-      fill: none;
-    }
+        #info-panel p {
+            color: #999;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 0.75rem;
+        }
 
-    @keyframes pulse {
-      0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
-      50% { opacity: 0.7; transform: translateX(-50%) translateY(6px); }
-    }
+        #info-panel .meta {
+            font-size: 0.75rem;
+            color: #555;
+            border-top: 1px solid #222;
+            padding-top: 0.6rem;
+            margin-top: 0.6rem;
+            display: flex;
+            gap: 1rem;
+        }
 
-    /* ============================================
-       CIRCULAR MOTIFS / DOORS
-       ============================================ */
+        #info-panel .confidence {
+            padding: 0.15rem 0.4rem;
+            border-radius: 2px;
+            font-size: 0.7rem;
+        }
 
-    .doors-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-    }
+        .confidence.high { background: rgba(100, 180, 100, 0.2); color: #8a8; }
+        .confidence.medium { background: rgba(180, 180, 100, 0.2); color: #aa8; }
+        .confidence.low { background: rgba(180, 140, 100, 0.2); color: #a96; }
 
-    @media (min-width: 768px) {
-      .doors-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
-      }
-    }
+        #info-panel .close-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.6rem;
+            background: none;
+            border: none;
+            color: #444;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 0.2rem;
+        }
 
-    @media (min-width: 1024px) {
-      .doors-grid {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 2rem;
-      }
-    }
+        #info-panel .close-btn:hover {
+            color: #c9a959;
+        }
 
-    .door {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      color: var(--color-text);
-      transition: all 0.4s var(--ease-out);
-    }
+        #info-panel .link-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.3rem 0.6rem;
+            background: rgba(201, 169, 89, 0.1);
+            border: 1px solid #c9a959;
+            color: #c9a959;
+            font-size: 0.8rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-    .door:hover {
-      transform: translateY(-4px);
-    }
+        #info-panel .link-btn:hover {
+            background: rgba(201, 169, 89, 0.2);
+        }
 
-    .door:hover .door-icon {
-      opacity: 1;
-    }
+        /* Breadcrumb */
+        #breadcrumb {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-size: 0.85rem;
+            color: #555;
+            pointer-events: auto;
+        }
 
-    .door:hover .door-title {
-      color: var(--color-text-bright);
-    }
+        #breadcrumb span {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
 
-    .door-icon {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 1rem;
-      opacity: 0.7;
-      transition: opacity 0.4s var(--ease-out);
-    }
+        #breadcrumb span:hover {
+            color: #c9a959;
+        }
 
-    .door-icon svg {
-      width: 100%;
-      height: 100%;
-      stroke: var(--color-text);
-      stroke-width: 0.75;
-      fill: none;
-    }
+        #breadcrumb .sep {
+            margin: 0 0.4rem;
+            color: #333;
+        }
 
-    .door-title {
-      font-family: var(--font-serif);
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
-      transition: color 0.3s ease;
-    }
+        /* Navigation hint */
+        #nav-hint {
+            position: absolute;
+            bottom: 4.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #444;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards 1.5s;
+        }
 
-    .door-subtitle {
-      font-family: var(--font-sans);
-      font-size: 0.8rem;
-      color: var(--color-text-dim);
-      text-align: center;
-      line-height: 1.4;
-    }
+        /* Return button */
+        #return-btn {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 0.4rem 0.9rem;
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid #333;
+            color: #555;
+            font-family: 'Georgia', serif;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            pointer-events: auto;
+            opacity: 0;
+        }
 
-    /* ============================================
-       WEAVE SECTION
-       ============================================ */
+        #return-btn.visible {
+            opacity: 1;
+        }
 
-    .weave-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--color-accent);
-      text-decoration: none;
-      font-family: var(--font-sans);
-      font-size: 0.95rem;
-      padding: 0.75rem 1.5rem;
-      border: 1px solid var(--color-text-dim);
-      border-radius: 2px;
-      margin-top: 2rem;
-      transition: all 0.3s ease;
-    }
-
-    .weave-link:hover {
-      border-color: var(--color-text);
-      color: var(--color-text);
-    }
-
-    /* ============================================
-       FOOTER
-       ============================================ */
-
-    footer {
-      padding: 3rem 2rem;
-      text-align: center;
-      background: var(--color-void);
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-
-    footer p {
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      font-weight: 300;
-      color: var(--color-text-dim);
-      margin-bottom: 0.5rem;
-    }
-
-    footer a {
-      color: var(--color-text-dim);
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: all 0.3s ease;
-    }
-
-    footer a:hover {
-      color: var(--color-text);
-      border-bottom-color: var(--color-text);
-    }
-
-    /* ============================================
-       UTILITIES
-       ============================================ */
-
-    .mb-2 { margin-bottom: 1rem; }
-    .mb-3 { margin-bottom: 2rem; }
-    .mb-4 { margin-bottom: 3rem; }
-    .mt-3 { margin-top: 2rem; }
-    .mt-4 { margin-top: 3rem; }
-
-    /* ============================================
-       RESPONSIVE
-       ============================================ */
-
-    @media (max-width: 600px) {
-      html { font-size: 16px; }
-      section { padding: 3rem 1.5rem; }
-      .door-icon { width: 80px; height: 80px; }
-    }
-  </style>
+        #return-btn:hover {
+            border-color: #c9a959;
+            color: #c9a959;
+        }
+    </style>
 </head>
-
 <body>
-
-  <!-- ==========================================
-       THRESHOLD
-       ========================================== -->
-  <section id="threshold">
-    <div class="section-inner text-center">
-      <h1 class="reveal">What if reality really is infinite?</h1>
+    <!-- Opening Symbol -->
+    <div id="opening">
+        <div id="symbol">
+            <div id="symbol-center"></div>
+            <div id="symbol-circle"></div>
+            <div id="symbol-orbiter"></div>
+        </div>
+        <div id="hint">click to enter</div>
     </div>
-    <div class="scroll-indicator">
-      <svg viewBox="0 0 24 24">
-        <path d="M12 5v14M5 12l7 7 7-7"/>
-      </svg>
+
+    <!-- Sphere -->
+    <div id="sphere-container"></div>
+
+    <!-- UI -->
+    <div id="ui-overlay">
+        <div id="center-label">
+            <div class="main">∅</div>
+            <div class="sub">impossible center</div>
+        </div>
+
+        <div id="breadcrumb">
+            <span data-sphere="root">⊙</span>
+        </div>
+
+        <div id="info-panel">
+            <button class="close-btn">×</button>
+            <h3 id="info-title"></h3>
+            <p id="info-content"></p>
+            <a id="info-link" class="link-btn" style="display: none;">read more →</a>
+            <div class="meta">
+                <span class="confidence" id="info-confidence"></span>
+                <span id="info-effort"></span>
+            </div>
+        </div>
+
+        <div id="framework-selector">
+            <button class="framework-btn active" data-fw="universal">◎</button>
+            <button class="framework-btn" data-fw="ddj">道</button>
+            <button class="framework-btn" data-fw="math">∑</button>
+            <button class="framework-btn" data-fw="physics">⚛</button>
+            <button class="framework-btn" data-fw="bio">❧</button>
+        </div>
+
+        <div id="nav-hint">drag · scroll · click</div>
+
+        <button id="return-btn">↩ return</button>
     </div>
-  </section>
 
-  <!-- ==========================================
-       CLARIFICATION
-       ========================================== -->
-  <section id="clarification">
-    <div class="section-inner text-center reveal-stagger">
-      <p class="reveal-item text-dim">Not metaphorically. Actually infinite.</p>
-      <p class="reveal-item text-dim">No edge. No floor. No foundation.</p>
-      <p class="reveal-item text-bright mt-3">Then how does anything persist at all?</p>
-    </div>
-  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+    // ═══════════════════════════════════════════════════════════════
+    // DATA - The sphere model
+    // ═══════════════════════════════════════════════════════════════
 
-  <!-- ==========================================
-       THE ANSWER
-       ========================================== -->
-  <section id="answer">
-    <div class="section-inner text-center">
-      <p class="reveal">I followed that question for three years.</p>
-      <p class="reveal reveal-delay-1">The same answer kept showing up — in physics, in biology, in ancient texts, in the shape of good conversations.</p>
-      <h2 class="reveal reveal-delay-2 mt-4 text-bright">Stable structures don't stand on foundations.</h2>
-      <h2 class="reveal reveal-delay-3">They circulate around centers that stay empty.</h2>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       THE BRANCHES
-       ========================================== -->
-  <section id="branches">
-    <div class="section-wide text-center">
-      <div class="reveal mb-4">
-        <p>This is a pattern that shows up everywhere.</p>
-        <p class="text-dim">Every way you look at it shows something a little different.<br>
-        But follow any branch far enough and you find the same shape underneath.</p>
-      </div>
-
-      <p class="reveal reveal-delay-1 text-bright mb-3">Follow a branch.</p>
-
-      <div class="doors-grid reveal reveal-delay-2">
-
-        <!-- BIOLOGY: Tree Rings -->
-        <a href="living/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Tree rings - concentric circles with hollow center -->
-              <circle cx="50" cy="50" r="45" />
-              <circle cx="50" cy="50" r="36" />
-              <circle cx="50" cy="50" r="27" />
-              <circle cx="50" cy="50" r="18" />
-              <circle cx="50" cy="50" r="9" />
-              <!-- Hollow pith (dashed) -->
-              <circle cx="50" cy="50" r="3" stroke-dasharray="1.5 1.5" opacity="0.5" />
-            </svg>
-          </div>
-          <span class="door-title">The Living</span>
-          <span class="door-subtitle">Trees, cells, ecosystems</span>
-        </a>
-
-        <!-- PHYSICS: Wheel/Galaxy -->
-        <a href="physics/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Wheel with spokes - hollow hub -->
-              <circle cx="50" cy="50" r="45" />
-              <circle cx="50" cy="50" r="8" />
-              <!-- Spokes -->
-              <line x1="50" y1="5" x2="50" y2="42" />
-              <line x1="50" y1="58" x2="50" y2="95" />
-              <line x1="5" y1="50" x2="42" y2="50" />
-              <line x1="58" y1="50" x2="95" y2="50" />
-              <line x1="18" y1="18" x2="44" y2="44" />
-              <line x1="56" y1="56" x2="82" y2="82" />
-              <line x1="82" y1="18" x2="56" y2="44" />
-              <line x1="44" y1="56" x2="18" y2="82" />
-            </svg>
-          </div>
-          <span class="door-title">The Physics</span>
-          <span class="door-subtitle">Energy, spacetime, quantum</span>
-        </a>
-
-        <!-- DDJ: Taijitu -->
-        <a href="text/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Taijitu -->
-              <circle cx="50" cy="50" r="45" />
-              <!-- S-curve -->
-              <path d="M50 5
-                       C 50 27.5, 72.5 27.5, 72.5 50
-                       C 72.5 72.5, 50 72.5, 50 95
-                       C 50 72.5, 27.5 72.5, 27.5 50
-                       C 27.5 27.5, 50 27.5, 50 5" />
-              <!-- Dots -->
-              <circle cx="50" cy="27.5" r="5" fill="currentColor" stroke="none" />
-              <circle cx="50" cy="72.5" r="5" />
-            </svg>
-          </div>
-          <span class="door-title">The Text</span>
-          <span class="door-subtitle">Ancient field guide, decoded</span>
-        </a>
-
-        <!-- GEOMETRY: Hyperbola/Sphere -->
-        <a href="geometry/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Hyperbolic curves suggesting xy=1 -->
-              <path d="M5 95 Q 30 50, 95 5" />
-              <path d="M95 95 Q 70 50, 5 5" />
-              <!-- Central point (paradox) -->
-              <circle cx="50" cy="50" r="3" />
-              <!-- Asymptotic approach lines (subtle) -->
-              <line x1="50" y1="5" x2="50" y2="95" opacity="0.2" />
-              <line x1="5" y1="50" x2="95" y2="50" opacity="0.2" />
-            </svg>
-          </div>
-          <span class="door-title">The Geometry</span>
-          <span class="door-subtitle">Mathematical structure</span>
-        </a>
-
-        <!-- HUMAN: Breath/Cycle -->
-        <a href="human/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Breath cycle - wave that returns -->
-              <path d="M10 50
-                       Q 25 20, 50 50
-                       Q 75 80, 90 50" />
-              <path d="M10 50
-                       Q 25 80, 50 50
-                       Q 75 20, 90 50" opacity="0.4" />
-              <!-- Center point -->
-              <circle cx="50" cy="50" r="3" />
-              <!-- Circular container -->
-              <circle cx="50" cy="50" r="45" />
-            </svg>
-          </div>
-          <span class="door-title">The Human</span>
-          <span class="door-subtitle">Consciousness, choice, story</span>
-        </a>
-
-        <!-- LORE: Threshold/Ouroboros -->
-        <a href="lore/" class="door">
-          <div class="door-icon">
-            <svg viewBox="0 0 100 100">
-              <!-- Ouroboros - snake eating tail -->
-              <circle cx="50" cy="50" r="38" />
-              <!-- Head eating tail suggestion -->
-              <path d="M88 50
-                       C 88 30, 70 25, 60 35"
-                    stroke-width="6"
-                    stroke-linecap="round" />
-              <!-- Eye -->
-              <circle cx="78" cy="42" r="2" fill="currentColor" stroke="none" />
-              <!-- Inner circle (what's enclosed) -->
-              <circle cx="50" cy="50" r="20" opacity="0.3" />
-            </svg>
-          </div>
-          <span class="door-title">The Lore</span>
-          <span class="door-subtitle">Myth and meaning, reread</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       THE WEAVE
-       ========================================== -->
-  <section id="weave">
-    <div class="section-inner text-center">
-      <p class="reveal text-dim">Or wander between them.</p>
-      <p class="reveal reveal-delay-1">Watch the branches rhyme.<br>See the same shape in different light.</p>
-      <a href="weave/" class="weave-link reveal reveal-delay-2">
-        <span>Enter the weave</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M5 12h14M12 5l7 7-7 7"/>
-        </svg>
-      </a>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       FOOTER
-       ========================================== -->
-  <footer>
-    <p>A living project, built in collaboration with AI.</p>
-    <p>Enter anywhere. The center is everywhere.</p>
-    <p class="mt-3"><a href="https://github.com/goldsteinstudios/dao-de-jing-analyzer">Source</a> · <a href="about/">About</a></p>
-  </footer>
-
-  <!-- ==========================================
-       JAVASCRIPT
-       ========================================== -->
-  <script>
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.15
+    const vocab = {
+        universal: { nothing: "∅", something: "•", center: "◎", pattern: "≋" },
+        ddj: { nothing: "無", something: "有", center: "玄", pattern: "道" },
+        math: { nothing: "0", something: "1", center: "∞∩0", pattern: "=" },
+        physics: { nothing: "vacuum", something: "matter", center: "singularity", pattern: "law" },
+        bio: { nothing: "potential", something: "life", center: "origin", pattern: "genome" }
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+    // Root sphere nodes - the fundamental contrasts
+    const rootNodes = [
+        {
+            id: "you-wu", θ: 0, φ: 0.5,
+            labels: { universal: "something / nothing", ddj: "有 / 無", math: "1 / 0", physics: "matter / void", bio: "life / potential" },
+            to: "ddj"
+        },
+        {
+            id: "one-zero", θ: 0.25, φ: 0.5,
+            labels: { universal: "unity / null", ddj: "一 / 無", math: "1 / 0", physics: "particle / vacuum", bio: "cell / void" },
+            to: "math"
+        },
+        {
+            id: "matter-void", θ: 0.5, φ: 0.5,
+            labels: { universal: "form / emptiness", ddj: "形 / 虛", math: "positive / zero", physics: "energy / vacuum", bio: "body / space" },
+            to: "physics"
+        },
+        {
+            id: "life-death", θ: 0.75, φ: 0.5,
+            labels: { universal: "manifest / latent", ddj: "生 / 死", math: "actual / possible", physics: "kinetic / potential", bio: "phenotype / genotype" },
+            to: "bio"
+        },
+        {
+            id: "ke-chang", θ: 0.125, φ: 0.25,
+            labels: { universal: "explicit / implicit", ddj: "可 / 常", math: "theorem / axiom", physics: "measured / conserved", bio: "expressed / encoded" },
+            to: "framework"
+        },
+        {
+            id: "miao-jiao", θ: 0.375, φ: 0.75,
+            labels: { universal: "pattern / boundary", ddj: "妙 / 徼", math: "relation / limit", physics: "field / particle", bio: "flow / membrane" },
+            to: "geometry"
         }
-      });
-    }, observerOptions);
+    ];
 
-    document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => {
-      observer.observe(el);
+    // Nested spheres - domains you can dive into
+    const nested = {
+        ddj: {
+            name: "Dao De Jing",
+            nodes: [
+                { id: "ch1", title: "Chapter 1: Coordinate System", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2,
+                  text: "道可道非常道 — The pattern that can be patterned is not the constant pattern. Establishes the 可/常 and 無/有 axes.",
+                  link: "text/chapters.html" },
+                { id: "ch11", title: "Chapter 11: Bounded Emptiness", θ: 0.12, φ: 0.45, r: 0.3, conf: 0.98, eff: 1,
+                  text: "有之以為利，無之以為用 — Form constrains, void functions. The wheel hub, the clay pot, the room's walls.",
+                  link: "text/chapters.html" },
+                { id: "ch25", title: "Chapter 25: Rosetta Stone", θ: 0.24, φ: 0.55, r: 0.3, conf: 0.95, eff: 2,
+                  text: "大→逝→遠→反 — The recursion formula. Extension, departure, distance, return.",
+                  link: "text/chapters.html" },
+                { id: "ch40", title: "Chapter 40: Return Is Movement", θ: 0.36, φ: 0.5, r: 0.3, conf: 0.95, eff: 1,
+                  text: "反者道之動 — Reversal is how pattern moves. The oscillation that keeps everything alive.",
+                  link: "text/chapters.html" },
+                { id: "lexicon", title: "Characters as Equations", θ: 0.6, φ: 0.5, r: 0.5, conf: 0.85, eff: 3,
+                  text: "Each character = f(substrate, operator) → result. 利 = 禾 + 刂 = grain + blade = the scythe arc.",
+                  link: "text/lexicon.html" },
+                { id: "guodian", title: "Bamboo Archaeology", θ: 0.72, φ: 0.55, r: 0.55, conf: 0.8, eff: 4,
+                  text: "~300 BCE manuscripts. 恆→常 drift. Original organization by function, not number.",
+                  link: "text/archaeology.html" },
+                { id: "hydraulic", title: "治: Water Through Platforms", θ: 0.84, φ: 0.45, r: 0.5, conf: 0.85, eff: 3,
+                  text: "Governance IS water management. 氵+ 台 = channeling through infrastructure.",
+                  link: "human/story.html" }
+            ]
+        },
+        math: {
+            name: "Mathematics",
+            nodes: [
+                { id: "euler", title: "e^(iπ) + 1 = 0", θ: 0, φ: 0.5, r: 0.3, conf: 0.9, eff: 3,
+                  text: "All five constants meeting at nothing. e = continuous growth, i = orthogonal turn, π = closure, 1 = identity, 0 = origin.",
+                  link: "geometry/" },
+                { id: "operators", title: "The Five Operators", θ: 0.33, φ: 0.5, r: 0.4, conf: 0.85, eff: 3,
+                  text: "i = rotation, π = closure, e = scale recursion, 1 = local unit, 0 = paradox center. Why exactly these five.",
+                  link: "geometry/" },
+                { id: "rsm", title: "The Recursion Kernel", θ: 0.66, φ: 0.5, r: 0.35, conf: 0.95, eff: 2,
+                  text: "P₀ → O₁ → G₁ → P₁ → O₂. Paradox promotes to origin, induces gradient, closes to surface, promotes again.",
+                  link: "geometry/recursion.html" }
+            ]
+        },
+        physics: {
+            name: "Physics",
+            nodes: [
+                { id: "energy", title: "Energy IS Rotation", θ: 0, φ: 0.5, r: 0.35, conf: 0.75, eff: 4,
+                  text: "Energy = rotation rate. Conservation = rotation must complete. E=mc² encodes rotation-mass equivalence.",
+                  link: "physics/energy.html" },
+                { id: "time", title: "Time: Rotation Succeeding", θ: 0.25, φ: 0.5, r: 0.35, conf: 0.75, eff: 4,
+                  text: "Time isn't a dimension — it's rotation itself. Experience = the path traced as rotation succeeds.",
+                  link: "physics/spacetime.html" },
+                { id: "quantum", title: "Quantum: Rotation Unresolved", θ: 0.5, φ: 0.5, r: 0.4, conf: 0.7, eff: 4,
+                  text: "Superposition = all possible rotations held. Measurement = forcing one rotation to complete.",
+                  link: "physics/quantum.html" },
+                { id: "blackhole", title: "Black Holes: Rotation Failing", θ: 0.75, φ: 0.5, r: 0.45, conf: 0.75, eff: 4,
+                  text: "Event horizon = where circulation fails to complete. Information lives at the boundary, not the center.",
+                  link: "physics/black_holes.html" }
+            ]
+        },
+        bio: {
+            name: "Biology",
+            nodes: [
+                { id: "tree", title: "Hollow Pith, Standing Tree", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2,
+                  text: "The pith can rot away; the tree stands. Growth rings around a hollow center. Chapter 11 written in wood.",
+                  link: "living/plants.html" },
+                { id: "cambium", title: "Life at the Boundary", θ: 0.33, φ: 0.5, r: 0.4, conf: 0.85, eff: 3,
+                  text: "The cambium has zero thickness but is the only living layer. The tree IS the boundary between inside and outside.",
+                  link: "living/plants.html" },
+                { id: "axioms", title: "Ten Axioms of Plant Growth", θ: 0.66, φ: 0.5, r: 0.5, conf: 0.8, eff: 4,
+                  text: "Growth at surfaces. Branch angles cluster perpendicular. Fractal dimension ≈ 2. Testable predictions.",
+                  link: "living/plants.html" }
+            ]
+        },
+        framework: {
+            name: "RSM Framework",
+            nodes: [
+                { id: "core", title: "Core Grammar", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2,
+                  text: "P₀ → O₁ → G₁ → P₁ → O₂. The minimum sequence that generates stable recursive structure.",
+                  link: "geometry/" },
+                { id: "guardrails", title: "Six Guardrails", θ: 0.33, φ: 0.5, r: 0.4, conf: 0.9, eff: 2,
+                  text: "G1: No privileged frame. G2: Preserve paradox. G3: Cross-domain. G4: Scale humility. G5: Invitation > assertion. G6: Describe, don't prescribe.",
+                  link: "geometry/falsification.html" },
+                { id: "parallels", title: "18 Frameworks, One Pattern", θ: 0.66, φ: 0.5, r: 0.5, conf: 0.75, eff: 4,
+                  text: "Wheeler, Bohm, Rovelli, Hofstadter, Varela... Same structural pattern, different vocabularies.",
+                  link: "geometry/" },
+                { id: "ke-chang-analysis", title: "可/常 Scale Recursion", θ: 0.5, φ: 0.25, r: 0.35, conf: 0.9, eff: 2,
+                  text: "Every 可 (expressible) is a 常 (invariant) at its own level. Frame-relativity all the way up and down.",
+                  link: "geometry/recursion.html" }
+            ]
+        },
+        geometry: {
+            name: "Geometry",
+            nodes: [
+                { id: "sphere", title: "The Paradox Sphere", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2,
+                  text: "Paradoxes aren't contradictions — they're poles on a sphere. Walk from one to the other without contradiction.",
+                  link: "geometry/sphere.html" },
+                { id: "why-three", title: "Why Three Dimensions", θ: 0.25, φ: 0.5, r: 0.35, conf: 0.85, eff: 3,
+                  text: "Three dimensions are the minimum needed for stable circulation. Not arbitrary — structurally necessary.",
+                  link: "geometry/" },
+                { id: "hollow", title: "The Hollow Center", θ: 0.5, φ: 0.5, r: 0.3, conf: 0.95, eff: 2,
+                  text: "The center is hollow because if it were solid, it would need a foundation. And there are no foundations.",
+                  link: "geometry/" },
+                { id: "falsification", title: "What Would Prove This Wrong", θ: 0.75, φ: 0.5, r: 0.45, conf: 0.9, eff: 2,
+                  text: "Testable claims. Structural inconsistency or empirical failure would falsify this. Not disagreement.",
+                  link: "geometry/falsification.html" }
+            ]
+        }
+    };
+
+    // ═══════════════════════════════════════════════════════════════
+    // STATE
+    // ═══════════════════════════════════════════════════════════════
+
+    let currentFw = 'universal';
+    let currentSphere = 'root';
+    let path = ['root'];
+    let scene, camera, renderer;
+    let sphereGroup, nodeObjs = [];
+    let hoveredNode = null;
+    let isDragging = false;
+    let lastMouse = { x: 0, y: 0 };
+
+    // ═══════════════════════════════════════════════════════════════
+    // THREE.JS SETUP
+    // ═══════════════════════════════════════════════════════════════
+
+    function init() {
+        const container = document.getElementById('sphere-container');
+
+        scene = new THREE.Scene();
+        camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 3.2;
+
+        renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setClearColor(0x0a0a0a);
+        container.appendChild(renderer.domElement);
+
+        // Group for rotation
+        sphereGroup = new THREE.Group();
+        scene.add(sphereGroup);
+
+        // Wireframe sphere
+        const sphereGeo = new THREE.SphereGeometry(1, 48, 48);
+        const sphereMat = new THREE.MeshBasicMaterial({
+            color: 0x333333,
+            wireframe: true,
+            transparent: true,
+            opacity: 0.08
+        });
+        sphereGroup.add(new THREE.Mesh(sphereGeo, sphereMat));
+
+        // Center glow
+        const glowGeo = new THREE.SphereGeometry(0.08, 32, 32);
+        const glowMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.7 });
+        const centerGlow = new THREE.Mesh(glowGeo, glowMat);
+        sphereGroup.add(centerGlow);
+
+        const haloGeo = new THREE.SphereGeometry(0.2, 32, 32);
+        const haloMat = new THREE.MeshBasicMaterial({ color: 0xc9a959, transparent: true, opacity: 0.1 });
+        sphereGroup.add(new THREE.Mesh(haloGeo, haloMat));
+
+        // Create nodes
+        createNodes(rootNodes, true);
+
+        // Events
+        renderer.domElement.addEventListener('mousedown', onMouseDown);
+        renderer.domElement.addEventListener('mousemove', onMouseMove);
+        renderer.domElement.addEventListener('mouseup', () => isDragging = false);
+        renderer.domElement.addEventListener('mouseleave', () => isDragging = false);
+        renderer.domElement.addEventListener('wheel', onWheel);
+        renderer.domElement.addEventListener('click', onClick);
+        window.addEventListener('resize', onResize);
+
+        // Touch support
+        renderer.domElement.addEventListener('touchstart', onTouchStart, { passive: false });
+        renderer.domElement.addEventListener('touchmove', onTouchMove, { passive: false });
+        renderer.domElement.addEventListener('touchend', onTouchEnd);
+
+        animate();
+    }
+
+    function createNodes(nodes, isRoot) {
+        // Clear old
+        nodeObjs.forEach(o => sphereGroup.remove(o.mesh));
+        nodeObjs = [];
+
+        nodes.forEach(n => {
+            const r = n.r || 1;
+            const theta = n.θ * Math.PI * 2;
+            const phi = n.φ * Math.PI;
+
+            const x = r * Math.sin(phi) * Math.cos(theta);
+            const y = r * Math.cos(phi);
+            const z = r * Math.sin(phi) * Math.sin(theta);
+
+            const conf = n.conf || 1;
+            const size = isRoot ? 0.07 : (0.04 + conf * 0.04);
+
+            const geo = new THREE.SphereGeometry(size, 24, 24);
+            const mat = new THREE.MeshBasicMaterial({
+                color: new THREE.Color().setHSL(0.12, 0.6, 0.35 + conf * 0.35),
+                transparent: true,
+                opacity: 0.4 + conf * 0.5
+            });
+
+            const mesh = new THREE.Mesh(geo, mat);
+            mesh.position.set(x, y, z);
+            sphereGroup.add(mesh);
+
+            nodeObjs.push({ mesh, data: n, isRoot });
+        });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // INPUT HANDLERS
+    // ═══════════════════════════════════════════════════════════════
+
+    function onMouseDown(e) {
+        isDragging = true;
+        lastMouse = { x: e.clientX, y: e.clientY };
+    }
+
+    function onMouseMove(e) {
+        if (isDragging) {
+            const dx = e.clientX - lastMouse.x;
+            const dy = e.clientY - lastMouse.y;
+            sphereGroup.rotation.y += dx * 0.005;
+            sphereGroup.rotation.x += dy * 0.005;
+            lastMouse = { x: e.clientX, y: e.clientY };
+        }
+
+        // Hover detection
+        const hit = raycast(e);
+        if (hit) {
+            if (hoveredNode !== hit.data) {
+                hoveredNode = hit.data;
+                showLabel(hit, e);
+                updateCenter(hit.data);
+                renderer.domElement.style.cursor = 'pointer';
+            }
+        } else {
+            hoveredNode = null;
+            hideLabel();
+            resetCenter();
+            renderer.domElement.style.cursor = isDragging ? 'grabbing' : 'grab';
+        }
+    }
+
+    let touchStart = null;
+    function onTouchStart(e) {
+        if (e.touches.length === 1) {
+            e.preventDefault();
+            touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            isDragging = true;
+            lastMouse = touchStart;
+        }
+    }
+
+    function onTouchMove(e) {
+        if (e.touches.length === 1 && isDragging) {
+            e.preventDefault();
+            const dx = e.touches[0].clientX - lastMouse.x;
+            const dy = e.touches[0].clientY - lastMouse.y;
+            sphereGroup.rotation.y += dx * 0.005;
+            sphereGroup.rotation.x += dy * 0.005;
+            lastMouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+        }
+    }
+
+    function onTouchEnd(e) {
+        if (touchStart && e.changedTouches.length === 1) {
+            const dx = Math.abs(e.changedTouches[0].clientX - touchStart.x);
+            const dy = Math.abs(e.changedTouches[0].clientY - touchStart.y);
+            if (dx < 10 && dy < 10) {
+                // It was a tap, not a drag
+                const hit = raycastTouch(e.changedTouches[0]);
+                if (hit) handleNodeClick(hit);
+            }
+        }
+        isDragging = false;
+        touchStart = null;
+    }
+
+    function onWheel(e) {
+        camera.position.z += e.deltaY * 0.002;
+        camera.position.z = Math.max(1.8, Math.min(5, camera.position.z));
+    }
+
+    function onClick(e) {
+        const hit = raycast(e);
+        if (hit) handleNodeClick(hit);
+    }
+
+    function handleNodeClick(hit) {
+        if (hit.isRoot && hit.data.to && nested[hit.data.to]) {
+            enterSphere(hit.data.to);
+        } else {
+            showInfo(hit.data);
+        }
+    }
+
+    function raycast(e) {
+        const rect = renderer.domElement.getBoundingClientRect();
+        const mouse = new THREE.Vector2(
+            ((e.clientX - rect.left) / rect.width) * 2 - 1,
+            -((e.clientY - rect.top) / rect.height) * 2 + 1
+        );
+        const raycaster = new THREE.Raycaster();
+        raycaster.setFromCamera(mouse, camera);
+        const hits = raycaster.intersectObjects(nodeObjs.map(o => o.mesh));
+        if (hits.length) {
+            return nodeObjs.find(o => o.mesh === hits[0].object);
+        }
+        return null;
+    }
+
+    function raycastTouch(touch) {
+        const rect = renderer.domElement.getBoundingClientRect();
+        const mouse = new THREE.Vector2(
+            ((touch.clientX - rect.left) / rect.width) * 2 - 1,
+            -((touch.clientY - rect.top) / rect.height) * 2 + 1
+        );
+        const raycaster = new THREE.Raycaster();
+        raycaster.setFromCamera(mouse, camera);
+        const hits = raycaster.intersectObjects(nodeObjs.map(o => o.mesh));
+        if (hits.length) {
+            return nodeObjs.find(o => o.mesh === hits[0].object);
+        }
+        return null;
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // NAVIGATION
+    // ═══════════════════════════════════════════════════════════════
+
+    function enterSphere(id) {
+        currentSphere = id;
+        path.push(id);
+        createNodes(nested[id].nodes, false);
+        updateBreadcrumb();
+        document.getElementById('return-btn').classList.add('visible');
+    }
+
+    function exitTo(id) {
+        const idx = path.indexOf(id);
+        if (idx >= 0) {
+            path = path.slice(0, idx + 1);
+            currentSphere = id;
+            if (id === 'root') {
+                createNodes(rootNodes, true);
+                document.getElementById('return-btn').classList.remove('visible');
+            } else {
+                createNodes(nested[id].nodes, false);
+            }
+            updateBreadcrumb();
+            hideInfo();
+        }
+    }
+
+    function updateBreadcrumb() {
+        const el = document.getElementById('breadcrumb');
+        el.innerHTML = path.map((p, i) => {
+            const name = p === 'root' ? '⊙' : (nested[p]?.name || p);
+            return `<span data-sphere="${p}">${name}</span>` + (i < path.length - 1 ? '<span class="sep">›</span>' : '');
+        }).join('');
+        el.querySelectorAll('span[data-sphere]').forEach(s => {
+            s.onclick = () => exitTo(s.dataset.sphere);
+        });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // UI UPDATES
+    // ═══════════════════════════════════════════════════════════════
+
+    function showLabel(hit, e) {
+        let label = document.querySelector('.node-label');
+        if (!label) {
+            label = document.createElement('div');
+            label.className = 'node-label';
+            document.getElementById('ui-overlay').appendChild(label);
+        }
+        const text = hit.isRoot ? (hit.data.labels[currentFw] || hit.data.id) : hit.data.title;
+        label.textContent = text;
+        label.style.left = (e.clientX + 15) + 'px';
+        label.style.top = (e.clientY - 10) + 'px';
+        label.classList.add('visible');
+    }
+
+    function hideLabel() {
+        const label = document.querySelector('.node-label');
+        if (label) label.classList.remove('visible');
+    }
+
+    function updateCenter(data) {
+        const el = document.getElementById('center-label');
+        el.classList.add('highlight');
+        if (data.labels) {
+            el.querySelector('.main').textContent = data.labels[currentFw] || data.id;
+            el.querySelector('.sub').textContent = 'click to explore';
+        } else {
+            el.querySelector('.main').textContent = data.title || data.id;
+            el.querySelector('.sub').textContent = 'click for details';
+        }
+    }
+
+    function resetCenter() {
+        const el = document.getElementById('center-label');
+        el.classList.remove('highlight');
+        el.querySelector('.main').textContent = vocab[currentFw].center;
+        el.querySelector('.sub').textContent = 'impossible center';
+    }
+
+    function showInfo(data) {
+        const panel = document.getElementById('info-panel');
+        document.getElementById('info-title').textContent = data.title || data.id;
+        document.getElementById('info-content').textContent = data.text || '';
+
+        const linkEl = document.getElementById('info-link');
+        if (data.link) {
+            linkEl.href = data.link;
+            linkEl.style.display = 'inline-block';
+        } else {
+            linkEl.style.display = 'none';
+        }
+
+        const conf = data.conf || 1;
+        const confEl = document.getElementById('info-confidence');
+        confEl.textContent = conf >= 0.9 ? 'verified' : conf >= 0.75 ? 'synthesized' : 'provisional';
+        confEl.className = 'confidence ' + (conf >= 0.9 ? 'high' : conf >= 0.75 ? 'medium' : 'low');
+
+        const eff = data.eff || 1;
+        const effLabels = ['', 'minimal effort', 'low effort', 'medium effort', 'substantial effort', 'deep dive'];
+        document.getElementById('info-effort').textContent = effLabels[eff];
+
+        panel.classList.add('visible');
+    }
+
+    function hideInfo() {
+        document.getElementById('info-panel').classList.remove('visible');
+    }
+
+    function setFramework(fw) {
+        currentFw = fw;
+        document.querySelectorAll('.framework-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.fw === fw);
+        });
+        resetCenter();
+    }
+
+    function onResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // INITIALIZATION
+    // ═══════════════════════════════════════════════════════════════
+
+    document.getElementById('opening').onclick = () => {
+        document.getElementById('opening').classList.add('hidden');
+        document.getElementById('sphere-container').classList.add('visible');
+        document.getElementById('ui-overlay').classList.add('visible');
+        init();
+    };
+
+    document.querySelectorAll('.framework-btn').forEach(b => {
+        b.onclick = () => setFramework(b.dataset.fw);
     });
 
-    // Hide scroll indicator after first scroll
-    const scrollIndicator = document.querySelector('.scroll-indicator');
-    let hasScrolled = false;
-
-    window.addEventListener('scroll', () => {
-      if (!hasScrolled && window.scrollY > 100) {
-        hasScrolled = true;
-        scrollIndicator.style.opacity = '0';
-        scrollIndicator.style.transition = 'opacity 0.5s ease';
-      }
-    }, { passive: true });
-  </script>
-
+    document.querySelector('#info-panel .close-btn').onclick = hideInfo;
+    document.getElementById('return-btn').onclick = () => exitTo('root');
+    </script>
 </body>
 </html>
