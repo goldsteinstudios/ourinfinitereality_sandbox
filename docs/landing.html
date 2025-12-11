@@ -136,6 +136,23 @@
             opacity: 1;
         }
 
+        /* Center label - shows the "0" (nothing) on hover */
+        #center-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #c9a959;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #center-label.visible {
+            opacity: 1;
+        }
+
         /* Node labels that appear on hover */
         .node-label {
             position: absolute;
@@ -326,6 +343,8 @@
 
     <!-- UI -->
     <div id="ui-overlay">
+        <div id="center-label"></div>
+
         <div id="breadcrumb">
             <span data-sphere="root">⊙</span>
         </div>
@@ -353,33 +372,13 @@
     // ═══════════════════════════════════════════════════════════════
 
     // Root sphere nodes - 5 nodes, same contrast in different domain vocabularies
-    // Each shows 有/無 (something/nothing) in its native language
+    // label = the "1" (something), complement = the "0" (nothing)
     const rootNodes = [
-        {
-            id: "ddj", θ: 0, φ: 0.5,
-            label: "有 / 無",
-            to: "ddj"
-        },
-        {
-            id: "math", θ: 0.2, φ: 0.5,
-            label: "1 / 0",
-            to: "math"
-        },
-        {
-            id: "physics", θ: 0.4, φ: 0.5,
-            label: "something / nothing",
-            to: "physics"
-        },
-        {
-            id: "bio", θ: 0.6, φ: 0.5,
-            label: "self / other",
-            to: "bio"
-        },
-        {
-            id: "rsm", θ: 0.8, φ: 0.5,
-            label: "center / periphery",
-            to: "rsm"
-        }
+        { id: "ddj", θ: 0, φ: 0.5, label: "有", complement: "無", to: "ddj" },
+        { id: "math", θ: 0.2, φ: 0.5, label: "1", complement: "0", to: "math" },
+        { id: "physics", θ: 0.4, φ: 0.5, label: "something", complement: "nothing", to: "physics" },
+        { id: "bio", θ: 0.6, φ: 0.5, label: "self", complement: "other", to: "bio" },
+        { id: "rsm", θ: 0.8, φ: 0.5, label: "center", complement: "periphery", to: "rsm" }
     ];
 
     // Nested spheres - domains you can dive into
@@ -390,6 +389,7 @@
     const nested = {
         ddj: {
             name: "Dao De Jing",
+            complement: "無",
             nodes: [
                 { id: "ch1", title: "Chapter 1: Coordinate System", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'direct',
                   text: "道可道非常道 — The pattern that can be patterned is not the constant pattern. Establishes the 可/常 and 無/有 axes.",
@@ -416,6 +416,7 @@
         },
         math: {
             name: "Mathematics",
+            complement: "0",
             nodes: [
                 { id: "euler", title: "e^(iπ) + 1 = 0", θ: 0, φ: 0.5, r: 0.3, conf: 0.9, eff: 3, source: 'synthesis',
                   text: "All five constants meeting at nothing. e = continuous growth, i = orthogonal turn, π = closure, 1 = identity, 0 = origin.",
@@ -430,6 +431,7 @@
         },
         physics: {
             name: "Physics",
+            complement: "nothing",
             nodes: [
                 { id: "energy", title: "Energy IS Rotation", θ: 0, φ: 0.5, r: 0.35, conf: 0.75, eff: 4, source: 'ai-assisted',
                   text: "Energy = rotation rate. Conservation = rotation must complete. E=mc² encodes rotation-mass equivalence.",
@@ -447,6 +449,7 @@
         },
         bio: {
             name: "Biology",
+            complement: "other",
             nodes: [
                 { id: "tree", title: "Hollow Pith, Standing Tree", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'direct',
                   text: "The pith can rot away; the tree stands. Growth rings around a hollow center. Chapter 11 written in wood.",
@@ -461,6 +464,7 @@
         },
         rsm: {
             name: "RSM",
+            complement: "periphery",
             nodes: [
                 { id: "core", title: "Core Grammar", θ: 0, φ: 0.5, r: 0.3, conf: 0.95, eff: 2, source: 'synthesis',
                   text: "P₀ → O₁ → G₁ → P₁ → O₂. The minimum sequence that generates stable recursive structure.",
@@ -621,11 +625,13 @@
             if (hoveredNode !== hit.data) {
                 hoveredNode = hit.data;
                 showLabel(hit, e);
+                showCenterLabel(hit);
                 renderer.domElement.style.cursor = 'pointer';
             }
         } else {
             hoveredNode = null;
             hideLabel();
+            hideCenterLabel();
             renderer.domElement.style.cursor = isDragging ? 'grabbing' : 'grab';
         }
     }
@@ -775,6 +781,25 @@
     function hideLabel() {
         const label = document.querySelector('.node-label');
         if (label) label.classList.remove('visible');
+    }
+
+    function showCenterLabel(hit) {
+        const el = document.getElementById('center-label');
+        let complement;
+        if (hit.isRoot) {
+            // Root node - show its complement
+            complement = hit.data.complement;
+        } else {
+            // Nested node - show parent sphere's complement
+            complement = nested[currentSphere]?.complement || '';
+        }
+        el.textContent = complement;
+        el.classList.add('visible');
+    }
+
+    function hideCenterLabel() {
+        const el = document.getElementById('center-label');
+        el.classList.remove('visible');
     }
 
     function showInfo(data) {
