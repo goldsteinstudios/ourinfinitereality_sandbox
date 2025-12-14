@@ -1,0 +1,190 @@
+# Chapter → RSM Concept Mappings
+# Each chapter illuminates specific aspects of the recursion kernel
+
+chapter_mappings:
+  1:
+    title: "The Coordinate System"
+    primary: "Coordinate system establishment"
+    rsm_stages: [P0, O1, G1, P1]
+    concepts:
+      - "可/常 axis (explicit ↔ implicit)"
+      - "無/有 axis (nothing ↔ something)"
+      - "玄 as paradoxical origin (O₁)"
+      - "妙/徼 orthogonal perception"
+    key_line: "玄之又玄，眾妙之門"
+    structural_role: "Establishes the frame for all subsequent chapters"
+
+  2:
+    title: "Co-emergence"
+    primary: "Polarity generation"
+    rsm_stages: [G1]
+    concepts:
+      - "有無相生 (being/nothing co-arise)"
+      - "mutual definition of poles"
+    key_line: "有無相生"
+    guodian: true
+
+  5:
+    title: "The Bellows"
+    primary: "Continuous circulation"
+    rsm_stages: [G1]
+    concepts:
+      - "橐籥 (bellows) as circulation model"
+      - "虛而不屈 (empty yet inexhaustible)"
+    key_line: "天地之間，其猶橐籥乎"
+    guodian: true
+
+  8:
+    title: "Water"
+    primary: "Gradient seeking"
+    rsm_stages: [G1]
+    concepts:
+      - "水 as pattern exemplar"
+      - "善利萬物而不爭"
+    key_line: "上善若水"
+
+  11:
+    title: "Void and Function"
+    primary: "Functional void"
+    rsm_stages: [O1]
+    concepts:
+      - "hollow center as functional"
+      - "有之以為利 (form for benefit)"
+      - "無之以為用 (void for function)"
+    key_line: "無之以為用"
+
+  16:
+    title: "Return to Root"
+    primary: "Recursion documentation"
+    rsm_stages: [P1, "P⇔O"]
+    concepts:
+      - "歸根 (return to root)"
+      - "知常 cascade"
+      - "萬物並作，吾以觀復"
+    key_line: "歸根曰靜"
+    guodian: true
+
+  25:
+    title: "Spherical Recursion"
+    primary: "Recursion formula"
+    rsm_stages: [G1, P1, "P⇔O"]
+    concepts:
+      - "大→逝→遠→反 (great→going→far→returning)"
+      - "recursion as structure"
+      - "四大 (four greats)"
+    key_line: "大曰逝，逝曰遠，遠曰反"
+    guodian: true
+
+  40:
+    title: "The Oscillation Engine"
+    primary: "Fundamental dynamics"
+    rsm_stages: [G1]
+    concepts:
+      - "反者道之動 (reversal is dao's movement)"
+      - "弱者道之用 (weakness is dao's function)"
+      - "有生於無 (being arises from nothing)"
+    key_line: "反者道之動"
+    guodian: true
+    note: "Encodes that kernel oscillates, not sequences"
+
+  41:
+    title: "Frame Responses"
+    primary: "Observer frame effects"
+    rsm_stages: [P1]
+    concepts:
+      - "上士/中士/下士 responses"
+      - "若 appearance operator"
+      - "不笑不足以為道"
+    key_line: "上士聞道，勤而行之"
+    guodian: true
+
+  42:
+    title: "Dimensional Proof"
+    primary: "Dimension generation"
+    rsm_stages: [O1, G1, P1]
+    concepts:
+      - "道生一，一生二，二生三"
+      - "三生萬物"
+      - "dimensional expansion"
+    key_line: "道生一，一生二，二生三，三生萬物"
+
+  51:
+    title: "Pattern Nurtures"
+    primary: "道/德 relationship"
+    rsm_stages: [O1, G1]
+    concepts:
+      - "道生之 (dao generates)"
+      - "德畜之 (de nurtures)"
+      - "玄德 (mysterious alignment)"
+    key_line: "道生之，德畜之"
+
+  52:
+    title: "Return to Source"
+    primary: "母/子 recursion"
+    rsm_stages: ["P⇔O"]
+    concepts:
+      - "天下有始 (everything has beginning)"
+      - "母/子 (source/derivative)"
+      - "習常 (practicing the constant)"
+    key_line: "天下有始，以為天下母"
+    guodian: true
+
+  56:
+    title: "Mysterious Sameness"
+    primary: "知/言 orthogonality"
+    rsm_stages: [P0]
+    concepts:
+      - "知者不言 (knowing ones don't speak)"
+      - "言者不知 (speaking ones don't know)"
+      - "玄同 (mysterious sameness)"
+    key_line: "知者不言，言者不知"
+    guodian: true
+
+  76:
+    title: "Soft and Hard"
+    primary: "柔/剛 dynamics"
+    rsm_stages: [G1]
+    concepts:
+      - "柔弱 (soft/supple = living)"
+      - "堅強 (hard/rigid = dead)"
+    key_line: "人之生也柔弱，其死也堅強"
+
+  78:
+    title: "Water Overcomes"
+    primary: "水 as fundamental pattern"
+    rsm_stages: [G1]
+    concepts:
+      - "water overcomes hard"
+      - "weakness overcomes strength"
+    key_line: "天下莫柔弱於水"
+
+  81:
+    title: "Closing"
+    primary: "Self-validation"
+    rsm_stages: [P1, "P⇔O"]
+    concepts:
+      - "信⊥美 (trust orthogonal to beauty)"
+      - "善⊥辯 (good orthogonal to eloquence)"
+      - "利而不害 (benefit without harm)"
+      - "為而不爭 (act without contending)"
+    key_line: "信言不美，美言不信"
+    note: "Closing connects to opening; text validates itself"
+
+# Structural groupings
+groupings:
+  coordinate_system: [1]
+  polarity_and_gradient: [2, 5, 8, 40, 76, 78]
+  void_and_function: [11]
+  recursion: [16, 25, 52]
+  dimension: [42]
+  dao_de_relationship: [51]
+  observer_effects: [41, 56]
+  closure: [81]
+
+# Key formulas across chapters
+formulas:
+  recursion_kernel: "P₀⇔O₁⇔G₁⇔P₁⇔O₂"
+  spatial_recursion: "大→逝→遠→反"
+  dimension_generation: "道生一→一生二→二生三→三生萬物"
+  oscillation: "反者道之動"
+  functional_void: "有之以為利，無之以為用"

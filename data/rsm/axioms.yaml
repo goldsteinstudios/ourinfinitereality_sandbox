@@ -1,0 +1,124 @@
+# The Three Rules of Infinite Reality
+# All relationships are bidirectional/co-emergent.
+
+prime_axiom:
+  statement: "Reality is infinite (and therefore infinitely divisible)"
+  corollaries:
+    - "No outside exists (forces self-reference)"
+    - "True void is unreachable (always more structure below)"
+    - "Asymptotic centers of infinite gradients must be orthogonal paradoxical axes"
+
+three_rules:
+  - id: contrast
+    name: "Contrast"
+    statement: "Distinction must exist for measurement"
+    why: "Without poles (無/有, something/nothing), no gradient, no structure"
+    euler: "1 and 0 — the minimal distinction"
+    ddj:
+      text: "有無相生"
+      pinyin: "yǒu wú xiāng shēng"
+      meaning: "being and nothing co-arise"
+      source: "Chapter 2"
+      characters:
+        有:
+          pinyin: yǒu
+          meaning: "being, something, to have"
+          breakdown: "又 (yòu, hand/again) + 月 (yuè, moon/flesh) = hand holding substance"
+        無:
+          pinyin: wú
+          meaning: "nothing, not-have, void"
+          breakdown: "舞 (wǔ, dance) simplified — original shows person dancing with ornaments, absence of grounded form"
+        相:
+          pinyin: xiāng
+          meaning: "mutual, reciprocal"
+          breakdown: "木 (mù, tree) + 目 (mù, eye) = eye observing tree = mutual observation"
+        生:
+          pinyin: shēng
+          meaning: "arise, generate, birth"
+          breakdown: "pictograph of plant sprouting from ground"
+
+  - id: rotation
+    name: "Rotation"
+    statement: "Contrast must be held dynamically"
+    why: "Static contrast collapses; only circulation around paradox persists"
+    euler: "i — the orthogonal turn (90° preserves paradox)"
+    ddj:
+      text: "反者道之動"
+      pinyin: "fǎn zhě dào zhī dòng"
+      meaning: "reversal is the movement of dao"
+      source: "Chapter 40"
+      characters:
+        反:
+          pinyin: fǎn
+          meaning: "reversal, arriving at opposite"
+          breakdown: "厂 (hǎn, cliff/overhang) + 又 (yòu, hand) = hand reaching back around boundary"
+        者:
+          pinyin: zhě
+          meaning: "that which, -er suffix"
+          breakdown: "耂 (lǎo, old) variant + 日 (rì, sun) = ancient form indicating agent"
+        道:
+          pinyin: dào
+          meaning: "way, pattern, path"
+          breakdown: "辶 (chuò, movement) + 首 (shǒu, head) = head/chief directing movement = guided path"
+        之:
+          pinyin: zhī
+          meaning: "possessive particle, 's"
+          breakdown: "pictograph of foot moving forward = going toward = belonging to"
+        動:
+          pinyin: dòng
+          meaning: "movement, motion"
+          breakdown: "重 (zhòng, heavy) + 力 (lì, power) = power moving weight"
+
+  - id: closure
+    name: "Closure"
+    statement: "Rotation must complete to create stable structure"
+    why: "Three orthogonal closures (⟂³) yield sphere; less collapses, more is redundant"
+    euler: "π — half-cycle reversal; e^(iπ) = complete turn"
+    ddj:
+      text: "三生萬物"
+      pinyin: "sān shēng wàn wù"
+      meaning: "three generates the ten thousand things"
+      source: "Chapter 42"
+      characters:
+        三:
+          pinyin: sān
+          meaning: "three"
+          breakdown: "three horizontal strokes = pictograph of quantity"
+        生:
+          pinyin: shēng
+          meaning: "generate, birth"
+          breakdown: "pictograph of plant sprouting from ground"
+        萬:
+          pinyin: wàn
+          meaning: "ten thousand, myriad, all"
+          breakdown: "艸 (cǎo, grass) + 禺 (yú, monkey/area) = original pictograph of scorpion, extended to mean 'countless'"
+        物:
+          pinyin: wù
+          meaning: "thing, being, matter"
+          breakdown: "牛 (niú, ox) + 勿 (wù, must not) = ox + streaming pennant = categorizable entity"
+
+consequences:
+  - "Spherical sufficiency: three dimensions necessary AND sufficient"
+  - "Hollow centers: stable structures circulate around, not occupy"
+  - "Universal recursion: any surface point (Pₙ) can become origin (Oₙ₊₁)"
+  - "Scale invariance: same pattern at every level"
+
+euler_compression:
+  formula: "e^(iπ) + 1 = 0"
+  components:
+    e: "continuous scale recursion"
+    i: "orthogonal turn (rotation)"
+    π: "half-cycle closure"
+    1: "minimal distinction (contrast)"
+    0: "paradoxical center preserved"
+  reading: |
+    A minimal distinction (+1) is transformed via continuous,
+    scale-invariant (e), orthogonal (i) circulation over a
+    half-orbit (π) to its exact opposite. When this transformed
+    opposite is combined with the original distinction, the result
+    is closure without collapse (=0) — perfectly preserving the
+    unresolvable paradoxical center.
+  rule_mapping:
+    contrast: "1 and 0"
+    rotation: "i"
+    closure: "π and e"
