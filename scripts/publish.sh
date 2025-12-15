@@ -49,9 +49,12 @@ cp -r "$PRIVATE_REPO/translations/appendices" docs/translations/ 2>/dev/null || 
 cp "$PRIVATE_REPO/translations/README.md" docs/translations/
 cp "$PRIVATE_REPO/translations/00_introduction.md" docs/translations/ 2>/dev/null || true
 
-# GitHub Actions workflow
-mkdir -p .github/workflows
-cp "$PRIVATE_REPO/.github/workflows/deploy.yml" .github/workflows/
+# GitHub Actions workflow - skip if PAT doesn't have workflow scope
+# mkdir -p .github/workflows
+# cp "$PRIVATE_REPO/.github/workflows/deploy.yml" .github/workflows/
+
+# Copy overrides directory for MkDocs custom_dir
+cp -r "$PRIVATE_REPO/overrides" . 2>/dev/null || mkdir -p overrides
 
 # Commit and push
 echo "Committing..."
