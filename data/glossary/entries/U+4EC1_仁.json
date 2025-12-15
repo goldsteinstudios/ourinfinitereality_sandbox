@@ -59,8 +59,72 @@
     "falsification_threshold": null
   },
   "counter_evidence": [],
-  "chubs_validation": null,
-  "guodian_attestation": null,
+  "chubs_validation": {
+    "verdict": "GLYPHS_ONLY",
+    "glyph_count": 113,
+    "guodian_laozi": true,
+    "glyph_paths": [
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（仁）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/𡰥（仁）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{身心}（仁）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/忎（仁）"
+    ],
+    "sources": {
+      "郭店簡_07-唐虞之道": 10,
+      "郭店簡_12-六德": 9,
+      "上博簡_6B-孔子見季桓子": 12,
+      "上博簡_1C-性情論": 6,
+      "郭店簡_13-語叢一": 7,
+      "郭店簡_11-性自命出": 7,
+      "郭店簡_03-緇衣": 5,
+      "郭店簡_06-五行": 15,
+      "郭店簡_01C-老子丙": 1,
+      "郭店簡_15-語叢三": 6,
+      "上博簡_5F-弟子問": 2,
+      "郭店簡_08-忠信之道": 1,
+      "上博簡_6A-競公瘧": 1,
+      "郭店簡_10-尊德義": 4,
+      "上博簡_1B-緇衣": 4,
+      "上博簡_2D-從政甲": 3,
+      "上博簡_5E-君子爲禮": 1,
+      "上博簡_7A-武王踐阼": 6,
+      "上博簡_2E-從政乙": 2,
+      "上博簡_5C-季庚子問於孔子": 2,
+      "上博簡_8B-顏淵問於孔子": 1,
+      "上博簡_6G-慎子曰恭儉": 1,
+      "上博簡_5G-三德": 1,
+      "上博簡_5B-鮑叔牙與隰朋之諫": 1,
+      "上博簡_2G-容成氏": 2,
+      "清華簡_01E-耆夜": 1,
+      "上博簡_5H-鬼神之明": 1,
+      "上博簡_8I-有皇將起": 1
+    },
+    "pos_distribution": {},
+    "pos_percentages": {},
+    "dominant_pos": null,
+    "dominant_pos_english": null,
+    "total_pos_instances": 0,
+    "last_validated": "2025-12-15T20:21:29.698646Z"
+  },
+  "guodian_attestation": {
+    "attested": true,
+    "sources": {
+      "郭店簡_07-唐虞之道": 10,
+      "郭店簡_12-六德": 9,
+      "郭店簡_13-語叢一": 7,
+      "郭店簡_11-性自命出": 7,
+      "郭店簡_03-緇衣": 5,
+      "郭店簡_06-五行": 15,
+      "郭店簡_01C-老子丙": 1,
+      "郭店簡_15-語叢三": 6,
+      "郭店簡_08-忠信之道": 1,
+      "郭店簡_10-尊德義": 4
+    },
+    "total_instances": 65,
+    "in_laozi": true
+  },
   "font_data": {
     "traced": false,
     "vector_path": null,
@@ -93,8 +157,24 @@
       "to": "initial_entry",
       "rationale": "Entry created",
       "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:21:29.710591Z",
+      "field": "chubs_validation",
+      "from": null,
+      "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 113, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（仁）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/𡰥（仁）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{身心}（仁）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/忎（仁）\"], \"sources\": {\"郭店簡_07-唐虞之道\": 10, \"郭店簡_12-六德\": 9, \"上博簡_6B-孔子見季桓子\": 12, \"上博簡_1C-性情論\": 6, \"郭店簡_13-語叢一\": 7, \"郭店簡_11-性自命出\": 7, \"郭店簡_03-緇衣\": 5, \"郭店簡_06-五行\": 15, \"郭店簡_01C-老子丙\": 1, \"郭店簡_15-語叢三\": 6, \"上博簡_5F-弟子問\": 2, \"郭店簡_08-忠信之道\": 1, \"上博簡_6A-競公瘧\": 1, \"郭店簡_10-尊德義\": 4, \"上博簡_1B-緇衣\": 4, \"上博簡_2D-從政甲\": 3, \"上博簡_5E-君子爲禮\": 1, \"上博簡_7A-武王踐阼\": 6, \"上博簡_2E-從政乙\": 2, \"上博簡_5C-季庚子問於孔子\": 2, \"上博簡_8B-顏淵問於孔子\": 1, \"上博簡_6G-慎子曰恭儉\": 1, \"上博簡_5G-三德\": 1, \"上博簡_5B-鮑叔牙與隰朋之諫\": 1, \"上博簡_2G-容成氏\": 2, \"清華簡_01E-耆夜\": 1, \"上博簡_5H-鬼神之明\": 1, \"上博簡_8I-有皇將起\": 1}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.698646Z\"}",
+      "rationale": "CHUBS validation: GLYPHS_ONLY (113 glyphs, 0 POS instances)",
+      "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-15T20:21:39.402375Z",
+      "field": "guodian_attestation",
+      "from": null,
+      "to": "{\"attested\": true, \"sources\": {\"郭店簡_07-唐虞之道\": 10, \"郭店簡_12-六德\": 9, \"郭店簡_13-語叢一\": 7, \"郭店簡_11-性自命出\": 7, \"郭店簡_03-緇衣\": 5, \"郭店簡_06-五行\": 15, \"郭店簡_01C-老子丙\": 1, \"郭店簡_15-語叢三\": 6, \"郭店簡_08-忠信之道\": 1, \"郭店簡_10-尊德義\": 4}, \"total_instances\": 65, \"in_laozi\": true}",
+      "rationale": "Enriched from CHUBS glyph mappings",
+      "author": "chubs_integrator"
     }
   ],
   "created": "2025-12-15T20:09:53.712794Z",
-  "modified": "2025-12-15T20:09:53.712794Z"
+  "modified": "2025-12-15T20:21:39.402375Z"
 }

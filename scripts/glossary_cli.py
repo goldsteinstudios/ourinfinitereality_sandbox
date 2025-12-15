@@ -25,6 +25,7 @@ project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
 from python_analysis.glossary.manager import GlossaryManager
+from python_analysis.glossary.integration import GlossaryIntegrator
 
 
 def cmd_get(args, gm: GlossaryManager):
@@ -214,6 +215,69 @@ def cmd_stats(args, gm: GlossaryManager):
     return 0
 
 
+def cmd_validate(args, gm: GlossaryManager):
+    """Validate entries against CHUBS corpus."""
+    integrator = GlossaryIntegrator(gm)
+
+    if args.all:
+        # Batch validate all entries
+        print("Running CHUBS batch validation...")
+        results = integrator.batch_validate_all(author=args.author or "cli")
+
+        print(f"\nValidation complete:")
+        print(f"  Validated: {results['validated']}")
+        print(f"  Skipped: {results['skipped']}")
+        print(f"\nVerdicts:")
+        for verdict, count in sorted(results['verdicts'].items()):
+            print(f"  {verdict}: {count}")
+
+        # Show Guodian Laozi count
+        guodian_count = sum(1 for d in results['details'].values() if d.get('guodian_laozi'))
+        print(f"\nGuodian Laozi: {guodian_count} characters")
+
+        # Save combined glossary
+        gm.save_combined()
+        print("\nCombined glossary saved.")
+
+    elif args.character:
+        # Validate single character
+        if not gm.exists(args.character):
+            print(f"No entry found for: {args.character}")
+            return 1
+
+        result = integrator.link_chubs_to_entry(args.character, author=args.author or "cli")
+        if result:
+            chubs = result.get('chubs_validation', {})
+            print(f"Validation for {args.character}:")
+            print(f"  Verdict: {chubs.get('verdict', '?')}")
+            print(f"  Glyph count: {chubs.get('glyph_count', 0)}")
+            print(f"  Guodian Laozi: {'Yes' if chubs.get('guodian_laozi') else 'No'}")
+            print(f"  POS instances: {chubs.get('total_pos_instances', 0)}")
+            if chubs.get('dominant_pos'):
+                print(f"  Dominant POS: {chubs.get('dominant_pos_english')} ({chubs.get('pos_percentages', {}).get(chubs.get('dominant_pos'), 0):.1f}%)")
+
+            if chubs.get('pos_distribution'):
+                print(f"  POS distribution:")
+                for pos, count in sorted(chubs['pos_distribution'].items(), key=lambda x: -x[1]):
+                    pct = chubs['pos_percentages'].get(pos, 0)
+                    eng = integrator.POS_TRANSLATIONS.get(pos, pos)
+                    print(f"    {pos} ({eng}): {count} ({pct:.1f}%)")
+        else:
+            print(f"Validation failed for: {args.character}")
+            return 1
+
+    elif args.report:
+        # Generate validation report
+        report = integrator.export_validation_report()
+        print(report)
+
+    else:
+        print("Specify --all, a character, or --report")
+        return 1
+
+    return 0
+
+
 def print_entry_summary(entry: dict):
     """Print a formatted summary of an entry."""
     char = entry['character']
@@ -330,6 +394,13 @@ def main():
     # stats command
     subparsers.add_parser('stats', help='Show glossary statistics')
 
+    # validate command
+    validate_parser = subparsers.add_parser('validate', help='Validate against CHUBS corpus')
+    validate_parser.add_argument('character', nargs='?', help='Character to validate (optional)')
+    validate_parser.add_argument('--all', action='store_true', help='Validate all entries')
+    validate_parser.add_argument('--report', action='store_true', help='Generate validation report')
+    validate_parser.add_argument('--author', help='Who is running the validation')
+
     args = parser.parse_args()
 
     if not args.command:
@@ -348,6 +419,7 @@ def main():
         'history': cmd_history,
         'export': cmd_export,
         'stats': cmd_stats,
+        'validate': cmd_validate,
     }
 
     handler = commands.get(args.command)

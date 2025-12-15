@@ -59,8 +59,78 @@
     "falsification_threshold": null
   },
   "counter_evidence": [],
-  "chubs_validation": null,
-  "guodian_attestation": null,
+  "chubs_validation": {
+    "verdict": "CONFIRMED",
+    "glyph_count": 119,
+    "guodian_laozi": false,
+    "glyph_paths": [
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/返（反）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（反）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/弁（反）"
+    ],
+    "sources": {
+      "郭店簡_12-六德": 1,
+      "上博簡_5G-三德": 4,
+      "清華簡_02A-繫年": 16,
+      "上博簡_6J-天子建州乙": 2,
+      "上博簡_1C-性情論": 4,
+      "包山簡_1-文書": 4,
+      "曾侯乙簡_1-A組": 4,
+      "郭店簡_11-性自命出": 8,
+      "上博簡_2G-容成氏": 2,
+      "郭店簡_10-尊德義": 2,
+      "上博簡_5D-姑成家父": 4,
+      "上博簡_4G-內禮": 2,
+      "清華簡_05F-殷高宗問於三壽": 2,
+      "清華簡_09B-成人": 2,
+      "上博簡_3A-周易": 2,
+      "清華簡_06E-子儀": 4,
+      "上博簡_7G-凡物流形乙": 2,
+      "郭店簡_09-成之聞之": 12,
+      "上博簡_7A-武王踐阼": 2,
+      "上博簡_6G-慎子曰恭儉": 2,
+      "清華簡_01F-金縢": 2,
+      "上博簡_7H-吳命": 2,
+      "清華簡_06F-子產": 2,
+      "清華簡_08C-邦家處位": 2,
+      "上博簡_7F-凡物流形甲": 2,
+      "上博簡_6H-用曰": 2,
+      "郭店簡_02-太一生水": 4,
+      "上博簡_6I-天子建州甲": 2,
+      "上博簡_1A-孔子詩論": 5,
+      "上博簡_8F-志書乃言": 2,
+      "清華簡_05D-湯處於湯丘": 2,
+      "清華簡_07B-晉文公入於晉": 2,
+      "清華簡_09A-治政之道": 2,
+      "清華簡_07D-越公其事": 6,
+      "郭店簡_05-窮達以時": 1
+    },
+    "pos_distribution": {
+      "副词": 1
+    },
+    "pos_percentages": {
+      "副词": 100.0
+    },
+    "dominant_pos": "副词",
+    "dominant_pos_english": "adverb",
+    "total_pos_instances": 1,
+    "last_validated": "2025-12-15T20:21:29.738503Z"
+  },
+  "guodian_attestation": {
+    "attested": true,
+    "sources": {
+      "郭店簡_12-六德": 1,
+      "郭店簡_11-性自命出": 8,
+      "郭店簡_10-尊德義": 2,
+      "郭店簡_09-成之聞之": 12,
+      "郭店簡_02-太一生水": 4,
+      "郭店簡_05-窮達以時": 1
+    },
+    "total_instances": 28,
+    "in_laozi": false
+  },
   "font_data": {
     "traced": false,
     "vector_path": null,
@@ -93,8 +163,24 @@
       "to": "initial_entry",
       "rationale": "Entry created",
       "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:21:29.739102Z",
+      "field": "chubs_validation",
+      "from": null,
+      "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 119, \"guodian_laozi\": false, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/返（反）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（反）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/弁（反）\"], \"sources\": {\"郭店簡_12-六德\": 1, \"上博簡_5G-三德\": 4, \"清華簡_02A-繫年\": 16, \"上博簡_6J-天子建州乙\": 2, \"上博簡_1C-性情論\": 4, \"包山簡_1-文書\": 4, \"曾侯乙簡_1-A組\": 4, \"郭店簡_11-性自命出\": 8, \"上博簡_2G-容成氏\": 2, \"郭店簡_10-尊德義\": 2, \"上博簡_5D-姑成家父\": 4, \"上博簡_4G-內禮\": 2, \"清華簡_05F-殷高宗問於三壽\": 2, \"清華簡_09B-成人\": 2, \"上博簡_3A-周易\": 2, \"清華簡_06E-子儀\": 4, \"上博簡_7G-凡物流形乙\": 2, \"郭店簡_09-成之聞之\": 12, \"上博簡_7A-武王踐阼\": 2, \"上博簡_6G-慎子曰恭儉\": 2, \"清華簡_01F-金縢\": 2, \"上博簡_7H-吳命\": 2, \"清華簡_06F-子產\": 2, \"清華簡_08C-邦家處位\": 2, \"上博簡_7F-凡物流形甲\": 2, \"上博簡_6H-用曰\": 2, \"郭店簡_02-太一生水\": 4, \"上博簡_6I-天子建州甲\": 2, \"上博簡_1A-孔子詩論\": 5, \"上博簡_8F-志書乃言\": 2, \"清華簡_05D-湯處於湯丘\": 2, \"清華簡_07B-晉文公入於晉\": 2, \"清華簡_09A-治政之道\": 2, \"清華簡_07D-越公其事\": 6, \"郭店簡_05-窮達以時\": 1}, \"pos_distribution\": {\"副词\": 1}, \"pos_percentages\": {\"副词\": 100.0}, \"dominant_pos\": \"副词\", \"dominant_pos_english\": \"adverb\", \"total_pos_instances\": 1, \"last_validated\": \"2025-12-15T20:21:29.738503Z\"}",
+      "rationale": "CHUBS validation: CONFIRMED (119 glyphs, 1 POS instances)",
+      "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-15T20:21:39.405407Z",
+      "field": "guodian_attestation",
+      "from": null,
+      "to": "{\"attested\": true, \"sources\": {\"郭店簡_12-六德\": 1, \"郭店簡_11-性自命出\": 8, \"郭店簡_10-尊德義\": 2, \"郭店簡_09-成之聞之\": 12, \"郭店簡_02-太一生水\": 4, \"郭店簡_05-窮達以時\": 1}, \"total_instances\": 28, \"in_laozi\": false}",
+      "rationale": "Enriched from CHUBS glyph mappings",
+      "author": "chubs_integrator"
     }
   ],
   "created": "2025-12-15T20:09:53.713357Z",
-  "modified": "2025-12-15T20:09:53.713357Z"
+  "modified": "2025-12-15T20:21:39.405407Z"
 }

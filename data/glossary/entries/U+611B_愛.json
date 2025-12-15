@@ -59,7 +59,19 @@
     "falsification_threshold": null
   },
   "counter_evidence": [],
-  "chubs_validation": null,
+  "chubs_validation": {
+    "verdict": "NOT_ATTESTED",
+    "glyph_count": 0,
+    "guodian_laozi": false,
+    "glyph_paths": [],
+    "sources": {},
+    "pos_distribution": {},
+    "pos_percentages": {},
+    "dominant_pos": null,
+    "dominant_pos_english": null,
+    "total_pos_instances": 0,
+    "last_validated": "2025-12-15T20:21:29.784681Z"
+  },
   "guodian_attestation": null,
   "font_data": {
     "traced": false,
@@ -93,8 +105,16 @@
       "to": "initial_entry",
       "rationale": "Entry created",
       "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:21:29.785040Z",
+      "field": "chubs_validation",
+      "from": null,
+      "to": "{\"verdict\": \"NOT_ATTESTED\", \"glyph_count\": 0, \"guodian_laozi\": false, \"glyph_paths\": [], \"sources\": {}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.784681Z\"}",
+      "rationale": "CHUBS validation: NOT_ATTESTED (0 glyphs, 0 POS instances)",
+      "author": "chubs_integrator"
     }
   ],
   "created": "2025-12-15T20:09:53.715550Z",
-  "modified": "2025-12-15T20:09:53.715550Z"
+  "modified": "2025-12-15T20:21:29.785040Z"
 }

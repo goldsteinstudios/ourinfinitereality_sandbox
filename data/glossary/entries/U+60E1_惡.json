@@ -59,8 +59,74 @@
     "falsification_threshold": null
   },
   "counter_evidence": [],
-  "chubs_validation": null,
-  "guodian_attestation": null,
+  "chubs_validation": {
+    "verdict": "GLYPHS_ONLY",
+    "glyph_count": 87,
+    "guodian_laozi": true,
+    "glyph_paths": [
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（惡）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/亞（惡）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡"
+    ],
+    "sources": {
+      "上博簡_3A-周易": 1,
+      "上博簡_6A-競公瘧": 2,
+      "上博簡_5G-三德": 4,
+      "上博簡_7A-武王踐阼": 2,
+      "上博簡_1C-性情論": 8,
+      "郭店簡_04-魯穆公問子思": 5,
+      "郭店簡_16-語叢四": 3,
+      "郭店簡_03-緇衣": 7,
+      "郭店簡_12-六德": 1,
+      "上博簡_8J-鶹鷅": 1,
+      "上博簡_4G-內禮": 1,
+      "郭店簡_13-語叢一": 1,
+      "郭店簡_01B-老子乙": 1,
+      "上博簡_5E-君子爲禮": 3,
+      "上博簡_5D-姑成家父": 2,
+      "上博簡_6J-天子建州乙": 1,
+      "郭店簡_11-性自命出": 9,
+      "葛陵簡_Y4-乙四": 1,
+      "上博簡_1B-緇衣": 9,
+      "上博簡_1A-孔子詩論": 3,
+      "上博簡_5B-鮑叔牙與隰朋之諫": 2,
+      "上博簡_2F-昔者君老": 1,
+      "上博簡_5C-季庚子問於孔子": 4,
+      "郭店簡_01A-老子甲": 1,
+      "包山簡_2-卜筮祭禱": 1,
+      "上博簡_6H-用曰": 2,
+      "上博簡_6I-天子建州甲": 1,
+      "上博簡_8F-志書乃言": 1,
+      "郭店簡_15-語叢三": 2,
+      "上博簡_2E-從政乙": 1,
+      "郭店簡_14-語叢二": 4,
+      "清華簡_06F-子產": 2
+    },
+    "pos_distribution": {},
+    "pos_percentages": {},
+    "dominant_pos": null,
+    "dominant_pos_english": null,
+    "total_pos_instances": 0,
+    "last_validated": "2025-12-15T20:21:29.783404Z"
+  },
+  "guodian_attestation": {
+    "attested": true,
+    "sources": {
+      "郭店簡_04-魯穆公問子思": 5,
+      "郭店簡_16-語叢四": 3,
+      "郭店簡_03-緇衣": 7,
+      "郭店簡_12-六德": 1,
+      "郭店簡_13-語叢一": 1,
+      "郭店簡_01B-老子乙": 1,
+      "郭店簡_11-性自命出": 9,
+      "郭店簡_01A-老子甲": 1,
+      "郭店簡_15-語叢三": 2,
+      "郭店簡_14-語叢二": 4
+    },
+    "total_instances": 34,
+    "in_laozi": true
+  },
   "font_data": {
     "traced": false,
     "vector_path": null,
@@ -93,8 +159,24 @@
       "to": "initial_entry",
       "rationale": "Entry created",
       "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:21:29.783853Z",
+      "field": "chubs_validation",
+      "from": null,
+      "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 87, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（惡）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/亞（惡）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡\"], \"sources\": {\"上博簡_3A-周易\": 1, \"上博簡_6A-競公瘧\": 2, \"上博簡_5G-三德\": 4, \"上博簡_7A-武王踐阼\": 2, \"上博簡_1C-性情論\": 8, \"郭店簡_04-魯穆公問子思\": 5, \"郭店簡_16-語叢四\": 3, \"郭店簡_03-緇衣\": 7, \"郭店簡_12-六德\": 1, \"上博簡_8J-鶹鷅\": 1, \"上博簡_4G-內禮\": 1, \"郭店簡_13-語叢一\": 1, \"郭店簡_01B-老子乙\": 1, \"上博簡_5E-君子爲禮\": 3, \"上博簡_5D-姑成家父\": 2, \"上博簡_6J-天子建州乙\": 1, \"郭店簡_11-性自命出\": 9, \"葛陵簡_Y4-乙四\": 1, \"上博簡_1B-緇衣\": 9, \"上博簡_1A-孔子詩論\": 3, \"上博簡_5B-鮑叔牙與隰朋之諫\": 2, \"上博簡_2F-昔者君老\": 1, \"上博簡_5C-季庚子問於孔子\": 4, \"郭店簡_01A-老子甲\": 1, \"包山簡_2-卜筮祭禱\": 1, \"上博簡_6H-用曰\": 2, \"上博簡_6I-天子建州甲\": 1, \"上博簡_8F-志書乃言\": 1, \"郭店簡_15-語叢三\": 2, \"上博簡_2E-從政乙\": 1, \"郭店簡_14-語叢二\": 4, \"清華簡_06F-子產\": 2}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.783404Z\"}",
+      "rationale": "CHUBS validation: GLYPHS_ONLY (87 glyphs, 0 POS instances)",
+      "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-15T20:21:39.411749Z",
+      "field": "guodian_attestation",
+      "from": null,
+      "to": "{\"attested\": true, \"sources\": {\"郭店簡_04-魯穆公問子思\": 5, \"郭店簡_16-語叢四\": 3, \"郭店簡_03-緇衣\": 7, \"郭店簡_12-六德\": 1, \"郭店簡_13-語叢一\": 1, \"郭店簡_01B-老子乙\": 1, \"郭店簡_11-性自命出\": 9, \"郭店簡_01A-老子甲\": 1, \"郭店簡_15-語叢三\": 2, \"郭店簡_14-語叢二\": 4}, \"total_instances\": 34, \"in_laozi\": true}",
+      "rationale": "Enriched from CHUBS glyph mappings",
+      "author": "chubs_integrator"
     }
   ],
   "created": "2025-12-15T20:09:53.716081Z",
-  "modified": "2025-12-15T20:09:53.716081Z"
+  "modified": "2025-12-15T20:21:39.411749Z"
 }

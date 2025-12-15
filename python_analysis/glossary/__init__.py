@@ -7,5 +7,6 @@ full version history, and integration with CHUBS validation.
 """
 
 from .manager import GlossaryManager
+from .integration import GlossaryIntegrator
 
-__all__ = ['GlossaryManager']
+__all__ = ['GlossaryManager', 'GlossaryIntegrator']

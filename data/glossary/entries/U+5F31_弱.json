@@ -54,8 +54,42 @@
     "falsification_threshold": null
   },
   "counter_evidence": [],
-  "chubs_validation": null,
-  "guodian_attestation": null,
+  "chubs_validation": {
+    "verdict": "GLYPHS_ONLY",
+    "glyph_count": 10,
+    "guodian_laozi": true,
+    "glyph_paths": [
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/溺（弱）",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（弱）"
+    ],
+    "sources": {
+      "上博簡_5B-鮑叔牙與隰朋之諫": 1,
+      "郭店簡_14-語叢二": 2,
+      "上博簡_2G-容成氏": 1,
+      "郭店簡_01A-老子甲": 2,
+      "郭店簡_16-語叢四": 1,
+      "上博簡_5D-姑成家父": 1,
+      "郭店簡_02-太一生水": 1,
+      "包山簡_1-文書": 1
+    },
+    "pos_distribution": {},
+    "pos_percentages": {},
+    "dominant_pos": null,
+    "dominant_pos_english": null,
+    "total_pos_instances": 0,
+    "last_validated": "2025-12-15T20:21:29.780312Z"
+  },
+  "guodian_attestation": {
+    "attested": true,
+    "sources": {
+      "郭店簡_14-語叢二": 2,
+      "郭店簡_01A-老子甲": 2,
+      "郭店簡_16-語叢四": 1,
+      "郭店簡_02-太一生水": 1
+    },
+    "total_instances": 6,
+    "in_laozi": true
+  },
   "font_data": {
     "traced": false,
     "vector_path": null,
@@ -88,8 +122,24 @@
       "to": "initial_entry",
       "rationale": "Entry created",
       "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:21:29.780747Z",
+      "field": "chubs_validation",
+      "from": null,
+      "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 10, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/溺（弱）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（弱）\"], \"sources\": {\"上博簡_5B-鮑叔牙與隰朋之諫\": 1, \"郭店簡_14-語叢二\": 2, \"上博簡_2G-容成氏\": 1, \"郭店簡_01A-老子甲\": 2, \"郭店簡_16-語叢四\": 1, \"上博簡_5D-姑成家父\": 1, \"郭店簡_02-太一生水\": 1, \"包山簡_1-文書\": 1}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.780312Z\"}",
+      "rationale": "CHUBS validation: GLYPHS_ONLY (10 glyphs, 0 POS instances)",
+      "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-15T20:21:39.409691Z",
+      "field": "guodian_attestation",
+      "from": null,
+      "to": "{\"attested\": true, \"sources\": {\"郭店簡_14-語叢二\": 2, \"郭店簡_01A-老子甲\": 2, \"郭店簡_16-語叢四\": 1, \"郭店簡_02-太一生水\": 1}, \"total_instances\": 6, \"in_laozi\": true}",
+      "rationale": "Enriched from CHUBS glyph mappings",
+      "author": "chubs_integrator"
     }
   ],
   "created": "2025-12-15T20:09:53.713907Z",
-  "modified": "2025-12-15T20:09:53.713907Z"
+  "modified": "2025-12-15T20:21:39.409691Z"
 }

@@ -54,8 +54,40 @@
     "falsification_threshold": null
   },
   "counter_evidence": [],
-  "chubs_validation": null,
-  "guodian_attestation": null,
+  "chubs_validation": {
+    "verdict": "GLYPHS_ONLY",
+    "glyph_count": 28,
+    "guodian_laozi": true,
+    "glyph_paths": [
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄",
+      "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄"
+    ],
+    "sources": {
+      "清華簡_09E-禱辭": 4,
+      "葛陵簡_J3-甲三": 2,
+      "上博簡_5C-季庚子問於孔子": 2,
+      "郭店簡_01A-老子甲": 4,
+      "曾侯乙簡_2-B組": 4,
+      "子彈庫帛_1-四時令": 4,
+      "上博簡_2B-子羔": 2,
+      "包山簡_1-文書": 4,
+      "曾侯乙簡_1-A組": 2
+    },
+    "pos_distribution": {},
+    "pos_percentages": {},
+    "dominant_pos": null,
+    "dominant_pos_english": null,
+    "total_pos_instances": 0,
+    "last_validated": "2025-12-15T20:21:29.815119Z"
+  },
+  "guodian_attestation": {
+    "attested": true,
+    "sources": {
+      "郭店簡_01A-老子甲": 4
+    },
+    "total_instances": 4,
+    "in_laozi": true
+  },
   "font_data": {
     "traced": false,
     "vector_path": null,
@@ -88,8 +120,24 @@
       "to": "initial_entry",
       "rationale": "Entry created",
       "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:21:29.815546Z",
+      "field": "chubs_validation",
+      "from": null,
+      "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 28, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄\"], \"sources\": {\"清華簡_09E-禱辭\": 4, \"葛陵簡_J3-甲三\": 2, \"上博簡_5C-季庚子問於孔子\": 2, \"郭店簡_01A-老子甲\": 4, \"曾侯乙簡_2-B組\": 4, \"子彈庫帛_1-四時令\": 4, \"上博簡_2B-子羔\": 2, \"包山簡_1-文書\": 4, \"曾侯乙簡_1-A組\": 2}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.815119Z\"}",
+      "rationale": "CHUBS validation: GLYPHS_ONLY (28 glyphs, 0 POS instances)",
+      "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-15T20:21:39.415019Z",
+      "field": "guodian_attestation",
+      "from": null,
+      "to": "{\"attested\": true, \"sources\": {\"郭店簡_01A-老子甲\": 4}, \"total_instances\": 4, \"in_laozi\": true}",
+      "rationale": "Enriched from CHUBS glyph mappings",
+      "author": "chubs_integrator"
     }
   ],
   "created": "2025-12-15T20:09:53.719377Z",
-  "modified": "2025-12-15T20:09:53.719377Z"
+  "modified": "2025-12-15T20:21:39.415019Z"
 }
