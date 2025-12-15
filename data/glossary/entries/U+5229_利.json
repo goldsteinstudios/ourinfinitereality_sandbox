@@ -1,0 +1,100 @@
+{
+  "character": "利",
+  "unicode": "U+5229",
+  "pinyin": "",
+  "current_translation": {
+    "primary": "constraint",
+    "structural": "constraint, path-cutting through field",
+    "traditional": "benefit, advantage",
+    "notes": ""
+  },
+  "confidence": "provisional",
+  "confidence_score": 0.5,
+  "radical_decomposition": {
+    "standard": {
+      "components": [
+        {
+          "component": "禾",
+          "meaning": "grain",
+          "position": "unknown"
+        },
+        {
+          "component": "刀",
+          "meaning": "knife",
+          "position": "unknown"
+        }
+      ]
+    },
+    "agricultural": {
+      "components": []
+    },
+    "preferred": null,
+    "preference_rationale": null
+  },
+  "character_evolution": {
+    "oracle_bone": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "bronze": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "chu": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "seal": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    }
+  },
+  "agricultural_hypothesis": {
+    "claim": null,
+    "predictions": [],
+    "falsification_threshold": null
+  },
+  "counter_evidence": [],
+  "chubs_validation": null,
+  "guodian_attestation": null,
+  "font_data": {
+    "traced": false,
+    "vector_path": null,
+    "source_images": [],
+    "extracted_features": null,
+    "tracing_metadata": null
+  },
+  "semantic_field": null,
+  "pictographic_analysis": null,
+  "exemplar_provenance": null,
+  "cross_references": {
+    "related_characters": [],
+    "ddj_chapters": [],
+    "lexicon_category": "substrate",
+    "rsm_mapping": null
+  },
+  "history": [
+    {
+      "date": "2025-12-15T20:09:53.712191Z",
+      "field": "created",
+      "from": null,
+      "to": "migrated_from_validated_characters.json",
+      "rationale": "Migration from legacy format. Original validation: TEST6, TEST7",
+      "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:09:53.712239Z",
+      "field": "created",
+      "from": null,
+      "to": "initial_entry",
+      "rationale": "Entry created",
+      "author": "migration_script"
+    }
+  ],
+  "created": "2025-12-15T20:09:53.712239Z",
+  "modified": "2025-12-15T20:09:53.712239Z"
+}

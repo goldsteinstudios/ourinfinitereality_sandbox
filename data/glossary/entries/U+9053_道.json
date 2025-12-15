@@ -1,0 +1,121 @@
+{
+  "character": "道",
+  "unicode": "U+9053",
+  "pinyin": "dao4",
+  "current_translation": {
+    "primary": "pattern",
+    "structural": "continuous aligned movement with governing primary",
+    "traditional": "way, path, the Tao",
+    "notes": ""
+  },
+  "confidence": "speculative",
+  "confidence_score": 0.3,
+  "radical_decomposition": {
+    "standard": {
+      "components": [
+        {
+          "component": "辶",
+          "meaning": "movement",
+          "position": "bottom"
+        },
+        {
+          "component": "首",
+          "meaning": "head",
+          "position": "top"
+        }
+      ]
+    },
+    "agricultural": {
+      "components": [
+        {
+          "component": "walking_figure",
+          "meaning": "person carrying load",
+          "position": "bottom",
+          "pictographic_origin": "Figure in motion with burden"
+        },
+        {
+          "component": "vessel",
+          "meaning": "water container on pole",
+          "position": "top",
+          "pictographic_origin": "Container shape with carrying structure"
+        }
+      ]
+    },
+    "preferred": null,
+    "preference_rationale": null
+  },
+  "character_evolution": {
+    "oracle_bone": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "bronze": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "chu": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "seal": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    }
+  },
+  "agricultural_hypothesis": {
+    "claim": null,
+    "predictions": [],
+    "falsification_threshold": null
+  },
+  "counter_evidence": [],
+  "chubs_validation": null,
+  "guodian_attestation": null,
+  "font_data": {
+    "traced": false,
+    "vector_path": null,
+    "source_images": [],
+    "extracted_features": null,
+    "tracing_metadata": null
+  },
+  "semantic_field": null,
+  "pictographic_analysis": null,
+  "exemplar_provenance": null,
+  "cross_references": {
+    "related_characters": [],
+    "ddj_chapters": [],
+    "lexicon_category": null,
+    "rsm_mapping": null
+  },
+  "history": [
+    {
+      "date": "2025-12-15T20:11:40.344663Z",
+      "field": "created",
+      "from": null,
+      "to": "initial_entry",
+      "rationale": "Entry created",
+      "author": "cli"
+    },
+    {
+      "date": "2025-12-15T20:12:12.177730Z",
+      "field": "radical_decomposition.standard.components",
+      "from": "[]",
+      "to": "[{\"component\": \"辶\", \"meaning\": \"movement\", \"position\": \"bottom\"}, {\"component\": \"首\", \"meaning\": \"head\", \"position\": \"top\"}]",
+      "rationale": "Standard Kangxi radical analysis",
+      "author": "cli"
+    },
+    {
+      "date": "2025-12-15T20:12:20.160975Z",
+      "field": "radical_decomposition.agricultural.components",
+      "from": "[]",
+      "to": "[{\"component\": \"walking_figure\", \"meaning\": \"person carrying load\", \"position\": \"bottom\", \"pictographic_origin\": \"Figure in motion with burden\"}, {\"component\": \"vessel\", \"meaning\": \"water container on pole\", \"position\": \"top\", \"pictographic_origin\": \"Container shape with carrying structure\"}]",
+      "rationale": "Agricultural hypothesis: water-carrier pictograph",
+      "author": "cli"
+    }
+  ],
+  "created": "2025-12-15T20:11:40.344663Z",
+  "modified": "2025-12-15T20:12:20.160975Z"
+}

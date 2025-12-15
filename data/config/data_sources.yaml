@@ -1,0 +1,47 @@
+# Cross-stage etymology data sources
+# Used for character_evolution field population
+
+cross_stage_sources:
+  oracle_bone:
+    primary: "甲骨文合集 (Jiaguwen Heji)"
+    digital: "Academia Sinica Oracle Bone Database"
+    url: "https://xiaoxue.iis.sinica.edu.tw/jiaguwen"
+    access_method: "web_scrape"
+    licensing: "academic_use"
+    notes: "Searchable database of oracle bone inscriptions"
+
+  bronze:
+    primary: "殷周金文集成 (Yin Zhou Jinwen Jicheng)"
+    digital: "CHANT Database (CUHK)"
+    url: "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/"
+    access_method: "manual_download"
+    licensing: "academic_use"
+    notes: "Chinese Ancient Texts database with bronze inscriptions"
+
+  chu:
+    primary: "CHUBS Dataset"
+    digital: "HuggingFace"
+    url: "https://huggingface.co/datasets/chen-yingfa/CHUBS"
+    access_method: "git_clone"
+    licensing: "Apache 2.0"
+    local_path: "data/CHUBS_repo"
+    notes: "Primary source for Chu bamboo slip characters"
+
+  seal:
+    primary: "說文解字 (Shuowen Jiezi)"
+    digital: "Chinese Text Project"
+    url: "https://ctext.org/shuo-wen-jie-zi"
+    access_method: "api"
+    licensing: "public_domain"
+    notes: "Han dynasty character dictionary with seal script forms"
+
+additional_sources:
+  guodian_images:
+    description: "Guodian bamboo slip photographs"
+    location: "translations/archaeology/source_images/"
+    type: "local"
+
+  twelve_book_mappings:
+    description: "Pre-computed glyph mappings for 12-book structure"
+    location: "data/CHUBS_repo/twelve_book_glyph_mappings.json"
+    type: "local"

@@ -1,0 +1,1592 @@
+{
+  "仁": {
+    "character": "仁",
+    "unicode": "U+4EC1",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "relational accommodation between two entities",
+      "structural": "relational accommodation between two entities",
+      "traditional": "benevolence, humaneness",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "人",
+            "meaning": "person",
+            "position": "unknown"
+          },
+          {
+            "component": "二",
+            "meaning": "two",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.712749Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.712794Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.712794Z",
+    "modified": "2025-12-15T20:09:53.712794Z"
+  },
+  "利": {
+    "character": "利",
+    "unicode": "U+5229",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "constraint",
+      "structural": "constraint, path-cutting through field",
+      "traditional": "benefit, advantage",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "禾",
+            "meaning": "grain",
+            "position": "unknown"
+          },
+          {
+            "component": "刀",
+            "meaning": "knife",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.712191Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST6, TEST7",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.712239Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.712239Z",
+    "modified": "2025-12-15T20:09:53.712239Z"
+  },
+  "反": {
+    "character": "反",
+    "unicode": "U+53CD",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "reversal",
+      "structural": "reversal, oscillation, unitary conjugation",
+      "traditional": "return, oppose",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "又",
+            "meaning": "hand",
+            "position": "unknown"
+          },
+          {
+            "component": "厂",
+            "meaning": "cliff",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": "Pending Tier 1 analysis"
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.713313Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1, TEST2",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.713357Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.713357Z",
+    "modified": "2025-12-15T20:09:53.713357Z"
+  },
+  "名": {
+    "character": "名",
+    "unicode": "U+540D",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "explicit",
+      "structural": "explicit, manifest, that which has interface",
+      "traditional": "name, reputation",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "夕",
+            "meaning": "evening",
+            "position": "unknown"
+          },
+          {
+            "component": "口",
+            "meaning": "mouth",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.718216Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.718261Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.718261Z",
+    "modified": "2025-12-15T20:09:53.718261Z"
+  },
+  "和": {
+    "character": "和",
+    "unicode": "U+548C",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "distribution through opening",
+      "structural": "distribution through opening, flow equilibrium",
+      "traditional": "harmony, peace",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "禾",
+            "meaning": "grain",
+            "position": "unknown"
+          },
+          {
+            "component": "口",
+            "meaning": "mouth/opening",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.717636Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST7",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.717680Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.717680Z",
+    "modified": "2025-12-15T20:09:53.717680Z"
+  },
+  "常": {
+    "character": "常",
+    "unicode": "U+5E38",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "implicit",
+      "structural": "implicit, concealed, that which has no interface",
+      "traditional": "eternal, constant",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "巾",
+            "meaning": "cloth",
+            "position": "unknown"
+          },
+          {
+            "component": "尚",
+            "meaning": "elevated",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.710069Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.710539Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.710539Z",
+    "modified": "2025-12-15T20:09:53.710539Z"
+  },
+  "弱": {
+    "character": "弱",
+    "unicode": "U+5F31",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "flexible",
+      "structural": "flexible, indefinite, superposition state",
+      "traditional": "weak, feeble",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "弓+弓",
+            "meaning": "double bow",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": "Pending Tier 1 analysis"
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.713864Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1, TEST2",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.713907Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.713907Z",
+    "modified": "2025-12-15T20:09:53.713907Z"
+  },
+  "德": {
+    "character": "德",
+    "unicode": "U+5FB7",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "straight path in internal-state motion",
+      "structural": "straight path in internal-state motion",
+      "traditional": "virtue, moral character",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "彳",
+            "meaning": "step",
+            "position": "unknown"
+          },
+          {
+            "component": "直",
+            "meaning": "straight",
+            "position": "unknown"
+          },
+          {
+            "component": "心",
+            "meaning": "internal",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": "Pending Tier 1 analysis"
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.714404Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.714449Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.714449Z",
+    "modified": "2025-12-15T20:09:53.714449Z"
+  },
+  "惡": {
+    "character": "惡",
+    "unicode": "U+60E1",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "degraded state mode",
+      "structural": "degraded state mode, inferior configuration",
+      "traditional": "evil, wickedness",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "心",
+            "meaning": "heart",
+            "position": "unknown"
+          },
+          {
+            "component": "亞",
+            "meaning": "inferior",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.716037Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.716081Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.716081Z",
+    "modified": "2025-12-15T20:09:53.716081Z"
+  },
+  "愛": {
+    "character": "愛",
+    "unicode": "U+611B",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "attractive bonding force between states",
+      "structural": "attractive bonding force between states",
+      "traditional": "love, affection",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "心",
+            "meaning": "heart",
+            "position": "unknown"
+          },
+          {
+            "component": "友",
+            "meaning": "friend",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.715505Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.715550Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.715550Z",
+    "modified": "2025-12-15T20:09:53.715550Z"
+  },
+  "慈": {
+    "character": "慈",
+    "unicode": "U+6148",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "expansive internal state (multiplication operator)",
+      "structural": "expansive internal state (multiplication operator)",
+      "traditional": "compassion, kindness",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "心",
+            "meaning": "heart",
+            "position": "unknown"
+          },
+          {
+            "component": "茲",
+            "meaning": "multiply",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.714943Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.714988Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.714988Z",
+    "modified": "2025-12-15T20:09:53.714988Z"
+  },
+  "欲": {
+    "character": "欲",
+    "unicode": "U+6B32",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "directed orientation",
+      "structural": "directed orientation, tendency toward",
+      "traditional": "desire, craving (moral weakness)",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "谷",
+            "meaning": "valley",
+            "position": "unknown"
+          },
+          {
+            "component": "欠",
+            "meaning": "opening",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.711268Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.711319Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.711319Z",
+    "modified": "2025-12-15T20:09:53.711319Z"
+  },
+  "治": {
+    "character": "治",
+    "unicode": "U+6CBB",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "channeling flow through constructed platform",
+      "structural": "channeling flow through constructed platform",
+      "traditional": "govern, rule",
+      "notes": "13 occurrences - most frequent! Governance IS flow management"
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "氵",
+            "meaning": "water",
+            "position": "unknown"
+          },
+          {
+            "component": "台",
+            "meaning": "platform",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.716566Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST8",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.716611Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.716611Z",
+    "modified": "2025-12-15T20:09:53.716611Z"
+  },
+  "清": {
+    "character": "清",
+    "unicode": "U+6E05",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "transparent medium",
+      "structural": "transparent medium, light unimpeded through fluid",
+      "traditional": "pure, clear",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "氵",
+            "meaning": "water",
+            "position": "unknown"
+          },
+          {
+            "component": "青",
+            "meaning": "blue/pure",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.717109Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST8",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.717154Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.717154Z",
+    "modified": "2025-12-15T20:09:53.717154Z"
+  },
+  "玄": {
+    "character": "玄",
+    "unicode": "U+7384",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "dark/subtle entry point",
+      "structural": "dark/subtle entry point, inaccessible boundary",
+      "traditional": "mysterious, profound",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "Threading/subtle connection",
+            "meaning": "",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.719335Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.719377Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.719377Z",
+    "modified": "2025-12-15T20:09:53.719377Z"
+  },
+  "非": {
+    "character": "非",
+    "unicode": "U+975E",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "complementary pair",
+      "structural": "complementary pair, dual aspects",
+      "traditional": "not, wrong",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "Two mirrored elements showing duality",
+            "meaning": "",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": null,
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.718777Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.718818Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.718818Z",
+    "modified": "2025-12-15T20:09:53.718818Z"
+  }
+}

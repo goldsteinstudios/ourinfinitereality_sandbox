@@ -1,0 +1,81 @@
+{
+  "character": "者",
+  "unicode": "U+8005",
+  "pinyin": "zhe3",
+  "current_translation": {
+    "primary": "that which",
+    "structural": "nominalization operator, pattern instantiation",
+    "traditional": "one who, that which",
+    "notes": ""
+  },
+  "confidence": "speculative",
+  "confidence_score": 0.3,
+  "radical_decomposition": {
+    "standard": {
+      "components": []
+    },
+    "agricultural": {
+      "components": []
+    },
+    "preferred": null,
+    "preference_rationale": null
+  },
+  "character_evolution": {
+    "oracle_bone": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "bronze": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "chu": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "seal": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    }
+  },
+  "agricultural_hypothesis": {
+    "claim": null,
+    "predictions": [],
+    "falsification_threshold": null
+  },
+  "counter_evidence": [],
+  "chubs_validation": null,
+  "guodian_attestation": null,
+  "font_data": {
+    "traced": false,
+    "vector_path": null,
+    "source_images": [],
+    "extracted_features": null,
+    "tracing_metadata": null
+  },
+  "semantic_field": null,
+  "pictographic_analysis": null,
+  "exemplar_provenance": null,
+  "cross_references": {
+    "related_characters": [],
+    "ddj_chapters": [],
+    "lexicon_category": null,
+    "rsm_mapping": null
+  },
+  "history": [
+    {
+      "date": "2025-12-15T20:11:48.624657Z",
+      "field": "created",
+      "from": null,
+      "to": "initial_entry",
+      "rationale": "Entry created",
+      "author": "cli"
+    }
+  ],
+  "created": "2025-12-15T20:11:48.624657Z",
+  "modified": "2025-12-15T20:11:48.624657Z"
+}

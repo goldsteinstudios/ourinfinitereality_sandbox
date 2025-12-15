@@ -1,0 +1,100 @@
+{
+  "character": "和",
+  "unicode": "U+548C",
+  "pinyin": "",
+  "current_translation": {
+    "primary": "distribution through opening",
+    "structural": "distribution through opening, flow equilibrium",
+    "traditional": "harmony, peace",
+    "notes": ""
+  },
+  "confidence": "provisional",
+  "confidence_score": 0.5,
+  "radical_decomposition": {
+    "standard": {
+      "components": [
+        {
+          "component": "禾",
+          "meaning": "grain",
+          "position": "unknown"
+        },
+        {
+          "component": "口",
+          "meaning": "mouth/opening",
+          "position": "unknown"
+        }
+      ]
+    },
+    "agricultural": {
+      "components": []
+    },
+    "preferred": null,
+    "preference_rationale": null
+  },
+  "character_evolution": {
+    "oracle_bone": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "bronze": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "chu": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    },
+    "seal": {
+      "attested": null,
+      "image_refs": [],
+      "analysis": null
+    }
+  },
+  "agricultural_hypothesis": {
+    "claim": null,
+    "predictions": [],
+    "falsification_threshold": null
+  },
+  "counter_evidence": [],
+  "chubs_validation": null,
+  "guodian_attestation": null,
+  "font_data": {
+    "traced": false,
+    "vector_path": null,
+    "source_images": [],
+    "extracted_features": null,
+    "tracing_metadata": null
+  },
+  "semantic_field": null,
+  "pictographic_analysis": null,
+  "exemplar_provenance": null,
+  "cross_references": {
+    "related_characters": [],
+    "ddj_chapters": [],
+    "lexicon_category": "substrate",
+    "rsm_mapping": null
+  },
+  "history": [
+    {
+      "date": "2025-12-15T20:09:53.717636Z",
+      "field": "created",
+      "from": null,
+      "to": "migrated_from_validated_characters.json",
+      "rationale": "Migration from legacy format. Original validation: TEST7",
+      "author": "migration_script"
+    },
+    {
+      "date": "2025-12-15T20:09:53.717680Z",
+      "field": "created",
+      "from": null,
+      "to": "initial_entry",
+      "rationale": "Entry created",
+      "author": "migration_script"
+    }
+  ],
+  "created": "2025-12-15T20:09:53.717680Z",
+  "modified": "2025-12-15T20:09:53.717680Z"
+}
