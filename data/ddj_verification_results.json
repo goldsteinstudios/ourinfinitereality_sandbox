@@ -1,0 +1,2504 @@
+[
+  {
+    "character": "反",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "副词",
+    "primary_pos_english": "adverb",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "天",
+        "next": "風",
+        "pos": "副词",
+        "sentence": "天反風，"
+      }
+    ],
+    "translation_note": "reversal as movement"
+  },
+  {
+    "character": "弱",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "yielding as function"
+  },
+  {
+    "character": "動",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "movement of dao"
+  },
+  {
+    "character": "用",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 24,
+    "distribution": [
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 14,
+        "percentage": 58.3
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 8,
+        "percentage": 33.3
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 4.2
+      },
+      {
+        "pos": "介词",
+        "pos_english": "preposition",
+        "count": 1,
+        "percentage": 4.2
+      }
+    ],
+    "primary_pos": "连词",
+    "primary_pos_english": "conjunction",
+    "claimed_percentage": 4.2,
+    "verdict": "MINORITY_USAGE",
+    "examples": [
+      {
+        "prev": "不",
+        "next": "明",
+        "pos": "动词",
+        "sentence": "㣈朕𴿠人非敢不用明刑，"
+      },
+      {
+        "prev": "王",
+        "next": "，",
+        "pos": "连词",
+        "sentence": "王用，"
+      },
+      {
+        "prev": null,
+        "next": "克",
+        "pos": "连词",
+        "sentence": "用克和又成，"
+      }
+    ],
+    "translation_note": "function of dao"
+  },
+  {
+    "character": "復",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "return/cycle back"
+  },
+  {
+    "character": "歸",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "return home"
+  },
+  {
+    "character": "根",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "root"
+  },
+  {
+    "character": "虛",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "emptiness/void"
+  },
+  {
+    "character": "屈",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "compressed/bent"
+  },
+  {
+    "character": "出",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 5,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 5,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "肈",
+        "next": "內",
+        "pos": "动词",
+        "sentence": "肈出內朕命，"
+      },
+      {
+        "prev": "乃",
+        "next": "。",
+        "pos": "动词",
+        "sentence": "乃出。"
+      },
+      {
+        "prev": "天",
+        "next": "不",
+        "pos": "动词",
+        "sentence": "𴻭天出不恙，"
+      }
+    ],
+    "translation_note": "emerge"
+  },
+  {
+    "character": "混",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "undifferentiated"
+  },
+  {
+    "character": "成",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 6,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 3,
+        "percentage": 50.0
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 2,
+        "percentage": 33.3
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 1,
+        "percentage": 16.7
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 50.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "而",
+        "next": "大",
+        "pos": "动词",
+        "sentence": "[天]生民而成大命𴺡"
+      },
+      {
+        "prev": "又",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "用克和又成，"
+      },
+      {
+        "prev": "亡",
+        "next": "。",
+        "pos": "形容词",
+        "sentence": "獄用亡成。"
+      }
+    ],
+    "translation_note": "complete/achieve"
+  },
+  {
+    "character": "大",
+    "found": true,
+    "claimed_pos": "adjective",
+    "total_occurrences": 41,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 22,
+        "percentage": 53.7
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 8,
+        "percentage": 19.5
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 6,
+        "percentage": 14.6
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 5,
+        "percentage": 12.2
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 14.6,
+    "verdict": "MINORITY_USAGE",
+    "examples": [
+      {
+        "prev": "成",
+        "next": "命",
+        "pos": "名词",
+        "sentence": "[天]生民而成大命𴺡"
+      },
+      {
+        "prev": "“",
+        "next": "命",
+        "pos": "名词",
+        "sentence": "曰：“大命又𵁎，"
+      },
+      {
+        "prev": "于",
+        "next": "室",
+        "pos": "名词",
+        "sentence": "各于大室，"
+      }
+    ],
+    "translation_note": "great/unbounded"
+  },
+  {
+    "character": "潰",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "overflow (Guodian variant)"
+  },
+  {
+    "character": "遠",
+    "found": true,
+    "claimed_pos": "adjective",
+    "total_occurrences": 7,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 4,
+        "percentage": 57.1
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 14.3
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 28.6,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": null,
+        "next": "土",
+        "pos": "名词",
+        "sentence": "遠土不承，"
+      },
+      {
+        "prev": "亡",
+        "next": "，",
+        "pos": "形容词",
+        "sentence": "𴿺夫又埶亡遠，"
+      },
+      {
+        "prev": "不",
+        "next": "。",
+        "pos": "动词",
+        "sentence": "𴿋不遠。"
+      }
+    ],
+    "translation_note": "far/extended"
+  },
+  {
+    "character": "法",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "）",
+        "pos": "名词",
+        "sentence": "法）以智耑𴺡以智𵁺𴺡以智𵁻𴺡以智夊。"
+      }
+    ],
+    "translation_note": "model/pattern after"
+  },
+  {
+    "character": "自",
+    "found": true,
+    "claimed_pos": "pronoun",
+    "total_occurrences": 15,
+    "distribution": [
+      {
+        "pos": "介词",
+        "pos_english": "preposition",
+        "count": 7,
+        "percentage": 46.7
+      },
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 7,
+        "percentage": 46.7
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 6.7
+      }
+    ],
+    "primary_pos": "介词",
+    "primary_pos_english": "preposition",
+    "claimed_percentage": 46.7,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": null,
+        "next": "𴿧",
+        "pos": "介词",
+        "sentence": "自𴿧臣至于又貧厶子，"
+      },
+      {
+        "prev": "以",
+        "next": "𩂣",
+        "pos": "代词",
+        "sentence": "以自𩂣氒𴿥。"
+      },
+      {
+        "prev": "𴸎",
+        "next": "𴸤",
+        "pos": "代词",
+        "sentence": "“𴸎自𴸤亓又民，"
+      }
+    ],
+    "translation_note": "self"
+  },
+  {
+    "character": "然",
+    "found": true,
+    "claimed_pos": "particle",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "旦",
+        "next": "。",
+        "pos": "动词",
+        "sentence": "‘旦然。"
+      }
+    ],
+    "translation_note": "so/thus (-ness suffix)"
+  },
+  {
+    "character": "樸",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "uncarved block"
+  },
+  {
+    "character": "止",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "stop"
+  },
+  {
+    "character": "美",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "beauty"
+  },
+  {
+    "character": "惡",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "ugliness"
+  },
+  {
+    "character": "善",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "夫",
+        "pos": "名词",
+        "sentence": "善夫）莫達才王所。"
+      }
+    ],
+    "translation_note": "good/skill"
+  },
+  {
+    "character": "相",
+    "found": true,
+    "claimed_pos": "adverb",
+    "total_occurrences": 3,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "辟",
+        "next": "隹",
+        "pos": "名词",
+        "sentence": "余辟相隹卸事，"
+      },
+      {
+        "prev": "𴾉",
+        "next": "而",
+        "pos": "动词",
+        "sentence": "女【一六】母各𴾉相而室，"
+      },
+      {
+        "prev": "𴿥",
+        "next": "氒",
+        "pos": "动词",
+        "sentence": "以𴿥相氒室，"
+      }
+    ],
+    "translation_note": "mutually"
+  },
+  {
+    "character": "生",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 8,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 6,
+        "percentage": 75.0
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 1,
+        "percentage": 12.5
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 12.5
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 75.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "]",
+        "next": "民",
+        "pos": "动词",
+        "sentence": "[天]生民而成大命𴺡"
+      },
+      {
+        "prev": "民",
+        "next": "而",
+        "pos": "动词",
+        "sentence": "夫民生而佴不明，"
+      },
+      {
+        "prev": "民",
+        "next": "而",
+        "pos": "连词",
+        "sentence": "夫民生而樂生𵁗，"
+      }
+    ],
+    "translation_note": "co-emerge/arise"
+  },
+  {
+    "character": "形",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "shape each other"
+  },
+  {
+    "character": "盈",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "fill each other"
+  },
+  {
+    "character": "和",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 7,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 4,
+        "percentage": 57.1
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 2,
+        "percentage": 28.6
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 14.3
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 57.1,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "克",
+        "next": "又",
+        "pos": "动词",
+        "sentence": "用克和又成，"
+      },
+      {
+        "prev": "𴾇",
+        "next": "周",
+        "pos": "动词",
+        "sentence": "𴾇和周邦，"
+      },
+      {
+        "prev": "𴼊",
+        "next": "川",
+        "pos": "形容词",
+        "sentence": "思卑𴼊和川，"
+      }
+    ],
+    "translation_note": "harmonize"
+  },
+  {
+    "character": "隨",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "follow"
+  },
+  {
+    "character": "化",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "transform"
+  },
+  {
+    "character": "欲",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 2,
+    "distribution": [
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "primary_pos": "助词",
+    "primary_pos_english": "particle",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "】",
+        "next": "隹",
+        "pos": "助词",
+        "sentence": "意【七】欲隹柏？"
+      },
+      {
+        "prev": "多",
+        "next": "。",
+        "pos": "动词",
+        "sentence": "眚之多欲。"
+      }
+    ],
+    "translation_note": "desire"
+  },
+  {
+    "character": "定",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "stabilize"
+  },
+  {
+    "character": "正",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 12,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 8,
+        "percentage": 66.7
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 4,
+        "percentage": 33.3
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 33.3,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": "悳",
+        "next": "以",
+        "pos": "动词",
+        "sentence": "命)司悳正以𵁌福，"
+      },
+      {
+        "prev": "命",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "女有命正，"
+      },
+      {
+        "prev": "卽",
+        "next": "，",
+        "pos": "动词",
+        "sentence": "有卽正，"
+      }
+    ],
+    "translation_note": "correct/align"
+  },
+  {
+    "character": "輔",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "余",
+        "pos": "动词",
+        "sentence": "輔余于險，"
+      }
+    ],
+    "translation_note": "assist"
+  },
+  {
+    "character": "敢",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 13,
+    "distribution": [
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 13,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "助词",
+    "primary_pos_english": "particle",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "母",
+        "next": "㯱",
+        "pos": "助词",
+        "sentence": "女母敢㯱=。"
+      },
+      {
+        "prev": "】",
+        "next": "鬼",
+        "pos": "助词",
+        "sentence": "女亦母【廿一】敢鬼甬不審不允。”"
+      },
+      {
+        "prev": "毋",
+        "next": "朋",
+        "pos": "助词",
+        "sentence": "女毋敢朋𴽒于酉，"
+      }
+    ],
+    "translation_note": "dare"
+  },
+  {
+    "character": "執",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 7,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 6,
+        "percentage": 85.7
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 14.3
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 14.3,
+    "verdict": "MINORITY_USAGE",
+    "examples": [
+      {
+        "prev": "𴻞",
+        "next": "朕",
+        "pos": "动词",
+        "sentence": "‘隹帝以余畀尔𴸃𴻞執朕袂，"
+      },
+      {
+        "prev": "𴹜",
+        "next": "事",
+        "pos": "名词",
+        "sentence": "王𴹜執事人，"
+      },
+      {
+        "prev": "命",
+        "next": "事",
+        "pos": "名词",
+        "sentence": "乃命執事人曰："
+      }
+    ],
+    "translation_note": "grasp/hold"
+  },
+  {
+    "character": "常",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "the constant"
+  },
+  {
+    "character": "明",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 30,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 15,
+        "percentage": 50.0
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 10,
+        "percentage": 33.3
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 3,
+        "percentage": 10.0
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 2,
+        "percentage": 6.7
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 50.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "立",
+        "next": "王",
+        "pos": "名词",
+        "sentence": "立明王以𵁍之，"
+      },
+      {
+        "prev": "不",
+        "next": "，",
+        "pos": "动词",
+        "sentence": "夫民生而佴不明，"
+      },
+      {
+        "prev": "以",
+        "next": "之",
+        "pos": "动词",
+        "sentence": "𵁖以明之，"
+      }
+    ],
+    "translation_note": "clarity/illumination"
+  },
+  {
+    "character": "若",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 28,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 17,
+        "percentage": 60.7
+      },
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 6,
+        "percentage": 21.4
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 3,
+        "percentage": 10.7
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 2,
+        "percentage": 7.1
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 60.7,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "民",
+        "next": "否",
+        "pos": "形容词",
+        "sentence": "隹人乃亦無智亡𴽗于民若否。"
+      },
+      {
+        "prev": "之",
+        "next": "否",
+        "pos": "形容词",
+        "sentence": "甚余我邦之若否，"
+      },
+      {
+        "prev": "公",
+        "next": "曰",
+        "pos": "代词",
+        "sentence": "公若曰："
+      }
+    ],
+    "translation_note": "appears as (frame operator)"
+  },
+  {
+    "character": "笑",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "laugh at"
+  },
+  {
+    "character": "士",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 6,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 6,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "疌",
+        "pos": "名词",
+        "sentence": "士疌右白𴼬，"
+      },
+      {
+        "prev": "俾",
+        "next": "息",
+        "pos": "名词",
+        "sentence": "女母以俾士息夫𴽹、卿𴾨，"
+      },
+      {
+        "prev": "良",
+        "next": "之",
+        "pos": "名词",
+        "sentence": "是隹良士之䢍=。"
+      }
+    ],
+    "translation_note": "practitioner/scholar"
+  },
+  {
+    "character": "聞",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "hear/encounter"
+  },
+  {
+    "character": "知",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "know"
+  },
+  {
+    "character": "言",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 23,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 16,
+        "percentage": 69.6
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 7,
+        "percentage": 30.4
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 30.4,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": "有",
+        "next": "多",
+        "pos": "名词",
+        "sentence": "人有言多，"
+      },
+      {
+        "prev": "余",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "女其有𴽙有甚，乃眔余言，"
+      },
+      {
+        "prev": null,
+        "next": "隹",
+        "pos": "名词",
+        "sentence": "言隹明，"
+      }
+    ],
+    "translation_note": "speak"
+  },
+  {
+    "character": "塞",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "block"
+  },
+  {
+    "character": "閉",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "close"
+  },
+  {
+    "character": "解",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 3,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 3,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "不",
+        "next": "，",
+        "pos": "动词",
+        "sentence": "𴺞備不解，"
+      },
+      {
+        "prev": "母",
+        "next": "，",
+        "pos": "动词",
+        "sentence": "今女𴺞備母解，"
+      },
+      {
+        "prev": "不",
+        "next": "，",
+        "pos": "动词",
+        "sentence": "。翼𴸃不解，"
+      }
+    ],
+    "translation_note": "untangle"
+  },
+  {
+    "character": "玄",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "mysterious/paradoxical"
+  },
+  {
+    "character": "同",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 2,
+    "distribution": [
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 1,
+        "percentage": 50.0
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 50.0
+      }
+    ],
+    "primary_pos": "形容词",
+    "primary_pos_english": "adjective",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "和",
+        "next": "。",
+        "pos": "形容词",
+        "sentence": "庶民和同。"
+      },
+      {
+        "prev": "坦",
+        "next": "𴸷",
+        "pos": "动词",
+        "sentence": "周公乃爲三坦同𴸷，"
+      }
+    ],
+    "translation_note": "sameness"
+  },
+  {
+    "character": "足",
+    "found": true,
+    "claimed_pos": "adjective",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "形容词",
+    "primary_pos_english": "adjective",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "不",
+        "next": "隹",
+        "pos": "形容词",
+        "sentence": "日不足隹𠉦不羕。”"
+      }
+    ],
+    "translation_note": "sufficient"
+  },
+  {
+    "character": "止",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "stop"
+  },
+  {
+    "character": "得",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "gain/obtain"
+  },
+  {
+    "character": "亡",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 41,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 22,
+        "percentage": 53.7
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 7,
+        "percentage": 17.1
+      },
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 5,
+        "percentage": 12.2
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 4,
+        "percentage": 9.8
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 3,
+        "percentage": 7.3
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 53.7,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "能",
+        "next": "佴",
+        "pos": "副词",
+        "sentence": "能亡佴𵁔？"
+      },
+      {
+        "prev": "獄",
+        "next": "𴽆",
+        "pos": "动词",
+        "sentence": "凡人無獄亡𴽆，"
+      },
+      {
+        "prev": "智",
+        "next": "𴽗",
+        "pos": "副词",
+        "sentence": "隹人乃亦無智亡𴽗于民若否。"
+      }
+    ],
+    "translation_note": "lose/lack"
+  },
+  {
+    "character": "病",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "sickness/malfunction"
+  },
+  {
+    "character": "母",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 36,
+    "distribution": [
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 35,
+        "percentage": 97.2
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 2.8
+      }
+    ],
+    "primary_pos": "副词",
+    "primary_pos_english": "adverb",
+    "claimed_percentage": 2.8,
+    "verdict": "MINORITY_USAGE",
+    "examples": [
+      {
+        "prev": "]",
+        "next": "𵁓",
+        "pos": "副词",
+        "sentence": "人）[能]母𵁓𵁔？"
+      },
+      {
+        "prev": "能",
+        "next": "懽",
+        "pos": "副词",
+        "sentence": "能母懽𵁔？"
+      },
+      {
+        "prev": "）",
+        "next": "𴽢",
+        "pos": "副词",
+        "sentence": "汝）母𴽢，"
+      }
+    ],
+    "translation_note": "mother/source"
+  },
+  {
+    "character": "子",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 40,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 40,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "𴽑",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "有女隹𴽑子，"
+      },
+      {
+        "prev": "由",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "有女由子，"
+      },
+      {
+        "prev": "𴼱",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "女亦隹𴼱子，"
+      }
+    ],
+    "translation_note": "child/derivative"
+  },
+  {
+    "character": "果",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "副词",
+    "primary_pos_english": "adverb",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "𴿌",
+        "pos": "副词",
+        "sentence": "果𴿌不忍，"
+      }
+    ],
+    "translation_note": "complete/achieve result"
+  },
+  {
+    "character": "伐",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 3,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 3,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "敚",
+        "next": "𴻑",
+        "pos": "动词",
+        "sentence": "天廼命敚伐𴻑𴸃𴻒𴸃是生子，"
+      },
+      {
+        "prev": "𴹧",
+        "next": "𴹨",
+        "pos": "动词",
+        "sentence": "𴹧伐𴹨，"
+      },
+      {
+        "prev": "𴻡",
+        "next": "𴻑",
+        "pos": "动词",
+        "sentence": "敚于𴻡伐𴻑𴻒，"
+      }
+    ],
+    "translation_note": "cut down/boast"
+  },
+  {
+    "character": "壯",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "forced prime"
+  },
+  {
+    "character": "修",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "cultivate"
+  },
+  {
+    "character": "德",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "alignment/accumulated pattern"
+  },
+  {
+    "character": "觀",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "observe"
+  },
+  {
+    "character": "建",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "𵀉",
+        "pos": "动词",
+        "sentence": "建𵀉邦。"
+      }
+    ],
+    "translation_note": "establish"
+  },
+  {
+    "character": "爭",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "contend"
+  },
+  {
+    "character": "損",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "subtract/reduce"
+  },
+  {
+    "character": "益",
+    "found": false,
+    "claimed_pos": "verb",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "increase/add"
+  },
+  {
+    "character": "學",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 4,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 3,
+        "percentage": 75.0
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 25.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 25.0,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": "楚",
+        "next": "于",
+        "pos": "动词",
+        "sentence": "鮮隹楚學于威義𴽔，"
+      },
+      {
+        "prev": "不",
+        "next": "，",
+        "pos": "动词",
+        "sentence": "女則亦隹肇不子不學，"
+      },
+      {
+        "prev": "𴼸",
+        "next": "𴽆",
+        "pos": "动词",
+        "sentence": "𴼸學𴽆明，"
+      }
+    ],
+    "translation_note": "learning"
+  },
+  {
+    "character": "曲",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "curved/bent"
+  },
+  {
+    "character": "全",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "complete/whole"
+  },
+  {
+    "character": "一",
+    "found": true,
+    "claimed_pos": "numeral",
+    "total_occurrences": 23,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 18,
+        "percentage": 78.3
+      },
+      {
+        "pos": "数量词",
+        "pos_english": "numeral",
+        "count": 3,
+        "percentage": 13.0
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 2,
+        "percentage": 8.7
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 13.0,
+    "verdict": "MINORITY_USAGE",
+    "examples": [
+      {
+        "prev": "我",
+        "next": "人",
+        "pos": "名词",
+        "sentence": "弗𴽈我一人才立，"
+      },
+      {
+        "prev": "余",
+        "next": "人",
+        "pos": "名词",
+        "sentence": "余一人無晝夕難卹，"
+      },
+      {
+        "prev": "余",
+        "next": "人",
+        "pos": "名词",
+        "sentence": "余一人害𴽥〈叚〉，"
+      }
+    ],
+    "translation_note": "one/unity"
+  },
+  {
+    "character": "二",
+    "found": true,
+    "claimed_pos": "numeral",
+    "total_occurrences": 7,
+    "distribution": [
+      {
+        "pos": "数量词",
+        "pos_english": "numeral",
+        "count": 6,
+        "percentage": 85.7
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 14.3
+      }
+    ],
+    "primary_pos": "数量词",
+    "primary_pos_english": "numeral",
+    "claimed_percentage": 85.7,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "才",
+        "next": "又",
+        "pos": "数量词",
+        "sentence": "我𴿢昔才二又或之折王則不共于卹，"
+      },
+      {
+        "prev": "生",
+        "next": "戊",
+        "pos": "数量词",
+        "sentence": "生二戊豕。"
+      },
+      {
+        "prev": "以",
+        "next": "公",
+        "pos": "数量词",
+        "sentence": "𴹰以二公；"
+      }
+    ],
+    "translation_note": "two/polarity"
+  },
+  {
+    "character": "三",
+    "found": true,
+    "claimed_pos": "numeral",
+    "total_occurrences": 14,
+    "distribution": [
+      {
+        "pos": "数量词",
+        "pos_english": "numeral",
+        "count": 9,
+        "percentage": 64.3
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 5,
+        "percentage": 35.7
+      }
+    ],
+    "primary_pos": "数量词",
+    "primary_pos_english": "numeral",
+    "claimed_percentage": 64.3,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "【",
+        "next": "十",
+        "pos": "名词",
+        "sentence": "余亦隹肇𴽯女悳【三十】行，"
+      },
+      {
+        "prev": "“",
+        "next": "公",
+        "pos": "名词",
+        "sentence": "“三公，事，求先王之共明悳；"
+      },
+      {
+        "prev": "“",
+        "next": "公",
+        "pos": "名词",
+        "sentence": "“三公，𴽻父縢【九】疾隹不瘳，"
+      }
+    ],
+    "translation_note": "three/closure"
+  },
+  {
+    "character": "陰",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "receptive aspect"
+  },
+  {
+    "character": "陽",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "active aspect"
+  },
+  {
+    "character": "畜",
+    "found": true,
+    "claimed_pos": "verb",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "朕",
+        "next": "女",
+        "pos": "动词",
+        "sentence": "朕畜女，"
+      }
+    ],
+    "translation_note": "accumulate/nurture"
+  },
+  {
+    "character": "道",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 5,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 5,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": null,
+        "next": "天",
+        "pos": "名词",
+        "sentence": "道天莫女亡亟。"
+      },
+      {
+        "prev": null,
+        "next": "天",
+        "pos": "名词",
+        "sentence": "道天又亟則不𴺡𵁚𴺡【五】則不卲，"
+      },
+      {
+        "prev": "非",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "可【八】保非道，"
+      }
+    ],
+    "translation_note": "dao/pattern"
+  },
+  {
+    "character": "可",
+    "found": true,
+    "claimed_pos": "adjective",
+    "total_occurrences": 16,
+    "distribution": [
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 10,
+        "percentage": 62.5
+      },
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 6,
+        "percentage": 37.5
+      }
+    ],
+    "primary_pos": "代词",
+    "primary_pos_english": "pronoun",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "亡",
+        "next": "事",
+        "pos": "助词",
+        "sentence": "余亦𴼢竆亡可事。"
+      },
+      {
+        "prev": null,
+        "next": "監",
+        "pos": "代词",
+        "sentence": "可監非𴿖，"
+      },
+      {
+        "prev": null,
+        "next": "𴿗",
+        "pos": "代词",
+        "sentence": "可𴿗非彣，"
+      }
+    ],
+    "translation_note": "expressible/manifest"
+  },
+  {
+    "character": "名",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 1,
+    "distribution": [
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "名词",
+    "primary_pos_english": "noun",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "𡭪",
+        "next": "，",
+        "pos": "名词",
+        "sentence": "言不易實𡭪名，"
+      }
+    ],
+    "translation_note": "name/distinction"
+  },
+  {
+    "character": "無",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 3,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 2,
+        "percentage": 66.7
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 1,
+        "percentage": 33.3
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 0,
+    "verdict": "NOT_ATTESTED",
+    "examples": [
+      {
+        "prev": "人",
+        "next": "獄",
+        "pos": "动词",
+        "sentence": "凡人無獄亡𴽆，"
+      },
+      {
+        "prev": "亦",
+        "next": "智",
+        "pos": "副词",
+        "sentence": "隹人乃亦無智亡𴽗于民若否。"
+      },
+      {
+        "prev": "人",
+        "next": "晝",
+        "pos": "动词",
+        "sentence": "余一人無晝夕難卹，"
+      }
+    ],
+    "translation_note": "nothing/void"
+  },
+  {
+    "character": "有",
+    "found": true,
+    "claimed_pos": "noun",
+    "total_occurrences": 18,
+    "distribution": [
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 10,
+        "percentage": 55.6
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 3,
+        "percentage": 16.7
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 3,
+        "percentage": 16.7
+      },
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 2,
+        "percentage": 11.1
+      }
+    ],
+    "primary_pos": "动词",
+    "primary_pos_english": "verb",
+    "claimed_percentage": 16.7,
+    "verdict": "MINORITY_USAGE",
+    "examples": [
+      {
+        "prev": "人",
+        "next": "言",
+        "pos": "动词",
+        "sentence": "人有言多，"
+      },
+      {
+        "prev": null,
+        "next": "女",
+        "pos": "动词",
+        "sentence": "有女隹𴽑子，"
+      },
+      {
+        "prev": null,
+        "next": "女",
+        "pos": "动词",
+        "sentence": "有女由子，"
+      }
+    ],
+    "translation_note": "something/presence"
+  },
+  {
+    "character": "妙",
+    "found": false,
+    "claimed_pos": "noun",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "subtlety/relations"
+  },
+  {
+    "character": "信",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "trustworthy"
+  },
+  {
+    "character": "辯",
+    "found": false,
+    "claimed_pos": "adjective",
+    "note": "Not found in CHUBS corpus",
+    "translation_note": "eloquent"
+  },
+  {
+    "character": "之",
+    "found": true,
+    "claimed_pos": "particle",
+    "total_occurrences": 143,
+    "distribution": [
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 89,
+        "percentage": 62.2
+      },
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 52,
+        "percentage": 36.4
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 2,
+        "percentage": 1.4
+      }
+    ],
+    "primary_pos": "助词",
+    "primary_pos_english": "particle",
+    "claimed_percentage": 62.2,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "𵁍",
+        "next": "，",
+        "pos": "代词",
+        "sentence": "立明王以𵁍之，"
+      },
+      {
+        "prev": "𵁑",
+        "next": "𵁌",
+        "pos": "代词",
+        "sentence": "或司不義而𵁑之𵁌𴺡"
+      },
+      {
+        "prev": "明",
+        "next": "，",
+        "pos": "代词",
+        "sentence": "𵁖以明之，"
+      }
+    ],
+    "translation_note": "possessive/demonstrative"
+  },
+  {
+    "character": "以",
+    "found": true,
+    "claimed_pos": "preposition",
+    "total_occurrences": 83,
+    "distribution": [
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 40,
+        "percentage": 48.2
+      },
+      {
+        "pos": "介词",
+        "pos_english": "preposition",
+        "count": 35,
+        "percentage": 42.2
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 6,
+        "percentage": 7.2
+      },
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 2,
+        "percentage": 2.4
+      }
+    ],
+    "primary_pos": "连词",
+    "primary_pos_english": "conjunction",
+    "claimed_percentage": 42.2,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": "正",
+        "next": "𵁌",
+        "pos": "介词",
+        "sentence": "命)司悳正以𵁌福，"
+      },
+      {
+        "prev": "王",
+        "next": "𵁍",
+        "pos": "连词",
+        "sentence": "立明王以𵁍之，"
+      },
+      {
+        "prev": "𴺡",
+        "next": "敬",
+        "pos": "连词",
+        "sentence": "又尚則𵁏𴺡以敬命，則宅【一】亟。"
+      }
+    ],
+    "translation_note": "by means of"
+  },
+  {
+    "character": "而",
+    "found": true,
+    "claimed_pos": "conjunction",
+    "total_occurrences": 17,
+    "distribution": [
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 16,
+        "percentage": 94.1
+      },
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 1,
+        "percentage": 5.9
+      }
+    ],
+    "primary_pos": "连词",
+    "primary_pos_english": "conjunction",
+    "claimed_percentage": 94.1,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "民",
+        "next": "成",
+        "pos": "连词",
+        "sentence": "[天]生民而成大命𴺡"
+      },
+      {
+        "prev": "居",
+        "next": "𵁐",
+        "pos": "连词",
+        "sentence": "女不居而𵁐義，"
+      },
+      {
+        "prev": "義",
+        "next": "𵁑",
+        "pos": "连词",
+        "sentence": "或司不義而𵁑之𵁌𴺡"
+      }
+    ],
+    "translation_note": "and/yet"
+  },
+  {
+    "character": "則",
+    "found": true,
+    "claimed_pos": "conjunction",
+    "total_occurrences": 58,
+    "distribution": [
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 58,
+        "percentage": 100.0
+      }
+    ],
+    "primary_pos": "连词",
+    "primary_pos_english": "conjunction",
+    "claimed_percentage": 100.0,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "𴺡",
+        "next": "敬",
+        "pos": "连词",
+        "sentence": "少命日𴺡成𴺡則敬，"
+      },
+      {
+        "prev": "尚",
+        "next": "𵁏",
+        "pos": "连词",
+        "sentence": "又尚則𵁏𴺡以敬命，則宅【一】亟。"
+      },
+      {
+        "prev": "，",
+        "next": "宅",
+        "pos": "连词",
+        "sentence": "又尚則𵁏𴺡以敬命，則宅【一】亟。"
+      }
+    ],
+    "translation_note": "then/therefore"
+  },
+  {
+    "character": "於",
+    "found": true,
+    "claimed_pos": "preposition",
+    "total_occurrences": 28,
+    "distribution": [
+      {
+        "pos": "语气词",
+        "pos_english": "modal particle",
+        "count": 13,
+        "percentage": 46.4
+      },
+      {
+        "pos": "介词",
+        "pos_english": "preposition",
+        "count": 9,
+        "percentage": 32.1
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 5,
+        "percentage": 17.9
+      },
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 1,
+        "percentage": 3.6
+      }
+    ],
+    "primary_pos": "语气词",
+    "primary_pos_english": "modal particle",
+    "claimed_percentage": 32.1,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": "進",
+        "next": "朕",
+        "pos": "介词",
+        "sentence": "女有退進於朕命，"
+      },
+      {
+        "prev": null,
+        "next": "𴻉",
+        "pos": "语气词",
+        "sentence": "於𴻉！"
+      },
+      {
+        "prev": null,
+        "next": "𴻉",
+        "pos": "语气词",
+        "sentence": "於𴻉！"
+      }
+    ],
+    "translation_note": "at/in/from"
+  },
+  {
+    "character": "不",
+    "found": true,
+    "claimed_pos": "adverb",
+    "total_occurrences": 121,
+    "distribution": [
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 97,
+        "percentage": 80.2
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 9,
+        "percentage": 7.4
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 7,
+        "percentage": 5.8
+      },
+      {
+        "pos": "形容词",
+        "pos_english": "adjective",
+        "count": 4,
+        "percentage": 3.3
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 4,
+        "percentage": 3.3
+      }
+    ],
+    "primary_pos": "副词",
+    "primary_pos_english": "adverb",
+    "claimed_percentage": 80.2,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "女",
+        "next": "居",
+        "pos": "副词",
+        "sentence": "女不居而𵁐義，"
+      },
+      {
+        "prev": "司",
+        "next": "義",
+        "pos": "形容词",
+        "sentence": "或司不義而𵁑之𵁌𴺡"
+      },
+      {
+        "prev": "佴",
+        "next": "明",
+        "pos": "副词",
+        "sentence": "夫民生而佴不明，"
+      }
+    ],
+    "translation_note": "negation"
+  },
+  {
+    "character": "弗",
+    "found": true,
+    "claimed_pos": "adverb",
+    "total_occurrences": 30,
+    "distribution": [
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 28,
+        "percentage": 93.3
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 3.3
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 1,
+        "percentage": 3.3
+      }
+    ],
+    "primary_pos": "副词",
+    "primary_pos_english": "adverb",
+    "claimed_percentage": 93.3,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "乃",
+        "next": "受",
+        "pos": "副词",
+        "sentence": "寺隹子乃弗受𴽟，"
+      },
+      {
+        "prev": "尚",
+        "next": "𴽚",
+        "pos": "副词",
+        "sentence": "是亦尚弗𴽚乃彝。"
+      },
+      {
+        "prev": null,
+        "next": "𴽈",
+        "pos": "副词",
+        "sentence": "弗𴽈我一人才立，"
+      }
+    ],
+    "translation_note": "structural negation"
+  },
+  {
+    "character": "其",
+    "found": true,
+    "claimed_pos": "pronoun",
+    "total_occurrences": 16,
+    "distribution": [
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 11,
+        "percentage": 68.8
+      },
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 4,
+        "percentage": 25.0
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 1,
+        "percentage": 6.2
+      }
+    ],
+    "primary_pos": "代词",
+    "primary_pos_english": "pronoun",
+    "claimed_percentage": 68.8,
+    "verdict": "CONFIRMED",
+    "examples": [
+      {
+        "prev": "余",
+        "next": "卹",
+        "pos": "副词",
+        "sentence": "隹余其卹。”"
+      },
+      {
+        "prev": "）",
+        "next": "聖",
+        "pos": "助词",
+        "sentence": "民）其聖女，"
+      },
+      {
+        "prev": "女",
+        "next": "有",
+        "pos": "助词",
+        "sentence": "女其有𴽙有甚，乃眔余言，"
+      }
+    ],
+    "translation_note": "its/that"
+  },
+  {
+    "character": "乃",
+    "found": true,
+    "claimed_pos": "conjunction",
+    "total_occurrences": 75,
+    "distribution": [
+      {
+        "pos": "代词",
+        "pos_english": "pronoun",
+        "count": 39,
+        "percentage": 52.0
+      },
+      {
+        "pos": "副词",
+        "pos_english": "adverb",
+        "count": 16,
+        "percentage": 21.3
+      },
+      {
+        "pos": "连词",
+        "pos_english": "conjunction",
+        "count": 15,
+        "percentage": 20.0
+      },
+      {
+        "pos": "动词",
+        "pos_english": "verb",
+        "count": 3,
+        "percentage": 4.0
+      },
+      {
+        "pos": "名词",
+        "pos_english": "noun",
+        "count": 1,
+        "percentage": 1.3
+      },
+      {
+        "pos": "助词",
+        "pos_english": "particle",
+        "count": 1,
+        "percentage": 1.3
+      }
+    ],
+    "primary_pos": "代词",
+    "primary_pos_english": "pronoun",
+    "claimed_percentage": 20.0,
+    "verdict": "PLAUSIBLE",
+    "examples": [
+      {
+        "prev": null,
+        "next": "服",
+        "pos": "代词",
+        "sentence": "乃服隹𴽞，"
+      },
+      {
+        "prev": "子",
+        "next": "弗",
+        "pos": "连词",
+        "sentence": "寺隹子乃弗受𴽟，"
+      },
+      {
+        "prev": "，",
+        "next": "眔",
+        "pos": "代词",
+        "sentence": "女其有𴽙有甚，乃眔余言，"
+      }
+    ],
+    "translation_note": "therefore/then"
+  }
+]
