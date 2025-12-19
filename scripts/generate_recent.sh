@@ -3,7 +3,12 @@
 # Generate Recently Updated page sorted by modification date
 # Run this before publishing to keep the page current
 
-OUTPUT="ddj/canonical/meta/recently_updated.md"
+# Get the script's directory and derive repo root
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+REPO_ROOT="$(dirname "$SCRIPT_DIR")"
+
+OUTPUT="$REPO_ROOT/ddj/canonical/meta/recently_updated.md"
+DDJ_DIR="$REPO_ROOT/ddj/canonical"
 
 cat > "$OUTPUT" << 'HEADER'
 # Recently Updated
@@ -19,7 +24,7 @@ echo "| Document | Last Updated |" >> "$OUTPUT"
 echo "|----------|--------------|" >> "$OUTPUT"
 
 # Find all .md files, get mod time, sort by most recent
-find ddj/canonical -name "*.md" -type f ! -name "recently_updated.md" -exec stat -f "%m|%N" {} \; | \
+find "$DDJ_DIR" -name "*.md" -type f ! -name "recently_updated.md" -exec stat -f "%m|%N" {} \; | \
 sort -rn | \
 while IFS='|' read -r timestamp filepath; do
     # Convert timestamp to readable date
@@ -31,7 +36,8 @@ while IFS='|' read -r timestamp filepath; do
     # Create absolute path for MkDocs (from site root)
     # MkDocs wants paths like /translations/chapters/file/ (no .md)
     # Convert ddj/canonical/ to translations/ for website
-    linkpath="/${filepath%.md}/"
+    relative_path="${filepath#$REPO_ROOT/}"
+    linkpath="/${relative_path%.md}/"
     linkpath="${linkpath/ddj\/canonical/translations}"
 
     # Extract title from first # heading if possible, otherwise use filename
