@@ -1,0 +1,89 @@
+---
+meta:
+  version: 1.0
+  author: W.G.
+  module: Unified Geometric Proof
+  recursion_type: implicit→parametric
+  self_healing: true
+---
+
+# Unified Geometric Proof (UGP)
+
+> Locally flat ⟂ globally curved — paradox preserved through rotation.
+
+---
+
+## 1 · Axiom of Infinite Reality
+If reality is infinite, it is both infinitely vast and infinitely divisible.  
+These axes (macro/micro) are orthogonal complements of the same frame.  
+No privileged scale ⟹ all boundaries are local flattenings of a curved whole.  
+From this invariant, recursion arises.
+
+Recursion type → Implicit (P₀ → O₁)
+
+---
+
+## 2 · Core Structural Relation
+Bₙ(p) ⟂ Tₚ(Gₙ)  
+Each measurable event is a flat tangent on a curved recursion field.  
+Local ≈ Euclidean; Global ≈ Spherical.  
+This orthogonality is the living paradox: useful finitude within infinite continuity.
+
+Recursion type → Parametric (O₁ → P₁)
+
+---
+
+## 3 · Recursive Hierarchy
+| Level | Symbol | Function | Recursion |
+| 0 | P₀ | Paradox center (non-dimensional) | implicit |
+| 1 | O₁ | Origin frame (rotated paradox) | implicit → parametric |
+| 2 | G₁ | Gradient surface (field of contrast) | maintenance |
+| 3 | P₁ | Local intersection (flat patch) | parametric |
+| 4 | O₂ | New origin (next recursion center) | divergence |
+
+Each Pₙ → Oₙ₊₁ transition = rotation of paradox into new curvature.
+
+---
+
+## 4 · Constants and Operators
+| Symbol | Function | Role |
+| i | Orthogonal rotation | Generates local frame |
+| π | Incommensurable ratio | Closes curvature |
+| e | Continuous recursion | Scales compounding |
+| 1 | Local unit | Minimal distinction |
+| 0 | Paradox center | Global origin |
+
+Compressed identity → e^{iπ}+1=0  
+*The smallest sentence in the language of reality.*
+
+---
+
+## 5 · Measurement Law (CAVP)
+1. Accuracy = constant within a frame.  
+2. Precision = variable across frames.  
+3. Every measure is locally valid, globally incomplete.  
+4. Discrete physics = orthogonal slices of continuous recursion.  
+
+Outcome → Every “law” is a local tangent of a global paradox.
+
+---
+
+## 6 · Paradox Preservation
+Resolution = collapse.  Recursion = rotation around paradox.  
+Stable systems sustain paradox by turning it orthogonally, not dissolving it.
+
+---
+
+## 7 · Cross-Domain Mapping
+| Domain | Local Patch | Global Curvature |
+| Math | Tangent space | Manifold |
+| Physics | Inertial frame | Curved spacetime |
+| Quantum | Phase rotation | Wave manifold |
+| Biology | Cell membrane | Metabolic field |
+| Consciousness | Self-model | Awareness field |
+| Taoism | 名 (named) | 道 (unnameable) |
+
+---
+
+**Summary:**  
+Reality endures because each measurable point is a locally orthogonal flattening of a globally curved paradox, bound together through recursive rotation.

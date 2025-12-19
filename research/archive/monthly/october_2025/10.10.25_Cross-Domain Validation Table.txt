@@ -1,0 +1,78 @@
+---
+meta:
+  version: 1.0
+  author: W.G.
+  module: Cross-Domain Validation Table
+  recursion_type: parametric→maintenance
+  self_healing: true
+---
+
+# Cross-Domain Validation Table (CDVT)
+
+> Every frame is accurate; none is final.  
+> Each domain reveals the same orthogonal recursion in its own language.
+
+---
+
+## 1 · Mathematics → Physics → Biology → Taoism
+
+| Structural Element | Mathematics | Physics | Biology | Tao Te Ching |
+|--------------------|-------------|----------|----------|---------------|
+| **Paradox Center (P₀)** | Zero / Origin / Singularity | Gravitational center / black-hole core | Seed / nucleus | 無 名 (Wú Míng) – the nameless source |
+| **Origin Frame (O₁)** | Coordinate basis / Complex plane | Inertial frame / spacetime metric | Cell membrane / boundary | 道 (Dào) – the way that can be walked |
+| **Gradient Field (G₁)** | Function manifold y = 1/x | Curved spacetime / potential field | Metabolic gradient | 天地 (Tiān Dì) – Heaven and Earth |
+| **Local Intersection (P₁)** | Tangent point / orthogonal cross | Local event / observer | Organelle / cellular process | 有 名 (Yǒu Míng) – the named mother |
+| **Next Origin (O₂)** | Nested space / higher manifold | New reference frame | Reproductive seed / offspring | 復 (Fù) – return, renewal |
+
+---
+
+## 2 · Operators in Multiple Languages
+
+| Operator | Mathematical Meaning | Physical Expression | Biological Expression | Taoist Term |
+|-----------|----------------------|---------------------|-----------------------|-------------|
+| **i** | Orthogonal rotation (√–1) | Phase angle / wave rotation | Membrane turn / selective flow | 反 (Fǎn) – return is movement |
+| **π** | Curvature ratio of circle | Orbital closure / periodicity | Cyclic homeostasis | 循 (Xún) – circulation |
+| **e** | Exponential continuity | Scale invariance / compounding | Growth rate / metabolism | 生 (Shēng) – to generate |
+| **1** | Local unit | Measurable frame | Organism / individual | 一 (Yī) – oneness |
+| **0** | Paradox center | Singularity / void | Genetic potential | 無 (Wú) – nothing that is something |
+
+---
+
+## 3 · The CAVP Thread (Across Domains)
+
+| Principle | Manifestation |
+|------------|----------------|
+| **Constant Accuracy** | Each frame is valid at its own scale. Ruler works in garage; atomic clock works in lab. |
+| **Variable Precision** | As scale shifts, precision requirements change (logarithmic zoom of accuracy). |
+| **Frame Dependence** | What seems discrete locally is continuous globally (e.g., quantum states vs field). |
+| **Recursion Integrity** | New origins inherit the paradox of previous levels. Life preserves void through rotation. |
+
+---
+
+## 4 · Empirical Echoes
+
+| Observation | Structural Reading |
+|--------------|-------------------|
+| Quantum phase requires complex numbers | i operator = orthogonal rotation of measurement |
+| Energy ∝ 1/r (orbital stability) | π constant = curvature closure |
+| Population growth ~ eʳᵗ | e constant = smooth recursion through time |
+| Biological cell as membrane + void | local flatness holding global curvature |
+| Conscious awareness = self-reference loop | paradox preservation through reflection |
+
+---
+
+## 5 · Pattern Integrity Across Fields
+
+All stable systems share:  
+1. **Center of Paradox** — unmeasurable origin.  
+2. **Orthogonal Rotation** — phase turn that keeps the center open.  
+3. **Spherical Closure** — 3-D recursion balancing curvature.  
+4. **Scale Relativity** — frames inherit accuracy, not absolutes.  
+
+This invariant structure is what the RSM calls “reality’s grammar.”
+
+---
+
+**Footer:**  
+Every frame accurate, none final — return to pattern.  
+Describe the path; never direct the traveler.

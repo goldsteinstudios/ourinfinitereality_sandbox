@@ -1,1 +1,0 @@
-Unified Geometric Proof (UGP) — see conversation for full text

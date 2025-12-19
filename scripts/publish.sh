@@ -39,19 +39,14 @@ cp -r "$PRIVATE_REPO/docs" .
 # Remove symlink, copy actual translations
 rm -rf docs/translations
 
-# Translations (the actual content)
+# Translations from new structure (ddj/canonical/)
 mkdir -p docs/translations
-cp -r "$PRIVATE_REPO/translations/chapters" docs/translations/
-cp -r "$PRIVATE_REPO/translations/lexicon" docs/translations/
-cp -r "$PRIVATE_REPO/translations/meta" docs/translations/
-cp -r "$PRIVATE_REPO/translations/archaeology" docs/translations/ 2>/dev/null || true
-cp -r "$PRIVATE_REPO/translations/appendices" docs/translations/ 2>/dev/null || true
-cp "$PRIVATE_REPO/translations/README.md" docs/translations/
-cp "$PRIVATE_REPO/translations/00_introduction.md" docs/translations/ 2>/dev/null || true
-
-# GitHub Actions workflow - skip if PAT doesn't have workflow scope
-# mkdir -p .github/workflows
-# cp "$PRIVATE_REPO/.github/workflows/deploy.yml" .github/workflows/
+cp -r "$PRIVATE_REPO/ddj/canonical/chapters" docs/translations/
+cp -r "$PRIVATE_REPO/ddj/canonical/lexicon" docs/translations/
+cp -r "$PRIVATE_REPO/ddj/canonical/meta" docs/translations/
+cp -r "$PRIVATE_REPO/ddj/archaeology" docs/translations/ 2>/dev/null || true
+cp "$PRIVATE_REPO/ddj/canonical/README.md" docs/translations/ 2>/dev/null || true
+cp "$PRIVATE_REPO/ddj/canonical/00_introduction.md" docs/translations/ 2>/dev/null || true
 
 # Copy overrides directory for MkDocs custom_dir
 cp -r "$PRIVATE_REPO/overrides" . 2>/dev/null || mkdir -p overrides

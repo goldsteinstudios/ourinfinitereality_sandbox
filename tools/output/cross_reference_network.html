@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dao De Jing Cross-Reference Network</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+        #graph {
+            flex: 1;
+            position: relative;
+        }
+        #sidebar {
+            width: 350px;
+            background: #1a1a1a;
+            padding: 20px;
+            overflow-y: auto;
+            border-left: 1px solid #333;
+        }
+        h1 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        h2 {
+            font-size: 1.1em;
+            margin: 20px 0 10px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .stat {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .stat-value {
+            color: #4ecdc4;
+            font-weight: bold;
+        }
+        .hub-item, .gap-item {
+            background: #252525;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border-left: 3px solid #4ecdc4;
+        }
+        .gap-item {
+            border-left-color: #ff6b6b;
+        }
+        .hub-chapter {
+            font-weight: bold;
+            color: #fff;
+        }
+        .hub-refs {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .untranslated {
+            opacity: 0.7;
+            font-style: italic;
+        }
+        #tooltip {
+            position: absolute;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            padding: 12px;
+            border-radius: 6px;
+            pointer-events: none;
+            opacity: 0;
+            max-width: 300px;
+            font-size: 0.85em;
+            z-index: 1000;
+        }
+        .tooltip-title {
+            font-weight: bold;
+            color: #4ecdc4;
+            margin-bottom: 5px;
+        }
+        .tooltip-subtitle {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        .tooltip-connections {
+            font-size: 0.85em;
+        }
+        .legend {
+            margin-top: 20px;
+            padding: 10px;
+            background: #252525;
+            border-radius: 4px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            font-size: 0.85em;
+        }
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .legend-line {
+            width: 30px;
+            height: 2px;
+            margin-right: 8px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+        .node circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .node circle:hover {
+            stroke-width: 3px;
+        }
+        .node text {
+            font-size: 11px;
+            fill: #fff;
+            pointer-events: none;
+            text-anchor: middle;
+        }
+        .link {
+            fill: none;
+            stroke-opacity: 0.4;
+            transition: stroke-opacity 0.2s;
+        }
+        .link:hover {
+            stroke-opacity: 1;
+        }
+        .node.highlighted circle {
+            stroke-width: 3px;
+            stroke: #fff;
+        }
+        .link.highlighted {
+            stroke-opacity: 1;
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="graph">
+            <div id="tooltip"></div>
+        </div>
+        <div id="sidebar">
+            <h1>道德經 Cross-Reference Network</h1>
+            <p style="color: #888; font-size: 0.9em; margin-bottom: 15px;">
+                Structural connections between translated chapters
+            </p>
+
+            <h2>Statistics</h2>
+            <div class="stat">Translated Chapters: <span class="stat-value">31</span></div>
+            <div class="stat">Total Connections: <span class="stat-value">227</span></div>
+            <div class="stat">Referenced (Untranslated): <span class="stat-value">0</span></div>
+
+            <h2>Hub Chapters (Most Referenced)</h2>
+            <div id="hubs"></div>
+
+            <h2>Priority Gaps (Untranslated but Referenced)</h2>
+            <div id="gaps"></div>
+
+            <div class="legend">
+                <h2 style="margin-top: 0;">Legend</h2>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #4ecdc4;"></div>
+                    <span>Translated chapter</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot" style="background: #ff6b6b;"></div>
+                    <span>Untranslated (referenced)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-line" style="background: #666;"></div>
+                    <span>Connection</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const networkData = {"nodes": [{"id": 1, "title": "CHAPTER 1 - 11.4.25", "subtitle": "", "translated": true}, {"id": 2, "title": "CHAPTER 02 - 11.4.25", "subtitle": "making a chopping gesture", "translated": true}, {"id": 3, "title": "CHAPTER 03 - 11.17.25", "subtitle": "*\u4e0d\u5c1a\u8ce2\uff0c\u4f7f\u6c11\u4e0d\u722d*", "translated": true}, {"id": 4, "title": "Chapter 4: Exploring the Depths", "subtitle": "*\u9053\u6c96\u800c\u7528\u4e4b\u6216\u4e0d\u76c8*", "translated": true}, {"id": 5, "title": "CHAPTER 05 - 11.4.25", "subtitle": "leaning forward, speaking carefully", "translated": true}, {"id": 6, "title": "CHAPTER 06 - 11.4.25", "subtitle": "*\u8c37\u795e\u4e0d\u6b7b*", "translated": true}, {"id": 7, "title": "CHAPTER 07 - 11.5.25", "subtitle": "*\u5929\u9577\u5730\u4e45*", "translated": true}, {"id": 8, "title": "CHAPTER 08 - 11.5.25", "subtitle": "*\u4e0a\u5584\u82e5\u6c34*", "translated": true}, {"id": 9, "title": "CHAPTER 09 - 11.5.25", "subtitle": "*\u6301\u800c\u76c8\u4e4b\uff0c\u4e0d\u5982\u5176\u5df2*", "translated": true}, {"id": 10, "title": "CHAPTER 10 - 11.5.25", "subtitle": "*\u8f09\u71df\u9b44\u62b1\u4e00\uff0c\u80fd\u7121\u96e2\u4e4e\uff1f*", "translated": true}, {"id": 11, "title": "Conversation Compilation: Chapter 11 Radicals, Corpus Expansion, and Technical Manual Refinement", "subtitle": "*\u4e09\u5341\u8f3b\u5171\u4e00\u8f42\uff0c\u7576\u5176\u7121\uff0c\u6709\u8eca\u4e4b\u7528\u3002*", "translated": true}, {"id": 12, "title": "CHAPTER 12 - 11.5.25", "subtitle": "", "translated": true}, {"id": 14, "title": "Chapter 14: The Three Imperceptibles", "subtitle": "Boundary conditions on observation", "translated": true}, {"id": 16, "title": "Chapter 16: Return to Root", "subtitle": "The recursion cycle and what \"knowing \u5e38\" enables", "translated": true}, {"id": 21, "title": "Chapter 21: The Content of Great Alignment", "subtitle": "How \u5fb7 relates to \u9053\u2014the structural relationship specification", "translated": true}, {"id": 22, "title": "Chapter 22: The Geometry of Yielding", "subtitle": "*\u66f2\u5247\u5168\uff0c\u6789\u5247\u76f4\uff0c\u7aaa\u5247\u76c8\uff0c\u5f0a\u5247\u65b0\uff0c\u5c11\u5247\u5f97\uff0c\u591a\u5247\u60d1\u3002*", "translated": true}, {"id": 25, "title": "Chapter 25: The Recursion Cycle", "subtitle": "*\u6709\u7269\u6df7\u6210\uff0c\u5148\u5929\u5730\u751f*", "translated": true}, {"id": 34, "title": "Chapter 34: The Pattern That Doesn't Claim", "subtitle": "*\u5927\u9053\u6cdb\u516e\uff0c\u5176\u53ef\u5de6\u53f3\u3002*", "translated": true}, {"id": 38, "title": "Chapter 38: The Degradation Cascade", "subtitle": "Opening chapter of the \u5fb7\u7d93 (De Jing)", "translated": true}, {"id": 39, "title": "Chapter 39: Those Who Obtained Unity", "subtitle": "Scale-invariant principle across domains", "translated": true}, {"id": 40, "title": "CHAPTER 40 - 11.4.25", "subtitle": "*\u53cd\u8005\u9053\u4e4b\u52d5*", "translated": true}, {"id": 41, "title": "Chapter 41: Three Responses to Pattern", "subtitle": "Meta-structural: how observation varies by frame", "translated": true}, {"id": 42, "title": "CHAPTER 42 - 11.4.25", "subtitle": "", "translated": true}, {"id": 46, "title": "Chapter 46: When Horses Come Home From The Field", "subtitle": "*Location 1: The fields*", "translated": true}, {"id": 51, "title": "Chapter 51: Pattern Generates, Alignment Accumulates", "subtitle": "The \u9053\u751f/\u5fb7\u755c formula and \u7384\u5fb7", "translated": true}, {"id": 52, "title": "Chapter 52: The World Has a Beginning", "subtitle": "Pattern as origin/mother, recursive sourcing, and \u7fd2\u5e38", "translated": true}, {"id": 56, "title": "Chapter 56: Those Who Know Don't Speak", "subtitle": "Boundary management and \u7384\u540c (mysterious sameness)", "translated": true}, {"id": 65, "title": "Chapter 65 \u2014 The Law of Subtle Orientation", "subtitle": "", "translated": true}, {"id": 76, "title": "Chapter 76: The Living Are Yielding", "subtitle": "Material physics: stiff/flexible, death/life", "translated": true}, {"id": 78, "title": "Chapter 78: Nothing Under Heaven Is Softer Than Water", "subtitle": "Water overcomes stone: soft/hard material dynamics", "translated": true}, {"id": 81, "title": "Chapter 81: Trustworthy Words Aren't Beautiful", "subtitle": "Closing chapter: the system self-validates", "translated": true}], "edges": [{"source": 1, "target": 2, "type": "references", "context": "Once Chapter 1 establishes the coordinate system, every other chapter navigates through that space: \u2022 Chapter 2: How \u7121 and \u6709 co-generate each other"}, {"source": 1, "target": 11, "type": "validates", "context": "\u2022 Chapter 11: Three demonstrations of bounded emptiness"}, {"source": 1, "target": 25, "type": "references", "context": "\u2022 Chapter 25: The explicit recursion sequence (\u5927\u2192\u901d\u2192\u9060\u2192\u53cd)"}, {"source": 1, "target": 40, "type": "references", "context": "\u2022 Chapter 25: The explicit recursion sequence (\u5927\u2192\u901d\u2192\u9060\u2192\u53cd) \u2022 Chapter 40: Return dynamics (\u53cd\u8005\u9053\u4e4b\u52d5)"}, {"source": 1, "target": 42, "type": "references", "context": "\u2022 Chapter 42: How dimensions emerge from Dao (\u9053\u751f\u4e00\uff0c\u4e00\u751f\u4e8c\uff0c\u4e8c\u751f\u4e09)"}, {"source": 2, "target": 40, "type": "references", "context": "We've seen this in Chapter 40. \u6709 (form/boundary) and \u7121 (void/emptiness) aren't separate things that sometimes interact. They're complementary poles that continuously birth each other."}, {"source": 2, "target": 40, "type": "references", "context": "This is the same \u751f (co-generation) from Chapter 40 and Chapter 42, playing out across every type of distinction you can make:"}, {"source": 2, "target": 42, "type": "references", "context": "This is the same \u751f (co-generation) from Chapter 40 and Chapter 42, playing out across every type of distinction you can make:"}, {"source": 2, "target": 25, "type": "references", "context": "This connects directly to Chapter 25's recursion formula: \u5927\u2192\u901d\u2192\u9060\u2192\u53cd"}, {"source": 3, "target": 2, "type": "references", "context": "Okay, here's where things get interesting. Chapter 2 just told us that boundaries create both poles simultaneously, and you shouldn't try to occupy positions permanently. Now Chapter 3 is going to sho"}, {"source": 3, "target": 1, "type": "references", "context": "Remember \u6b32 from Chapter 1? It's not \"desire\"\u2014it's **orientation, observational stance, direction of attention**."}, {"source": 3, "target": 5, "type": "references", "context": "But \u865b is that same \"hollow/empty\" from Chapter 5's bellows! And \u5fc3 is center, and \u8179 is foundation."}, {"source": 3, "target": 5, "type": "references", "context": "\u5f31 we know from Chapter 5! Not \"weak\" but **yielding**\u2014flexible, soft, able to bend without breaking. Like rope, like water."}, {"source": 3, "target": 2, "type": "references", "context": "**Chapter 2**: \"Boundaries create both poles. Don't occupy positions permanently.\""}, {"source": 3, "target": 4, "type": "references", "context": "Chapter 3 is setting you up with concrete examples before the deep structural explanation. Like: \"Here's what water does [Ch 3]. Now let me show you WHY water does that [Ch 4-6].\""}, {"source": 3, "target": 5, "type": "validates", "context": "The human examples aren't the point. They're demonstrations of the pattern. The pattern is universal (we'll add the \u5929\u5730 frame in Chapter 5 to signal that). But starting with familiar examples makes it "}, {"source": 4, "target": 1, "type": "references", "context": "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"}, {"source": 4, "target": 2, "type": "references", "context": "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"}, {"source": 4, "target": 3, "type": "references", "context": "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"}, {"source": 4, "target": 5, "type": "references", "context": "**Next**: Chapter 5 will add the \u5929\u5730 frame and show you this hollow in action\u2014as a bellows that never exhausts. But now you know what you're looking at: depth expressing itself through multiple dimensi"}, {"source": 5, "target": 2, "type": "contrast", "context": "Every word is a distinction. A boundary drawn. A category created. Remember Chapter 2? Every distinction co-generates both poles. Every word you add is another \u5c48 (restriction) on undifferentiated poss"}, {"source": 5, "target": 1, "type": "references", "context": "**Chapter 1**: Establishes the coordinate system (the dimensional framework)"}, {"source": 5, "target": 2, "type": "references", "context": "**Chapter 2**: Shows how every distinction co-generates both poles"}, {"source": 5, "target": 1, "type": "references", "context": "We're learning: 1. Reality has structure (Ch 1)"}, {"source": 5, "target": 2, "type": "references", "context": "2. Every boundary creates complementary aspects (Ch 2)"}, {"source": 6, "target": 5, "type": "references", "context": " This is Chapter 5's \u865b\u800c\u4e0d\u5c48\uff0c\u52d5\u800c\u6108\u51fa again!"}, {"source": 7, "target": 4, "type": "references", "context": "Remember \u540c\u5176\u5875 from Chapter 4? You ARE dust. You're not a separate self made of special matter. You're temporarily organized dust that shares material identity with everything."}, {"source": 8, "target": 5, "type": "contrast", "context": "Water's function is universal. Like the pot from Chapter 5 with its \u4e0d\u4ec1 (structural indifference that enables universal function)."}, {"source": 8, "target": 3, "type": "references", "context": "This is Chapter 3's \u4e0d\u722d! Don't fight over permanent status positions!"}, {"source": 8, "target": 7, "type": "references", "context": "This is Chapter 7's \u5916\u5176\u8eab (externalize self, don't occupy identity). Water has no permanent self-position to defend."}, {"source": 8, "target": 7, "type": "references", "context": "This is Chapter 7's \u5f8c\u5176\u8eab (puts self behind, doesn't force forward)! Water doesn't try to be first, doesn't push upward, doesn't compete for high status."}, {"source": 8, "target": 4, "type": "references", "context": "And what are low places? Valleys. The hollow. The void. The \u6df5 (deep pool from Chapter 4)."}, {"source": 8, "target": 4, "type": "references", "context": "Chapter 4: \u6df5\u516e\u4f3c\u842c\u7269\u4e4b\u5b97 - \"Deep like an abyss, seems to be the ancestor of everything\""}, {"source": 8, "target": 6, "type": "references", "context": "Chapter 4: \u6df5\u516e\u4f3c\u842c\u7269\u4e4b\u5b97 - \"Deep like an abyss, seems to be the ancestor of everything\" Chapter 6: \u8c37\u795e\u4e0d\u6b7b - \"The valley spirit doesn't die\""}, {"source": 8, "target": 7, "type": "validates", "context": "This demonstrates Chapter 7's principle: \u5916\u5176\u8eab\u800c\u8eab\u5b58 (externalize self and self persists). Water doesn't defend positions, yet persists everywhere."}, {"source": 8, "target": 4, "type": "references", "context": "\u6df5 again! From Chapter 4! \u6df5\u516e\u4f3c\u842c\u7269\u4e4b\u5b97 - \"Deep like an abyss, seems to be the ancestor of everything.\""}, {"source": 8, "target": 4, "type": "validates", "context": "This demonstrates Chapter 4's principle: the hollow at the center is the source. The deep pool is the ancestor."}, {"source": 8, "target": 5, "type": "contrast", "context": "\u4ec1 (r\u00e9n) = we saw this in Chapter 5! \u4e0d\u4ec1 - not anthropocentric, structurally indifferent!"}, {"source": 8, "target": 5, "type": "validates", "context": "This demonstrates Chapter 5's \u4e0d\u4ec1 principle: universal function through non-preference."}, {"source": 8, "target": 1, "type": "validates", "context": "This demonstrates Chapter 1's \u5e38 (frame-independent constancy). Water's behavior is \u5e38 (invariant across contexts)."}, {"source": 8, "target": 3, "type": "validates", "context": "This demonstrates Chapter 3's \u70ba\u7121\u70ba\uff0c\u5247\u7121\u4e0d\u6cbb (act without forcing, and everything organizes itself). Water governs by not forcing governance."}, {"source": 8, "target": 5, "type": "validates", "context": "This demonstrates Chapter 5's \u865b\u800c\u4e0d\u5c48\uff0c\u52d5\u800c\u6108\u51fa (empty and not restricting, moving and more emerges). Water's capacity is inexhaustible because water doesn't restrict its own functionality."}, {"source": 8, "target": 40, "type": "validates", "context": "This demonstrates Chapter 40's \u53cd\u8005\u9053\u4e4b\u52d5 (return/oscillation is the pattern's movement). Water moves in natural cycles, not forced progressions."}, {"source": 8, "target": 1, "type": "references", "context": "**Chapter 1**: Establishes the coordinate system (\u7121/\u6709, \u53ef/\u5e38, \u5999/\u5fbc)"}, {"source": 8, "target": 2, "type": "references", "context": "**Chapter 2**: Shows how distinctions co-generate poles"}, {"source": 8, "target": 3, "type": "references", "context": "**Chapter 3**: Shows what happens when you violate the pattern (create scarcity, force positions)"}, {"source": 8, "target": 4, "type": "references", "context": "**Chapter 4**: Describes the hollow at the center (\u9053\u6c96, \u6df5, \u540c\u5176\u5875)"}, {"source": 8, "target": 5, "type": "references", "context": "**Chapter 5**: Shows the bellows (\u865b\u800c\u4e0d\u5c48, \u52d5\u800c\u6108\u51fa, don't fill the center)"}, {"source": 8, "target": 6, "type": "references", "context": "**Chapter 6**: Describes the generative void (\u8c37\u795e\u4e0d\u6b7b, \u7384\u725d, use it without exhausting)"}, {"source": 8, "target": 7, "type": "references", "context": "**Chapter 7**: Shows persistence through non-occupation (\u4e0d\u81ea\u751f, \u5f8c\u5176\u8eab, \u5916\u5176\u8eab)"}, {"source": 9, "target": 2, "type": "references", "context": "This is \u529f\u6210\u800c\u5f17\u5c45 from Chapter 2. Achievement complete \u2192 don't keep dwelling in it, forcing it, trying to make it more complete than complete."}, {"source": 9, "target": 4, "type": "references", "context": " \u92b3! We know this character! From Chapter 4!"}, {"source": 9, "target": 4, "type": "references", "context": "Remember Chapter 4: \u632b\u5176\u92b3 - the pattern blunts sharp edges."}, {"source": 9, "target": 3, "type": "references", "context": "This connects to Chapter 3: \u4e0d\u8cb4\u96e3\u5f97\u4e4b\u8ca8 (don't create value through scarcity/exclusivity). When you try to \u5c45 (occupy) precious things as permanent defended possessions, you create your own \u7aae (exhaustion tr"}, {"source": 9, "target": 3, "type": "references", "context": "This is Chapter 3's \u5c1a\u8ce2 (elevating achievement into permanent status)! This is Chapter 4's \u632b\u5176\u92b3 (sharp edges get blunted)! This is Chapter 7's warning about trying to \u5360\u64da high positions!"}, {"source": 9, "target": 4, "type": "references", "context": "This is Chapter 3's \u5c1a\u8ce2 (elevating achievement into permanent status)! This is Chapter 4's \u632b\u5176\u92b3 (sharp edges get blunted)! This is Chapter 7's warning about trying to \u5360\u64da high positions!"}, {"source": 9, "target": 7, "type": "references", "context": "This is Chapter 3's \u5c1a\u8ce2 (elevating achievement into permanent status)! This is Chapter 4's \u632b\u5176\u92b3 (sharp edges get blunted)! This is Chapter 7's warning about trying to \u5360\u64da high positions!"}, {"source": 9, "target": 8, "type": "references", "context": "Remember water from Chapter 8? \u8655\u773e\u4eba\u4e4b\u6240\u60e1 - dwells in places everyone avoids, the LOW places. And therefore \u5e7e\u65bc\u9053 - nearly IS the pattern, nearly indestructible."}, {"source": 9, "target": 2, "type": "references", "context": " This is it. This is \u529f\u6210\u800c\u5f17\u5c45 from Chapter 2."}, {"source": 9, "target": 8, "type": "validates", "context": "**Chapter 8**: Watch water\u2014supreme function, never fails, demonstrates everything"}, {"source": 9, "target": 8, "type": "references", "context": "Chapter 8 shows you the model. Chapter 9 shows you what breaks when you violate the model."}, {"source": 10, "target": 7, "type": "references", "context": "And we know from Chapter 7: \u4e0d\u81ea\u751f (not trying to self-source) is what enables \u9577\u751f (continuous generation). Things that try to \u81ea\u751f break. Things that try to be their own center collapse."}, {"source": 10, "target": 5, "type": "same_principle", "context": "\u67d4! This is the same principle as \u5f31 (ru\u00f2) from Chapter 5!"}, {"source": 10, "target": 1, "type": "references", "context": "\u6ecc\u9664 (d\u00ed ch\u00fa) = wash away, cleanse, purge, remove \u7384 (xu\u00e1n) = THE MYSTERIOUS CENTER! From Chapter 1!"}, {"source": 10, "target": 5, "type": "references", "context": "\u2022 \u591a\u8a00 (excessive words from Chapter 5) - too many categories fill the space"}, {"source": 10, "target": 3, "type": "references", "context": "\u2022 \u77e5 (fixed rigid distinctions from Chapter 3) - frozen categories block perception"}, {"source": 10, "target": 5, "type": "extends", "context": "This is Chapter 5's bellows! \u958b (open - the hand rises, the spring extends) and \u95d4 (close - the hand compresses, the spring stores)."}, {"source": 10, "target": 40, "type": "references", "context": "This is Chapter 40's oscillation! \u53cd\u8005\u9053\u4e4b\u52d5 (return/oscillation is the pattern's movement)."}, {"source": 10, "target": 6, "type": "references", "context": "\u96cc! Like \u725d (p\u00ecn) from Chapter 6! The generative void! The fertile emptiness! The womb principle!"}, {"source": 10, "target": 6, "type": "references", "context": "Remember Chapter 6's correction: \u725d isn't \"receptive\" (passive, secondary). \u725d is generative (active, primary, creative)."}, {"source": 10, "target": 3, "type": "references", "context": " \u77e5 we know from Chapter 3!"}, {"source": 10, "target": 7, "type": "references", "context": "This is \u5916\u5176\u8eab from Chapter 7. Don't \u5c45 (occupy) what you generate."}, {"source": 10, "target": 7, "type": "references", "context": "This is \u5f8c\u5176\u8eab\u800c\u8eab\u5148 from Chapter 7. Don't try to occupy the results as your permanent position."}, {"source": 10, "target": 3, "type": "references", "context": "This is \u70ba\u7121\u70ba from Chapter 3. Lead with full cycles, not forcing."}, {"source": 10, "target": 9, "type": "references", "context": "This is \u529f\u9042\u8eab\u9000 from Chapter 9. Complete then withdraw."}, {"source": 10, "target": 7, "type": "references", "context": "This is \u5916\u5176\u8eab\u800c\u8eab\u5b58 from Chapter 7. Externalize (don't occupy) and persist."}, {"source": 10, "target": 2, "type": "references", "context": "This is \u4e0d\u5c45 from Chapter 2. Don't press weight onto completion."}, {"source": 10, "target": 9, "type": "references", "context": "**Chapter 9**: Know when to stop. \u529f\u9042\u8eab\u9000 (complete then withdraw). Don't fill past full. Don't sharpen past optimal."}, {"source": 10, "target": 9, "type": "references", "context": "Chapter 9 teaches: Cycles have endpoints. Release when complete."}, {"source": 11, "target": 1, "type": "references", "context": "1. **Analyze Chapter 1's key terms through radical composition** \u2014 Examine how \u9053, \u540d, \u7121, \u6709, and \u7384 are built from component radicals."}, {"source": 11, "target": 25, "type": "references", "context": "## Part 2: Low-Effort Corpus Expansion Opportunities ### Priority 1: The Chapter 25 Document (3 hours)"}, {"source": 11, "target": 25, "type": "references", "context": "**What's missing:** A standalone document that *just* does Chapter 25. Step-by-step geometric walkthrough with diagrams. The mathematical formalization written out explicitly. Showing how this four-st"}, {"source": 11, "target": 25, "type": "references", "context": "**The expansion:** \"Chapter 25: The Explicit Recursion Formula\" \u2014 This could be the *Rosetta Stone document*\u2014the single clearest proof that the Dao De Jing is encoding geometric recursion in linguisti"}, {"source": 11, "target": 25, "type": "references", "context": "1. Add 3-5 worked examples (pick characters from Chapter 11, Chapter 25)"}, {"source": 11, "target": 25, "type": "validates", "context": "1. **Prove geometric encoding** (Chapter 25 document)"}, {"source": 11, "target": 42, "type": "references", "context": "**Added content:** The full geometric walkthrough proving why Chapter 42 stops at three."}, {"source": 11, "target": 42, "type": "references", "context": "This is why Chapter 42 stops at three. Not because ancient Chinese mathematics could not count past three, but because three is the point where *infinite elaboration becomes possible*. Once you have t"}, {"source": 11, "target": 25, "type": "references", "context": "|Chapter 25 |Mathematical |Euler's identity and Dao recursion are isomorphic |"}, {"source": 11, "target": 25, "type": "references", "context": "1. Chapter 25 document (Rosetta Stone for geometric reading)"}, {"source": 12, "target": 9, "type": "references", "context": "This is the chapter that tells you what happens when you keep stimulating past capacity. When you don't let systems reset. When you violate Chapter 9's teaching about stopping. When you lose Chapter 1"}, {"source": 12, "target": 10, "type": "references", "context": "This is the chapter that tells you what happens when you keep stimulating past capacity. When you don't let systems reset. When you violate Chapter 9's teaching about stopping. When you lose Chapter 1"}, {"source": 12, "target": 3, "type": "references", "context": "\u5fc3 (x\u012bn) = we know this from Chapter 3! The heart-mind, the center where perception and understanding happen"}, {"source": 12, "target": 3, "type": "references", "context": "This connects to Chapter 3: \u865b\u5176\u5fc3 (keep the center hollow)!"}, {"source": 12, "target": 3, "type": "references", "context": "speaking with recognition \u96e3\u5f97\u4e4b\u8ca8! From Chapter 3!"}, {"source": 12, "target": 3, "type": "references", "context": "Remember Chapter 3: \u91d1\u7389\u6eff\u5802\uff0c\u83ab\u4e4b\u80fd\u5b88 - \"Gold and jade filling the hall, no one can guard it all\""}, {"source": 12, "target": 9, "type": "references", "context": "This violates Chapter 9: \u6301\u800c\u76c8\u4e4b (gripping and filling past full)."}, {"source": 12, "target": 10, "type": "references", "context": "This violates Chapter 10: You lose orbit (\u96e2) because you're chasing external stimuli instead of maintaining connection to hollow center."}, {"source": 12, "target": 3, "type": "references", "context": "This violates Chapter 3: \u865b\u5176\u5fc3 (keep center hollow) becomes impossible when you're constantly \u99b3\u9a01\u754b\u7375 (racing and hunting)."}, {"source": 12, "target": 3, "type": "references", "context": "speaking with recognition \u8179! From Chapter 3!"}, {"source": 12, "target": 9, "type": "references", "context": "Like Chapter 9 taught: \u529f\u9042\u8eab\u9000 (complete then withdraw). Fill to capacity then \u5df2 (stop, let it cease)."}, {"source": 12, "target": 10, "type": "references", "context": "Chapter 10: Can you maintain orbit around the hollow center? (\u80fd\u7121\u96e2\u4e4e?)"}, {"source": 12, "target": 9, "type": "references", "context": "Not \"you're being bad.\" But \"your systems are breaking from continuous input without release.\" making the Chapter 9 connection"}, {"source": 12, "target": 10, "type": "references", "context": "That's staying in orbit (Chapter 10) by not chasing every external stimulus past capacity."}, {"source": 14, "target": 1, "type": "references", "context": "### Connection to Chapter 1"}, {"source": 14, "target": 1, "type": "references", "context": " | Ch 1 Term | Ch 14 Correspondence |"}, {"source": 16, "target": 40, "type": "references", "context": "### Connection to Chapter 40"}, {"source": 16, "target": 40, "type": "references", "context": " Chapter 40: \u53cd\u8005\u9053\u4e4b\u52d5\u2014reversal is how pattern moves."}, {"source": 16, "target": 40, "type": "same_principle", "context": "Same principle, different scale: - Ch 40: Pattern-level oscillation (\u53cd)"}, {"source": 16, "target": 25, "type": "references", "context": " ### Connection to Chapter 25"}, {"source": 16, "target": 25, "type": "extends", "context": "Chapter 25: \u5927\u66f0\u901d\uff0c\u901d\u66f0\u9060\uff0c\u9060\u66f0\u53cd (great \u2192 extends \u2192 far \u2192 returns)"}, {"source": 16, "target": 25, "type": "contrast", "context": "Same cycle, different vocabulary: - Ch 25: \u53cd (return/reversal)"}, {"source": 16, "target": 25, "type": "same_term", "context": "This is the same \u738b from Chapter 25 (\u57df\u4e2d\u6709\u56db\u5927\uff0c\u800c\u738b\u5c45\u5176\u4e00\u2014in the domain are four great, and \u738b is one of them)."}, {"source": 16, "target": 11, "type": "references", "context": "\u865b (x\u016b) = emptied, hollowed out. Not \"nothing\" but **cleared of content**. Like Chapter 11's wheel hub\u2014emptied to enable function."}, {"source": 21, "target": 14, "type": "references", "context": "### Connection to Chapter 14"}, {"source": 21, "target": 14, "type": "references", "context": " | Ch 14 Term | Ch 21 Correspondence |"}, {"source": 21, "target": 14, "type": "specifies", "context": " Chapter 14 documents the observation boundary."}, {"source": 21, "target": 38, "type": "references", "context": " ### Connection to Chapter 38"}, {"source": 21, "target": 38, "type": "references", "context": " | Ch 38 | Ch 21 |"}, {"source": 21, "target": 38, "type": "references", "context": "Chapter 38 documents degradation from \u9053 through \u5fb7."}, {"source": 21, "target": 38, "type": "references", "context": "This is the \u4fe1 from Chapter 38: \u5fe0\u4fe1\u4e4b\u8584 (the thinning of loyalty and trust)."}, {"source": 21, "target": 38, "type": "references", "context": "When \u5fb7 follows \u9053 (Ch 21), there is \u4fe1 within. When \u5fb7 degrades to \u79ae (Ch 38), \u4fe1 thins out."}, {"source": 21, "target": 25, "type": "references", "context": "This connects to \u81ea\u7136 (self-so) from Chapter 25: \u9053\u6cd5\u81ea\u7136 (pattern follows self-so)."}, {"source": 22, "target": 46, "type": "references", "context": "This is the \u77e5\u8db3 (knowing sufficiency) principle from Chapter 46: the gradient has an optimum. Below it, yielding enables receiving. Above it, accumulation causes confusion."}, {"source": 22, "target": 11, "type": "applies", "context": "**Non-occupation enables function.** This is the Chapter 11 principle (\u5229 shapes \u7121 into \u7528) applied to self-positioning."}, {"source": 22, "target": 40, "type": "references", "context": "Through **genuine wholeness** (not partial preservation, not strategic holding back), you **return** to the pattern. The return (\u6b78) echoes the \u53cd (f\u01cen) from Chapter 40\u2014the reversal that completes the c"}, {"source": 34, "target": 25, "type": "references", "context": " ### Connection to \u5927 from Chapter 25"}, {"source": 34, "target": 25, "type": "references", "context": "Chapter 25 established \u9053\u5927 as pattern-in-unbounded-mode (not \"the Dao is great\")."}, {"source": 34, "target": 22, "type": "references", "context": " ### Connection to Non-Occupation (Chapter 22)"}, {"source": 34, "target": 22, "type": "references", "context": " The four \u4e0d\u81eaX from Chapter 22:"}, {"source": 34, "target": 2, "type": "references", "context": "\u751f (sh\u0113ng) here is **co-generation**\u2014the mutual arising documented in Chapter 2. The pattern doesn't create things unilaterally; it provides the field within which things co-arise."}, {"source": 34, "target": 11, "type": "references", "context": "This is the \u7121 at the center of Chapter 11's wheel: the void that enables rotation by **not** being filled."}, {"source": 38, "target": 34, "type": "same_principle", "context": " Same structure as Chapter 34: \u7d42\u4e0d\u70ba\u5927\uff0c\u6545\u80fd\u6210\u5176\u5927."}, {"source": 38, "target": 22, "type": "references", "context": " ### Connection to Chapter 22's \u66f2\u5247\u5168"}, {"source": 38, "target": 65, "type": "references", "context": " ### Connection to Chapter 65's \u667a\u591a"}, {"source": 38, "target": 46, "type": "references", "context": "This is the Chapter 46 choice: where are your horses? In the fields (\u539a/\u5be6) or on the battlefield (\u8584/\u83ef)?"}, {"source": 39, "target": 42, "type": "references", "context": "### Connection to Chapter 42"}, {"source": 39, "target": 42, "type": "references", "context": " Chapter 42: \u9053\u751f\u4e00\uff0c\u4e00\u751f\u4e8c\uff0c\u4e8c\u751f\u4e09\uff0c\u4e09\u751f\u842c\u7269"}, {"source": 39, "target": 42, "type": "specifies", "context": " Chapter 42 documents the **generation** from \u4e00."}, {"source": 39, "target": 22, "type": "references", "context": " ### Connection to Chapter 22"}, {"source": 39, "target": 22, "type": "references", "context": "Chapter 22: \u662f\u4ee5\u8056\u4eba\u62b1\u4e00\u70ba\u5929\u4e0b\u5f0f (the sage embraces unity as pattern for all)"}, {"source": 39, "target": 11, "type": "references", "context": " ### Connection to Chapter 11"}, {"source": 39, "target": 11, "type": "validates", "context": "Chapter 11: The wheel/pot/room demonstrations\u2014function emerges from unified void, not from enumerated parts."}, {"source": 39, "target": 4, "type": "references", "context": "\u8c37 (g\u01d4) = valley, the receptive void. With unity, it's \u76c8\u2014full (from Chapter 4/6: the valley that never empties)."}, {"source": 39, "target": 2, "type": "references", "context": "\u842c\u7269 = the ten thousand things. With unity, they \u751f\u2014co-generate, arise (the \u751f from Chapter 2)."}, {"source": 41, "target": 14, "type": "references", "context": "### Connection to Chapter 14"}, {"source": 41, "target": 14, "type": "references", "context": " | Ch 14 | Ch 41 |"}, {"source": 41, "target": 14, "type": "references", "context": "Chapter 14 documents **why** observation fails at the boundary."}, {"source": 41, "target": 38, "type": "references", "context": " ### Connection to Chapter 38"}, {"source": 41, "target": 38, "type": "references", "context": " | Ch 38 | Ch 41 |"}, {"source": 41, "target": 34, "type": "references", "context": "This connects to Chapter 34: pattern clothes and nourishes all things (\u8863\u990a\u842c\u7269) without claiming master position. Here: pattern **lends and completes** without becoming visible as the lender/completer."}, {"source": 42, "target": 40, "type": "references", "context": "Remember from Chapter 40? \u751f means co-emergence. Mutual arising. Both sides appearing simultaneously."}, {"source": 42, "target": 40, "type": "applies", "context": "You have a back (where you came from, your hollow center) and a front (what you present, your boundary). But you're stable because there's circulation between them. The breath. The oscillation. The \u53cd "}, {"source": 42, "target": 40, "type": "references", "context": "Time isn't a dimension\u2014it's the \u53cd (return) from Chapter 40. It's the experience of traversing the three-dimensional structure, not a fourth dimension orthogonal to the other three. Time is what it fee"}, {"source": 46, "target": 1, "type": "references", "context": "\u6b32 (y\u00f9) is that word from Chapter 1, remember? The orientation. The observational stance. The direction you're facing."}, {"source": 51, "target": 42, "type": "references", "context": "### Connection to Chapter 42"}, {"source": 51, "target": 42, "type": "references", "context": " Chapter 42: \u9053\u751f\u4e00\uff0c\u4e00\u751f\u4e8c\uff0c\u4e8c\u751f\u4e09\uff0c\u4e09\u751f\u842c\u7269"}, {"source": 51, "target": 42, "type": "specifies", "context": "Chapter 42 documents the **generation sequence** (\u9053 \u2192 \u4e00 \u2192 \u4e8c \u2192 \u4e09 \u2192 \u842c\u7269)."}, {"source": 51, "target": 21, "type": "references", "context": " ### Connection to Chapter 21"}, {"source": 51, "target": 21, "type": "references", "context": "Chapter 21: \u5b54\u5fb7\u4e4b\u5bb9\uff0c\u552f\u9053\u662f\u5f9e (content of great alignment = only follows pattern)"}, {"source": 51, "target": 21, "type": "specifies", "context": "Chapter 21 specifies the relationship: \u5fb7 contains \u9053-following."}, {"source": 51, "target": 34, "type": "references", "context": " ### Connection to Chapter 34"}, {"source": 51, "target": 34, "type": "references", "context": "Chapter 34: \u8863\u990a\u842c\u7269\u800c\u4e0d\u70ba\u4e3b (clothes/nourishes yet doesn't master)"}, {"source": 51, "target": 38, "type": "references", "context": " ### Connection to Chapter 38"}, {"source": 51, "target": 38, "type": "references", "context": "Chapter 38: \u4e0a\u5fb7\u4e0d\u5fb7\u662f\u4ee5\u6709\u5fb7 (upper alignment doesn't optimize, thus has alignment)"}, {"source": 51, "target": 25, "type": "references", "context": " Chapter 25: \u9053\u6cd5\u81ea\u7136 (pattern follows self-so)"}, {"source": 51, "target": 41, "type": "references", "context": "This is why pattern can provide (\u8cb8) and complete (\u6210) from Chapter 41: it doesn't occupy the positions of owner, credit-holder, or controller. The functional void enables the function."}, {"source": 51, "target": 1, "type": "references", "context": "\u7384 (xu\u00e1n) = the paradoxical origin from Chapter 1 (\u7384\u4e4b\u53c8\u7384, \u773e\u5999\u4e4b\u9580)."}, {"source": 52, "target": 1, "type": "references", "context": "### Connection to Chapter 1"}, {"source": 52, "target": 1, "type": "references", "context": " Chapter 1: \u7121\u540d\u5929\u5730\u4e4b\u59cb\uff0c\u6709\u540d\u842c\u7269\u4e4b\u6bcd"}, {"source": 52, "target": 1, "type": "references", "context": "Chapter 1 distinguishes \u59cb (beginning, nameless) from \u6bcd (mother, named)."}, {"source": 52, "target": 16, "type": "references", "context": " ### Connection to Chapter 16"}, {"source": 52, "target": 16, "type": "references", "context": " Chapter 16: \u6b78\u6839\u66f0\u975c...\u77e5\u5e38\u66f0\u660e"}, {"source": 52, "target": 16, "type": "references", "context": " Chapter 16: \u77e5\u5e38 (know the constant) \u2192 \u660e"}, {"source": 52, "target": 40, "type": "references", "context": " ### Connection to Chapter 40"}, {"source": 52, "target": 40, "type": "references", "context": "Chapter 40: \u53cd\u8005\u9053\u4e4b\u52d5 (reversal is pattern's movement)"}, {"source": 52, "target": 56, "type": "references", "context": " ### Connection to Chapter 56"}, {"source": 52, "target": 56, "type": "same_term", "context": " Chapter 56: \u585e\u5176\u514c\uff0c\u9589\u5176\u9580 (same phrase exactly)"}, {"source": 52, "target": 41, "type": "references", "context": "This is paradox-resolution from Chapter 41: what appears as its opposite from misaligned frames is actually the thing itself."}, {"source": 56, "target": 1, "type": "references", "context": "### Connection to Chapter 1"}, {"source": 56, "target": 1, "type": "references", "context": " Chapter 1: \u9053\u53ef\u9053\u975e\u5e38\u9053\uff0c\u540d\u53ef\u540d\u975e\u5e38\u540d"}, {"source": 56, "target": 4, "type": "references", "context": " ### Connection to Chapter 4"}, {"source": 56, "target": 4, "type": "references", "context": " Chapter 4: \u632b\u5176\u92b3\uff0c\u89e3\u5176\u7d1b\uff0c\u548c\u5176\u5149\uff0c\u540c\u5176\u5875"}, {"source": 56, "target": 4, "type": "references", "context": "Chapter 4 introduces these operations as what \u9053 does."}, {"source": 56, "target": 4, "type": "references", "context": "The chapter explicitly quotes Chapter 4\u2014this is **intertextual reference** within the DDJ itself."}, {"source": 56, "target": 52, "type": "references", "context": " ### Connection to Chapter 52"}, {"source": 56, "target": 52, "type": "references", "context": " Chapter 52: \u585e\u5176\u514c\uff0c\u9589\u5176\u9580\uff0c\u7d42\u8eab\u4e0d\u52e4"}, {"source": 56, "target": 52, "type": "specifies", "context": "Same boundary management formula. Chapter 52 specifies the result (\u7d42\u8eab\u4e0d\u52e4\u2014lifelong no toil). Chapter 56 includes it in the larger sequence leading to \u7384\u540c."}, {"source": 56, "target": 81, "type": "references", "context": " ### Connection to Chapter 81"}, {"source": 56, "target": 81, "type": "references", "context": " Chapter 81: \u4fe1\u22a5\u7f8e, \u5584\u22a5\u8faf, \u77e5\u22a5\u535a"}, {"source": 56, "target": 81, "type": "references", "context": "Same mutual exclusion structure. Chapter 81 lists three pairs; Chapter 56 adds a fourth (\u77e5/\u8a00)."}, {"source": 56, "target": 5, "type": "references", "context": " ### Connection to Chapter 5"}, {"source": 56, "target": 5, "type": "references", "context": " Chapter 5: \u5929\u5730\u4e0d\u4ec1\uff0c\u4ee5\u842c\u7269\u70ba\u82bb\u72d7"}, {"source": 56, "target": 5, "type": "contrast", "context": "Same structural indifference. Chapter 5 documents heaven/earth's non-preference. Chapter 56 documents the \u7384\u540c position's non-positionability in standard oppositions."}, {"source": 56, "target": 1, "type": "references", "context": "| Ch 1 | \u7384\u4e4b\u53c8\u7384 | Mystery upon mystery (origin access) |"}, {"source": 56, "target": 6, "type": "references", "context": "| Ch 6 | \u7384\u725d | Mysterious female (generative void) |"}, {"source": 56, "target": 51, "type": "references", "context": "| Ch 51 | \u7384\u5fb7 | Mysterious alignment (from origin) |"}, {"source": 76, "target": 22, "type": "references", "context": "### Connection to Chapter 22"}, {"source": 76, "target": 22, "type": "references", "context": " Chapter 22: \u66f2\u5247\u5168 (yielding, then complete)"}, {"source": 76, "target": 40, "type": "references", "context": " ### Connection to Chapter 40"}, {"source": 76, "target": 40, "type": "references", "context": "Chapter 40: \u5f31\u8005\u9053\u4e4b\u7528 (yielding is pattern's function)"}, {"source": 76, "target": 78, "type": "references", "context": " ### Connection to Chapter 78"}, {"source": 76, "target": 78, "type": "extends", "context": "Chapter 78 will extend this with water: the softest overcomes the hardest. Chapter 76 establishes the physics; Chapter 78 applies it to water's behavior."}, {"source": 76, "target": 78, "type": "extends", "context": "Chapter 78 will extend this with water: the softest overcomes the hardest. Chapter 76 establishes the physics; Chapter 78 applies it to water's behavior."}, {"source": 78, "target": 76, "type": "references", "context": "### Connection to Chapter 76"}, {"source": 78, "target": 76, "type": "references", "context": " Chapter 76: \u67d4\u5f31\u8005\u751f\u4e4b\u5f92 (yielding = life's category)"}, {"source": 78, "target": 76, "type": "extends", "context": "Chapter 76 establishes the material physics. Chapter 78 provides the extreme case (water) and extends to governance."}, {"source": 78, "target": 8, "type": "references", "context": " ### Connection to Chapter 8"}, {"source": 78, "target": 8, "type": "references", "context": " Chapter 8: \u4e0a\u5584\u82e5\u6c34 (supreme good resembles water)"}, {"source": 78, "target": 8, "type": "same_principle", "context": "Both use water as model. Chapter 8 focuses on water's non-contention; Chapter 78 focuses on water's overcoming power."}, {"source": 78, "target": 6, "type": "references", "context": " ### Connection to Chapter 6"}, {"source": 78, "target": 6, "type": "references", "context": " Chapter 6: \u8c37\u795e\u4e0d\u6b7b (valley spirit doesn't die)"}, {"source": 78, "target": 41, "type": "references", "context": " ### Connection to Chapter 41"}, {"source": 78, "target": 41, "type": "references", "context": " Chapter 41: \u82e5 operator (X\u82e5Y = X appears as Y)"}, {"source": 78, "target": 41, "type": "applies", "context": "Same appearance-paradox: what's true appears opposite. Chapter 41 documents the \u82e5 operator; Chapter 78 applies it to speech itself."}, {"source": 78, "target": 22, "type": "references", "context": " ### Connection to Chapter 22"}, {"source": 78, "target": 22, "type": "references", "context": " Chapter 22: \u66f2\u5247\u5168 (yield then complete)"}, {"source": 81, "target": 1, "type": "references", "context": "### Connection to Chapter 1"}, {"source": 81, "target": 1, "type": "references", "context": "Chapter 1 opens: \u9053\u53ef\u9053\u975e\u5e38\u9053 (pattern that can be patterned is not constant pattern)"}, {"source": 81, "target": 22, "type": "references", "context": " ### Connection to Chapter 22"}, {"source": 81, "target": 22, "type": "references", "context": " Chapter 22: \u592b\u552f\u4e0d\u722d\uff0c\u6545\u5929\u4e0b\u83ab\u80fd\u8207\u4e4b\u722d"}, {"source": 81, "target": 38, "type": "references", "context": " ### Connection to Chapter 38"}, {"source": 81, "target": 38, "type": "references", "context": "Chapter 38: \u4e0a\u5fb7\u4e0d\u5fb7\uff0c\u662f\u4ee5\u6709\u5fb7 (upper alignment doesn't optimize for alignment, thus has alignment)"}, {"source": 81, "target": 51, "type": "references", "context": " ### Connection to Chapter 51"}, {"source": 81, "target": 51, "type": "references", "context": "Chapter 51: \u751f\u800c\u4e0d\u6709\uff0c\u70ba\u800c\u4e0d\u6043\uff0c\u9577\u800c\u4e0d\u5bb0 (generate yet not possess, act yet not rely, grow yet not govern)"}, {"source": 81, "target": 11, "type": "references", "context": "Chapter 11: \u5229 + \u7121 \u2192 \u7528 (constraint + void \u2192 function)"}, {"source": 81, "target": 41, "type": "applies", "context": "These are the **appearance paradoxes** from Chapter 41 applied to expression/knowing:"}, {"source": 81, "target": 52, "type": "references", "context": "This is \u7fd2\u5e38 from Chapter 52: practicing the constant through recursive return. The text itself \u7fd2\u5e38s."}], "translated_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 21, 22, 25, 34, 38, 39, 40, 41, 42, 46, 51, 52, 56, 65, 76, 78, 81], "referenced_untranslated": []};
+        const stats = {"total_nodes": 31, "total_edges": 227, "translated_count": 31, "referenced_untranslated_count": 0, "top_hubs": [{"chapter": 1, "in_degree": 20, "title": "CHAPTER 1 - 11.4.25", "translated": true}, {"chapter": 25, "in_degree": 17, "title": "Chapter 25: The Recursion Cycle", "translated": true}, {"chapter": 5, "in_degree": 16, "title": "CHAPTER 05 - 11.4.25", "translated": true}, {"chapter": 40, "in_degree": 16, "title": "CHAPTER 40 - 11.4.25", "translated": true}, {"chapter": 3, "in_degree": 15, "title": "CHAPTER 03 - 11.17.25", "translated": true}, {"chapter": 4, "in_degree": 15, "title": "Chapter 4: Exploring the Depths", "translated": true}, {"chapter": 2, "in_degree": 13, "title": "CHAPTER 02 - 11.4.25", "translated": true}, {"chapter": 22, "in_degree": 11, "title": "Chapter 22: The Geometry of Yielding", "translated": true}, {"chapter": 38, "in_degree": 11, "title": "Chapter 38: The Degradation Cascade", "translated": true}, {"chapter": 42, "in_degree": 10, "title": "CHAPTER 42 - 11.4.25", "translated": true}], "priority_gaps": [], "connection_types": {"references": 190, "validates": 12, "contrast": 5, "same_principle": 4, "extends": 5, "same_term": 2, "specifies": 5, "applies": 4}, "leaf_nodes": [25, 40, 65], "most_referencing": [{"chapter": 8, "out_degree": 23, "translated": true}, {"chapter": 10, "out_degree": 18, "translated": true}, {"chapter": 56, "out_degree": 18, "translated": true}, {"chapter": 12, "out_degree": 14, "translated": true}, {"chapter": 51, "out_degree": 13, "translated": true}, {"chapter": 78, "out_degree": 13, "translated": true}, {"chapter": 9, "out_degree": 11, "translated": true}, {"chapter": 52, "out_degree": 11, "translated": true}, {"chapter": 81, "out_degree": 11, "translated": true}, {"chapter": 11, "out_degree": 10, "translated": true}]};
+
+        // Populate sidebar
+        const hubsDiv = document.getElementById('hubs');
+        stats.top_hubs.forEach(hub => {
+            const div = document.createElement('div');
+            div.className = 'hub-item' + (hub.translated ? '' : ' untranslated');
+            div.innerHTML = `
+                <div class="hub-chapter">Chapter ${hub.chapter}</div>
+                <div class="hub-refs">${hub.in_degree} incoming references</div>
+            `;
+            hubsDiv.appendChild(div);
+        });
+
+        const gapsDiv = document.getElementById('gaps');
+        stats.priority_gaps.slice(0, 10).forEach(gap => {
+            const div = document.createElement('div');
+            div.className = 'gap-item';
+            div.innerHTML = `
+                <div class="hub-chapter">Chapter ${gap.chapter}</div>
+                <div class="hub-refs">${gap.references} references from translated chapters</div>
+            `;
+            gapsDiv.appendChild(div);
+        });
+
+        // D3 visualization
+        const width = document.getElementById('graph').clientWidth;
+        const height = document.getElementById('graph').clientHeight;
+
+        const svg = d3.select('#graph')
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height);
+
+        // Add zoom behavior
+        const g = svg.append('g');
+
+        svg.call(d3.zoom()
+            .extent([[0, 0], [width, height]])
+            .scaleExtent([0.2, 4])
+            .on('zoom', (event) => {
+                g.attr('transform', event.transform);
+            }));
+
+        // Arrow marker for directed edges
+        svg.append('defs').append('marker')
+            .attr('id', 'arrowhead')
+            .attr('viewBox', '-0 -5 10 10')
+            .attr('refX', 20)
+            .attr('refY', 0)
+            .attr('orient', 'auto')
+            .attr('markerWidth', 6)
+            .attr('markerHeight', 6)
+            .append('path')
+            .attr('d', 'M 0,-5 L 10,0 L 0,5')
+            .attr('fill', '#666');
+
+        // Connection type colors
+        const typeColors = {
+            'same_principle': '#4ecdc4',
+            'extends': '#45b7d1',
+            'applies': '#96ceb4',
+            'same_term': '#ffeaa7',
+            'contrast': '#ff6b6b',
+            'validates': '#a29bfe',
+            'specifies': '#fd79a8',
+            'references': '#666',
+        };
+
+        // Process data for D3
+        const nodes = networkData.nodes.map(n => ({...n}));
+        const links = networkData.edges.map(e => ({
+            source: e.source,
+            target: e.target,
+            type: e.type,
+            context: e.context
+        }));
+
+        // Create force simulation
+        const simulation = d3.forceSimulation(nodes)
+            .force('link', d3.forceLink(links)
+                .id(d => d.id)
+                .distance(100))
+            .force('charge', d3.forceManyBody().strength(-300))
+            .force('center', d3.forceCenter(width / 2, height / 2))
+            .force('collision', d3.forceCollide().radius(30));
+
+        // Draw links
+        const link = g.append('g')
+            .selectAll('path')
+            .data(links)
+            .join('path')
+            .attr('class', 'link')
+            .attr('stroke', d => typeColors[d.type] || '#666')
+            .attr('stroke-width', 1.5)
+            .attr('marker-end', 'url(#arrowhead)');
+
+        // Draw nodes
+        const node = g.append('g')
+            .selectAll('g')
+            .data(nodes)
+            .join('g')
+            .attr('class', 'node')
+            .call(d3.drag()
+                .on('start', dragstarted)
+                .on('drag', dragged)
+                .on('end', dragended));
+
+        // Node circles
+        node.append('circle')
+            .attr('r', d => {
+                // Size based on connections
+                const inDegree = links.filter(l => l.target.id === d.id || l.target === d.id).length;
+                return Math.max(8, Math.min(25, 8 + inDegree * 2));
+            })
+            .attr('fill', d => d.translated ? '#4ecdc4' : '#ff6b6b');
+
+        // Node labels
+        node.append('text')
+            .attr('dy', 4)
+            .text(d => d.id);
+
+        // Tooltip
+        const tooltip = d3.select('#tooltip');
+
+        node.on('mouseover', function(event, d) {
+            const incoming = links.filter(l => (l.target.id || l.target) === d.id);
+            const outgoing = links.filter(l => (l.source.id || l.source) === d.id);
+
+            tooltip
+                .style('opacity', 1)
+                .style('left', (event.pageX + 10) + 'px')
+                .style('top', (event.pageY - 10) + 'px')
+                .html(`
+                    <div class="tooltip-title">${d.title}</div>
+                    ${d.subtitle ? `<div class="tooltip-subtitle">${d.subtitle}</div>` : ''}
+                    <div class="tooltip-connections">
+                        <div>← ${incoming.length} incoming</div>
+                        <div>→ ${outgoing.length} outgoing</div>
+                        ${!d.translated ? '<div style="color: #ff6b6b;">Not yet translated</div>' : ''}
+                    </div>
+                `);
+
+            // Highlight connected nodes and edges
+            d3.selectAll('.node').classed('highlighted', n =>
+                n.id === d.id ||
+                incoming.some(l => (l.source.id || l.source) === n.id) ||
+                outgoing.some(l => (l.target.id || l.target) === n.id)
+            );
+            d3.selectAll('.link').classed('highlighted', l =>
+                (l.source.id || l.source) === d.id ||
+                (l.target.id || l.target) === d.id
+            );
+        })
+        .on('mouseout', function() {
+            tooltip.style('opacity', 0);
+            d3.selectAll('.node').classed('highlighted', false);
+            d3.selectAll('.link').classed('highlighted', false);
+        });
+
+        // Update positions on tick
+        simulation.on('tick', () => {
+            link.attr('d', d => {
+                const dx = d.target.x - d.source.x;
+                const dy = d.target.y - d.source.y;
+                return `M${d.source.x},${d.source.y}L${d.target.x},${d.target.y}`;
+            });
+
+            node.attr('transform', d => `translate(${d.x},${d.y})`);
+        });
+
+        // Drag functions
+        function dragstarted(event) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            event.subject.fx = event.subject.x;
+            event.subject.fy = event.subject.y;
+        }
+
+        function dragged(event) {
+            event.subject.fx = event.x;
+            event.subject.fy = event.y;
+        }
+
+        function dragended(event) {
+            if (!event.active) simulation.alphaTarget(0);
+            event.subject.fx = null;
+            event.subject.fy = null;
+        }
+    </script>
+</body>
+</html>

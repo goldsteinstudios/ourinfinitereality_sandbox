@@ -5,9 +5,12 @@ node_modules/
 dist/
 build/
 
-# Data extracts (large generated files)
-research/work/ARCHIVE/exported_chat_dumps_12.5.25/
-research/work/ARCHIVE/notebook_lm_export_sets/
+# Large archives (keep locally, don't commit)
+research/archive/icloud_import/
+research/archive/notebook_lm/
+research/archive/misc/exported_chat_dumps*/
+
+# Old data extracts
 data/extracted_voice_chatgpt/
 data/extracted_voice_combined/
 data/physics_extracts/
@@ -32,7 +35,12 @@ data/HUST-OBC/
 # Glyph image directories (can be regenerated)
 data/ddj/Guodian Strip Glyphs/
 data/ch_40_slip_37A_CHUBS_glyphs/
+ddj/archaeology/Guodian Strip Glyphs/
 
 # Generated output (can be regenerated from scripts)
 output/chu_site/
 output/glyph_review/
+
+# Audio/video assets (large)
+assets/audio/
+assets/video/
