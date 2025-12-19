@@ -3,7 +3,7 @@
 # Generate Recently Updated page sorted by modification date
 # Run this before publishing to keep the page current
 
-OUTPUT="translations/meta/recently_updated.md"
+OUTPUT="ddj/canonical/meta/recently_updated.md"
 
 cat > "$OUTPUT" << 'HEADER'
 # Recently Updated
@@ -19,7 +19,7 @@ echo "| Document | Last Updated |" >> "$OUTPUT"
 echo "|----------|--------------|" >> "$OUTPUT"
 
 # Find all .md files, get mod time, sort by most recent
-find translations -name "*.md" -type f ! -name "recently_updated.md" -exec stat -f "%m|%N" {} \; | \
+find ddj/canonical -name "*.md" -type f ! -name "recently_updated.md" -exec stat -f "%m|%N" {} \; | \
 sort -rn | \
 while IFS='|' read -r timestamp filepath; do
     # Convert timestamp to readable date
@@ -30,7 +30,9 @@ while IFS='|' read -r timestamp filepath; do
 
     # Create absolute path for MkDocs (from site root)
     # MkDocs wants paths like /translations/chapters/file/ (no .md)
+    # Convert ddj/canonical/ to translations/ for website
     linkpath="/${filepath%.md}/"
+    linkpath="${linkpath/ddj\/canonical/translations}"
 
     # Extract title from first # heading if possible, otherwise use filename
     title=$(grep -m1 "^# " "$filepath" 2>/dev/null | sed 's/^# //')
