@@ -1,0 +1,87 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NavigationPanel from '../../components/NavigationPanel.astro';
+
+export async function getStaticPaths() {
+  const objects = await getCollection('objects');
+  return objects.map((object) => ({
+    params: { slug: object.slug },
+    props: { object },
+  }));
+}
+
+interface Props {
+  object: CollectionEntry<'objects'>;
+}
+
+const { object } = Astro.props;
+const { Content } = await object.render();
+const { title, subtitle, source, domain, icon, deeper, lateral, surface } = object.data;
+
+// Get all objects to filter navigation links
+const allObjects = await getCollection('objects');
+const existingIds = new Set(allObjects.map(o => o.data.id));
+
+// Filter to only show links that exist
+const filteredDeeper = deeper.filter(id => existingIds.has(id));
+const filteredLateral = lateral.filter(id => existingIds.has(id));
+const filteredSurface = surface.filter(id => existingIds.has(id));
+
+// Get the actual object data for each link
+const deeperObjects = allObjects.filter(o => filteredDeeper.includes(o.data.id));
+const lateralObjects = allObjects.filter(o => filteredLateral.includes(o.data.id));
+const surfaceObjects = allObjects.filter(o => filteredSurface.includes(o.data.id));
+---
+
+<BaseLayout title={title}>
+  <article class="max-w-2xl mx-auto">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <div class="w-24 h-24 mx-auto mb-6 flex items-center justify-center text-6xl">
+        {icon ? (
+          <img src={icon} alt="" class="w-full h-full" />
+        ) : (
+          <span class="opacity-50">○</span>
+        )}
+      </div>
+      <h1 class="text-4xl font-bold mb-2">{title}</h1>
+      {subtitle && <p class="text-xl text-[#888]">{subtitle}</p>}
+      <div class="flex items-center justify-center gap-4 mt-4 text-sm text-[#666]">
+        {source && <span>{source}</span>}
+        <span class="uppercase tracking-wide">{domain}</span>
+      </div>
+    </header>
+
+    <!-- Essay Content -->
+    <div class="prose prose-invert prose-lg max-w-none">
+      <Content />
+    </div>
+
+    <!-- Navigation Panel -->
+    <NavigationPanel
+      deeper={deeperObjects}
+      lateral={lateralObjects}
+      surface={surfaceObjects}
+    />
+
+    <!-- Back Link -->
+    <div class="text-center mt-12">
+      <a href="/" class="text-[#888] hover:text-white transition-colors">
+        ← Back to Grid
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold mt-12 mb-4 text-purple-400;
+  }
+  .prose p {
+    @apply mb-4;
+  }
+  .prose blockquote {
+    @apply border-l-4 border-purple-500/50 pl-4 italic text-[#888];
+  }
+</style>

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0f0f0f;
+  --color-surface: #1a1a1a;
+  --color-border: #2a2a2a;
+  --color-text: #e5e5e5;
+  --color-text-muted: #888;
+  --color-accent: #8b5cf6;
+  --color-deeper: #3b82f6;
+  --color-lateral: #10b981;
+  --color-surface-nav: #f59e0b;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+}
+
+/* Icon animations */
+.icon-rotate:hover svg {
+  animation: rotate 1.5s ease-in-out;
+}
+
+.icon-pulse:hover svg {
+  animation: pulse 1s ease-in-out;
+}
+
+.icon-oscillate:hover svg {
+  animation: oscillate 1s ease-in-out;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes oscillate {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.8); }
+}

@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | Our Infinite Reality</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="min-h-screen bg-[#0f0f0f] text-[#e5e5e5]">
+    <header class="border-b border-[#2a2a2a] px-6 py-4">
+      <nav class="max-w-4xl mx-auto flex items-center justify-between">
+        <a href="/" class="text-xl font-semibold hover:text-purple-400 transition-colors">
+          Our Infinite Reality
+        </a>
+        <div class="flex gap-4 text-sm text-[#888]">
+          <a href="/" class="hover:text-white transition-colors">Grid</a>
+          <span class="opacity-50">Map</span>
+          <span class="opacity-50">Sphere</span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-[#2a2a2a] px-6 py-6 mt-12">
+      <div class="max-w-4xl mx-auto text-center text-sm text-[#888]">
+        <p>Everything connects to everything. You cannot arrive. You can only accumulate approaches.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>
