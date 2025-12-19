@@ -6,7 +6,7 @@
 set -e
 
 # Configuration
-PRIVATE_REPO="/Users/willgoldstein/claudecode/dao-de-jing-analyzer"
+PRIVATE_REPO="/Users/willgoldstein/claudecode/ourinfinitereality_sandbox"
 PUBLIC_REPO="/Users/willgoldstein/claudecode/ourinfinitereality"
 COMMIT_MSG="${1:-Update published content}"
 

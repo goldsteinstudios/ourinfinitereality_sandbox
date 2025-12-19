@@ -5,7 +5,7 @@
 
 set -e
 
-REPO="/Users/willgoldstein/claudecode/dao-de-jing-analyzer"
+REPO="/Users/willgoldstein/claudecode/ourinfinitereality_sandbox"
 DATE=$(date +%Y-%m-%d)
 OUTPUT="$REPO/docset_$DATE.md"
 
