@@ -1,7 +1,7 @@
 """
 Chu Script Renderer: Rebuild Guodian text using original Chu bamboo slip glyphs.
 
-Uses CHUBS glyph images to render DDJ text in its original script form.
+Uses Guodian Laozi A glyphs as primary source, falls back to CHUBS for others.
 """
 
 import json
@@ -18,7 +18,12 @@ except ImportError:
 
 class ChuRenderer:
     """
-    Render Chinese text using Chu bamboo slip glyph images from CHUBS.
+    Render Chinese text using Chu bamboo slip glyph images.
+
+    Priority order:
+    1. Chapter-specific curated overrides
+    2. Guodian Laozi A glyph folder (new primary source)
+    3. CHUBS mappings (fallback for non-Laozi characters)
     """
 
     def __init__(self):
@@ -26,9 +31,88 @@ class ChuRenderer:
         self.chubs_dir = self.project_root / "data" / "CHUBS_repo"
         self.glyphs_dir = self.chubs_dir / "glyphs"
         self.mappings_path = self.chubs_dir / "twelve_book_glyph_mappings.json"
+        self.overrides_path = self.project_root / "data" / "chapter_glyph_overrides.json"
         self.output_dir = self.project_root / "output" / "chu_renders"
 
+        # NEW: Guodian Laozi A glyph folder
+        self.guodian_folder = self.project_root / "data" / "ddj" / "Guodian Strip Glyphs"
+        self.guodian_mappings_path = self.project_root / "data" / "ddj" / "guodian_chapter_mappings.json"
+
         self._mappings = None
+        self._overrides = None
+        self._guodian_mappings = None
+        self._guodian_char_index = None  # char → [glyph paths]
+        self._current_chapter = None
+
+    @property
+    def overrides(self) -> Dict:
+        """Lazy-load chapter glyph overrides."""
+        if self._overrides is None:
+            if self.overrides_path.exists():
+                with open(self.overrides_path, encoding='utf-8') as f:
+                    self._overrides = json.load(f)
+            else:
+                self._overrides = {"chapters": {}}
+        return self._overrides
+
+    @property
+    def guodian_mappings(self) -> Dict:
+        """Lazy-load Guodian chapter mappings."""
+        if self._guodian_mappings is None:
+            if self.guodian_mappings_path.exists():
+                with open(self.guodian_mappings_path, encoding='utf-8') as f:
+                    self._guodian_mappings = json.load(f)
+            else:
+                self._guodian_mappings = {}
+        return self._guodian_mappings
+
+    @property
+    def guodian_char_index(self) -> Dict[str, List[str]]:
+        """
+        Build index of character → glyph paths from Guodian mappings.
+        Uses both guodian_char and received_char to find glyphs.
+        """
+        if self._guodian_char_index is None:
+            self._guodian_char_index = {}
+            for chapter_num, mapping in self.guodian_mappings.items():
+                for glyph in mapping.get("glyphs", []):
+                    path = glyph.get("path")
+                    if not path:
+                        continue
+
+                    # Index by received character (the one we translate)
+                    rec_char = glyph.get("received_char")
+                    if rec_char:
+                        if rec_char not in self._guodian_char_index:
+                            self._guodian_char_index[rec_char] = []
+                        self._guodian_char_index[rec_char].append(path)
+
+                    # Also index by guodian character
+                    guo_char = glyph.get("guodian_char")
+                    if guo_char and guo_char != rec_char:
+                        if guo_char not in self._guodian_char_index:
+                            self._guodian_char_index[guo_char] = []
+                        self._guodian_char_index[guo_char].append(path)
+
+        return self._guodian_char_index
+
+    def set_chapter(self, chapter_num: int):
+        """Set current chapter for chapter-specific glyph selection."""
+        self._current_chapter = str(chapter_num)
+
+    def get_chapter_override(self, character: str) -> Optional[str]:
+        """Get chapter-specific glyph path if available."""
+        if self._current_chapter is None:
+            return None
+        chapter_data = self.overrides.get("chapters", {}).get(self._current_chapter, {})
+        glyphs = chapter_data.get("glyphs", {})
+        path = glyphs.get(character)
+        if path:
+            # Convert relative path to absolute
+            full_path = self.project_root / path
+            if full_path.exists():
+                return str(full_path)
+        return None
 
     @property
     def mappings(self) -> Dict:
@@ -41,9 +125,31 @@ class ChuRenderer:
                 self._mappings = {}
         return self._mappings
 
+    def get_guodian_glyph(self, character: str) -> Optional[Path]:
+        """
+        Get glyph from Guodian Laozi A folder via character index.
+
+        Args:
+            character: Chinese character
+
+        Returns:
+            Path to glyph image or None
+        """
+        paths = self.guodian_char_index.get(character, [])
+        for path in paths:
+            p = Path(path)
+            if p.exists():
+                return p
+        return None
+
     def get_glyph_path(self, character: str, prefer_laozi: bool = True) -> Optional[Path]:
         """
         Get path to best glyph image for a character.
+
+        Priority order:
+        1. Chapter-specific curated overrides
+        2. Guodian Laozi A glyph folder (indexed by character)
+        3. CHUBS mappings (fallback)
 
         Args:
             character: Chinese character
@@ -52,6 +158,17 @@ class ChuRenderer:
         Returns:
             Path to glyph image or None
         """
+        # Priority 1: Chapter-specific override
+        override = self.get_chapter_override(character)
+        if override:
+            return Path(override)
+
+        # Priority 2: Guodian Laozi A folder (for verified chapters)
+        guodian_glyph = self.get_guodian_glyph(character)
+        if guodian_glyph:
+            return guodian_glyph
+
+        # Priority 3: Fall back to CHUBS mappings
         if character not in self.mappings:
             return None
 
@@ -61,30 +178,41 @@ class ChuRenderer:
         if not paths:
             return None
 
-        # Try to find a Laozi-sourced glyph
-        if prefer_laozi and data.get("guodian_laozi"):
-            for path in paths:
-                if "老子" in path:
-                    glyph_dir = Path(path)
-                    if glyph_dir.exists():
-                        images = list(glyph_dir.glob("*.png")) + list(glyph_dir.glob("*.jpg"))
-                        # Find one from Laozi
-                        for img in images:
-                            if "老子" in img.name:
-                                return img
-                        # Fall back to first image in Laozi folder
-                        if images:
-                            return images[0]
-
-        # Fall back to first available path
+        # Collect all available images across all paths
+        all_images = []
         for path in paths:
             glyph_dir = Path(path)
             if glyph_dir.exists():
-                images = list(glyph_dir.glob("*.png")) + list(glyph_dir.glob("*.jpg"))
-                if images:
-                    return images[0]
+                all_images.extend(list(glyph_dir.glob("*.png")) + list(glyph_dir.glob("*.jpg")))
 
-        return None
+        if not all_images:
+            return None
+
+        # Try to find a Guodian Laozi-sourced glyph
+        # Filenames look like: 郭店簡_01A-老子甲_15_01A-15-09.png
+        if prefer_laozi:
+            # Priority 1: Guodian Laozi A (老子甲) - oldest/best preserved
+            for img in all_images:
+                if "老子甲" in img.name:
+                    return img
+
+            # Priority 2: Guodian Laozi B (老子乙)
+            for img in all_images:
+                if "老子乙" in img.name:
+                    return img
+
+            # Priority 3: Guodian Laozi C (老子丙)
+            for img in all_images:
+                if "老子丙" in img.name:
+                    return img
+
+            # Priority 4: Any Guodian source (郭店簡)
+            for img in all_images:
+                if "郭店簡" in img.name:
+                    return img
+
+        # Fall back to first available image
+        return all_images[0] if all_images else None
 
     def get_coverage(self, text: str) -> Dict[str, Any]:
         """

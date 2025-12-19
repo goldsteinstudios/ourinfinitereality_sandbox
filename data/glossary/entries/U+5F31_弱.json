@@ -93,13 +93,30 @@
   "font_data": {
     "traced": false,
     "vector_path": null,
-    "source_images": [],
+    "source_images": [
+      {
+        "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/ddj/Guodian Strip Glyphs/郭店簡_01A-老子甲_37_01A-37-11.png",
+        "source": "guodian_laozi_a",
+        "slip": 37,
+        "position": 11,
+        "chapter": 40,
+        "is_exemplar": true,
+        "loan_form": "溺",
+        "note": "Guodian writes 溺 for 弱"
+      }
+    ],
     "extracted_features": null,
     "tracing_metadata": null
   },
   "semantic_field": null,
   "pictographic_analysis": null,
-  "exemplar_provenance": null,
+  "exemplar_provenance": {
+    "tomb": "Guodian Tomb 1",
+    "slip_bundle": "A",
+    "slip_number": "37",
+    "position": 11,
+    "scribe_id": null
+  },
   "cross_references": {
     "related_characters": [],
     "ddj_chapters": [],
@@ -138,8 +155,16 @@
       "to": "{\"attested\": true, \"sources\": {\"郭店簡_14-語叢二\": 2, \"郭店簡_01A-老子甲\": 2, \"郭店簡_16-語叢四\": 1, \"郭店簡_02-太一生水\": 1}, \"total_instances\": 6, \"in_laozi\": true}",
       "rationale": "Enriched from CHUBS glyph mappings",
       "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-17T04:22:02.645120+00:00",
+      "field": "font_data.source_images",
+      "from": null,
+      "to": "Added glyph from slip 37 position 11",
+      "rationale": "Linked Guodian Laozi A glyph (Chapter 40)",
+      "author": "guodian_linker"
     }
   ],
   "created": "2025-12-15T20:09:53.713907Z",
-  "modified": "2025-12-15T20:21:39.409691Z"
+  "modified": "2025-12-17T04:22:02.645160+00:00"
 }

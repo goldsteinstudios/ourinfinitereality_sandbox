@@ -134,13 +134,30 @@
   "font_data": {
     "traced": false,
     "vector_path": null,
-    "source_images": [],
+    "source_images": [
+      {
+        "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/ddj/Guodian Strip Glyphs/郭店簡_01A-老子甲_37_01A-37-05.png",
+        "source": "guodian_laozi_a",
+        "slip": 37,
+        "position": 5,
+        "chapter": 40,
+        "is_exemplar": true,
+        "loan_form": "返",
+        "note": "Guodian writes 返 for 反"
+      }
+    ],
     "extracted_features": null,
     "tracing_metadata": null
   },
   "semantic_field": null,
   "pictographic_analysis": null,
-  "exemplar_provenance": null,
+  "exemplar_provenance": {
+    "tomb": "Guodian Tomb 1",
+    "slip_bundle": "A",
+    "slip_number": "37",
+    "position": 5,
+    "scribe_id": null
+  },
   "cross_references": {
     "related_characters": [],
     "ddj_chapters": [],
@@ -179,8 +196,16 @@
       "to": "{\"attested\": true, \"sources\": {\"郭店簡_12-六德\": 1, \"郭店簡_11-性自命出\": 8, \"郭店簡_10-尊德義\": 2, \"郭店簡_09-成之聞之\": 12, \"郭店簡_02-太一生水\": 4, \"郭店簡_05-窮達以時\": 1}, \"total_instances\": 28, \"in_laozi\": false}",
       "rationale": "Enriched from CHUBS glyph mappings",
       "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-17T04:22:02.625778+00:00",
+      "field": "font_data.source_images",
+      "from": null,
+      "to": "Added glyph from slip 37 position 5",
+      "rationale": "Linked Guodian Laozi A glyph (Chapter 40)",
+      "author": "guodian_linker"
     }
   ],
   "created": "2025-12-15T20:09:53.713357Z",
-  "modified": "2025-12-15T20:21:39.405407Z"
+  "modified": "2025-12-17T04:22:02.626300+00:00"
 }

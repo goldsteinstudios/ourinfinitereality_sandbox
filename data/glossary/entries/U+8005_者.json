@@ -183,13 +183,36 @@
   "font_data": {
     "traced": false,
     "vector_path": null,
-    "source_images": [],
+    "source_images": [
+      {
+        "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/ddj/Guodian Strip Glyphs/郭店簡_01A-老子甲_37_01A-37-07.png",
+        "source": "guodian_laozi_a",
+        "slip": 37,
+        "position": 7,
+        "chapter": 40,
+        "is_exemplar": true
+      },
+      {
+        "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/ddj/Guodian Strip Glyphs/郭店簡_01A-老子甲_37_01A-37-13.png",
+        "source": "guodian_laozi_a",
+        "slip": 37,
+        "position": 13,
+        "chapter": 40,
+        "is_exemplar": true
+      }
+    ],
     "extracted_features": null,
     "tracing_metadata": null
   },
   "semantic_field": null,
   "pictographic_analysis": null,
-  "exemplar_provenance": null,
+  "exemplar_provenance": {
+    "tomb": "Guodian Tomb 1",
+    "slip_bundle": "A",
+    "slip_number": "37",
+    "position": 13,
+    "scribe_id": null
+  },
   "cross_references": {
     "related_characters": [],
     "ddj_chapters": [],
@@ -220,8 +243,24 @@
       "to": "{\"attested\": true, \"sources\": {\"郭店簡_08-忠信之道\": 14, \"郭店簡_11-性自命出\": 98, \"郭店簡_12-六德\": 64, \"郭店簡_15-語叢三\": 42, \"郭店簡_06-五行\": 36, \"郭店簡_13-語叢一\": 32, \"郭店簡_02-太一生水\": 24, \"郭店簡_14-語叢二\": 18, \"郭店簡_10-尊德義\": 40, \"郭店簡_07-唐虞之道\": 24, \"郭店簡_01C-老子丙\": 6, \"郭店簡_04-魯穆公問子思\": 16, \"郭店簡_09-成之聞之\": 30, \"郭店簡_01A-老子甲\": 26, \"郭店簡_16-語叢四\": 16, \"郭店簡_01B-老子乙\": 10, \"郭店簡_03-緇衣\": 16}, \"total_instances\": 512, \"in_laozi\": true}",
       "rationale": "Enriched from CHUBS glyph mappings",
       "author": "chubs_integrator"
+    },
+    {
+      "date": "2025-12-17T04:22:02.630713+00:00",
+      "field": "font_data.source_images",
+      "from": null,
+      "to": "Added glyph from slip 37 position 7",
+      "rationale": "Linked Guodian Laozi A glyph (Chapter 40)",
+      "author": "guodian_linker"
+    },
+    {
+      "date": "2025-12-17T04:22:02.646803+00:00",
+      "field": "font_data.source_images",
+      "from": null,
+      "to": "Added glyph from slip 37 position 13",
+      "rationale": "Linked Guodian Laozi A glyph (Chapter 40)",
+      "author": "guodian_linker"
     }
   ],
   "created": "2025-12-15T20:11:48.624657Z",
-  "modified": "2025-12-15T20:21:39.416045Z"
+  "modified": "2025-12-17T04:22:02.646833+00:00"
 }
