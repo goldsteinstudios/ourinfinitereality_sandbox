@@ -4,7 +4,7 @@
 
 This project uses a two-repo setup:
 
-- **Private repo:** `dao-de-jing-analyzer` — working space with scripts, drafts, experiments
+- **Private repo:** `ourinfinitereality_sandbox` — working space with scripts, drafts, experiments
 - **Public repo:** `ourinfinitereality` — published content only, powers the website
 
 The website at **ourinfinitereality.com** auto-builds from the public repo via GitHub Pages.
@@ -100,7 +100,7 @@ The GitHub Actions workflow can only be edited via GitHub web interface (token l
 
 | What | Where |
 |------|-------|
-| Private repo | `/Users/willgoldstein/claudecode/dao-de-jing-analyzer` |
+| Private repo | `/Users/willgoldstein/claudecode/ourinfinitereality_sandbox` |
 | Public repo | `/Users/willgoldstein/claudecode/ourinfinitereality` |
 | Publish script | `scripts/publish.sh` |
 | Site config | `mkdocs.yml` |

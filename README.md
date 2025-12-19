@@ -34,7 +34,7 @@ This maps to Euler's identity: e^(iπ) + 1 = 0
 ## Repository Structure
 
 ```
-dao-de-jing-analyzer/
+ourinfinitereality_sandbox/
 ├── translations/
 │   ├── chapters/           # 35 structural translations
 │   ├── lexicon/            # 6-part character algebra manual
