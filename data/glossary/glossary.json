@@ -1,0 +1,3432 @@
+{
+  "仁": {
+    "character": "仁",
+    "unicode": "U+4EC1",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "relational accommodation between two entities",
+      "structural": "relational accommodation between two entities",
+      "traditional": "benevolence, humaneness",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "人",
+            "meaning": "person",
+            "position": "unknown"
+          },
+          {
+            "component": "二",
+            "meaning": "two",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 113,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（仁）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/𡰥（仁）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{身心}（仁）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/忎（仁）"
+      ],
+      "sources": {
+        "郭店簡_07-唐虞之道": 10,
+        "郭店簡_12-六德": 9,
+        "上博簡_6B-孔子見季桓子": 12,
+        "上博簡_1C-性情論": 6,
+        "郭店簡_13-語叢一": 7,
+        "郭店簡_11-性自命出": 7,
+        "郭店簡_03-緇衣": 5,
+        "郭店簡_06-五行": 15,
+        "郭店簡_01C-老子丙": 1,
+        "郭店簡_15-語叢三": 6,
+        "上博簡_5F-弟子問": 2,
+        "郭店簡_08-忠信之道": 1,
+        "上博簡_6A-競公瘧": 1,
+        "郭店簡_10-尊德義": 4,
+        "上博簡_1B-緇衣": 4,
+        "上博簡_2D-從政甲": 3,
+        "上博簡_5E-君子爲禮": 1,
+        "上博簡_7A-武王踐阼": 6,
+        "上博簡_2E-從政乙": 2,
+        "上博簡_5C-季庚子問於孔子": 2,
+        "上博簡_8B-顏淵問於孔子": 1,
+        "上博簡_6G-慎子曰恭儉": 1,
+        "上博簡_5G-三德": 1,
+        "上博簡_5B-鮑叔牙與隰朋之諫": 1,
+        "上博簡_2G-容成氏": 2,
+        "清華簡_01E-耆夜": 1,
+        "上博簡_5H-鬼神之明": 1,
+        "上博簡_8I-有皇將起": 1
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.698646Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_07-唐虞之道": 10,
+        "郭店簡_12-六德": 9,
+        "郭店簡_13-語叢一": 7,
+        "郭店簡_11-性自命出": 7,
+        "郭店簡_03-緇衣": 5,
+        "郭店簡_06-五行": 15,
+        "郭店簡_01C-老子丙": 1,
+        "郭店簡_15-語叢三": 6,
+        "郭店簡_08-忠信之道": 1,
+        "郭店簡_10-尊德義": 4
+      },
+      "total_instances": 65,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.712749Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.712794Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.710591Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 113, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（仁）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/仁\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/𡰥（仁）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{身心}（仁）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/忎（仁）\"], \"sources\": {\"郭店簡_07-唐虞之道\": 10, \"郭店簡_12-六德\": 9, \"上博簡_6B-孔子見季桓子\": 12, \"上博簡_1C-性情論\": 6, \"郭店簡_13-語叢一\": 7, \"郭店簡_11-性自命出\": 7, \"郭店簡_03-緇衣\": 5, \"郭店簡_06-五行\": 15, \"郭店簡_01C-老子丙\": 1, \"郭店簡_15-語叢三\": 6, \"上博簡_5F-弟子問\": 2, \"郭店簡_08-忠信之道\": 1, \"上博簡_6A-競公瘧\": 1, \"郭店簡_10-尊德義\": 4, \"上博簡_1B-緇衣\": 4, \"上博簡_2D-從政甲\": 3, \"上博簡_5E-君子爲禮\": 1, \"上博簡_7A-武王踐阼\": 6, \"上博簡_2E-從政乙\": 2, \"上博簡_5C-季庚子問於孔子\": 2, \"上博簡_8B-顏淵問於孔子\": 1, \"上博簡_6G-慎子曰恭儉\": 1, \"上博簡_5G-三德\": 1, \"上博簡_5B-鮑叔牙與隰朋之諫\": 1, \"上博簡_2G-容成氏\": 2, \"清華簡_01E-耆夜\": 1, \"上博簡_5H-鬼神之明\": 1, \"上博簡_8I-有皇將起\": 1}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.698646Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (113 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.402375Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_07-唐虞之道\": 10, \"郭店簡_12-六德\": 9, \"郭店簡_13-語叢一\": 7, \"郭店簡_11-性自命出\": 7, \"郭店簡_03-緇衣\": 5, \"郭店簡_06-五行\": 15, \"郭店簡_01C-老子丙\": 1, \"郭店簡_15-語叢三\": 6, \"郭店簡_08-忠信之道\": 1, \"郭店簡_10-尊德義\": 4}, \"total_instances\": 65, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.712794Z",
+    "modified": "2025-12-15T20:21:39.402375Z"
+  },
+  "利": {
+    "character": "利",
+    "unicode": "U+5229",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "constraint",
+      "structural": "constraint, path-cutting through field",
+      "traditional": "benefit, advantage",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "禾",
+            "meaning": "grain",
+            "position": "unknown"
+          },
+          {
+            "component": "刀",
+            "meaning": "knife",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 294,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/利（利）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/利",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/利"
+      ],
+      "sources": {
+        "九店簡_1-56墓": 32,
+        "上博簡_2G-容成氏": 3,
+        "郭店簡_07-唐虞之道": 8,
+        "上博簡_1C-性情論": 2,
+        "包山簡_1-文書": 9,
+        "郭店簡_01A-老子甲": 5,
+        "長臺關簡_1-竹書": 1,
+        "上博簡_2D-從政甲": 1,
+        "郭店簡_10-尊德義": 3,
+        "郭店簡_16-語叢四": 2,
+        "郭店簡_11-性自命出": 2,
+        "上博簡_1B-緇衣": 1,
+        "上博簡_1A-孔子詩論": 1,
+        "郭店簡_03-緇衣": 1,
+        "九店簡_2-621墓": 1,
+        "上博簡_3A-周易": 98,
+        "清華簡_06B-管仲": 10,
+        "清華簡_09A-治政之道": 8,
+        "上博簡_7B-鄭子家喪甲": 2,
+        "上博簡_5G-三德": 4,
+        "清華簡_03E-芮良夫毖": 4,
+        "上博簡_7F-凡物流形甲": 2,
+        "清華簡_05F-殷高宗問於三壽": 6,
+        "清華簡_09D-廼命二": 2,
+        "上博簡_4I-曹沫之陳": 8,
+        "清華簡_05D-湯處於湯丘": 4,
+        "清華簡_08C-邦家處位": 4,
+        "清華簡_08D-治邦之道": 2,
+        "上博簡_3C-亘先": 2,
+        "清華簡_07D-越公其事": 8,
+        "清華簡_01G-皇門": 2,
+        "上博簡_8G-李頌": 2,
+        "子彈庫帛_3-五行令": 10,
+        "清華簡_01F-金縢": 2,
+        "上博簡_7D-君人者何必安哉甲": 2,
+        "清華簡_07A-子犯子餘": 6,
+        "子彈庫帛_6-殘塊": 6,
+        "清華簡_09C-廼命一": 2,
+        "上博簡_7C-鄭子家喪乙": 2,
+        "葛陵簡_J3-甲三": 2,
+        "清華簡_06F-子產": 6,
+        "清華簡_03F-良臣": 2,
+        "清華簡_07B-晉文公入於晉": 2,
+        "子彈庫帛_1-四時令": 2,
+        "清華簡_05C-命訓": 2,
+        "清華簡_08F-天下之道": 2,
+        "上博簡_7E-君人者何必安哉乙": 2,
+        "清華簡_01H-祭公": 2,
+        "清華簡_04A-筮法": 2
+      },
+      "pos_distribution": {
+        "名词": 2,
+        "动词": 2
+      },
+      "pos_percentages": {
+        "名词": 50.0,
+        "动词": 50.0
+      },
+      "dominant_pos": "名词",
+      "dominant_pos_english": "noun",
+      "total_pos_instances": 4,
+      "last_validated": "2025-12-15T20:21:29.712074Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_07-唐虞之道": 8,
+        "郭店簡_01A-老子甲": 5,
+        "郭店簡_10-尊德義": 3,
+        "郭店簡_16-語叢四": 2,
+        "郭店簡_11-性自命出": 2,
+        "郭店簡_03-緇衣": 1
+      },
+      "total_instances": 21,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.712191Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST6, TEST7",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.712239Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.736854Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 294, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/利（利）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/利\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/利\"], \"sources\": {\"九店簡_1-56墓\": 32, \"上博簡_2G-容成氏\": 3, \"郭店簡_07-唐虞之道\": 8, \"上博簡_1C-性情論\": 2, \"包山簡_1-文書\": 9, \"郭店簡_01A-老子甲\": 5, \"長臺關簡_1-竹書\": 1, \"上博簡_2D-從政甲\": 1, \"郭店簡_10-尊德義\": 3, \"郭店簡_16-語叢四\": 2, \"郭店簡_11-性自命出\": 2, \"上博簡_1B-緇衣\": 1, \"上博簡_1A-孔子詩論\": 1, \"郭店簡_03-緇衣\": 1, \"九店簡_2-621墓\": 1, \"上博簡_3A-周易\": 98, \"清華簡_06B-管仲\": 10, \"清華簡_09A-治政之道\": 8, \"上博簡_7B-鄭子家喪甲\": 2, \"上博簡_5G-三德\": 4, \"清華簡_03E-芮良夫毖\": 4, \"上博簡_7F-凡物流形甲\": 2, \"清華簡_05F-殷高宗問於三壽\": 6, \"清華簡_09D-廼命二\": 2, \"上博簡_4I-曹沫之陳\": 8, \"清華簡_05D-湯處於湯丘\": 4, \"清華簡_08C-邦家處位\": 4, \"清華簡_08D-治邦之道\": 2, \"上博簡_3C-亘先\": 2, \"清華簡_07D-越公其事\": 8, \"清華簡_01G-皇門\": 2, \"上博簡_8G-李頌\": 2, \"子彈庫帛_3-五行令\": 10, \"清華簡_01F-金縢\": 2, \"上博簡_7D-君人者何必安哉甲\": 2, \"清華簡_07A-子犯子餘\": 6, \"子彈庫帛_6-殘塊\": 6, \"清華簡_09C-廼命一\": 2, \"上博簡_7C-鄭子家喪乙\": 2, \"葛陵簡_J3-甲三\": 2, \"清華簡_06F-子產\": 6, \"清華簡_03F-良臣\": 2, \"清華簡_07B-晉文公入於晉\": 2, \"子彈庫帛_1-四時令\": 2, \"清華簡_05C-命訓\": 2, \"清華簡_08F-天下之道\": 2, \"上博簡_7E-君人者何必安哉乙\": 2, \"清華簡_01H-祭公\": 2, \"清華簡_04A-筮法\": 2}, \"pos_distribution\": {\"名词\": 2, \"动词\": 2}, \"pos_percentages\": {\"名词\": 50.0, \"动词\": 50.0}, \"dominant_pos\": \"名词\", \"dominant_pos_english\": \"noun\", \"total_pos_instances\": 4, \"last_validated\": \"2025-12-15T20:21:29.712074Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (294 glyphs, 4 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.404162Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_07-唐虞之道\": 8, \"郭店簡_01A-老子甲\": 5, \"郭店簡_10-尊德義\": 3, \"郭店簡_16-語叢四\": 2, \"郭店簡_11-性自命出\": 2, \"郭店簡_03-緇衣\": 1}, \"total_instances\": 21, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.712239Z",
+    "modified": "2025-12-15T20:21:39.404162Z"
+  },
+  "反": {
+    "character": "反",
+    "unicode": "U+53CD",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "reversal",
+      "structural": "reversal, oscillation, unitary conjugation",
+      "traditional": "return, oppose",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "又",
+            "meaning": "hand",
+            "position": "unknown"
+          },
+          {
+            "component": "厂",
+            "meaning": "cliff",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": "Pending Tier 1 analysis"
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 119,
+      "guodian_laozi": false,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/返（反）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（反）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/弁（反）"
+      ],
+      "sources": {
+        "郭店簡_12-六德": 1,
+        "上博簡_5G-三德": 4,
+        "清華簡_02A-繫年": 16,
+        "上博簡_6J-天子建州乙": 2,
+        "上博簡_1C-性情論": 4,
+        "包山簡_1-文書": 4,
+        "曾侯乙簡_1-A組": 4,
+        "郭店簡_11-性自命出": 8,
+        "上博簡_2G-容成氏": 2,
+        "郭店簡_10-尊德義": 2,
+        "上博簡_5D-姑成家父": 4,
+        "上博簡_4G-內禮": 2,
+        "清華簡_05F-殷高宗問於三壽": 2,
+        "清華簡_09B-成人": 2,
+        "上博簡_3A-周易": 2,
+        "清華簡_06E-子儀": 4,
+        "上博簡_7G-凡物流形乙": 2,
+        "郭店簡_09-成之聞之": 12,
+        "上博簡_7A-武王踐阼": 2,
+        "上博簡_6G-慎子曰恭儉": 2,
+        "清華簡_01F-金縢": 2,
+        "上博簡_7H-吳命": 2,
+        "清華簡_06F-子產": 2,
+        "清華簡_08C-邦家處位": 2,
+        "上博簡_7F-凡物流形甲": 2,
+        "上博簡_6H-用曰": 2,
+        "郭店簡_02-太一生水": 4,
+        "上博簡_6I-天子建州甲": 2,
+        "上博簡_1A-孔子詩論": 5,
+        "上博簡_8F-志書乃言": 2,
+        "清華簡_05D-湯處於湯丘": 2,
+        "清華簡_07B-晉文公入於晉": 2,
+        "清華簡_09A-治政之道": 2,
+        "清華簡_07D-越公其事": 6,
+        "郭店簡_05-窮達以時": 1
+      },
+      "pos_distribution": {
+        "副词": 1
+      },
+      "pos_percentages": {
+        "副词": 100.0
+      },
+      "dominant_pos": "副词",
+      "dominant_pos_english": "adverb",
+      "total_pos_instances": 1,
+      "last_validated": "2025-12-15T20:21:29.738503Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_12-六德": 1,
+        "郭店簡_11-性自命出": 8,
+        "郭店簡_10-尊德義": 2,
+        "郭店簡_09-成之聞之": 12,
+        "郭店簡_02-太一生水": 4,
+        "郭店簡_05-窮達以時": 1
+      },
+      "total_instances": 28,
+      "in_laozi": false
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.713313Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1, TEST2",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.713357Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.739102Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 119, \"guodian_laozi\": false, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/返（反）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/反\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（反）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/弁（反）\"], \"sources\": {\"郭店簡_12-六德\": 1, \"上博簡_5G-三德\": 4, \"清華簡_02A-繫年\": 16, \"上博簡_6J-天子建州乙\": 2, \"上博簡_1C-性情論\": 4, \"包山簡_1-文書\": 4, \"曾侯乙簡_1-A組\": 4, \"郭店簡_11-性自命出\": 8, \"上博簡_2G-容成氏\": 2, \"郭店簡_10-尊德義\": 2, \"上博簡_5D-姑成家父\": 4, \"上博簡_4G-內禮\": 2, \"清華簡_05F-殷高宗問於三壽\": 2, \"清華簡_09B-成人\": 2, \"上博簡_3A-周易\": 2, \"清華簡_06E-子儀\": 4, \"上博簡_7G-凡物流形乙\": 2, \"郭店簡_09-成之聞之\": 12, \"上博簡_7A-武王踐阼\": 2, \"上博簡_6G-慎子曰恭儉\": 2, \"清華簡_01F-金縢\": 2, \"上博簡_7H-吳命\": 2, \"清華簡_06F-子產\": 2, \"清華簡_08C-邦家處位\": 2, \"上博簡_7F-凡物流形甲\": 2, \"上博簡_6H-用曰\": 2, \"郭店簡_02-太一生水\": 4, \"上博簡_6I-天子建州甲\": 2, \"上博簡_1A-孔子詩論\": 5, \"上博簡_8F-志書乃言\": 2, \"清華簡_05D-湯處於湯丘\": 2, \"清華簡_07B-晉文公入於晉\": 2, \"清華簡_09A-治政之道\": 2, \"清華簡_07D-越公其事\": 6, \"郭店簡_05-窮達以時\": 1}, \"pos_distribution\": {\"副词\": 1}, \"pos_percentages\": {\"副词\": 100.0}, \"dominant_pos\": \"副词\", \"dominant_pos_english\": \"adverb\", \"total_pos_instances\": 1, \"last_validated\": \"2025-12-15T20:21:29.738503Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (119 glyphs, 1 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.405407Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_12-六德\": 1, \"郭店簡_11-性自命出\": 8, \"郭店簡_10-尊德義\": 2, \"郭店簡_09-成之聞之\": 12, \"郭店簡_02-太一生水\": 4, \"郭店簡_05-窮達以時\": 1}, \"total_instances\": 28, \"in_laozi\": false}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.713357Z",
+    "modified": "2025-12-15T20:21:39.405407Z"
+  },
+  "名": {
+    "character": "名",
+    "unicode": "U+540D",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "explicit",
+      "structural": "explicit, manifest, that which has interface",
+      "traditional": "name, reputation",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "夕",
+            "meaning": "evening",
+            "position": "unknown"
+          },
+          {
+            "component": "口",
+            "meaning": "mouth",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 147,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/明（名）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/名",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/名"
+      ],
+      "sources": {
+        "九店簡_1-56墓": 1,
+        "清華簡_05F-殷高宗問於三壽": 18,
+        "郭店簡_13-語叢一": 8,
+        "上博簡_2C-魯邦大旱": 4,
+        "郭店簡_01A-老子甲": 10,
+        "包山簡_2-卜筮祭禱": 2,
+        "上博簡_2G-容成氏": 6,
+        "上博簡_3C-亘先": 16,
+        "上博簡_2E-從政乙": 2,
+        "清華簡_04A-筮法": 2,
+        "上博簡_6E-平王問鄭壽": 2,
+        "上博簡_5E-君子爲禮": 4,
+        "郭店簡_09-成之聞之": 2,
+        "清華簡_05D-湯處於湯丘": 4,
+        "上博簡_2D-從政甲": 4,
+        "清華簡_08E-心是謂中": 4,
+        "郭店簡_02-太一生水": 8,
+        "清華簡_01D-保訓": 2,
+        "郭店簡_15-語叢三": 6,
+        "上博簡_4F-柬大王泊旱": 4,
+        "清華簡_02A-繫年": 2,
+        "上博簡_6B-孔子見季桓子": 2,
+        "上博簡_5I-融師有成氏": 2,
+        "清華簡_09A-治政之道": 4,
+        "郭店簡_05-窮達以時": 4,
+        "清華簡_01I-楚居": 2,
+        "清華簡_06F-子產": 2,
+        "長臺關簡_1-竹書": 2,
+        "上博簡_1B-緇衣": 2,
+        "上博簡_7F-凡物流形甲": 2,
+        "清華簡_01C-程寤": 2,
+        "上博簡_7B-鄭子家喪甲": 2,
+        "郭店簡_03-緇衣": 2,
+        "上博簡_8B-顏淵問於孔子": 4,
+        "郭店簡_14-語叢二": 2,
+        "包山簡_1-文書": 2
+      },
+      "pos_distribution": {
+        "名词": 1
+      },
+      "pos_percentages": {
+        "名词": 100.0
+      },
+      "dominant_pos": "名词",
+      "dominant_pos_english": "noun",
+      "total_pos_instances": 1,
+      "last_validated": "2025-12-15T20:21:29.740222Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_13-語叢一": 8,
+        "郭店簡_01A-老子甲": 10,
+        "郭店簡_09-成之聞之": 2,
+        "郭店簡_02-太一生水": 8,
+        "郭店簡_15-語叢三": 6,
+        "郭店簡_05-窮達以時": 4,
+        "郭店簡_03-緇衣": 2,
+        "郭店簡_14-語叢二": 2
+      },
+      "total_instances": 42,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.718216Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.718261Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.749540Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 147, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/明（名）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/名\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/名\"], \"sources\": {\"九店簡_1-56墓\": 1, \"清華簡_05F-殷高宗問於三壽\": 18, \"郭店簡_13-語叢一\": 8, \"上博簡_2C-魯邦大旱\": 4, \"郭店簡_01A-老子甲\": 10, \"包山簡_2-卜筮祭禱\": 2, \"上博簡_2G-容成氏\": 6, \"上博簡_3C-亘先\": 16, \"上博簡_2E-從政乙\": 2, \"清華簡_04A-筮法\": 2, \"上博簡_6E-平王問鄭壽\": 2, \"上博簡_5E-君子爲禮\": 4, \"郭店簡_09-成之聞之\": 2, \"清華簡_05D-湯處於湯丘\": 4, \"上博簡_2D-從政甲\": 4, \"清華簡_08E-心是謂中\": 4, \"郭店簡_02-太一生水\": 8, \"清華簡_01D-保訓\": 2, \"郭店簡_15-語叢三\": 6, \"上博簡_4F-柬大王泊旱\": 4, \"清華簡_02A-繫年\": 2, \"上博簡_6B-孔子見季桓子\": 2, \"上博簡_5I-融師有成氏\": 2, \"清華簡_09A-治政之道\": 4, \"郭店簡_05-窮達以時\": 4, \"清華簡_01I-楚居\": 2, \"清華簡_06F-子產\": 2, \"長臺關簡_1-竹書\": 2, \"上博簡_1B-緇衣\": 2, \"上博簡_7F-凡物流形甲\": 2, \"清華簡_01C-程寤\": 2, \"上博簡_7B-鄭子家喪甲\": 2, \"郭店簡_03-緇衣\": 2, \"上博簡_8B-顏淵問於孔子\": 4, \"郭店簡_14-語叢二\": 2, \"包山簡_1-文書\": 2}, \"pos_distribution\": {\"名词\": 1}, \"pos_percentages\": {\"名词\": 100.0}, \"dominant_pos\": \"名词\", \"dominant_pos_english\": \"noun\", \"total_pos_instances\": 1, \"last_validated\": \"2025-12-15T20:21:29.740222Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (147 glyphs, 1 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.406497Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_13-語叢一\": 8, \"郭店簡_01A-老子甲\": 10, \"郭店簡_09-成之聞之\": 2, \"郭店簡_02-太一生水\": 8, \"郭店簡_15-語叢三\": 6, \"郭店簡_05-窮達以時\": 4, \"郭店簡_03-緇衣\": 2, \"郭店簡_14-語叢二\": 2}, \"total_instances\": 42, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.718261Z",
+    "modified": "2025-12-15T20:21:39.406497Z"
+  },
+  "和": {
+    "character": "和",
+    "unicode": "U+548C",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "distribution through opening",
+      "structural": "distribution through opening, flow equilibrium",
+      "traditional": "harmony, peace",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "禾",
+            "meaning": "grain",
+            "position": "unknown"
+          },
+          {
+            "component": "口",
+            "meaning": "mouth/opening",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 174,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/和",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/和",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/禾（和）"
+      ],
+      "sources": {
+        "清華簡_02A-繫年": 6,
+        "包山簡_1-文書": 6,
+        "郭店簡_06-五行": 12,
+        "上博簡_7F-凡物流形甲": 6,
+        "上博簡_2G-容成氏": 5,
+        "包山簡_3-遣冊賵書": 4,
+        "郭店簡_01A-老子甲": 10,
+        "上博簡_4I-曹沫之陳": 26,
+        "郭店簡_10-尊德義": 6,
+        "清華簡_06F-子產": 2,
+        "上博簡_4A-采風曲目": 2,
+        "郭店簡_01C-老子丙": 2,
+        "清華簡_09B-成人": 2,
+        "清華簡_03F-良臣": 2,
+        "上博簡_2B-子羔": 2,
+        "清華簡_09A-治政之道": 6,
+        "清華簡_05C-命訓": 4,
+        "上博簡_6I-天子建州甲": 2,
+        "上博簡_1A-孔子詩論": 2,
+        "清華簡_06B-管仲": 6,
+        "清華簡_09D-廼命二": 2,
+        "清華簡_01C-程寤": 4,
+        "清華簡_08D-治邦之道": 4,
+        "清華簡_06E-子儀": 4,
+        "清華簡_01H-祭公": 2,
+        "上博簡_8G-李頌": 2,
+        "清華簡_03E-芮良夫毖": 10,
+        "清華簡_07A-子犯子餘": 2,
+        "九店簡_1-56墓": 2,
+        "上博簡_6J-天子建州乙": 2,
+        "清華簡_01G-皇門": 2,
+        "清華簡_05F-殷高宗問於三壽": 6,
+        "郭店簡_12-六德": 2,
+        "郭店簡_11-性自命出": 2,
+        "上博簡_7G-凡物流形乙": 2,
+        "清華簡_05D-湯處於湯丘": 6,
+        "清華簡_07D-越公其事": 2,
+        "清華簡_01E-耆夜": 2,
+        "上博簡_1C-性情論": 2,
+        "上博簡_2A-民之父母": 1
+      },
+      "pos_distribution": {
+        "动词": 4,
+        "形容词": 2,
+        "名词": 1
+      },
+      "pos_percentages": {
+        "动词": 57.1,
+        "形容词": 28.6,
+        "名词": 14.3
+      },
+      "dominant_pos": "动词",
+      "dominant_pos_english": "verb",
+      "total_pos_instances": 7,
+      "last_validated": "2025-12-15T20:21:29.750875Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_06-五行": 12,
+        "郭店簡_01A-老子甲": 10,
+        "郭店簡_10-尊德義": 6,
+        "郭店簡_01C-老子丙": 2,
+        "郭店簡_12-六德": 2,
+        "郭店簡_11-性自命出": 2
+      },
+      "total_instances": 34,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.717636Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST7",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.717680Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.760666Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 174, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/和\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/和\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/禾（和）\"], \"sources\": {\"清華簡_02A-繫年\": 6, \"包山簡_1-文書\": 6, \"郭店簡_06-五行\": 12, \"上博簡_7F-凡物流形甲\": 6, \"上博簡_2G-容成氏\": 5, \"包山簡_3-遣冊賵書\": 4, \"郭店簡_01A-老子甲\": 10, \"上博簡_4I-曹沫之陳\": 26, \"郭店簡_10-尊德義\": 6, \"清華簡_06F-子產\": 2, \"上博簡_4A-采風曲目\": 2, \"郭店簡_01C-老子丙\": 2, \"清華簡_09B-成人\": 2, \"清華簡_03F-良臣\": 2, \"上博簡_2B-子羔\": 2, \"清華簡_09A-治政之道\": 6, \"清華簡_05C-命訓\": 4, \"上博簡_6I-天子建州甲\": 2, \"上博簡_1A-孔子詩論\": 2, \"清華簡_06B-管仲\": 6, \"清華簡_09D-廼命二\": 2, \"清華簡_01C-程寤\": 4, \"清華簡_08D-治邦之道\": 4, \"清華簡_06E-子儀\": 4, \"清華簡_01H-祭公\": 2, \"上博簡_8G-李頌\": 2, \"清華簡_03E-芮良夫毖\": 10, \"清華簡_07A-子犯子餘\": 2, \"九店簡_1-56墓\": 2, \"上博簡_6J-天子建州乙\": 2, \"清華簡_01G-皇門\": 2, \"清華簡_05F-殷高宗問於三壽\": 6, \"郭店簡_12-六德\": 2, \"郭店簡_11-性自命出\": 2, \"上博簡_7G-凡物流形乙\": 2, \"清華簡_05D-湯處於湯丘\": 6, \"清華簡_07D-越公其事\": 2, \"清華簡_01E-耆夜\": 2, \"上博簡_1C-性情論\": 2, \"上博簡_2A-民之父母\": 1}, \"pos_distribution\": {\"动词\": 4, \"形容词\": 2, \"名词\": 1}, \"pos_percentages\": {\"动词\": 57.1, \"形容词\": 28.6, \"名词\": 14.3}, \"dominant_pos\": \"动词\", \"dominant_pos_english\": \"verb\", \"total_pos_instances\": 7, \"last_validated\": \"2025-12-15T20:21:29.750875Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (174 glyphs, 7 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.407674Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_06-五行\": 12, \"郭店簡_01A-老子甲\": 10, \"郭店簡_10-尊德義\": 6, \"郭店簡_01C-老子丙\": 2, \"郭店簡_12-六德\": 2, \"郭店簡_11-性自命出\": 2}, \"total_instances\": 34, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.717680Z",
+    "modified": "2025-12-15T20:21:39.407674Z"
+  },
+  "常": {
+    "character": "常",
+    "unicode": "U+5E38",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "implicit",
+      "structural": "implicit, concealed, that which has no interface",
+      "traditional": "eternal, constant",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "巾",
+            "meaning": "cloth",
+            "position": "unknown"
+          },
+          {
+            "component": "尚",
+            "meaning": "elevated",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 81,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/常（常）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/常",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/常",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（常）"
+      ],
+      "sources": {
+        "清華簡_01H-祭公": 1,
+        "九店簡_1-56墓": 2,
+        "清華簡_09B-成人": 10,
+        "清華簡_07D-越公其事": 4,
+        "曾侯乙簡_1-A組": 6,
+        "清華簡_03E-芮良夫毖": 6,
+        "清華簡_05E-湯在啻門": 4,
+        "上博簡_5G-三德": 7,
+        "清華簡_05F-殷高宗問於三壽": 6,
+        "清華簡_05C-命訓": 2,
+        "清華簡_08D-治邦之道": 4,
+        "子彈庫帛_1-四時令": 2,
+        "清華簡_06E-子儀": 2,
+        "清華簡_06A-鄭武夫人規孺子": 2,
+        "包山簡_2-卜筮祭禱": 2,
+        "清華簡_08B-邦家之政": 2,
+        "望山簡_1-卜筮祭禱（1墓）": 2,
+        "清華簡_07A-子犯子餘": 2,
+        "清華簡_06B-管仲": 2,
+        "郭店簡_03-緇衣": 1,
+        "郭店簡_09-成之聞之": 5,
+        "郭店簡_01A-老子甲": 1,
+        "上博簡_4I-曹沫之陳": 2,
+        "上博簡_1B-緇衣": 1,
+        "上博簡_4F-柬大王泊旱": 3
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.762126Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_03-緇衣": 1,
+        "郭店簡_09-成之聞之": 5,
+        "郭店簡_01A-老子甲": 1
+      },
+      "total_instances": 7,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.710069Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.710539Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.777972Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 81, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/常（常）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/常\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/常\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（常）\"], \"sources\": {\"清華簡_01H-祭公\": 1, \"九店簡_1-56墓\": 2, \"清華簡_09B-成人\": 10, \"清華簡_07D-越公其事\": 4, \"曾侯乙簡_1-A組\": 6, \"清華簡_03E-芮良夫毖\": 6, \"清華簡_05E-湯在啻門\": 4, \"上博簡_5G-三德\": 7, \"清華簡_05F-殷高宗問於三壽\": 6, \"清華簡_05C-命訓\": 2, \"清華簡_08D-治邦之道\": 4, \"子彈庫帛_1-四時令\": 2, \"清華簡_06E-子儀\": 2, \"清華簡_06A-鄭武夫人規孺子\": 2, \"包山簡_2-卜筮祭禱\": 2, \"清華簡_08B-邦家之政\": 2, \"望山簡_1-卜筮祭禱（1墓）\": 2, \"清華簡_07A-子犯子餘\": 2, \"清華簡_06B-管仲\": 2, \"郭店簡_03-緇衣\": 1, \"郭店簡_09-成之聞之\": 5, \"郭店簡_01A-老子甲\": 1, \"上博簡_4I-曹沫之陳\": 2, \"上博簡_1B-緇衣\": 1, \"上博簡_4F-柬大王泊旱\": 3}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.762126Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (81 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.408754Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_03-緇衣\": 1, \"郭店簡_09-成之聞之\": 5, \"郭店簡_01A-老子甲\": 1}, \"total_instances\": 7, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.710539Z",
+    "modified": "2025-12-15T20:21:39.408754Z"
+  },
+  "弱": {
+    "character": "弱",
+    "unicode": "U+5F31",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "flexible",
+      "structural": "flexible, indefinite, superposition state",
+      "traditional": "weak, feeble",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "弓+弓",
+            "meaning": "double bow",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": "Pending Tier 1 analysis"
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 10,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/溺（弱）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（弱）"
+      ],
+      "sources": {
+        "上博簡_5B-鮑叔牙與隰朋之諫": 1,
+        "郭店簡_14-語叢二": 2,
+        "上博簡_2G-容成氏": 1,
+        "郭店簡_01A-老子甲": 2,
+        "郭店簡_16-語叢四": 1,
+        "上博簡_5D-姑成家父": 1,
+        "郭店簡_02-太一生水": 1,
+        "包山簡_1-文書": 1
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.780312Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_14-語叢二": 2,
+        "郭店簡_01A-老子甲": 2,
+        "郭店簡_16-語叢四": 1,
+        "郭店簡_02-太一生水": 1
+      },
+      "total_instances": 6,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.713864Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1, TEST2",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.713907Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.780747Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 10, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/溺（弱）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（弱）\"], \"sources\": {\"上博簡_5B-鮑叔牙與隰朋之諫\": 1, \"郭店簡_14-語叢二\": 2, \"上博簡_2G-容成氏\": 1, \"郭店簡_01A-老子甲\": 2, \"郭店簡_16-語叢四\": 1, \"上博簡_5D-姑成家父\": 1, \"郭店簡_02-太一生水\": 1, \"包山簡_1-文書\": 1}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.780312Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (10 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.409691Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_14-語叢二\": 2, \"郭店簡_01A-老子甲\": 2, \"郭店簡_16-語叢四\": 1, \"郭店簡_02-太一生水\": 1}, \"total_instances\": 6, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.713907Z",
+    "modified": "2025-12-15T20:21:39.409691Z"
+  },
+  "德": {
+    "character": "德",
+    "unicode": "U+5FB7",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "straight path in internal-state motion",
+      "structural": "straight path in internal-state motion",
+      "traditional": "virtue, moral character",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "彳",
+            "meaning": "step",
+            "position": "unknown"
+          },
+          {
+            "component": "直",
+            "meaning": "straight",
+            "position": "unknown"
+          },
+          {
+            "component": "心",
+            "meaning": "internal",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": "Pending Tier 1 analysis"
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 168,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/直（德）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（德）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/德",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/德",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惪（德）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{直心}（德）"
+      ],
+      "sources": {
+        "郭店簡_07-唐虞之道": 4,
+        "上博簡_2A-民之父母": 2,
+        "上博簡_6B-孔子見季桓子": 2,
+        "包山簡_1-文書": 4,
+        "上博簡_2D-從政甲": 3,
+        "子彈庫帛_1-四時令": 10,
+        "上博簡_2G-容成氏": 4,
+        "上博簡_6J-天子建州乙": 3,
+        "郭店簡_03-緇衣": 6,
+        "郭店簡_01A-老子甲": 1,
+        "上博簡_6I-天子建州甲": 4,
+        "清華簡_01G-皇門": 6,
+        "郭店簡_06-五行": 18,
+        "上博簡_1A-孔子詩論": 9,
+        "上博簡_1C-性情論": 5,
+        "郭店簡_10-尊德義": 7,
+        "郭店簡_09-成之聞之": 7,
+        "上博簡_1B-緇衣": 4,
+        "郭店簡_05-窮達以時": 2,
+        "上博簡_5G-三德": 1,
+        "上博簡_6G-慎子曰恭儉": 2,
+        "清華簡_01F-金縢": 1,
+        "郭店簡_12-六德": 8,
+        "上博簡_2C-魯邦大旱": 3,
+        "上博簡_8C-成王既邦": 1,
+        "上博簡_5C-季庚子問於孔子": 6,
+        "上博簡_2B-子羔": 4,
+        "清華簡_01H-祭公": 5,
+        "上博簡_3A-周易": 3,
+        "郭店簡_15-語叢三": 4,
+        "郭店簡_01B-老子乙": 7,
+        "上博簡_6A-競公瘧": 1,
+        "郭店簡_11-性自命出": 3,
+        "上博簡_6H-用曰": 6,
+        "上博簡_8A-子道餓": 1,
+        "上博簡_3B-仲弓": 3,
+        "清華簡_01A-尹至": 1,
+        "上博簡_8H-蘭賦": 1,
+        "郭店簡_14-語叢二": 1,
+        "清華簡_01B-尹誥": 1,
+        "清華簡_01D-保訓": 1,
+        "上博簡_8B-顏淵問於孔子": 1,
+        "郭店簡_16-語叢四": 1,
+        "清華簡_01E-耆夜": 1
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.781693Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_07-唐虞之道": 4,
+        "郭店簡_03-緇衣": 6,
+        "郭店簡_01A-老子甲": 1,
+        "郭店簡_06-五行": 18,
+        "郭店簡_10-尊德義": 7,
+        "郭店簡_09-成之聞之": 7,
+        "郭店簡_05-窮達以時": 2,
+        "郭店簡_12-六德": 8,
+        "郭店簡_15-語叢三": 4,
+        "郭店簡_01B-老子乙": 7,
+        "郭店簡_11-性自命出": 3,
+        "郭店簡_14-語叢二": 1,
+        "郭店簡_16-語叢四": 1
+      },
+      "total_instances": 69,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.714404Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.714449Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.782311Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 168, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/直（德）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（德）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/德\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/德\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惪（德）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{直心}（德）\"], \"sources\": {\"郭店簡_07-唐虞之道\": 4, \"上博簡_2A-民之父母\": 2, \"上博簡_6B-孔子見季桓子\": 2, \"包山簡_1-文書\": 4, \"上博簡_2D-從政甲\": 3, \"子彈庫帛_1-四時令\": 10, \"上博簡_2G-容成氏\": 4, \"上博簡_6J-天子建州乙\": 3, \"郭店簡_03-緇衣\": 6, \"郭店簡_01A-老子甲\": 1, \"上博簡_6I-天子建州甲\": 4, \"清華簡_01G-皇門\": 6, \"郭店簡_06-五行\": 18, \"上博簡_1A-孔子詩論\": 9, \"上博簡_1C-性情論\": 5, \"郭店簡_10-尊德義\": 7, \"郭店簡_09-成之聞之\": 7, \"上博簡_1B-緇衣\": 4, \"郭店簡_05-窮達以時\": 2, \"上博簡_5G-三德\": 1, \"上博簡_6G-慎子曰恭儉\": 2, \"清華簡_01F-金縢\": 1, \"郭店簡_12-六德\": 8, \"上博簡_2C-魯邦大旱\": 3, \"上博簡_8C-成王既邦\": 1, \"上博簡_5C-季庚子問於孔子\": 6, \"上博簡_2B-子羔\": 4, \"清華簡_01H-祭公\": 5, \"上博簡_3A-周易\": 3, \"郭店簡_15-語叢三\": 4, \"郭店簡_01B-老子乙\": 7, \"上博簡_6A-競公瘧\": 1, \"郭店簡_11-性自命出\": 3, \"上博簡_6H-用曰\": 6, \"上博簡_8A-子道餓\": 1, \"上博簡_3B-仲弓\": 3, \"清華簡_01A-尹至\": 1, \"上博簡_8H-蘭賦\": 1, \"郭店簡_14-語叢二\": 1, \"清華簡_01B-尹誥\": 1, \"清華簡_01D-保訓\": 1, \"上博簡_8B-顏淵問於孔子\": 1, \"郭店簡_16-語叢四\": 1, \"清華簡_01E-耆夜\": 1}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.781693Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (168 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.410671Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_07-唐虞之道\": 4, \"郭店簡_03-緇衣\": 6, \"郭店簡_01A-老子甲\": 1, \"郭店簡_06-五行\": 18, \"郭店簡_10-尊德義\": 7, \"郭店簡_09-成之聞之\": 7, \"郭店簡_05-窮達以時\": 2, \"郭店簡_12-六德\": 8, \"郭店簡_15-語叢三\": 4, \"郭店簡_01B-老子乙\": 7, \"郭店簡_11-性自命出\": 3, \"郭店簡_14-語叢二\": 1, \"郭店簡_16-語叢四\": 1}, \"total_instances\": 69, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.714449Z",
+    "modified": "2025-12-15T20:21:39.410671Z"
+  },
+  "惡": {
+    "character": "惡",
+    "unicode": "U+60E1",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "degraded state mode",
+      "structural": "degraded state mode, inferior configuration",
+      "traditional": "evil, wickedness",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "心",
+            "meaning": "heart",
+            "position": "unknown"
+          },
+          {
+            "component": "亞",
+            "meaning": "inferior",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 87,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（惡）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/亞（惡）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡"
+      ],
+      "sources": {
+        "上博簡_3A-周易": 1,
+        "上博簡_6A-競公瘧": 2,
+        "上博簡_5G-三德": 4,
+        "上博簡_7A-武王踐阼": 2,
+        "上博簡_1C-性情論": 8,
+        "郭店簡_04-魯穆公問子思": 5,
+        "郭店簡_16-語叢四": 3,
+        "郭店簡_03-緇衣": 7,
+        "郭店簡_12-六德": 1,
+        "上博簡_8J-鶹鷅": 1,
+        "上博簡_4G-內禮": 1,
+        "郭店簡_13-語叢一": 1,
+        "郭店簡_01B-老子乙": 1,
+        "上博簡_5E-君子爲禮": 3,
+        "上博簡_5D-姑成家父": 2,
+        "上博簡_6J-天子建州乙": 1,
+        "郭店簡_11-性自命出": 9,
+        "葛陵簡_Y4-乙四": 1,
+        "上博簡_1B-緇衣": 9,
+        "上博簡_1A-孔子詩論": 3,
+        "上博簡_5B-鮑叔牙與隰朋之諫": 2,
+        "上博簡_2F-昔者君老": 1,
+        "上博簡_5C-季庚子問於孔子": 4,
+        "郭店簡_01A-老子甲": 1,
+        "包山簡_2-卜筮祭禱": 1,
+        "上博簡_6H-用曰": 2,
+        "上博簡_6I-天子建州甲": 1,
+        "上博簡_8F-志書乃言": 1,
+        "郭店簡_15-語叢三": 2,
+        "上博簡_2E-從政乙": 1,
+        "郭店簡_14-語叢二": 4,
+        "清華簡_06F-子產": 2
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.783404Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_04-魯穆公問子思": 5,
+        "郭店簡_16-語叢四": 3,
+        "郭店簡_03-緇衣": 7,
+        "郭店簡_12-六德": 1,
+        "郭店簡_13-語叢一": 1,
+        "郭店簡_01B-老子乙": 1,
+        "郭店簡_11-性自命出": 9,
+        "郭店簡_01A-老子甲": 1,
+        "郭店簡_15-語叢三": 2,
+        "郭店簡_14-語叢二": 4
+      },
+      "total_instances": 34,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.716037Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.716081Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.783853Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 87, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（惡）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/亞（惡）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/惡\"], \"sources\": {\"上博簡_3A-周易\": 1, \"上博簡_6A-競公瘧\": 2, \"上博簡_5G-三德\": 4, \"上博簡_7A-武王踐阼\": 2, \"上博簡_1C-性情論\": 8, \"郭店簡_04-魯穆公問子思\": 5, \"郭店簡_16-語叢四\": 3, \"郭店簡_03-緇衣\": 7, \"郭店簡_12-六德\": 1, \"上博簡_8J-鶹鷅\": 1, \"上博簡_4G-內禮\": 1, \"郭店簡_13-語叢一\": 1, \"郭店簡_01B-老子乙\": 1, \"上博簡_5E-君子爲禮\": 3, \"上博簡_5D-姑成家父\": 2, \"上博簡_6J-天子建州乙\": 1, \"郭店簡_11-性自命出\": 9, \"葛陵簡_Y4-乙四\": 1, \"上博簡_1B-緇衣\": 9, \"上博簡_1A-孔子詩論\": 3, \"上博簡_5B-鮑叔牙與隰朋之諫\": 2, \"上博簡_2F-昔者君老\": 1, \"上博簡_5C-季庚子問於孔子\": 4, \"郭店簡_01A-老子甲\": 1, \"包山簡_2-卜筮祭禱\": 1, \"上博簡_6H-用曰\": 2, \"上博簡_6I-天子建州甲\": 1, \"上博簡_8F-志書乃言\": 1, \"郭店簡_15-語叢三\": 2, \"上博簡_2E-從政乙\": 1, \"郭店簡_14-語叢二\": 4, \"清華簡_06F-子產\": 2}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.783404Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (87 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.411749Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_04-魯穆公問子思\": 5, \"郭店簡_16-語叢四\": 3, \"郭店簡_03-緇衣\": 7, \"郭店簡_12-六德\": 1, \"郭店簡_13-語叢一\": 1, \"郭店簡_01B-老子乙\": 1, \"郭店簡_11-性自命出\": 9, \"郭店簡_01A-老子甲\": 1, \"郭店簡_15-語叢三\": 2, \"郭店簡_14-語叢二\": 4}, \"total_instances\": 34, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.716081Z",
+    "modified": "2025-12-15T20:21:39.411749Z"
+  },
+  "愛": {
+    "character": "愛",
+    "unicode": "U+611B",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "attractive bonding force between states",
+      "structural": "attractive bonding force between states",
+      "traditional": "love, affection",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "心",
+            "meaning": "heart",
+            "position": "unknown"
+          },
+          {
+            "component": "友",
+            "meaning": "friend",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "NOT_ATTESTED",
+      "glyph_count": 0,
+      "guodian_laozi": false,
+      "glyph_paths": [],
+      "sources": {},
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.784681Z"
+    },
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.715505Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.715550Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.785040Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"NOT_ATTESTED\", \"glyph_count\": 0, \"guodian_laozi\": false, \"glyph_paths\": [], \"sources\": {}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.784681Z\"}",
+        "rationale": "CHUBS validation: NOT_ATTESTED (0 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.715550Z",
+    "modified": "2025-12-15T20:21:29.785040Z"
+  },
+  "慈": {
+    "character": "慈",
+    "unicode": "U+6148",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "expansive internal state (multiplication operator)",
+      "structural": "expansive internal state (multiplication operator)",
+      "traditional": "compassion, kindness",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "心",
+            "meaning": "heart",
+            "position": "unknown"
+          },
+          {
+            "component": "茲",
+            "meaning": "multiply",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "NOT_ATTESTED",
+      "glyph_count": 0,
+      "guodian_laozi": false,
+      "glyph_paths": [],
+      "sources": {},
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.785771Z"
+    },
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.714943Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST9",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.714988Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.786204Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"NOT_ATTESTED\", \"glyph_count\": 0, \"guodian_laozi\": false, \"glyph_paths\": [], \"sources\": {}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.785771Z\"}",
+        "rationale": "CHUBS validation: NOT_ATTESTED (0 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.714988Z",
+    "modified": "2025-12-15T20:21:29.786204Z"
+  },
+  "欲": {
+    "character": "欲",
+    "unicode": "U+6B32",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "directed orientation",
+      "structural": "directed orientation, tendency toward",
+      "traditional": "desire, craving (moral weakness)",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "谷",
+            "meaning": "valley",
+            "position": "unknown"
+          },
+          {
+            "component": "欠",
+            "meaning": "opening",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 244,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{衣欲}（欲）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/穀（欲）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（欲）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/欲",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/欲",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/慾（欲）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/谷（欲）"
+      ],
+      "sources": {
+        "清華簡_03C-說命下": 1,
+        "清華簡_03D-周公之琴舞": 2,
+        "郭店簡_12-六德": 1,
+        "郭店簡_03-緇衣": 2,
+        "上博簡_8C-成王既邦": 7,
+        "郭店簡_01A-老子甲": 12,
+        "清華簡_09D-廼命二": 4,
+        "清華簡_08D-治邦之道": 6,
+        "郭店簡_01C-老子丙": 4,
+        "清華簡_06E-子儀": 6,
+        "上博簡_5D-姑成家父": 8,
+        "上博簡_5B-鮑叔牙與隰朋之諫": 8,
+        "清華簡_08E-心是謂中": 8,
+        "上博簡_2C-魯邦大旱": 4,
+        "上博簡_5G-三德": 4,
+        "清華簡_06B-管仲": 2,
+        "上博簡_8J-鶹鷅": 4,
+        "清華簡_02A-繫年": 10,
+        "清華簡_09A-治政之道": 8,
+        "上博簡_7E-君人者何必安哉乙": 2,
+        "上博簡_2G-容成氏": 10,
+        "上博簡_5C-季庚子問於孔子": 2,
+        "上博簡_3A-周易": 2,
+        "清華簡_07A-子犯子餘": 10,
+        "上博簡_4F-柬大王泊旱": 2,
+        "長臺關簡_1-竹書": 3,
+        "清華簡_08C-邦家處位": 4,
+        "清華簡_01C-程寤": 4,
+        "上博簡_5E-君子爲禮": 10,
+        "上博簡_4H-相邦之道": 2,
+        "上博簡_3D-彭祖": 2,
+        "上博簡_7A-武王踐阼": 12,
+        "上博簡_8F-志書乃言": 2,
+        "清華簡_03E-芮良夫毖": 2,
+        "上博簡_7B-鄭子家喪甲": 2,
+        "上博簡_7C-鄭子家喪乙": 2,
+        "清華簡_06F-子產": 2,
+        "清華簡_01D-保訓": 2,
+        "上博簡_4I-曹沫之陳": 6,
+        "上博簡_7G-凡物流形乙": 2,
+        "上博簡_7D-君人者何必安哉甲": 2,
+        "上博簡_7F-凡物流形甲": 4,
+        "九店簡_1-56墓": 2,
+        "郭店簡_14-語叢二": 6,
+        "上博簡_3C-亘先": 3,
+        "上博簡_1C-性情論": 11,
+        "郭店簡_11-性自命出": 16,
+        "上博簡_1B-緇衣": 2,
+        "郭店簡_10-尊德義": 1,
+        "郭店簡_09-成之聞之": 5,
+        "上博簡_1A-孔子詩論": 3,
+        "上博簡_8E-王居": 1,
+        "上博簡_6B-孔子見季桓子": 1,
+        "上博簡_8B-顏淵問於孔子": 1
+      },
+      "pos_distribution": {
+        "助词": 1,
+        "动词": 1
+      },
+      "pos_percentages": {
+        "助词": 50.0,
+        "动词": 50.0
+      },
+      "dominant_pos": "助词",
+      "dominant_pos_english": "particle",
+      "total_pos_instances": 2,
+      "last_validated": "2025-12-15T20:21:29.787114Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_12-六德": 1,
+        "郭店簡_03-緇衣": 2,
+        "郭店簡_01A-老子甲": 12,
+        "郭店簡_01C-老子丙": 4,
+        "郭店簡_14-語叢二": 6,
+        "郭店簡_11-性自命出": 16,
+        "郭店簡_10-尊德義": 1,
+        "郭店簡_09-成之聞之": 5
+      },
+      "total_instances": 47,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.711268Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.711319Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.810680Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 244, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{衣欲}（欲）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/穀（欲）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（欲）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/欲\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/欲\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/慾（欲）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/谷（欲）\"], \"sources\": {\"清華簡_03C-說命下\": 1, \"清華簡_03D-周公之琴舞\": 2, \"郭店簡_12-六德\": 1, \"郭店簡_03-緇衣\": 2, \"上博簡_8C-成王既邦\": 7, \"郭店簡_01A-老子甲\": 12, \"清華簡_09D-廼命二\": 4, \"清華簡_08D-治邦之道\": 6, \"郭店簡_01C-老子丙\": 4, \"清華簡_06E-子儀\": 6, \"上博簡_5D-姑成家父\": 8, \"上博簡_5B-鮑叔牙與隰朋之諫\": 8, \"清華簡_08E-心是謂中\": 8, \"上博簡_2C-魯邦大旱\": 4, \"上博簡_5G-三德\": 4, \"清華簡_06B-管仲\": 2, \"上博簡_8J-鶹鷅\": 4, \"清華簡_02A-繫年\": 10, \"清華簡_09A-治政之道\": 8, \"上博簡_7E-君人者何必安哉乙\": 2, \"上博簡_2G-容成氏\": 10, \"上博簡_5C-季庚子問於孔子\": 2, \"上博簡_3A-周易\": 2, \"清華簡_07A-子犯子餘\": 10, \"上博簡_4F-柬大王泊旱\": 2, \"長臺關簡_1-竹書\": 3, \"清華簡_08C-邦家處位\": 4, \"清華簡_01C-程寤\": 4, \"上博簡_5E-君子爲禮\": 10, \"上博簡_4H-相邦之道\": 2, \"上博簡_3D-彭祖\": 2, \"上博簡_7A-武王踐阼\": 12, \"上博簡_8F-志書乃言\": 2, \"清華簡_03E-芮良夫毖\": 2, \"上博簡_7B-鄭子家喪甲\": 2, \"上博簡_7C-鄭子家喪乙\": 2, \"清華簡_06F-子產\": 2, \"清華簡_01D-保訓\": 2, \"上博簡_4I-曹沫之陳\": 6, \"上博簡_7G-凡物流形乙\": 2, \"上博簡_7D-君人者何必安哉甲\": 2, \"上博簡_7F-凡物流形甲\": 4, \"九店簡_1-56墓\": 2, \"郭店簡_14-語叢二\": 6, \"上博簡_3C-亘先\": 3, \"上博簡_1C-性情論\": 11, \"郭店簡_11-性自命出\": 16, \"上博簡_1B-緇衣\": 2, \"郭店簡_10-尊德義\": 1, \"郭店簡_09-成之聞之\": 5, \"上博簡_1A-孔子詩論\": 3, \"上博簡_8E-王居\": 1, \"上博簡_6B-孔子見季桓子\": 1, \"上博簡_8B-顏淵問於孔子\": 1}, \"pos_distribution\": {\"助词\": 1, \"动词\": 1}, \"pos_percentages\": {\"助词\": 50.0, \"动词\": 50.0}, \"dominant_pos\": \"助词\", \"dominant_pos_english\": \"particle\", \"total_pos_instances\": 2, \"last_validated\": \"2025-12-15T20:21:29.787114Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (244 glyphs, 2 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.412840Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_12-六德\": 1, \"郭店簡_03-緇衣\": 2, \"郭店簡_01A-老子甲\": 12, \"郭店簡_01C-老子丙\": 4, \"郭店簡_14-語叢二\": 6, \"郭店簡_11-性自命出\": 16, \"郭店簡_10-尊德義\": 1, \"郭店簡_09-成之聞之\": 5}, \"total_instances\": 47, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.711319Z",
+    "modified": "2025-12-15T20:21:39.412840Z"
+  },
+  "治": {
+    "character": "治",
+    "unicode": "U+6CBB",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "channeling flow through constructed platform",
+      "structural": "channeling flow through constructed platform",
+      "traditional": "govern, rule",
+      "notes": "13 occurrences - most frequent! Governance IS flow management"
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "氵",
+            "meaning": "water",
+            "position": "unknown"
+          },
+          {
+            "component": "台",
+            "meaning": "platform",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 64,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/紿（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/司（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{㠯心}（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/之（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/怠（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/詞（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/台（治）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（治）"
+      ],
+      "sources": {
+        "上博簡_2G-容成氏": 5,
+        "清華簡_01G-皇門": 1,
+        "郭店簡_07-唐虞之道": 7,
+        "上博簡_1C-性情論": 2,
+        "上博簡_4B-逸詩交交鳴烏": 2,
+        "上博簡_8G-李頌": 1,
+        "郭店簡_01A-老子甲": 2,
+        "上博簡_4I-曹沫之陳": 3,
+        "上博簡_4F-柬大王泊旱": 2,
+        "郭店簡_10-尊德義": 8,
+        "郭店簡_03-緇衣": 1,
+        "上博簡_3B-仲弓": 1,
+        "上博簡_5E-君子爲禮": 4,
+        "上博簡_8D-命": 1,
+        "上博簡_7G-凡物流形乙": 1,
+        "郭店簡_12-六德": 2,
+        "上博簡_5D-姑成家父": 4,
+        "上博簡_2B-子羔": 1,
+        "上博簡_5F-弟子問": 1,
+        "上博簡_2E-從政乙": 3,
+        "上博簡_5G-三德": 1,
+        "上博簡_4H-相邦之道": 1,
+        "郭店簡_01B-老子乙": 1,
+        "郭店簡_11-性自命出": 2,
+        "上博簡_7F-凡物流形甲": 2,
+        "上博簡_3C-亘先": 1,
+        "郭店簡_09-成之聞之": 1,
+        "上博簡_8B-顏淵問於孔子": 1,
+        "上博簡_2D-從政甲": 1,
+        "上博簡_6I-天子建州甲": 1
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.812304Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_07-唐虞之道": 7,
+        "郭店簡_01A-老子甲": 2,
+        "郭店簡_10-尊德義": 8,
+        "郭店簡_03-緇衣": 1,
+        "郭店簡_12-六德": 2,
+        "郭店簡_01B-老子乙": 1,
+        "郭店簡_11-性自命出": 2,
+        "郭店簡_09-成之聞之": 1
+      },
+      "total_instances": 24,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.716566Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST8",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.716611Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.812853Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 64, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/紿（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/司（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{㠯心}（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/之（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/怠（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/詞（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/台（治）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（治）\"], \"sources\": {\"上博簡_2G-容成氏\": 5, \"清華簡_01G-皇門\": 1, \"郭店簡_07-唐虞之道\": 7, \"上博簡_1C-性情論\": 2, \"上博簡_4B-逸詩交交鳴烏\": 2, \"上博簡_8G-李頌\": 1, \"郭店簡_01A-老子甲\": 2, \"上博簡_4I-曹沫之陳\": 3, \"上博簡_4F-柬大王泊旱\": 2, \"郭店簡_10-尊德義\": 8, \"郭店簡_03-緇衣\": 1, \"上博簡_3B-仲弓\": 1, \"上博簡_5E-君子爲禮\": 4, \"上博簡_8D-命\": 1, \"上博簡_7G-凡物流形乙\": 1, \"郭店簡_12-六德\": 2, \"上博簡_5D-姑成家父\": 4, \"上博簡_2B-子羔\": 1, \"上博簡_5F-弟子問\": 1, \"上博簡_2E-從政乙\": 3, \"上博簡_5G-三德\": 1, \"上博簡_4H-相邦之道\": 1, \"郭店簡_01B-老子乙\": 1, \"郭店簡_11-性自命出\": 2, \"上博簡_7F-凡物流形甲\": 2, \"上博簡_3C-亘先\": 1, \"郭店簡_09-成之聞之\": 1, \"上博簡_8B-顏淵問於孔子\": 1, \"上博簡_2D-從政甲\": 1, \"上博簡_6I-天子建州甲\": 1}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.812304Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (64 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.413947Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_07-唐虞之道\": 7, \"郭店簡_01A-老子甲\": 2, \"郭店簡_10-尊德義\": 8, \"郭店簡_03-緇衣\": 1, \"郭店簡_12-六德\": 2, \"郭店簡_01B-老子乙\": 1, \"郭店簡_11-性自命出\": 2, \"郭店簡_09-成之聞之\": 1}, \"total_instances\": 24, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.716611Z",
+    "modified": "2025-12-15T20:21:39.413947Z"
+  },
+  "清": {
+    "character": "清",
+    "unicode": "U+6E05",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "transparent medium",
+      "structural": "transparent medium, light unimpeded through fluid",
+      "traditional": "pure, clear",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "氵",
+            "meaning": "water",
+            "position": "unknown"
+          },
+          {
+            "component": "青",
+            "meaning": "blue/pure",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "NOT_ATTESTED",
+      "glyph_count": 0,
+      "guodian_laozi": false,
+      "glyph_paths": [],
+      "sources": {},
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.813823Z"
+    },
+    "guodian_attestation": null,
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.717109Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST8",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.717154Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.814316Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"NOT_ATTESTED\", \"glyph_count\": 0, \"guodian_laozi\": false, \"glyph_paths\": [], \"sources\": {}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.813823Z\"}",
+        "rationale": "CHUBS validation: NOT_ATTESTED (0 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.717154Z",
+    "modified": "2025-12-15T20:21:29.814316Z"
+  },
+  "玄": {
+    "character": "玄",
+    "unicode": "U+7384",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "dark/subtle entry point",
+      "structural": "dark/subtle entry point, inaccessible boundary",
+      "traditional": "mysterious, profound",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "Threading/subtle connection",
+            "meaning": "",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "GLYPHS_ONLY",
+      "glyph_count": 28,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄"
+      ],
+      "sources": {
+        "清華簡_09E-禱辭": 4,
+        "葛陵簡_J3-甲三": 2,
+        "上博簡_5C-季庚子問於孔子": 2,
+        "郭店簡_01A-老子甲": 4,
+        "曾侯乙簡_2-B組": 4,
+        "子彈庫帛_1-四時令": 4,
+        "上博簡_2B-子羔": 2,
+        "包山簡_1-文書": 4,
+        "曾侯乙簡_1-A組": 2
+      },
+      "pos_distribution": {},
+      "pos_percentages": {},
+      "dominant_pos": null,
+      "dominant_pos_english": null,
+      "total_pos_instances": 0,
+      "last_validated": "2025-12-15T20:21:29.815119Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_01A-老子甲": 4
+      },
+      "total_instances": 4,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.719335Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.719377Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.815546Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"GLYPHS_ONLY\", \"glyph_count\": 28, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/玄\"], \"sources\": {\"清華簡_09E-禱辭\": 4, \"葛陵簡_J3-甲三\": 2, \"上博簡_5C-季庚子問於孔子\": 2, \"郭店簡_01A-老子甲\": 4, \"曾侯乙簡_2-B組\": 4, \"子彈庫帛_1-四時令\": 4, \"上博簡_2B-子羔\": 2, \"包山簡_1-文書\": 4, \"曾侯乙簡_1-A組\": 2}, \"pos_distribution\": {}, \"pos_percentages\": {}, \"dominant_pos\": null, \"dominant_pos_english\": null, \"total_pos_instances\": 0, \"last_validated\": \"2025-12-15T20:21:29.815119Z\"}",
+        "rationale": "CHUBS validation: GLYPHS_ONLY (28 glyphs, 0 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.415019Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_01A-老子甲\": 4}, \"total_instances\": 4, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.719377Z",
+    "modified": "2025-12-15T20:21:39.415019Z"
+  },
+  "者": {
+    "character": "者",
+    "unicode": "U+8005",
+    "pinyin": "zhe3",
+    "current_translation": {
+      "primary": "that which",
+      "structural": "nominalization operator, pattern instantiation",
+      "traditional": "one who, that which",
+      "notes": ""
+    },
+    "confidence": "speculative",
+    "confidence_score": 0.3,
+    "radical_decomposition": {
+      "standard": {
+        "components": []
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 1339,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/偖（者）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/者",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/者",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（者）"
+      ],
+      "sources": {
+        "上博簡_5B-鮑叔牙與隰朋之諫": 3,
+        "郭店簡_08-忠信之道": 14,
+        "郭店簡_11-性自命出": 98,
+        "郭店簡_12-六德": 64,
+        "上博簡_2G-容成氏": 50,
+        "郭店簡_15-語叢三": 42,
+        "清華簡_08C-邦家處位": 12,
+        "清華簡_07D-越公其事": 28,
+        "上博簡_6B-孔子見季桓子": 16,
+        "上博簡_3D-彭祖": 6,
+        "上博簡_1C-性情論": 86,
+        "清華簡_02A-繫年": 64,
+        "郭店簡_06-五行": 36,
+        "上博簡_4G-內禮": 32,
+        "上博簡_2B-子羔": 8,
+        "上博簡_1A-孔子詩論": 24,
+        "上博簡_4I-曹沫之陳": 38,
+        "上博簡_4F-柬大王泊旱": 12,
+        "清華簡_09A-治政之道": 48,
+        "清華簡_06E-子儀": 14,
+        "郭店簡_13-語叢一": 32,
+        "郭店簡_02-太一生水": 24,
+        "上博簡_5C-季庚子問於孔子": 12,
+        "郭店簡_14-語叢二": 18,
+        "清華簡_08D-治邦之道": 26,
+        "郭店簡_10-尊德義": 40,
+        "郭店簡_07-唐虞之道": 24,
+        "郭店簡_01C-老子丙": 6,
+        "包山簡_2-卜筮祭禱": 6,
+        "清華簡_05C-命訓": 4,
+        "清華簡_08F-天下之道": 16,
+        "清華簡_07B-晉文公入於晉": 4,
+        "上博簡_5F-弟子問": 18,
+        "郭店簡_04-魯穆公問子思": 16,
+        "上博簡_1B-緇衣": 12,
+        "包山簡_1-文書": 10,
+        "上博簡_2A-民之父母": 8,
+        "清華簡_04A-筮法": 24,
+        "葛陵簡_J3-甲三": 4,
+        "子彈庫帛_1-四時令": 2,
+        "郭店簡_09-成之聞之": 30,
+        "上博簡_7A-武王踐阼": 4,
+        "子彈庫帛_5-殘片": 2,
+        "上博簡_3B-仲弓": 16,
+        "上博簡_2F-昔者君老": 2,
+        "清華簡_06D-鄭文公問太伯乙": 2,
+        "清華簡_06B-管仲": 28,
+        "郭店簡_01A-老子甲": 26,
+        "上博簡_3C-亘先": 16,
+        "上博簡_5H-鬼神之明": 12,
+        "葛陵簡_Z-零": 4,
+        "清華簡_09E-禱辭": 26,
+        "上博簡_5D-姑成家父": 4,
+        "上博簡_6A-競公瘧": 6,
+        "清華簡_07C-趙簡子": 6,
+        "九店簡_1-56墓": 4,
+        "上博簡_5A-競建内之": 14,
+        "上博簡_7D-君人者何必安哉甲": 4,
+        "郭店簡_16-語叢四": 16,
+        "清華簡_07A-子犯子餘": 2,
+        "上博簡_2D-從政甲": 4,
+        "清華簡_06F-子產": 8,
+        "郭店簡_01B-老子乙": 10,
+        "清華簡_08E-心是謂中": 6,
+        "上博簡_6J-天子建州乙": 2,
+        "清華簡_08B-邦家之政": 6,
+        "上博簡_7E-君人者何必安哉乙": 4,
+        "上博簡_5G-三德": 8,
+        "上博簡_5E-君子爲禮": 2,
+        "清華簡_08H-虞夏殷周之治": 6,
+        "上博簡_8B-顏淵問於孔子": 4,
+        "長臺關簡_1-竹書": 8,
+        "清華簡_03E-芮良夫毖": 2,
+        "上博簡_6I-天子建州甲": 4,
+        "清華簡_05A-厚父": 2,
+        "郭店簡_03-緇衣": 16,
+        "上博簡_8C-成王既邦": 8,
+        "清華簡_06C-鄭文公問太伯甲": 2,
+        "清華簡_03D-周公之琴舞": 2,
+        "清華簡_06A-鄭武夫人規孺子": 2,
+        "子彈庫帛_4-攻守占": 4,
+        "長臺關簡_2-遣冊": 2,
+        "清華簡_03H-赤鵠之集湯之屋": 2
+      },
+      "pos_distribution": {
+        "数量词": 2,
+        "语气词": 1
+      },
+      "pos_percentages": {
+        "数量词": 66.7,
+        "语气词": 33.3
+      },
+      "dominant_pos": "数量词",
+      "dominant_pos_english": "数量词",
+      "total_pos_instances": 3,
+      "last_validated": "2025-12-15T20:21:29.816279Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_08-忠信之道": 14,
+        "郭店簡_11-性自命出": 98,
+        "郭店簡_12-六德": 64,
+        "郭店簡_15-語叢三": 42,
+        "郭店簡_06-五行": 36,
+        "郭店簡_13-語叢一": 32,
+        "郭店簡_02-太一生水": 24,
+        "郭店簡_14-語叢二": 18,
+        "郭店簡_10-尊德義": 40,
+        "郭店簡_07-唐虞之道": 24,
+        "郭店簡_01C-老子丙": 6,
+        "郭店簡_04-魯穆公問子思": 16,
+        "郭店簡_09-成之聞之": 30,
+        "郭店簡_01A-老子甲": 26,
+        "郭店簡_16-語叢四": 16,
+        "郭店簡_01B-老子乙": 10,
+        "郭店簡_03-緇衣": 16
+      },
+      "total_instances": 512,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": null,
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:11:48.624657Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "cli"
+      },
+      {
+        "date": "2025-12-15T20:21:29.827390Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 1339, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/偖（者）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/者\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/者\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/○（者）\"], \"sources\": {\"上博簡_5B-鮑叔牙與隰朋之諫\": 3, \"郭店簡_08-忠信之道\": 14, \"郭店簡_11-性自命出\": 98, \"郭店簡_12-六德\": 64, \"上博簡_2G-容成氏\": 50, \"郭店簡_15-語叢三\": 42, \"清華簡_08C-邦家處位\": 12, \"清華簡_07D-越公其事\": 28, \"上博簡_6B-孔子見季桓子\": 16, \"上博簡_3D-彭祖\": 6, \"上博簡_1C-性情論\": 86, \"清華簡_02A-繫年\": 64, \"郭店簡_06-五行\": 36, \"上博簡_4G-內禮\": 32, \"上博簡_2B-子羔\": 8, \"上博簡_1A-孔子詩論\": 24, \"上博簡_4I-曹沫之陳\": 38, \"上博簡_4F-柬大王泊旱\": 12, \"清華簡_09A-治政之道\": 48, \"清華簡_06E-子儀\": 14, \"郭店簡_13-語叢一\": 32, \"郭店簡_02-太一生水\": 24, \"上博簡_5C-季庚子問於孔子\": 12, \"郭店簡_14-語叢二\": 18, \"清華簡_08D-治邦之道\": 26, \"郭店簡_10-尊德義\": 40, \"郭店簡_07-唐虞之道\": 24, \"郭店簡_01C-老子丙\": 6, \"包山簡_2-卜筮祭禱\": 6, \"清華簡_05C-命訓\": 4, \"清華簡_08F-天下之道\": 16, \"清華簡_07B-晉文公入於晉\": 4, \"上博簡_5F-弟子問\": 18, \"郭店簡_04-魯穆公問子思\": 16, \"上博簡_1B-緇衣\": 12, \"包山簡_1-文書\": 10, \"上博簡_2A-民之父母\": 8, \"清華簡_04A-筮法\": 24, \"葛陵簡_J3-甲三\": 4, \"子彈庫帛_1-四時令\": 2, \"郭店簡_09-成之聞之\": 30, \"上博簡_7A-武王踐阼\": 4, \"子彈庫帛_5-殘片\": 2, \"上博簡_3B-仲弓\": 16, \"上博簡_2F-昔者君老\": 2, \"清華簡_06D-鄭文公問太伯乙\": 2, \"清華簡_06B-管仲\": 28, \"郭店簡_01A-老子甲\": 26, \"上博簡_3C-亘先\": 16, \"上博簡_5H-鬼神之明\": 12, \"葛陵簡_Z-零\": 4, \"清華簡_09E-禱辭\": 26, \"上博簡_5D-姑成家父\": 4, \"上博簡_6A-競公瘧\": 6, \"清華簡_07C-趙簡子\": 6, \"九店簡_1-56墓\": 4, \"上博簡_5A-競建内之\": 14, \"上博簡_7D-君人者何必安哉甲\": 4, \"郭店簡_16-語叢四\": 16, \"清華簡_07A-子犯子餘\": 2, \"上博簡_2D-從政甲\": 4, \"清華簡_06F-子產\": 8, \"郭店簡_01B-老子乙\": 10, \"清華簡_08E-心是謂中\": 6, \"上博簡_6J-天子建州乙\": 2, \"清華簡_08B-邦家之政\": 6, \"上博簡_7E-君人者何必安哉乙\": 4, \"上博簡_5G-三德\": 8, \"上博簡_5E-君子爲禮\": 2, \"清華簡_08H-虞夏殷周之治\": 6, \"上博簡_8B-顏淵問於孔子\": 4, \"長臺關簡_1-竹書\": 8, \"清華簡_03E-芮良夫毖\": 2, \"上博簡_6I-天子建州甲\": 4, \"清華簡_05A-厚父\": 2, \"郭店簡_03-緇衣\": 16, \"上博簡_8C-成王既邦\": 8, \"清華簡_06C-鄭文公問太伯甲\": 2, \"清華簡_03D-周公之琴舞\": 2, \"清華簡_06A-鄭武夫人規孺子\": 2, \"子彈庫帛_4-攻守占\": 4, \"長臺關簡_2-遣冊\": 2, \"清華簡_03H-赤鵠之集湯之屋\": 2}, \"pos_distribution\": {\"数量词\": 2, \"语气词\": 1}, \"pos_percentages\": {\"数量词\": 66.7, \"语气词\": 33.3}, \"dominant_pos\": \"数量词\", \"dominant_pos_english\": \"数量词\", \"total_pos_instances\": 3, \"last_validated\": \"2025-12-15T20:21:29.816279Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (1339 glyphs, 3 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.416045Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_08-忠信之道\": 14, \"郭店簡_11-性自命出\": 98, \"郭店簡_12-六德\": 64, \"郭店簡_15-語叢三\": 42, \"郭店簡_06-五行\": 36, \"郭店簡_13-語叢一\": 32, \"郭店簡_02-太一生水\": 24, \"郭店簡_14-語叢二\": 18, \"郭店簡_10-尊德義\": 40, \"郭店簡_07-唐虞之道\": 24, \"郭店簡_01C-老子丙\": 6, \"郭店簡_04-魯穆公問子思\": 16, \"郭店簡_09-成之聞之\": 30, \"郭店簡_01A-老子甲\": 26, \"郭店簡_16-語叢四\": 16, \"郭店簡_01B-老子乙\": 10, \"郭店簡_03-緇衣\": 16}, \"total_instances\": 512, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:11:48.624657Z",
+    "modified": "2025-12-15T20:21:39.416045Z"
+  },
+  "自": {
+    "character": "自",
+    "unicode": "U+81EA",
+    "pinyin": "zi4",
+    "current_translation": {
+      "primary": "self/from",
+      "structural": "origin point, source of recursion",
+      "traditional": "self, from, since",
+      "notes": ""
+    },
+    "confidence": "speculative",
+    "confidence_score": 0.3,
+    "radical_decomposition": {
+      "standard": {
+        "components": []
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "PLAUSIBLE",
+      "glyph_count": 442,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/自",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/自"
+      ],
+      "sources": {
+        "清華簡_09D-廼命二": 6,
+        "清華簡_05D-湯處於湯丘": 8,
+        "清華簡_08A-攝命": 2,
+        "清華簡_02A-繫年": 22,
+        "清華簡_01I-楚居": 32,
+        "上博簡_5D-姑成家父": 2,
+        "上博簡_3A-周易": 10,
+        "上博簡_1C-性情論": 2,
+        "上博簡_3D-彭祖": 4,
+        "九店簡_2-621墓": 6,
+        "郭店簡_01A-老子甲": 22,
+        "望山簡_1-卜筮祭禱（1墓）": 4,
+        "清華簡_03E-芮良夫毖": 6,
+        "郭店簡_11-性自命出": 4,
+        "清華簡_08G-八氣五味五祀五行之屬": 10,
+        "上博簡_4B-逸詩交交鳴烏": 4,
+        "葛陵簡_Y4-乙四": 4,
+        "郭店簡_14-語叢二": 2,
+        "上博簡_3C-亘先": 18,
+        "上博簡_2G-容成氏": 16,
+        "清華簡_07D-越公其事": 10,
+        "包山簡_1-文書": 14,
+        "葛陵簡_J3-甲三": 14,
+        "上博簡_6H-用曰": 14,
+        "上博簡_7H-吳命": 2,
+        "清華簡_08D-治邦之道": 10,
+        "郭店簡_15-語叢三": 4,
+        "包山簡_2-卜筮祭禱": 22,
+        "清華簡_06F-子產": 14,
+        "清華簡_09A-治政之道": 10,
+        "葛陵簡_Z-零": 8,
+        "清華簡_01G-皇門": 4,
+        "郭店簡_07-唐虞之道": 2,
+        "上博簡_7G-凡物流形乙": 4,
+        "上博簡_7F-凡物流形甲": 4,
+        "清華簡_06A-鄭武夫人規孺子": 4,
+        "上博簡_8C-成王既邦": 6,
+        "清華簡_01H-祭公": 2,
+        "清華簡_07B-晉文公入於晉": 2,
+        "清華簡_03A-說命上": 4,
+        "清華簡_03H-赤鵠之集湯之屋": 2,
+        "清華簡_09E-禱辭": 6,
+        "清華簡_03D-周公之琴舞": 2,
+        "上博簡_2E-從政乙": 2,
+        "葛陵簡_Y2-乙二": 2,
+        "子彈庫帛_7-商承祚藏片": 2,
+        "上博簡_6A-競公瘧": 4,
+        "上博簡_4I-曹沫之陳": 6,
+        "清華簡_06C-鄭文公問太伯甲": 2,
+        "上博簡_4E-昭王與龔之脽": 2,
+        "清華簡_05E-湯在啻門": 2,
+        "清華簡_01A-尹至": 4,
+        "清華簡_05F-殷高宗問於三壽": 4,
+        "清華簡_01D-保訓": 4,
+        "清華簡_06E-子儀": 2,
+        "上博簡_8I-有皇將起": 2,
+        "清華簡_01F-金縢": 6,
+        "郭店簡_01C-老子丙": 4,
+        "上博簡_4F-柬大王泊旱": 2,
+        "清華簡_08C-邦家處位": 2,
+        "郭店簡_03-緇衣": 6,
+        "上博簡_1B-緇衣": 4,
+        "清華簡_07A-子犯子餘": 2,
+        "葛陵簡_Y1-乙一": 6,
+        "上博簡_8E-王居": 2,
+        "郭店簡_16-語叢四": 2,
+        "上博簡_1A-孔子詩論": 2,
+        "清華簡_01B-尹誥": 2,
+        "上博簡_4D-昭王毀室": 2,
+        "上博簡_3B-仲弓": 2,
+        "清華簡_03B-說命中": 4,
+        "郭店簡_10-尊德義": 2,
+        "郭店簡_13-語叢一": 2,
+        "子彈庫帛_1-四時令": 4
+      },
+      "pos_distribution": {
+        "介词": 7,
+        "代词": 7,
+        "动词": 1
+      },
+      "pos_percentages": {
+        "介词": 46.7,
+        "代词": 46.7,
+        "动词": 6.7
+      },
+      "dominant_pos": "介词",
+      "dominant_pos_english": "preposition",
+      "total_pos_instances": 15,
+      "last_validated": "2025-12-15T20:21:29.828522Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_01A-老子甲": 22,
+        "郭店簡_11-性自命出": 4,
+        "郭店簡_14-語叢二": 2,
+        "郭店簡_15-語叢三": 4,
+        "郭店簡_07-唐虞之道": 2,
+        "郭店簡_01C-老子丙": 4,
+        "郭店簡_03-緇衣": 6,
+        "郭店簡_16-語叢四": 2,
+        "郭店簡_10-尊德義": 2,
+        "郭店簡_13-語叢一": 2
+      },
+      "total_instances": 50,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": null,
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:11:48.437680Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "cli"
+      },
+      {
+        "date": "2025-12-15T20:21:29.860795Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"PLAUSIBLE\", \"glyph_count\": 442, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/自\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/自\"], \"sources\": {\"清華簡_09D-廼命二\": 6, \"清華簡_05D-湯處於湯丘\": 8, \"清華簡_08A-攝命\": 2, \"清華簡_02A-繫年\": 22, \"清華簡_01I-楚居\": 32, \"上博簡_5D-姑成家父\": 2, \"上博簡_3A-周易\": 10, \"上博簡_1C-性情論\": 2, \"上博簡_3D-彭祖\": 4, \"九店簡_2-621墓\": 6, \"郭店簡_01A-老子甲\": 22, \"望山簡_1-卜筮祭禱（1墓）\": 4, \"清華簡_03E-芮良夫毖\": 6, \"郭店簡_11-性自命出\": 4, \"清華簡_08G-八氣五味五祀五行之屬\": 10, \"上博簡_4B-逸詩交交鳴烏\": 4, \"葛陵簡_Y4-乙四\": 4, \"郭店簡_14-語叢二\": 2, \"上博簡_3C-亘先\": 18, \"上博簡_2G-容成氏\": 16, \"清華簡_07D-越公其事\": 10, \"包山簡_1-文書\": 14, \"葛陵簡_J3-甲三\": 14, \"上博簡_6H-用曰\": 14, \"上博簡_7H-吳命\": 2, \"清華簡_08D-治邦之道\": 10, \"郭店簡_15-語叢三\": 4, \"包山簡_2-卜筮祭禱\": 22, \"清華簡_06F-子產\": 14, \"清華簡_09A-治政之道\": 10, \"葛陵簡_Z-零\": 8, \"清華簡_01G-皇門\": 4, \"郭店簡_07-唐虞之道\": 2, \"上博簡_7G-凡物流形乙\": 4, \"上博簡_7F-凡物流形甲\": 4, \"清華簡_06A-鄭武夫人規孺子\": 4, \"上博簡_8C-成王既邦\": 6, \"清華簡_01H-祭公\": 2, \"清華簡_07B-晉文公入於晉\": 2, \"清華簡_03A-說命上\": 4, \"清華簡_03H-赤鵠之集湯之屋\": 2, \"清華簡_09E-禱辭\": 6, \"清華簡_03D-周公之琴舞\": 2, \"上博簡_2E-從政乙\": 2, \"葛陵簡_Y2-乙二\": 2, \"子彈庫帛_7-商承祚藏片\": 2, \"上博簡_6A-競公瘧\": 4, \"上博簡_4I-曹沫之陳\": 6, \"清華簡_06C-鄭文公問太伯甲\": 2, \"上博簡_4E-昭王與龔之脽\": 2, \"清華簡_05E-湯在啻門\": 2, \"清華簡_01A-尹至\": 4, \"清華簡_05F-殷高宗問於三壽\": 4, \"清華簡_01D-保訓\": 4, \"清華簡_06E-子儀\": 2, \"上博簡_8I-有皇將起\": 2, \"清華簡_01F-金縢\": 6, \"郭店簡_01C-老子丙\": 4, \"上博簡_4F-柬大王泊旱\": 2, \"清華簡_08C-邦家處位\": 2, \"郭店簡_03-緇衣\": 6, \"上博簡_1B-緇衣\": 4, \"清華簡_07A-子犯子餘\": 2, \"葛陵簡_Y1-乙一\": 6, \"上博簡_8E-王居\": 2, \"郭店簡_16-語叢四\": 2, \"上博簡_1A-孔子詩論\": 2, \"清華簡_01B-尹誥\": 2, \"上博簡_4D-昭王毀室\": 2, \"上博簡_3B-仲弓\": 2, \"清華簡_03B-說命中\": 4, \"郭店簡_10-尊德義\": 2, \"郭店簡_13-語叢一\": 2, \"子彈庫帛_1-四時令\": 4}, \"pos_distribution\": {\"介词\": 7, \"代词\": 7, \"动词\": 1}, \"pos_percentages\": {\"介词\": 46.7, \"代词\": 46.7, \"动词\": 6.7}, \"dominant_pos\": \"介词\", \"dominant_pos_english\": \"preposition\", \"total_pos_instances\": 15, \"last_validated\": \"2025-12-15T20:21:29.828522Z\"}",
+        "rationale": "CHUBS validation: PLAUSIBLE (442 glyphs, 15 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.417197Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_01A-老子甲\": 22, \"郭店簡_11-性自命出\": 4, \"郭店簡_14-語叢二\": 2, \"郭店簡_15-語叢三\": 4, \"郭店簡_07-唐虞之道\": 2, \"郭店簡_01C-老子丙\": 4, \"郭店簡_03-緇衣\": 6, \"郭店簡_16-語叢四\": 2, \"郭店簡_10-尊德義\": 2, \"郭店簡_13-語叢一\": 2}, \"total_instances\": 50, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:11:48.437680Z",
+    "modified": "2025-12-15T20:21:39.417197Z"
+  },
+  "道": {
+    "character": "道",
+    "unicode": "U+9053",
+    "pinyin": "dao4",
+    "current_translation": {
+      "primary": "pattern",
+      "structural": "continuous aligned movement with governing primary",
+      "traditional": "way, path, the Tao",
+      "notes": ""
+    },
+    "confidence": "speculative",
+    "confidence_score": 0.3,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "辶",
+            "meaning": "movement",
+            "position": "bottom"
+          },
+          {
+            "component": "首",
+            "meaning": "head",
+            "position": "top"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": [
+          {
+            "component": "walking_figure",
+            "meaning": "person carrying load",
+            "position": "bottom",
+            "pictographic_origin": "Figure in motion with burden"
+          },
+          {
+            "component": "vessel",
+            "meaning": "water container on pole",
+            "position": "top",
+            "pictographic_origin": "Container shape with carrying structure"
+          }
+        ]
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 532,
+      "guodian_laozi": true,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{行人}（道）",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/道",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/道",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{道臼}（道）"
+      ],
+      "sources": {
+        "郭店簡_11-性自命出": 27,
+        "郭店簡_15-語叢三": 3,
+        "郭店簡_12-六德": 5,
+        "郭店簡_13-語叢一": 11,
+        "郭店簡_01A-老子甲": 21,
+        "上博簡_8C-成王既邦": 16,
+        "長臺關簡_1-竹書": 8,
+        "郭店簡_01B-老子乙": 20,
+        "郭店簡_10-尊德義": 28,
+        "上博簡_4I-曹沫之陳": 30,
+        "清華簡_09A-治政之道": 10,
+        "清華簡_06B-管仲": 12,
+        "上博簡_1C-性情論": 36,
+        "郭店簡_09-成之聞之": 12,
+        "上博簡_2G-容成氏": 22,
+        "清華簡_07A-子犯子餘": 2,
+        "上博簡_7A-武王踐阼": 18,
+        "上博簡_5C-季庚子問於孔子": 4,
+        "清華簡_07B-晉文公入於晉": 2,
+        "清華簡_05C-命訓": 8,
+        "上博簡_3C-亘先": 2,
+        "上博簡_2D-從政甲": 6,
+        "郭店簡_06-五行": 38,
+        "清華簡_08D-治邦之道": 10,
+        "上博簡_6B-孔子見季桓子": 16,
+        "郭店簡_02-太一生水": 6,
+        "清華簡_08C-邦家處位": 6,
+        "上博簡_7G-凡物流形乙": 4,
+        "郭店簡_01C-老子丙": 4,
+        "上博簡_7H-吳命": 6,
+        "清華簡_07D-越公其事": 6,
+        "上博簡_8A-子道餓": 2,
+        "清華簡_08F-天下之道": 8,
+        "上博簡_6I-天子建州甲": 2,
+        "清華簡_06F-子產": 18,
+        "清華簡_05E-湯在啻門": 2,
+        "清華簡_03E-芮良夫毖": 4,
+        "郭店簡_14-語叢二": 2,
+        "上博簡_5F-弟子問": 2,
+        "上博簡_2B-子羔": 2,
+        "上博簡_5D-姑成家父": 4,
+        "上博簡_8H-蘭賦": 4,
+        "上博簡_3B-仲弓": 4,
+        "清華簡_02A-繫年": 2,
+        "上博簡_6H-用曰": 2,
+        "上博簡_7F-凡物流形甲": 6,
+        "上博簡_4A-采風曲目": 3,
+        "郭店簡_16-語叢四": 2,
+        "上博簡_5G-三德": 4,
+        "郭店簡_07-唐虞之道": 8,
+        "上博簡_4H-相邦之道": 4,
+        "上博簡_8B-顏淵問於孔子": 4,
+        "九店簡_1-56墓": 2,
+        "清華簡_05D-湯處於湯丘": 4,
+        "清華簡_06E-子儀": 2,
+        "上博簡_3A-周易": 2,
+        "郭店簡_03-緇衣": 4,
+        "清華簡_04A-筮法": 2,
+        "上博簡_5A-競建内之": 4,
+        "葛陵簡_J3-甲三": 2,
+        "上博簡_1A-孔子詩論": 2,
+        "上博簡_3D-彭祖": 4,
+        "清華簡_09B-成人": 2,
+        "郭店簡_08-忠信之道": 4,
+        "上博簡_6G-慎子曰恭儉": 4,
+        "清華簡_08E-心是謂中": 2,
+        "清華簡_01C-程寤": 2,
+        "上博簡_6J-天子建州乙": 2
+      },
+      "pos_distribution": {
+        "名词": 5
+      },
+      "pos_percentages": {
+        "名词": 100.0
+      },
+      "dominant_pos": "名词",
+      "dominant_pos_english": "noun",
+      "total_pos_instances": 5,
+      "last_validated": "2025-12-15T20:21:29.862436Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_11-性自命出": 27,
+        "郭店簡_15-語叢三": 3,
+        "郭店簡_12-六德": 5,
+        "郭店簡_13-語叢一": 11,
+        "郭店簡_01A-老子甲": 21,
+        "郭店簡_01B-老子乙": 20,
+        "郭店簡_10-尊德義": 28,
+        "郭店簡_09-成之聞之": 12,
+        "郭店簡_06-五行": 38,
+        "郭店簡_02-太一生水": 6,
+        "郭店簡_01C-老子丙": 4,
+        "郭店簡_14-語叢二": 2,
+        "郭店簡_16-語叢四": 2,
+        "郭店簡_07-唐虞之道": 8,
+        "郭店簡_03-緇衣": 4,
+        "郭店簡_08-忠信之道": 4
+      },
+      "total_instances": 195,
+      "in_laozi": true
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": null,
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:11:40.344663Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "cli"
+      },
+      {
+        "date": "2025-12-15T20:12:12.177730Z",
+        "field": "radical_decomposition.standard.components",
+        "from": "[]",
+        "to": "[{\"component\": \"辶\", \"meaning\": \"movement\", \"position\": \"bottom\"}, {\"component\": \"首\", \"meaning\": \"head\", \"position\": \"top\"}]",
+        "rationale": "Standard Kangxi radical analysis",
+        "author": "cli"
+      },
+      {
+        "date": "2025-12-15T20:12:20.160975Z",
+        "field": "radical_decomposition.agricultural.components",
+        "from": "[]",
+        "to": "[{\"component\": \"walking_figure\", \"meaning\": \"person carrying load\", \"position\": \"bottom\", \"pictographic_origin\": \"Figure in motion with burden\"}, {\"component\": \"vessel\", \"meaning\": \"water container on pole\", \"position\": \"top\", \"pictographic_origin\": \"Container shape with carrying structure\"}]",
+        "rationale": "Agricultural hypothesis: water-carrier pictograph",
+        "author": "cli"
+      },
+      {
+        "date": "2025-12-15T20:21:29.874792Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 532, \"guodian_laozi\": true, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{行人}（道）\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/道\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/道\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/{道臼}（道）\"], \"sources\": {\"郭店簡_11-性自命出\": 27, \"郭店簡_15-語叢三\": 3, \"郭店簡_12-六德\": 5, \"郭店簡_13-語叢一\": 11, \"郭店簡_01A-老子甲\": 21, \"上博簡_8C-成王既邦\": 16, \"長臺關簡_1-竹書\": 8, \"郭店簡_01B-老子乙\": 20, \"郭店簡_10-尊德義\": 28, \"上博簡_4I-曹沫之陳\": 30, \"清華簡_09A-治政之道\": 10, \"清華簡_06B-管仲\": 12, \"上博簡_1C-性情論\": 36, \"郭店簡_09-成之聞之\": 12, \"上博簡_2G-容成氏\": 22, \"清華簡_07A-子犯子餘\": 2, \"上博簡_7A-武王踐阼\": 18, \"上博簡_5C-季庚子問於孔子\": 4, \"清華簡_07B-晉文公入於晉\": 2, \"清華簡_05C-命訓\": 8, \"上博簡_3C-亘先\": 2, \"上博簡_2D-從政甲\": 6, \"郭店簡_06-五行\": 38, \"清華簡_08D-治邦之道\": 10, \"上博簡_6B-孔子見季桓子\": 16, \"郭店簡_02-太一生水\": 6, \"清華簡_08C-邦家處位\": 6, \"上博簡_7G-凡物流形乙\": 4, \"郭店簡_01C-老子丙\": 4, \"上博簡_7H-吳命\": 6, \"清華簡_07D-越公其事\": 6, \"上博簡_8A-子道餓\": 2, \"清華簡_08F-天下之道\": 8, \"上博簡_6I-天子建州甲\": 2, \"清華簡_06F-子產\": 18, \"清華簡_05E-湯在啻門\": 2, \"清華簡_03E-芮良夫毖\": 4, \"郭店簡_14-語叢二\": 2, \"上博簡_5F-弟子問\": 2, \"上博簡_2B-子羔\": 2, \"上博簡_5D-姑成家父\": 4, \"上博簡_8H-蘭賦\": 4, \"上博簡_3B-仲弓\": 4, \"清華簡_02A-繫年\": 2, \"上博簡_6H-用曰\": 2, \"上博簡_7F-凡物流形甲\": 6, \"上博簡_4A-采風曲目\": 3, \"郭店簡_16-語叢四\": 2, \"上博簡_5G-三德\": 4, \"郭店簡_07-唐虞之道\": 8, \"上博簡_4H-相邦之道\": 4, \"上博簡_8B-顏淵問於孔子\": 4, \"九店簡_1-56墓\": 2, \"清華簡_05D-湯處於湯丘\": 4, \"清華簡_06E-子儀\": 2, \"上博簡_3A-周易\": 2, \"郭店簡_03-緇衣\": 4, \"清華簡_04A-筮法\": 2, \"上博簡_5A-競建内之\": 4, \"葛陵簡_J3-甲三\": 2, \"上博簡_1A-孔子詩論\": 2, \"上博簡_3D-彭祖\": 4, \"清華簡_09B-成人\": 2, \"郭店簡_08-忠信之道\": 4, \"上博簡_6G-慎子曰恭儉\": 4, \"清華簡_08E-心是謂中\": 2, \"清華簡_01C-程寤\": 2, \"上博簡_6J-天子建州乙\": 2}, \"pos_distribution\": {\"名词\": 5}, \"pos_percentages\": {\"名词\": 100.0}, \"dominant_pos\": \"名词\", \"dominant_pos_english\": \"noun\", \"total_pos_instances\": 5, \"last_validated\": \"2025-12-15T20:21:29.862436Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (532 glyphs, 5 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.418334Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_11-性自命出\": 27, \"郭店簡_15-語叢三\": 3, \"郭店簡_12-六德\": 5, \"郭店簡_13-語叢一\": 11, \"郭店簡_01A-老子甲\": 21, \"郭店簡_01B-老子乙\": 20, \"郭店簡_10-尊德義\": 28, \"郭店簡_09-成之聞之\": 12, \"郭店簡_06-五行\": 38, \"郭店簡_02-太一生水\": 6, \"郭店簡_01C-老子丙\": 4, \"郭店簡_14-語叢二\": 2, \"郭店簡_16-語叢四\": 2, \"郭店簡_07-唐虞之道\": 8, \"郭店簡_03-緇衣\": 4, \"郭店簡_08-忠信之道\": 4}, \"total_instances\": 195, \"in_laozi\": true}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:11:40.344663Z",
+    "modified": "2025-12-15T20:21:39.418334Z"
+  },
+  "非": {
+    "character": "非",
+    "unicode": "U+975E",
+    "pinyin": "",
+    "current_translation": {
+      "primary": "complementary pair",
+      "structural": "complementary pair, dual aspects",
+      "traditional": "not, wrong",
+      "notes": ""
+    },
+    "confidence": "provisional",
+    "confidence_score": 0.5,
+    "radical_decomposition": {
+      "standard": {
+        "components": [
+          {
+            "component": "Two mirrored elements showing duality",
+            "meaning": "",
+            "position": "unknown"
+          }
+        ]
+      },
+      "agricultural": {
+        "components": []
+      },
+      "preferred": null,
+      "preference_rationale": null
+    },
+    "character_evolution": {
+      "oracle_bone": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "bronze": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "chu": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      },
+      "seal": {
+        "attested": null,
+        "image_refs": [],
+        "analysis": null
+      }
+    },
+    "agricultural_hypothesis": {
+      "claim": null,
+      "predictions": [],
+      "falsification_threshold": null
+    },
+    "counter_evidence": [],
+    "chubs_validation": {
+      "verdict": "CONFIRMED",
+      "glyph_count": 294,
+      "guodian_laozi": false,
+      "glyph_paths": [
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/非",
+        "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/非"
+      ],
+      "sources": {
+        "上博簡_3A-周易": 8,
+        "上博簡_6H-用曰": 12,
+        "清華簡_05A-厚父": 4,
+        "清華簡_06E-子儀": 2,
+        "清華簡_06F-子產": 2,
+        "清華簡_05F-殷高宗問於三壽": 16,
+        "上博簡_3C-亘先": 16,
+        "郭店簡_13-語叢一": 16,
+        "清華簡_09D-廼命二": 6,
+        "清華簡_01G-皇門": 6,
+        "郭店簡_10-尊德義": 12,
+        "清華簡_08A-攝命": 14,
+        "清華簡_03D-周公之琴舞": 10,
+        "清華簡_03E-芮良夫毖": 2,
+        "郭店簡_05-窮達以時": 8,
+        "清華簡_01B-尹誥": 2,
+        "清華簡_05D-湯處於湯丘": 4,
+        "清華簡_07C-趙簡子": 6,
+        "清華簡_09B-成人": 12,
+        "清華簡_03B-說命中": 2,
+        "清華簡_04A-筮法": 4,
+        "郭店簡_16-語叢四": 4,
+        "清華簡_01C-程寤": 18,
+        "上博簡_7H-吳命": 4,
+        "郭店簡_03-緇衣": 4,
+        "上博簡_4I-曹沫之陳": 6,
+        "上博簡_1B-緇衣": 2,
+        "上博簡_8C-成王既邦": 2,
+        "包山簡_1-文書": 2,
+        "郭店簡_12-六德": 10,
+        "清華簡_09A-治政之道": 10,
+        "郭店簡_04-魯穆公問子思": 2,
+        "上博簡_8G-李頌": 2,
+        "子彈庫帛_1-四時令": 2,
+        "望山簡_1-卜筮祭禱（1墓）": 2,
+        "清華簡_03C-說命下": 4,
+        "清華簡_08D-治邦之道": 4,
+        "郭店簡_11-性自命出": 6,
+        "郭店簡_15-語叢三": 8,
+        "清華簡_08F-天下之道": 6,
+        "上博簡_6A-競公瘧": 2,
+        "清華簡_07D-越公其事": 2,
+        "上博簡_1C-性情論": 4,
+        "上博簡_8D-命": 2,
+        "清華簡_05B-封鄦之命": 2,
+        "上博簡_2C-魯邦大旱": 2,
+        "郭店簡_09-成之聞之": 8,
+        "清華簡_03A-說命上": 2,
+        "九店簡_1-56墓": 4,
+        "上博簡_6B-孔子見季桓子": 2,
+        "上博簡_5I-融師有成氏": 2
+      },
+      "pos_distribution": {
+        "形容词": 1,
+        "副词": 8,
+        "动词": 17
+      },
+      "pos_percentages": {
+        "形容词": 3.8,
+        "副词": 30.8,
+        "动词": 65.4
+      },
+      "dominant_pos": "动词",
+      "dominant_pos_english": "verb",
+      "total_pos_instances": 26,
+      "last_validated": "2025-12-15T20:21:29.876406Z"
+    },
+    "guodian_attestation": {
+      "attested": true,
+      "sources": {
+        "郭店簡_13-語叢一": 16,
+        "郭店簡_10-尊德義": 12,
+        "郭店簡_05-窮達以時": 8,
+        "郭店簡_16-語叢四": 4,
+        "郭店簡_03-緇衣": 4,
+        "郭店簡_12-六德": 10,
+        "郭店簡_04-魯穆公問子思": 2,
+        "郭店簡_11-性自命出": 6,
+        "郭店簡_15-語叢三": 8,
+        "郭店簡_09-成之聞之": 8
+      },
+      "total_instances": 78,
+      "in_laozi": false
+    },
+    "font_data": {
+      "traced": false,
+      "vector_path": null,
+      "source_images": [],
+      "extracted_features": null,
+      "tracing_metadata": null
+    },
+    "semantic_field": null,
+    "pictographic_analysis": null,
+    "exemplar_provenance": null,
+    "cross_references": {
+      "related_characters": [],
+      "ddj_chapters": [],
+      "lexicon_category": "substrate",
+      "rsm_mapping": null
+    },
+    "history": [
+      {
+        "date": "2025-12-15T20:09:53.718777Z",
+        "field": "created",
+        "from": null,
+        "to": "migrated_from_validated_characters.json",
+        "rationale": "Migration from legacy format. Original validation: TEST1",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:09:53.718818Z",
+        "field": "created",
+        "from": null,
+        "to": "initial_entry",
+        "rationale": "Entry created",
+        "author": "migration_script"
+      },
+      {
+        "date": "2025-12-15T20:21:29.876932Z",
+        "field": "chubs_validation",
+        "from": null,
+        "to": "{\"verdict\": \"CONFIRMED\", \"glyph_count\": 294, \"guodian_laozi\": false, \"glyph_paths\": [\"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/非\", \"/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/非\"], \"sources\": {\"上博簡_3A-周易\": 8, \"上博簡_6H-用曰\": 12, \"清華簡_05A-厚父\": 4, \"清華簡_06E-子儀\": 2, \"清華簡_06F-子產\": 2, \"清華簡_05F-殷高宗問於三壽\": 16, \"上博簡_3C-亘先\": 16, \"郭店簡_13-語叢一\": 16, \"清華簡_09D-廼命二\": 6, \"清華簡_01G-皇門\": 6, \"郭店簡_10-尊德義\": 12, \"清華簡_08A-攝命\": 14, \"清華簡_03D-周公之琴舞\": 10, \"清華簡_03E-芮良夫毖\": 2, \"郭店簡_05-窮達以時\": 8, \"清華簡_01B-尹誥\": 2, \"清華簡_05D-湯處於湯丘\": 4, \"清華簡_07C-趙簡子\": 6, \"清華簡_09B-成人\": 12, \"清華簡_03B-說命中\": 2, \"清華簡_04A-筮法\": 4, \"郭店簡_16-語叢四\": 4, \"清華簡_01C-程寤\": 18, \"上博簡_7H-吳命\": 4, \"郭店簡_03-緇衣\": 4, \"上博簡_4I-曹沫之陳\": 6, \"上博簡_1B-緇衣\": 2, \"上博簡_8C-成王既邦\": 2, \"包山簡_1-文書\": 2, \"郭店簡_12-六德\": 10, \"清華簡_09A-治政之道\": 10, \"郭店簡_04-魯穆公問子思\": 2, \"上博簡_8G-李頌\": 2, \"子彈庫帛_1-四時令\": 2, \"望山簡_1-卜筮祭禱（1墓）\": 2, \"清華簡_03C-說命下\": 4, \"清華簡_08D-治邦之道\": 4, \"郭店簡_11-性自命出\": 6, \"郭店簡_15-語叢三\": 8, \"清華簡_08F-天下之道\": 6, \"上博簡_6A-競公瘧\": 2, \"清華簡_07D-越公其事\": 2, \"上博簡_1C-性情論\": 4, \"上博簡_8D-命\": 2, \"清華簡_05B-封鄦之命\": 2, \"上博簡_2C-魯邦大旱\": 2, \"郭店簡_09-成之聞之\": 8, \"清華簡_03A-說命上\": 2, \"九店簡_1-56墓\": 4, \"上博簡_6B-孔子見季桓子\": 2, \"上博簡_5I-融師有成氏\": 2}, \"pos_distribution\": {\"形容词\": 1, \"副词\": 8, \"动词\": 17}, \"pos_percentages\": {\"形容词\": 3.8, \"副词\": 30.8, \"动词\": 65.4}, \"dominant_pos\": \"动词\", \"dominant_pos_english\": \"verb\", \"total_pos_instances\": 26, \"last_validated\": \"2025-12-15T20:21:29.876406Z\"}",
+        "rationale": "CHUBS validation: CONFIRMED (294 glyphs, 26 POS instances)",
+        "author": "chubs_integrator"
+      },
+      {
+        "date": "2025-12-15T20:21:39.419599Z",
+        "field": "guodian_attestation",
+        "from": null,
+        "to": "{\"attested\": true, \"sources\": {\"郭店簡_13-語叢一\": 16, \"郭店簡_10-尊德義\": 12, \"郭店簡_05-窮達以時\": 8, \"郭店簡_16-語叢四\": 4, \"郭店簡_03-緇衣\": 4, \"郭店簡_12-六德\": 10, \"郭店簡_04-魯穆公問子思\": 2, \"郭店簡_11-性自命出\": 6, \"郭店簡_15-語叢三\": 8, \"郭店簡_09-成之聞之\": 8}, \"total_instances\": 78, \"in_laozi\": false}",
+        "rationale": "Enriched from CHUBS glyph mappings",
+        "author": "chubs_integrator"
+      }
+    ],
+    "created": "2025-12-15T20:09:53.718818Z",
+    "modified": "2025-12-15T20:21:39.419599Z"
+  }
+}

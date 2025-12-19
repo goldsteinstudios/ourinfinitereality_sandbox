@@ -1,0 +1,28 @@
+{
+  "font_family": "ChuGuodianDDJ",
+  "font_name": "Chu Guodian Dao De Jing",
+  "version": "0.1.0",
+  "description": "Hand-traced Chu bamboo slip glyphs from the Guodian manuscripts of the Dao De Jing",
+  "license": "CC BY-NC-SA 4.0",
+  "author": "Will Goldstein",
+  "source": "CHUBS Dataset (Chu Bamboo Slips)",
+  "repository": "https://github.com/goldsteinstudios/dao-de-jing-analyzer",
+  "design_parameters": {
+    "units_per_em": 1000,
+    "ascender": 800,
+    "descender": -200,
+    "cap_height": 700,
+    "x_height": 500,
+    "glyph_width": 1000,
+    "line_height": 1200
+  },
+  "tracing_guidelines": {
+    "source_preference": ["guodian_laozi", "guodian_other", "shanghai_museum", "qinghua"],
+    "stroke_width": "variable_based_on_brush",
+    "preserve_brush_character": true,
+    "standardize_size": true,
+    "target_resolution": "128x128"
+  },
+  "output_formats": ["otf", "woff2", "svg"],
+  "build_tool": "fontforge"
+}

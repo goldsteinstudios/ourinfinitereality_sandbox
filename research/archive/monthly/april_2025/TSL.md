@@ -1,0 +1,1 @@
+Tao Te Ching Structural Lexicon (TSL) — see conversation for full text

@@ -1,0 +1,3108 @@
+{
+  "network": {
+    "nodes": [
+      {
+        "id": 1,
+        "title": "CHAPTER 1 - 11.4.25",
+        "subtitle": "",
+        "translated": true
+      },
+      {
+        "id": 2,
+        "title": "CHAPTER 02 - 11.4.25",
+        "subtitle": "making a chopping gesture",
+        "translated": true
+      },
+      {
+        "id": 3,
+        "title": "CHAPTER 03 - 11.17.25",
+        "subtitle": "*不尚賢，使民不爭*",
+        "translated": true
+      },
+      {
+        "id": 4,
+        "title": "Chapter 4: Exploring the Depths",
+        "subtitle": "*道沖而用之或不盈*",
+        "translated": true
+      },
+      {
+        "id": 5,
+        "title": "CHAPTER 05 - 11.4.25",
+        "subtitle": "leaning forward, speaking carefully",
+        "translated": true
+      },
+      {
+        "id": 6,
+        "title": "CHAPTER 06 - 11.4.25",
+        "subtitle": "*谷神不死*",
+        "translated": true
+      },
+      {
+        "id": 7,
+        "title": "CHAPTER 07 - 11.5.25",
+        "subtitle": "*天長地久*",
+        "translated": true
+      },
+      {
+        "id": 8,
+        "title": "CHAPTER 08 - 11.5.25",
+        "subtitle": "*上善若水*",
+        "translated": true
+      },
+      {
+        "id": 9,
+        "title": "CHAPTER 09 - 11.5.25",
+        "subtitle": "*持而盈之，不如其已*",
+        "translated": true
+      },
+      {
+        "id": 10,
+        "title": "CHAPTER 10 - 11.5.25",
+        "subtitle": "*載營魄抱一，能無離乎？*",
+        "translated": true
+      },
+      {
+        "id": 11,
+        "title": "Conversation Compilation: Chapter 11 Radicals, Corpus Expansion, and Technical Manual Refinement",
+        "subtitle": "*三十輻共一轂，當其無，有車之用。*",
+        "translated": true
+      },
+      {
+        "id": 12,
+        "title": "CHAPTER 12 - 11.5.25",
+        "subtitle": "",
+        "translated": true
+      },
+      {
+        "id": 14,
+        "title": "Chapter 14: The Three Imperceptibles",
+        "subtitle": "Boundary conditions on observation",
+        "translated": true
+      },
+      {
+        "id": 16,
+        "title": "Chapter 16: Return to Root",
+        "subtitle": "The recursion cycle and what \"knowing 常\" enables",
+        "translated": true
+      },
+      {
+        "id": 21,
+        "title": "Chapter 21: The Content of Great Alignment",
+        "subtitle": "How 德 relates to 道—the structural relationship specification",
+        "translated": true
+      },
+      {
+        "id": 22,
+        "title": "Chapter 22: The Geometry of Yielding",
+        "subtitle": "*曲則全，枉則直，窪則盈，弊則新，少則得，多則惑。*",
+        "translated": true
+      },
+      {
+        "id": 25,
+        "title": "Chapter 25: The Recursion Cycle",
+        "subtitle": "*有物混成，先天地生*",
+        "translated": true
+      },
+      {
+        "id": 34,
+        "title": "Chapter 34: The Pattern That Doesn't Claim",
+        "subtitle": "*大道泛兮，其可左右。*",
+        "translated": true
+      },
+      {
+        "id": 38,
+        "title": "Chapter 38: The Degradation Cascade",
+        "subtitle": "Opening chapter of the 德經 (De Jing)",
+        "translated": true
+      },
+      {
+        "id": 39,
+        "title": "Chapter 39: Those Who Obtained Unity",
+        "subtitle": "Scale-invariant principle across domains",
+        "translated": true
+      },
+      {
+        "id": 40,
+        "title": "CHAPTER 40 - 11.4.25",
+        "subtitle": "*反者道之動*",
+        "translated": true
+      },
+      {
+        "id": 41,
+        "title": "Chapter 41: Three Responses to Pattern",
+        "subtitle": "Meta-structural: how observation varies by frame",
+        "translated": true
+      },
+      {
+        "id": 42,
+        "title": "CHAPTER 42 - 11.4.25",
+        "subtitle": "",
+        "translated": true
+      },
+      {
+        "id": 46,
+        "title": "Chapter 46: When Horses Come Home From The Field",
+        "subtitle": "*Location 1: The fields*",
+        "translated": true
+      },
+      {
+        "id": 51,
+        "title": "Chapter 51: Pattern Generates, Alignment Accumulates",
+        "subtitle": "The 道生/德畜 formula and 玄德",
+        "translated": true
+      },
+      {
+        "id": 52,
+        "title": "Chapter 52: The World Has a Beginning",
+        "subtitle": "Pattern as origin/mother, recursive sourcing, and 習常",
+        "translated": true
+      },
+      {
+        "id": 56,
+        "title": "Chapter 56: Those Who Know Don't Speak",
+        "subtitle": "Boundary management and 玄同 (mysterious sameness)",
+        "translated": true
+      },
+      {
+        "id": 65,
+        "title": "Chapter 65 — The Law of Subtle Orientation",
+        "subtitle": "",
+        "translated": true
+      },
+      {
+        "id": 76,
+        "title": "Chapter 76: The Living Are Yielding",
+        "subtitle": "Material physics: stiff/flexible, death/life",
+        "translated": true
+      },
+      {
+        "id": 78,
+        "title": "Chapter 78: Nothing Under Heaven Is Softer Than Water",
+        "subtitle": "Water overcomes stone: soft/hard material dynamics",
+        "translated": true
+      },
+      {
+        "id": 81,
+        "title": "Chapter 81: Trustworthy Words Aren't Beautiful",
+        "subtitle": "Closing chapter: the system self-validates",
+        "translated": true
+      }
+    ],
+    "edges": [
+      {
+        "source": 1,
+        "target": 2,
+        "type": "references",
+        "context": "Once Chapter 1 establishes the coordinate system, every other chapter navigates through that space: • Chapter 2: How 無 and 有 co-generate each other"
+      },
+      {
+        "source": 1,
+        "target": 11,
+        "type": "validates",
+        "context": "• Chapter 11: Three demonstrations of bounded emptiness"
+      },
+      {
+        "source": 1,
+        "target": 25,
+        "type": "references",
+        "context": "• Chapter 25: The explicit recursion sequence (大→逝→遠→反)"
+      },
+      {
+        "source": 1,
+        "target": 40,
+        "type": "references",
+        "context": "• Chapter 25: The explicit recursion sequence (大→逝→遠→反) • Chapter 40: Return dynamics (反者道之動)"
+      },
+      {
+        "source": 1,
+        "target": 42,
+        "type": "references",
+        "context": "• Chapter 42: How dimensions emerge from Dao (道生一，一生二，二生三)"
+      },
+      {
+        "source": 2,
+        "target": 40,
+        "type": "references",
+        "context": "We've seen this in Chapter 40. 有 (form/boundary) and 無 (void/emptiness) aren't separate things that sometimes interact. They're complementary poles that continuously birth each other."
+      },
+      {
+        "source": 2,
+        "target": 40,
+        "type": "references",
+        "context": "This is the same 生 (co-generation) from Chapter 40 and Chapter 42, playing out across every type of distinction you can make:"
+      },
+      {
+        "source": 2,
+        "target": 42,
+        "type": "references",
+        "context": "This is the same 生 (co-generation) from Chapter 40 and Chapter 42, playing out across every type of distinction you can make:"
+      },
+      {
+        "source": 2,
+        "target": 25,
+        "type": "references",
+        "context": "This connects directly to Chapter 25's recursion formula: 大→逝→遠→反"
+      },
+      {
+        "source": 3,
+        "target": 2,
+        "type": "references",
+        "context": "Okay, here's where things get interesting. Chapter 2 just told us that boundaries create both poles simultaneously, and you shouldn't try to occupy positions permanently. Now Chapter 3 is going to sho"
+      },
+      {
+        "source": 3,
+        "target": 1,
+        "type": "references",
+        "context": "Remember 欲 from Chapter 1? It's not \"desire\"—it's **orientation, observational stance, direction of attention**."
+      },
+      {
+        "source": 3,
+        "target": 5,
+        "type": "references",
+        "context": "But 虛 is that same \"hollow/empty\" from Chapter 5's bellows! And 心 is center, and 腹 is foundation."
+      },
+      {
+        "source": 3,
+        "target": 5,
+        "type": "references",
+        "context": "弱 we know from Chapter 5! Not \"weak\" but **yielding**—flexible, soft, able to bend without breaking. Like rope, like water."
+      },
+      {
+        "source": 3,
+        "target": 2,
+        "type": "references",
+        "context": "**Chapter 2**: \"Boundaries create both poles. Don't occupy positions permanently.\""
+      },
+      {
+        "source": 3,
+        "target": 4,
+        "type": "references",
+        "context": "Chapter 3 is setting you up with concrete examples before the deep structural explanation. Like: \"Here's what water does [Ch 3]. Now let me show you WHY water does that [Ch 4-6].\""
+      },
+      {
+        "source": 3,
+        "target": 5,
+        "type": "validates",
+        "context": "The human examples aren't the point. They're demonstrations of the pattern. The pattern is universal (we'll add the 天地 frame in Chapter 5 to signal that). But starting with familiar examples makes it "
+      },
+      {
+        "source": 4,
+        "target": 1,
+        "type": "references",
+        "context": "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"
+      },
+      {
+        "source": 4,
+        "target": 2,
+        "type": "references",
+        "context": "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"
+      },
+      {
+        "source": 4,
+        "target": 3,
+        "type": "references",
+        "context": "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"
+      },
+      {
+        "source": 4,
+        "target": 5,
+        "type": "references",
+        "context": "**Next**: Chapter 5 will add the 天地 frame and show you this hollow in action—as a bellows that never exhausts. But now you know what you're looking at: depth expressing itself through multiple dimensi"
+      },
+      {
+        "source": 5,
+        "target": 2,
+        "type": "contrast",
+        "context": "Every word is a distinction. A boundary drawn. A category created. Remember Chapter 2? Every distinction co-generates both poles. Every word you add is another 屈 (restriction) on undifferentiated poss"
+      },
+      {
+        "source": 5,
+        "target": 1,
+        "type": "references",
+        "context": "**Chapter 1**: Establishes the coordinate system (the dimensional framework)"
+      },
+      {
+        "source": 5,
+        "target": 2,
+        "type": "references",
+        "context": "**Chapter 2**: Shows how every distinction co-generates both poles"
+      },
+      {
+        "source": 5,
+        "target": 1,
+        "type": "references",
+        "context": "We're learning: 1. Reality has structure (Ch 1)"
+      },
+      {
+        "source": 5,
+        "target": 2,
+        "type": "references",
+        "context": "2. Every boundary creates complementary aspects (Ch 2)"
+      },
+      {
+        "source": 6,
+        "target": 5,
+        "type": "references",
+        "context": " This is Chapter 5's 虛而不屈，動而愈出 again!"
+      },
+      {
+        "source": 7,
+        "target": 4,
+        "type": "references",
+        "context": "Remember 同其塵 from Chapter 4? You ARE dust. You're not a separate self made of special matter. You're temporarily organized dust that shares material identity with everything."
+      },
+      {
+        "source": 8,
+        "target": 5,
+        "type": "contrast",
+        "context": "Water's function is universal. Like the pot from Chapter 5 with its 不仁 (structural indifference that enables universal function)."
+      },
+      {
+        "source": 8,
+        "target": 3,
+        "type": "references",
+        "context": "This is Chapter 3's 不爭! Don't fight over permanent status positions!"
+      },
+      {
+        "source": 8,
+        "target": 7,
+        "type": "references",
+        "context": "This is Chapter 7's 外其身 (externalize self, don't occupy identity). Water has no permanent self-position to defend."
+      },
+      {
+        "source": 8,
+        "target": 7,
+        "type": "references",
+        "context": "This is Chapter 7's 後其身 (puts self behind, doesn't force forward)! Water doesn't try to be first, doesn't push upward, doesn't compete for high status."
+      },
+      {
+        "source": 8,
+        "target": 4,
+        "type": "references",
+        "context": "And what are low places? Valleys. The hollow. The void. The 淵 (deep pool from Chapter 4)."
+      },
+      {
+        "source": 8,
+        "target": 4,
+        "type": "references",
+        "context": "Chapter 4: 淵兮似萬物之宗 - \"Deep like an abyss, seems to be the ancestor of everything\""
+      },
+      {
+        "source": 8,
+        "target": 6,
+        "type": "references",
+        "context": "Chapter 4: 淵兮似萬物之宗 - \"Deep like an abyss, seems to be the ancestor of everything\" Chapter 6: 谷神不死 - \"The valley spirit doesn't die\""
+      },
+      {
+        "source": 8,
+        "target": 7,
+        "type": "validates",
+        "context": "This demonstrates Chapter 7's principle: 外其身而身存 (externalize self and self persists). Water doesn't defend positions, yet persists everywhere."
+      },
+      {
+        "source": 8,
+        "target": 4,
+        "type": "references",
+        "context": "淵 again! From Chapter 4! 淵兮似萬物之宗 - \"Deep like an abyss, seems to be the ancestor of everything.\""
+      },
+      {
+        "source": 8,
+        "target": 4,
+        "type": "validates",
+        "context": "This demonstrates Chapter 4's principle: the hollow at the center is the source. The deep pool is the ancestor."
+      },
+      {
+        "source": 8,
+        "target": 5,
+        "type": "contrast",
+        "context": "仁 (rén) = we saw this in Chapter 5! 不仁 - not anthropocentric, structurally indifferent!"
+      },
+      {
+        "source": 8,
+        "target": 5,
+        "type": "validates",
+        "context": "This demonstrates Chapter 5's 不仁 principle: universal function through non-preference."
+      },
+      {
+        "source": 8,
+        "target": 1,
+        "type": "validates",
+        "context": "This demonstrates Chapter 1's 常 (frame-independent constancy). Water's behavior is 常 (invariant across contexts)."
+      },
+      {
+        "source": 8,
+        "target": 3,
+        "type": "validates",
+        "context": "This demonstrates Chapter 3's 為無為，則無不治 (act without forcing, and everything organizes itself). Water governs by not forcing governance."
+      },
+      {
+        "source": 8,
+        "target": 5,
+        "type": "validates",
+        "context": "This demonstrates Chapter 5's 虛而不屈，動而愈出 (empty and not restricting, moving and more emerges). Water's capacity is inexhaustible because water doesn't restrict its own functionality."
+      },
+      {
+        "source": 8,
+        "target": 40,
+        "type": "validates",
+        "context": "This demonstrates Chapter 40's 反者道之動 (return/oscillation is the pattern's movement). Water moves in natural cycles, not forced progressions."
+      },
+      {
+        "source": 8,
+        "target": 1,
+        "type": "references",
+        "context": "**Chapter 1**: Establishes the coordinate system (無/有, 可/常, 妙/徼)"
+      },
+      {
+        "source": 8,
+        "target": 2,
+        "type": "references",
+        "context": "**Chapter 2**: Shows how distinctions co-generate poles"
+      },
+      {
+        "source": 8,
+        "target": 3,
+        "type": "references",
+        "context": "**Chapter 3**: Shows what happens when you violate the pattern (create scarcity, force positions)"
+      },
+      {
+        "source": 8,
+        "target": 4,
+        "type": "references",
+        "context": "**Chapter 4**: Describes the hollow at the center (道沖, 淵, 同其塵)"
+      },
+      {
+        "source": 8,
+        "target": 5,
+        "type": "references",
+        "context": "**Chapter 5**: Shows the bellows (虛而不屈, 動而愈出, don't fill the center)"
+      },
+      {
+        "source": 8,
+        "target": 6,
+        "type": "references",
+        "context": "**Chapter 6**: Describes the generative void (谷神不死, 玄牝, use it without exhausting)"
+      },
+      {
+        "source": 8,
+        "target": 7,
+        "type": "references",
+        "context": "**Chapter 7**: Shows persistence through non-occupation (不自生, 後其身, 外其身)"
+      },
+      {
+        "source": 9,
+        "target": 2,
+        "type": "references",
+        "context": "This is 功成而弗居 from Chapter 2. Achievement complete → don't keep dwelling in it, forcing it, trying to make it more complete than complete."
+      },
+      {
+        "source": 9,
+        "target": 4,
+        "type": "references",
+        "context": " 銳! We know this character! From Chapter 4!"
+      },
+      {
+        "source": 9,
+        "target": 4,
+        "type": "references",
+        "context": "Remember Chapter 4: 挫其銳 - the pattern blunts sharp edges."
+      },
+      {
+        "source": 9,
+        "target": 3,
+        "type": "references",
+        "context": "This connects to Chapter 3: 不貴難得之貨 (don't create value through scarcity/exclusivity). When you try to 居 (occupy) precious things as permanent defended possessions, you create your own 窮 (exhaustion tr"
+      },
+      {
+        "source": 9,
+        "target": 3,
+        "type": "references",
+        "context": "This is Chapter 3's 尚賢 (elevating achievement into permanent status)! This is Chapter 4's 挫其銳 (sharp edges get blunted)! This is Chapter 7's warning about trying to 占據 high positions!"
+      },
+      {
+        "source": 9,
+        "target": 4,
+        "type": "references",
+        "context": "This is Chapter 3's 尚賢 (elevating achievement into permanent status)! This is Chapter 4's 挫其銳 (sharp edges get blunted)! This is Chapter 7's warning about trying to 占據 high positions!"
+      },
+      {
+        "source": 9,
+        "target": 7,
+        "type": "references",
+        "context": "This is Chapter 3's 尚賢 (elevating achievement into permanent status)! This is Chapter 4's 挫其銳 (sharp edges get blunted)! This is Chapter 7's warning about trying to 占據 high positions!"
+      },
+      {
+        "source": 9,
+        "target": 8,
+        "type": "references",
+        "context": "Remember water from Chapter 8? 處眾人之所惡 - dwells in places everyone avoids, the LOW places. And therefore 幾於道 - nearly IS the pattern, nearly indestructible."
+      },
+      {
+        "source": 9,
+        "target": 2,
+        "type": "references",
+        "context": " This is it. This is 功成而弗居 from Chapter 2."
+      },
+      {
+        "source": 9,
+        "target": 8,
+        "type": "validates",
+        "context": "**Chapter 8**: Watch water—supreme function, never fails, demonstrates everything"
+      },
+      {
+        "source": 9,
+        "target": 8,
+        "type": "references",
+        "context": "Chapter 8 shows you the model. Chapter 9 shows you what breaks when you violate the model."
+      },
+      {
+        "source": 10,
+        "target": 7,
+        "type": "references",
+        "context": "And we know from Chapter 7: 不自生 (not trying to self-source) is what enables 長生 (continuous generation). Things that try to 自生 break. Things that try to be their own center collapse."
+      },
+      {
+        "source": 10,
+        "target": 5,
+        "type": "same_principle",
+        "context": "柔! This is the same principle as 弱 (ruò) from Chapter 5!"
+      },
+      {
+        "source": 10,
+        "target": 1,
+        "type": "references",
+        "context": "滌除 (dí chú) = wash away, cleanse, purge, remove 玄 (xuán) = THE MYSTERIOUS CENTER! From Chapter 1!"
+      },
+      {
+        "source": 10,
+        "target": 5,
+        "type": "references",
+        "context": "• 多言 (excessive words from Chapter 5) - too many categories fill the space"
+      },
+      {
+        "source": 10,
+        "target": 3,
+        "type": "references",
+        "context": "• 知 (fixed rigid distinctions from Chapter 3) - frozen categories block perception"
+      },
+      {
+        "source": 10,
+        "target": 5,
+        "type": "extends",
+        "context": "This is Chapter 5's bellows! 開 (open - the hand rises, the spring extends) and 闔 (close - the hand compresses, the spring stores)."
+      },
+      {
+        "source": 10,
+        "target": 40,
+        "type": "references",
+        "context": "This is Chapter 40's oscillation! 反者道之動 (return/oscillation is the pattern's movement)."
+      },
+      {
+        "source": 10,
+        "target": 6,
+        "type": "references",
+        "context": "雌! Like 牝 (pìn) from Chapter 6! The generative void! The fertile emptiness! The womb principle!"
+      },
+      {
+        "source": 10,
+        "target": 6,
+        "type": "references",
+        "context": "Remember Chapter 6's correction: 牝 isn't \"receptive\" (passive, secondary). 牝 is generative (active, primary, creative)."
+      },
+      {
+        "source": 10,
+        "target": 3,
+        "type": "references",
+        "context": " 知 we know from Chapter 3!"
+      },
+      {
+        "source": 10,
+        "target": 7,
+        "type": "references",
+        "context": "This is 外其身 from Chapter 7. Don't 居 (occupy) what you generate."
+      },
+      {
+        "source": 10,
+        "target": 7,
+        "type": "references",
+        "context": "This is 後其身而身先 from Chapter 7. Don't try to occupy the results as your permanent position."
+      },
+      {
+        "source": 10,
+        "target": 3,
+        "type": "references",
+        "context": "This is 為無為 from Chapter 3. Lead with full cycles, not forcing."
+      },
+      {
+        "source": 10,
+        "target": 9,
+        "type": "references",
+        "context": "This is 功遂身退 from Chapter 9. Complete then withdraw."
+      },
+      {
+        "source": 10,
+        "target": 7,
+        "type": "references",
+        "context": "This is 外其身而身存 from Chapter 7. Externalize (don't occupy) and persist."
+      },
+      {
+        "source": 10,
+        "target": 2,
+        "type": "references",
+        "context": "This is 不居 from Chapter 2. Don't press weight onto completion."
+      },
+      {
+        "source": 10,
+        "target": 9,
+        "type": "references",
+        "context": "**Chapter 9**: Know when to stop. 功遂身退 (complete then withdraw). Don't fill past full. Don't sharpen past optimal."
+      },
+      {
+        "source": 10,
+        "target": 9,
+        "type": "references",
+        "context": "Chapter 9 teaches: Cycles have endpoints. Release when complete."
+      },
+      {
+        "source": 11,
+        "target": 1,
+        "type": "references",
+        "context": "1. **Analyze Chapter 1's key terms through radical composition** — Examine how 道, 名, 無, 有, and 玄 are built from component radicals."
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "references",
+        "context": "## Part 2: Low-Effort Corpus Expansion Opportunities ### Priority 1: The Chapter 25 Document (3 hours)"
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "references",
+        "context": "**What's missing:** A standalone document that *just* does Chapter 25. Step-by-step geometric walkthrough with diagrams. The mathematical formalization written out explicitly. Showing how this four-st"
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "references",
+        "context": "**The expansion:** \"Chapter 25: The Explicit Recursion Formula\" — This could be the *Rosetta Stone document*—the single clearest proof that the Dao De Jing is encoding geometric recursion in linguisti"
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "references",
+        "context": "1. Add 3-5 worked examples (pick characters from Chapter 11, Chapter 25)"
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "validates",
+        "context": "1. **Prove geometric encoding** (Chapter 25 document)"
+      },
+      {
+        "source": 11,
+        "target": 42,
+        "type": "references",
+        "context": "**Added content:** The full geometric walkthrough proving why Chapter 42 stops at three."
+      },
+      {
+        "source": 11,
+        "target": 42,
+        "type": "references",
+        "context": "This is why Chapter 42 stops at three. Not because ancient Chinese mathematics could not count past three, but because three is the point where *infinite elaboration becomes possible*. Once you have t"
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "references",
+        "context": "|Chapter 25 |Mathematical |Euler's identity and Dao recursion are isomorphic |"
+      },
+      {
+        "source": 11,
+        "target": 25,
+        "type": "references",
+        "context": "1. Chapter 25 document (Rosetta Stone for geometric reading)"
+      },
+      {
+        "source": 12,
+        "target": 9,
+        "type": "references",
+        "context": "This is the chapter that tells you what happens when you keep stimulating past capacity. When you don't let systems reset. When you violate Chapter 9's teaching about stopping. When you lose Chapter 1"
+      },
+      {
+        "source": 12,
+        "target": 10,
+        "type": "references",
+        "context": "This is the chapter that tells you what happens when you keep stimulating past capacity. When you don't let systems reset. When you violate Chapter 9's teaching about stopping. When you lose Chapter 1"
+      },
+      {
+        "source": 12,
+        "target": 3,
+        "type": "references",
+        "context": "心 (xīn) = we know this from Chapter 3! The heart-mind, the center where perception and understanding happen"
+      },
+      {
+        "source": 12,
+        "target": 3,
+        "type": "references",
+        "context": "This connects to Chapter 3: 虛其心 (keep the center hollow)!"
+      },
+      {
+        "source": 12,
+        "target": 3,
+        "type": "references",
+        "context": "speaking with recognition 難得之貨! From Chapter 3!"
+      },
+      {
+        "source": 12,
+        "target": 3,
+        "type": "references",
+        "context": "Remember Chapter 3: 金玉滿堂，莫之能守 - \"Gold and jade filling the hall, no one can guard it all\""
+      },
+      {
+        "source": 12,
+        "target": 9,
+        "type": "references",
+        "context": "This violates Chapter 9: 持而盈之 (gripping and filling past full)."
+      },
+      {
+        "source": 12,
+        "target": 10,
+        "type": "references",
+        "context": "This violates Chapter 10: You lose orbit (離) because you're chasing external stimuli instead of maintaining connection to hollow center."
+      },
+      {
+        "source": 12,
+        "target": 3,
+        "type": "references",
+        "context": "This violates Chapter 3: 虛其心 (keep center hollow) becomes impossible when you're constantly 馳騁畋獵 (racing and hunting)."
+      },
+      {
+        "source": 12,
+        "target": 3,
+        "type": "references",
+        "context": "speaking with recognition 腹! From Chapter 3!"
+      },
+      {
+        "source": 12,
+        "target": 9,
+        "type": "references",
+        "context": "Like Chapter 9 taught: 功遂身退 (complete then withdraw). Fill to capacity then 已 (stop, let it cease)."
+      },
+      {
+        "source": 12,
+        "target": 10,
+        "type": "references",
+        "context": "Chapter 10: Can you maintain orbit around the hollow center? (能無離乎?)"
+      },
+      {
+        "source": 12,
+        "target": 9,
+        "type": "references",
+        "context": "Not \"you're being bad.\" But \"your systems are breaking from continuous input without release.\" making the Chapter 9 connection"
+      },
+      {
+        "source": 12,
+        "target": 10,
+        "type": "references",
+        "context": "That's staying in orbit (Chapter 10) by not chasing every external stimulus past capacity."
+      },
+      {
+        "source": 14,
+        "target": 1,
+        "type": "references",
+        "context": "### Connection to Chapter 1"
+      },
+      {
+        "source": 14,
+        "target": 1,
+        "type": "references",
+        "context": " | Ch 1 Term | Ch 14 Correspondence |"
+      },
+      {
+        "source": 16,
+        "target": 40,
+        "type": "references",
+        "context": "### Connection to Chapter 40"
+      },
+      {
+        "source": 16,
+        "target": 40,
+        "type": "references",
+        "context": " Chapter 40: 反者道之動—reversal is how pattern moves."
+      },
+      {
+        "source": 16,
+        "target": 40,
+        "type": "same_principle",
+        "context": "Same principle, different scale: - Ch 40: Pattern-level oscillation (反)"
+      },
+      {
+        "source": 16,
+        "target": 25,
+        "type": "references",
+        "context": " ### Connection to Chapter 25"
+      },
+      {
+        "source": 16,
+        "target": 25,
+        "type": "extends",
+        "context": "Chapter 25: 大曰逝，逝曰遠，遠曰反 (great → extends → far → returns)"
+      },
+      {
+        "source": 16,
+        "target": 25,
+        "type": "contrast",
+        "context": "Same cycle, different vocabulary: - Ch 25: 反 (return/reversal)"
+      },
+      {
+        "source": 16,
+        "target": 25,
+        "type": "same_term",
+        "context": "This is the same 王 from Chapter 25 (域中有四大，而王居其一—in the domain are four great, and 王 is one of them)."
+      },
+      {
+        "source": 16,
+        "target": 11,
+        "type": "references",
+        "context": "虛 (xū) = emptied, hollowed out. Not \"nothing\" but **cleared of content**. Like Chapter 11's wheel hub—emptied to enable function."
+      },
+      {
+        "source": 21,
+        "target": 14,
+        "type": "references",
+        "context": "### Connection to Chapter 14"
+      },
+      {
+        "source": 21,
+        "target": 14,
+        "type": "references",
+        "context": " | Ch 14 Term | Ch 21 Correspondence |"
+      },
+      {
+        "source": 21,
+        "target": 14,
+        "type": "specifies",
+        "context": " Chapter 14 documents the observation boundary."
+      },
+      {
+        "source": 21,
+        "target": 38,
+        "type": "references",
+        "context": " ### Connection to Chapter 38"
+      },
+      {
+        "source": 21,
+        "target": 38,
+        "type": "references",
+        "context": " | Ch 38 | Ch 21 |"
+      },
+      {
+        "source": 21,
+        "target": 38,
+        "type": "references",
+        "context": "Chapter 38 documents degradation from 道 through 德."
+      },
+      {
+        "source": 21,
+        "target": 38,
+        "type": "references",
+        "context": "This is the 信 from Chapter 38: 忠信之薄 (the thinning of loyalty and trust)."
+      },
+      {
+        "source": 21,
+        "target": 38,
+        "type": "references",
+        "context": "When 德 follows 道 (Ch 21), there is 信 within. When 德 degrades to 禮 (Ch 38), 信 thins out."
+      },
+      {
+        "source": 21,
+        "target": 25,
+        "type": "references",
+        "context": "This connects to 自然 (self-so) from Chapter 25: 道法自然 (pattern follows self-so)."
+      },
+      {
+        "source": 22,
+        "target": 46,
+        "type": "references",
+        "context": "This is the 知足 (knowing sufficiency) principle from Chapter 46: the gradient has an optimum. Below it, yielding enables receiving. Above it, accumulation causes confusion."
+      },
+      {
+        "source": 22,
+        "target": 11,
+        "type": "applies",
+        "context": "**Non-occupation enables function.** This is the Chapter 11 principle (利 shapes 無 into 用) applied to self-positioning."
+      },
+      {
+        "source": 22,
+        "target": 40,
+        "type": "references",
+        "context": "Through **genuine wholeness** (not partial preservation, not strategic holding back), you **return** to the pattern. The return (歸) echoes the 反 (fǎn) from Chapter 40—the reversal that completes the c"
+      },
+      {
+        "source": 34,
+        "target": 25,
+        "type": "references",
+        "context": " ### Connection to 大 from Chapter 25"
+      },
+      {
+        "source": 34,
+        "target": 25,
+        "type": "references",
+        "context": "Chapter 25 established 道大 as pattern-in-unbounded-mode (not \"the Dao is great\")."
+      },
+      {
+        "source": 34,
+        "target": 22,
+        "type": "references",
+        "context": " ### Connection to Non-Occupation (Chapter 22)"
+      },
+      {
+        "source": 34,
+        "target": 22,
+        "type": "references",
+        "context": " The four 不自X from Chapter 22:"
+      },
+      {
+        "source": 34,
+        "target": 2,
+        "type": "references",
+        "context": "生 (shēng) here is **co-generation**—the mutual arising documented in Chapter 2. The pattern doesn't create things unilaterally; it provides the field within which things co-arise."
+      },
+      {
+        "source": 34,
+        "target": 11,
+        "type": "references",
+        "context": "This is the 無 at the center of Chapter 11's wheel: the void that enables rotation by **not** being filled."
+      },
+      {
+        "source": 38,
+        "target": 34,
+        "type": "same_principle",
+        "context": " Same structure as Chapter 34: 終不為大，故能成其大."
+      },
+      {
+        "source": 38,
+        "target": 22,
+        "type": "references",
+        "context": " ### Connection to Chapter 22's 曲則全"
+      },
+      {
+        "source": 38,
+        "target": 65,
+        "type": "references",
+        "context": " ### Connection to Chapter 65's 智多"
+      },
+      {
+        "source": 38,
+        "target": 46,
+        "type": "references",
+        "context": "This is the Chapter 46 choice: where are your horses? In the fields (厚/實) or on the battlefield (薄/華)?"
+      },
+      {
+        "source": 39,
+        "target": 42,
+        "type": "references",
+        "context": "### Connection to Chapter 42"
+      },
+      {
+        "source": 39,
+        "target": 42,
+        "type": "references",
+        "context": " Chapter 42: 道生一，一生二，二生三，三生萬物"
+      },
+      {
+        "source": 39,
+        "target": 42,
+        "type": "specifies",
+        "context": " Chapter 42 documents the **generation** from 一."
+      },
+      {
+        "source": 39,
+        "target": 22,
+        "type": "references",
+        "context": " ### Connection to Chapter 22"
+      },
+      {
+        "source": 39,
+        "target": 22,
+        "type": "references",
+        "context": "Chapter 22: 是以聖人抱一為天下式 (the sage embraces unity as pattern for all)"
+      },
+      {
+        "source": 39,
+        "target": 11,
+        "type": "references",
+        "context": " ### Connection to Chapter 11"
+      },
+      {
+        "source": 39,
+        "target": 11,
+        "type": "validates",
+        "context": "Chapter 11: The wheel/pot/room demonstrations—function emerges from unified void, not from enumerated parts."
+      },
+      {
+        "source": 39,
+        "target": 4,
+        "type": "references",
+        "context": "谷 (gǔ) = valley, the receptive void. With unity, it's 盈—full (from Chapter 4/6: the valley that never empties)."
+      },
+      {
+        "source": 39,
+        "target": 2,
+        "type": "references",
+        "context": "萬物 = the ten thousand things. With unity, they 生—co-generate, arise (the 生 from Chapter 2)."
+      },
+      {
+        "source": 41,
+        "target": 14,
+        "type": "references",
+        "context": "### Connection to Chapter 14"
+      },
+      {
+        "source": 41,
+        "target": 14,
+        "type": "references",
+        "context": " | Ch 14 | Ch 41 |"
+      },
+      {
+        "source": 41,
+        "target": 14,
+        "type": "references",
+        "context": "Chapter 14 documents **why** observation fails at the boundary."
+      },
+      {
+        "source": 41,
+        "target": 38,
+        "type": "references",
+        "context": " ### Connection to Chapter 38"
+      },
+      {
+        "source": 41,
+        "target": 38,
+        "type": "references",
+        "context": " | Ch 38 | Ch 41 |"
+      },
+      {
+        "source": 41,
+        "target": 34,
+        "type": "references",
+        "context": "This connects to Chapter 34: pattern clothes and nourishes all things (衣養萬物) without claiming master position. Here: pattern **lends and completes** without becoming visible as the lender/completer."
+      },
+      {
+        "source": 42,
+        "target": 40,
+        "type": "references",
+        "context": "Remember from Chapter 40? 生 means co-emergence. Mutual arising. Both sides appearing simultaneously."
+      },
+      {
+        "source": 42,
+        "target": 40,
+        "type": "applies",
+        "context": "You have a back (where you came from, your hollow center) and a front (what you present, your boundary). But you're stable because there's circulation between them. The breath. The oscillation. The 反 "
+      },
+      {
+        "source": 42,
+        "target": 40,
+        "type": "references",
+        "context": "Time isn't a dimension—it's the 反 (return) from Chapter 40. It's the experience of traversing the three-dimensional structure, not a fourth dimension orthogonal to the other three. Time is what it fee"
+      },
+      {
+        "source": 46,
+        "target": 1,
+        "type": "references",
+        "context": "欲 (yù) is that word from Chapter 1, remember? The orientation. The observational stance. The direction you're facing."
+      },
+      {
+        "source": 51,
+        "target": 42,
+        "type": "references",
+        "context": "### Connection to Chapter 42"
+      },
+      {
+        "source": 51,
+        "target": 42,
+        "type": "references",
+        "context": " Chapter 42: 道生一，一生二，二生三，三生萬物"
+      },
+      {
+        "source": 51,
+        "target": 42,
+        "type": "specifies",
+        "context": "Chapter 42 documents the **generation sequence** (道 → 一 → 二 → 三 → 萬物)."
+      },
+      {
+        "source": 51,
+        "target": 21,
+        "type": "references",
+        "context": " ### Connection to Chapter 21"
+      },
+      {
+        "source": 51,
+        "target": 21,
+        "type": "references",
+        "context": "Chapter 21: 孔德之容，唯道是從 (content of great alignment = only follows pattern)"
+      },
+      {
+        "source": 51,
+        "target": 21,
+        "type": "specifies",
+        "context": "Chapter 21 specifies the relationship: 德 contains 道-following."
+      },
+      {
+        "source": 51,
+        "target": 34,
+        "type": "references",
+        "context": " ### Connection to Chapter 34"
+      },
+      {
+        "source": 51,
+        "target": 34,
+        "type": "references",
+        "context": "Chapter 34: 衣養萬物而不為主 (clothes/nourishes yet doesn't master)"
+      },
+      {
+        "source": 51,
+        "target": 38,
+        "type": "references",
+        "context": " ### Connection to Chapter 38"
+      },
+      {
+        "source": 51,
+        "target": 38,
+        "type": "references",
+        "context": "Chapter 38: 上德不德是以有德 (upper alignment doesn't optimize, thus has alignment)"
+      },
+      {
+        "source": 51,
+        "target": 25,
+        "type": "references",
+        "context": " Chapter 25: 道法自然 (pattern follows self-so)"
+      },
+      {
+        "source": 51,
+        "target": 41,
+        "type": "references",
+        "context": "This is why pattern can provide (貸) and complete (成) from Chapter 41: it doesn't occupy the positions of owner, credit-holder, or controller. The functional void enables the function."
+      },
+      {
+        "source": 51,
+        "target": 1,
+        "type": "references",
+        "context": "玄 (xuán) = the paradoxical origin from Chapter 1 (玄之又玄, 眾妙之門)."
+      },
+      {
+        "source": 52,
+        "target": 1,
+        "type": "references",
+        "context": "### Connection to Chapter 1"
+      },
+      {
+        "source": 52,
+        "target": 1,
+        "type": "references",
+        "context": " Chapter 1: 無名天地之始，有名萬物之母"
+      },
+      {
+        "source": 52,
+        "target": 1,
+        "type": "references",
+        "context": "Chapter 1 distinguishes 始 (beginning, nameless) from 母 (mother, named)."
+      },
+      {
+        "source": 52,
+        "target": 16,
+        "type": "references",
+        "context": " ### Connection to Chapter 16"
+      },
+      {
+        "source": 52,
+        "target": 16,
+        "type": "references",
+        "context": " Chapter 16: 歸根曰靜...知常曰明"
+      },
+      {
+        "source": 52,
+        "target": 16,
+        "type": "references",
+        "context": " Chapter 16: 知常 (know the constant) → 明"
+      },
+      {
+        "source": 52,
+        "target": 40,
+        "type": "references",
+        "context": " ### Connection to Chapter 40"
+      },
+      {
+        "source": 52,
+        "target": 40,
+        "type": "references",
+        "context": "Chapter 40: 反者道之動 (reversal is pattern's movement)"
+      },
+      {
+        "source": 52,
+        "target": 56,
+        "type": "references",
+        "context": " ### Connection to Chapter 56"
+      },
+      {
+        "source": 52,
+        "target": 56,
+        "type": "same_term",
+        "context": " Chapter 56: 塞其兌，閉其門 (same phrase exactly)"
+      },
+      {
+        "source": 52,
+        "target": 41,
+        "type": "references",
+        "context": "This is paradox-resolution from Chapter 41: what appears as its opposite from misaligned frames is actually the thing itself."
+      },
+      {
+        "source": 56,
+        "target": 1,
+        "type": "references",
+        "context": "### Connection to Chapter 1"
+      },
+      {
+        "source": 56,
+        "target": 1,
+        "type": "references",
+        "context": " Chapter 1: 道可道非常道，名可名非常名"
+      },
+      {
+        "source": 56,
+        "target": 4,
+        "type": "references",
+        "context": " ### Connection to Chapter 4"
+      },
+      {
+        "source": 56,
+        "target": 4,
+        "type": "references",
+        "context": " Chapter 4: 挫其銳，解其紛，和其光，同其塵"
+      },
+      {
+        "source": 56,
+        "target": 4,
+        "type": "references",
+        "context": "Chapter 4 introduces these operations as what 道 does."
+      },
+      {
+        "source": 56,
+        "target": 4,
+        "type": "references",
+        "context": "The chapter explicitly quotes Chapter 4—this is **intertextual reference** within the DDJ itself."
+      },
+      {
+        "source": 56,
+        "target": 52,
+        "type": "references",
+        "context": " ### Connection to Chapter 52"
+      },
+      {
+        "source": 56,
+        "target": 52,
+        "type": "references",
+        "context": " Chapter 52: 塞其兌，閉其門，終身不勤"
+      },
+      {
+        "source": 56,
+        "target": 52,
+        "type": "specifies",
+        "context": "Same boundary management formula. Chapter 52 specifies the result (終身不勤—lifelong no toil). Chapter 56 includes it in the larger sequence leading to 玄同."
+      },
+      {
+        "source": 56,
+        "target": 81,
+        "type": "references",
+        "context": " ### Connection to Chapter 81"
+      },
+      {
+        "source": 56,
+        "target": 81,
+        "type": "references",
+        "context": " Chapter 81: 信⊥美, 善⊥辯, 知⊥博"
+      },
+      {
+        "source": 56,
+        "target": 81,
+        "type": "references",
+        "context": "Same mutual exclusion structure. Chapter 81 lists three pairs; Chapter 56 adds a fourth (知/言)."
+      },
+      {
+        "source": 56,
+        "target": 5,
+        "type": "references",
+        "context": " ### Connection to Chapter 5"
+      },
+      {
+        "source": 56,
+        "target": 5,
+        "type": "references",
+        "context": " Chapter 5: 天地不仁，以萬物為芻狗"
+      },
+      {
+        "source": 56,
+        "target": 5,
+        "type": "contrast",
+        "context": "Same structural indifference. Chapter 5 documents heaven/earth's non-preference. Chapter 56 documents the 玄同 position's non-positionability in standard oppositions."
+      },
+      {
+        "source": 56,
+        "target": 1,
+        "type": "references",
+        "context": "| Ch 1 | 玄之又玄 | Mystery upon mystery (origin access) |"
+      },
+      {
+        "source": 56,
+        "target": 6,
+        "type": "references",
+        "context": "| Ch 6 | 玄牝 | Mysterious female (generative void) |"
+      },
+      {
+        "source": 56,
+        "target": 51,
+        "type": "references",
+        "context": "| Ch 51 | 玄德 | Mysterious alignment (from origin) |"
+      },
+      {
+        "source": 76,
+        "target": 22,
+        "type": "references",
+        "context": "### Connection to Chapter 22"
+      },
+      {
+        "source": 76,
+        "target": 22,
+        "type": "references",
+        "context": " Chapter 22: 曲則全 (yielding, then complete)"
+      },
+      {
+        "source": 76,
+        "target": 40,
+        "type": "references",
+        "context": " ### Connection to Chapter 40"
+      },
+      {
+        "source": 76,
+        "target": 40,
+        "type": "references",
+        "context": "Chapter 40: 弱者道之用 (yielding is pattern's function)"
+      },
+      {
+        "source": 76,
+        "target": 78,
+        "type": "references",
+        "context": " ### Connection to Chapter 78"
+      },
+      {
+        "source": 76,
+        "target": 78,
+        "type": "extends",
+        "context": "Chapter 78 will extend this with water: the softest overcomes the hardest. Chapter 76 establishes the physics; Chapter 78 applies it to water's behavior."
+      },
+      {
+        "source": 76,
+        "target": 78,
+        "type": "extends",
+        "context": "Chapter 78 will extend this with water: the softest overcomes the hardest. Chapter 76 establishes the physics; Chapter 78 applies it to water's behavior."
+      },
+      {
+        "source": 78,
+        "target": 76,
+        "type": "references",
+        "context": "### Connection to Chapter 76"
+      },
+      {
+        "source": 78,
+        "target": 76,
+        "type": "references",
+        "context": " Chapter 76: 柔弱者生之徒 (yielding = life's category)"
+      },
+      {
+        "source": 78,
+        "target": 76,
+        "type": "extends",
+        "context": "Chapter 76 establishes the material physics. Chapter 78 provides the extreme case (water) and extends to governance."
+      },
+      {
+        "source": 78,
+        "target": 8,
+        "type": "references",
+        "context": " ### Connection to Chapter 8"
+      },
+      {
+        "source": 78,
+        "target": 8,
+        "type": "references",
+        "context": " Chapter 8: 上善若水 (supreme good resembles water)"
+      },
+      {
+        "source": 78,
+        "target": 8,
+        "type": "same_principle",
+        "context": "Both use water as model. Chapter 8 focuses on water's non-contention; Chapter 78 focuses on water's overcoming power."
+      },
+      {
+        "source": 78,
+        "target": 6,
+        "type": "references",
+        "context": " ### Connection to Chapter 6"
+      },
+      {
+        "source": 78,
+        "target": 6,
+        "type": "references",
+        "context": " Chapter 6: 谷神不死 (valley spirit doesn't die)"
+      },
+      {
+        "source": 78,
+        "target": 41,
+        "type": "references",
+        "context": " ### Connection to Chapter 41"
+      },
+      {
+        "source": 78,
+        "target": 41,
+        "type": "references",
+        "context": " Chapter 41: 若 operator (X若Y = X appears as Y)"
+      },
+      {
+        "source": 78,
+        "target": 41,
+        "type": "applies",
+        "context": "Same appearance-paradox: what's true appears opposite. Chapter 41 documents the 若 operator; Chapter 78 applies it to speech itself."
+      },
+      {
+        "source": 78,
+        "target": 22,
+        "type": "references",
+        "context": " ### Connection to Chapter 22"
+      },
+      {
+        "source": 78,
+        "target": 22,
+        "type": "references",
+        "context": " Chapter 22: 曲則全 (yield then complete)"
+      },
+      {
+        "source": 81,
+        "target": 1,
+        "type": "references",
+        "context": "### Connection to Chapter 1"
+      },
+      {
+        "source": 81,
+        "target": 1,
+        "type": "references",
+        "context": "Chapter 1 opens: 道可道非常道 (pattern that can be patterned is not constant pattern)"
+      },
+      {
+        "source": 81,
+        "target": 22,
+        "type": "references",
+        "context": " ### Connection to Chapter 22"
+      },
+      {
+        "source": 81,
+        "target": 22,
+        "type": "references",
+        "context": " Chapter 22: 夫唯不爭，故天下莫能與之爭"
+      },
+      {
+        "source": 81,
+        "target": 38,
+        "type": "references",
+        "context": " ### Connection to Chapter 38"
+      },
+      {
+        "source": 81,
+        "target": 38,
+        "type": "references",
+        "context": "Chapter 38: 上德不德，是以有德 (upper alignment doesn't optimize for alignment, thus has alignment)"
+      },
+      {
+        "source": 81,
+        "target": 51,
+        "type": "references",
+        "context": " ### Connection to Chapter 51"
+      },
+      {
+        "source": 81,
+        "target": 51,
+        "type": "references",
+        "context": "Chapter 51: 生而不有，為而不恃，長而不宰 (generate yet not possess, act yet not rely, grow yet not govern)"
+      },
+      {
+        "source": 81,
+        "target": 11,
+        "type": "references",
+        "context": "Chapter 11: 利 + 無 → 用 (constraint + void → function)"
+      },
+      {
+        "source": 81,
+        "target": 41,
+        "type": "applies",
+        "context": "These are the **appearance paradoxes** from Chapter 41 applied to expression/knowing:"
+      },
+      {
+        "source": 81,
+        "target": 52,
+        "type": "references",
+        "context": "This is 習常 from Chapter 52: practicing the constant through recursive return. The text itself 習常s."
+      }
+    ],
+    "translated_chapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      21,
+      22,
+      25,
+      34,
+      38,
+      39,
+      40,
+      41,
+      42,
+      46,
+      51,
+      52,
+      56,
+      65,
+      76,
+      78,
+      81
+    ],
+    "referenced_untranslated": []
+  },
+  "statistics": {
+    "total_nodes": 31,
+    "total_edges": 227,
+    "translated_count": 31,
+    "referenced_untranslated_count": 0,
+    "top_hubs": [
+      {
+        "chapter": 1,
+        "in_degree": 20,
+        "title": "CHAPTER 1 - 11.4.25",
+        "translated": true
+      },
+      {
+        "chapter": 25,
+        "in_degree": 17,
+        "title": "Chapter 25: The Recursion Cycle",
+        "translated": true
+      },
+      {
+        "chapter": 5,
+        "in_degree": 16,
+        "title": "CHAPTER 05 - 11.4.25",
+        "translated": true
+      },
+      {
+        "chapter": 40,
+        "in_degree": 16,
+        "title": "CHAPTER 40 - 11.4.25",
+        "translated": true
+      },
+      {
+        "chapter": 3,
+        "in_degree": 15,
+        "title": "CHAPTER 03 - 11.17.25",
+        "translated": true
+      },
+      {
+        "chapter": 4,
+        "in_degree": 15,
+        "title": "Chapter 4: Exploring the Depths",
+        "translated": true
+      },
+      {
+        "chapter": 2,
+        "in_degree": 13,
+        "title": "CHAPTER 02 - 11.4.25",
+        "translated": true
+      },
+      {
+        "chapter": 22,
+        "in_degree": 11,
+        "title": "Chapter 22: The Geometry of Yielding",
+        "translated": true
+      },
+      {
+        "chapter": 38,
+        "in_degree": 11,
+        "title": "Chapter 38: The Degradation Cascade",
+        "translated": true
+      },
+      {
+        "chapter": 42,
+        "in_degree": 10,
+        "title": "CHAPTER 42 - 11.4.25",
+        "translated": true
+      }
+    ],
+    "priority_gaps": [],
+    "connection_types": {
+      "references": 190,
+      "validates": 12,
+      "contrast": 5,
+      "same_principle": 4,
+      "extends": 5,
+      "same_term": 2,
+      "specifies": 5,
+      "applies": 4
+    },
+    "leaf_nodes": [
+      25,
+      40,
+      65
+    ],
+    "most_referencing": [
+      {
+        "chapter": 8,
+        "out_degree": 23,
+        "translated": true
+      },
+      {
+        "chapter": 10,
+        "out_degree": 18,
+        "translated": true
+      },
+      {
+        "chapter": 56,
+        "out_degree": 18,
+        "translated": true
+      },
+      {
+        "chapter": 12,
+        "out_degree": 14,
+        "translated": true
+      },
+      {
+        "chapter": 51,
+        "out_degree": 13,
+        "translated": true
+      },
+      {
+        "chapter": 78,
+        "out_degree": 13,
+        "translated": true
+      },
+      {
+        "chapter": 9,
+        "out_degree": 11,
+        "translated": true
+      },
+      {
+        "chapter": 52,
+        "out_degree": 11,
+        "translated": true
+      },
+      {
+        "chapter": 81,
+        "out_degree": 11,
+        "translated": true
+      },
+      {
+        "chapter": 11,
+        "out_degree": 10,
+        "translated": true
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "CHAPTER 1 - 11.4.25",
+      "subtitle": "",
+      "connections": [
+        [
+          2,
+          "references",
+          "Once Chapter 1 establishes the coordinate system, every other chapter navigates through that space: • Chapter 2: How 無 and 有 co-generate each other"
+        ],
+        [
+          11,
+          "validates",
+          "• Chapter 11: Three demonstrations of bounded emptiness"
+        ],
+        [
+          25,
+          "references",
+          "• Chapter 25: The explicit recursion sequence (大→逝→遠→反)"
+        ],
+        [
+          40,
+          "references",
+          "• Chapter 25: The explicit recursion sequence (大→逝→遠→反) • Chapter 40: Return dynamics (反者道之動)"
+        ],
+        [
+          42,
+          "references",
+          "• Chapter 42: How dimensions emerge from Dao (道生一，一生二，二生三)"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter01_2025-11-26.md"
+    },
+    {
+      "chapter": 2,
+      "title": "CHAPTER 02 - 11.4.25",
+      "subtitle": "making a chopping gesture",
+      "connections": [
+        [
+          40,
+          "references",
+          "We've seen this in Chapter 40. 有 (form/boundary) and 無 (void/emptiness) aren't separate things that sometimes interact. They're complementary poles that continuously birth each other."
+        ],
+        [
+          40,
+          "references",
+          "This is the same 生 (co-generation) from Chapter 40 and Chapter 42, playing out across every type of distinction you can make:"
+        ],
+        [
+          42,
+          "references",
+          "This is the same 生 (co-generation) from Chapter 40 and Chapter 42, playing out across every type of distinction you can make:"
+        ],
+        [
+          25,
+          "references",
+          "This connects directly to Chapter 25's recursion formula: 大→逝→遠→反"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter02_2025-11-26.md"
+    },
+    {
+      "chapter": 3,
+      "title": "CHAPTER 03 - 11.17.25",
+      "subtitle": "*不尚賢，使民不爭*",
+      "connections": [
+        [
+          2,
+          "references",
+          "Okay, here's where things get interesting. Chapter 2 just told us that boundaries create both poles simultaneously, and you shouldn't try to occupy positions permanently. Now Chapter 3 is going to sho"
+        ],
+        [
+          1,
+          "references",
+          "Remember 欲 from Chapter 1? It's not \"desire\"—it's **orientation, observational stance, direction of attention**."
+        ],
+        [
+          5,
+          "references",
+          "But 虛 is that same \"hollow/empty\" from Chapter 5's bellows! And 心 is center, and 腹 is foundation."
+        ],
+        [
+          5,
+          "references",
+          "弱 we know from Chapter 5! Not \"weak\" but **yielding**—flexible, soft, able to bend without breaking. Like rope, like water."
+        ],
+        [
+          2,
+          "references",
+          "**Chapter 2**: \"Boundaries create both poles. Don't occupy positions permanently.\""
+        ],
+        [
+          4,
+          "references",
+          "Chapter 3 is setting you up with concrete examples before the deep structural explanation. Like: \"Here's what water does [Ch 3]. Now let me show you WHY water does that [Ch 4-6].\""
+        ],
+        [
+          5,
+          "validates",
+          "The human examples aren't the point. They're demonstrations of the pattern. The pattern is universal (we'll add the 天地 frame in Chapter 5 to signal that). But starting with familiar examples makes it "
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter03_2025-11-26.md"
+    },
+    {
+      "chapter": 4,
+      "title": "Chapter 4: Exploring the Depths",
+      "subtitle": "*道沖而用之或不盈*",
+      "connections": [
+        [
+          1,
+          "references",
+          "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"
+        ],
+        [
+          2,
+          "references",
+          "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"
+        ],
+        [
+          3,
+          "references",
+          "Here's where things get interesting. We've had our coordinate system (Chapter 1), our lesson about co-generation (Chapter 2), and our system comparison notes (Chapter 3). Now Chapter 4 takes us on a t"
+        ],
+        [
+          5,
+          "references",
+          "**Next**: Chapter 5 will add the 天地 frame and show you this hollow in action—as a bellows that never exhausts. But now you know what you're looking at: depth expressing itself through multiple dimensi"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter04_2025-11-26.md"
+    },
+    {
+      "chapter": 5,
+      "title": "CHAPTER 05 - 11.4.25",
+      "subtitle": "leaning forward, speaking carefully",
+      "connections": [
+        [
+          2,
+          "contrast",
+          "Every word is a distinction. A boundary drawn. A category created. Remember Chapter 2? Every distinction co-generates both poles. Every word you add is another 屈 (restriction) on undifferentiated poss"
+        ],
+        [
+          1,
+          "references",
+          "**Chapter 1**: Establishes the coordinate system (the dimensional framework)"
+        ],
+        [
+          2,
+          "references",
+          "**Chapter 2**: Shows how every distinction co-generates both poles"
+        ],
+        [
+          1,
+          "references",
+          "We're learning: 1. Reality has structure (Ch 1)"
+        ],
+        [
+          2,
+          "references",
+          "2. Every boundary creates complementary aspects (Ch 2)"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter05_2025-11-26.md"
+    },
+    {
+      "chapter": 6,
+      "title": "CHAPTER 06 - 11.4.25",
+      "subtitle": "*谷神不死*",
+      "connections": [
+        [
+          5,
+          "references",
+          " This is Chapter 5's 虛而不屈，動而愈出 again!"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter06_2025-11-26.md"
+    },
+    {
+      "chapter": 7,
+      "title": "CHAPTER 07 - 11.5.25",
+      "subtitle": "*天長地久*",
+      "connections": [
+        [
+          4,
+          "references",
+          "Remember 同其塵 from Chapter 4? You ARE dust. You're not a separate self made of special matter. You're temporarily organized dust that shares material identity with everything."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter07_2025-11-26.md"
+    },
+    {
+      "chapter": 8,
+      "title": "CHAPTER 08 - 11.5.25",
+      "subtitle": "*上善若水*",
+      "connections": [
+        [
+          5,
+          "contrast",
+          "Water's function is universal. Like the pot from Chapter 5 with its 不仁 (structural indifference that enables universal function)."
+        ],
+        [
+          3,
+          "references",
+          "This is Chapter 3's 不爭! Don't fight over permanent status positions!"
+        ],
+        [
+          7,
+          "references",
+          "This is Chapter 7's 外其身 (externalize self, don't occupy identity). Water has no permanent self-position to defend."
+        ],
+        [
+          7,
+          "references",
+          "This is Chapter 7's 後其身 (puts self behind, doesn't force forward)! Water doesn't try to be first, doesn't push upward, doesn't compete for high status."
+        ],
+        [
+          4,
+          "references",
+          "And what are low places? Valleys. The hollow. The void. The 淵 (deep pool from Chapter 4)."
+        ],
+        [
+          4,
+          "references",
+          "Chapter 4: 淵兮似萬物之宗 - \"Deep like an abyss, seems to be the ancestor of everything\""
+        ],
+        [
+          6,
+          "references",
+          "Chapter 4: 淵兮似萬物之宗 - \"Deep like an abyss, seems to be the ancestor of everything\" Chapter 6: 谷神不死 - \"The valley spirit doesn't die\""
+        ],
+        [
+          7,
+          "validates",
+          "This demonstrates Chapter 7's principle: 外其身而身存 (externalize self and self persists). Water doesn't defend positions, yet persists everywhere."
+        ],
+        [
+          4,
+          "references",
+          "淵 again! From Chapter 4! 淵兮似萬物之宗 - \"Deep like an abyss, seems to be the ancestor of everything.\""
+        ],
+        [
+          4,
+          "validates",
+          "This demonstrates Chapter 4's principle: the hollow at the center is the source. The deep pool is the ancestor."
+        ],
+        [
+          5,
+          "contrast",
+          "仁 (rén) = we saw this in Chapter 5! 不仁 - not anthropocentric, structurally indifferent!"
+        ],
+        [
+          5,
+          "validates",
+          "This demonstrates Chapter 5's 不仁 principle: universal function through non-preference."
+        ],
+        [
+          1,
+          "validates",
+          "This demonstrates Chapter 1's 常 (frame-independent constancy). Water's behavior is 常 (invariant across contexts)."
+        ],
+        [
+          3,
+          "validates",
+          "This demonstrates Chapter 3's 為無為，則無不治 (act without forcing, and everything organizes itself). Water governs by not forcing governance."
+        ],
+        [
+          5,
+          "validates",
+          "This demonstrates Chapter 5's 虛而不屈，動而愈出 (empty and not restricting, moving and more emerges). Water's capacity is inexhaustible because water doesn't restrict its own functionality."
+        ],
+        [
+          40,
+          "validates",
+          "This demonstrates Chapter 40's 反者道之動 (return/oscillation is the pattern's movement). Water moves in natural cycles, not forced progressions."
+        ],
+        [
+          1,
+          "references",
+          "**Chapter 1**: Establishes the coordinate system (無/有, 可/常, 妙/徼)"
+        ],
+        [
+          2,
+          "references",
+          "**Chapter 2**: Shows how distinctions co-generate poles"
+        ],
+        [
+          3,
+          "references",
+          "**Chapter 3**: Shows what happens when you violate the pattern (create scarcity, force positions)"
+        ],
+        [
+          4,
+          "references",
+          "**Chapter 4**: Describes the hollow at the center (道沖, 淵, 同其塵)"
+        ],
+        [
+          5,
+          "references",
+          "**Chapter 5**: Shows the bellows (虛而不屈, 動而愈出, don't fill the center)"
+        ],
+        [
+          6,
+          "references",
+          "**Chapter 6**: Describes the generative void (谷神不死, 玄牝, use it without exhausting)"
+        ],
+        [
+          7,
+          "references",
+          "**Chapter 7**: Shows persistence through non-occupation (不自生, 後其身, 外其身)"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter08_2025-11-26.md"
+    },
+    {
+      "chapter": 9,
+      "title": "CHAPTER 09 - 11.5.25",
+      "subtitle": "*持而盈之，不如其已*",
+      "connections": [
+        [
+          2,
+          "references",
+          "This is 功成而弗居 from Chapter 2. Achievement complete → don't keep dwelling in it, forcing it, trying to make it more complete than complete."
+        ],
+        [
+          4,
+          "references",
+          " 銳! We know this character! From Chapter 4!"
+        ],
+        [
+          4,
+          "references",
+          "Remember Chapter 4: 挫其銳 - the pattern blunts sharp edges."
+        ],
+        [
+          3,
+          "references",
+          "This connects to Chapter 3: 不貴難得之貨 (don't create value through scarcity/exclusivity). When you try to 居 (occupy) precious things as permanent defended possessions, you create your own 窮 (exhaustion tr"
+        ],
+        [
+          3,
+          "references",
+          "This is Chapter 3's 尚賢 (elevating achievement into permanent status)! This is Chapter 4's 挫其銳 (sharp edges get blunted)! This is Chapter 7's warning about trying to 占據 high positions!"
+        ],
+        [
+          4,
+          "references",
+          "This is Chapter 3's 尚賢 (elevating achievement into permanent status)! This is Chapter 4's 挫其銳 (sharp edges get blunted)! This is Chapter 7's warning about trying to 占據 high positions!"
+        ],
+        [
+          7,
+          "references",
+          "This is Chapter 3's 尚賢 (elevating achievement into permanent status)! This is Chapter 4's 挫其銳 (sharp edges get blunted)! This is Chapter 7's warning about trying to 占據 high positions!"
+        ],
+        [
+          8,
+          "references",
+          "Remember water from Chapter 8? 處眾人之所惡 - dwells in places everyone avoids, the LOW places. And therefore 幾於道 - nearly IS the pattern, nearly indestructible."
+        ],
+        [
+          2,
+          "references",
+          " This is it. This is 功成而弗居 from Chapter 2."
+        ],
+        [
+          8,
+          "validates",
+          "**Chapter 8**: Watch water—supreme function, never fails, demonstrates everything"
+        ],
+        [
+          8,
+          "references",
+          "Chapter 8 shows you the model. Chapter 9 shows you what breaks when you violate the model."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter09_2025-11-26.md"
+    },
+    {
+      "chapter": 10,
+      "title": "CHAPTER 10 - 11.5.25",
+      "subtitle": "*載營魄抱一，能無離乎？*",
+      "connections": [
+        [
+          7,
+          "references",
+          "And we know from Chapter 7: 不自生 (not trying to self-source) is what enables 長生 (continuous generation). Things that try to 自生 break. Things that try to be their own center collapse."
+        ],
+        [
+          5,
+          "same_principle",
+          "柔! This is the same principle as 弱 (ruò) from Chapter 5!"
+        ],
+        [
+          1,
+          "references",
+          "滌除 (dí chú) = wash away, cleanse, purge, remove 玄 (xuán) = THE MYSTERIOUS CENTER! From Chapter 1!"
+        ],
+        [
+          5,
+          "references",
+          "• 多言 (excessive words from Chapter 5) - too many categories fill the space"
+        ],
+        [
+          3,
+          "references",
+          "• 知 (fixed rigid distinctions from Chapter 3) - frozen categories block perception"
+        ],
+        [
+          5,
+          "extends",
+          "This is Chapter 5's bellows! 開 (open - the hand rises, the spring extends) and 闔 (close - the hand compresses, the spring stores)."
+        ],
+        [
+          40,
+          "references",
+          "This is Chapter 40's oscillation! 反者道之動 (return/oscillation is the pattern's movement)."
+        ],
+        [
+          6,
+          "references",
+          "雌! Like 牝 (pìn) from Chapter 6! The generative void! The fertile emptiness! The womb principle!"
+        ],
+        [
+          6,
+          "references",
+          "Remember Chapter 6's correction: 牝 isn't \"receptive\" (passive, secondary). 牝 is generative (active, primary, creative)."
+        ],
+        [
+          3,
+          "references",
+          " 知 we know from Chapter 3!"
+        ],
+        [
+          7,
+          "references",
+          "This is 外其身 from Chapter 7. Don't 居 (occupy) what you generate."
+        ],
+        [
+          7,
+          "references",
+          "This is 後其身而身先 from Chapter 7. Don't try to occupy the results as your permanent position."
+        ],
+        [
+          3,
+          "references",
+          "This is 為無為 from Chapter 3. Lead with full cycles, not forcing."
+        ],
+        [
+          9,
+          "references",
+          "This is 功遂身退 from Chapter 9. Complete then withdraw."
+        ],
+        [
+          7,
+          "references",
+          "This is 外其身而身存 from Chapter 7. Externalize (don't occupy) and persist."
+        ],
+        [
+          2,
+          "references",
+          "This is 不居 from Chapter 2. Don't press weight onto completion."
+        ],
+        [
+          9,
+          "references",
+          "**Chapter 9**: Know when to stop. 功遂身退 (complete then withdraw). Don't fill past full. Don't sharpen past optimal."
+        ],
+        [
+          9,
+          "references",
+          "Chapter 9 teaches: Cycles have endpoints. Release when complete."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter10_2025-11-26.md"
+    },
+    {
+      "chapter": 11,
+      "title": "Conversation Compilation: Chapter 11 Radicals, Corpus Expansion, and Technical Manual Refinement",
+      "subtitle": "*三十輻共一轂，當其無，有車之用。*",
+      "connections": [
+        [
+          1,
+          "references",
+          "1. **Analyze Chapter 1's key terms through radical composition** — Examine how 道, 名, 無, 有, and 玄 are built from component radicals."
+        ],
+        [
+          25,
+          "references",
+          "## Part 2: Low-Effort Corpus Expansion Opportunities ### Priority 1: The Chapter 25 Document (3 hours)"
+        ],
+        [
+          25,
+          "references",
+          "**What's missing:** A standalone document that *just* does Chapter 25. Step-by-step geometric walkthrough with diagrams. The mathematical formalization written out explicitly. Showing how this four-st"
+        ],
+        [
+          25,
+          "references",
+          "**The expansion:** \"Chapter 25: The Explicit Recursion Formula\" — This could be the *Rosetta Stone document*—the single clearest proof that the Dao De Jing is encoding geometric recursion in linguisti"
+        ],
+        [
+          25,
+          "references",
+          "1. Add 3-5 worked examples (pick characters from Chapter 11, Chapter 25)"
+        ],
+        [
+          25,
+          "validates",
+          "1. **Prove geometric encoding** (Chapter 25 document)"
+        ],
+        [
+          42,
+          "references",
+          "**Added content:** The full geometric walkthrough proving why Chapter 42 stops at three."
+        ],
+        [
+          42,
+          "references",
+          "This is why Chapter 42 stops at three. Not because ancient Chinese mathematics could not count past three, but because three is the point where *infinite elaboration becomes possible*. Once you have t"
+        ],
+        [
+          25,
+          "references",
+          "|Chapter 25 |Mathematical |Euler's identity and Dao recursion are isomorphic |"
+        ],
+        [
+          25,
+          "references",
+          "1. Chapter 25 document (Rosetta Stone for geometric reading)"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter11_2025-11-26.md"
+    },
+    {
+      "chapter": 12,
+      "title": "CHAPTER 12 - 11.5.25",
+      "subtitle": "",
+      "connections": [
+        [
+          9,
+          "references",
+          "This is the chapter that tells you what happens when you keep stimulating past capacity. When you don't let systems reset. When you violate Chapter 9's teaching about stopping. When you lose Chapter 1"
+        ],
+        [
+          10,
+          "references",
+          "This is the chapter that tells you what happens when you keep stimulating past capacity. When you don't let systems reset. When you violate Chapter 9's teaching about stopping. When you lose Chapter 1"
+        ],
+        [
+          3,
+          "references",
+          "心 (xīn) = we know this from Chapter 3! The heart-mind, the center where perception and understanding happen"
+        ],
+        [
+          3,
+          "references",
+          "This connects to Chapter 3: 虛其心 (keep the center hollow)!"
+        ],
+        [
+          3,
+          "references",
+          "speaking with recognition 難得之貨! From Chapter 3!"
+        ],
+        [
+          3,
+          "references",
+          "Remember Chapter 3: 金玉滿堂，莫之能守 - \"Gold and jade filling the hall, no one can guard it all\""
+        ],
+        [
+          9,
+          "references",
+          "This violates Chapter 9: 持而盈之 (gripping and filling past full)."
+        ],
+        [
+          10,
+          "references",
+          "This violates Chapter 10: You lose orbit (離) because you're chasing external stimuli instead of maintaining connection to hollow center."
+        ],
+        [
+          3,
+          "references",
+          "This violates Chapter 3: 虛其心 (keep center hollow) becomes impossible when you're constantly 馳騁畋獵 (racing and hunting)."
+        ],
+        [
+          3,
+          "references",
+          "speaking with recognition 腹! From Chapter 3!"
+        ],
+        [
+          9,
+          "references",
+          "Like Chapter 9 taught: 功遂身退 (complete then withdraw). Fill to capacity then 已 (stop, let it cease)."
+        ],
+        [
+          10,
+          "references",
+          "Chapter 10: Can you maintain orbit around the hollow center? (能無離乎?)"
+        ],
+        [
+          9,
+          "references",
+          "Not \"you're being bad.\" But \"your systems are breaking from continuous input without release.\" making the Chapter 9 connection"
+        ],
+        [
+          10,
+          "references",
+          "That's staying in orbit (Chapter 10) by not chasing every external stimulus past capacity."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter12_2025-11-26.md"
+    },
+    {
+      "chapter": 14,
+      "title": "Chapter 14: The Three Imperceptibles",
+      "subtitle": "Boundary conditions on observation",
+      "connections": [
+        [
+          1,
+          "references",
+          "### Connection to Chapter 1"
+        ],
+        [
+          1,
+          "references",
+          " | Ch 1 Term | Ch 14 Correspondence |"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter14_2025-11-26.md"
+    },
+    {
+      "chapter": 16,
+      "title": "Chapter 16: Return to Root",
+      "subtitle": "The recursion cycle and what \"knowing 常\" enables",
+      "connections": [
+        [
+          40,
+          "references",
+          "### Connection to Chapter 40"
+        ],
+        [
+          40,
+          "references",
+          " Chapter 40: 反者道之動—reversal is how pattern moves."
+        ],
+        [
+          40,
+          "same_principle",
+          "Same principle, different scale: - Ch 40: Pattern-level oscillation (反)"
+        ],
+        [
+          25,
+          "references",
+          " ### Connection to Chapter 25"
+        ],
+        [
+          25,
+          "extends",
+          "Chapter 25: 大曰逝，逝曰遠，遠曰反 (great → extends → far → returns)"
+        ],
+        [
+          25,
+          "contrast",
+          "Same cycle, different vocabulary: - Ch 25: 反 (return/reversal)"
+        ],
+        [
+          25,
+          "same_term",
+          "This is the same 王 from Chapter 25 (域中有四大，而王居其一—in the domain are four great, and 王 is one of them)."
+        ],
+        [
+          11,
+          "references",
+          "虛 (xū) = emptied, hollowed out. Not \"nothing\" but **cleared of content**. Like Chapter 11's wheel hub—emptied to enable function."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter16_2025-11-26.md"
+    },
+    {
+      "chapter": 21,
+      "title": "Chapter 21: The Content of Great Alignment",
+      "subtitle": "How 德 relates to 道—the structural relationship specification",
+      "connections": [
+        [
+          14,
+          "references",
+          "### Connection to Chapter 14"
+        ],
+        [
+          14,
+          "references",
+          " | Ch 14 Term | Ch 21 Correspondence |"
+        ],
+        [
+          14,
+          "specifies",
+          " Chapter 14 documents the observation boundary."
+        ],
+        [
+          38,
+          "references",
+          " ### Connection to Chapter 38"
+        ],
+        [
+          38,
+          "references",
+          " | Ch 38 | Ch 21 |"
+        ],
+        [
+          38,
+          "references",
+          "Chapter 38 documents degradation from 道 through 德."
+        ],
+        [
+          38,
+          "references",
+          "This is the 信 from Chapter 38: 忠信之薄 (the thinning of loyalty and trust)."
+        ],
+        [
+          38,
+          "references",
+          "When 德 follows 道 (Ch 21), there is 信 within. When 德 degrades to 禮 (Ch 38), 信 thins out."
+        ],
+        [
+          25,
+          "references",
+          "This connects to 自然 (self-so) from Chapter 25: 道法自然 (pattern follows self-so)."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter21_2025-11-26.md"
+    },
+    {
+      "chapter": 22,
+      "title": "Chapter 22: The Geometry of Yielding",
+      "subtitle": "*曲則全，枉則直，窪則盈，弊則新，少則得，多則惑。*",
+      "connections": [
+        [
+          46,
+          "references",
+          "This is the 知足 (knowing sufficiency) principle from Chapter 46: the gradient has an optimum. Below it, yielding enables receiving. Above it, accumulation causes confusion."
+        ],
+        [
+          11,
+          "applies",
+          "**Non-occupation enables function.** This is the Chapter 11 principle (利 shapes 無 into 用) applied to self-positioning."
+        ],
+        [
+          40,
+          "references",
+          "Through **genuine wholeness** (not partial preservation, not strategic holding back), you **return** to the pattern. The return (歸) echoes the 反 (fǎn) from Chapter 40—the reversal that completes the c"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter22_2025-11-26.md"
+    },
+    {
+      "chapter": 25,
+      "title": "Chapter 25: The Recursion Cycle",
+      "subtitle": "*有物混成，先天地生*",
+      "connections": [],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter25_2025-11-26.md"
+    },
+    {
+      "chapter": 34,
+      "title": "Chapter 34: The Pattern That Doesn't Claim",
+      "subtitle": "*大道泛兮，其可左右。*",
+      "connections": [
+        [
+          25,
+          "references",
+          " ### Connection to 大 from Chapter 25"
+        ],
+        [
+          25,
+          "references",
+          "Chapter 25 established 道大 as pattern-in-unbounded-mode (not \"the Dao is great\")."
+        ],
+        [
+          22,
+          "references",
+          " ### Connection to Non-Occupation (Chapter 22)"
+        ],
+        [
+          22,
+          "references",
+          " The four 不自X from Chapter 22:"
+        ],
+        [
+          2,
+          "references",
+          "生 (shēng) here is **co-generation**—the mutual arising documented in Chapter 2. The pattern doesn't create things unilaterally; it provides the field within which things co-arise."
+        ],
+        [
+          11,
+          "references",
+          "This is the 無 at the center of Chapter 11's wheel: the void that enables rotation by **not** being filled."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter34_2025-11-26.md"
+    },
+    {
+      "chapter": 38,
+      "title": "Chapter 38: The Degradation Cascade",
+      "subtitle": "Opening chapter of the 德經 (De Jing)",
+      "connections": [
+        [
+          34,
+          "same_principle",
+          " Same structure as Chapter 34: 終不為大，故能成其大."
+        ],
+        [
+          22,
+          "references",
+          " ### Connection to Chapter 22's 曲則全"
+        ],
+        [
+          65,
+          "references",
+          " ### Connection to Chapter 65's 智多"
+        ],
+        [
+          46,
+          "references",
+          "This is the Chapter 46 choice: where are your horses? In the fields (厚/實) or on the battlefield (薄/華)?"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter38_2025-11-26.md"
+    },
+    {
+      "chapter": 39,
+      "title": "Chapter 39: Those Who Obtained Unity",
+      "subtitle": "Scale-invariant principle across domains",
+      "connections": [
+        [
+          42,
+          "references",
+          "### Connection to Chapter 42"
+        ],
+        [
+          42,
+          "references",
+          " Chapter 42: 道生一，一生二，二生三，三生萬物"
+        ],
+        [
+          42,
+          "specifies",
+          " Chapter 42 documents the **generation** from 一."
+        ],
+        [
+          22,
+          "references",
+          " ### Connection to Chapter 22"
+        ],
+        [
+          22,
+          "references",
+          "Chapter 22: 是以聖人抱一為天下式 (the sage embraces unity as pattern for all)"
+        ],
+        [
+          11,
+          "references",
+          " ### Connection to Chapter 11"
+        ],
+        [
+          11,
+          "validates",
+          "Chapter 11: The wheel/pot/room demonstrations—function emerges from unified void, not from enumerated parts."
+        ],
+        [
+          4,
+          "references",
+          "谷 (gǔ) = valley, the receptive void. With unity, it's 盈—full (from Chapter 4/6: the valley that never empties)."
+        ],
+        [
+          2,
+          "references",
+          "萬物 = the ten thousand things. With unity, they 生—co-generate, arise (the 生 from Chapter 2)."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter39_2025-11-26.md"
+    },
+    {
+      "chapter": 40,
+      "title": "CHAPTER 40 - 11.4.25",
+      "subtitle": "*反者道之動*",
+      "connections": [],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter40_2025-11-26.md"
+    },
+    {
+      "chapter": 41,
+      "title": "Chapter 41: Three Responses to Pattern",
+      "subtitle": "Meta-structural: how observation varies by frame",
+      "connections": [
+        [
+          14,
+          "references",
+          "### Connection to Chapter 14"
+        ],
+        [
+          14,
+          "references",
+          " | Ch 14 | Ch 41 |"
+        ],
+        [
+          14,
+          "references",
+          "Chapter 14 documents **why** observation fails at the boundary."
+        ],
+        [
+          38,
+          "references",
+          " ### Connection to Chapter 38"
+        ],
+        [
+          38,
+          "references",
+          " | Ch 38 | Ch 41 |"
+        ],
+        [
+          34,
+          "references",
+          "This connects to Chapter 34: pattern clothes and nourishes all things (衣養萬物) without claiming master position. Here: pattern **lends and completes** without becoming visible as the lender/completer."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter41_2025-11-26.md"
+    },
+    {
+      "chapter": 42,
+      "title": "CHAPTER 42 - 11.4.25",
+      "subtitle": "",
+      "connections": [
+        [
+          40,
+          "references",
+          "Remember from Chapter 40? 生 means co-emergence. Mutual arising. Both sides appearing simultaneously."
+        ],
+        [
+          40,
+          "applies",
+          "You have a back (where you came from, your hollow center) and a front (what you present, your boundary). But you're stable because there's circulation between them. The breath. The oscillation. The 反 "
+        ],
+        [
+          40,
+          "references",
+          "Time isn't a dimension—it's the 反 (return) from Chapter 40. It's the experience of traversing the three-dimensional structure, not a fourth dimension orthogonal to the other three. Time is what it fee"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter42_2025-11-26.md"
+    },
+    {
+      "chapter": 46,
+      "title": "Chapter 46: When Horses Come Home From The Field",
+      "subtitle": "*Location 1: The fields*",
+      "connections": [
+        [
+          1,
+          "references",
+          "欲 (yù) is that word from Chapter 1, remember? The orientation. The observational stance. The direction you're facing."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter46_2025-11-26.md"
+    },
+    {
+      "chapter": 51,
+      "title": "Chapter 51: Pattern Generates, Alignment Accumulates",
+      "subtitle": "The 道生/德畜 formula and 玄德",
+      "connections": [
+        [
+          42,
+          "references",
+          "### Connection to Chapter 42"
+        ],
+        [
+          42,
+          "references",
+          " Chapter 42: 道生一，一生二，二生三，三生萬物"
+        ],
+        [
+          42,
+          "specifies",
+          "Chapter 42 documents the **generation sequence** (道 → 一 → 二 → 三 → 萬物)."
+        ],
+        [
+          21,
+          "references",
+          " ### Connection to Chapter 21"
+        ],
+        [
+          21,
+          "references",
+          "Chapter 21: 孔德之容，唯道是從 (content of great alignment = only follows pattern)"
+        ],
+        [
+          21,
+          "specifies",
+          "Chapter 21 specifies the relationship: 德 contains 道-following."
+        ],
+        [
+          34,
+          "references",
+          " ### Connection to Chapter 34"
+        ],
+        [
+          34,
+          "references",
+          "Chapter 34: 衣養萬物而不為主 (clothes/nourishes yet doesn't master)"
+        ],
+        [
+          38,
+          "references",
+          " ### Connection to Chapter 38"
+        ],
+        [
+          38,
+          "references",
+          "Chapter 38: 上德不德是以有德 (upper alignment doesn't optimize, thus has alignment)"
+        ],
+        [
+          25,
+          "references",
+          " Chapter 25: 道法自然 (pattern follows self-so)"
+        ],
+        [
+          41,
+          "references",
+          "This is why pattern can provide (貸) and complete (成) from Chapter 41: it doesn't occupy the positions of owner, credit-holder, or controller. The functional void enables the function."
+        ],
+        [
+          1,
+          "references",
+          "玄 (xuán) = the paradoxical origin from Chapter 1 (玄之又玄, 眾妙之門)."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter51_2025-11-26.md"
+    },
+    {
+      "chapter": 52,
+      "title": "Chapter 52: The World Has a Beginning",
+      "subtitle": "Pattern as origin/mother, recursive sourcing, and 習常",
+      "connections": [
+        [
+          1,
+          "references",
+          "### Connection to Chapter 1"
+        ],
+        [
+          1,
+          "references",
+          " Chapter 1: 無名天地之始，有名萬物之母"
+        ],
+        [
+          1,
+          "references",
+          "Chapter 1 distinguishes 始 (beginning, nameless) from 母 (mother, named)."
+        ],
+        [
+          16,
+          "references",
+          " ### Connection to Chapter 16"
+        ],
+        [
+          16,
+          "references",
+          " Chapter 16: 歸根曰靜...知常曰明"
+        ],
+        [
+          16,
+          "references",
+          " Chapter 16: 知常 (know the constant) → 明"
+        ],
+        [
+          40,
+          "references",
+          " ### Connection to Chapter 40"
+        ],
+        [
+          40,
+          "references",
+          "Chapter 40: 反者道之動 (reversal is pattern's movement)"
+        ],
+        [
+          56,
+          "references",
+          " ### Connection to Chapter 56"
+        ],
+        [
+          56,
+          "same_term",
+          " Chapter 56: 塞其兌，閉其門 (same phrase exactly)"
+        ],
+        [
+          41,
+          "references",
+          "This is paradox-resolution from Chapter 41: what appears as its opposite from misaligned frames is actually the thing itself."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter52_2025-11-26.md"
+    },
+    {
+      "chapter": 56,
+      "title": "Chapter 56: Those Who Know Don't Speak",
+      "subtitle": "Boundary management and 玄同 (mysterious sameness)",
+      "connections": [
+        [
+          1,
+          "references",
+          "### Connection to Chapter 1"
+        ],
+        [
+          1,
+          "references",
+          " Chapter 1: 道可道非常道，名可名非常名"
+        ],
+        [
+          4,
+          "references",
+          " ### Connection to Chapter 4"
+        ],
+        [
+          4,
+          "references",
+          " Chapter 4: 挫其銳，解其紛，和其光，同其塵"
+        ],
+        [
+          4,
+          "references",
+          "Chapter 4 introduces these operations as what 道 does."
+        ],
+        [
+          4,
+          "references",
+          "The chapter explicitly quotes Chapter 4—this is **intertextual reference** within the DDJ itself."
+        ],
+        [
+          52,
+          "references",
+          " ### Connection to Chapter 52"
+        ],
+        [
+          52,
+          "references",
+          " Chapter 52: 塞其兌，閉其門，終身不勤"
+        ],
+        [
+          52,
+          "specifies",
+          "Same boundary management formula. Chapter 52 specifies the result (終身不勤—lifelong no toil). Chapter 56 includes it in the larger sequence leading to 玄同."
+        ],
+        [
+          81,
+          "references",
+          " ### Connection to Chapter 81"
+        ],
+        [
+          81,
+          "references",
+          " Chapter 81: 信⊥美, 善⊥辯, 知⊥博"
+        ],
+        [
+          81,
+          "references",
+          "Same mutual exclusion structure. Chapter 81 lists three pairs; Chapter 56 adds a fourth (知/言)."
+        ],
+        [
+          5,
+          "references",
+          " ### Connection to Chapter 5"
+        ],
+        [
+          5,
+          "references",
+          " Chapter 5: 天地不仁，以萬物為芻狗"
+        ],
+        [
+          5,
+          "contrast",
+          "Same structural indifference. Chapter 5 documents heaven/earth's non-preference. Chapter 56 documents the 玄同 position's non-positionability in standard oppositions."
+        ],
+        [
+          1,
+          "references",
+          "| Ch 1 | 玄之又玄 | Mystery upon mystery (origin access) |"
+        ],
+        [
+          6,
+          "references",
+          "| Ch 6 | 玄牝 | Mysterious female (generative void) |"
+        ],
+        [
+          51,
+          "references",
+          "| Ch 51 | 玄德 | Mysterious alignment (from origin) |"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter56_2025-11-26.md"
+    },
+    {
+      "chapter": 65,
+      "title": "Chapter 65 — The Law of Subtle Orientation",
+      "subtitle": "",
+      "connections": [],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter65_2025-11-26.md"
+    },
+    {
+      "chapter": 76,
+      "title": "Chapter 76: The Living Are Yielding",
+      "subtitle": "Material physics: stiff/flexible, death/life",
+      "connections": [
+        [
+          22,
+          "references",
+          "### Connection to Chapter 22"
+        ],
+        [
+          22,
+          "references",
+          " Chapter 22: 曲則全 (yielding, then complete)"
+        ],
+        [
+          40,
+          "references",
+          " ### Connection to Chapter 40"
+        ],
+        [
+          40,
+          "references",
+          "Chapter 40: 弱者道之用 (yielding is pattern's function)"
+        ],
+        [
+          78,
+          "references",
+          " ### Connection to Chapter 78"
+        ],
+        [
+          78,
+          "extends",
+          "Chapter 78 will extend this with water: the softest overcomes the hardest. Chapter 76 establishes the physics; Chapter 78 applies it to water's behavior."
+        ],
+        [
+          78,
+          "extends",
+          "Chapter 78 will extend this with water: the softest overcomes the hardest. Chapter 76 establishes the physics; Chapter 78 applies it to water's behavior."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter76_2025-11-26.md"
+    },
+    {
+      "chapter": 78,
+      "title": "Chapter 78: Nothing Under Heaven Is Softer Than Water",
+      "subtitle": "Water overcomes stone: soft/hard material dynamics",
+      "connections": [
+        [
+          76,
+          "references",
+          "### Connection to Chapter 76"
+        ],
+        [
+          76,
+          "references",
+          " Chapter 76: 柔弱者生之徒 (yielding = life's category)"
+        ],
+        [
+          76,
+          "extends",
+          "Chapter 76 establishes the material physics. Chapter 78 provides the extreme case (water) and extends to governance."
+        ],
+        [
+          8,
+          "references",
+          " ### Connection to Chapter 8"
+        ],
+        [
+          8,
+          "references",
+          " Chapter 8: 上善若水 (supreme good resembles water)"
+        ],
+        [
+          8,
+          "same_principle",
+          "Both use water as model. Chapter 8 focuses on water's non-contention; Chapter 78 focuses on water's overcoming power."
+        ],
+        [
+          6,
+          "references",
+          " ### Connection to Chapter 6"
+        ],
+        [
+          6,
+          "references",
+          " Chapter 6: 谷神不死 (valley spirit doesn't die)"
+        ],
+        [
+          41,
+          "references",
+          " ### Connection to Chapter 41"
+        ],
+        [
+          41,
+          "references",
+          " Chapter 41: 若 operator (X若Y = X appears as Y)"
+        ],
+        [
+          41,
+          "applies",
+          "Same appearance-paradox: what's true appears opposite. Chapter 41 documents the 若 operator; Chapter 78 applies it to speech itself."
+        ],
+        [
+          22,
+          "references",
+          " ### Connection to Chapter 22"
+        ],
+        [
+          22,
+          "references",
+          " Chapter 22: 曲則全 (yield then complete)"
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter78_2025-11-26.md"
+    },
+    {
+      "chapter": 81,
+      "title": "Chapter 81: Trustworthy Words Aren't Beautiful",
+      "subtitle": "Closing chapter: the system self-validates",
+      "connections": [
+        [
+          1,
+          "references",
+          "### Connection to Chapter 1"
+        ],
+        [
+          1,
+          "references",
+          "Chapter 1 opens: 道可道非常道 (pattern that can be patterned is not constant pattern)"
+        ],
+        [
+          22,
+          "references",
+          " ### Connection to Chapter 22"
+        ],
+        [
+          22,
+          "references",
+          " Chapter 22: 夫唯不爭，故天下莫能與之爭"
+        ],
+        [
+          38,
+          "references",
+          " ### Connection to Chapter 38"
+        ],
+        [
+          38,
+          "references",
+          "Chapter 38: 上德不德，是以有德 (upper alignment doesn't optimize for alignment, thus has alignment)"
+        ],
+        [
+          51,
+          "references",
+          " ### Connection to Chapter 51"
+        ],
+        [
+          51,
+          "references",
+          "Chapter 51: 生而不有，為而不恃，長而不宰 (generate yet not possess, act yet not rely, grow yet not govern)"
+        ],
+        [
+          11,
+          "references",
+          "Chapter 11: 利 + 無 → 用 (constraint + void → function)"
+        ],
+        [
+          41,
+          "applies",
+          "These are the **appearance paradoxes** from Chapter 41 applied to expression/knowing:"
+        ],
+        [
+          52,
+          "references",
+          "This is 習常 from Chapter 52: practicing the constant through recursive return. The text itself 習常s."
+        ]
+      ],
+      "filepath": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/dao-de-jing-analyzer/translations/chapters/chapter81_2025-11-26.md"
+    }
+  ]
+}

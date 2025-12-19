@@ -1,0 +1,111 @@
+# CHUBS POS Tag Reference
+# Used for chubs_validation field population
+
+# CHUBS uses Chinese POS tags in BIO format (B- = beginning, I- = inside)
+pos_tags:
+  # Core parts of speech
+  名词:
+    english: "noun"
+    abbreviation: "n"
+    description: "Nouns including common and proper nouns"
+
+  动词:
+    english: "verb"
+    abbreviation: "v"
+    description: "Action and state verbs"
+
+  形容词:
+    english: "adjective"
+    abbreviation: "a"
+    description: "Descriptive modifiers"
+
+  副词:
+    english: "adverb"
+    abbreviation: "d"
+    description: "Verb and adjective modifiers"
+
+  介词:
+    english: "preposition"
+    abbreviation: "p"
+    description: "Relational words"
+
+  连词:
+    english: "conjunction"
+    abbreviation: "c"
+    description: "Connective words"
+
+  助词:
+    english: "particle"
+    abbreviation: "u"
+    description: "Grammatical particles (之, 也, 矣, etc.)"
+
+  数词:
+    english: "numeral"
+    abbreviation: "m"
+    description: "Number words"
+
+  量词:
+    english: "classifier"
+    abbreviation: "q"
+    description: "Measure words"
+
+  代词:
+    english: "pronoun"
+    abbreviation: "r"
+    description: "Pronouns"
+
+  方位词:
+    english: "localizer"
+    abbreviation: "f"
+    description: "Directional/locational words"
+
+  时间词:
+    english: "time_word"
+    abbreviation: "t"
+    description: "Temporal expressions"
+
+  处所词:
+    english: "space_word"
+    abbreviation: "s"
+    description: "Place words"
+
+  # Named entities
+  人名:
+    english: "person_name"
+    abbreviation: "nr"
+    description: "Personal names"
+
+  地名:
+    english: "place_name"
+    abbreviation: "ns"
+    description: "Place names"
+
+# Validation verdicts
+validation_verdicts:
+  CONFIRMED:
+    threshold: 0.50
+    description: ">50% of instances match claimed POS"
+    confidence: "high"
+
+  PLAUSIBLE:
+    threshold: 0.20
+    description: "20-50% of instances match claimed POS"
+    confidence: "moderate"
+
+  MINORITY_USAGE:
+    threshold: 0.01
+    description: "<20% but attested in corpus"
+    confidence: "low"
+
+  NOT_ATTESTED:
+    threshold: 0.00
+    description: "Character not found in CHUBS corpus or zero matches for claimed POS"
+    confidence: "none"
+
+# BIO tag parsing
+bio_format:
+  B: "Beginning of multi-character unit"
+  I: "Inside/continuation of unit"
+  O: "Outside (punctuation, unknown)"
+
+# Example: "B-名词" = beginning of a noun phrase

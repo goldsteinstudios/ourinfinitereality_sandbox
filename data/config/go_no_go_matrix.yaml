@@ -1,0 +1,61 @@
+# GO/NO-GO Decision Matrix for Agricultural Hypothesis
+# Evaluated at end of Week 5 (Tier 1 analysis complete)
+
+go_no_go_criteria:
+  tier_1_characters:
+    - 道  # dao - pattern/way
+    - 德  # de - alignment/virtue
+    - 自  # zi - self (nose hypothesis challenge)
+    - 反  # fan - reversal
+    - 弱  # ruo - yielding/weak
+    - 者  # zhe - that which
+
+  go_conditions:
+    threshold: "ALL must be met"
+    conditions:
+      - id: "majority_support"
+        description: "At least 4/6 Tier 1 characters show agricultural_score > standard_score"
+        metric: "count(agricultural_score > standard_score) >= 4"
+
+      - id: "no_falsification"
+        description: "No Tier 1 character has falsification_threshold breached"
+        metric: "count(falsification_breached) == 0"
+
+      - id: "counter_evidence_addressed"
+        description: "Counter-evidence for 自 = nose has plausible response"
+        metric: "自.counter_evidence[0].response_status == 'verified'"
+
+  no_go_conditions:
+    threshold: "ANY triggers NO-GO"
+    conditions:
+      - id: "multiple_falsification"
+        description: "3+ Tier 1 characters have falsification_threshold breached"
+        metric: "count(falsification_breached) >= 3"
+
+      - id: "oracle_bone_contradiction"
+        description: "Oracle bone forms clearly show facial features in 道 upper component"
+        metric: "道.character_evolution.oracle_bone.agricultural_features_present == false AND confidence > 0.8"
+
+      - id: "decisive_counter_evidence"
+        description: "Counter-evidence strength rated 'decisive' for any Tier 1 character"
+        metric: "any(counter_evidence.strength == 'decisive')"
+
+  partial_go_conditions:
+    description: "When neither GO nor NO-GO conditions are fully met"
+    actions:
+      - "Proceed with subset of characters that pass validation"
+      - "Document: 'Hypothesis holds for [X, Y, Z] but not [A, B]'"
+      - "Modify hypothesis scope in paper accordingly"
+      - "Continue production tracing with modified claims"
+
+decision_output:
+  format: "yaml"
+  location: "data/glossary/tier_1_decision_report.yaml"
+  fields:
+    - decision  # GO, NO-GO, PARTIAL-GO
+    - date
+    - tier_1_summary  # per-character scores
+    - conditions_met
+    - conditions_failed
+    - rationale
+    - next_steps

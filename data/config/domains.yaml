@@ -1,0 +1,88 @@
+# The Five Domains
+# Each represents the same pattern seen from a different frame
+
+domains:
+  rsm:
+    name: "RSM"
+    full_name: "Recursive Structural Model"
+    color: "#ffa07a"
+    tagline: "center / periphery — The pattern that describes itself"
+    description: |
+      The RSM is not a theory about reality—it's a description of how
+      description works. A pattern for noticing patterns. It doesn't
+      claim to be true; it claims to be useful.
+    core_paradox: "center / periphery"
+    position: "center"
+
+  ddj:
+    name: "Dao De Jing"
+    chinese: "道德經"
+    color: "#c9a959"
+    tagline: "有 / 無 — The ancient text as structural documentation"
+    description: |
+      Not philosophy. Not religion. Not poetry. The Dao De Jing is
+      structural documentation—a technical manual for how reality
+      organizes itself. These translations strip away 2,500 years of
+      interpretation to reveal the underlying pattern language.
+    core_paradox: "有 / 無 (being / nothing)"
+    position: "orbit"
+
+  math:
+    name: "Mathematics"
+    color: "#6495ed"
+    tagline: "1 / 0 — The formal language of the pattern"
+    description: |
+      Mathematics isn't about numbers—it's about structure. Euler's
+      identity connects the five fundamental constants at zero: growth (e),
+      rotation (i), closure (π), identity (1), and origin (0). The same
+      five operators that generate the RSM.
+    core_paradox: "1 / 0 (identity / origin)"
+    euler_focus: "e^(iπ) + 1 = 0"
+    position: "orbit"
+
+  physics:
+    name: "Physics"
+    color: "#90ee90"
+    tagline: "something / nothing — Where the pattern meets measurement"
+    description: |
+      What if energy isn't a substance but a rate? What if conservation
+      means rotation must complete? These explorations apply the structural
+      model to physics—not to replace physics, but to see if the pattern holds.
+    core_paradox: "something / nothing"
+    epistemic_status: "exploration"
+    position: "orbit"
+
+  bio:
+    name: "Biology"
+    color: "#dda0dd"
+    tagline: "self / other — The pattern made flesh (and wood)"
+    description: |
+      A tree can have a hollow center and still stand. The pith rots away;
+      the tree lives. Why? Because life doesn't happen at the center—it
+      happens at the boundary. The cambium, the layer where all growth
+      occurs, has zero thickness. Chapter 11 written in wood.
+    core_paradox: "self / other"
+    central_image: "hollow tree with growth rings around emptiness"
+    position: "orbit"
+
+# Cross-domain resonances
+resonances:
+  - domains: [ddj, math]
+    connection: "有無相生 ⟷ 1 and 0"
+    note: "co-emergence of distinction"
+
+  - domains: [ddj, physics]
+    connection: "反者道之動 ⟷ energy as rotation"
+    note: "reversal as fundamental movement"
+
+  - domains: [ddj, bio]
+    connection: "無之以為用 ⟷ hollow center"
+    note: "void as functional"
+
+  - domains: [math, physics]
+    connection: "e^(iπ) + 1 = 0 ⟷ conservation as closure"
+    note: "rotation must complete"
+
+  - domains: [rsm, all]
+    connection: "P₀⇔O₁⇔G₁⇔P₁⇔O₂"
+    note: "all domains instantiate the recursion kernel"

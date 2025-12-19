@@ -1,0 +1,398 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LivingGlossaryEntry",
+  "description": "Character entry for the Living Glossary - single source of truth for DDJ character analysis",
+  "type": "object",
+  "required": ["character", "unicode", "pinyin", "current_translation", "confidence", "history", "created", "modified"],
+  "properties": {
+    "character": {
+      "type": "string",
+      "description": "The Chinese character",
+      "minLength": 1,
+      "maxLength": 2
+    },
+    "unicode": {
+      "type": "string",
+      "pattern": "^U\\+[0-9A-F]{4,5}$",
+      "description": "Unicode codepoint (e.g., U+9053 for 道)"
+    },
+    "pinyin": {
+      "type": "string",
+      "description": "Standard pinyin with tone number (e.g., dao4)"
+    },
+
+    "current_translation": {
+      "type": "object",
+      "required": ["primary", "structural"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "Primary English rendering"
+        },
+        "structural": {
+          "type": "string",
+          "description": "Structural/geometric interpretation"
+        },
+        "traditional": {
+          "type": "string",
+          "description": "Standard traditional rendering for comparison"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Current interpretation rationale"
+        }
+      }
+    },
+
+    "confidence": {
+      "type": "string",
+      "enum": ["tested", "provisional", "speculative"],
+      "description": "Validation status: tested (>50% CHUBS match), provisional (some evidence), speculative (hypothesis only)"
+    },
+
+    "confidence_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Numerical confidence (0.0-1.0)"
+    },
+
+    "radical_decomposition": {
+      "type": "object",
+      "description": "Dual-hypothesis radical analysis",
+      "properties": {
+        "standard": {
+          "type": "object",
+          "description": "Traditional Kangxi radical analysis",
+          "properties": {
+            "components": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "component": { "type": "string" },
+                  "meaning": { "type": "string" },
+                  "position": {
+                    "type": "string",
+                    "enum": ["left", "right", "top", "bottom", "surround", "inside", "whole"]
+                  },
+                  "kangxi": { "type": "integer", "description": "Kangxi radical number" }
+                }
+              }
+            }
+          }
+        },
+        "agricultural": {
+          "type": "object",
+          "description": "Alternative pictographic reading (agricultural hypothesis)",
+          "properties": {
+            "components": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "component": { "type": "string" },
+                  "meaning": { "type": "string" },
+                  "position": { "type": "string" },
+                  "pictographic_origin": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "preferred": {
+          "type": ["string", "null"],
+          "enum": ["standard", "agricultural", null],
+          "description": "Which reading current evidence supports"
+        },
+        "preference_rationale": {
+          "type": ["string", "null"],
+          "description": "Why preferred reading was chosen"
+        }
+      }
+    },
+
+    "character_evolution": {
+      "type": "object",
+      "description": "Cross-stage etymology tracking",
+      "properties": {
+        "oracle_bone": {
+          "type": "object",
+          "properties": {
+            "attested": { "type": ["boolean", "null"] },
+            "image_refs": { "type": "array", "items": { "type": "string" } },
+            "pictographic_analysis": { "type": ["string", "null"] },
+            "agricultural_features_present": { "type": ["boolean", "null"] }
+          }
+        },
+        "bronze": {
+          "type": "object",
+          "properties": {
+            "attested": { "type": ["boolean", "null"] },
+            "image_refs": { "type": "array", "items": { "type": "string" } },
+            "pictographic_analysis": { "type": ["string", "null"] },
+            "agricultural_features_present": { "type": ["boolean", "null"] }
+          }
+        },
+        "chu": {
+          "type": "object",
+          "properties": {
+            "attested": { "type": ["boolean", "null"] },
+            "image_refs": { "type": "array", "items": { "type": "string" } },
+            "pictographic_analysis": { "type": ["string", "null"] },
+            "agricultural_features_present": { "type": ["boolean", "null"] }
+          }
+        },
+        "seal": {
+          "type": "object",
+          "properties": {
+            "attested": { "type": ["boolean", "null"] },
+            "image_refs": { "type": "array", "items": { "type": "string" } },
+            "pictographic_analysis": { "type": ["string", "null"] },
+            "agricultural_features_present": { "type": ["boolean", "null"] }
+          }
+        }
+      }
+    },
+
+    "agricultural_hypothesis": {
+      "type": "object",
+      "description": "Hypothesis validation tracking",
+      "properties": {
+        "claim": {
+          "type": ["string", "null"],
+          "description": "The specific claim for this character"
+        },
+        "predictions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "prediction": { "type": "string" },
+              "current_evidence": { "type": "string" },
+              "status": {
+                "type": "string",
+                "enum": ["untested", "supported", "refuted", "inconclusive"]
+              }
+            }
+          }
+        },
+        "falsification_threshold": {
+          "type": ["string", "null"],
+          "description": "What evidence would refute the hypothesis"
+        }
+      }
+    },
+
+    "counter_evidence": {
+      "type": "array",
+      "description": "Evidence against the agricultural hypothesis",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim": { "type": "string" },
+          "evidence": { "type": "string" },
+          "strength": {
+            "type": "string",
+            "enum": ["weak", "moderate", "strong", "decisive"]
+          },
+          "response": { "type": ["string", "null"] },
+          "response_status": {
+            "type": "string",
+            "enum": ["unverified", "verified", "refuted"]
+          }
+        }
+      }
+    },
+
+    "chubs_validation": {
+      "type": ["object", "null"],
+      "description": "CHUBS corpus validation data",
+      "properties": {
+        "glyph_count": { "type": "integer" },
+        "guodian_laozi": { "type": "boolean" },
+        "glyph_folders": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "pos_distribution": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "count": { "type": "integer" },
+              "percentage": { "type": "number" }
+            }
+          }
+        },
+        "primary_pos": { "type": "string" },
+        "claimed_pos_match": { "type": "boolean" },
+        "verdict": {
+          "type": "string",
+          "enum": ["CONFIRMED", "PLAUSIBLE", "MINORITY_USAGE", "NOT_ATTESTED"]
+        },
+        "last_validated": { "type": "string", "format": "date-time" }
+      }
+    },
+
+    "guodian_attestation": {
+      "type": ["object", "null"],
+      "description": "Guodian manuscript attestation",
+      "properties": {
+        "present": { "type": "boolean" },
+        "bundles": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["A", "B", "C"] }
+        },
+        "chapters": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "slip_references": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "variants_from_received": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "guodian_form": { "type": "string" },
+              "received_form": { "type": "string" },
+              "drift_description": { "type": "string" },
+              "structural_impact": { "type": "string", "enum": ["high", "medium", "low"] }
+            }
+          }
+        }
+      }
+    },
+
+    "font_data": {
+      "type": ["object", "null"],
+      "description": "Font creation data",
+      "properties": {
+        "traced": { "type": "boolean" },
+        "vector_path": { "type": ["string", "null"] },
+        "source_images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": { "type": "string" },
+              "manuscript": { "type": "string" },
+              "slip": { "type": "string" },
+              "quality_score": { "type": "number" }
+            }
+          }
+        },
+        "extracted_features": {
+          "type": ["object", "null"],
+          "properties": {
+            "stroke_count": { "type": "integer" },
+            "bounding_box": {
+              "type": "object",
+              "properties": {
+                "width": { "type": "number" },
+                "height": { "type": "number" },
+                "aspect_ratio": { "type": "number" }
+              }
+            },
+            "geometric_features": {
+              "type": "object",
+              "properties": {
+                "horizontal_strokes": { "type": "integer" },
+                "vertical_strokes": { "type": "integer" },
+                "diagonal_strokes": { "type": "integer" },
+                "curves": { "type": "integer" },
+                "enclosures": { "type": "integer" }
+              }
+            }
+          }
+        },
+        "tracing_metadata": {
+          "type": ["object", "null"],
+          "properties": {
+            "traced_by": { "type": "string" },
+            "traced_date": { "type": "string", "format": "date" },
+            "method": { "type": "string", "enum": ["manual_bezier", "auto_trace", "hybrid"] },
+            "software": { "type": "string" },
+            "revision": { "type": "integer" }
+          }
+        }
+      }
+    },
+
+    "semantic_field": {
+      "type": ["string", "null"],
+      "description": "Semantic clustering category (e.g., water_management, agriculture, movement)"
+    },
+
+    "pictographic_analysis": {
+      "type": ["string", "null"],
+      "description": "Visual description independent of semantic interpretation"
+    },
+
+    "exemplar_provenance": {
+      "type": ["object", "null"],
+      "description": "Archaeological provenance of primary exemplar",
+      "properties": {
+        "tomb": { "type": "string" },
+        "slip_bundle": { "type": "string" },
+        "slip_number": { "type": "string" },
+        "scribe_id": { "type": ["string", "null"] }
+      }
+    },
+
+    "cross_references": {
+      "type": ["object", "null"],
+      "properties": {
+        "related_characters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "character": { "type": "string" },
+              "relationship": {
+                "type": "string",
+                "enum": ["variant", "component", "radical_family", "semantic_field", "phonetic"]
+              }
+            }
+          }
+        },
+        "ddj_chapters": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "lexicon_category": {
+          "type": "string",
+          "enum": ["substrate", "operator", "position", "connector", "entity", "core_operators"]
+        },
+        "rsm_mapping": { "type": ["string", "null"] }
+      }
+    },
+
+    "history": {
+      "type": "array",
+      "description": "Full version history",
+      "items": {
+        "type": "object",
+        "required": ["date", "field", "to", "rationale", "author"],
+        "properties": {
+          "date": { "type": "string", "format": "date-time" },
+          "field": { "type": "string" },
+          "from": { "type": ["string", "null"] },
+          "to": { "type": "string" },
+          "rationale": { "type": "string" },
+          "evidence": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "author": { "type": "string" }
+        }
+      }
+    },
+
+    "created": { "type": "string", "format": "date-time" },
+    "modified": { "type": "string", "format": "date-time" }
+  }
+}

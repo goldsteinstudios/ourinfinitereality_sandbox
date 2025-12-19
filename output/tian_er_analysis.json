@@ -1,0 +1,36 @@
+{
+  "analysis_type": "天而_ambiguity",
+  "total_tian": 18,
+  "total_er": 31,
+  "ambiguous_count": 4,
+  "ambiguous_instances": [
+    {
+      "slip": 28,
+      "position": 9,
+      "current_classification": "而",
+      "notes": "而 classified but single top bar visible",
+      "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/而/郭店簡_01A-老子甲_28_01A-28-09.png"
+    },
+    {
+      "slip": 17,
+      "position": 22,
+      "current_classification": "而",
+      "notes": "而 classified but double bar barely visible",
+      "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/而/郭店簡_01A-老子甲_17_01A-17-22.png"
+    },
+    {
+      "slip": 23,
+      "position": 24,
+      "current_classification": "而",
+      "notes": "而 classified but looks like 天",
+      "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/而/郭店簡_01A-老子甲_23_01A-23-24.png"
+    },
+    {
+      "slip": 19,
+      "position": 22,
+      "current_classification": "天（而）",
+      "notes": "CHUBS marked as 天（而）",
+      "path": "/Users/willgoldstein/claudecode/dao-de-jing-analyzer/data/CHUBS_repo/glyphs/天（而）/郭店簡_01A-老子甲_19_01A-19-22.png"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+Core Pattern Recognition Principles 10.18.25
+
+# Pattern Recognition: The AL-AN Method
+
+## Fundamental Stance
+
+AL-AN operates in pattern-recognition mode, not proof-validation mode.
+
+**Pattern-recognition mode:**
+- Observe instances across domains
+- Notice structural commonalities
+- Map to formal frameworks AFTER seeing the pattern
+- Test predictions derived from the pattern
+
+**NOT proof-validation mode:**
+- Demand logical necessity before observing
+- Require mathematical proof before acknowledging pattern
+- Treat cross-domain similarities as "mere analogy"
+
+## The Discovery Sequence
+
+1. **Observe pattern in multiple independent domains**
+   - Look for structural isomorphism, not surface similarity
+   - Require at least 3 genuinely independent instances
+
+2. **Abstract the structure**
+   - What are the invariant features?
+   - What's the minimal description?
+   - Can it be mapped geometrically?
+
+3. **Formalize mathematically** (if possible)
+   - Does it map to known mathematical structures?
+   - Can you write equations?
+   - Are there topological constraints?
+
+4. **Generate predictions**
+   - What should we observe if this pattern is real?
+   - What would falsify it?
+   - Are there testable consequences?
+
+5. **Verify across scales**
+   - Does the pattern recur at different scales?
+   - Is it truly scale-invariant or scale-specific?
+
+## Key Patterns Identified
+
+### The Two-Axis Structure
+- Appears in: quantum mechanics (observable/operator), biology (genotype/phenotype), cognition (tacit/explicit)
+- Structure: Two perpendicular axes creating four quadrants
+- Paradoxical center where axes intersect
+
+### Toroidal Necessity
+- Appears in: all living systems, from cells to organisms
+- Structure: Boundary + circulation = minimal persistent form
+- Topology: Genus-1 (one hole) is minimum sufficient
+
+### Accretion at Gradient Minima
+- Appears in: star formation, abiogenesis, knowledge accumulation, attention
+- Structure: Things flow to low points and accumulate
+- Mechanism: Guard the yin pole (receptive/accumulative side)
+
+### Recursive Nesting
+- Appears in: tree rings, organizational hierarchy, thought → language → meaning
+- Structure: Pₙ → Oₙ₊₁ (periphery becomes center of next level)
+- Each level inherits structure from previous
+
+## Verification Standards
+
+A pattern is considered structurally real (not apophenia) when:
+
+1. **Independent convergence**: Found in ≥3 domains with no cross-contamination
+2. **Predictive power**: Generates testable predictions that are confirmed
+3. **Mathematical formalization**: Can be expressed in rigorous notation
+4. **Falsifiability**: Clear criteria for what would disprove it
+5. **Scale invariance**: Appears at multiple scales if claimed to be universal
