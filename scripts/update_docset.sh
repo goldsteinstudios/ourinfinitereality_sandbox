@@ -1,49 +1,88 @@
 #!/bin/bash
 
 # Update Docset Script
-# Regenerates the RSM docset from audited source files and publishes
-# Usage: ./scripts/update_docset.sh [commit message]
+# Regenerates the RSM docset with versioning and archiving
+# Usage: ./scripts/update_docset.sh <version> [commit message]
+# Example: ./scripts/update_docset.sh v0.981 "Add 玄牝 analysis"
 
 set -e
 
 REPO="/Users/willgoldstein/claudecode/ourinfinitereality_sandbox"
 DOCSET_DIR="$REPO/docset"
 PUBLIC_DOCSET="$REPO/public/docset"
-TODAY=$(date +%Y-%m-%d)
-COMMIT_MSG="${1:-Update RSM docset}"
+CURRENT_DIR="$DOCSET_DIR/current"
+ARCHIVE_DIR="$DOCSET_DIR/archive"
 
-echo "=== Updating RSM Docset ==="
+# Require version parameter
+if [ -z "$1" ]; then
+    echo "Usage: $0 <version> [commit message]"
+    echo "Example: $0 v0.981 \"Update with deep review refinements\""
+    exit 1
+fi
+
+VERSION="$1"
+RSM_FILE="$REPO/rsm/canonical/rsm_${VERSION}.md"
+COMMIT_MSG="${2:-Update docset to RSM $VERSION}"
+TODAY=$(date +%Y-%m-%d)
+
+# Validate RSM file exists
+if [ ! -f "$RSM_FILE" ]; then
+    echo "Error: RSM file not found: $RSM_FILE"
+    echo "Available versions:"
+    ls "$REPO/rsm/canonical/" | grep "rsm_v" | sed 's/rsm_/  /; s/.md//'
+    exit 1
+fi
+
+echo "=== Updating RSM Docset to $VERSION ==="
 echo ""
 
-# Step 1: Create dated folder
-echo "1. Creating dated folder: $TODAY"
-mkdir -p "$DOCSET_DIR/$TODAY"
+# Step 1: Archive current version (if exists)
+if [ -d "$CURRENT_DIR" ] && [ -f "$CURRENT_DIR/VERSION" ]; then
+    OLD_VERSION=$(cat "$CURRENT_DIR/VERSION")
+    echo "1. Archiving current ($OLD_VERSION) to archive/$OLD_VERSION/"
+    mkdir -p "$ARCHIVE_DIR/$OLD_VERSION"
+    cp -r "$CURRENT_DIR"/* "$ARCHIVE_DIR/$OLD_VERSION/"
+    # Also archive the combined files
+    if [ -f "$DOCSET_DIR/rsm_complete.md" ]; then
+        cp "$DOCSET_DIR/rsm_complete.md" "$ARCHIVE_DIR/$OLD_VERSION/"
+        cp "$DOCSET_DIR/rsm_complete.html" "$ARCHIVE_DIR/$OLD_VERSION/"
+    fi
+else
+    echo "1. No current version to archive (fresh start)"
+fi
 
-# Step 2: Copy audited source files with numbered prefixes
-echo "2. Copying audited source files..."
+# Step 2: Create/clear current folder
+echo "2. Setting up current/ folder..."
+rm -rf "$CURRENT_DIR"
+mkdir -p "$CURRENT_DIR"
 
-cp "$REPO/rsm/canonical/rsm_v0981.md" "$DOCSET_DIR/$TODAY/01_rsm_v0981.md"
-cp "$REPO/rsm/takes/operators.md" "$DOCSET_DIR/$TODAY/02_operators.md"
-cp "$REPO/rsm/canonical/notation_guide.md" "$DOCSET_DIR/$TODAY/03_notation_guide.md"
-cp "$REPO/rsm/canonical/recursive_structural_model.md" "$DOCSET_DIR/$TODAY/04_recursive_structural_model.md"
-cp "$REPO/ddj/canonical/chapters/chapter01.md" "$DOCSET_DIR/$TODAY/05_ddj_chapter01.md"
-cp "$REPO/ddj/canonical/chapters/chapter11.md" "$DOCSET_DIR/$TODAY/06_ddj_chapter11.md"
-cp "$REPO/ddj/canonical/chapters/chapter40.md" "$DOCSET_DIR/$TODAY/07_ddj_chapter40.md"
-cp "$REPO/ddj/canonical/chapters/chapter42.md" "$DOCSET_DIR/$TODAY/08_ddj_chapter42.md"
-cp "$REPO/consolidated/essays/euler_tao_identity.md" "$DOCSET_DIR/$TODAY/09_euler_tao_identity.md"
+# Step 3: Copy audited source files
+echo "3. Copying audited source files..."
+cp "$RSM_FILE" "$CURRENT_DIR/01_rsm.md"
+cp "$REPO/rsm/takes/operators.md" "$CURRENT_DIR/02_operators.md"
+cp "$REPO/rsm/canonical/notation_guide.md" "$CURRENT_DIR/03_notation_guide.md"
+cp "$REPO/rsm/canonical/recursive_structural_model.md" "$CURRENT_DIR/04_recursive_structural_model.md"
+cp "$REPO/ddj/canonical/chapters/chapter01.md" "$CURRENT_DIR/05_ddj_chapter01.md"
+cp "$REPO/ddj/canonical/chapters/chapter11.md" "$CURRENT_DIR/06_ddj_chapter11.md"
+cp "$REPO/ddj/canonical/chapters/chapter40.md" "$CURRENT_DIR/07_ddj_chapter40.md"
+cp "$REPO/ddj/canonical/chapters/chapter42.md" "$CURRENT_DIR/08_ddj_chapter42.md"
+cp "$REPO/consolidated/essays/euler_tao_identity.md" "$CURRENT_DIR/09_euler_tao_identity.md"
 
-# Step 3: Create index
-echo "3. Creating index..."
-cat > "$DOCSET_DIR/$TODAY/00_index.md" << EOF
-# RSM v0.981 Document Set — $TODAY
+# Step 4: Write version file
+echo "$VERSION" > "$CURRENT_DIR/VERSION"
 
-Documents audited and aligned with RSM v0.981 operator grammar.
+# Step 5: Create index
+echo "4. Creating index..."
+cat > "$CURRENT_DIR/00_index.md" << EOF
+# RSM $VERSION Document Set — $TODAY
+
+Documents audited and aligned with RSM $VERSION operator grammar.
 
 ## Contents
 
 | # | File | Description |
 |---|------|-------------|
-| 01 | rsm_v0981.md | Complete formal treatment (refined from deep review) |
+| 01 | rsm.md | Complete formal treatment ($VERSION) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
@@ -62,25 +101,25 @@ Documents audited and aligned with RSM v0.981 operator grammar.
 *Co-authored by Will Goldstein and Claude*
 EOF
 
-# Step 4: Concatenate into single markdown file
-echo "4. Creating combined markdown file..."
-cat "$DOCSET_DIR/$TODAY/00_index.md" > "$DOCSET_DIR/rsm_v0981_complete.md"
-echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_v0981_complete.md"
+# Step 6: Create combined markdown file
+echo "5. Creating combined markdown file..."
+cat "$CURRENT_DIR/00_index.md" > "$DOCSET_DIR/rsm_complete.md"
+echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
 
-for f in 01_rsm_v0981.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter11.md 07_ddj_chapter40.md 08_ddj_chapter42.md 09_euler_tao_identity.md; do
-    echo -e "# ═══════════════════════════════════════════════════════════════\n# FILE: $f\n# ═══════════════════════════════════════════════════════════════\n" >> "$DOCSET_DIR/rsm_v0981_complete.md"
-    cat "$DOCSET_DIR/$TODAY/$f" >> "$DOCSET_DIR/rsm_v0981_complete.md"
-    echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_v0981_complete.md"
+for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter11.md 07_ddj_chapter40.md 08_ddj_chapter42.md 09_euler_tao_identity.md; do
+    echo -e "# ═══════════════════════════════════════════════════════════════\n# FILE: $f\n# ═══════════════════════════════════════════════════════════════\n" >> "$DOCSET_DIR/rsm_complete.md"
+    cat "$CURRENT_DIR/$f" >> "$DOCSET_DIR/rsm_complete.md"
+    echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
 done
 
-# Step 5: Create HTML version for NotebookLM
-echo "5. Creating HTML version..."
-cat > "$DOCSET_DIR/rsm_v0981_complete.html" << 'HTMLEOF'
+# Step 7: Create HTML version
+echo "6. Creating HTML version..."
+cat > "$DOCSET_DIR/rsm_complete.html" << HTMLEOF
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RSM v0.981 Complete</title>
+<title>RSM $VERSION Complete</title>
 <style>
 body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
 pre, code { background: #f4f4f4; padding: 2px 6px; }
@@ -94,33 +133,40 @@ h1, h2, h3 { margin-top: 1.5em; }
 <pre style="white-space: pre-wrap; font-family: inherit; background: none;">
 HTMLEOF
 
-cat "$DOCSET_DIR/rsm_v0981_complete.md" >> "$DOCSET_DIR/rsm_v0981_complete.html"
+cat "$DOCSET_DIR/rsm_complete.md" >> "$DOCSET_DIR/rsm_complete.html"
 
-cat >> "$DOCSET_DIR/rsm_v0981_complete.html" << 'HTMLEOF'
+cat >> "$DOCSET_DIR/rsm_complete.html" << 'HTMLEOF'
 </pre>
 </body>
 </html>
 HTMLEOF
 
-# Step 6: Copy to public folder
-echo "6. Copying to public folder..."
+# Step 8: Copy to public folder
+echo "7. Copying to public folder..."
 rm -rf "$PUBLIC_DOCSET"
 cp -r "$DOCSET_DIR" "$PUBLIC_DOCSET"
 
-# Step 7: Show stats
-LINES=$(wc -l < "$DOCSET_DIR/rsm_v0981_complete.md" | tr -d ' ')
-SIZE=$(ls -lh "$DOCSET_DIR/rsm_v0981_complete.md" | awk '{print $5}')
+# Step 9: Show stats
+LINES=$(wc -l < "$DOCSET_DIR/rsm_complete.md" | tr -d ' ')
+SIZE=$(ls -lh "$DOCSET_DIR/rsm_complete.md" | awk '{print $5}')
 echo ""
 echo "=== Docset Ready ==="
+echo "Version: $VERSION"
 echo "Combined file: $LINES lines, $SIZE"
-echo "Dated folder: $TODAY"
 echo ""
 
-# Step 8: Commit and publish
+# List archived versions
+if [ -d "$ARCHIVE_DIR" ] && [ "$(ls -A $ARCHIVE_DIR 2>/dev/null)" ]; then
+    echo "Archived versions:"
+    ls -1 "$ARCHIVE_DIR" | sed 's/^/  /'
+    echo ""
+fi
+
+# Step 10: Commit and publish
 read -p "Commit and publish? [y/N] " -n 1 -r
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "7. Committing to sandbox..."
+    echo "8. Committing to sandbox..."
     cd "$REPO"
     git add docset/ public/docset/
     git commit -m "$COMMIT_MSG
@@ -129,12 +175,12 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 Co-authored by Will Goldstein and Claude" || echo "No changes to commit"
     git push
 
-    echo "8. Publishing to live site..."
+    echo "9. Publishing to live site..."
     "$REPO/scripts/publish.sh" "$COMMIT_MSG"
 
     echo ""
     echo "=== Published ==="
-    echo "NotebookLM URL: https://ourinfinitereality.com/docset/rsm_v0981_complete.html"
+    echo "NotebookLM URL: https://ourinfinitereality.com/docset/rsm_complete.html"
 else
     echo "Skipped publish. Run manually:"
     echo "  git add docset/ public/docset/ && git commit && git push"
