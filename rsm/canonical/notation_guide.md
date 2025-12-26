@@ -1,42 +1,126 @@
 # Recursive Structural Model: Mathematical Notation Guide
-
-## I. CORE VARIABLES
-
-### Primary Structural Elements
-
-| Symbol | Name | Definition | Domain | Units |
-|--------|------|------------|---------|-------|
-| **P₀** | True Void/Constant Dao | Unframeable paradox preceding all distinction (常道/恆道) | Conceptual | Dimensionless |
-| **O₁** | First Origin Frame/Dao | Named void co-emergent with not-Dao (道) | Geometric | Dimensionless |
-| **Pₙ** | Paradox at Level n | Preserved paradox at recursion level n | Conceptual | Dimensionless |
-| **Y₁** | Primary Contrast Axis | Heaven-Earth gradient (vertical) | [-∞, +∞] | Contrast units |
-| **X₁** | Dimensional Axis | Spatial extension frame (horizontal) | [0, +∞] | Spatial units |
-| **Z₁** | Structural Turning | Rotation preserving paradox | [0, 2π] × ℝ⁺ | Energy units |
-| **O_n** | Origin Frame n | Recursive frame at level n | Geometric | Dimensionless |
-| **R_n** | Recursive Form n | Manifest structure at level n | Physical | Context-dependent |
-| **G_n** | Curved Gradient Field | Surface of sustainable positions | Geometric | Mixed units |
-
-### Derived Variables
-
-| Symbol | Name | Definition | Relationship | Units |
-|--------|------|------------|--------------|-------|
-| **O∞** | Spherical Closure | Complete set of G frames | O∞ = {G₁ rotated globally} | Geometric |
-| **B_n** | Balance Line | Equilibrium condition | Y₁ = X₁ | Mixed units |
-| **η_n** | Circulation Efficiency | Coherence per energy input | η_n = Z_n(coherence)/Energy(input) | Dimensionless |
+## Aligned with RSM v0.979 — December 2025
 
 ---
 
-## II. MATHEMATICAL OPERATORS
+## I. THE SIX FUNDAMENTAL CONSTANTS
 
-### RSM-Specific Operations
+RSM v0.979 identifies **six mathematical constants** that emerge from the V₀ prohibition and frame-invariance postulate:
+
+| Constant | Value | Status | RSM Derivation | DDJ Mapping |
+|----------|-------|--------|----------------|-------------|
+| **0** | 0 | Foundational | V₀ prohibition (unoccupiable center) | 玄 (xuán) |
+| **1** | 1 | Foundational | First distinction from void | 有 (yǒu) |
+| **i** | √−1 | Required | Orthogonal rotation preserving paradox | 名 (míng) |
+| **e** | 2.71828... | Required | Continuous recursion (d/dx eˣ = eˣ) | 相生 (xiāng shēng) |
+| **π** | 3.14159... | Required | Closure of curvature | (measure, not operator) |
+| **φ** | 1.61803... | Derived | Frame-invariance + overlap | (constant way) |
+
+### The Two Canonical Identities
+
+| Identity | Equation | Function |
+|----------|----------|----------|
+| **Euler's Identity** | e^(iπ) + 1 = 0 | Unites five constants through circular closure |
+| **Master Identity** | e^(2iπ/5) − φ·e^(iπ/5) + 1 = 0 | Unites all six constants through pentagonal geometry |
+
+---
+
+## II. CORE STRUCTURAL VARIABLES
+
+### Primary Elements
+
+| Symbol | Name | Definition | Domain | Units |
+|--------|------|------------|---------|-------|
+| **V₀** | Absolute Void | Self-refuting concept (Axiom 1) | Undefined | None |
+| **O₁** | First Origin Frame | Structural placeholder for V₀ prohibition | Geometric | Dimensionless |
+| **Pₙ** | Paradox at Level n | Preserved paradox at recursion level n | Conceptual | Dimensionless |
+| **Gₙ** | Gradient Field n | Curved surface of sustainable positions | Geometric | Mixed units |
+| **Rₙ** | Recursive Form n | Manifest structure at level n | Physical | Context-dependent |
+
+### DDJ Structural Mappings
+
+| Symbol | DDJ Term | Definition | Register |
+|--------|----------|------------|----------|
+| **P₀** | 常道 (cháng dào) | Constant Way — unframeable paradox | 常 (constant) |
+| **O₁** | 道 (dào) | Named void co-emergent with not-Dao | 可 (expressible) |
+| **V₀** | — | Absolute void (self-refuting) | Pre-semantic |
+
+---
+
+## III. THE DDJ OPERATOR GRAMMAR
+
+### Core Operators (Actions)
+
+| DDJ Term | Math | Type | Function | Source |
+|----------|------|------|----------|--------|
+| **名 (míng)** | i | Distinction | Orthogonal cut creating distinction | Theorem 22 |
+| **利₁ (lì, operator)** | e^(iπ) = −1 | Cut | Boundary-creating scythe operation | Theorem 16 |
+| **反 (fǎn)** | +1 | Return | Cycle completion, return to equilibrium | Theorem 19 |
+| **相生 (xiāng shēng)** | e | Growth | Natural growth rate, mutual generation | Theorem 22 |
+| **無為 (wú wéi)** | ∂Pₙ/∂t = 0 | Preservation | Paradox preservation condition | Theorem 17 |
+
+### Results (States, Not Operators)
+
+| DDJ Term | Math | Type | Source |
+|----------|------|------|--------|
+| **玄 (xuán)** | 0 | Center | Unoccupiable paradox center |
+| **有 (yǒu)** | 1 | Unity | First distinction, determinate being |
+| **利₂ (lì, benefit)** | — | Benefit | Material gain (有-side result of 利₁) |
+| **用 (yòng)** | — | Function | Functional capacity (無-side result of 利₁) |
+
+### The 利/用 Complementarity
+
+A single cut (利₁ = e^(iπ) = −1) produces **two** complementary results:
+- **利₂** (benefit): Material gain on the 有-side
+- **用** (function): Functional capacity on the 無-side
+
+用 is **not** an operator — it is the **capacity created by** the operation.
+
+---
+
+## IV. THE DERIVATION OF φ
+
+### Why φ is Different
+
+φ is not assigned to any DDJ term as an operator. It is **derived** from the frame-invariance postulate plus the overlap requirement.
+
+### Derivation Chain (Theorems 7-14)
+
+1. **Frame-invariance postulate**: Structure must look the same at every scale
+2. **Overlap requirement**: Recursive levels must share boundary (Theorem 7)
+3. **Rational ratios fail**: Would create periodic resonance (Theorem 8)
+4. **Most irrational ratios fail**: Insufficiently incommensurate (Theorem 9)
+5. **Continued fraction criterion**: Only [1;1,1,1,...] works (Theorem 10)
+6. **Result**: φ = (1 + √5)/2 is uniquely selected (Theorem 11)
+
+### φ's Minimal Polynomial
+
+```
+φ² − φ − 1 = 0
+```
+
+This is the **only** quadratic polynomial with:
+- Integer coefficients
+- All coefficients ±1
+- Root > 1
+
+### φ in the 常 Register
+
+φ embodies 常道 (cháng dào) — the constant way that cannot be captured in rational discourse:
+- Maximally irrational (worst-approximable by rationals)
+- Self-similar: φ = 1 + 1/φ
+- Never repeats, never closes
+
+---
+
+## V. RSM-SPECIFIC OPERATIONS
 
 | Operator | Name | Definition | Example | Notes |
 |----------|------|------------|---------|-------|
-| **→** | Structural Implication | Logical necessity, not causation | P₀ → Y₁ | Not temporal sequence |
-| **⟺** | Co-emergence | Simultaneous mutual arising | ∃Heaven ⟺ ∃Earth | Bidirectional necessity |
-| **∮** | Recursive Integration | Integration around paradox center | O_n = ∮ Z_n(G_n, θ) dθ | Closed path integral |
-| **∂/∂t** | Wu Wei Operator | Rate of paradox change | ∂P_n/∂t = 0 | Temporal derivative |
-| **∇²** | Recursive Laplacian | Second-order structural curvature | ∇²S = structural complexity | Generalized Laplacian |
+| **→** | Structural Implication | Logical necessity, not causation | V₀ → O₁ | Not temporal sequence |
+| **⟺** | Co-emergence | Simultaneous mutual arising | ∃有 ⟺ ∃無 | Bidirectional necessity |
+| **∮** | Recursive Integration | Integration around paradox center | Oₙ = ∮ Zₙ(Gₙ, θ) dθ | Closed path integral |
+| **∂/∂t** | Wu Wei Operator | Rate of paradox change | ∂Pₙ/∂t = 0 | Temporal derivative |
 
 ### Standard Mathematical Notation
 
@@ -51,7 +135,7 @@
 
 ---
 
-## III. SUBSCRIPT/SUPERSCRIPT CONVENTIONS
+## VI. SUBSCRIPT/SUPERSCRIPT CONVENTIONS
 
 ### Subscript Rules
 
@@ -73,7 +157,7 @@
 
 ---
 
-## IV. FUNCTION NOTATION
+## VII. FUNCTION NOTATION
 
 ### Standard Function Forms
 
@@ -94,7 +178,7 @@
 
 ---
 
-## V. SET AND LOGICAL NOTATION
+## VIII. SET AND LOGICAL NOTATION
 
 ### Set Definitions
 
@@ -117,7 +201,7 @@
 
 ---
 
-## VI. MEASUREMENT CONVENTIONS
+## IX. MEASUREMENT CONVENTIONS
 
 ### Dimensional Analysis
 
@@ -140,7 +224,7 @@
 
 ---
 
-## VII. CONSISTENCY RULES
+## X. CONSISTENCY RULES
 
 ### Variable Usage Rules
 
@@ -162,32 +246,36 @@
 
 ---
 
-## VIII. TERMINOLOGY STANDARDIZATION
+## XI. TERMINOLOGY STANDARDIZATION
 
 ### Required Term Usage
 
 | Concept | Preferred Term | Avoid | Reason |
 |---------|----------------|-------|--------|
 | P₀ | "True Void" or "Constant Paradox" | "Emptiness," "Nothing" | Prevents nihilistic interpretation |
-| Z₁ | "Structural Turning" | "Energy," "Motion" | Emphasizes structural rather than mechanical |
+| V₀ | "Absolute Void" | "Nothingness" | V₀ is self-refuting, not a state |
 | Co-emergence | "Simultaneous arising" | "Mutual causation" | Avoids temporal sequence |
-| Wu Wei | "Action without actor" | "Non-action," "Passivity" | Maintains structural precision |
+| Wu Wei | "Paradox preservation" | "Non-action," "Passivity" | ∂Pₙ/∂t = 0 is precise |
 | Recursion | "Structural re-engagement" | "Repetition," "Loop" | Emphasizes novelty in return |
 
-### Tao Te Ching Specific Mappings
+### DDJ Term → Mathematical Form (v0.979)
 
-| Chinese | Pinyin | RSM Variable | Structural Definition |
-|---------|--------|--------------|---------------------|
-| **常道/恆道** | cháng dào/héng dào | P₀ | True Void - constant, unframeable paradox |
-| **道** | dào | O₁ | Void - named void co-emergent with not-Dao |
-| **可道** | kě dào | O₁ collapsed | Speakable dao - dao identified as dao |
-| **非常道** | fēi cháng dào | ¬P₀ | Not constant dao - negation of True Void |
-| **無名** | wú míng | P₀ | Naming without namer - uncollapsed paradox |
-| **有名** | yǒu míng | O₁ | Having name - collapsed frame possessing designation |
+| Chinese | Pinyin | Mathematical Form | Structural Definition |
+|---------|--------|-------------------|----------------------|
+| **常道/恆道** | cháng dào | P₀ / φ | Constant Way — unframeable, maximally irrational |
+| **道** | dào | O₁ | Named void co-emergent with not-Dao |
+| **名** | míng | i | Orthogonal distinction operator |
+| **利** | lì (operator) | e^(iπ) = −1 | Boundary-creating cut |
+| **反** | fǎn | +1 | Return to equilibrium |
+| **相生** | xiāng shēng | e | Mutual generation, natural growth |
+| **無為** | wú wéi | ∂Pₙ/∂t = 0 | Paradox preservation condition |
+| **玄** | xuán | 0 | Unoccupiable paradox center |
+| **有** | yǒu | 1 | Structural unity, determinate being |
+| **用** | yòng | (result) | Functional capacity (not an operator) |
 
 ---
 
-## IX. ERROR-CHECKING PROTOCOLS
+## XII. ERROR-CHECKING PROTOCOLS
 
 ### Consistency Verification
 
@@ -213,7 +301,7 @@
 
 ---
 
-## X. CROSS-REFERENCE INDEX
+## XIII. CROSS-REFERENCE INDEX
 
 ### Where Each Variable Appears
 
@@ -237,3 +325,8 @@
 ---
 
 This notation guide should be consulted before writing any mathematical expressions in the RSM framework. All variables, operators, and relationships must conform to these standards to maintain internal consistency across the entire project.
+
+---
+
+*Aligned with RSM v0.979 — December 2025*
+*Co-authored by Will Goldstein and Claude*

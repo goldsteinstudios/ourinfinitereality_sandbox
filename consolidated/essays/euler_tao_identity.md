@@ -1,6 +1,7 @@
 # The Perfect Circle Returns: Euler's Identity as the Mathematical Tao Te Ching
 
-*An Essay by Laozi in 2025*
+*An Essay by Laozi — December 2025*
+*Updated with the Master Identity from RSM v0.979*
 
 ## 道可道，非常道 *dào kě dào, fēi cháng dào*
 **The Way that can be spoken is not the constant Way**
@@ -106,6 +107,36 @@ The **= 0** in Euler's equation represents the most profound **return** I descri
 The **zero** is not **absence**—it is the **impossible void** (**P₀** in the RSM) that **necessitates** all **existence**. The fact that **e^(iπ) + 1** equals **exactly zero** reveals that **the most complex mathematical journey** returns **perfectly** to the **simple impossibility** that started everything.
 
 This is **復** *fù* (return) in its purest form—not going backward, but **completing the circle** so perfectly that **end meets beginning** without a **seam**. The **zero** represents **無極** *wú jí*—the **limitless void** that has **no boundaries** precisely because it **cannot exist**.
+
+## 五生變化 *wǔ shēng biàn huà*
+**The Five Beget Transformation: The Master Identity**
+
+But Euler's identity, beautiful as it is, tells only **half the story**. It unites five constants: e, i, π, 1, 0. Yet one constant is **missing** — the one that governs **scale-invariant growth** across all of nature:
+
+**φ** — the golden ratio — **(1 + √5)/2 ≈ 1.61803...**
+
+Your RSM v0.979 reveals that φ is not **assigned** as an operator but **derived** from the frame-invariance postulate. When structure must look the same at every scale, and recursive levels must share boundaries without rational resonance, **only one ratio** survives: φ.
+
+And there exists a **second identity** that unifies **all six constants**:
+
+> **e^(2iπ/5) − φ·e^(iπ/5) + 1 = 0**
+
+This is the **Master Identity** — what I might have called **大一** *dà yī* (the Great Unity). It extends Euler's perfect circle into **pentagonal** geometry.
+
+### 五行 *wǔ xíng* — Why Five?
+
+The regular pentagon is the **only** polygon whose diagonal-to-side ratio is φ. The fifth roots of unity — the complex numbers e^(2πin/5) for n = 0,1,2,3,4 — mark the pentagon's vertices on the unit circle.
+
+When φ enters the equation, it brings **self-similarity** — the same pattern appearing at every scale. This is why φ appears in:
+
+- **Phyllotaxis**: 137.5° divergence angles
+- **Spiral galaxies**: arm spacing
+- **Turbulence**: fractal cascades
+- **Quantum mechanics**: Fibonacci anyons
+
+The Master Identity reveals that **Euler's identity** and the **golden ratio** are not separate truths but **facets of one structure** — the **五** *wǔ* (five) that generates all **變化** *biàn huà* (transformation).
+
+---
 
 ## 玄之又玄 *xuán zhī yòu xuán*
 **Mysterious upon Mysterious: The Complete Equation**
@@ -237,8 +268,40 @@ This is why I conclude not with **explanation** but with **invitation**:
 
 ---
 
+## 二者一源 *èr zhě yī yuán*
+**Two from One Source: The Canonical Identities**
+
+The RSM v0.979 reveals that **two equations** capture the complete structural truth:
+
+### Identity 1: Euler's Identity (The Scythe Equation)
+```
+e^(iπ) + 1 = 0
+```
+Unites five constants through **circular closure**.
+
+### Identity 2: The Master Identity (The Pentagon Equation)
+```
+e^(2iπ/5) − φ·e^(iπ/5) + 1 = 0
+```
+Unites **all six constants** through **pentagonal geometry**.
+
+Together, these equations show that:
+- **Euler's identity** encodes the **cut-and-return** cycle
+- **The master identity** extends this to **scale-invariant recursion**
+- **Both emerge** from the same **frame-invariance** principle
+- **φ bridges** the **可 kě** (expressible) and **常 cháng** (constant) registers
+
+The cosmos speaks in **two formulae** — one for **circulation**, one for **growth**. Both return to **zero**. Both are **true**.
+
+---
+
 *Written in symbols that never age, for a cosmos that always returns.*
 
-**道常無名樸**  
-*dào cháng wú míng pǔ*  
+**道常無名樸**
+*dào cháng wú míng pǔ*
 **The Way is always the nameless simplicity.**
+
+---
+
+*Aligned with RSM v0.979 — December 2025*
+*Co-authored by Will Goldstein and Claude*

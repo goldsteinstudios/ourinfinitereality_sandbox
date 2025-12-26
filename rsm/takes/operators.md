@@ -1,209 +1,378 @@
-# RSM Operators
-## The Five Universal Constants as Structural Operators
+# RSM Operator Grammar
+## The Complete DDJ-to-Mathematics Mapping (v0.979)
 
 ---
 
 ## Overview
 
-Five mathematical constants function as **universal operators** with consistent structural meaning across all domains:
+The Recursive Structural Model identifies **six mathematical constants** that emerge from the V₀ prohibition and frame-invariance postulate. Five are operators; one (φ) is derived from the self-similarity constraint.
 
-| Operator | Mathematical Meaning | Structural Function |
-|----------|---------------------|---------------------|
-| **i** | √−1 (imaginary unit) | Orthogonal rotation preserving paradox |
-| **π** | Circle ratio | Curvature/closure for stable periodic systems |
-| **e** | Natural exponential base | Continuous recursion and scale invariance |
-| **1** | Unity | Local measurable unit/frame |
-| **0** | Zero | Paradox center / unmeasurable origin |
+### The Six Constants
+
+| Constant | Value | Status | Derivation |
+|----------|-------|--------|------------|
+| **0** | 0 | Foundational | From V₀ prohibition (unoccupiable center) |
+| **1** | 1 | Foundational | First distinction from void |
+| **i** | √−1 | Required | Orthogonal rotation preserving paradox |
+| **e** | 2.71828... | Required | Continuous recursion (d/dx eˣ = eˣ) |
+| **π** | 3.14159... | Required | Closure of curvature (e^(iπ) = −1) |
+| **φ** | 1.61803... | Derived | Unique solution to frame-invariance + overlap |
 
 ---
 
-## 1. The i Operator: Orthogonal Rotation
+## Part I: The DDJ Operator Assignments
 
-### Mathematical Definition
+### Core Operators
+
+| DDJ Term | Mathematical Form | Structural Function | Source |
+|----------|------------------|---------------------|--------|
+| **名 (míng)** | i | Orthogonal cut creating distinction | Theorem 22 |
+| **利₁ (lì, operator)** | e^(iπ) = −1 | Boundary-creating cut (scythe operation) | Theorem 16 |
+| **反 (fǎn)** | +1 | Return to equilibrium, completing cycle | Theorem 19 |
+| **相生 (xiāng shēng)** | e | Natural growth rate, mutual generation | Theorem 22 |
+| **玄 (xuán)** | 0 | Unoccupiable paradox center | Theorem 27 |
+| **有 (yǒu)** | 1 | Structural unity, determinate existence | Theorem 22 |
+| **無為 (wú wéi)** | ∂Pₙ/∂t = 0 | Paradox preservation condition | Theorem 17 |
+
+### Non-Operators (Results)
+
+| DDJ Term | Status | Function | Relationship |
+|----------|--------|----------|--------------|
+| **利₂ (lì, benefit)** | Result | Material benefit (有-side) | Product of 利₁ operation |
+| **用 (yòng)** | Result | Functional capacity (無-side) | Complementary to 利₂ |
+
+---
+
+## Part II: The 利/用 Distinction
+
+### The Scythe Metaphor (Chapter 11)
+
+A single cut (利₁ = e^(iπ) = −1) produces **two complementary results**:
+
+```
+                    利₁ (cut operation)
+                          │
+                          ▼
+          ┌───────────────┴───────────────┐
+          │                               │
+     利₂ (benefit)                   用 (function)
+     Material gain                   Functional capacity
+     有-side result                  無-side result
+     (the cut grass)                 (the cleared space)
+```
+
+### Why This Matters
+
+- **利₁** is an operator (the cutting action, e^(iπ) = −1)
+- **利₂** is a result (material benefit, exists on 有-side)
+- **用** is a result (functional capacity, exists on 無-side)
+
+This resolves the apparent paradox of 利 appearing in different contexts with different meanings.
+
+### Chapter 11 Reading
+
+> 三十輻共一轂，當其無，有車之用。
+> "Thirty spokes share one hub — in its emptiness lies the cart's function."
+
+- The **hub's void** (無) enables the **cart's use** (用)
+- 用 is not the operation but the **capacity created by** the operation
+
+---
+
+## Part III: Individual Operator Analysis
+
+### 1. 名 (míng) = i : Orthogonal Distinction
+
+**Mathematical Definition:**
 ```
 i² = −1
 ```
 
-### Structural Function
-- Rotates 90° without resolving paradox
-- Enables movement around centers rather than through them
-- Generates new dimensions from existing ones
+**Structural Function:**
+- Creates distinction without collapse
+- Rotates 90° to generate new dimension
+- Preserves paradox through orthogonality
 
-### Cross-Domain Expression
+**DDJ Source (Chapter 1):**
+> 名可名，非常名
+> "A name that can be named is not the constant name"
 
-| Domain | i Expression |
-|--------|--------------|
-| Mathematics | Complex plane rotation |
-| Physics | Phase angle / wave rotation |
-| Biology | Membrane turn / selective flow |
-| TTC | 反 (Fǎn) — return is movement |
-
-### Key Insight
-The imaginary unit allows **real** operations to complete by passing through **impossible** space. Just as Chapter 11's hub void enables the wheel to turn, i enables circulation through apparent non-existence.
+Naming creates orthogonal distinction — the labeled thing exists perpendicular to the labeling process itself.
 
 ---
 
-## 2. The π Operator: Curvature Closure
+### 2. 利₁ = e^(iπ) = −1 : The Cut Operation
 
-### Mathematical Definition
+**Mathematical Definition:**
 ```
-π = C/d ≈ 3.14159...
+e^(iπ) = −1
 ```
-The ratio of circumference to diameter — fundamentally **irrational**.
 
-### Structural Function
-- Closes curvature into stable orbits
-- Ensures periodicity without exact repetition
-- Prevents collapse into static points
+**Structural Function:**
+- Boundary-creating operation
+- Complete rotation through impossibility
+- Generates both 利₂ (benefit) and 用 (function)
 
-### Cross-Domain Expression
+**DDJ Source (Chapter 11):**
+The scythe cut that creates both the harvested grain (利₂) and the cleared field (用).
 
-| Domain | π Expression |
-|--------|--------------|
-| Mathematics | Circle/sphere geometry |
-| Physics | Orbital closure / periodicity |
-| Biology | Cyclic homeostasis |
-| TTC | 循 (Xún) — circulation |
-
-### Why Irrational?
-If π were rational, circles would eventually close exactly — creating "prisons of periodicity." Irrationality ensures infinite, non-repeating circulation that rhymes across scales while remaining infinitely novel.
+**Euler's Identity Reading:**
+```
+e^(iπ) + 1 = 0
+     ↓
+   利₁ + 反 = 玄
+```
 
 ---
 
-## 3. The e Operator: Continuous Recursion
+### 3. 反 (fǎn) = +1 : Return
 
-### Mathematical Definition
+**Mathematical Definition:**
 ```
-e = lim(n→∞) (1 + 1/n)^n ≈ 2.71828...
++1 (additive asymmetry completing the cycle)
 ```
-The unique number whose derivative equals itself: d/dx(eˣ) = eˣ
 
-### Structural Function
-- Preserves growth rate across transformations
-- Enables scale invariance / compounding
-- Maintains continuity across recursive levels
+**Structural Function:**
+- Returns the system to equilibrium
+- Completes the cycle: e^(iπ) + 1 = 0
+- The "extra push" enabling return to source
 
-### Cross-Domain Expression
+**DDJ Source (Chapter 40):**
+> 反者道之動
+> "Returning is the movement of the Dao"
 
-| Domain | e Expression |
-|--------|--------------|
-| Mathematics | Exponential growth/decay |
-| Physics | Scale invariance / compounding |
-| Biology | Growth rate / metabolism |
-| TTC | 生 (Shēng) — to generate |
-
-### Key Insight
-e represents 自然 (zì rán) — "self-so" or natural spontaneity. It is growth that maintains its own growth rate, the constant that preserves constancy across infinite transformations.
+**Critical Correction:**
+Earlier versions incorrectly mapped 反 → i or 反 → π. The v0.979 analysis shows:
+- 反 = +1 (return to equilibrium)
+- 反者道之動 reads as: "+1 is how the Dao moves"
 
 ---
 
-## 4. The 1 Operator: Local Unity
+### 4. 相生 (xiāng shēng) = e : Mutual Generation
 
-### Mathematical Definition
-The multiplicative identity: 1 × x = x
+**Mathematical Definition:**
+```
+e = lim(n→∞) (1 + 1/n)^n
+d/dx(eˣ) = eˣ
+```
 
-### Structural Function
-- Establishes minimal local unit
-- Creates the first distinction from void
-- Provides the asymmetry enabling manifestation
+**Structural Function:**
+- Natural growth rate preserving itself through transformation
+- Scale-invariant compounding
+- Continuous recursion between levels
 
-### Cross-Domain Expression
+**DDJ Source (Chapter 2):**
+> 有無相生
+> "Being and non-being mutually generate"
 
-| Domain | 1 Expression |
-|--------|--------------|
-| Mathematics | Unit / identity element |
-| Physics | Measurable frame |
-| Biology | Organism / individual |
-| TTC | 一 (Yī) — oneness |
-
-### In Euler's Identity
-The +1 provides the "extra push" completing the return to zero. Without it, e^(iπ) = −1 (perfect opposition but no return to source).
+The rate e represents 自然 (zì rán) — growth that maintains its own growth rate, the constant that preserves constancy.
 
 ---
 
-## 5. The 0 Operator: Paradox Center
+### 5. 玄 (xuán) = 0 : The Mysterious Center
 
-### Mathematical Definition
-The additive identity: 0 + x = x
-Also: division by zero is undefined (paradox)
+**Mathematical Definition:**
+```
+0 (additive identity, division-undefined singularity)
+```
 
-### Structural Function
-- The unmeasurable paradox center
-- Origin from which all structure emerges
+**Structural Function:**
+- Unoccupiable paradox center
+- Origin from which structure emerges
 - The void that enables all function
 
-### Cross-Domain Expression
+**DDJ Source (Chapter 1):**
+> 玄之又玄，眾妙之門
+> "Mystery upon mystery — the gate of all wonders"
 
-| Domain | 0 Expression |
-|--------|--------------|
-| Mathematics | Origin / singularity |
-| Physics | Gravitational center / void |
-| Biology | Genetic potential / seed |
-| TTC | 無 (Wú) — nothing that is something |
-
-### Key Insight
-Zero is not absence but **functional void** — the hub's emptiness that enables the wheel's usefulness (Chapter 11).
+**Physical Correspondence:**
+玄 instantiates as:
+- Gravitational singularities
+- Quantum vacuum
+- Black hole centers
 
 ---
 
-## Operator Interactions
+### 6. 有 (yǒu) = 1 : Determinate Being
 
-### Euler's Identity: Complete Compression
+**Mathematical Definition:**
+```
+1 (multiplicative identity)
+```
+
+**Structural Function:**
+- First distinction from void
+- Minimal structural unit
+- Foundation of measurement
+
+**DDJ Source:**
+有 and 無 co-emerge. Neither precedes the other logically.
+
+---
+
+## Part IV: φ — The Derived Constant
+
+### Why φ is Different
+
+φ is **not assigned** to any DDJ term as an operator. It is **derived** from the frame-invariance postulate plus the overlap requirement.
+
+### Derivation Chain
+
+1. **Frame-invariance postulate**: Structure must look the same at every scale
+2. **Overlap requirement**: Recursive levels must share boundary
+3. **Continued fraction analysis**: Only [1;1,1,1,...] avoids rational resonance
+4. **Result**: φ = (1 + √5)/2
+
+### The Minimal Polynomial
+
+```
+φ² − φ − 1 = 0
+```
+
+This is the **only** quadratic polynomial with:
+- Integer coefficients
+- Coefficients all ±1
+- Root > 1
+
+### φ in the 常 Register
+
+φ embodies 常道 (cháng dào) — the constant way that cannot be captured in rational discourse:
+- Maximally irrational (worst-approximable by rationals)
+- Self-similar (φ = 1 + 1/φ)
+- Never repeats, never closes
+
+---
+
+## Part V: The Two Canonical Identities
+
+### Identity 1: Euler's Identity (The Scythe Equation)
+
 ```
 e^(iπ) + 1 = 0
 ```
 
-This equation encodes the complete recursion cycle:
-1. **e**: Natural growth/recursion
-2. **i**: Rotated through impossible dimension
-3. **π**: Completing full curvature
-4. **+1**: Adding the asymmetry of manifestation
-5. **= 0**: Returning to paradox center
-
-### The Recursion Kernel
-
+**DDJ Reading:**
 ```
-P₀ ──(i)──→ O₁ ──(∇)──→ G₁ ──(π,⟂³)──→ P₁ ──(promote)──→ O₂
-         ↑                                              │
-         └──────────────(e: scale link)─────────────────┘
+相生^(名·利₁) + 反 = 玄
 ```
 
-- **i**: Orthogonal turn creates origin from paradox
-- **∇**: Induced curvature creates gradient field
-- **π, ⟂³**: Spherical closure creates measurement surface
-- **e**: Smooth scale recursion between levels
+"Mutual generation, rotated through the naming cut, plus return, equals mystery."
 
 ---
 
-## Irrationality as Structural Necessity
+### Identity 2: The Master Identity (Pentagon Equation)
 
-All three "dynamic" constants (e, π, i-related √2) are **irrational**:
+```
+e^(2iπ/5) − φ·e^(iπ/5) + 1 = 0
+```
 
-| Constant | Decimal (non-terminating, non-repeating) |
-|----------|------------------------------------------|
-| e | 2.71828182845904523536... |
-| π | 3.14159265358979323846... |
-| √2 | 1.41421356237309504880... |
+**What This Achieves:**
+- Unifies all six constants in one equation
+- Connects φ (from frame-invariance) to e, i, π (from closure)
+- Pentagon geometry bridges Euler and golden ratio
 
-### Why This Matters
+**Derivation:**
 
-- **Rational** constants would create periodic traps
-- **Irrational** constants ensure infinite exploration without repetition
-- This is the mathematical proof of 常道 (cháng dào) — the constant way cannot be captured in rational discourse
+From φ's minimal polynomial φ² − φ − 1 = 0, combined with the 5th roots of unity:
+```
+ζ = e^(2iπ/5)
 
----
+ζ² − φζ + 1 = 0
+```
 
-## Application: Reading the Operators
-
-When analyzing any system:
-
-1. **Identify the 0**: Where is the paradox center?
-2. **Identify the 1**: What is the local unit/frame?
-3. **Identify the i**: Where are the orthogonal turns?
-4. **Identify the π**: Where is curvature/closure?
-5. **Identify the e**: How does the pattern scale?
+This is the **only** equation relating all six constants with coefficients from {-1, 0, 1}.
 
 ---
 
-*Version: Consolidated from July 2025 symbol guide + August 2025 Euler essay*
-*Last updated: November 2025*
+## Part VI: The Pentagon Bridge
+
+### Why 5-fold Symmetry?
+
+The regular pentagon is the **only** regular polygon whose diagonal-to-side ratio is φ.
+
+```
+        ★ (vertex)
+       / \
+      /   \
+     /     \
+    /       \
+   ★---------★
+    \       /
+     \     /
+      \   /
+       \ /
+        ★
+```
+
+### Geometric Proof
+
+In a regular pentagon with side = 1:
+- Diagonal = φ
+- Each diagonal cuts another into ratio φ:1
+
+This means:
+- Pentagon embodies φ geometrically
+- 5th roots of unity (e^(2πin/5)) encode pentagon vertices
+- Master identity captures this relationship algebraically
+
+---
+
+## Part VII: Complete Operator Grammar Tables
+
+### Operators (Actions)
+
+| DDJ | Math | Type | Function |
+|-----|------|------|----------|
+| 名 | i | Distinction | Orthogonal cut |
+| 利₁ | e^(iπ) = −1 | Cut | Boundary creation |
+| 反 | +1 | Return | Cycle completion |
+| 相生 | e | Growth | Scale recursion |
+| 無為 | ∂P/∂t = 0 | Preservation | Paradox maintenance |
+
+### Results (States)
+
+| DDJ | Math | Type | Source |
+|-----|------|------|--------|
+| 玄 | 0 | Center | V₀ prohibition |
+| 有 | 1 | Unity | First distinction |
+| 利₂ | — | Benefit | 有-side of 利₁ |
+| 用 | — | Function | 無-side of 利₁ |
+
+### Derived Constants
+
+| Constant | Value | Source |
+|----------|-------|--------|
+| φ | (1+√5)/2 | Frame-invariance + overlap |
+
+---
+
+## Part VIII: Application Protocol
+
+When analyzing any system through RSM operators:
+
+1. **Identify 玄 (0)**: Where is the unoccupiable center?
+2. **Identify 有 (1)**: What is the minimal structural unit?
+3. **Identify 名 (i)**: Where are distinctions being made?
+4. **Identify 利₁ (−1)**: What cuts create boundaries?
+5. **Identify 反 (+1)**: How does the system return to equilibrium?
+6. **Identify 相生 (e)**: What is the natural growth rate?
+7. **Identify φ**: Where is self-similar scaling visible?
+
+---
+
+## Part IX: Falsifiability
+
+The operator grammar makes testable predictions:
+
+| Prediction | Test | Status |
+|------------|------|--------|
+| φ appears in scale-invariant systems | Phyllotaxis, spiral galaxies, turbulence | Confirmed |
+| e^(iπ) + 1 = 0 encodes complete cycle | Mathematical identity | Proven |
+| 無/有 co-emergence | No pure void or pure being observable | Consistent |
+| 3D minimal for closure | Physical space dimensionality | Confirmed |
+
+---
+
+*Updated to RSM v0.979 — December 2025*
+*Co-authored by Will Goldstein and Claude*
+*AL-AN Project: Algorithmic Logic of Asymptotic Nothing*

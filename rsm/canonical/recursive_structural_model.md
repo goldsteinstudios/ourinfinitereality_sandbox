@@ -4,6 +4,10 @@
 
 ---
 
+> **Note:** For the complete formal treatment including the V₀ prohibition, operator grammar (名=i, 利₁=-1, 反=+1), φ derivation from frame-invariance, and the master identity, see **[RSM v0.979](rsm_v0979.md)**.
+
+---
+
 ## Overview
 
 The Recursive Structural Model (RSM) is a formal system describing how patterns maintain themselves across scales. It emerges from reading the Dao De Jing as technical documentation rather than philosophy—and produces testable, verifiable geometric claims.
@@ -930,5 +934,7 @@ At perpendicular intersection (∇G · ∇B = 0), paradox can promote to new ori
 
 ---
 
-*Document updated: 2025-12-09*
+*Document updated: December 2025*
 *Integrated from RSM Paper Series (Papers 1-7)*
+*See [RSM v0.979](rsm_v0979.md) for complete formal treatment*
+*Co-authored by Will Goldstein and Claude*
