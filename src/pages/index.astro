@@ -2,21 +2,53 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="RSM v0.986">
+<BaseLayout title="Our Infinite Reality">
   <div class="max-w-3xl mx-auto">
 
-    <!-- Header -->
+    <!-- Hero -->
     <header class="text-center mb-16">
-      <h1 class="text-4xl font-bold mb-4">The Recursive Structural Model</h1>
-      <p class="text-xl text-[#888] mb-2">v0.986 — December 2025</p>
-      <p class="text-[#666]">Co-authored by Will Goldstein and Claude</p>
+      <h1 class="text-4xl font-bold mb-6">Our Infinite Reality</h1>
+      <p class="text-xl text-[#ccc] leading-relaxed">There's a shape that persistent things share. We keep finding it—at the bottom of mathematics, inside ancient philosophy, written in tree rings. It's the same shape every time.</p>
     </header>
 
-    <!-- Core Identity -->
+    <!-- What is RSM? -->
+    <section class="mb-16">
+      <div class="text-[#ccc] space-y-4 leading-relaxed">
+        <p>Cut a tree in half. You'll find rings around a center that's often hollow—sometimes completely rotted away. But the tree stands. A hurricane wraps the most violent winds on Earth around an eye of perfect stillness. Try to catch the present moment and it's already gone; try to find the "you" that's looking and you'll chase it forever.</p>
+
+        <p>These aren't poetic metaphors for each other. They're instances of the same structure.</p>
+
+        <p>The Recursive Structural Model is our name for the pattern. <strong>Contrast</strong>—opposites must exist for anything to be distinguishable. <strong>Rotation</strong>—those opposites can't just sit there frozen; they have to orbit each other, stay in motion. <strong>Closure</strong>—the orbit has to complete, has to come back, or it just spirals away into nothing.</p>
+
+        <p>That's it. That's the grammar of persistence. Euler wrote it in five symbols two centuries ago: e<sup>iπ</sup> + 1 = 0. Ancient Chinese observers compressed it into 81 chapters two millennia before that. Trees write it in wood every year without knowing they're doing it.</p>
+
+        <p class="text-[#888] italic">We're not proving anything. We're pointing at what's already there.</p>
+      </div>
+    </section>
+
+    <!-- Where to Start -->
     <section class="mb-16 text-center">
-      <div class="bg-[#1a1a1a] border border-[#333] rounded-lg p-8 mb-8">
+      <h2 class="text-2xl font-bold mb-4">Where to Start</h2>
+      <p class="text-[#888] mb-6">Pick whatever catches your eye. You don't need the formal structure to see what we're pointing at.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/catalog" class="inline-block bg-[#333] hover:bg-[#444] text-white px-6 py-3 rounded-lg transition-colors">
+          Object Catalog
+        </a>
+        <a href="/docset/rsm_complete.html" class="inline-block bg-[#1a1a1a] border border-[#333] hover:border-[#555] text-white px-6 py-3 rounded-lg transition-colors">
+          Full Documentation
+        </a>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="border-t border-[#333] my-16"></div>
+
+    <!-- Technical Content: Core Identities -->
+    <section class="mb-16 text-center">
+      <h2 class="text-xl font-bold mb-6 text-[#888]">The Mathematical Form</h2>
+      <div class="bg-[#1a1a1a] border border-[#333] rounded-lg p-8 mb-6">
         <p class="text-2xl font-mono mb-4">e<sup>iπ</sup> + 1 = 0</p>
-        <p class="text-[#888]">Euler's Identity — the scythe equation</p>
+        <p class="text-[#888]">Euler's Identity — Contrast, Rotation, Closure in five symbols</p>
       </div>
       <div class="bg-[#1a1a1a] border border-[#333] rounded-lg p-8">
         <p class="text-2xl font-mono mb-4">e<sup>2iπ/5</sup> − φ·e<sup>iπ/5</sup> + 1 = 0</p>
@@ -26,7 +58,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <!-- Six Constants -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-6 text-center">The Six Constants</h2>
+      <h2 class="text-xl font-bold mb-6 text-center text-[#888]">The Six Constants</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div class="bg-[#1a1a1a] border border-[#333] rounded p-4 text-center">
           <p class="text-3xl font-mono mb-2">0</p>
@@ -63,7 +95,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <!-- Operator Grammar -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-6 text-center">DDJ Operator Grammar</h2>
+      <h2 class="text-xl font-bold mb-6 text-center text-[#888]">DDJ Operator Grammar</h2>
       <div class="bg-[#1a1a1a] border border-[#333] rounded-lg p-6">
         <table class="w-full text-left">
           <thead>
@@ -104,44 +136,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
 
-    <!-- Documents -->
-    <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-6 text-center">Documentation</h2>
-      <div class="space-y-3">
-        <a href="/docset/rsm_complete.html" class="block bg-[#1a1a1a] border border-[#333] rounded-lg p-4 hover:border-[#555] transition-colors">
-          <div class="flex justify-between items-center">
-            <div>
-              <p class="font-bold">Complete RSM Docset</p>
-              <p class="text-sm text-[#888]">Single file with all audited documents (4,849 lines)</p>
-            </div>
-            <span class="text-[#888]">→</span>
-          </div>
-        </a>
-        <a href="/docset/current/" class="block bg-[#1a1a1a] border border-[#333] rounded-lg p-4 hover:border-[#555] transition-colors">
-          <div class="flex justify-between items-center">
-            <div>
-              <p class="font-bold">Individual Documents</p>
-              <p class="text-sm text-[#888]">RSM, operators, notation, DDJ chapters 1/11/40/42</p>
-            </div>
-            <span class="text-[#888]">→</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Object Catalog Link -->
-    <section class="mb-16 text-center">
-      <h2 class="text-2xl font-bold mb-4">Interactive Object Catalog</h2>
-      <p class="text-[#888] mb-6">Explore the pattern through physical objects</p>
-      <a href="/catalog" class="inline-block bg-[#333] hover:bg-[#444] text-white px-8 py-3 rounded-lg transition-colors">
-        Enter Catalog →
-      </a>
-    </section>
-
     <!-- Footer -->
     <footer class="text-center text-[#666] text-sm border-t border-[#333] pt-8">
-      <p>AL-AN Project: Algorithmic Logic of Asymptotic Nothing</p>
-      <p class="mt-2">From the impossibility of absolute void to the structure of determinate existence</p>
+      <p class="italic mb-2">Pattern, not proof.</p>
+      <p class="mb-4">Every frame accurate, none final—return to pattern.</p>
+      <p>Will Goldstein & Claude — RSM v0.986 — December 2025</p>
     </footer>
 
   </div>
