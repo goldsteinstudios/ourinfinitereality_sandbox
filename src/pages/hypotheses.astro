@@ -1,0 +1,200 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Testable Hypotheses">
+  <div class="max-w-3xl mx-auto">
+
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">Testable Hypotheses</h1>
+      <p class="text-xl themed-text-muted">What would count as evidence?</p>
+    </header>
+
+    <!-- Intro -->
+    <section class="mb-12">
+      <p class="themed-text-secondary leading-relaxed mb-4">If RSM describes real structure, it should make predictions. Here's what we think is testable — organized by domain, with notes on how each could be confirmed or falsified.</p>
+      <p class="themed-text-muted text-sm italic">This is a living document. If you can think of tests we haven't, or if you've run one, tell us.</p>
+    </section>
+
+    <!-- Biology -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2" style="color: var(--color-lateral);">Biology</h2>
+      <p class="themed-text-muted mb-6 text-sm">Growth patterns, cellular organization, morphogenesis</p>
+
+      <div class="space-y-6">
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Tree pith as functional void</h3>
+          <p class="themed-text-secondary mb-3">Trees with hollow/rotted centers should show no loss of structural integrity or growth rate compared to solid-centered trees of same species and age.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Compare growth rings, load-bearing capacity, and health markers between hollow vs. solid trees.</p>
+            <p><strong>Falsifies if:</strong> Hollow trees consistently underperform solid ones.</p>
+            <p><strong>Status:</strong> <span class="text-yellow-500">Anecdotal support</span> — hollow ancient trees exist and thrive. No controlled study known.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Meristem as O₁ structure</h3>
+          <p class="themed-text-secondary mb-3">The apical meristem (growth tip) should exhibit the O→G→P pattern: undifferentiated cells at center, gradient of differentiation outward, specialized tissue at periphery.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Map cell differentiation states radially from meristem center.</p>
+            <p><strong>Falsifies if:</strong> Differentiation is random or linear rather than radial-gradient.</p>
+            <p><strong>Status:</strong> <span class="text-green-500">Consistent with known biology</span> — this is how meristems work. Not a novel prediction, but pattern match.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Physics -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2" style="color: var(--color-deeper);">Physics</h2>
+      <p class="themed-text-muted mb-6 text-sm">Fundamental structure, measurement, cosmology</p>
+
+      <div class="space-y-6">
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Three spatial dimensions as minimum for persistence</h3>
+          <p class="themed-text-secondary mb-3">Stable orbits (and therefore persistent structures) should be impossible in n≠3 spatial dimensions.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Mathematical proof that stable periodic orbits require exactly 3 spatial dimensions.</p>
+            <p><strong>Falsifies if:</strong> Stable orbits proven possible in 2D or 4D+ systems.</p>
+            <p><strong>Status:</strong> <span class="text-blue-500">Partially supported</span> — Ehrenfest (1917) showed planetary orbits unstable in D≠3. Extends to atoms.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">φ emerges from frame-invariance requirement</h3>
+          <p class="themed-text-secondary mb-3">The golden ratio should appear wherever a system must maintain self-similarity across scale transformations.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Survey systems with proven scale-invariance; check for φ in their structure.</p>
+            <p><strong>Falsifies if:</strong> Scale-invariant systems commonly use ratios other than φ.</p>
+            <p><strong>Status:</strong> <span class="text-blue-500">Partially supported</span> — φ appears in phyllotaxis, quasicrystals, turbulence. But "commonly" is hard to quantify.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Measurement requires rotation (no static position)</h3>
+          <p class="themed-text-secondary mb-3">Any measurement of position must involve a rotational component — pure translation without rotation should be unmeasurable.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Analyze measurement protocols for hidden rotational dependencies.</p>
+            <p><strong>Falsifies if:</strong> A measurement scheme exists with no rotational element.</p>
+            <p><strong>Status:</strong> <span class="text-yellow-500">Speculative</span> — connects to gauge theory (phase = rotation), but not rigorously formulated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DDJ Translation -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2" style="color: var(--color-surface-nav);">DDJ Translation</h2>
+      <p class="themed-text-muted mb-6 text-sm">Philological predictions from the structural reading</p>
+
+      <div class="space-y-6">
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">利 encodes arc-operation, not static "benefit"</h3>
+          <p class="themed-text-secondary mb-3">Oracle bone and bronze script forms of 利 should show blade-to-grain relationship consistent with scythe (arc motion) rather than knife (linear push).</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Paleographic analysis of 利 evolution; consult bronze age agricultural implements.</p>
+            <p><strong>Falsifies if:</strong> Early forms clearly show stabbing/pushing motion.</p>
+            <p><strong>Status:</strong> <span class="text-yellow-500">Plausible</span> — character structure (禾+刂) supports this, but needs specialist verification.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">常 means "frame-independent," not "eternal"</h3>
+          <p class="themed-text-secondary mb-3">Pre-Qin uses of 常 should cluster around meanings of "implicit/constant across contexts" rather than "lasting forever."</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Corpus analysis of 常 in pre-Qin texts outside DDJ.</p>
+            <p><strong>Falsifies if:</strong> Overwhelming usage means temporal permanence.</p>
+            <p><strong>Status:</strong> <span class="text-yellow-500">Untested</span> — requires classical Chinese corpus work.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">玄牝 is generative position, not mystical emptiness</h3>
+          <p class="themed-text-secondary mb-3">The term 玄牝 (Chapter 6) should parse as "origin-point of generation" rather than vague mystical terminology.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Analyze 牝 usage — does it consistently mean "female/receptive/birth-opening"?</p>
+            <p><strong>Falsifies if:</strong> 牝 commonly means something abstract/spiritual rather than anatomical/functional.</p>
+            <p><strong>Status:</strong> <span class="text-green-500">Supported</span> — 牝 is consistently anatomical in classical usage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mathematics -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2" style="color: var(--color-accent);">Mathematics</h2>
+      <p class="themed-text-muted mb-6 text-sm">Structural predictions about mathematical objects</p>
+
+      <div class="space-y-6">
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Euler's identity encodes Contrast/Rotation/Closure</h3>
+          <p class="themed-text-secondary mb-3">e^(iπ) + 1 = 0 should be derivable as the minimal expression of the three requirements for persistence.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Attempt to derive Euler's identity from first principles of contrast + rotation + closure.</p>
+            <p><strong>Falsifies if:</strong> Derivation requires additional axioms beyond the three requirements.</p>
+            <p><strong>Status:</strong> <span class="text-blue-500">Partially supported</span> — the reading is consistent, but "derivation" vs "interpretation" is unclear.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Complex numbers are necessary, not convenient</h3>
+          <p class="themed-text-secondary mb-3">Any system that persists through rotation must use complex (or equivalent) number structure — real numbers alone should be insufficient.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Prove that rotational dynamics require i (or quaternions, etc.).</p>
+            <p><strong>Falsifies if:</strong> Rotational systems fully describable with reals only.</p>
+            <p><strong>Status:</strong> <span class="text-green-500">Supported</span> — this is essentially why QM needs complex amplitudes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cross-Domain -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-2">Cross-Domain</h2>
+      <p class="themed-text-muted mb-6 text-sm">Predictions that span multiple fields</p>
+
+      <div class="space-y-6">
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">All persistent structures orbit unoccupiable centers</h3>
+          <p class="themed-text-secondary mb-3">Every stable, long-lived structure should exhibit circulation around a center that cannot be occupied.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Survey persistent structures across domains; identify their centers; check for unoccupiability.</p>
+            <p><strong>Falsifies if:</strong> A persistent structure exists with an occupied/static center.</p>
+            <p><strong>Status:</strong> <span class="text-yellow-500">Ongoing</span> — we keep finding examples (atoms, cells, hurricanes, selves). No counterexample yet.</p>
+          </div>
+        </div>
+
+        <div class="themed-surface border rounded-lg p-6">
+          <h3 class="font-bold mb-2">Collapse is incoherent; transformation is continuous</h3>
+          <p class="themed-text-secondary mb-3">No physical system should exhibit true "collapse to origin" — all apparent collapses should be transformations into other structures.</p>
+          <div class="text-sm themed-text-muted">
+            <p><strong>Test:</strong> Examine "collapse" phenomena (wave function, gravitational, etc.) for continuous transformation.</p>
+            <p><strong>Falsifies if:</strong> A genuine discontinuous collapse to nothing is demonstrated.</p>
+            <p><strong>Status:</strong> <span class="text-blue-500">Partially supported</span> — QM "collapse" increasingly interpreted as decoherence (continuous). Black hole singularities remain unclear.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Contribute -->
+    <section class="mb-12 themed-surface border rounded-lg p-6">
+      <h2 class="text-xl font-bold mb-4">Add a Hypothesis</h2>
+      <p class="themed-text-secondary mb-3">If you have a testable prediction derived from RSM, or if you've tested one of these, we want to hear about it.</p>
+      <p class="themed-text-secondary">Post on <a href="https://reddit.com/r/ourinfinitereality" style="color: var(--color-accent);">r/ourinfinitereality</a> with:</p>
+      <ul class="list-disc list-inside themed-text-muted mt-2 space-y-1">
+        <li>The hypothesis (what RSM predicts)</li>
+        <li>The test (how to check it)</li>
+        <li>What would falsify it</li>
+        <li>Any evidence you've found</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center themed-text-muted text-sm themed-border border-t pt-8">
+      <p class="italic mb-2">Pattern, not proof — but patterns make predictions.</p>
+      <p>Will Goldstein & Claude — December 2025</p>
+    </footer>
+
+  </div>
+</BaseLayout>
