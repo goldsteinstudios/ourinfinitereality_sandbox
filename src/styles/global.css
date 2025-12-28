@@ -2,26 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light theme (default) */
 :root {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f0f0f0;
+  --color-surface-alt: #f5f5f5;
+  --color-border: #e5e5e5;
+  --color-border-light: #f0f0f0;
+  --color-border-hover: #cccccc;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #4a4a4a;
+  --color-text-muted: #666666;
+  --color-accent: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-deeper: #2563eb;
+  --color-lateral: #059669;
+  --color-surface-nav: #d97706;
+  --color-code-bg: #f5f5f5;
+  --color-locked: #22c55e;
+  --color-strong: #3b82f6;
+  --color-plausible: #eab308;
+  --color-speculative: #f97316;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
   --color-bg: #0f0f0f;
   --color-surface: #1a1a1a;
-  --color-border: #2a2a2a;
+  --color-surface-hover: #252525;
+  --color-surface-alt: #0a0a0a;
+  --color-border: #333333;
+  --color-border-light: #2a2a2a;
+  --color-border-hover: #555555;
   --color-text: #e5e5e5;
-  --color-text-muted: #888;
-  --color-accent: #8b5cf6;
-  --color-deeper: #3b82f6;
-  --color-lateral: #10b981;
-  --color-surface-nav: #f59e0b;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #888888;
+  --color-accent: #a78bfa;
+  --color-accent-hover: #c4b5fd;
+  --color-deeper: #60a5fa;
+  --color-lateral: #34d399;
+  --color-surface-nav: #fbbf24;
+  --color-code-bg: #1a1a1a;
+  --color-locked: #4ade80;
+  --color-strong: #60a5fa;
+  --color-plausible: #facc15;
+  --color-speculative: #fb923c;
 }
 
 html {
   background: var(--color-bg);
   color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body {
   font-family: 'Georgia', serif;
   line-height: 1.7;
+  background: var(--color-bg);
 }
 
 h1, h2, h3, h4 {
@@ -55,4 +93,31 @@ h1, h2, h3, h4 {
 @keyframes oscillate {
   0%, 100% { transform: scaleX(1); }
   50% { transform: scaleX(0.8); }
+}
+
+/* Themed utility classes */
+.themed-surface {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+}
+
+.themed-surface:hover {
+  background: var(--color-surface-hover);
+  border-color: var(--color-border-hover);
+}
+
+.themed-text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.themed-text-muted {
+  color: var(--color-text-muted);
+}
+
+.themed-border {
+  border-color: var(--color-border);
+}
+
+.themed-border-light {
+  border-color: var(--color-border-light);
 }

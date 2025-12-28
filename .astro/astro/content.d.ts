@@ -151,7 +151,37 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"objects": {
+		"essays": {
+"ddj-chapter01.md": {
+	id: "ddj-chapter01.md";
+  slug: "ddj-chapter01";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
+"ddj-chapter11.md": {
+	id: "ddj-chapter11.md";
+  slug: "ddj-chapter11";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
+"euler-tao-identity.md": {
+	id: "euler-tao-identity.md";
+  slug: "euler-tao-identity";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
+"standing-wave-pattern.md": {
+	id: "standing-wave-pattern.md";
+  slug: "standing-wave-pattern";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
+};
+"objects": {
 "atom.mdx": {
 	id: "atom.mdx";
   slug: "atom";

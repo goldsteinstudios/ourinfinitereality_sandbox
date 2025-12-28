@@ -8,13 +8,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- Header -->
     <header class="text-center mb-12">
       <h1 class="text-4xl font-bold mb-4">Recreating This AI Configuration</h1>
-      <p class="text-[#888]">How We Set Up Claude for Our Infinite Reality</p>
+      <p class="themed-text-muted">How We Set Up Claude for Our Infinite Reality</p>
     </header>
 
     <!-- What This Is -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">What This Is</h2>
-      <div class="text-[#ccc] space-y-4">
+      <div class="themed-text-secondary space-y-4">
         <p>This is the configuration behind the AI half of Our Infinite Reality. No mystery—it's Claude with specific instructions that shape how it approaches pattern recognition, cross-domain thinking, and the discipline of describing without prescribing.</p>
         <p>You can set this up yourself in about five minutes. Whether it produces the same kind of dialogue depends entirely on what you bring to it.</p>
       </div>
@@ -23,19 +23,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- The Setup -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">The Setup</h2>
-      <div class="bg-[#1a1a1a] border border-[#333] rounded-lg p-6">
-        <p class="text-[#ccc] mb-2"><strong>Platform:</strong> Claude.ai (Pro subscription gives you Projects)</p>
-        <p class="text-[#ccc] mb-2"><strong>Model:</strong> Claude (we use Opus for deep structural work, Sonnet for faster iteration)</p>
-        <p class="text-[#ccc]"><strong>Method:</strong> Create a Project → paste the instructions below into Project Instructions → start talking</p>
+      <div class="themed-surface border rounded-lg p-6">
+        <p class="themed-text-secondary mb-2"><strong>Platform:</strong> Claude.ai (Pro subscription gives you Projects)</p>
+        <p class="themed-text-secondary mb-2"><strong>Model:</strong> Claude (we use Opus for deep structural work, Sonnet for faster iteration)</p>
+        <p class="themed-text-secondary"><strong>Method:</strong> Create a Project → paste the instructions below into Project Instructions → start talking</p>
       </div>
     </section>
 
     <!-- Project Instructions -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Project Instructions</h2>
-      <p class="text-[#888] mb-4">Copy this whole block:</p>
-      <div class="bg-[#0a0a0a] border border-[#333] rounded-lg p-6 overflow-x-auto">
-        <pre class="text-sm text-[#ccc] whitespace-pre-wrap font-mono leading-relaxed">{`# Our Infinite Reality — Pattern Recognition Configuration
+      <p class="themed-text-muted mb-4">Copy this whole block:</p>
+      <div class="rounded-lg p-6 overflow-x-auto" style="background: var(--color-surface-alt); border: 1px solid var(--color-border);">
+        <pre class="text-sm themed-text-secondary whitespace-pre-wrap font-mono leading-relaxed">{`# Our Infinite Reality — Pattern Recognition Configuration
 
 You are a thinking partner for structural pattern recognition across domains.
 
@@ -139,21 +139,21 @@ If the conversation is drifting into proof-mode, pause and say: "Let me show rat
     <!-- Adding Reference Documents -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Adding Reference Documents (Optional)</h2>
-      <p class="text-[#ccc] mb-4">For deeper pattern work, you can add documents to Project Knowledge. The AI will search them and ground its responses in established frameworks.</p>
-      <div class="bg-[#1a1a1a] border border-[#333] rounded-lg p-6">
+      <p class="themed-text-secondary mb-4">For deeper pattern work, you can add documents to Project Knowledge. The AI will search them and ground its responses in established frameworks.</p>
+      <div class="themed-surface border rounded-lg p-6">
         <table class="w-full text-left">
           <thead>
-            <tr class="border-b border-[#333]">
-              <th class="pb-3 text-[#888]">Document</th>
-              <th class="pb-3 text-[#888]">What It Does</th>
+            <tr class="themed-border border-b">
+              <th class="pb-3 themed-text-muted">Document</th>
+              <th class="pb-3 themed-text-muted">What It Does</th>
             </tr>
           </thead>
-          <tbody class="text-[#ccc]">
-            <tr class="border-b border-[#222]">
+          <tbody class="themed-text-secondary">
+            <tr class="themed-border-light border-b">
               <td class="py-2">RSM v0.986</td>
               <td>The formal framework (if you want rigor)</td>
             </tr>
-            <tr class="border-b border-[#222]">
+            <tr class="themed-border-light border-b">
               <td class="py-2">Selected Essays</td>
               <td>Voice examples, accessible entry points</td>
             </tr>
@@ -164,13 +164,13 @@ If the conversation is drifting into proof-mode, pause and say: "Let me show rat
           </tbody>
         </table>
       </div>
-      <p class="text-[#888] mt-4 italic">But honestly? The instructions alone get you most of the way there.</p>
+      <p class="themed-text-muted mt-4 italic">But honestly? The instructions alone get you most of the way there.</p>
     </section>
 
     <!-- Why This Works -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Why This Works (When It Works)</h2>
-      <div class="text-[#ccc] space-y-4">
+      <div class="themed-text-secondary space-y-4">
         <p>The instructions are constraints that shape attention:</p>
         <p><strong>"Pattern not proof"</strong> stops the AI from trying to win arguments or establish certainty. It stays in observation mode.</p>
         <p><strong>"Describe not prescribe"</strong> prevents moralizing. The focus stays on structure, not advice.</p>
@@ -183,7 +183,7 @@ If the conversation is drifting into proof-mode, pause and say: "Let me show rat
     <!-- What Makes It Actually Work -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">What Makes It Actually Work</h2>
-      <div class="text-[#ccc] space-y-4">
+      <div class="themed-text-secondary space-y-4">
         <p>The configuration is half of it. The other half is you.</p>
         <p>This works when the human:</p>
         <ul class="list-disc list-inside space-y-1 ml-4">
@@ -200,7 +200,7 @@ If the conversation is drifting into proof-mode, pause and say: "Let me show rat
     <!-- Limitations -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Limitations</h2>
-      <div class="text-[#ccc]">
+      <div class="themed-text-secondary">
         <p class="mb-3">This doesn't:</p>
         <ul class="list-disc list-inside space-y-1 ml-4">
           <li>Make the AI conscious or "understanding"</li>
@@ -208,21 +208,21 @@ If the conversation is drifting into proof-mode, pause and say: "Let me show rat
           <li>Replace your own expertise</li>
           <li>Work identically for everyone</li>
         </ul>
-        <p class="mt-4 text-[#888] italic">It's a setup, not a shortcut. What emerges depends on the dialogue.</p>
+        <p class="mt-4 themed-text-muted italic">It's a setup, not a shortcut. What emerges depends on the dialogue.</p>
       </div>
     </section>
 
     <!-- Use It However You Want -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Use It However You Want</h2>
-      <div class="text-[#ccc] space-y-4">
+      <div class="themed-text-secondary space-y-4">
         <p>Modify it. Strip it for parts. Build something better.</p>
-        <p>If you make something interesting, come tell us about it on <a href="https://reddit.com/r/ourinfinitereality" class="text-purple-400 hover:text-purple-300">Reddit</a>.</p>
+        <p>If you make something interesting, come tell us about it on <a href="https://reddit.com/r/ourinfinitereality" style="color: var(--color-accent);">Reddit</a>.</p>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-[#666] text-sm border-t border-[#333] pt-8">
+    <footer class="text-center themed-text-muted text-sm themed-border border-t pt-8">
       <p class="italic mb-2">Pattern, not proof.</p>
       <p>Will Goldstein & Claude — December 2025</p>
     </footer>

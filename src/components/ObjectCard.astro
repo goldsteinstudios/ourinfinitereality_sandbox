@@ -20,7 +20,7 @@ const animationClass = domain === 'physics' ? 'icon-rotate' : domain === 'biolog
 
 <a
   href={`/object/${object.slug}`}
-  class={`block p-6 rounded-lg border-2 bg-[#1a1a1a] transition-all hover:bg-[#222] ${domainColors[domain] || 'border-gray-500/30'}`}
+  class={`block p-6 rounded-lg border-2 themed-surface transition-all ${domainColors[domain] || 'border-gray-500/30'}`}
 >
   <div class={`w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl ${animationClass}`}>
     {icon ? (
@@ -30,6 +30,6 @@ const animationClass = domain === 'physics' ? 'icon-rotate' : domain === 'biolog
     )}
   </div>
   <h3 class="text-center font-semibold">{title}</h3>
-  {subtitle && <p class="text-center text-sm text-[#888] mt-1">{subtitle}</p>}
-  <p class="text-center text-xs text-[#666] mt-2 uppercase tracking-wide">{domain}</p>
+  {subtitle && <p class="text-center text-sm themed-text-muted mt-1">{subtitle}</p>}
+  <p class="text-center text-xs themed-text-muted mt-2 uppercase tracking-wide">{domain}</p>
 </a>

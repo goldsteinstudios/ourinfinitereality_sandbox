@@ -14,7 +14,7 @@ const sortedObjects = objects.sort((a, b) => {
 <BaseLayout title="Catalog">
   <div class="text-center mb-12">
     <h1 class="text-3xl font-bold mb-4">Our Infinite Reality</h1>
-    <p class="text-[#888] max-w-xl mx-auto">
+    <p class="themed-text-muted max-w-xl mx-auto">
       Click any object to begin exploring. Everything connects to everything.
       You cannot arrive. You can only accumulate approaches.
     </p>
@@ -27,6 +27,6 @@ const sortedObjects = objects.sort((a, b) => {
   </div>
 
   {sortedObjects.length === 0 && (
-    <p class="text-center text-[#888]">No objects yet. Add MDX files to src/content/objects/</p>
+    <p class="text-center themed-text-muted">No objects yet. Add MDX files to src/content/objects/</p>
   )}
 </BaseLayout>
