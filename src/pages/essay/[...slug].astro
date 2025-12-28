@@ -1,0 +1,97 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const essays = await getCollection('essays');
+  return essays.map((essay) => ({
+    params: { slug: essay.slug },
+    props: { essay },
+  }));
+}
+
+interface Props {
+  essay: CollectionEntry<'essays'>;
+}
+
+const { essay } = Astro.props;
+const { Content } = await essay.render();
+const { title, subtitle, readTime, date } = essay.data;
+---
+
+<BaseLayout title={title}>
+  <article class="max-w-2xl mx-auto">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">{title}</h1>
+      {subtitle && <p class="text-xl text-[#888] mb-4">{subtitle}</p>}
+      <div class="flex items-center justify-center gap-4 text-sm text-[#666]">
+        {readTime && <span>{readTime} read</span>}
+        {date && <span>{date}</span>}
+      </div>
+    </header>
+
+    <!-- Essay Content -->
+    <div class="prose prose-invert prose-lg max-w-none">
+      <Content />
+    </div>
+
+    <!-- Back Link -->
+    <div class="text-center mt-12 pt-8 border-t border-[#333]">
+      <a href="/essays" class="text-[#888] hover:text-white transition-colors">
+        ← Back to Essays
+      </a>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold mt-12 mb-4 text-purple-400;
+  }
+  .prose h3 {
+    @apply text-xl font-bold mt-8 mb-3 text-white;
+  }
+  .prose p {
+    @apply mb-4 leading-relaxed text-[#ccc];
+  }
+  .prose strong {
+    @apply text-white font-semibold;
+  }
+  .prose em {
+    @apply text-[#aaa] italic;
+  }
+  .prose blockquote {
+    @apply border-l-4 border-purple-500/50 pl-4 italic text-[#888] my-6;
+  }
+  .prose ul, .prose ol {
+    @apply mb-4 ml-6 text-[#ccc];
+  }
+  .prose li {
+    @apply mb-2;
+  }
+  .prose a {
+    @apply text-purple-400 hover:text-purple-300 transition-colors;
+  }
+  .prose table {
+    @apply w-full my-6;
+  }
+  .prose th {
+    @apply text-left pb-2 border-b border-[#333] text-[#888];
+  }
+  .prose td {
+    @apply py-2 border-b border-[#222] text-[#ccc];
+  }
+  .prose code {
+    @apply bg-[#1a1a1a] px-2 py-1 rounded text-sm;
+  }
+  .prose pre {
+    @apply bg-[#1a1a1a] p-4 rounded-lg overflow-x-auto my-6;
+  }
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+  .prose hr {
+    @apply border-[#333] my-8;
+  }
+</style>
