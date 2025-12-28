@@ -180,6 +180,13 @@ declare module 'astro:content' {
   collection: "essays";
   data: InferEntrySchema<"essays">
 } & { render(): Render[".md"] };
+"the-gap.md": {
+	id: "the-gap.md";
+  slug: "the-gap";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
 "topology-of-being-alive.md": {
 	id: "topology-of-being-alive.md";
   slug: "topology-of-being-alive";
