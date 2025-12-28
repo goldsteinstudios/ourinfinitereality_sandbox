@@ -4,6 +4,7 @@ subtitle: "How guitar strings, electron orbitals, and tree rings share a shape"
 description: "Connecting wave physics, DDJ Chapter 25, and biological growth through the pattern of originate-extend-boundary-return."
 readTime: "10 min"
 date: "December 2025"
+order: 2
 tags: [physics, biology, ddj, pattern]
 ---
 

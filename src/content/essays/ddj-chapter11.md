@@ -4,6 +4,7 @@ subtitle: "Function lives in emptiness. The hollow makes the wheel work."
 description: "The DDJ's most concrete teaching: void isn't absence, it's where function happens."
 readTime: "12 min"
 date: "December 2025"
+order: 3
 tags: ["ddj", "void", "function", "translation"]
 ---
 

@@ -4,6 +4,7 @@ subtitle: "Five symbols that encode Contrast, Rotation, and Closure"
 description: "How e^(iπ) + 1 = 0 reveals the same structure as the Dao De Jing's opening."
 readTime: "15 min"
 date: "December 2025"
+order: 4
 tags: [math, ddj, euler, pattern]
 ---
 

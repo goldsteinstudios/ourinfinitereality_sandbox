@@ -4,6 +4,7 @@ subtitle: "What if the Dao De Jing's opening isn't poetry but geometry?"
 description: "The DDJ's opening chapter establishes a coordinate system for observing reality."
 readTime: "8 min"
 date: "December 2025"
+order: 5
 tags: ["ddj", "geometry", "translation"]
 ---
 

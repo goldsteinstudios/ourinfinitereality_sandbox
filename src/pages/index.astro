@@ -52,15 +52,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- Where to Start -->
     <section class="mb-16">
       <h2 class="text-2xl font-bold mb-6 text-center">Where to Start</h2>
-      <div class="grid gap-4 md:grid-cols-2">
-        <a href="/essays" class="block rounded-lg p-6 transition-colors text-center" style="background: var(--color-accent); color: white;">
-          <p class="font-bold mb-2">Selected Essays</p>
-          <p class="text-sm opacity-90">Pick whatever catches your eye. Human-friendly entry points.</p>
+
+      <!-- Featured Essays -->
+      <div class="grid gap-4 md:grid-cols-3 mb-6">
+        <a href="/essay/topology-of-being-alive" class="block themed-surface border rounded-lg p-5 transition-colors">
+          <p class="font-bold mb-2">The Topology of Being Alive</p>
+          <p class="text-sm themed-text-muted mb-2">You are a donut. Your center is outside.</p>
+          <p class="text-xs themed-text-muted">8 min</p>
         </a>
-        <a href="/catalog" class="block themed-surface border rounded-lg p-6 transition-colors text-center">
-          <p class="font-bold mb-2">Object Catalog</p>
-          <p class="text-sm themed-text-muted">Explore the pattern through physical objects.</p>
+        <a href="/essay/standing-wave-pattern" class="block themed-surface border rounded-lg p-5 transition-colors">
+          <p class="font-bold mb-2">The Standing Wave Pattern</p>
+          <p class="text-sm themed-text-muted mb-2">Guitar strings, electrons, and tree rings share a shape.</p>
+          <p class="text-xs themed-text-muted">10 min</p>
         </a>
+        <a href="/essay/ddj-chapter11" class="block themed-surface border rounded-lg p-5 transition-colors">
+          <p class="font-bold mb-2">Chapter 11: Wheel, Pot, Room</p>
+          <p class="text-sm themed-text-muted mb-2">The hollow makes the wheel turn.</p>
+          <p class="text-xs themed-text-muted">12 min</p>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="flex justify-center gap-6 text-sm">
+        <a href="/essays" style="color: var(--color-accent);">See all essays →</a>
+        <a href="/catalog" class="themed-text-muted">Explore objects →</a>
       </div>
     </section>
 
