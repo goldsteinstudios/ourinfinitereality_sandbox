@@ -63,10 +63,14 @@ cp "$REPO/rsm/takes/operators.md" "$CURRENT_DIR/02_operators.md"
 cp "$REPO/rsm/canonical/notation_guide.md" "$CURRENT_DIR/03_notation_guide.md"
 cp "$REPO/rsm/canonical/recursive_structural_model.md" "$CURRENT_DIR/04_recursive_structural_model.md"
 cp "$REPO/ddj/canonical/chapters/chapter01.md" "$CURRENT_DIR/05_ddj_chapter01.md"
-cp "$REPO/ddj/canonical/chapters/chapter11.md" "$CURRENT_DIR/06_ddj_chapter11.md"
-cp "$REPO/ddj/canonical/chapters/chapter40.md" "$CURRENT_DIR/07_ddj_chapter40.md"
-cp "$REPO/ddj/canonical/chapters/chapter42.md" "$CURRENT_DIR/08_ddj_chapter42.md"
-cp "$REPO/consolidated/essays/euler_tao_identity.md" "$CURRENT_DIR/09_euler_tao_identity.md"
+cp "$REPO/ddj/canonical/chapters/chapter05.md" "$CURRENT_DIR/06_ddj_chapter05.md"
+cp "$REPO/ddj/canonical/chapters/chapter11.md" "$CURRENT_DIR/07_ddj_chapter11.md"
+cp "$REPO/ddj/canonical/chapters/chapter16.md" "$CURRENT_DIR/08_ddj_chapter16.md"
+cp "$REPO/ddj/canonical/chapters/chapter40.md" "$CURRENT_DIR/09_ddj_chapter40.md"
+cp "$REPO/ddj/canonical/chapters/chapter42.md" "$CURRENT_DIR/10_ddj_chapter42.md"
+cp "$REPO/ddj/canonical/chapters/chapter51.md" "$CURRENT_DIR/11_ddj_chapter51.md"
+cp "$REPO/ddj/canonical/chapters/chapter81.md" "$CURRENT_DIR/12_ddj_chapter81.md"
+cp "$REPO/consolidated/essays/euler_tao_identity.md" "$CURRENT_DIR/13_euler_tao_identity.md"
 
 # Step 4: Write version file
 echo "$VERSION" > "$CURRENT_DIR/VERSION"
@@ -87,10 +91,14 @@ Documents audited and aligned with RSM $VERSION operator grammar.
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
 | 05 | ddj_chapter01.md | Coordinate system (名=i, 玄=0, 有=1) |
-| 06 | ddj_chapter11.md | Scythe principle (利₁/利₂/用 distinction) |
-| 07 | ddj_chapter40.md | Oscillation engine (反=+1) |
-| 08 | ddj_chapter42.md | Generative sequence (道生一 = P₀→O₁) |
-| 09 | euler_tao_identity.md | Both canonical identities |
+| 06 | ddj_chapter05.md | Bellows principle (橐籥, 虛/不屈/守中) |
+| 07 | ddj_chapter11.md | Scythe principle (利₁/利₂/用 distinction) |
+| 08 | ddj_chapter16.md | Return to root (復 operator, 常 cascade) |
+| 09 | ddj_chapter40.md | Oscillation engine (反=+1) |
+| 10 | ddj_chapter42.md | Generative sequence (道生一 = P₀→O₁) |
+| 11 | ddj_chapter51.md | 道生/德畜 formula (玄德) |
+| 12 | ddj_chapter81.md | Closure validation (三 paradoxes) |
+| 13 | euler_tao_identity.md | Both canonical identities |
 
 ## Canonical Identities
 
@@ -106,7 +114,7 @@ echo "5. Creating combined markdown file..."
 cat "$CURRENT_DIR/00_index.md" > "$DOCSET_DIR/rsm_complete.md"
 echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
 
-for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter11.md 07_ddj_chapter40.md 08_ddj_chapter42.md 09_euler_tao_identity.md; do
+for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter05.md 07_ddj_chapter11.md 08_ddj_chapter16.md 09_ddj_chapter40.md 10_ddj_chapter42.md 11_ddj_chapter51.md 12_ddj_chapter81.md 13_euler_tao_identity.md; do
     echo -e "# ═══════════════════════════════════════════════════════════════\n# FILE: $f\n# ═══════════════════════════════════════════════════════════════\n" >> "$DOCSET_DIR/rsm_complete.md"
     cat "$CURRENT_DIR/$f" >> "$DOCSET_DIR/rsm_complete.md"
     echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"

@@ -1,19 +1,16 @@
----
-title: "Chapter 11: The Wheel, Pot, and Room"
-subtitle: "Function lives in emptiness. The hollow makes the wheel work."
-description: "The DDJ's most concrete teaching: void isn't absence, it's where function happens."
-readTime: "12 min"
-date: "December 2025"
-order: 3
-tags: ["ddj", "void", "function", "translation"]
----
+# Chapter 11: Void/Function — The Scythe Principle
 
 **Structural Reading with Scythe-Corrected 利**
+**Date:** December 2025 (Revised from 2025-11-27)
+**Status:** 利 as ongoing cut; persistence as maintained operation
 
-> **RSM v0.988 Reference:** This chapter demonstrates the 有 yǒu / 無 wú complementarity as Postulate 4 (X·Y=k) in action: structure and void are reciprocally bound—neither exists without the other. Key mappings:
-> - 利₁ lì = e^(iπ) = −1 (the cut operation itself)
+> **RSM v0.988 Reference:** This chapter demonstrates the 有/無 complementarity as Postulate 4 (X·Y=k) in action: structure and void are reciprocally bound—neither exists without the other. Key mappings:
+> - 利₁ = e^(iπ) = −1 (the cut operation itself)
 > - 利₂ = material benefit (有-side result of the cut)
-> - 用 yòng = functional capacity (無-side result of the cut, NOT an operator)
+> - 用 = functional capacity (無-side result of the cut, NOT an operator)
+> - 有/無 = X/Y where X·Y=k (reciprocal constraint)
+>
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
 
 > **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
 
@@ -74,7 +71,7 @@ These three objects are perfect demonstrations of what Chapter 1's two observati
 - Vessel: Finds that the clay exists to create an interior that is not-clay
 - Room: Finds that the walls exist to enclose what they exclude
 
-The 徼-stance discovers the **structural paradox**: in each case, the boundary-observation reveals that the functional center is void. The edge doesn't enclose something — it creates nothing, and that nothing is where function happens.
+The徼-stance discovers the **structural paradox**: in each case, the boundary-observation reveals that the functional center is void. The edge doesn't enclose something — it creates nothing, and that nothing is where function happens.
 
 The conclusion (故有之以為利，無之以為用) previously mistranslated as "something provides advantage, nothing provides function" actually specifies:
 
@@ -180,6 +177,69 @@ This is why 用 appears with 無 in the final line: 無之以為用. The void pr
 
 ---
 
+## Radical Analysis: The Characters Encode the Teaching
+
+Every character in this chapter is built from radicals that demonstrate the principle.
+
+### 輻 fú — "spoke"
+**Radicals:** 車 chē (wheel) + 畐 fú (full/belly)
+
+The spoke contains "fullness" — it's the manifest something, the 有 yǒu that radiates outward.
+
+### 轂 gǔ — "hub"
+**Radicals:** 車 chē (wheel) + 殳 shū (pole/weapon) + 口 kǒu (opening/mouth)
+
+The hub *contains an opening* (口 kǒu). The character itself shows the void at the center. The mouth. The nothing-space the axle passes through.
+
+### 器 qì — "vessel"
+**Radicals:** 口 kǒu (mouth/opening) × 4 + 犬 quǎn (dog)
+
+Four openings surround a center. The vessel is literally **openings guarding emptiness**.
+
+### 室 shì — "room"
+**Radicals:** 宀 mián (roof) + 至 zhì (arrive/reach)
+
+A space you can **arrive into** because there's nothing inside. A room filled solid isn't a room—it's a block.
+
+### 利 lì — "harvest-capacity / π-operation"
+**Radicals:** 禾 hé (standing grain) + 刀 dāo (blade)
+
+**The scythe through the field.**
+
+```
+Oracle bone / Bronze script evolution:
+
+    禾       刀
+   /|\      |
+  / | \     |      →    利
+    |       |
+   / \     ___
+
+Standing grain + Blade = The cutting operation
+```
+
+The oldest forms show this unmistakably: a blade positioned against standing crop in the configuration of harvest — not stabbing, but sweeping.
+
+Not knife-logic (linear push).
+Arc-logic (π-sweep).
+
+The character itself documents the geometry: blade related to grain in the configuration that enables harvest.
+
+**Critical insight:** 利 is not the result of cutting (benefit, advantage). 利 IS the cutting. The scythe-arc that sweeps void into the standing field.
+
+This means 有之以為利 parses as:
+
+> **Structure performs the scythe-arc**
+
+有 (structure, form) doesn't "provide benefit." 有 IS the ongoing cutting operation that creates and maintains 無.
+
+### 用 yòng — "function / use"
+**Radicals:** Pictograph (vessel or container)
+
+The character suggests **contained space** — the void that makes something usable.
+
+---
+
 ## The Wheel as Complete Demonstration
 
 The wheel is the perfect teaching object because it shows:
@@ -265,6 +325,95 @@ This is 無為 in action: **engaging the geometry that completes what force cann
 
 ---
 
+## Why Ancient Readers Understood This Immediately
+
+Everyone in agrarian society knew:
+- You don't push through the field
+- You sweep across it
+- The arc makes harvest possible
+- Without the arc, the field remains standing
+
+When they saw 利, they didn't think "abstract advantage."
+
+They thought: **That's the scythe. That's how you get grain in.**
+
+When they read 有之以為利, they understood:
+**The manifest tool (scythe blade) provides the harvest-operation (arc through field).**
+
+When they read 無之以為用, they understood:
+**The emptiness (space to swing, void to rotate through) provides the functional capacity.**
+
+---
+
+## The Distinction from 有為 (Forcing)
+
+無為 is not "doing nothing."
+無為 is not mystical passivity.
+
+**無為 is scything, not knifing.**
+
+Both involve blades. Both involve effort. But:
+
+| Approach | Tool | Motion | Result |
+|----------|------|--------|--------|
+| 有為 | Knife | Linear push | Fights each stalk individually, exhausts |
+| 無為 | Scythe | Arc sweep | Engages geometry, completes |
+
+The knife is for individual objects, small-scale cutting, push-through problems.
+
+The scythe is for **fields** — for the distributed, the standing, the infinite-seeming.
+
+**利 documents the scythe, not the knife.**
+
+This is why 曲則全: **Curving completes what straight cannot.**
+
+---
+
+## Cross-References
+
+### Chapter 22 (π-operation)
+曲則全，枉則直
+**Curving completes, bending straightens**
+
+The scythe blade curves. The grain falls straight.
+
+### Chapter 48 (Subtraction Principle)
+為道日損，損之又損，以至於無為
+**Practicing pattern: daily decrease, subtract and subtract again, arriving at 無為**
+
+Removing what obstructs the arc. Clearing space for the sweep.
+
+### Chapter 64 (無為 Definition)
+輔萬物之自然，而不敢為
+**Assist all things' self-so-ness, not daring to impose**
+
+The scythe assists the grain's falling. Doesn't force individual stalks.
+
+### Chapter 8 (Water)
+水善利萬物而不爭
+**Water optimally cuts-paths-through (利) all things yet doesn't contend**
+
+Water doesn't benefit abstractly. Water **arcs around obstacles**, carves paths, does the π-operation on terrain.
+
+### Chapter 81 (Heaven's Pattern)
+天之道，利而不害
+**Heaven's pattern: cuts-paths-through (利) yet doesn't harm**
+
+The scythe harvests without damaging the field's capacity to regrow. The arc completes without exhausting the substrate.
+
+---
+
+## Guodian Validation
+
+The Guodian bamboo slips (~300 BCE) preserve this chapter with:
+- 恆 (héng) instead of 常 — "constant" as frame-independent
+- Clear 無/有 distinction maintained
+- 用 consistently marking functional capacity
+
+The manuscript shows **the structure predates philosophical interpretation**. This was engineering documentation from the beginning.
+
+---
+
 ## Persistence Is Ongoing Cut
 
 The wheel isn't a noun. The wheel *wheels*.
@@ -282,6 +431,12 @@ Each is a **maintained cut** — an ongoing 利 that hasn't stopped yet.
 Stop the operation, lose the void, lose the function.
 
 This is why 常 isn't "eternal" (lasting forever as static thing). 常 is what keeps cutting — the pattern that maintains its own void through continuous 利.
+
+And 不道早已 (Chapter 30) — "contrary to pattern, early ending" — now reads as physics:
+
+> **Stop the cut → lose the void → collapse**
+
+Things that work against the 利-operation don't persist. Not punishment. Structural consequence. The whirlpool that stops spinning doesn't get judged — it just isn't a whirlpool anymore.
 
 ---
 

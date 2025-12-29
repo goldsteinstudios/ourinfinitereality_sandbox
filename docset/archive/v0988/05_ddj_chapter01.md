@@ -1,18 +1,8 @@
----
-title: "Chapter 1: The Coordinate System"
-subtitle: "What if the Dao De Jing's opening isn't poetry but geometry?"
-description: "The DDJ's opening chapter establishes a coordinate system for observing reality."
-readTime: "8 min"
-date: "December 2025"
-order: 5
-tags: ["ddj", "geometry", "translation"]
----
+# Chapter 1: The Coordinate System
 
 ### 道德經 第一章
 
-> **RSM v0.988 Reference:** This chapter establishes the foundational framework. Key operator mappings: 名 míng = i (orthogonal distinction), 玄 xuán = 0 (generative center, unoccupiable), 有 yǒu = 1 (structural unity). The 無名 wú míng / 有名 yǒu míng complementarity demonstrates Postulate 4 (X·Y=k): neither pole exists without the other.
-
-> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
+> **RSM v0.979 Reference:** This chapter establishes the foundational framework. Key operator mappings: 名 = i (orthogonal distinction), 玄 = 0 (unoccupiable center), 有 = 1 (structural unity). See [RSM v0.979](../../rsm/canonical/rsm_v0979.md) for complete derivation.
 
 ---
 
@@ -49,24 +39,24 @@ Paradox within paradox — the gateway to all patterns.
 
 ## Key Terms
 
-| Character | Structural Reading | v0.988 Mapping |
+| Character | Structural Reading | v0.979 Mapping |
 |-----------|-------------------|----------------|
-| 道 dào | dao (untranslated — exists in both modes) | O₁ (when named) |
-| 可 kě | manifest / explicit mode | 可 kě-register |
-| 常 cháng | implicit / frame-independent mode / pre-distinction | 常 cháng-register |
-| 非 fēi | ←非→ divergence from shared center | — |
-| 名 míng | distinction / the operation that differentiates | **i** (orthogonal cut) |
-| 無 wú | nothing / void | — |
-| 有 yǒu | something / form | **1** (structural unity) |
-| 無名 wú míng | named-nothing: void-as-distinguished-from-form (O₁) | O₁ |
-| 有名 yǒu míng | named-something: form-as-distinguished-from-void | — |
-| 常無 cháng wú | implicit-nothing: absolute void before distinction operates (P₀) | P₀ |
-| 常有 cháng yǒu | implicit-something: absolute form before distinction operates | — |
-| 欲 yù | orientation / focus / observational stance | — |
-| 妙 miào | relational patterns (perceived via 常無 cháng wú stance) | — |
-| 徼 jiào | boundaries (perceived via 常有 cháng yǒu stance) | — |
-| 異名 yì míng | differently-illuminating | — |
-| 玄 xuán | paradoxical origin / center where axes meet | **0** (generative, unoccupiable) |
+| 道 | dao (untranslated — exists in both modes) | O₁ (when named) |
+| 可 | manifest / explicit mode | 可-register |
+| 常 | implicit / frame-independent mode / pre-distinction | 常-register |
+| 非 | ←非→ divergence from shared center | — |
+| 名 | distinction / the operation that differentiates | **i** (orthogonal cut) |
+| 無 | nothing / void | — |
+| 有 | something / form | **1** (structural unity) |
+| 無名 | named-nothing: void-as-distinguished-from-form (O₁) | O₁ |
+| 有名 | named-something: form-as-distinguished-from-void | — |
+| 常無 | implicit-nothing: absolute void before distinction operates (P₀) | P₀ |
+| 常有 | implicit-something: absolute form before distinction operates | — |
+| 欲 | orientation / focus / observational stance | — |
+| 妙 | relational patterns (perceived via 常無 stance) | — |
+| 徼 | boundaries (perceived via 常有 stance) | — |
+| 異名 | differently-illuminating | — |
+| 玄 | paradoxical origin / center where axes meet | **0** (unoccupiable) |
 
 ---
 
@@ -178,4 +168,4 @@ The horizontal axis: the poles that distinction produces.
 ---
 
 *Document updated: December 2025*
-*Aligned with RSM v0.988*
+*Aligned with RSM v0.979*
