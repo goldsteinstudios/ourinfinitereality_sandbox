@@ -71,6 +71,7 @@ cp "$REPO/ddj/canonical/chapters/chapter42.md" "$CURRENT_DIR/10_ddj_chapter42.md
 cp "$REPO/ddj/canonical/chapters/chapter51.md" "$CURRENT_DIR/11_ddj_chapter51.md"
 cp "$REPO/ddj/canonical/chapters/chapter81.md" "$CURRENT_DIR/12_ddj_chapter81.md"
 cp "$REPO/consolidated/essays/euler_tao_identity.md" "$CURRENT_DIR/13_euler_tao_identity.md"
+cp "$REPO/src/content/essays/between-e-and-phi.md" "$CURRENT_DIR/14_between_e_and_phi.md"
 
 # Step 4: Write version file
 echo "$VERSION" > "$CURRENT_DIR/VERSION"
@@ -99,6 +100,7 @@ Documents audited and aligned with RSM $VERSION operator grammar.
 | 11 | ddj_chapter51.md | 道生/德畜 formula (玄德) |
 | 12 | ddj_chapter81.md | Closure validation (三 paradoxes) |
 | 13 | euler_tao_identity.md | Both canonical identities |
+| 14 | between_e_and_phi.md | e/φ architecture, 非 grammar, 玄牝=φ |
 
 ## Canonical Identities
 
@@ -114,7 +116,7 @@ echo "5. Creating combined markdown file..."
 cat "$CURRENT_DIR/00_index.md" > "$DOCSET_DIR/rsm_complete.md"
 echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
 
-for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter05.md 07_ddj_chapter11.md 08_ddj_chapter16.md 09_ddj_chapter40.md 10_ddj_chapter42.md 11_ddj_chapter51.md 12_ddj_chapter81.md 13_euler_tao_identity.md; do
+for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter05.md 07_ddj_chapter11.md 08_ddj_chapter16.md 09_ddj_chapter40.md 10_ddj_chapter42.md 11_ddj_chapter51.md 12_ddj_chapter81.md 13_euler_tao_identity.md 14_between_e_and_phi.md; do
     echo -e "# ═══════════════════════════════════════════════════════════════\n# FILE: $f\n# ═══════════════════════════════════════════════════════════════\n" >> "$DOCSET_DIR/rsm_complete.md"
     cat "$CURRENT_DIR/$f" >> "$DOCSET_DIR/rsm_complete.md"
     echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
