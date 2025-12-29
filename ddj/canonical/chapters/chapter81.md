@@ -2,6 +2,13 @@
 
 *Closing chapter: the system self-validates*
 
+> **RSM v0.988 Reference:** This chapter demonstrates Postulate 4 (X·Y=k) through three mutual exclusion pairs: 信 xìn / 美 měi, 善 shàn / 辯 biàn, 知 zhī / 博 bó. Each pair is reciprocally bound—gaining one loses the other. The non-accumulation paradox (不積 bù jī → 愈有 yù yǒu) shows non-occupation as generative position. The closing formula (天之道 tiān zhī dào: 利而不害 lì ér bù hài) encodes the Three Requirements: Contrast (有 yǒu / 無 wú), Rotation (利 lì arc), Closure (return to beginning).
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
+
+---
+
 ## Original Text
 
 信言不美，美言不信。
@@ -18,19 +25,19 @@
 
 | Character | Components | Structural Function |
 |-----------|-----------|---------------------|
-| 信 (xìn) | 人 + 言 | Trustworthy, reliable, person standing by word |
-| 美 (měi) | 羊 + 大 | Beautiful, aesthetically pleasing |
-| 善 (shàn) | 羊 + 言 + 口 | Good at, skilled, effective |
-| 辯 (biàn) | 辛 + 言 + 辛 | Argue, debate, contend verbally |
-| 知 (zhī) | 矢 + 口 | Know, perceive, understand |
-| 博 (bó) | 十 + 專 | Broad, extensive, wide-ranging |
-| 積 (jī) | 禾 + 責 | Accumulate, store up, pile |
-| 為 (wéi) | — | Act for, do on behalf of |
-| 愈 (yù) | 心 + 俞 | More, increasingly, even more |
-| 與 (yǔ) | — | Give to, bestow upon |
-| 利 (lì) | 禾 + 刂 | Scythe arcs through field; π-operation on substrate |
-| 害 (hài) | 宀 + 口 + 丯 | Harm, damage, obstruct |
-| 爭 (zhēng) | 爪 + 彐 | Contend, compete, struggle for |
+| 信 xìn | 人 rén (person) + 言 yán (speech) | Trustworthy, reliable, person standing by word |
+| 美 měi | 羊 yáng (sheep) + 大 dà (big) | Beautiful, aesthetically pleasing |
+| 善 shàn | 羊 yáng (sheep) + 言 yán (speech) + 口 kǒu (mouth) | Good at, skilled, effective |
+| 辯 biàn | 辛 xīn (bitter) + 言 yán (speech) + 辛 xīn (bitter) | Argue, debate, contend verbally |
+| 知 zhī | 矢 shǐ (arrow) + 口 kǒu (mouth) | Know, perceive, understand |
+| 博 bó | 十 shí (ten) + 專 zhuān (exclusive) | Broad, extensive, wide-ranging |
+| 積 jī | 禾 hé (grain) + 責 zé (responsibility) | Accumulate, store up, pile |
+| 為 wéi | — | Act for, do on behalf of |
+| 愈 yù | 心 xīn (heart) + 俞 yú (consent) | More, increasingly, even more |
+| 與 yǔ | — | Give to, bestow upon |
+| 利 lì | 禾 hé (grain) + 刀 dāo (blade) | Scythe arcs through field; π-operation on substrate |
+| 害 hài | 宀 mián (roof) + 口 kǒu (mouth) + 丯 jiè (grass) | Harm, damage, obstruct |
+| 爭 zhēng | 爪 zhǎo (claw) + 彐 jì (snout) | Contend, compete, struggle for |
 
 ---
 
@@ -136,7 +143,7 @@ Two parallel formulas: X之道，Y而不Z
 
 **天之道，利而不害:**
 
-利 (lì) = 禾 (standing field) + 刂 (scythe blade) = the π-operation applied to substrate.
+利 lì = 禾 hé (standing field) + 刀 dāo (blade) = the π-operation applied to substrate.
 
 **Critical**: This is the SCYTHE, not the knife. Heaven's pattern arcs through, cuts paths, harvests—not by linear force but by the curved sweep that completes what straight lines cannot.
 
@@ -243,17 +250,17 @@ Chapter 81 serves as **system validation**: the principles documented throughout
 
 ---
 
-## Tier 1 Validation
+## Structural Verification
 
-| Line | Test Result |
-|------|-------------|
-| "Trustworthy words aren't beautiful" | ✓ Documents expression structure |
-| "Those who know aren't broad" | ✓ Documents knowledge structure |
-| "Sage doesn't accumulate, yet has more" | ✓ Documents non-occupation effect |
-| "Heaven's pattern: cuts paths, doesn't harm" | ✓ Documents cosmic pattern |
-| "Sage's pattern: acts, doesn't contend" | ✓ Documents aligned operation |
+| Line | What It Documents |
+|------|-------------------|
+| 信言不美 xìn yán bù měi | Expression structure: 信 xìn / 美 měi mutual exclusion (P4: X·Y=k) |
+| 知者不博 zhī zhě bù bó | Knowledge structure: 知 zhī / 博 bó mutual exclusion (P4) |
+| 聖人不積...己愈有 shèng rén bù jī...jǐ yù yǒu | Non-occupation as generative position |
+| 天之道，利而不害 tiān zhī dào, lì ér bù hài | 利 lì as π-operation; constraint without damage |
+| 聖人之道，為而不爭 shèng rén zhī dào, wéi ér bù zhēng | 為而不爭 wéi ér bù zhēng as aligned operation |
 
-**Minimal prescription.** The chapter documents structural relationships: trustworthy/beautiful mutual exclusion, non-accumulation paradox, heaven/sage patterns.
+**Minimal prescription.** The chapter documents structural relationships: mutual exclusions as reciprocal constraint (P4), non-accumulation paradox, heaven/sage patterns.
 
 The 聖人 (sage) references describe what aligned operation looks like, not commands to become a sage.
 

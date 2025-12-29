@@ -4,12 +4,15 @@
 **Date:** December 2025 (Revised from 2025-11-27)
 **Status:** 利 as ongoing cut; persistence as maintained operation
 
-> **RSM v0.979 Reference:** This chapter demonstrates the 利/用 complementarity. Key mappings:
+> **RSM v0.988 Reference:** This chapter demonstrates the 有/無 complementarity as Postulate 4 (X·Y=k) in action: structure and void are reciprocally bound—neither exists without the other. Key mappings:
 > - 利₁ = e^(iπ) = −1 (the cut operation itself)
 > - 利₂ = material benefit (有-side result of the cut)
 > - 用 = functional capacity (無-side result of the cut, NOT an operator)
+> - 有/無 = X/Y where X·Y=k (reciprocal constraint)
 >
-> See [RSM v0.979](../../rsm/canonical/rsm_v0979.md) §38-40 for complete derivation.
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
 
 ---
 
@@ -87,7 +90,7 @@ This misses the **geometric operation** encoded in the character.
 
 ### What 利 Actually Encodes
 
-利 = 禾 (standing grain) + 刂 (blade)
+利 lì = 禾 hé (standing grain) + 刀 dāo (blade)
 
 **NOT**: Knife cutting grain (linear push, one stalk at a time, exhausting)
 **BUT**: Scythe arcing through field (π-sweep, swath per stroke, completing)
@@ -150,7 +153,7 @@ The scythe **harvests** because the blade arcs through grain (利).
 
 **利 is the π-operation. 用 is the void-capacity enabling π.**
 
-### v0.979 Algebraic Reading
+### v0.988 Algebraic Reading
 
 In the RSM operator grammar:
 
@@ -178,41 +181,41 @@ This is why 用 appears with 無 in the final line: 無之以為用. The void pr
 
 Every character in this chapter is built from radicals that demonstrate the principle.
 
-### 輻 (fú) — "spoke"
-**Radicals:** 車 (wheel) + 畐 (full/belly)
+### 輻 fú — "spoke"
+**Radicals:** 車 chē (wheel) + 畐 fú (full/belly)
 
-The spoke contains "fullness" — it's the manifest something, the 有 that radiates outward.
+The spoke contains "fullness" — it's the manifest something, the 有 yǒu that radiates outward.
 
-### 轂 (gǔ) — "hub"
-**Radicals:** 車 (wheel) + 殳 (pole/weapon) + 口 (opening/mouth)
+### 轂 gǔ — "hub"
+**Radicals:** 車 chē (wheel) + 殳 shū (pole/weapon) + 口 kǒu (opening/mouth)
 
-The hub *contains an opening* (口). The character itself shows the void at the center. The mouth. The nothing-space the axle passes through.
+The hub *contains an opening* (口 kǒu). The character itself shows the void at the center. The mouth. The nothing-space the axle passes through.
 
-### 器 (qì) — "vessel"
-**Radicals:** 口 (mouth/opening) × 4 + 犬 (dog)
+### 器 qì — "vessel"
+**Radicals:** 口 kǒu (mouth/opening) × 4 + 犬 quǎn (dog)
 
 Four openings surround a center. The vessel is literally **openings guarding emptiness**.
 
-### 室 (shì) — "room"
-**Radicals:** 宀 (roof) + 至 (arrive/reach)
+### 室 shì — "room"
+**Radicals:** 宀 mián (roof) + 至 zhì (arrive/reach)
 
 A space you can **arrive into** because there's nothing inside. A room filled solid isn't a room—it's a block.
 
-### 利 (lì) — "harvest-capacity / π-operation"
-**Radicals:** 禾 (standing grain) + 刂 (blade arc)
+### 利 lì — "harvest-capacity / π-operation"
+**Radicals:** 禾 hé (standing grain) + 刀 dāo (blade)
 
 **The scythe through the field.**
 
 ```
 Oracle bone / Bronze script evolution:
 
-    禾       刂
+    禾       刀
    /|\      |
   / | \     |      →    利
     |       |
    / \     ___
 
-Standing grain + Blade arc = The cutting operation
+Standing grain + Blade = The cutting operation
 ```
 
 The oldest forms show this unmistakably: a blade positioned against standing crop in the configuration of harvest — not stabbing, but sweeping.
@@ -230,7 +233,7 @@ This means 有之以為利 parses as:
 
 有 (structure, form) doesn't "provide benefit." 有 IS the ongoing cutting operation that creates and maintains 無.
 
-### 用 (yòng) — "function / use"
+### 用 yòng — "function / use"
 **Radicals:** Pictograph (vessel or container)
 
 The character suggests **contained space** — the void that makes something usable.
@@ -481,7 +484,7 @@ This reframes what 德 means:
 ```
 O (hub-void) → G (spoke-radius) → P (rim sweeping circle)
 
-禾 (standing field) + 刂 (blade arc) = 利 (the cutting operation)
+禾 hé (standing field) + 刀 dāo (blade) = 利 lì (the cutting operation)
 
 有之以為利 (structure performs the scythe-arc)
 無之以為用 (void is where function happens)
