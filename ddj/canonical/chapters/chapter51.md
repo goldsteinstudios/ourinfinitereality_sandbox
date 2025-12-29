@@ -1,6 +1,18 @@
 # Chapter 51: Pattern Generates, Alignment Accumulates
 
-*The 道生/德畜 formula and 玄德*
+*The 道生/德畜 dào shēng / dé chù formula and 玄德 xuán dé*
+
+> **RSM v0.988 Reference:** This chapter documents the 道生/德畜 generation-accumulation relationship. Key mappings:
+> - 道生 dào shēng = Pattern generates (O₁ function)
+> - 德畜 dé chù = Alignment accumulates (G₁ function)
+> - 玄德 xuán dé = Alignment from origin, operating without occupation
+> - 生而不有 shēng ér bù yǒu = generative without possessing (non-occupation principle)
+>
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
+
+---
 
 ## Original Text
 
@@ -19,25 +31,25 @@
 
 | Character | Components | Structural Function |
 |-----------|-----------|---------------------|
-| 生 (shēng) | — | Generate, co-arise, give rise to |
-| 畜 (chù) | 玄 + 田 | Accumulate, store, nurture |
-| 形 (xíng) | 开 + 彡 | Form, give shape to |
-| 勢 (shì) | 埶 + 力 | Momentum, configuration, circumstances |
-| 成 (chéng) | 戊 + 丁 | Complete, bring to fruition |
-| 尊 (zūn) | 酋 + 寸 | Honor, revere, hold high |
-| 貴 (guì) | 中 + 貝 | Value, prize, consider precious |
-| 命 (mìng) | 口 + 令 | Command, mandate, decree |
-| 自然 (zì rán) | Self + thus | Self-so, spontaneous, natural |
-| 長 (zhǎng) | — | Grow, mature, develop |
-| 育 (yù) | 月 + 云 | Nurture, raise, educate |
-| 亭 (tíng) | 高 + 丁 | Shelter, bring to maturity |
-| 毒 (dú) | 毋 + 母 | Ripen fully, mature to completion |
-| 養 (yǎng) | 食 + 羊 | Nourish, support, maintain |
-| 覆 (fù) | 覀 + 復 | Cover, protect, shelter |
-| 有 (yǒu) | — | Possess, own, claim |
-| 恃 (shì) | 忄 + 寺 | Rely on, depend on, claim credit |
-| 宰 (zǎi) | 宀 + 辛 | Govern, control, butcher |
-| 玄 (xuán) | — | Dark, mysterious, paradoxical origin |
+| 生 shēng | — | Generate, co-arise, give rise to |
+| 畜 chù | 玄 xuán (mystery) + 田 tián (field) | Accumulate, store, nurture |
+| 形 xíng | 开 kāi + 彡 shān (hair) | Form, give shape to |
+| 勢 shì | 埶 yì + 力 lì (power) | Momentum, configuration, circumstances |
+| 成 chéng | 戊 wù + 丁 dīng | Complete, bring to fruition |
+| 尊 zūn | 酋 qiú + 寸 cùn (inch) | Honor, revere, hold high |
+| 貴 guì | 中 zhōng + 貝 bèi (shell/value) | Value, prize, consider precious |
+| 命 mìng | 口 kǒu (mouth) + 令 lìng (command) | Command, mandate, decree |
+| 自然 zì rán | 自 zì (self) + 然 rán (thus) | Self-so, spontaneous, natural |
+| 長 zhǎng | — | Grow, mature, develop |
+| 育 yù | 月 yuè (moon/flesh) + 云 yún (cloud) | Nurture, raise, educate |
+| 亭 tíng | 高 gāo (high) + 丁 dīng | Shelter, bring to maturity |
+| 毒 dú | 毋 wú + 母 mǔ (mother) | Ripen fully, mature to completion |
+| 養 yǎng | 食 shí (food) + 羊 yáng (sheep) | Nourish, support, maintain |
+| 覆 fù | 覀 xī + 復 fù (return) | Cover, protect, shelter |
+| 有 yǒu | — | Possess, own, claim |
+| 恃 shì | 心 xīn (heart) + 寺 sì (temple) | Rely on, depend on, claim credit |
+| 宰 zǎi | 宀 mián (roof) + 辛 xīn (bitter) | Govern, control, butcher |
+| 玄 xuán | — | Dark, mysterious, paradoxical origin |
 
 ---
 
@@ -309,17 +321,17 @@ The honor/value relationship between things and source is 自然—self-arising,
 
 ---
 
-## Tier 1 Validation
+## Structural Verification
 
-| Line | Test Result |
-|------|-------------|
-| "Pattern generates, alignment accumulates" | ✓ Documents functional roles |
-| "Things form, momentum completes" | ✓ Documents process stages |
-| "Myriad things honor pattern, value alignment" | ✓ Documents structural relationship |
-| "Nothing commands this, constantly self-so" | ✓ Documents emergence principle |
-| "Grows, nurtures, shelters, ripens..." | ✓ Documents nurturing cycle |
-| "Generate yet not possess..." | ✓ Documents non-occupation |
-| "This is called mysterious alignment" | ✓ Documents naming |
+| Line | What It Documents |
+|------|-------------------|
+| 道生之，德畜之 dào shēng zhī, dé chù zhī | Functional roles: pattern generates, alignment accumulates |
+| 物形之，勢成之 wù xíng zhī, shì chéng zhī | Process stages: things form, momentum completes |
+| 萬物莫不尊道而貴德 wàn wù mò bù zūn dào ér guì dé | Structural relationship: all things honor source |
+| 莫之命，常自然 mò zhī mìng, cháng zì rán | Emergence principle: nothing commands, self-so |
+| 長之，育之，亭之，毒之 zhǎng zhī, yù zhī, tíng zhī, dú zhī | Nurturing cycle: grow, nurture, shelter, ripen |
+| 生而不有，為而不恃，長而不宰 | Non-occupation: generate/act/grow without possess/rely/govern |
+| 是謂玄德 shì wèi xuán dé | Naming: mysterious alignment from origin |
 
 **No prescription.** The chapter documents the generation-accumulation process, the self-arising nature of the relationship, and the non-occupation that enables function.
 

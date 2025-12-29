@@ -1,6 +1,19 @@
-# CHAPTER 05 - 11.4.25
-Chapter 5: The Hand That Must Rise
-Or: Why the Spring Under Your Fingers Knows More Than You Do
+# Chapter 5: The Hand That Must Rise
+
+*Or: Why the Spring Under Your Fingers Knows More Than You Do*
+
+> **RSM v0.988 Reference:** This chapter documents the 橐籥 tuó yuè (bellows) principle. Key mappings:
+> - 虛 xū = empty center (like Chapter 11's wheel hub)
+> - 不屈 bù qū = not-restricting (letting the spring return)
+> - 愈出 yù chū = continuous emergence (function from maintained void)
+> - 守中 shǒu zhōng = maintain the empty center
+> - 不仁 bù rén = structural indifference (not "cruelty" but impartial function)
+>
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
+
+---
 
 Here's the chapter that everyone gets backwards:
 

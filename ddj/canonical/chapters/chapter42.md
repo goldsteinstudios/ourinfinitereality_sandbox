@@ -1,11 +1,15 @@
 # Chapter 42: The Dimensional Proof Hidden in Plain Sight
 *Or: Why Three Is Everything and Four Is Redundant*
 
-> **RSM v0.979 Reference:** This chapter reveals the generative sequence. Key mappings:
-> - 道生一 = P₀ → O₁ (paradox necessitates structural placeholder)
-> - 生 = related to 相生 = e (co-emergence rate, not linear causation)
-> - 三 = 3D closure (minimal for spherical completion)
-> - See [RSM v0.979](../../rsm/canonical/rsm_v0979.md) §58 (The Generative Sequence) for complete derivation.
+> **RSM v0.988 Reference:** This chapter reveals the generative sequence. Key mappings:
+> - 道生一 dào shēng yī = P₀ → O₁ (paradox necessitates structural placeholder)
+> - 生 shēng = related to 相生 xiāng shēng = e (co-emergence rate, not linear causation)
+> - 三 sān = 3D closure (minimal for spherical completion)
+> - 陰 yīn / 陽 yáng = reciprocal poles per Postulate 4 (X·Y=k): 負陰而抱陽 demonstrates void/form as mutually necessary
+>
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
 
 ---
 

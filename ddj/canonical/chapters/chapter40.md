@@ -1,12 +1,14 @@
 # Chapter 40: The Oscillation Engine
 *Or: How Reality Breathes Without Trying*
 
-> **RSM v0.979 Reference:** This chapter reveals the fundamental motion. Key mappings:
-> - 反 = +1 (return to equilibrium, completing: e^(iπ) + 1 = 0)
-> - 生 relates to 相生 = e (mutual generation rate)
-> - 有/無 = 1/0 (form/void as structural poles)
+> **RSM v0.988 Reference:** This chapter reveals the fundamental motion. Key mappings:
+> - 反 fǎn = +1 (return to equilibrium, completing: e^(iπ) + 1 = 0)
+> - 生 shēng relates to 相生 xiāng shēng = e (mutual generation rate)
+> - 有 yǒu / 無 wú = reciprocal poles per Postulate 4 (X·Y=k): neither exists without the other
 >
-> See [RSM v0.979](../../rsm/canonical/rsm_v0979.md) §33 (反者道之動) for complete derivation.
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
 
 ---
 
@@ -48,7 +50,7 @@ Like a pendulum that swings and returns. Like a heartbeat that contracts and exp
 
 This is saying: the fundamental movement of reality isn't linear. It's cyclical return.
 
-### v0.979 Algebraic Reading: 反 = +1
+### v0.988 Algebraic Reading: 反 fǎn = +1
 
 In Euler's identity: **e^(iπ) + 1 = 0**
 

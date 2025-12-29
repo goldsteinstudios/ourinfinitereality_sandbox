@@ -1,6 +1,18 @@
 # Chapter 16: Return to Root
 
-*The recursion cycle and what "knowing 常" enables*
+*The recursion cycle and what "knowing 常 cháng" enables*
+
+> **RSM v0.988 Reference:** This chapter documents the return cycle (復 fù) and the 常 cháng cascade. Key mappings:
+> - 復 fù = return operator (related to 反 fǎn from Chapter 40)
+> - 常 cháng = frame-independent, implicit register
+> - 歸根 guī gēn = 靜 jìng = 復 fù = 命 mìng (equivalence chain)
+> - 知常 zhī cháng enables the cascade: 容 → 公 → 王 → 天 → 道 → 久
+>
+> See [RSM v0.988](../../rsm/canonical/rsm_v0988.md) for complete derivation.
+
+> **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
+
+---
 
 ## Original Text
 
@@ -341,22 +353,20 @@ This is the same 王 from Chapter 25 (域中有四大，而王居其一—in the
 
 ---
 
-## Tier 1 Validation
+## Structural Verification
 
-Applying the filtering principle:
+| Line | What It Documents |
+|------|-------------------|
+| 致虛極，守靜篤 zhì xū jí, shǒu jìng dǔ | Observation protocol: empty and still |
+| 萬物並作，吾以觀復 wàn wù bìng zuò, wú yǐ guān fù | Observation target: the return cycle |
+| 各復歸其根 gè fù guī qí gēn | Individual-level return to root |
+| 歸根曰靜，靜曰復，復曰命 | Equivalence chain: return = stillness = cycle = life-pattern |
+| 知命曰明 zhī mìng yuē míng | Knowledge consequence: illumination |
+| 不知命妄作 bù zhī mìng wàng zuò | Ignorance consequence: reckless action |
+| 知常容 zhī cháng róng | 常-knowledge enables containing |
+| 容乃公，公乃王，王乃天，天乃道，道乃久 | Enablement cascade to endurance |
 
-| Line | Test Result |
-|------|-------------|
-| "Extend emptiness to its limit" | ✓ Operational instruction (how to observe) |
-| "Ten thousand things arise together" | ✓ Documents what happens |
-| "Each returns to its root" | ✓ Documents cycle structure |
-| "Returning to root is called stillness" | ✓ Definitional equivalence |
-| "Knowing life-pattern: illumination" | ✓ Documents consequence of knowing |
-| "Not knowing: reckless action" | ✓ Documents consequence of not knowing |
-| "Knowing constant enables containing" | ✓ Documents structural enablement |
-| "To end of body, no danger" | ⚠ Could read as promise/prescription |
-
-The final line approaches promise ("you'll be safe") but structurally reads as **consequence**: following the cascade results in geometric stability. Not "you should do this to be safe" but "this is what happens when aligned with the cycle."
+The final line 沒身不殆 mò shēn bù dài reads as **structural consequence**: alignment with the cycle results in geometric stability, not a promise of safety.
 
 ---
 
