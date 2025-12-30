@@ -429,6 +429,47 @@ This is why Chapter 45 says:
 
 ---
 
+## The Temporal Extension: Present Moment as O₁
+
+*RSM v0.988 Part VI*
+
+### The Parallel Structure
+
+Just as spatial O₁ is unoccupiable due to infinite divisibility, the **present moment** is temporal O₁:
+
+| Spatial O₁ | Temporal O₁ |
+|------------|-------------|
+| Balance point on void/form gradient | Balance point on past/future gradient |
+| Unoccupiable (always one side or other) | Unoccupiable (always just-past or just-future) |
+| Referenced by all positions | Referenced by all moments |
+| Generative center for space | Generative center for time |
+
+### The Temporal Zoom Paradox
+
+Try to locate "now" precisely:
+- This second? But which millisecond?
+- This millisecond? But which microsecond?
+- This microsecond? But which nanosecond?
+
+No matter how finely you divide, "now" recedes. You're always just-past or just-future, never exactly present.
+
+**lim(Δt→0) "now" remains a limit, not a location.**
+
+### Implications
+
+1. **No temporal position is privileged** — Every moment is equally displaced from the unoccupiable present
+2. **Temporal reference is dynamic** — Since the present cannot be occupied, temporal orientation must be maintained through movement (parallel to spatial rotation necessity)
+3. **Memory and anticipation are structural** — Past-orientation and future-orientation are not psychological accidents but structural requirements
+
+### Open Questions (Not Derived)
+
+- What is temporal rotation? (Spatial persistence requires rotation; what is the temporal analogue?)
+- What determines experienced duration? (If the present is a limit, what sets the integration window?)
+
+*These remain hypotheses for investigation, not derivations.*
+
+---
+
 ## The 剛/柔 (gāng/róu) Axis
 
 **The axis of yielding**
