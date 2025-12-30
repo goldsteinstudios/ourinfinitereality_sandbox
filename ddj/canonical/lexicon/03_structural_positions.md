@@ -694,9 +694,36 @@ But this isn't "Pole A good, Pole B bad." The text documents how both poles aris
 
 **Color note:** 玄 originally meant "black-red" or "dark red"—the color of dried blood, the boundary between visible and invisible. This becomes the metaphor: 玄 marks where things are ABOUT TO become distinguishable but haven't yet.
 
-### What 玄 Marks
+### What 玄 Marks: O₁ in RSM v0.988
 
-玄 isn't "mysterious" in the sense of unknowable. 玄 is the **paradoxical origin where axes cross, where measurement equals zero, where the center remains implicit**.
+玄 corresponds to **O₁** (the generative center) in RSM v0.988:
+
+| O₁ Property | 玄 Property | Evidence |
+|-------------|-------------|----------|
+| Generative, not empty | Birth-opening | 玄牝 (mysterious female) |
+| Unoccupiable via infinite divisibility | "As if existing" | 若存 (Chapter 6) |
+| Referenced by all positions | Root of heaven-earth | 天地根 (Chapter 6) |
+| Position of transformation | Gate to all patterns | 眾妙之門 (Chapter 1) |
+
+**Critical v0.988 correction:** O₁ is **generative**, not empty. Like zero on the number line—the origin that makes measurement possible, not "nothing."
+
+**Why O₁ is unoccupiable (Infinite Divisibility):**
+
+The gradient between void and form is infinitely divisible:
+- At 0.0001: still on form-side
+- At -0.0001: still on void-side
+- No matter how close, always one side or the other
+- O₁ is the limit—never reached, always referenced
+
+This is the zoom paradox: try to locate the exact center, and it recedes. You're always *around* O₁, never *at* O₁.
+
+**V₀ vs O₁ Distinction:**
+
+| V₀ (Absolute Void) | O₁ (Generative Center) |
+|-------------------|------------------------|
+| Unspecifiable (internal limitation) | Structurally necessary |
+| Cannot be a state or location | Position/limit that can be referenced |
+| The prohibition | The structural consequence |
 
 > 玄之又玄，眾妙之門 (Chapter 1)
 > "Paradox within paradox—the gateway to all patterns"
