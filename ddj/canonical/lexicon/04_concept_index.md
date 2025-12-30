@@ -430,5 +430,100 @@ Water demonstrates all principles:
 
 ---
 
+## The Six Constants (Universality Class)
+
+*RSM v0.988 Part II*
+
+**Principle:** These constants emerge whenever you combine distinction, rotation, and scale-invariant recursion.
+
+| Constant | Value | Structural Requirement | DDJ Mapping |
+|----------|-------|------------------------|-------------|
+| **0** | 0 | Generative center (origin) | 玄 (xuán) |
+| **1** | 1 | First distinction from 0 | 有 (yǒu) |
+| **i** | √−1 | Orthogonal turn; enables rotation | 名 (míng) |
+| **e** | 2.71828... | Smooth self-similar growth | 相生 (xiāng shēng) |
+| **π** | 3.14159... | Half-rotation; traversal between poles | — (measure) |
+| **φ** | 1.61803... | Discrete recursion maximally aperiodic | 常道 (cháng dào) |
+
+### The Canonical Identities
+
+| Identity | Equation | What It Encodes |
+|----------|----------|-----------------|
+| **Euler** | e^(iπ) + 1 = 0 | Contrast (i) + Rotation (π) + Closure (+1) = Origin (0) |
+| **Master** | e^(2iπ/5) − φ·e^(iπ/5) + 1 = 0 | Links continuous (e,i,π) and discrete (φ) constants |
+
+---
+
+## The Three Requirements
+
+*RSM v0.988 Part 0, §0.13*
+
+**Principle:** Persistence requires exactly three structural conditions.
+
+| Requirement | What It Provides | Why Necessary |
+|-------------|------------------|---------------|
+| **Contrast** | Distinction; poles of gradient | Without contrast, no structure (V₀ unspecifiability) |
+| **Rotation** | Dynamic maintenance; orbit | Without rotation, measurement crisis is fatal |
+| **Closure** | Return; persistence | Without closure, rotation dissipates |
+
+### What Falls Out
+
+Given Contrast + Rotation + Closure, you necessarily have:
+- A gradient (from contrast)
+- A center (from rotation—something must be orbited)
+- That center is unoccupiable (from infinite divisibility)
+- That center is generative (from continuous transformation)
+
+**The generative center is not a fourth requirement. It is the geometric consequence of the first three.**
+
+### Euler's Identity as Three Requirements
+
+e^(iπ) + 1 = 0
+
+| Symbol | Requirement |
+|--------|-------------|
+| i | **CONTRAST** — orthogonal distinction |
+| π | **ROTATION** — half-turn traversal |
+| +1 = 0 | **CLOSURE** — return to origin |
+
+---
+
+## Measurement Crisis and Rotation Necessity
+
+*RSM v0.988 Part 0, §0.5b-0.5c*
+
+**Principle:** Static measurement is impossible; rotation is the only coherent response.
+
+### The Measurement Crisis
+
+To measure where you are on a gradient, you need:
+1. A reference point (the center, O₁)
+2. Your distance from that reference
+
+But:
+- O₁ is infinitely divisible—not a fixed location but a limit
+- Your position is infinitely divisible—always between any two measurements
+- The distance between two infinitely divisible non-locations is undefined
+
+**Static position is structurally incoherent.**
+
+### Why Rotation Dissolves the Crisis
+
+| Static Approach | Dynamic Approach (Rotation) |
+|-----------------|----------------------------|
+| Requires fixed position | Requires only direction and movement |
+| Requires completed measurement | Requires only ongoing reference |
+| Impossible (infinite divisibility) | Possible (orbit around center) |
+
+You don't need to know exactly where you are. You only need to maintain orientation *relative to the center*. Keep it on your left, keep moving, and you're in orbit.
+
+**The center doesn't need to be located. It needs to be referenced.**
+
+### DDJ Encoding
+
+This is why 無為 works—not static non-action but dynamic non-forcing. The scythe arcs; the knife pushes. The arc maintains reference without requiring fixed position.
+
+---
+
 *This is Part IV of the Structural Lexicon.*
 *Part V (Pinyin Index) provides alphabetical lookup.*
