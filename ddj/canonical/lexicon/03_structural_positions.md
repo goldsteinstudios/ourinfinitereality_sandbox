@@ -59,6 +59,25 @@ The character depicts absence—what DOESN'T occupy space
      = that which CAN be grasped
 ```
 
+### RSM v0.988 Mapping
+
+| DDJ | Math | Structural Role |
+|-----|------|-----------------|
+| 無 (wú) | 0 | Origin/generative position (not "nothing") |
+| 有 (yǒu) | 1 | First distinction from origin |
+
+**Critical correction:** 無 is NOT "nothing" or "absence."
+
+In RSM v0.988, 無 corresponds to **0 as origin**—the generative position that makes measurement possible. Just as zero is not "nothing" but the reference point of the number line, 無 is not absence but the generative void from which forms emerge.
+
+| Wrong reading | Correct reading |
+|---------------|-----------------|
+| 無 = nothing, emptiness | 無 = 0 (origin, generative position) |
+| 有 = something, existence | 有 = 1 (first distinction from 0) |
+| 無/有 = being vs non-being | 無/有 = origin vs manifestation |
+
+The belly of the potter, the room inside the walls, the hub of the wheel—these are 無 positions. Not empty. **Generative.**
+
 ### The Structural Relationship
 
 Chapter 11 defines it:
