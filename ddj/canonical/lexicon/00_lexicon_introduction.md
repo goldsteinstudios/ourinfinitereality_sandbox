@@ -151,3 +151,36 @@ We just forgot how to read the radicals.
 
 *Lexicon compiled: 2025-11-27*
 *Based on structural analysis of Dao De Jing with Guodian manuscript validation*
+
+---
+
+## Alignment with RSM v0.988
+
+This lexicon documents character structure using radical algebra. The Recursive Structural Model (RSM) v0.988 provides the formal mathematical framework underlying these structural patterns.
+
+### Core Derivation Chain (Locked)
+
+1. **V₀ prohibition** — Absolute void is unspecifiable within contrast-based representation
+2. **Contrast necessity** — Existence (as contrast) is necessary relative to any coherent description
+3. **O₁ structure** — Generative center exists but is unoccupiable (infinite divisibility)
+4. **Rotation necessity** — Measurement crisis forces dynamic reference (rotation around center)
+5. **Three requirements** — Persistence requires Contrast + Rotation + Closure
+
+### DDJ Operator Grammar
+
+| DDJ | Math | Function |
+|-----|------|----------|
+| 名 (míng) | i | Orthogonal distinction (contrast) |
+| 利₁ (lì) | e^(iπ) = −1 | Boundary-creating cut |
+| 反 (fǎn) | +1 | Return operation (closure) |
+| 相生 (xiāng shēng) | e | Continuous mutual generation |
+| 玄 (xuán) | O₁ / 0 | Generative center (not empty) |
+| 有 (yǒu) | 1 | First manifestation |
+| 無 (wú) | 0 (as origin) | Pre-distinction (generative position) |
+
+### Canonical Identities
+
+- **Euler:** e^(iπ) + 1 = 0 → "Contrast. Rotation. Closure."
+- **Master:** e^(2iπ/5) − φ·e^(iπ/5) + 1 = 0 → Links all six constants {0,1,i,e,π,φ}
+
+*Aligned with RSM v0.988 — December 2025*
