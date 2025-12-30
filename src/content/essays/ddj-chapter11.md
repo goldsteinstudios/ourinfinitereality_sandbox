@@ -99,6 +99,7 @@ This misses the **geometric operation** encoded in the character.
 **BUT**: Scythe arcing through field (π-sweep, swath per stroke, completing)
 
 The scythe operator:
+
 1. Plants feet (establishes O, the anchor point)
 2. Extends handle (establishes G, the radius)
 3. Rotates torso (executes the π sweep)
