@@ -22,16 +22,18 @@ tags: ["ddj", "void", "function", "translation"]
 ## The Text
 
 ### Chinese
-三十輻共一轂，當其無，有車之用。
-埏埴以為器，當其無，有器之用。
-鑿戶牖以為室，當其無，有室之用。
-故有之以為利，無之以為用。
+
+> 三十輻共一轂，當其無，有車之用。
+> 埏埴以為器，當其無，有器之用。
+> 鑿戶牖以為室，當其無，有室之用。
+> 故有之以為利，無之以為用。
 
 ### Pinyin
-Sān shí fú gòng yī gǔ, dāng qí wú, yǒu chē zhī yòng.
-Shān zhí yǐ wéi qì, dāng qí wú, yǒu qì zhī yòng.
-Záo hù yǒu yǐ wéi shì, dāng qí wú, yǒu shì zhī yòng.
-Gù yǒu zhī yǐ wéi lì, wú zhī yǐ wéi yòng.
+
+> Sān shí fú gòng yī gǔ, dāng qí wú, yǒu chē zhī yòng.
+> Shān zhí yǐ wéi qì, dāng qí wú, yǒu qì zhī yòng.
+> Záo hù yǒu yǐ wéi shì, dāng qí wú, yǒu shì zhī yòng.
+> Gù yǒu zhī yǐ wéi lì, wú zhī yǐ wéi yòng.
 
 ---
 
