@@ -22,6 +22,35 @@ All breakdowns use traditional radicals, traced to pictographic sources where po
 
 ---
 
+## RSM v0.988 Operator Grammar
+
+The DDJ operator vocabulary maps to mathematical operations in the Recursive Structural Model:
+
+| DDJ Operator | Mathematical Form | Structural Function |
+|--------------|------------------|---------------------|
+| **名 (míng)** | i | Orthogonal cut creating distinction |
+| **利₁ (lì, operator)** | e^(iπ) = −1 | Boundary-creating cut (scythe operation) |
+| **反 (fǎn)** | +1 | Return to equilibrium, completing cycle |
+| **相生 (xiāng shēng)** | e | Natural growth rate, mutual generation |
+| **玄 (xuán)** | 0 | Generative center (unoccupiable) |
+| **有 (yǒu)** | 1 | Structural unity, determinate existence |
+
+### Euler's Identity as Grammar
+
+**e^(iπ) + 1 = 0** decodes as:
+
+| Symbol | DDJ | Structural Role |
+|--------|-----|-----------------|
+| i | 名 | Orthogonal distinction (CONTRAST) |
+| π | — | Half-rotation traversal (ROTATION) |
+| e | 相生 | Continuous self-similar transformation |
+| +1 | 反 | Return operation (CLOSURE) |
+| = 0 | 玄 | Generative center (not "nothing") |
+
+**Compressed:** Contrast. Rotation. Closure.
+
+---
+
 ## 刂/刀 (dāo) — The Blade Operator
 
 **Pictographic origin:** 刀 (dāo) depicts a blade with handle—the curved stroke is the blade edge, the vertical with hook is the grip.
@@ -235,6 +264,15 @@ Result = unification, merging
 ```
 
 **Critical framing:** 反 describes "arriving at opposite," not "= π." Mathematics and DDJ are parallel notation systems. Both needed vocabulary for arriving at the structural complement.
+
+**RSM v0.988 assignment:** 反 = +1 (the return operator that completes the cycle)
+
+In Euler's identity: e^(iπ) + 1 = 0
+- e^(iπ) = −1 (the 利₁ cut, arriving at opposite)
+- +1 = 反 (the return that closes the circuit)
+- = 0 references 玄 (the generative center)
+
+The formula 反者道之動 reads: "+1 IS how the pattern moves."
 
 ### Core Character
 
