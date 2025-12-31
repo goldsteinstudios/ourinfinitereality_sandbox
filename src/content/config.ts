@@ -1,5 +1,23 @@
 import { defineCollection, z } from 'astro:content';
 
+const translations = defineCollection({
+  type: 'content',
+  schema: z.object({
+    chapter: z.number(),
+    chineseTitle: z.string(),
+    englishTitle: z.string(),
+    version: z.string(),
+    lastUpdated: z.string(),
+    rsmVersion: z.string().optional(),
+    changes: z.array(z.object({
+      version: z.string(),
+      date: z.string(),
+      notes: z.string(),
+    })).default([]),
+    tags: z.array(z.string()).default([]),
+  }),
+});
+
 const objects = defineCollection({
   type: 'content',
   schema: z.object({
@@ -30,4 +48,4 @@ const essays = defineCollection({
   }),
 });
 
-export const collections = { objects, essays };
+export const collections = { objects, essays, translations };
