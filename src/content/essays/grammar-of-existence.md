@@ -2,7 +2,7 @@
 title: "The Grammar of Existence"
 subtitle: "What Mathematics Knows About Why You're Here"
 description: "Why is there something rather than nothing? The question dissolves when you examine its terms."
-readingTime: 25
+readTime: 25
 featured: true
 deeper:
   - euler-tao-identity
