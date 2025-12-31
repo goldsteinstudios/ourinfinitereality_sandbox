@@ -48,30 +48,23 @@ At non-perpendicular intersection:
 
 ### The Tree Ring Validation
 
-Tree growth shows this physically:
+Tree growth shows this physically. Rings record **rate variation** in continuous recursion:
 
-```
-Ring boundaries form where ∇G_cambium ⊥ ∇B_seasonal
-```
+| Season | Resources in tree mass | Cell size | Ring appearance |
+|--------|------------------------|-----------|-----------------|
+| Spring | High water, high sugar | Large cells | Light, wide (earlywood) |
+| Summer | Moderate | Medium cells | Transitional |
+| Fall/winter | Frozen water, limited sugar | Small cells | Dark, dense (latewood) |
 
-The perpendicularity condition acts as a **geometric trigger** within continuous flow:
-
-| Season | Angle θ | State |
-|--------|---------|-------|
-| Spring | θ ≈ 0° | Gradients aligned, fast growth |
-| Summer | θ increasing | Gradients diverging |
-| Late summer | θ = 90° | **Perpendicular intersection → latewood transition** |
-| Fall/winter | θ > 90° | Growth cessation |
-
-The ring boundary is **not caused by external seasonal oscillation**—it's **triggered** by perpendicular intersection. The oscillation modulates when perpendicularity occurs, but the geometry determines *where* recursion is possible.
+**Critical:** Recursion is continuous—the tree never stops transforming. Rings record *rate variation*, not start/stop cycles. The seasonal oscillation modulates throughput (how much material flows through the standing wave pattern), not whether recursion occurs.
 
 ### The Universality Claim
 
 This holds across all recursive systems:
 
-| Domain | Gradient (G) | Balance (B) | Perpendicular Event |
-|--------|--------------|-------------|---------------------|
-| Tree anatomy | Cambium (curved) | Medullary rays (radial) | Branch/ring formation |
+| Domain | Gradient (G) | Balance (B) | Rate-modulated pattern |
+|--------|--------------|-------------|------------------------|
+| Tree anatomy | Cambium (curved) | Medullary rays (radial) | Rings record throughput variation |
 | Wheel | Rim (curved) | Spokes (radial) | Spoke-rim attachment |
 | Neural morphology | Chemotactic gradient | Growth cone axis | Dendritic branching |
 | Crystallography | Concentration gradient | Crystal axes | Nucleation |
@@ -447,7 +440,7 @@ The characters are the type signatures.
 The radicals are the operators.
 The chapters are the modules.
 
-And the pattern—rotation around preserved centers, perpendicular intersection enabling recursion, constraint shaping void into function—is visible everywhere, from tree rings to neural branching to planetary formation.
+And the pattern—rotation around preserved centers, constraint shaping void into function—is visible everywhere: tree rings recording continuous throughput variation, neural branching, planetary formation.
 
 ---
 

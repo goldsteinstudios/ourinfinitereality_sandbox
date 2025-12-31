@@ -152,6 +152,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"essays": {
+"between-e-and-phi.md": {
+	id: "between-e-and-phi.md";
+  slug: "between-e-and-phi";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
 "ddj-chapter01.md": {
 	id: "ddj-chapter01.md";
   slug: "ddj-chapter01";
@@ -245,6 +252,78 @@ declare module 'astro:content' {
   collection: "objects";
   data: InferEntrySchema<"objects">
 } & { render(): Render[".mdx"] };
+};
+"translations": {
+"chapter-01.md": {
+	id: "chapter-01.md";
+  slug: "chapter-01";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-02.md": {
+	id: "chapter-02.md";
+  slug: "chapter-02";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-08.md": {
+	id: "chapter-08.md";
+  slug: "chapter-08";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-11.md": {
+	id: "chapter-11.md";
+  slug: "chapter-11";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-22.md": {
+	id: "chapter-22.md";
+  slug: "chapter-22";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-25.md": {
+	id: "chapter-25.md";
+  slug: "chapter-25";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-40.md": {
+	id: "chapter-40.md";
+  slug: "chapter-40";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-42.md": {
+	id: "chapter-42.md";
+  slug: "chapter-42";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-64.md": {
+	id: "chapter-64.md";
+  slug: "chapter-64";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
+"chapter-76.md": {
+	id: "chapter-76.md";
+  slug: "chapter-76";
+  body: string;
+  collection: "translations";
+  data: InferEntrySchema<"translations">
+} & { render(): Render[".md"] };
 };
 
 	};

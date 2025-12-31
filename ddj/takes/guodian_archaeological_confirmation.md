@@ -250,7 +250,7 @@ Tiger stripes are *boundaries*—they mark where tiger ends and not-tiger begins
 
 Not featureless blank—a defined hollow, a shaped absence, an emptiness you can *see* because it has edges.
 
-### Why P₀ (Absolute Void) Is Impossible
+### Why V₀ (Absolute Void) Is Unspecifiable
 
 **If absolute void existed**, it would have no boundary. No pattern. No tiger stripes.
 
@@ -258,7 +258,7 @@ Not featureless blank—a defined hollow, a shaped absence, an emptiness you can
 
 The moment you say "there's the void," you've drawn a boundary. You've created void/not-void. You've instantiated 虍—pattern in the emptiness.
 
-**P₀ is logically impossible because naming it destroys it.**
+**V₀ is unspecifiable because naming it destroys it.**
 
 This is why the RSM axiom is ∀n, ∀ε>0, ∃δ<ε—no matter how close you get to the center, there's always more distance. You can't *arrive* at absolute void. You can only asymptotically approach while the gradient structure holds the approach open.
 
@@ -286,7 +286,7 @@ Air enters the sack, gets compressed, flows through the tube, produces output. R
 
 The moment you have void, you have its boundary. The moment you have boundary, you have structure. The moment you have structure, you have gradient. The moment you have gradient and any perturbation, you have circulation.
 
-P₀ → O₁ → G₁ → Z₁
+V₀ → O₁ → G₁ → Z₁
 
 Not a temporal sequence—a logical necessity. You can't have the first without immediately having all the others.
 
@@ -413,7 +413,7 @@ By 300 BCE, these principles were already systematized:
 | Self-organization | Seven 自X operations | Rₙ self-maintenance |
 | Co-emergence | Six 相X operations | G ⊥ B at Pₙ |
 | Functional void | 虛而不屈 | O₁ (origin) |
-| Self-grounding | 道法自然 | P₀ → R recursion |
+| Self-grounding | 道法自然 | V₀ → R recursion |
 
 ---
 
