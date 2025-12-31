@@ -16,7 +16,14 @@ interface Props {
 
 const { translation } = Astro.props;
 const { Content } = await translation.render();
-const { chapter, chineseTitle, englishTitle, version, lastUpdated, rsmVersion, changes } = translation.data;
+const { chapter, chineseTitle, englishTitle, version, lastUpdated, rsmVersion, confidence, confidenceNotes, changes } = translation.data;
+
+const confidenceColors: Record<string, string> = {
+  locked: 'var(--color-locked, #22c55e)',
+  strong: 'var(--color-strong, #3b82f6)',
+  plausible: 'var(--color-plausible, #eab308)',
+  speculative: 'var(--color-speculative, #ef4444)',
+};
 
 // Get all translations for prev/next navigation
 const allTranslations = await getCollection('translations');
@@ -43,6 +50,12 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
             <span>RSM {rsmVersion}</span>
           </>
         )}
+        {confidence && (
+          <>
+            <span>•</span>
+            <span style={`color: ${confidenceColors[confidence]}`}>{confidence}</span>
+          </>
+        )}
       </div>
     </header>
 
@@ -50,6 +63,24 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
     <div class="prose prose-themed prose-lg max-w-none">
       <Content />
     </div>
+
+    <!-- Confidence Notes -->
+    {confidenceNotes && confidenceNotes.length > 0 && (
+      <section class="mt-12 pt-8 themed-border border-t">
+        <h2 class="text-lg font-bold mb-4">Confidence Assessment</h2>
+        <div class="space-y-3 text-sm">
+          {confidenceNotes.map((cn) => (
+            <div class="themed-surface border rounded p-3">
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">{cn.element}</span>
+                <span style={`color: ${confidenceColors[cn.level]}`}>{cn.level}</span>
+              </div>
+              <p class="themed-text-secondary">{cn.note}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
 
     <!-- Version History -->
     {changes.length > 0 && (
