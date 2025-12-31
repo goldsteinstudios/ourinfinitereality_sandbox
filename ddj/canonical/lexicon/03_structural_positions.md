@@ -287,6 +287,21 @@ This is why 知常曰明 (knowing the constant is called clarity). Clarity is se
 
 **Critical clarification:** These stances operate from the **常 (implicit) register**—*prior to* framing. They are ways of looking that reveal structural information, not coordinates within a frame. They differ from 無名/有名, which are *post-distinction* poles within the 可 (manifest) register.
 
+### The Geometric Operation
+
+The two stances are **geometrically orthogonal**, not logically opposed:
+
+| Stance | Operation | What You Track | What You Learn |
+|--------|-----------|----------------|----------------|
+| **常無欲 → 妙** | Fix center, vary boundary | What persists through change | Relational patterns, flows, connections |
+| **常有欲 → 徼** | Fix boundary, vary center | Where things stop | Edges, limits, what defines separation |
+
+**妙-observation (fix center, vary boundary):**
+You hold the reference point stable and watch what flows through it. The tree is carbon cycling through a standing pattern. The wheel is spokes maintaining rotation around a fixed hub. You see *persistence as process*.
+
+**徼-observation (fix boundary, vary center):**
+You hold the edge stable and look inward. Where exactly is the tree's boundary? The bark is dead, the interior is dead—only the cambium (a dimensionless edge) is alive. You see *boundaries as paradoxes*.
+
 ### The Binary Assumption Challenge
 
 Western logic operates on what seems self-evident:
