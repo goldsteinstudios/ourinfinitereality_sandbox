@@ -2,16 +2,10 @@
 title: "The Grammar of Existence"
 subtitle: "What Mathematics Knows About Why You're Here"
 description: "Why is there something rather than nothing? The question dissolves when you examine its terms."
-readTime: 25
-featured: true
-deeper:
-  - euler-tao-identity
-  - between-e-and-phi
-lateral:
-  - topology-of-being-alive
-  - standing-wave-pattern
-surface:
-  - ddj-chapter11
+readTime: "25 min"
+date: "December 2025"
+order: 0
+tags: ["rsm", "mathematics", "philosophy", "introduction"]
 ---
 
 ## Introduction: The Illusion of Stillness
