@@ -1,0 +1,22 @@
+set_id: "theorems"
+set_name: "RSM Core Theorems"
+version: "0.993"
+description: "Extracted core theorems from RSM including V₀ unspecifiability, O₁ necessity, rotation, three requirements, and φ selection"
+file_count: 7
+primary_file: "t01_v0_unspecifiability.md"
+entry_point: "t01_v0_unspecifiability.md"
+dependencies:
+  - "rsm-core"
+keywords:
+  - "theorem"
+  - "V₀"
+  - "O₁"
+  - "rotation"
+  - "φ"
+  - "Hurwitz"
+  - "ex nihilo"
+notebooklm_load_with: []
+last_updated: "2026-01-01"
+authors:
+  - "Will Goldstein"
+  - "Claude"

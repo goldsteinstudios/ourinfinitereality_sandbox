@@ -1,0 +1,20 @@
+set_id: "rsm-core"
+set_name: "RSM Core Framework"
+version: "0.993"
+description: "Core RSM documents including the formal treatment, operator grammar, notation guide, and key derivations"
+file_count: 5
+primary_file: "01_rsm.md"
+entry_point: "04_introduction.md"
+dependencies: []
+keywords:
+  - "RSM"
+  - "recursive structural model"
+  - "V₀ prohibition"
+  - "operator grammar"
+  - "Euler identity"
+  - "φ derivation"
+notebooklm_load_with: []
+last_updated: "2026-01-01"
+authors:
+  - "Will Goldstein"
+  - "Claude"

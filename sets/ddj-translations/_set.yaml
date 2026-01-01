@@ -1,0 +1,21 @@
+set_id: "ddj-translations"
+set_name: "DDJ Structural Translations"
+version: "0.993"
+description: "DDJ chapter translations with confidence tracking and RSM structural mappings"
+file_count: 10
+primary_file: "trans_01.md"
+entry_point: "trans_01.md"
+dependencies:
+  - "rsm-core"
+  - "ddj-lexicon"
+keywords:
+  - "DDJ"
+  - "translation"
+  - "structural reading"
+  - "confidence tracking"
+notebooklm_load_with:
+  - "ddj-lexicon"
+last_updated: "2026-01-01"
+authors:
+  - "Will Goldstein"
+  - "Claude"
