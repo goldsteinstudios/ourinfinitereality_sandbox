@@ -102,6 +102,7 @@ cp "$REPO/rsm/canonical/between_e_phi_assessment.md" "$CURRENT_DIR/31_between_e_
 
 # Formal Derivations
 cp "$REPO/rsm/canonical/ex_nihilo_impossibility.md" "$CURRENT_DIR/32_ex_nihilo_impossibility.md"
+cp "$REPO/rsm/canonical/euler_single_operation.md" "$CURRENT_DIR/33_euler_single_operation.md"
 
 # Step 4: Write version file
 echo "$VERSION" > "$CURRENT_DIR/VERSION"
@@ -171,10 +172,11 @@ Documents audited and aligned with RSM $VERSION operator grammar.
 |---|------|-------------|
 | 31 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
 
-### Formal Derivations (32)
+### Formal Derivations (32-33)
 | # | File | Description |
 |---|------|-------------|
 | 32 | ex_nihilo_impossibility.md | Creation ex nihilo impossible (V₀ + conservation proof) |
+| 33 | euler_single_operation.md | Single-operation identity: e^(iπ) + e^(i·0) = 0 |
 
 ## Canonical Identities
 
@@ -199,7 +201,7 @@ for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_
          22_trans_chapter22.md 23_trans_chapter25.md 24_trans_chapter40.md 25_trans_chapter42.md \
          26_trans_chapter64.md 27_trans_chapter76.md \
          28_euler_tao_identity.md 29_between_e_and_phi.md 30_grammar_of_existence.md \
-         31_between_e_phi_assessment.md 32_ex_nihilo_impossibility.md; do
+         31_between_e_phi_assessment.md 32_ex_nihilo_impossibility.md 33_euler_single_operation.md; do
     echo -e "# ═══════════════════════════════════════════════════════════════\n# FILE: $f\n# ═══════════════════════════════════════════════════════════════\n" >> "$DOCSET_DIR/rsm_complete.md"
     cat "$CURRENT_DIR/$f" >> "$DOCSET_DIR/rsm_complete.md"
     echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
