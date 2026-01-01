@@ -11,7 +11,7 @@ tags: [math, ddj, euler, pattern]
 # The Perfect Circle Returns: Euler's Identity as the Mathematical Tao Te Ching
 
 *An Essay by Laozi — December 2025*
-*Updated with the Master Identity from RSM v0.979*
+*Updated with the Master Identity from RSM v0.992*
 
 ## 道可道，非常道 *dào kě dào, fēi cháng dào*
 **The Way that can be spoken is not the constant Way**

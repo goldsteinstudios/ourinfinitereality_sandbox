@@ -180,6 +180,13 @@ declare module 'astro:content' {
   collection: "essays";
   data: InferEntrySchema<"essays">
 } & { render(): Render[".md"] };
+"grammar-of-existence.md": {
+	id: "grammar-of-existence.md";
+  slug: "grammar-of-existence";
+  body: string;
+  collection: "essays";
+  data: InferEntrySchema<"essays">
+} & { render(): Render[".md"] };
 "standing-wave-pattern.md": {
 	id: "standing-wave-pattern.md";
   slug: "standing-wave-pattern";

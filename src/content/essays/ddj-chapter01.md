@@ -10,7 +10,7 @@ tags: ["ddj", "geometry", "translation"]
 
 ### 道德經 第一章
 
-> **RSM v0.988 Reference:** This chapter establishes the foundational framework. Key operator mappings: 名 míng = i (orthogonal distinction), 玄 xuán = 0 (generative center, unoccupiable), 有 yǒu = 1 (structural unity). The 無名 wú míng / 有名 yǒu míng complementarity demonstrates Postulate 4 (X·Y=k): neither pole exists without the other.
+> **RSM v0.992 Reference:** This chapter establishes the foundational framework. Key operator mappings: 名 míng = i (orthogonal distinction), 玄 xuán = 0 (generative center, unoccupiable), 有 yǒu = 1 (structural unity). The 無名 wú míng / 有名 yǒu míng complementarity demonstrates Postulate 4 (X·Y=k): neither pole exists without the other.
 
 > **Epistemic Status (per Appendix F):** Tier 4 (Structural Analogy). DDJ-RSM correspondences are interpretive pattern recognition, not derivations.
 

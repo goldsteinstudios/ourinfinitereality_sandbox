@@ -8,6 +8,8 @@ order: 3
 tags: ["philosophy", "synthesis", "epistemology"]
 ---
 
+> **RSM v0.992 Alignment:** This essay explores the structural gap between what is and what can be said—the 常/可 distinction. 玄 (paradox) is the operator that holds this gap open. What cannot be occupied (O₁) is what makes everything else possible.
+
 ## The Shape of the Problem
 
 Here's something strange: the closer you look at anything, the more it recedes.
