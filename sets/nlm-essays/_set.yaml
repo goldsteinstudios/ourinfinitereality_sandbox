@@ -1,0 +1,24 @@
+set_id: "nlm-essays"
+set_name: "NotebookLM Essays"
+version: "0.993"
+description: "Technical essays on RSM applications, interpretations, and connections"
+file_count: 3
+primary_file: "01_the_loom_and_the_forge.md"
+entry_point: "01_the_loom_and_the_forge.md"
+source: "notebooklm"
+generation_date: "2026-01-05"
+dependencies:
+  - "rsm-core"
+keywords:
+  - "essay"
+  - "wu wei"
+  - "Laozi"
+  - "application"
+notebooklm_load_with:
+  - "rsm-core"
+  - "nlm-core"
+last_updated: "2026-01-05"
+authors:
+  - "NotebookLM"
+  - "Will Goldstein"
+  - "Claude"

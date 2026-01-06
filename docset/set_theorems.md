@@ -1,5 +1,5 @@
 # RSM Core Theorems — Combined Document
-## Version 0.993 | Generated 2026-01-01
+## Version 0.993 | Generated 2026-01-05
 
 ---
 
