@@ -1,0 +1,360 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Load the generated data at build time
+import guodianData from '../../public/data/guodian_interactive.json';
+
+const { metadata, slips } = guodianData;
+const sortedSlips = Object.values(slips).sort((a: any, b: any) => a.slip - b.slip);
+---
+
+<BaseLayout title="Guodian Bundle A — Interactive Text">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-2">郭店老子甲</h1>
+      <p class="text-xl themed-text-muted mb-2">Guodian Laozi A — Interactive Text</p>
+      <p class="themed-text-muted">
+        {metadata.slips} bamboo slips · {metadata.total_positions} characters · c. 300 BCE
+      </p>
+    </header>
+
+    <!-- Instructions -->
+    <section class="mb-8 themed-surface border rounded-lg p-4 text-sm">
+      <p class="themed-text-muted">
+        <strong>Hover over characters</strong> to see pinyin, radical decomposition, and structural analysis.
+        <span class="text-amber-600 dark:text-amber-400">■</span> marks variant forms (Guodian differs from received text).
+      </p>
+    </section>
+
+    <!-- View Toggle -->
+    <div class="mb-6 flex gap-4 justify-center">
+      <button id="view-continuous" class="px-4 py-2 rounded border themed-surface font-medium view-toggle active">
+        Continuous Text
+      </button>
+      <button id="view-slips" class="px-4 py-2 rounded border themed-surface font-medium view-toggle">
+        By Slip
+      </button>
+    </div>
+
+    <!-- Continuous View -->
+    <section id="continuous-view" class="mb-12">
+      <div class="guodian-text text-2xl leading-relaxed">
+        {sortedSlips.map((slip: any) => (
+          <span class="slip-group" data-slip={slip.slip} data-chapters={slip.chapters.join(',')}>
+            {slip.characters.map((char: any) => (
+              <span
+                class={`char-hover ${char.is_variant ? 'variant' : ''} ${char.display === '○' || char.display === '□' ? 'lacuna' : ''}`}
+                data-guodian={char.guodian || ''}
+                data-received={char.received || ''}
+                data-pinyin={char.pinyin || ''}
+                data-radicals={JSON.stringify(char.radicals || [])}
+                data-substrate={char.substrate || ''}
+                data-operator={char.operator || ''}
+                data-meaning={char.meaning || ''}
+                data-breakdown={char.breakdown || ''}
+              >{char.display}</span>
+            ))}
+            <span class="slip-break text-xs themed-text-muted align-super">|{slip.slip}</span>
+          </span>
+        ))}
+      </div>
+    </section>
+
+    <!-- Slip View (hidden by default) -->
+    <section id="slips-view" class="mb-12 hidden">
+      <div class="grid gap-6">
+        {sortedSlips.map((slip: any) => (
+          <div class="themed-surface border rounded-lg p-4">
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-bold">Slip {slip.slip}</span>
+              <span class="text-sm themed-text-muted">
+                Ch. {slip.chapters.join(', ')}
+              </span>
+            </div>
+            <div class="guodian-text text-2xl">
+              {slip.characters.map((char: any) => (
+                <span
+                  class={`char-hover ${char.is_variant ? 'variant' : ''} ${char.display === '○' || char.display === '□' ? 'lacuna' : ''}`}
+                  data-guodian={char.guodian || ''}
+                  data-received={char.received || ''}
+                  data-pinyin={char.pinyin || ''}
+                  data-radicals={JSON.stringify(char.radicals || [])}
+                  data-substrate={char.substrate || ''}
+                  data-operator={char.operator || ''}
+                  data-meaning={char.meaning || ''}
+                  data-breakdown={char.breakdown || ''}
+                >{char.display}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Tooltip (hidden, positioned via JS) -->
+    <div id="char-tooltip" class="char-tooltip hidden">
+      <div class="tooltip-char text-3xl font-bold mb-2"></div>
+      <div class="tooltip-pinyin text-lg mb-2"></div>
+      <div class="tooltip-variant text-sm text-amber-600 dark:text-amber-400 mb-2 hidden"></div>
+      <div class="tooltip-radicals text-sm mb-2"></div>
+      <div class="tooltip-meaning text-sm themed-text-muted"></div>
+    </div>
+
+    <!-- Legend -->
+    <section class="mb-12 themed-surface border rounded-lg p-6">
+      <h2 class="font-bold mb-4">Legend</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <div>
+          <span class="char-hover inline-block">道</span>
+          <span class="themed-text-muted ml-2">Regular character</span>
+        </div>
+        <div>
+          <span class="char-hover variant inline-block">返</span>
+          <span class="themed-text-muted ml-2">Variant form</span>
+        </div>
+        <div>
+          <span class="char-hover lacuna inline-block">○</span>
+          <span class="themed-text-muted ml-2">Lacuna/damage</span>
+        </div>
+        <div>
+          <span class="slip-break text-xs themed-text-muted">|37</span>
+          <span class="themed-text-muted ml-2">Slip boundary</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="mb-12 text-center">
+      <h2 class="text-xl font-bold mb-4">Bundle A Statistics</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="themed-surface border rounded-lg p-4">
+          <div class="text-2xl font-bold">{metadata.slips}</div>
+          <div class="text-sm themed-text-muted">Bamboo Slips</div>
+        </div>
+        <div class="themed-surface border rounded-lg p-4">
+          <div class="text-2xl font-bold">{metadata.total_positions}</div>
+          <div class="text-sm themed-text-muted">Characters</div>
+        </div>
+        <div class="themed-surface border rounded-lg p-4">
+          <div class="text-2xl font-bold">18</div>
+          <div class="text-sm themed-text-muted">DDJ Chapters</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-4 text-center">Related</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <a href="/ddj" class="block themed-surface border rounded-lg p-6 transition-colors text-center">
+          <p class="font-bold mb-2">Structural Translations</p>
+          <p class="text-sm themed-text-muted">Full chapter translations with RSM alignment.</p>
+        </a>
+        <a href="/essays" class="block themed-surface border rounded-lg p-6 transition-colors text-center">
+          <p class="font-bold mb-2">Essays</p>
+          <p class="text-sm themed-text-muted">Commentary on specific chapters and principles.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center themed-text-muted text-sm themed-border border-t pt-8">
+      <p class="italic">反者道之動也。弱也者道之用也。</p>
+      <p class="mt-2">The geometry was always in the bamboo.</p>
+    </footer>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .guodian-text {
+    font-family: "Noto Serif SC", "Source Han Serif CN", serif;
+    line-height: 1.8;
+  }
+
+  .char-hover {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  .char-hover:hover {
+    background-color: var(--color-accent);
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .char-hover.variant {
+    color: var(--color-accent);
+    border-bottom: 2px solid currentColor;
+  }
+
+  .char-hover.lacuna {
+    opacity: 0.4;
+  }
+
+  .slip-break {
+    margin: 0 0.25em;
+    opacity: 0.5;
+  }
+
+  .slip-group {
+    display: inline;
+  }
+
+  /* Tooltip styles */
+  .char-tooltip {
+    position: fixed;
+    z-index: 1000;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 280px;
+    pointer-events: none;
+  }
+
+  .char-tooltip.hidden {
+    display: none;
+  }
+
+  .tooltip-char {
+    text-align: center;
+    font-family: "Noto Serif SC", "Source Han Serif CN", serif;
+  }
+
+  .tooltip-pinyin {
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* View toggle */
+  .view-toggle {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+
+  .view-toggle.active {
+    opacity: 1;
+    border-color: var(--color-accent);
+  }
+
+  .view-toggle:hover {
+    opacity: 0.8;
+  }
+</style>
+
+<script>
+  // View toggle functionality
+  const continuousBtn = document.getElementById('view-continuous');
+  const slipsBtn = document.getElementById('view-slips');
+  const continuousView = document.getElementById('continuous-view');
+  const slipsView = document.getElementById('slips-view');
+
+  continuousBtn?.addEventListener('click', () => {
+    continuousView?.classList.remove('hidden');
+    slipsView?.classList.add('hidden');
+    continuousBtn?.classList.add('active');
+    slipsBtn?.classList.remove('active');
+  });
+
+  slipsBtn?.addEventListener('click', () => {
+    slipsView?.classList.remove('hidden');
+    continuousView?.classList.add('hidden');
+    slipsBtn?.classList.add('active');
+    continuousBtn?.classList.remove('active');
+  });
+
+  // Tooltip functionality
+  const tooltip = document.getElementById('char-tooltip');
+  const tooltipChar = tooltip?.querySelector('.tooltip-char');
+  const tooltipPinyin = tooltip?.querySelector('.tooltip-pinyin');
+  const tooltipVariant = tooltip?.querySelector('.tooltip-variant');
+  const tooltipRadicals = tooltip?.querySelector('.tooltip-radicals');
+  const tooltipMeaning = tooltip?.querySelector('.tooltip-meaning');
+
+  document.querySelectorAll('.char-hover').forEach(el => {
+    el.addEventListener('mouseenter', (e) => {
+      const target = e.target as HTMLElement;
+      const guodian = target.dataset.guodian || '';
+      const received = target.dataset.received || '';
+      const pinyin = target.dataset.pinyin || '';
+      const radicals = JSON.parse(target.dataset.radicals || '[]');
+      const substrate = target.dataset.substrate || '';
+      const operator = target.dataset.operator || '';
+      const meaning = target.dataset.meaning || '';
+      const breakdown = target.dataset.breakdown || '';
+
+      // Skip empty/lacuna characters
+      if (guodian === '○' || guodian === '□' || !guodian) {
+        return;
+      }
+
+      // Set content
+      if (tooltipChar) tooltipChar.textContent = guodian;
+      if (tooltipPinyin) tooltipPinyin.textContent = pinyin || '—';
+
+      // Variant info
+      if (tooltipVariant) {
+        if (guodian !== received && received) {
+          tooltipVariant.textContent = `Variant of: ${received}`;
+          tooltipVariant.classList.remove('hidden');
+        } else {
+          tooltipVariant.classList.add('hidden');
+        }
+      }
+
+      // Radicals
+      if (tooltipRadicals) {
+        let radicalText = '';
+        if (radicals.length > 0) {
+          radicalText = radicals.map((r: any) => `${r.component} (${r.meaning})`).join(' + ');
+        } else if (substrate && operator) {
+          radicalText = `${substrate} + ${operator}`;
+        }
+        if (radicalText) {
+          tooltipRadicals.innerHTML = `<strong>Components:</strong> ${radicalText}`;
+          tooltipRadicals.classList.remove('hidden');
+        } else {
+          tooltipRadicals.classList.add('hidden');
+        }
+      }
+
+      // Meaning
+      if (tooltipMeaning) {
+        if (meaning || breakdown) {
+          tooltipMeaning.innerHTML = meaning || breakdown;
+          tooltipMeaning.classList.remove('hidden');
+        } else {
+          tooltipMeaning.classList.add('hidden');
+        }
+      }
+
+      // Position tooltip
+      const rect = target.getBoundingClientRect();
+      if (tooltip) {
+        tooltip.style.left = `${rect.left}px`;
+        tooltip.style.top = `${rect.bottom + 8}px`;
+        tooltip.classList.remove('hidden');
+
+        // Adjust if off-screen
+        const tooltipRect = tooltip.getBoundingClientRect();
+        if (tooltipRect.right > window.innerWidth) {
+          tooltip.style.left = `${window.innerWidth - tooltipRect.width - 16}px`;
+        }
+        if (tooltipRect.bottom > window.innerHeight) {
+          tooltip.style.top = `${rect.top - tooltipRect.height - 8}px`;
+        }
+      }
+    });
+
+    el.addEventListener('mouseleave', () => {
+      tooltip?.classList.add('hidden');
+    });
+  });
+</script>
