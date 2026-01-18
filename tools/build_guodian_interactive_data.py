@@ -9,6 +9,8 @@ Sources:
 - radicals.yaml: Radical decomposition
 - verified_transcriptions.json: Character positions on slips
 - glossary entries: Character-level details
+- Guodian Strip Glyphs: Bamboo slip glyph images
+- HUST-OBC: Oracle bone character images
 """
 
 import json
@@ -19,6 +21,59 @@ from collections import defaultdict
 from typing import Dict, List, Any, Optional
 
 PROJECT_ROOT = Path(__file__).parent.parent
+GLYPH_DIR = PROJECT_ROOT / "public" / "glyphs" / "guodian"
+ORACLE_DIR = PROJECT_ROOT / "data" / "HUST-OBC" / "HUST-OBC" / "deciphered"
+
+
+def get_glyph_path(slip: int, position: int) -> Optional[str]:
+    """Get the web path for a Guodian glyph image."""
+    # Filename pattern: 郭店簡_01A-老子甲_[slip]_01A-[slip_padded]-[position].png
+    slip_padded = f"{slip:02d}"
+    position_padded = f"{position:02d}"
+    filename = f"郭店簡_01A-老子甲_{slip}_01A-{slip_padded}-{position_padded}.png"
+
+    file_path = GLYPH_DIR / filename
+    if file_path.exists():
+        return f"/glyphs/guodian/{filename}"
+    return None
+
+
+def load_oracle_bone_mapping() -> Dict[str, str]:
+    """Load character to oracle bone ID mapping."""
+    mapping_file = ORACLE_DIR / "chinese_to_ID.json"
+    if not mapping_file.exists():
+        return {}
+    with open(mapping_file, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_oracle_bone_paths(char: str, char_to_id: Dict[str, str]) -> List[str]:
+    """Get web paths for oracle bone glyph images for a character."""
+    if not char or char not in char_to_id:
+        return []
+
+    ob_id = char_to_id[char]
+    paths = []
+
+    # Check for the ID folder (might be combined like "0011_0012_0013")
+    for folder in ORACLE_DIR.iterdir():
+        if not folder.is_dir():
+            continue
+        # Check if this ID is in the folder name
+        if ob_id in folder.name.split('_'):
+            # Get all PNG files in the folder
+            for png in sorted(folder.glob("*.png"))[:5]:  # Limit to 5 examples
+                paths.append(f"/glyphs/oracle/{folder.name}/{png.name}")
+            break
+
+    # Direct folder match
+    if not paths:
+        direct_folder = ORACLE_DIR / ob_id
+        if direct_folder.exists():
+            for png in sorted(direct_folder.glob("*.png"))[:5]:
+                paths.append(f"/glyphs/oracle/{ob_id}/{png.name}")
+
+    return paths
 
 
 def load_radicals_yaml() -> Dict:
@@ -108,7 +163,8 @@ def build_slip_data(
     transcriptions: Dict,
     radical_lookup: Dict,
     pinyin_lookup: Dict,
-    glossary: Dict
+    glossary: Dict,
+    oracle_mapping: Dict[str, str]
 ) -> Dict[int, List[Dict]]:
     """Build slip-by-slip character data."""
     slips = {}
@@ -150,6 +206,13 @@ def build_slip_data(
             gloss = glossary.get(char, {})
             decomposition = gloss.get("radical_decomposition", {}).get("standard", {}).get("components", [])
 
+            # Get glyph path
+            glyph_path = get_glyph_path(slip_num, position)
+
+            # Get oracle bone paths (use received char for lookup)
+            lookup_char = rec_char if rec_char else char
+            oracle_paths = get_oracle_bone_paths(lookup_char, oracle_mapping)
+
             char_data = {
                 "position": position,
                 "guodian": guo_char,
@@ -162,6 +225,8 @@ def build_slip_data(
                 "operator": radicals.get("operator", ""),
                 "meaning": radicals.get("meaning", ""),
                 "breakdown": radicals.get("breakdown", ""),
+                "glyph_path": glyph_path,
+                "oracle_bone_paths": oracle_paths,
             }
 
             slips[slip_num].append(char_data)
@@ -205,11 +270,13 @@ def build_interactive_data() -> Dict:
     transcriptions = load_verified_transcriptions()
     csv_data = load_guodian_csv()
     glossary = load_glossary_entries()
+    oracle_mapping = load_oracle_bone_mapping()
 
     print(f"  Radicals: {len(radicals.get('substrates', {}))} substrate families")
     print(f"  Transcriptions: {len(transcriptions)} chapters")
     print(f"  CSV rows: {len(csv_data)}")
     print(f"  Glossary entries: {len(glossary)}")
+    print(f"  Oracle bone mappings: {len(oracle_mapping)} characters")
 
     # Build lookups
     radical_lookup = build_radical_lookup(radicals)
@@ -225,7 +292,7 @@ def build_interactive_data() -> Dict:
     print(f"  Pinyin lookup: {len(pinyin_lookup)} characters")
 
     # Build slip data
-    slips = build_slip_data(transcriptions, radical_lookup, pinyin_lookup, glossary)
+    slips = build_slip_data(transcriptions, radical_lookup, pinyin_lookup, glossary, oracle_mapping)
 
     print(f"\nBuilt data for {len(slips)} slips")
 
