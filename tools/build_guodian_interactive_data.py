@@ -163,6 +163,7 @@ def build_slip_data(
     transcriptions: Dict,
     radical_lookup: Dict,
     pinyin_lookup: Dict,
+    meaning_lookup: Dict,
     glossary: Dict,
     oracle_mapping: Dict[str, str]
 ) -> Dict[int, List[Dict]]:
@@ -196,7 +197,6 @@ def build_slip_data(
                 if not pinyin and char in glossary:
                     p = glossary[char].get("pinyin", "")
                     if p:
-                        # Convert "dao4" to "dào" format if needed
                         pinyin = p
 
             # Get radicals
@@ -213,6 +213,14 @@ def build_slip_data(
             lookup_char = rec_char if rec_char else char
             oracle_paths = get_oracle_bone_paths(lookup_char, oracle_mapping)
 
+            # Get meaning - prefer radicals.yaml, fall back to character dictionary
+            meaning = radicals.get("meaning", "")
+            if not meaning:
+                meaning = meaning_lookup.get(char, "")
+                # Also try received character
+                if not meaning and rec_char:
+                    meaning = meaning_lookup.get(rec_char, "")
+
             char_data = {
                 "position": position,
                 "guodian": guo_char,
@@ -223,7 +231,7 @@ def build_slip_data(
                 "radicals": decomposition if decomposition else [],
                 "substrate": radicals.get("substrate", ""),
                 "operator": radicals.get("operator", ""),
-                "meaning": radicals.get("meaning", ""),
+                "meaning": meaning,
                 "breakdown": radicals.get("breakdown", ""),
                 "glyph_path": glyph_path,
                 "oracle_bone_paths": oracle_paths,
@@ -238,28 +246,14 @@ def build_slip_data(
     return slips
 
 
-def add_common_pinyin() -> Dict[str, str]:
-    """Common character pinyin not in other sources."""
-    return {
-        "道": "dào", "德": "dé", "之": "zhī", "也": "yě", "者": "zhě",
-        "而": "ér", "不": "bù", "以": "yǐ", "為": "wéi", "其": "qí",
-        "所": "suǒ", "於": "yú", "是": "shì", "則": "zé", "故": "gù",
-        "有": "yǒu", "無": "wú", "萬": "wàn", "物": "wù", "生": "shēng",
-        "天": "tiān", "下": "xià", "人": "rén", "民": "mín", "聖": "shèng",
-        "大": "dà", "小": "xiǎo", "上": "shàng", "中": "zhōng", "長": "cháng",
-        "知": "zhī", "善": "shàn", "名": "míng", "言": "yán", "行": "xíng",
-        "事": "shì", "動": "dòng", "靜": "jìng", "強": "qiáng", "弱": "ruò",
-        "柔": "róu", "剛": "gāng", "反": "fǎn", "返": "fǎn", "復": "fù",
-        "用": "yòng", "功": "gōng", "成": "chéng", "敗": "bài", "始": "shǐ",
-        "終": "zhōng", "難": "nán", "易": "yì", "高": "gāo", "和": "hé",
-        "音": "yīn", "聲": "shēng", "先": "xiān", "後": "hòu", "相": "xiāng",
-        "形": "xíng", "盈": "yíng", "虛": "xū", "實": "shí", "常": "cháng",
-        "恆": "héng", "亡": "wáng", "又": "yòu", "古": "gǔ", "今": "jīn",
-        "皆": "jiē", "此": "cǐ", "亓": "qí", "已": "yǐ", "居": "jū",
-        "弗": "fú", "猶": "yóu", "墮": "suí", "城": "chéng", "型": "xíng",
-        "浧": "yíng", "拃": "zuò", "志": "zhì", "僮": "dòng", "溺": "ruò",
-        "甬": "yòng", "勿": "wù", "智": "zhì",
-    }
+def load_character_dictionary() -> Dict[str, Dict]:
+    """Load the comprehensive character dictionary."""
+    dict_path = PROJECT_ROOT / "data" / "ddj" / "character_dictionary.json"
+    if not dict_path.exists():
+        return {}
+    with open(dict_path, encoding="utf-8") as f:
+        data = json.load(f)
+        return data.get("characters", {})
 
 
 def build_interactive_data() -> Dict:
@@ -271,28 +265,36 @@ def build_interactive_data() -> Dict:
     csv_data = load_guodian_csv()
     glossary = load_glossary_entries()
     oracle_mapping = load_oracle_bone_mapping()
+    char_dict = load_character_dictionary()
 
     print(f"  Radicals: {len(radicals.get('substrates', {}))} substrate families")
     print(f"  Transcriptions: {len(transcriptions)} chapters")
     print(f"  CSV rows: {len(csv_data)}")
     print(f"  Glossary entries: {len(glossary)}")
     print(f"  Oracle bone mappings: {len(oracle_mapping)} characters")
+    print(f"  Character dictionary: {len(char_dict)} characters")
 
     # Build lookups
     radical_lookup = build_radical_lookup(radicals)
     pinyin_lookup = build_pinyin_lookup(csv_data)
 
-    # Add common pinyin
-    common_pinyin = add_common_pinyin()
-    for char, py in common_pinyin.items():
-        if char not in pinyin_lookup:
-            pinyin_lookup[char] = py
+    # Add pinyin from character dictionary (primary source now)
+    for char, data in char_dict.items():
+        if data.get("pinyin") and char not in pinyin_lookup:
+            pinyin_lookup[char] = data["pinyin"]
+
+    # Build meaning lookup from character dictionary
+    meaning_lookup = {}
+    for char, data in char_dict.items():
+        if data.get("meaning"):
+            meaning_lookup[char] = data["meaning"]
 
     print(f"  Radical lookup: {len(radical_lookup)} characters")
     print(f"  Pinyin lookup: {len(pinyin_lookup)} characters")
+    print(f"  Meaning lookup: {len(meaning_lookup)} characters")
 
     # Build slip data
-    slips = build_slip_data(transcriptions, radical_lookup, pinyin_lookup, glossary, oracle_mapping)
+    slips = build_slip_data(transcriptions, radical_lookup, pinyin_lookup, meaning_lookup, glossary, oracle_mapping)
 
     print(f"\nBuilt data for {len(slips)} slips")
 

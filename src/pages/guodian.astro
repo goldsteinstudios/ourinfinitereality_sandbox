@@ -151,6 +151,7 @@ const sortedSlips = Object.values(slips).sort((a: any, b: any) => a.slip - b.sli
         <a class="tooltip-link" href="#" target="_blank" rel="noopener" title="View character history on zdic.net">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
         </a>
+        <button id="tooltip-close" class="tooltip-close" aria-label="Close">×</button>
       </div>
       <div class="tooltip-variant text-sm text-amber-600 dark:text-amber-400 mb-2 hidden"></div>
       <div class="tooltip-radicals text-sm mb-2 hidden"></div>
@@ -449,6 +450,36 @@ const sortedSlips = Object.values(slips).sort((a: any, b: any) => a.slip - b.sli
     opacity: 1;
   }
 
+  .tooltip-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: var(--color-surface);
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tooltip-close:hover {
+    background: var(--color-border);
+    color: var(--color-text);
+  }
+
+  /* Active glyph highlight */
+  .glyph-cell.glyph-active {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
   /* Oracle bone gallery */
   .oracle-gallery {
     display: flex;
@@ -543,10 +574,12 @@ const sortedSlips = Object.values(slips).sort((a: any, b: any) => a.slip - b.sli
       </div>
     `).join('');
 
-    // Reattach hover listeners
+    // Reattach click listeners (tap to show tooltip)
     currentStripEl.querySelectorAll('.glyph-cell').forEach(el => {
-      el.addEventListener('mouseenter', (e) => showTooltip(e.currentTarget as HTMLElement));
-      el.addEventListener('mouseleave', hideTooltip);
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleTooltip(e.currentTarget as HTMLElement);
+      });
     });
   }
 
@@ -730,14 +763,58 @@ const sortedSlips = Object.values(slips).sort((a: any, b: any) => a.slip - b.sli
     }
   }
 
+  let activeGlyph: HTMLElement | null = null;
+
   function hideTooltip() {
     tooltip?.classList.add('hidden');
+    if (activeGlyph) {
+      activeGlyph.classList.remove('glyph-active');
+      activeGlyph = null;
+    }
   }
 
-  // Attach to all hoverable elements (for text views)
+  function toggleTooltip(el: HTMLElement) {
+    // If tapping the same glyph, hide tooltip
+    if (activeGlyph === el) {
+      hideTooltip();
+      return;
+    }
+    // Otherwise show tooltip for this glyph
+    if (activeGlyph) {
+      activeGlyph.classList.remove('glyph-active');
+    }
+    activeGlyph = el;
+    el.classList.add('glyph-active');
+    showTooltip(el);
+  }
+
+  // Close tooltip when tapping outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    // Don't close if clicking inside tooltip or on a glyph
+    if (tooltip?.contains(target) || target.closest('.glyph-cell')) {
+      return;
+    }
+    hideTooltip();
+  });
+
+  // Prevent tooltip clicks from bubbling (so links work)
+  tooltip?.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close button handler
+  document.getElementById('tooltip-close')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    hideTooltip();
+  });
+
+  // Attach to all hoverable elements (for text views) - use click
   document.querySelectorAll('.char-hover').forEach(el => {
-    el.addEventListener('mouseenter', (e) => showTooltip(e.currentTarget as HTMLElement));
-    el.addEventListener('mouseleave', hideTooltip);
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleTooltip(e.currentTarget as HTMLElement);
+    });
   });
 
   // Initialize bamboo strip viewer
