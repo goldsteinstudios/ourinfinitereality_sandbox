@@ -8,6 +8,12 @@
       "visual_description": "Single curve, arc shape. Ignore line thickness/ink artifacts.",
       "exemplars": [],
       "frequency": null
+    },
+    {
+      "id": "人",
+      "visual_description": "Two strokes meeting at top, spreading downward. Person/figure shape.",
+      "exemplars": [],
+      "frequency": null
     }
   ],
   "decompositions": []
