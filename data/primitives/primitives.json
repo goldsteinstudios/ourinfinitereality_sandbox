@@ -2,6 +2,13 @@
   "version": "0.1.0",
   "description": "Visual stroke primitives - purely visual patterns, no linguistic knowledge",
   "notes": "Primitive IDs are arbitrary labels (P001, P002...). You define what they look like by providing exemplar images.",
-  "primitives": [],
+  "primitives": [
+    {
+      "id": "P001",
+      "visual_description": "Single curve, arc shape. Ignore line thickness/ink artifacts.",
+      "exemplars": [],
+      "frequency": null
+    }
+  ],
   "decompositions": []
 }
