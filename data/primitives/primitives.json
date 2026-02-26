@@ -20,6 +20,12 @@
       "visual_description": "Vertical stroke with horizontal stroke extending right from middle. Inverted T or hook shape.",
       "exemplars": [],
       "frequency": null
+    },
+    {
+      "id": "P003",
+      "visual_description": "Three strokes radiating outward from a common point. Fan or spray pattern.",
+      "exemplars": [],
+      "frequency": null
     }
   ],
   "decompositions": []
