@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Guodian Primitives Database",
+  "description": "Stroke primitives extracted from Guodian bamboo slip glyphs",
+
+  "primitives": {
+    "description": "Each primitive is a recurring visual element",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier (e.g., 'arc-hook', 'horizontal-bar', 'double-dot')"
+      },
+      "name": {
+        "type": "string",
+        "description": "Human-readable name"
+      },
+      "category": {
+        "type": "string",
+        "enum": ["stroke", "component", "semantic-unit"],
+        "description": "Granularity level"
+      },
+      "description": {
+        "type": "string",
+        "description": "What this primitive represents structurally"
+      },
+      "exemplars": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "image_path": { "type": "string" },
+            "source_glyph": { "type": "string", "description": "Which glyph this was extracted from" },
+            "slip": { "type": "integer" },
+            "position": { "type": "integer" }
+          }
+        },
+        "description": "3-5 example images of this primitive"
+      },
+      "variants": {
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "IDs of related/variant primitives"
+      },
+      "structural_role": {
+        "type": "string",
+        "description": "What role this plays in character composition (e.g., 'enclosure', 'base', 'modifier')"
+      },
+      "frequency": {
+        "type": "integer",
+        "description": "How many times this appears in Guodian Laozi A"
+      }
+    }
+  },
+
+  "decompositions": {
+    "description": "How each glyph breaks down into primitives",
+    "type": "object",
+    "properties": {
+      "glyph_id": {
+        "type": "string",
+        "description": "Glyph filename"
+      },
+      "character": {
+        "type": "string",
+        "description": "Modern character equivalent"
+      },
+      "slip": { "type": "integer" },
+      "position": { "type": "integer" },
+      "primitives": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "primitive_id": { "type": "string" },
+            "position": {
+              "type": "string",
+              "enum": ["top", "bottom", "left", "right", "center", "enclosing", "enclosed"]
+            },
+            "bbox": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 4,
+              "maxItems": 4,
+              "description": "[x, y, width, height] normalized 0-1"
+            }
+          }
+        }
+      },
+      "notes": { "type": "string" }
+    }
+  }
+}
