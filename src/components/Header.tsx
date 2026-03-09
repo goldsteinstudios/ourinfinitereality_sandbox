@@ -3,8 +3,8 @@ import { useAppStore } from '../store/useAppStore';
 import { RADICALS } from '../utils/radicalDetector';
 
 interface HeaderProps {
-  viewMode: 'grid' | 'analysis' | 'motion';
-  setViewMode: (mode: 'grid' | 'analysis' | 'motion') => void;
+  viewMode: 'grid' | 'analysis' | 'motion' | 'composer';
+  setViewMode: (mode: 'grid' | 'analysis' | 'motion' | 'composer') => void;
 }
 
 export function Header({ viewMode, setViewMode }: HeaderProps) {
@@ -85,6 +85,16 @@ export function Header({ viewMode, setViewMode }: HeaderProps) {
             }`}
           >
             Motion Decoder
+          </button>
+          <button
+            onClick={() => setViewMode('composer')}
+            className={`px-4 py-2 rounded transition-colors ${
+              viewMode === 'composer'
+                ? 'bg-blue-600 text-white'
+                : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+            }`}
+          >
+            Glyph Composer
           </button>
         </div>
       </div>

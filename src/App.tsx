@@ -7,8 +7,9 @@ import { CharacterDetail } from './components/CharacterDetail';
 import { Loading, ErrorDisplay } from './components/Loading';
 import { AnalysisPanel } from './components/analysis/AnalysisPanel';
 import { MotionDecoder } from './components/motion/MotionDecoder';
+import GlyphComposer from './components/GlyphComposer';
 
-type ViewMode = 'grid' | 'analysis' | 'motion';
+type ViewMode = 'grid' | 'analysis' | 'motion' | 'composer';
 
 function App() {
   // Load data on mount
@@ -36,6 +37,7 @@ function App() {
         {viewMode === 'grid' && <CharacterGrid />}
         {viewMode === 'analysis' && <AnalysisPanel />}
         {viewMode === 'motion' && <MotionDecoder />}
+        {viewMode === 'composer' && <GlyphComposer />}
       </main>
       {viewMode === 'grid' && <CharacterDetail />}
     </div>
