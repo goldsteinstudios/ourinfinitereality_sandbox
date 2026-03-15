@@ -16,9 +16,10 @@ Structural analysis of the 81 chapters, decomposing each character by its radica
 - [Meta Documentation](./translations/meta/) — Framework and methodology
 
 ### Framework
-The Recursive Structural Model (RSM): Origin → Gradient → Periphery → Recursion.
+The Recursive Structural Model (RSM): Origin → Gradient → Periphery → Recursion. Refined in v5.5 with a 14-step entailment chain from a single premise.
 
 - [RSM Documentation](./translations/meta/recursive_structural_model.md)
+- [Derivation Chain (v5.5)](./framework/derivation.md) — 14 steps from infinite divisibility to oscillation
 - [Academic Parallels](./framework/academic_parallels.md)
 - [Falsification Criteria](./framework/falsification.md)
 
@@ -79,4 +80,4 @@ Everything here is alive and changing. If you want to see the thinking evolve, i
 ---
 
 *A living project, built in collaboration with AI.*
-*Last updated: December 2025*
+*Last updated: March 2026*

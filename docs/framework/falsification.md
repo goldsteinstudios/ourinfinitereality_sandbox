@@ -75,6 +75,56 @@ A framework that cannot be wrong cannot be right. RSM commits to specific predic
 
 ---
 
+## v5.5 Structural Predictions
+
+The v5.5 derivation chain (14 steps from a single premise) generates six specific falsifiable predictions. Each follows directly from the geometry of xy = 1 and can be refuted by a single counterexample.
+
+### SP1. No persistent structure without paradoxical center
+**Claim**: Every stable system must orbit an inaccessible center.
+
+**Falsifier**: A persistent structure that is solid through its center with no asymptotic behavior — no void, no singularity, no inaccessible region.
+
+---
+
+### SP2. Conservation requires duality
+**Claim**: Every conserved quantity implies at least two reciprocally constrained modes.
+
+**Falsifier**: A conserved quantity that does not decompose into reciprocally varying aspects — a conserved scalar with no dual structure.
+
+---
+
+### SP3. Orthogonality at the paradox point
+**Claim**: Wherever dual modes are balanced, the gradient and balance structures are perpendicular.
+
+**Falsifier**: A system where dual modes are perfectly balanced but the gradient and balance axes are not orthogonal.
+
+---
+
+### SP4. Exponential cost of extremity
+**Claim**: Approaching the asymptote of any conserved reciprocal relationship costs exponentially more per unit of progress.
+
+**Falsifier**: A system obeying xy = constant where the cost of making x arbitrarily large grows linearly or sub-exponentially.
+
+---
+
+### SP5. Frame recursion preserves structure
+**Claim**: Each new frame level contains the same structural elements (O, G, B, P, 1) at a different scale.
+
+**Falsifier**: A recursion level that lacks one of the structural elements — e.g., a frame with a gradient but no balance axis, or a paradox point that does not generate a new frame.
+
+---
+
+### SP6. Three dimensions from two branches
+**Claim**: Any system with two disconnected reciprocal branches requires exactly three embedding dimensions for isotropic closure.
+
+**Falsifier**: A two-branch reciprocal system that achieves isotropic closure in fewer than three dimensions, or that requires more than three.
+
+---
+
+See the full [Derivation Chain](./derivation.md) for the entailment structure behind these predictions.
+
+---
+
 ## Theoretical Falsification Conditions
 
 ### 1. Unresolvable Internal Contradiction
@@ -159,4 +209,4 @@ Any of these would require fundamental revision or abandonment of RSM.
 ---
 
 *Version: Consolidated from September 2025 field framework*
-*Last updated: November 2025*
+*Last updated: March 2026 (v5.5 structural predictions added)*
