@@ -101,6 +101,7 @@ nav:
 
   - Framework:
     - framework/index.md
+    - Derivation Chain: framework/derivation.md
     - Geometry: framework/geometry.md
     - Falsification: framework/falsification.md
     - Academic Parallels: framework/academic_parallels.md
