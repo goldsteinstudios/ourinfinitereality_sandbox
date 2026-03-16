@@ -6,7 +6,53 @@ import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 //  - no layout-reset race when loading saved compounds
 //  - T subtype counts derived from paletteGlyphs (no extra rescan)
 //  - compact T subtype display codes
+//  - localStorage persistence for library
 // ============================================================
+
+// ------------------------------------------------------------
+// PERSISTENCE
+// ------------------------------------------------------------
+
+const STORAGE_KEY = "glyph-composer-library";
+
+function loadLibrary(): Compound[] {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw) as Compound[];
+  } catch { /* ignore corrupt data */ }
+  return [];
+}
+
+function saveLibrary(compounds: Compound[]) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(compounds));
+  } catch { /* storage full or unavailable */ }
+}
+
+function exportLibrary(compounds: Compound[]) {
+  const blob = new Blob([JSON.stringify(compounds, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `glyph-library-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function importLibrary(file: File): Promise<Compound[]> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = JSON.parse(reader.result as string) as Compound[];
+        if (!Array.isArray(data)) throw new Error("Invalid format");
+        resolve(data);
+      } catch (e) { reject(e); }
+    };
+    reader.onerror = () => reject(reader.error);
+    reader.readAsText(file);
+  });
+}
 
 // ------------------------------------------------------------
 // TYPES
@@ -58,6 +104,11 @@ interface GlyphData {
   rotation: number;
 }
 
+interface Definition {
+  text: string;
+  source?: string; // e.g. "39017.com", "Shuowen Jiezi"
+}
+
 interface Compound {
   id: string;
   layout: string;
@@ -66,6 +117,12 @@ interface Compound {
   label: string;
   timestamp: number;
   promoted: boolean;
+  // Metadata fields (all optional for backwards compat)
+  definitions?: Definition[];
+  activeDefinitionIndex?: number;
+  images?: { url: string; label: string }[];
+  guodianLocation?: string;
+  locked?: boolean;
 }
 
 interface LayoutDef {
@@ -576,6 +633,12 @@ function drawCompoundToCtx(
 // ------------------------------------------------------------
 
 const LAYOUTS: Record<string, LayoutDef> = {
+  single: {
+    label: "\u25A1",
+    name: "Single",
+    slots: 1,
+    positions: (w, h) => [{ x: 0, y: 0, w, h }],
+  },
   "left-right": {
     label: "\u2FF0",
     name: "Side by side",
@@ -821,6 +884,8 @@ interface PromotedMiniProps {
   size: number;
   selected?: boolean;
   onClick: () => void;
+  badge?: string;
+  badgeColor?: string;
 }
 
 function PromotedMini(props: PromotedMiniProps) {
@@ -867,13 +932,517 @@ function PromotedMini(props: PromotedMiniProps) {
           top: 1,
           left: 2,
           fontSize: 7,
-          color: "#8b6c3e",
+          color: props.badgeColor || "#8b6c3e",
           fontFamily: "JetBrains Mono, monospace",
           pointerEvents: "none",
         }}
       >
-        P{"\u2192"}O
+        {props.badge ?? "P\u2192O"}
       </div>
+    </div>
+  );
+}
+
+interface GlyphDetailPanelProps {
+  compound: Compound;
+  allCompounds: Compound[];
+  edges: Edge[];
+  cols: number;
+  rows: number;
+  onUpdate: (updates: Partial<Compound>) => void;
+  onClose: () => void;
+  onDelete: () => void;
+}
+
+function GlyphDetailPanel(props: GlyphDetailPanelProps) {
+  const { compound, allCompounds, edges, cols, rows, onUpdate, onClose, onDelete } = props;
+  const [newDefText, setNewDefText] = useState("");
+  const [newDefSource, setNewDefSource] = useState("");
+  const [bulkText, setBulkText] = useState("");
+  const [bulkMode, setBulkMode] = useState(false);
+  const [newImgUrl, setNewImgUrl] = useState("");
+  const [newImgLabel, setNewImgLabel] = useState("");
+  const [confirmDelete, setConfirmDelete] = useState(false);
+
+  const locked = compound.locked ?? false;
+
+  const activeDef = compound.definitions?.[compound.activeDefinitionIndex ?? -1] ?? null;
+
+  // Find compounds that reference this glyph in their slots
+  const usedIn = useMemo(() => {
+    return allCompounds.filter(
+      (c) => c.id !== compound.id && c.slots.some((s) => String(s) === compound.id)
+    );
+  }, [allCompounds, compound.id]);
+
+  const addDefinition = () => {
+    const text = newDefText.trim();
+    if (!text) return;
+    const defs = (compound.definitions || []).concat({
+      text,
+      source: newDefSource.trim() || undefined,
+    });
+    const updates: Partial<Compound> = { definitions: defs };
+    if (compound.activeDefinitionIndex == null) updates.activeDefinitionIndex = 0;
+    onUpdate(updates);
+    setNewDefText("");
+    setNewDefSource("");
+  };
+
+  const bulkAddDefinitions = () => {
+    const lines = bulkText.split("\n").map((l) => l.trim()).filter(Boolean);
+    if (lines.length === 0) return;
+    const newDefs: Definition[] = lines.map((line) => {
+      // Support "text | source" or "text [source]" or just "text"
+      const pipeMatch = line.match(/^(.+?)\s*\|\s*(.+)$/);
+      if (pipeMatch) return { text: pipeMatch[1].trim(), source: pipeMatch[2].trim() };
+      const bracketMatch = line.match(/^(.+?)\s*\[(.+?)\]\s*$/);
+      if (bracketMatch) return { text: bracketMatch[1].trim(), source: bracketMatch[2].trim() };
+      // Strip leading number+period patterns like "1. " or "　1. "
+      const stripped = line.replace(/^[\s\u3000]*\d+\.\s*/, "");
+      return { text: stripped || line };
+    });
+    const defs = (compound.definitions || []).concat(newDefs);
+    const updates: Partial<Compound> = { definitions: defs };
+    if (compound.activeDefinitionIndex == null) updates.activeDefinitionIndex = 0;
+    onUpdate(updates);
+    setBulkText("");
+    setBulkMode(false);
+  };
+
+  const removeDefinition = (idx: number) => {
+    const defs = (compound.definitions || []).filter((_, i) => i !== idx);
+    let activeIdx = compound.activeDefinitionIndex ?? 0;
+    if (idx === activeIdx) activeIdx = defs.length > 0 ? 0 : -1;
+    else if (idx < activeIdx) activeIdx = activeIdx - 1;
+    onUpdate({
+      definitions: defs,
+      activeDefinitionIndex: defs.length > 0 ? Math.max(0, activeIdx) : undefined,
+    });
+  };
+
+  const addImage = () => {
+    const url = newImgUrl.trim();
+    if (!url) return;
+    const images = (compound.images || []).concat({
+      url,
+      label: newImgLabel.trim() || "Variant",
+    });
+    onUpdate({ images });
+    setNewImgUrl("");
+    setNewImgLabel("");
+  };
+
+  const removeImage = (idx: number) => {
+    const images = (compound.images || []).filter((_, i) => i !== idx);
+    onUpdate({ images });
+  };
+
+  const sectionStyle: React.CSSProperties = {
+    borderTop: "1px solid #1f1c17",
+    padding: "10px 0",
+  };
+
+  const labelStyle: React.CSSProperties = {
+    fontSize: 9,
+    color: "#6b6157",
+    textTransform: "uppercase",
+    letterSpacing: 1,
+    marginBottom: 6,
+  };
+
+  const inputStyle: React.CSSProperties = {
+    background: "#0f0d0a",
+    border: "1px solid #2a251f",
+    color: "#c4b8a8",
+    borderRadius: 4,
+    padding: "4px 8px",
+    fontSize: 11,
+    fontFamily: "Crimson Pro, serif",
+    outline: "none",
+  };
+
+  const smallBtnStyle: React.CSSProperties = {
+    background: "#2a251f",
+    color: "#c4b8a8",
+    border: "1px solid #3d362e",
+    borderRadius: 3,
+    padding: "3px 8px",
+    fontSize: 10,
+    cursor: "pointer",
+    fontFamily: "JetBrains Mono, monospace",
+  };
+
+  return (
+    <div
+      style={{
+        background: "#14110d",
+        borderLeft: "1px solid #3d2e1a",
+        padding: "16px 16px",
+        minHeight: "100vh",
+        boxSizing: "border-box",
+      }}
+    >
+      {/* Header */}
+      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+        <PromotedMini
+          compound={compound}
+          edges={edges}
+          cols={cols}
+          rows={rows}
+          size={80}
+          onClick={() => {}}
+          badge={compound.promoted ? "P\u2192O" : "\u2605"}
+          badgeColor={compound.promoted ? "#8b6c3e" : "#6b8b3e"}
+        />
+        <div style={{ flex: 1 }}>
+          <div style={{ fontSize: 16, color: "#c4a46c", fontWeight: 600 }}>{compound.label}</div>
+          {activeDef && (
+            <div style={{ fontSize: 12, color: "#6b8b3e", fontStyle: "italic", marginTop: 2 }}>
+              {activeDef.text}
+            </div>
+          )}
+        </div>
+        <div style={{ display: "flex", gap: 4, flexDirection: "column", alignItems: "flex-end" }}>
+          <button
+            onClick={onClose}
+            style={{
+              background: "transparent",
+              color: "#5a3d1a",
+              border: "1px solid #2a1f14",
+              borderRadius: 4,
+              padding: "4px 10px",
+              fontSize: 14,
+              cursor: "pointer",
+              lineHeight: 1,
+            }}
+          >
+            {"\u2715"}
+          </button>
+          <button
+            onClick={() => onUpdate({ locked: !locked })}
+            style={{
+              background: "transparent",
+              color: locked ? "#6b8b3e" : "#5a4a38",
+              border: `1px solid ${locked ? "#3d5a1a" : "#2a1f14"}`,
+              borderRadius: 4,
+              padding: "2px 8px",
+              fontSize: 9,
+              cursor: "pointer",
+              fontFamily: "JetBrains Mono, monospace",
+            }}
+            title={locked ? "Unlock editing" : "Lock editing"}
+          >
+            {locked ? "\uD83D\uDD12 Locked" : "\uD83D\uDD13 Unlocked"}
+          </button>
+        </div>
+      </div>
+
+      {/* Definitions */}
+      <div style={sectionStyle}>
+        <div style={labelStyle}>Definitions</div>
+        {(compound.definitions || []).map((def, idx) => {
+          const isActive = idx === (compound.activeDefinitionIndex ?? -1);
+          return (
+            <div
+              key={idx}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                padding: "4px 6px",
+                marginBottom: 4,
+                border: isActive ? "1px solid #c4a46c" : "1px solid #1f1c17",
+                borderRadius: 4,
+                background: isActive ? "#1c1a12" : "transparent",
+              }}
+            >
+              <input
+                type="radio"
+                name={`def-${compound.id}`}
+                checked={isActive}
+                onChange={() => onUpdate({ activeDefinitionIndex: idx })}
+                style={{ accentColor: "#c4a46c" }}
+              />
+              <div style={{ flex: 1, fontSize: 12, color: "#c4b8a8" }}>
+                {def.text}
+                {def.source && (
+                  <span style={{ fontSize: 9, color: "#5a4a38", marginLeft: 6 }}>
+                    [{def.source}]
+                  </span>
+                )}
+              </div>
+              {!locked && (
+                <button
+                  onClick={() => removeDefinition(idx)}
+                  style={{
+                    background: "transparent",
+                    color: "#5a3d1a",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: 14,
+                    lineHeight: 1,
+                    padding: "0 4px",
+                  }}
+                >
+                  {"\u00D7"}
+                </button>
+              )}
+            </div>
+          );
+        })}
+        {!locked && (
+          <>
+            <div style={{ display: "flex", gap: 6, marginTop: 6, marginBottom: 4 }}>
+              <button
+                onClick={() => setBulkMode(false)}
+                style={{
+                  ...smallBtnStyle,
+                  background: !bulkMode ? "#3d2e1a" : "#1a1714",
+                  color: !bulkMode ? "#c4a46c" : "#5a4a38",
+                }}
+              >
+                + Single
+              </button>
+              <button
+                onClick={() => setBulkMode(true)}
+                style={{
+                  ...smallBtnStyle,
+                  background: bulkMode ? "#3d2e1a" : "#1a1714",
+                  color: bulkMode ? "#c4a46c" : "#5a4a38",
+                }}
+              >
+                Paste bulk
+              </button>
+            </div>
+            {!bulkMode ? (
+              <div style={{ display: "flex", gap: 4 }}>
+                <textarea
+                  value={newDefText}
+                  onChange={(e) => setNewDefText(e.target.value)}
+                  placeholder="New definition..."
+                  rows={2}
+                  style={{ ...inputStyle, flex: 2, resize: "vertical" }}
+                />
+                <input
+                  type="text"
+                  value={newDefSource}
+                  onChange={(e) => setNewDefSource(e.target.value)}
+                  placeholder="Source"
+                  style={{ ...inputStyle, flex: 1 }}
+                />
+                <button onClick={addDefinition} style={smallBtnStyle}>
+                  Add
+                </button>
+              </div>
+            ) : (
+              <div>
+                <textarea
+                  value={bulkText}
+                  onChange={(e) => setBulkText(e.target.value)}
+                  placeholder={"Paste definitions, one per line:\nway/path\nvirtue/power | Shuowen\nunity [39017.com]"}
+                  rows={6}
+                  style={{ ...inputStyle, width: "100%", resize: "vertical", boxSizing: "border-box", marginBottom: 4 }}
+                />
+                <button onClick={bulkAddDefinitions} style={smallBtnStyle}>
+                  Add all ({bulkText.split("\n").filter((l) => l.trim()).length} lines)
+                </button>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* Paleographic Images */}
+      <div style={sectionStyle}>
+        <div style={labelStyle}>Paleographic Variants</div>
+        {(compound.images || []).length === 0 && (
+          <div style={{ fontSize: 11, color: "#3d362e", marginBottom: 6 }}>No images added yet</div>
+        )}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 6 }}>
+          {(compound.images || []).map((img, idx) => (
+            <div key={idx} style={{ textAlign: "center", position: "relative" }}>
+              <img
+                src={img.url}
+                alt={img.label}
+                style={{
+                  width: 64,
+                  height: 64,
+                  objectFit: "contain",
+                  border: "1px solid #2a251f",
+                  borderRadius: 4,
+                  background: "#0f0d0a",
+                }}
+              />
+              <div style={{ fontSize: 8, color: "#5a4a38", marginTop: 2 }}>{img.label}</div>
+              {!locked && (
+                <button
+                  onClick={() => removeImage(idx)}
+                  style={{
+                    position: "absolute",
+                    top: -4,
+                    right: -4,
+                    background: "#1a1714",
+                    color: "#5a3d1a",
+                    border: "1px solid #2a1f14",
+                    borderRadius: "50%",
+                    width: 16,
+                    height: 16,
+                    fontSize: 10,
+                    cursor: "pointer",
+                    lineHeight: 1,
+                    padding: 0,
+                  }}
+                >
+                  {"\u00D7"}
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+        {!locked && (
+          <div style={{ display: "flex", gap: 4 }}>
+            <input
+              type="text"
+              value={newImgUrl}
+              onChange={(e) => setNewImgUrl(e.target.value)}
+              placeholder="Image URL"
+              style={{ ...inputStyle, flex: 2 }}
+            />
+            <input
+              type="text"
+              value={newImgLabel}
+              onChange={(e) => setNewImgLabel(e.target.value)}
+              placeholder="Label (e.g. Oracle Bone)"
+              style={{ ...inputStyle, flex: 1 }}
+            />
+            <button onClick={addImage} style={smallBtnStyle}>
+              Add
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* Guodian Location */}
+      <div style={sectionStyle}>
+        <div style={labelStyle}>Guodian Location</div>
+        <input
+          type="text"
+          value={compound.guodianLocation || ""}
+          onChange={(e) => !locked && onUpdate({ guodianLocation: e.target.value })}
+          onBlur={(e) => !locked && onUpdate({ guodianLocation: e.target.value })}
+          placeholder="e.g. Slip 1, Chapter 19"
+          readOnly={locked}
+          style={{ ...inputStyle, width: "100%", boxSizing: "border-box", opacity: locked ? 0.6 : 1 }}
+        />
+      </div>
+
+      {/* Percolation Preview */}
+      <div style={sectionStyle}>
+        <div style={labelStyle}>Percolation</div>
+        {activeDef ? (
+          <div style={{ fontSize: 12, color: "#6b8b3e", marginBottom: 6 }}>
+            Active: <em>{activeDef.text}</em>
+            {activeDef.source && (
+              <span style={{ fontSize: 9, color: "#5a4a38", marginLeft: 4 }}>
+                [{activeDef.source}]
+              </span>
+            )}
+          </div>
+        ) : (
+          <div style={{ fontSize: 11, color: "#3d362e", marginBottom: 6 }}>
+            No active definition set
+          </div>
+        )}
+        {usedIn.length > 0 && (
+          <div>
+            <div style={{ fontSize: 9, color: "#5a4a38", marginBottom: 4 }}>
+              Used in {usedIn.length} compound{usedIn.length !== 1 ? "s" : ""}:
+            </div>
+            {usedIn.map((uc) => (
+              <div
+                key={uc.id}
+                style={{
+                  fontSize: 11,
+                  color: "#8a7e70",
+                  padding: "2px 0",
+                  display: "flex",
+                  gap: 6,
+                  alignItems: "baseline",
+                }}
+              >
+                <span style={{ color: "#c4a46c" }}>{uc.label}</span>
+                {activeDef && (
+                  <span style={{ fontSize: 9, color: "#6b8b3e", fontStyle: "italic" }}>
+                    ({activeDef.text})
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+        {usedIn.length === 0 && (
+          <div style={{ fontSize: 11, color: "#3d362e" }}>Not used in any other compounds</div>
+        )}
+      </div>
+
+      {/* Delete section */}
+      {!locked && (
+        <div style={sectionStyle}>
+          {!confirmDelete ? (
+            <button
+              onClick={() => setConfirmDelete(true)}
+              style={{
+                background: "transparent",
+                color: "#8b2020",
+                border: "1px solid #3d1a1a",
+                borderRadius: 4,
+                padding: "4px 12px",
+                fontSize: 10,
+                cursor: "pointer",
+                fontFamily: "JetBrains Mono, monospace",
+              }}
+            >
+              Delete this glyph
+            </button>
+          ) : (
+            <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+              <span style={{ fontSize: 11, color: "#8b2020" }}>Delete permanently?</span>
+              <button
+                onClick={onDelete}
+                style={{
+                  background: "#3d1a1a",
+                  color: "#e8c4c4",
+                  border: "1px solid #8b2020",
+                  borderRadius: 4,
+                  padding: "4px 12px",
+                  fontSize: 10,
+                  cursor: "pointer",
+                  fontFamily: "JetBrains Mono, monospace",
+                  fontWeight: 600,
+                }}
+              >
+                Yes, delete
+              </button>
+              <button
+                onClick={() => setConfirmDelete(false)}
+                style={{
+                  background: "transparent",
+                  color: "#5a4a38",
+                  border: "1px solid #2a1f14",
+                  borderRadius: 4,
+                  padding: "4px 12px",
+                  fontSize: 10,
+                  cursor: "pointer",
+                  fontFamily: "JetBrains Mono, monospace",
+                }}
+              >
+                Cancel
+              </button>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
@@ -996,15 +1565,57 @@ export default function GlyphComposer() {
   const [paletteRotation, setPaletteRotation] = useState(0);
   const [minStrokes, setMinStrokes] = useState(1);
   const [maxStrokes, setMaxStrokes] = useState(20);
-  const [layout, setLayout] = useState("left-right");
+  const [layout, setLayout] = useState("single");
   const [selGlyph, setSelGlyph] = useState<SlotValue>(null);
   const [activeSlot, setActiveSlot] = useState(0);
   const [slots, setSlots] = useState<SlotValue[]>([null, null, null, null]);
   const [glyphBank, setGlyphBank] = useState<Record<string, GlyphData>>({});
-  const [compounds, setCompounds] = useState<Compound[]>([]);
+  const [compounds, setCompounds] = useState<Compound[]>(() => loadLibrary());
   const [compoundLabel, setCompoundLabel] = useState("");
   const [filterCat, setFilterCat] = useState("all");
   const [tSubFilter, setTSubFilter] = useState("all");
+  const [detailCompoundId, setDetailCompoundId] = useState<string | null>(null);
+  const [showTopoLegend, setShowTopoLegend] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const updateCompoundMeta = useCallback((compId: string, updates: Partial<Compound>) => {
+    setCompounds((prev) =>
+      prev.map((c) => (c.id === compId ? { ...c, ...updates } : c))
+    );
+  }, []);
+
+  const deleteCompound = useCallback((compId: string) => {
+    setCompounds((prev) => prev.filter((c) => c.id !== compId));
+    setGlyphBank((prev) => {
+      const bank = { ...prev };
+      delete bank[compId];
+      return bank;
+    });
+    if (detailCompoundId === compId) setDetailCompoundId(null);
+  }, [detailCompoundId]);
+
+  const detailCompound = detailCompoundId
+    ? compounds.find((c) => c.id === detailCompoundId) ?? null
+    : null;
+
+  // Auto-save library to localStorage
+  useEffect(() => {
+    saveLibrary(compounds);
+  }, [compounds]);
+
+  // Hydrate glyphBank from saved compounds on mount
+  useEffect(() => {
+    const loaded = loadLibrary();
+    if (loaded.length > 0) {
+      setGlyphBank((prev) => {
+        const bank = { ...prev };
+        for (const comp of loaded) {
+          bank[comp.id] = { isCompound: true, compound: comp, rotation: 0 };
+        }
+        return bank;
+      });
+    }
+  }, []);
 
   const cols = gridSize;
   const rows = gridSize;
@@ -1143,6 +1754,11 @@ export default function GlyphComposer() {
     };
 
     setCompounds((prev) => prev.concat([comp]));
+
+    const newBank = { ...glyphBank };
+    newBank[comp.id] = { isCompound: true, compound: comp, rotation: 0 };
+    setGlyphBank(newBank);
+
     setCompoundLabel("");
     return comp;
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -1229,7 +1845,12 @@ export default function GlyphComposer() {
             }}
           >
             {numEdges} edges {"\u00B7"} 2^{numEdges} = {Math.pow(2, numEdges).toLocaleString()} forms
-            {promotedItems.length > 0 && <span style={{ color: "#8b6c3e" }}> {"\u00B7"} {promotedItems.length} promoted</span>}
+            {compounds.length > 0 && (
+              <span style={{ color: "#8b6c3e" }}>
+                {" \u00B7 "}{compounds.length} saved
+                {promotedItems.length > 0 && ` (${promotedItems.length} promoted)`}
+              </span>
+            )}
           </div>
         </div>
       </div>
@@ -1245,7 +1866,7 @@ export default function GlyphComposer() {
         }}
       >
         <div style={{ flex: "1 1 460px", minWidth: 340 }}>
-          {promotedItems.length > 0 && (
+          {compounds.length > 0 && (
             <div
               style={{
                 background: "#14110d",
@@ -1265,14 +1886,14 @@ export default function GlyphComposer() {
                 }}
               >
                 <span style={{ fontSize: 11, color: "#8b6c3e", textTransform: "uppercase", letterSpacing: 1 }}>
-                  Promoted Operators (P{"\u2192"}O)
+                  Glyph Library
                 </span>
                 <span style={{ fontSize: 10, color: "#5a4a38", fontFamily: "JetBrains Mono, monospace" }}>
-                  {promotedItems.length} items
+                  {compounds.length} items
                 </span>
               </div>
               <div style={{ padding: 10, display: "flex", flexWrap: "wrap", gap: 6 }}>
-                {promotedItems.map((comp) => (
+                {compounds.map((comp) => (
                   <div key={comp.id} style={{ textAlign: "center" }}>
                     <PromotedMini
                       compound={comp}
@@ -1282,6 +1903,8 @@ export default function GlyphComposer() {
                       size={44}
                       selected={selGlyph === comp.id}
                       onClick={() => placeGlyph(comp.id, null, true, comp)}
+                      badge={comp.promoted ? "P\u2192O" : "\u2605"}
+                      badgeColor={comp.promoted ? "#8b6c3e" : "#6b8b3e"}
                     />
                     <div
                       style={{
@@ -1296,6 +1919,28 @@ export default function GlyphComposer() {
                     >
                       {comp.label}
                     </div>
+                    {comp.definitions?.[comp.activeDefinitionIndex ?? -1] && (
+                      <div style={{ fontSize: 7, color: "#6b8b3e", maxWidth: 44, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                        {comp.definitions[comp.activeDefinitionIndex!].text}
+                      </div>
+                    )}
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setDetailCompoundId(comp.id); }}
+                      style={{
+                        fontSize: 8,
+                        color: "#c4a46c",
+                        background: "#1a1714",
+                        border: "1px solid #3d2e1a",
+                        borderRadius: 3,
+                        padding: "1px 6px",
+                        cursor: "pointer",
+                        marginTop: 2,
+                        fontFamily: "JetBrains Mono, monospace",
+                      }}
+                      title="Edit details"
+                    >
+                      Detail
+                    </button>
                   </div>
                 ))}
               </div>
@@ -1502,54 +2147,36 @@ export default function GlyphComposer() {
               background: "#141210",
               border: "1px solid #1f1c17",
               borderRadius: 8,
-              padding: "12px 16px",
-              marginBottom: 12,
+              padding: "8px 12px",
+              marginBottom: 8,
             }}
           >
-            <div style={{ fontSize: 10, color: "#6b6157", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
-              Spatial Grammar
-            </div>
-            <div style={{ display: "flex", gap: 5, flexWrap: "wrap" }}>
+            <div style={{ display: "flex", gap: 3, flexWrap: "wrap", marginBottom: 6 }}>
               {Object.keys(LAYOUTS).map((key) => {
                 const L = LAYOUTS[key];
                 return (
                   <button
                     key={key}
                     onClick={() => selectLayoutAndClear(key)}
+                    title={L.name}
                     style={{
                       background: layout === key ? "#a0845c" : "#1a1714",
                       color: layout === key ? "#0f0d0a" : "#8a7e70",
                       border: `1px solid ${layout === key ? "#c4a46c" : "#2a251f"}`,
                       borderRadius: 4,
-                      padding: "3px 7px",
-                      fontSize: 10,
+                      padding: "2px 5px",
+                      fontSize: 13,
                       cursor: "pointer",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      gap: 1,
-                      minWidth: 46,
+                      lineHeight: 1,
                     }}
                   >
-                    <span style={{ fontSize: 14 }}>{L.label}</span>
-                    <span style={{ fontSize: 7, opacity: 0.7 }}>{L.name}</span>
+                    {L.label}
                   </button>
                 );
               })}
             </div>
-          </div>
-
-          <div
-            style={{
-              background: "#141210",
-              border: "1px solid #1f1c17",
-              borderRadius: 8,
-              padding: "12px 16px",
-              marginBottom: 12,
-            }}
-          >
-            <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-              <span style={{ fontSize: 10, color: "#6b6157", textTransform: "uppercase", letterSpacing: 1 }}>Slot</span>
+            <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+              <span style={{ fontSize: 9, color: "#6b6157", textTransform: "uppercase", letterSpacing: 1 }}>Slot</span>
               {Array.from({ length: numSlots }, (_, i) => (
                 <button
                   key={i}
@@ -1559,9 +2186,9 @@ export default function GlyphComposer() {
                     color: activeSlot === i ? "#0f0d0a" : "#8a7e70",
                     border: `1px solid ${activeSlot === i ? "#c4a46c" : "#2a251f"}`,
                     borderRadius: 4,
-                    width: 28,
-                    height: 28,
-                    fontSize: 13,
+                    width: 24,
+                    height: 24,
+                    fontSize: 11,
                     cursor: "pointer",
                     fontFamily: "JetBrains Mono, monospace",
                     fontWeight: 600,
@@ -1575,8 +2202,8 @@ export default function GlyphComposer() {
                         position: "absolute",
                         top: -2,
                         right: -2,
-                        width: 6,
-                        height: 6,
+                        width: 5,
+                        height: 5,
                         borderRadius: "50%",
                         background: "#c4a46c",
                       }}
@@ -1592,8 +2219,8 @@ export default function GlyphComposer() {
                   color: "#5a3d1a",
                   border: "1px solid #2a1f14",
                   borderRadius: 4,
-                  padding: "4px 10px",
-                  fontSize: 11,
+                  padding: "2px 8px",
+                  fontSize: 10,
                   cursor: "pointer",
                 }}
               >
@@ -1607,8 +2234,8 @@ export default function GlyphComposer() {
               background: "#141210",
               border: "1px solid #1f1c17",
               borderRadius: 8,
-              padding: 16,
-              marginBottom: 12,
+              padding: 10,
+              marginBottom: 8,
               display: "flex",
               justifyContent: "center",
             }}
@@ -1620,9 +2247,38 @@ export default function GlyphComposer() {
               edges={edges}
               cols={cols}
               rows={rows}
-              canvasSize={300}
+              canvasSize={200}
               activeSlot={activeSlot}
             />
+            {/* Percolation: slot definitions below canvas */}
+            {(() => {
+              const slotDefs: { idx: number; text: string }[] = [];
+              for (let i = 0; i < slots.length; i++) {
+                const slotId = slots[i];
+                if (slotId == null) continue;
+                const bankEntry = glyphBank[String(slotId)];
+                if (!bankEntry?.isCompound) continue;
+                const def = bankEntry.compound?.definitions?.[bankEntry.compound?.activeDefinitionIndex ?? -1];
+                if (!def) continue;
+                slotDefs.push({ idx: i, text: def.text });
+              }
+              if (slotDefs.length === 0) return null;
+              const combined = slotDefs.map((d) => d.text).join(" + ");
+              return (
+                <div style={{ marginTop: 6, width: "100%", maxWidth: 200 }}>
+                  <div style={{ fontSize: 10, color: "#8a7e70" }}>
+                    {slotDefs.map((d) => (
+                      <div key={d.idx}>
+                        <span style={{ color: "#5a4a38" }}>Slot {d.idx + 1}:</span> {d.text}
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ fontSize: 11, color: "#6b8b3e", marginTop: 4, fontStyle: "italic" }}>
+                    {combined}
+                  </div>
+                </div>
+              );
+            })()}
           </div>
 
           <div
@@ -1630,10 +2286,10 @@ export default function GlyphComposer() {
               background: "#141210",
               border: "1px solid #1f1c17",
               borderRadius: 8,
-              padding: "12px 16px",
-              marginBottom: 12,
+              padding: "6px 10px",
+              marginBottom: 8,
               display: "flex",
-              gap: 8,
+              gap: 6,
               alignItems: "center",
             }}
           >
@@ -1641,15 +2297,15 @@ export default function GlyphComposer() {
               type="text"
               value={compoundLabel}
               onChange={(e) => setCompoundLabel(e.target.value)}
-              placeholder="Name this compound..."
+              placeholder="Name..."
               style={{
                 flex: 1,
                 background: "#0f0d0a",
                 border: "1px solid #2a251f",
                 color: "#c4b8a8",
                 borderRadius: 4,
-                padding: "6px 10px",
-                fontSize: 13,
+                padding: "4px 8px",
+                fontSize: 12,
                 fontFamily: "Crimson Pro, serif",
                 outline: "none",
               }}
@@ -1661,8 +2317,8 @@ export default function GlyphComposer() {
                 color: "#c4b8a8",
                 border: "1px solid #3d362e",
                 borderRadius: 4,
-                padding: "6px 12px",
-                fontSize: 12,
+                padding: "4px 10px",
+                fontSize: 11,
                 cursor: "pointer",
               }}
             >
@@ -1676,13 +2332,13 @@ export default function GlyphComposer() {
                 color: "#0f0d0a",
                 border: "none",
                 borderRadius: 4,
-                padding: "6px 14px",
-                fontSize: 12,
+                padding: "4px 10px",
+                fontSize: 11,
                 cursor: "pointer",
                 fontWeight: 600,
               }}
             >
-              P {"\u2192"} O{"\u2082"}
+              P{"\u2192"}O
             </button>
           </div>
 
@@ -1691,45 +2347,93 @@ export default function GlyphComposer() {
               background: "#141210",
               border: "1px solid #1f1c17",
               borderRadius: 8,
-              padding: "10px 16px",
-              marginBottom: 12,
+              padding: "4px 10px",
+              marginBottom: 8,
             }}
           >
-            <div style={{ fontSize: 9, color: "#4a4238", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-              Topology
-            </div>
-            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", fontSize: 10, fontFamily: "JetBrains Mono, monospace" }}>
-              {[
-                { i: "\u2500", d: "line: straight path" },
-                { i: "\u2514", d: "bend: path with turn" },
-                { i: "\u22A3", d: "T: axis + lateral (h/v/d, c/o, st/sh/lg)" },
-                { i: "\u2534", d: "Y: 3-way, no dominant axis" },
-                { i: "\u253C", d: "cross: deg-4 node" },
-                { i: "\u2533", d: "fork: multi-junction" },
-                { i: "\u25CB", d: "loop: simple cycle" },
-                { i: "\u53E3", d: "encl: perimeter closed" },
-                { i: "\u65E5", d: "bisect: encl + interior" },
-                { i: "\u7530", d: "part: encl + 3+ interior" },
-                { i: "\u2016", d: "multi: disconnected" },
-              ].map((item) => (
-                <div key={item.i} style={{ color: "#6b6157" }}>
-                  <span style={{ color: "#8a7e70" }}>{item.i}</span> {item.d}
-                </div>
-              ))}
-            </div>
+            <button
+              onClick={() => setShowTopoLegend(!showTopoLegend)}
+              style={{
+                background: "none",
+                border: "none",
+                color: "#4a4238",
+                fontSize: 9,
+                textTransform: "uppercase",
+                letterSpacing: 1,
+                cursor: "pointer",
+                padding: "2px 0",
+                fontFamily: "JetBrains Mono, monospace",
+                width: "100%",
+                textAlign: "left",
+              }}
+            >
+              {showTopoLegend ? "\u25BE" : "\u25B8"} Topology Legend
+            </button>
+            {showTopoLegend && (
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap", fontSize: 9, fontFamily: "JetBrains Mono, monospace", paddingBottom: 4 }}>
+                {[
+                  { i: "\u2500", d: "line" },
+                  { i: "\u2514", d: "bend" },
+                  { i: "\u22A3", d: "T" },
+                  { i: "\u2534", d: "Y" },
+                  { i: "\u253C", d: "cross" },
+                  { i: "\u2533", d: "fork" },
+                  { i: "\u25CB", d: "loop" },
+                  { i: "\u53E3", d: "encl" },
+                  { i: "\u65E5", d: "bisect" },
+                  { i: "\u7530", d: "part" },
+                  { i: "\u2016", d: "multi" },
+                ].map((item) => (
+                  <span key={item.i} style={{ color: "#6b6157" }}>
+                    <span style={{ color: "#8a7e70" }}>{item.i}</span>{item.d}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
 
-          {compounds.length > 0 && (
-            <div
+          <div
               style={{
                 background: "#141210",
                 border: "1px solid #1f1c17",
                 borderRadius: 8,
-                padding: "12px 16px",
+                padding: "8px 10px",
               }}
             >
-              <div style={{ fontSize: 10, color: "#6b6157", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>
-                Library ({compounds.length})
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept=".json"
+                style={{ display: "none" }}
+                onChange={async (e) => {
+                  const file = e.target.files?.[0];
+                  if (!file) return;
+                  try {
+                    const imported = await importLibrary(file);
+                    setCompounds((prev) => prev.concat(imported));
+                    setGlyphBank((prev) => {
+                      const bank = { ...prev };
+                      for (const comp of imported) {
+                        bank[comp.id] = { isCompound: true, compound: comp, rotation: 0 };
+                      }
+                      return bank;
+                    });
+                  } catch { /* ignore bad files */ }
+                  e.target.value = "";
+                }}
+              />
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+                <span style={{ fontSize: 10, color: "#6b6157", textTransform: "uppercase", letterSpacing: 1 }}>
+                  Library ({compounds.length})
+                </span>
+                <div style={{ display: "flex", gap: 4 }}>
+                  <Btn pad="2px 8px" fontSize={9} onClick={() => exportLibrary(compounds)} title="Export library to JSON">
+                    Export
+                  </Btn>
+                  <Btn pad="2px 8px" fontSize={9} onClick={() => fileInputRef.current?.click()} title="Import library from JSON">
+                    Import
+                  </Btn>
+                </div>
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {compounds.map((comp) => (
@@ -1740,14 +2444,10 @@ export default function GlyphComposer() {
                       cols={cols}
                       rows={rows}
                       size={52}
-                      selected={false}
-                      onClick={() => {
-                        setLayout(comp.layout);
-                        setSlots(comp.slots.slice());
-                        setGlyphBank({ ...comp.glyphData });
-                        setActiveSlot(0);
-                        setSelGlyph(null);
-                      }}
+                      selected={selGlyph === comp.id}
+                      onClick={() => placeGlyph(comp.id, null, true, comp)}
+                      badge={comp.promoted ? "P\u2192O" : "\u2605"}
+                      badgeColor={comp.promoted ? "#8b6c3e" : "#6b8b3e"}
                     />
                     <div
                       style={{
@@ -1760,14 +2460,56 @@ export default function GlyphComposer() {
                         whiteSpace: "nowrap",
                       }}
                     >
-                      {comp.promoted ? "\u2191 " : ""}
                       {comp.label}
                     </div>
+                    {comp.definitions?.[comp.activeDefinitionIndex ?? -1] && (
+                      <div style={{ fontSize: 7, color: "#6b8b3e", maxWidth: 52, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                        {comp.definitions[comp.activeDefinitionIndex!].text}
+                      </div>
+                    )}
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setDetailCompoundId(comp.id); }}
+                      style={{
+                        fontSize: 8,
+                        color: "#c4a46c",
+                        background: "#1a1714",
+                        border: "1px solid #3d2e1a",
+                        borderRadius: 3,
+                        padding: "1px 6px",
+                        cursor: "pointer",
+                        marginTop: 2,
+                        fontFamily: "JetBrains Mono, monospace",
+                      }}
+                      title="Edit details"
+                    >
+                      Detail
+                    </button>
+                    <button
+                      onClick={() => {
+                        setLayout(comp.layout);
+                        setSlots(comp.slots.slice());
+                        setGlyphBank({ ...comp.glyphData });
+                        setActiveSlot(0);
+                        setSelGlyph(null);
+                      }}
+                      style={{
+                        fontSize: 8,
+                        color: "#6b6157",
+                        background: "none",
+                        border: "1px solid #2a2520",
+                        borderRadius: 3,
+                        padding: "1px 5px",
+                        cursor: "pointer",
+                        marginTop: 2,
+                        fontFamily: "JetBrains Mono, monospace",
+                      }}
+                    >
+                      Restore
+                    </button>
                   </div>
                 ))}
               </div>
             </div>
-          )}
         </div>
       </div>
 
@@ -1785,6 +2527,45 @@ export default function GlyphComposer() {
       >
         {"\u4E00"} stroke {"\u00B7"} {"\u4E8C"} topology {"\u00B7"} {"\u4E09"} composition {"\u00B7"} {"\u842C\u7269"} recursion {"\u00B7"} placement IS meaning
       </div>
+
+      {/* Detail panel as fixed right-side overlay */}
+      {detailCompound && (
+        <>
+          <div
+            onClick={() => setDetailCompoundId(null)}
+            style={{
+              position: "fixed",
+              inset: 0,
+              background: "rgba(0,0,0,0.4)",
+              zIndex: 99,
+            }}
+          />
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              right: 0,
+              width: 360,
+              maxWidth: "90vw",
+              height: "100vh",
+              overflowY: "auto",
+              zIndex: 100,
+              padding: 0,
+            }}
+          >
+            <GlyphDetailPanel
+              compound={detailCompound}
+              allCompounds={compounds}
+              edges={edges}
+              cols={cols}
+              rows={rows}
+              onUpdate={(updates) => updateCompoundMeta(detailCompound.id, updates)}
+              onClose={() => setDetailCompoundId(null)}
+              onDelete={() => deleteCompound(detailCompound.id)}
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 }

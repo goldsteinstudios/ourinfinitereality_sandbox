@@ -8,8 +8,9 @@ import { Loading, ErrorDisplay } from './components/Loading';
 import { AnalysisPanel } from './components/analysis/AnalysisPanel';
 import { MotionDecoder } from './components/motion/MotionDecoder';
 import GlyphComposer from './components/GlyphComposer';
+import { DerivationViewer } from './components/derivation/DerivationViewer';
 
-type ViewMode = 'grid' | 'analysis' | 'motion' | 'composer';
+type ViewMode = 'derivation' | 'grid' | 'analysis' | 'motion' | 'composer';
 
 function App() {
   // Load data on mount
@@ -34,6 +35,7 @@ function App() {
     <div className="h-screen flex flex-col bg-gray-900 text-white">
       <Header viewMode={viewMode} setViewMode={setViewMode} />
       <main className="flex-1 overflow-hidden">
+        {viewMode === 'derivation' && <DerivationViewer />}
         {viewMode === 'grid' && <CharacterGrid />}
         {viewMode === 'analysis' && <AnalysisPanel />}
         {viewMode === 'motion' && <MotionDecoder />}

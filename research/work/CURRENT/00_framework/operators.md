@@ -1,5 +1,5 @@
 # RSM Operators
-## The Five Universal Constants as Structural Operators
+## The Five Universal Constants as Structural Operators — v5.5
 
 ---
 
@@ -11,9 +11,9 @@ Five mathematical constants function as **universal operators** with consistent 
 |----------|---------------------|---------------------|
 | **i** | √−1 (imaginary unit) | Orthogonal rotation preserving paradox |
 | **π** | Circle ratio | Curvature/closure for stable periodic systems |
-| **e** | Natural exponential base | Continuous recursion and scale invariance |
-| **1** | Unity | Local measurable unit/frame |
-| **0** | Zero | Paradox center / unmeasurable origin |
+| **e** | Natural exponential base | Exponential parameterization and scale recursion |
+| **1** | Unity | Local measurable unit / minimum distinction / 1ₙ |
+| **0** | Zero | Paradox center / P0 / unmeasurable origin |
 
 ---
 
@@ -27,7 +27,7 @@ i² = −1
 ### Structural Function
 - Rotates 90° without resolving paradox
 - Enables movement around centers rather than through them
-- Generates new dimensions from existing ones
+- At P = (1,1), the gradient slope (−1) and balance slope (+1) are perpendicular — this IS i
 
 ### Cross-Domain Expression
 
@@ -36,10 +36,7 @@ i² = −1
 | Mathematics | Complex plane rotation |
 | Physics | Phase angle / wave rotation |
 | Biology | Membrane turn / selective flow |
-| TTC | 反 (Fǎn) — return is movement |
-
-### Key Insight
-The imaginary unit allows **real** operations to complete by passing through **impossible** space. Just as Chapter 11's hub void enables the wheel to turn, i enables circulation through apparent non-existence.
+| DDJ | 反 (Fǎn) — return is movement |
 
 ---
 
@@ -49,12 +46,11 @@ The imaginary unit allows **real** operations to complete by passing through **i
 ```
 π = C/d ≈ 3.14159...
 ```
-The ratio of circumference to diameter — fundamentally **irrational**.
 
 ### Structural Function
-- Closes curvature into stable orbits
+- Closes curvature into stable orbits (the circle bridge x² + y² = 1)
 - Ensures periodicity without exact repetition
-- Prevents collapse into static points
+- Connects the two branches of the hyperbola through rotation
 
 ### Cross-Domain Expression
 
@@ -63,61 +59,61 @@ The ratio of circumference to diameter — fundamentally **irrational**.
 | Mathematics | Circle/sphere geometry |
 | Physics | Orbital closure / periodicity |
 | Biology | Cyclic homeostasis |
-| TTC | 循 (Xún) — circulation |
+| DDJ | 循 (Xún) — circulation |
 
 ### Why Irrational?
-If π were rational, circles would eventually close exactly — creating "prisons of periodicity." Irrationality ensures infinite, non-repeating circulation that rhymes across scales while remaining infinitely novel.
+If π were rational, circles would eventually close exactly — creating "prisons of periodicity." Irrationality ensures infinite, non-repeating circulation.
 
 ---
 
-## 3. The e Operator: Continuous Recursion
+## 3. The e Operator: Exponential Parameterization
 
 ### Mathematical Definition
 ```
 e = lim(n→∞) (1 + 1/n)^n ≈ 2.71828...
 ```
-The unique number whose derivative equals itself: d/dx(eˣ) = eˣ
 
-### Structural Function
-- Preserves growth rate across transformations
-- Enables scale invariance / compounding
-- Maintains continuity across recursive levels
+### Structural Function (v5.5 insight)
+- **Parameterizes the hyperbola**: x = eᵘ, y = e⁻ᵘ is the unique self-similar parameterization of xy = 1
+- **Defines energy cost**: the cost of displacement along u grows as eᵘ — this derives the energy barrier
+- **Links to Lorentz**: cosh u = (eᵘ + e⁻ᵘ)/2, sinh u = (eᵘ − e⁻ᵘ)/2 → X² − T² = 1
+- **Preserves scale recursion**: d/du(eᵘ) = eᵘ (the curve is its own derivative)
+
+### v5.5 Key Insight: Energy and Matter
+- **Energy** = traversal along u (movement along the curve)
+- **Matter** = stable position on the curve (persistent configuration)
+
+These are not separate substances — they are different descriptions of the same hyperbola.
 
 ### Cross-Domain Expression
 
 | Domain | e Expression |
 |--------|--------------|
-| Mathematics | Exponential growth/decay |
-| Physics | Scale invariance / compounding |
+| Mathematics | Exponential parameterization of xy = 1 |
+| Physics | Lorentz factor γ = cosh u; energy barrier |
 | Biology | Growth rate / metabolism |
-| TTC | 生 (Shēng) — to generate |
-
-### Key Insight
-e represents 自然 (zì rán) — "self-so" or natural spontaneity. It is growth that maintains its own growth rate, the constant that preserves constancy across infinite transformations.
+| DDJ | 生 (Shēng) — to generate |
 
 ---
 
-## 4. The 1 Operator: Local Unity
+## 4. The 1 Operator: Minimum Distinction
 
 ### Mathematical Definition
 The multiplicative identity: 1 × x = x
 
 ### Structural Function
-- Establishes minimal local unit
-- Creates the first distinction from void
-- Provides the asymmetry enabling manifestation
+- Establishes the conserved product: xy = 1ₙ within each frame
+- The minimum distinction that prevents P0
+- Creates the first asymmetry enabling manifestation
 
 ### Cross-Domain Expression
 
 | Domain | 1 Expression |
 |--------|--------------|
-| Mathematics | Unit / identity element |
-| Physics | Measurable frame |
+| Mathematics | Unit / identity element / conserved product |
+| Physics | Measurable frame / proper interval |
 | Biology | Organism / individual |
-| TTC | 一 (Yī) — oneness |
-
-### In Euler's Identity
-The +1 provides the "extra push" completing the return to zero. Without it, e^(iπ) = −1 (perfect opposition but no return to source).
+| DDJ | 一 (Yī) — oneness |
 
 ---
 
@@ -125,24 +121,20 @@ The +1 provides the "extra push" completing the return to zero. Without it, e^(i
 
 ### Mathematical Definition
 The additive identity: 0 + x = x
-Also: division by zero is undefined (paradox)
 
 ### Structural Function
-- The unmeasurable paradox center
+- The unmeasurable paradox center (P0)
 - Origin from which all structure emerges
-- The void that enables all function
+- The void that enables all function — incoherent as a state, necessary as a reference
 
 ### Cross-Domain Expression
 
 | Domain | 0 Expression |
 |--------|--------------|
-| Mathematics | Origin / singularity |
-| Physics | Gravitational center / void |
+| Mathematics | Origin / singularity / asymptote |
+| Physics | Gravitational center / event horizon |
 | Biology | Genetic potential / seed |
-| TTC | 無 (Wú) — nothing that is something |
-
-### Key Insight
-Zero is not absence but **functional void** — the hub's emptiness that enables the wheel's usefulness (Chapter 11).
+| DDJ | 無 (Wú) — nothing that is something |
 
 ---
 
@@ -153,43 +145,52 @@ Zero is not absence but **functional void** — the hub's emptiness that enables
 e^(iπ) + 1 = 0
 ```
 
-This equation encodes the complete recursion cycle:
-1. **e**: Natural growth/recursion
-2. **i**: Rotated through impossible dimension
-3. **π**: Completing full curvature
-4. **+1**: Adding the asymmetry of manifestation
-5. **= 0**: Returning to paradox center
+Reading through v5.5:
+1. **e**: Exponential parameterization of the hyperbola
+2. **i**: Orthogonal rotation (perpendicularity at P)
+3. **π**: Full curvature closure (circle bridge between branches)
+4. **+1**: The minimum distinction / conserved product
+5. **= 0**: Return to paradox center (P0)
 
 ### The Recursion Kernel
 
 ```
-P₀ ──(i)──→ O₁ ──(∇)──→ G₁ ──(π,⟂³)──→ P₁ ──(promote)──→ O₂
-         ↑                                              │
-         └──────────────(e: scale link)─────────────────┘
+P₀ ──(i)──→ O₁ ──(e)──→ G₁(xy=1) ──(π)──→ S² ──(P)──→ O₂
 ```
 
-- **i**: Orthogonal turn creates origin from paradox
-- **∇**: Induced curvature creates gradient field
-- **π, ⟂³**: Spherical closure creates measurement surface
-- **e**: Smooth scale recursion between levels
+### The :: (Parallax) Operator
+
+The parallax operator `::` denotes structural correspondence across frameworks. It is not metaphor — it indicates the same structural feature expressed in different vocabularies.
+
+Example:
+```
+xy = 1  ::  X² − T² = 1  ::  metabolic rate × lifespan ≈ const  ::  天地
+```
+
+All four expressions describe the same structural feature: a reciprocal constraint between dual modes.
+
+Usage pattern:
+```
+[structural feature] :: [mathematics] :: [physics] :: [biology] :: [DDJ]
+```
+
+The :: operator is the formal notation for cross-framework reading. When we say "the hyperbola :: the Lorentz invariant," we mean these are not analogous but identical structures in different coordinates.
 
 ---
 
-## Irrationality as Structural Necessity
+## Distinction: Operators vs. Structural Elements
 
-All three "dynamic" constants (e, π, i-related √2) are **irrational**:
+| Category | Members | Function |
+|----------|---------|----------|
+| **Operators** | i, π, e, 1, 0 | Universal transformations / constants |
+| **Structural Elements** | O, G, B, P, R, 1ₙ | Frame-level vocabulary |
 
-| Constant | Decimal (non-terminating, non-repeating) |
-|----------|------------------------------------------|
-| e | 2.71828182845904523536... |
-| π | 3.14159265358979323846... |
-| √2 | 1.41421356237309504880... |
-
-### Why This Matters
-
-- **Rational** constants would create periodic traps
-- **Irrational** constants ensure infinite exploration without repetition
-- This is the mathematical proof of 常道 (cháng dào) — the constant way cannot be captured in rational discourse
+The operators act on and between structural elements. For example:
+- **e** parameterizes G (the gradient xy = 1)
+- **i** generates the perpendicularity at P
+- **π** closes the circle bridge (x² + y² = 1)
+- **1** is the conserved product 1ₙ within each frame
+- **0** is P0, the incoherent pre-frame impossibility
 
 ---
 
@@ -198,12 +199,12 @@ All three "dynamic" constants (e, π, i-related √2) are **irrational**:
 When analyzing any system:
 
 1. **Identify the 0**: Where is the paradox center?
-2. **Identify the 1**: What is the local unit/frame?
-3. **Identify the i**: Where are the orthogonal turns?
+2. **Identify the 1**: What is the conserved product?
+3. **Identify the i**: Where is the orthogonality?
 4. **Identify the π**: Where is curvature/closure?
-5. **Identify the e**: How does the pattern scale?
+5. **Identify the e**: What is the exponential cost structure?
 
 ---
 
-*Version: Consolidated from July 2025 symbol guide + August 2025 Euler essay*
-*Last updated: November 2025*
+*Version: v5.5 Logic Mapping*
+*Updated: March 2026*

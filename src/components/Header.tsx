@@ -3,8 +3,8 @@ import { useAppStore } from '../store/useAppStore';
 import { RADICALS } from '../utils/radicalDetector';
 
 interface HeaderProps {
-  viewMode: 'grid' | 'analysis' | 'motion' | 'composer';
-  setViewMode: (mode: 'grid' | 'analysis' | 'motion' | 'composer') => void;
+  viewMode: 'derivation' | 'grid' | 'analysis' | 'motion' | 'composer';
+  setViewMode: (mode: 'derivation' | 'grid' | 'analysis' | 'motion' | 'composer') => void;
 }
 
 export function Header({ viewMode, setViewMode }: HeaderProps) {
@@ -56,6 +56,16 @@ export function Header({ viewMode, setViewMode }: HeaderProps) {
 
         {/* View Mode Toggle */}
         <div className="flex gap-2">
+          <button
+            onClick={() => setViewMode('derivation')}
+            className={`px-4 py-2 rounded transition-colors ${
+              viewMode === 'derivation'
+                ? 'bg-blue-600 text-white'
+                : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+            }`}
+          >
+            Derivation
+          </button>
           <button
             onClick={() => setViewMode('grid')}
             className={`px-4 py-2 rounded transition-colors ${

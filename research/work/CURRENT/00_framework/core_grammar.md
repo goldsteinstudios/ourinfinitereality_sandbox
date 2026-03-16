@@ -1,132 +1,129 @@
 # RSM Core Grammar
-## The Recursive Structural Model: Foundational Architecture
+## The Recursive Structural Model: Foundational Architecture — v5.5
 
 ---
 
-## 1. The Promotion Sequence
+## 1. The Single Conditional Premise
 
-The fundamental grammar of reality as recursive structure:
+Everything derived is conditional on one premise:
 
-```
-P₀ → O₁ → G₁ → P₁ → O₂ → G₂ → P₂ → ...
-```
+> **If reality is infinitely divisible, then P0 is incoherent; differentiation obtains.**
 
-| Symbol | Name | Function | TTC Parallel |
-|--------|------|----------|--------------|
-| **P₀** | True Void / Paradox | Unframeable paradox preceding all distinction | 無名 (Wú Míng) |
-| **O₁** | Origin Frame | First boundary/coordinate system from P₀ | 道 (Dào) |
-| **G₁** | Gradient Field | Dynamic field of potential/contrast | 天地 (Tiān Dì) |
-| **P₁** | Local Intersection | Measurable event/point in G₁ | 有名 (Yǒu Míng) |
-| **O₂** | Next Origin | P₁ becomes origin at new scale (promotion) | 復 (Fù) |
-
-### The Promotion Operator
-
-Any measurement point P₁ can become the origin O₂ for a new recursion level:
-
-```
-∀ p ∈ P₁, p ↦ O₂
-```
-
-This is not temporal creation but structural implication.
+This is a model, not a proof. We trace what follows if the premise holds.
 
 ---
 
-## 2. The Gradient Field G₁
+## 2. The 14-Step Entailment Chain
 
-The minimal non-collapsing structure is a proportional relation:
+Each step IS the next (identity ≡, not production →).
 
-```
-G₁ = {(X₁, Y₁) ∈ ℝ₊² | X₁Y₁ = 1}
-```
-
-This hyperbolic curve represents:
-- **X₁**: Dimensionality axis (extension, scaling)
-- **Y₁**: Contrast gradient (distinction, differentiation)
-
-### Key Properties
-
-1. **Proportional Constraint**: As X increases, Y decreases (and vice versa)
-2. **Balance Point P₁**: The locus where X₁ = Y₁ = 1
-3. **Asymptotic Behavior**: Approaches but never reaches axes
-4. **Stability**: Only this hyperbolic form survives infinite divisibility
-
-### Emergent Phenomena
-
-From the X₁/Y₁ relationship:
-- **Mass**: Appears where X₁ > Y₁ (probability gradient exceeds dimensionality)
-- **Energy**: Appears where Y₁ > X₁ (dimensionality exceeds probability gradient)
+| Step | Section | Statement |
+|------|---------|-----------|
+| 1 | §1 | If infinitely divisible → what obtains is distinguishable |
+| 2 | §2.1 | P0 incoherent ≡ differentiation obtains |
+| 3 | §2.2 | Differentiation ≡ duality (x, y) |
+| 4 | §2.3 | Duality + P0 incoherent ≡ conservation (xy = 1) |
+| 5 | §2.4 | Conservation ≡ gradient |
+| 6 | §2.5 | Gradient ≡ hyperbola |
+| 7 | §3.1 | Exponential parameterization: x = eᵘ, y = e⁻ᵘ |
+| 8 | §4.1 | Lorentz correspondence: X² − T² = 1 |
+| 9 | §5.1 | Balance axis x = y, orthogonality at P = (1,1) |
+| 10 | §5.2 | Paradox-condition: P must exist, cannot persist |
+| 11 | §6.1 | Non-termination: exponential cost of approaching asymptote |
+| 12 | §7.1 | Frame recursion (parturition): Gₙ → x_{n+1}, Bₙ → y_{n+1} |
+| 13 | §8.1–8.2 | Two-branch connection → S² → ℝ³; three equations |
+| 14 | §9.1 | Oscillation through P |
 
 ---
 
-## 3. Circulation Z₁
+## 3. The Gradient Field
 
-Stability requires circulation around paradox centers:
+The minimal non-collapsing structure:
 
 ```
-Z₁ = rotational turning that preserves paradox without resolution
+G = {(x, y) ∈ ℝ₊² | xy = 1}
 ```
 
-### Mathematical Expression
+### Exponential Parameterization (§3.1)
 
-Unimodular scaling preserves G₁:
 ```
-(X₁, Y₁) ↦ (λX₁, Y₁/λ), λ > 0
+x = eᵘ,  y = e⁻ᵘ,  u ∈ ℝ
 ```
 
-In logarithmic coordinates (u,v) = (ln X₁, ln Y₁) with u+v=0, this is hyperbolic rotation.
+- u = 0: balance point (1,1)
+- u > 0: x-dominant (matter-like)
+- u < 0: y-dominant (energy-like)
+- Cost grows as eᵘ — the energy barrier is geometric
 
-### Dimensionality Requirement
+### Lorentz Correspondence (§4.1)
 
-- 2D: Circulation collapses (Poincaré-Bendixson theorem)
-- 3D: Persistent circulation possible (non-integrability)
-- Odd dimensions generalize stability; even dimensions allow cancellations
+```
+X = cosh u = (x+y)/2,  T = sinh u = (x−y)/2
+→  X² − T² = 1
+```
+
+The structural constraint and the Lorentz invariant are the same equation in rotated coordinates.
 
 ---
 
-## 4. Recursive Forms Rₙ
+## 4. The Three Equations (§8.2)
 
-All manifest structures are recursive forms maintaining the proportional constraint:
+| Equation | Geometry | Structural Role |
+|----------|----------|----------------|
+| xy = 1 | Rectangular hyperbola | Flat reciprocal constraint |
+| x² + y² = 1 | Unit circle | Bridge between branches (rotation around forbidden center) |
+| x² + y² + z² = 1 | Unit sphere | No preferred direction (isotropy) → ℝ³ |
 
-```
-Rₙ = f(Z₁, Pₙ, Y₁, X₁)
-```
-
-Every vessel (器 qì) is circulation around a preserved paradox center.
-
----
-
-## 5. Four Types of Recursion
-
-| Type | Function | Example |
-|------|----------|---------|
-| **Implicit** | Underlying structural axioms (the "code") | The grammar itself |
-| **Parametric** | Individual runs under specific conditions | Particular manifestations |
-| **Maintenance** | Reinforcing existing forms (stability, repair) | Homeostasis, orbit |
-| **Divergence** | Generating novelty (branching, expansion) | Growth, speciation |
+Each equation IS the next level: constraint → rotation → isotropy.
 
 ---
 
-## 6. The Wu Wei Condition
+## 5. Frame Recursion (Parturition) (§7.1)
 
-Optimal efficiency when paradox is preserved, not forced:
+Since P cannot persist and P0 is incoherent, P promotes to a new origin:
 
 ```
-∂Pₙ/∂t = 0
+Pₙ → O_{n+1}
+Gₙ → xAxis_{n+1}
+Bₙ → yAxis_{n+1}
 ```
 
-This is equivalent to all conservation laws being satisfied simultaneously.
+Each new frame Rₙ₊₁ contains: O, G, B, P, 1 at its own scale. The product 1ₙ is conserved within each frame.
+
+### Energy and Matter (from exponential parameterization)
+
+- **Energy**: traversal along u (movement along the curve)
+- **Matter**: stable position on the curve (persistent configuration)
+
+These are not separate substances — they are different descriptions of position and motion on the same hyperbola.
 
 ---
 
-## 7. Cross-Domain Mapping
+## 6. Falsifiable Predictions
 
-| Element | Mathematics | Physics | Biology | TTC |
-|---------|-------------|---------|---------|-----|
-| P₀ | Zero/Singularity | Gravitational core | Seed/nucleus | 無名 |
-| O₁ | Complex plane | Inertial frame | Cell membrane | 道 |
-| G₁ | y = 1/x manifold | Curved spacetime | Metabolic gradient | 天地 |
-| P₁ | Tangent point | Local event | Organelle/process | 有名 |
-| O₂ | Nested manifold | New frame | Offspring seed | 復 |
+1. **No persistent structure without paradoxical center** — falsified by a structure solid through its center
+2. **Conservation requires duality** — falsified by a conserved scalar with no dual structure
+3. **Orthogonality at the paradox point** — falsified by balanced dual modes without perpendicularity
+4. **Exponential cost of extremity** — falsified by linear cost of approaching xy=constant asymptote
+5. **Frame recursion preserves structure** — falsified by a frame level missing O, G, B, P, or 1
+6. **Three dimensions from two branches** — falsified by isotropic closure in ≠ 3 dimensions
+
+---
+
+## 7. Cross-Domain Mapping (Parallax :: Operator)
+
+The :: operator denotes structural correspondence across frameworks — not metaphor, but the same structural feature expressed in different vocabularies.
+
+| Structural Feature | Mathematics | Physics | Biology | DDJ |
+|--------------------|-------------|---------|---------|-----|
+| Inverse constraint (xy = 1) | Rectangular hyperbola | Lorentz invariant | Metabolic rate × lifespan | 天地 |
+| Balance axis (x = y) | Identity line | Rest frame | Homeostatic set-point | 中 |
+| Orthogonality at P | ⊥ tangent/bisector | Proper time | Equilibrium of drives | 玄 |
+| Paradox-condition | Saddle point | Virtual particle | Cell division moment | 無 |
+| Exponential cost | eᵘ divergence | c as speed limit | Diminishing returns | 不可 |
+| Frame recursion | Self-similar fractals | Scale hierarchy | Cell → organ → organism | 道生一... |
+| Oscillation through P | Periodic orbit | Wave function | Heartbeat, breath | 反者道之動 |
+| Three equations | S⁰ → S¹ → S² | 3 spatial dimensions | Bilateral → radial → spherical | 三生萬物 |
 
 ---
 
@@ -138,13 +135,11 @@ e^(iπ) + 1 = 0
 
 | Constant | RSM Function |
 |----------|--------------|
-| **e** | Continuous recursion / gradient preservation |
-| **i** | Orthogonal rotation (90° turn preserving paradox) |
-| **π** | Curvature / closure for stable periodic systems |
-| **1** | Local unit / minimal distinction |
-| **0** | Paradox center / unmeasurable origin |
-
-The equation shows: natural growth (e) rotated through impossible space (iπ) plus unity (+1) returns perfectly to void (=0).
+| **e** | Exponential parameterization / scale recursion |
+| **i** | Orthogonal rotation (perpendicularity at P) |
+| **π** | Curvature / closure (circle bridge) |
+| **1** | Minimum distinction / local unit |
+| **0** | Paradox center / P0 |
 
 ---
 
@@ -158,5 +153,5 @@ The equation shows: natural growth (e) rotated through impossible space (iπ) pl
 
 ---
 
-*Version: Consolidated from October 2025 baseline + recovered insights*
-*Last updated: November 2025*
+*Version: v5.5 Logic Mapping*
+*Updated: March 2026*

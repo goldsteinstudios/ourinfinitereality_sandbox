@@ -4,7 +4,7 @@ export interface Character {
   chapter: number;
   position: number; // Row number in the text
   radicals?: string[];
-  operatorType?: 'O' | 'G' | 'P' | 'frame' | 'perception';
+  operatorType?: 'O' | 'G' | 'B' | 'P' | '1n' | 'frame';
   notes?: string[];
 }
 

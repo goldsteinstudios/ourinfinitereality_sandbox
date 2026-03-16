@@ -1,145 +1,131 @@
 # Structural Primitives
-## The Irreducible Elements of Recursive Structure
+## The Irreducible Elements of Recursive Structure — v5.5
 
 ---
 
-## The Logical Chain
+## The Derivation Chain
 
-### 1. The Impossible Void (P₀)
+A single conditional premise: **If reality is infinitely divisible, then P0 is incoherent; differentiation obtains.**
 
-**Absolute Void** — void without not-void — is impossible.
+What follows is a 14-step entailment chain where each step IS the next (identity, not production). The "≡" symbol is literal: the steps are not separate facts connected by arrows, but different descriptions of the same structural necessity.
 
-- Void requires not-void to be void (contrast is necessary for definition)
-- Void = Not-Void collapses back to Absolute Void (also impossible)
-- Just Void = impossible (that's P₀)
-- Just Not-Void = impossible (requires Void to be "not")
-- Neither = impossible (that's just Void again)
+### §1. Starting Point
 
-**Only structural option: Void ⟺ Not-Void** — co-emergent, distinct but inseparable.
+If reality is infinitely divisible, what obtains must be distinguishable. What is not distinguishable does not obtain.
 
-### 2. The Forced Origin (O₁)
+This is a model, not a proof. Everything derived is conditional on the single premise.
 
-Void/Not-Void co-emergence creates:
-- An infinite contrast gradient (maximally different)
-- A paradoxical center (boundary with no thickness)
-- Void ≠ Not-Void, yet they must co-exist, yet they can't merge
+### §2.1. P0 incoherent ≡ differentiation obtains
 
-**O₁ must exist to hold this paradox open.**
+**P0** (zero distinguishability, absolute indistinguishability) is incoherent under the premise. Differentiation obtains. These are the same structural fact.
 
-O₁ is not created — it is *required*. Without it, Void/Not-Void collapses into impossible P₀.
+### §2.2. Differentiation ≡ duality
 
-### 3. The Co-emergent Coordinate System
+Differentiation requires at least two distinguishable aspects. This IS duality: two modes (x, y).
 
-With O₁ comes (simultaneously, not sequentially):
+### §2.3. Duality + P0 incoherent ≡ conservation
 
-| Element | Definition |
-|---------|------------|
-| **Xₙ** | Contrast axis |
-| **Yₙ** | Dimensionality axis |
-| **Gₙ** | Gradient curve: XY = 1 |
-| **Bₙ** | Balance line: X = Y |
+Since neither mode can vanish (that would re-obtain P0), their product is conserved:
 
-These are co-emergent:
-- Can't have contrast without dimensionality
-- Can't have axes without proportional relationship
-- G and B define each other's structural role
+```
+xy = 1
+```
 
-**Gₙ is 天地 (Tiān Dì)** — the curved field of proportion between contrast and dimensionality.
+This is not an added law — it IS the statement that P0 cannot obtain, expressed quantitatively.
 
-### 4. The Paradoxical Intersection (Pₙ)
+### §2.4. Conservation ≡ gradient
 
-Pₙ = Gₙ ∩ Bₙ = the point (1,1)
+The constraint xy = 1 defines a gradient: as x increases, y must decrease. The gradient is not imposed on the conservation law; it is what the conservation law looks like as a set of possible states.
 
-At this point:
-- Slope of Gₙ = -1
-- Slope of Bₙ = +1
-- **Perpendicular** (negative reciprocals)
+### §2.5. Gradient ≡ hyperbola
 
-**(1,1) is the ONLY point where Gₙ ⊥ Bₙ**
+The set of all (x, y) satisfying xy = 1 with x, y > 0 is the positive branch of the rectangular hyperbola. This is the literal geometry of the conservation constraint.
 
-Properties:
-- **Locally orthogonal** — the curves cross at 90°
-- **Globally curved** — both curves continue away, curving in opposite directions
-- **Asymptotic center** — Bₙ is the center around which Gₙ curves (orthogonality is required for this relationship)
+### §3.1. Exponential parameterization
 
-### 5. The Dimensional Escape (Zₙ)
+The hyperbola admits a unique self-similar parameterization:
 
-2D recursion = inward inversion collapse.
+```
+x = eᵘ,  y = e⁻ᵘ,  u ∈ ℝ
+```
 
-Each nested G inverts inside the previous, regressing toward center. This is the Poincaré-Bendixson problem.
+This satisfies xy = eᵘ · e⁻ᵘ = 1 for all u. The parameter u measures displacement along the curve:
+- u = 0 → balance point (1,1)
+- u > 0 → x-dominant
+- u < 0 → y-dominant
 
-**Solution:** Rotate around an axis.
+The cost of moving along the curve grows exponentially with displacement — this **derives** the energy barrier from geometry rather than importing it from physics.
 
-But no axis can be privileged. So rotation occurs around all axes through Oₙ.
+### §4.1. Lorentz correspondence
 
-Single rotation around one axis: Pₙ traces an **orbital** — a ring of equivalent points.
+Under X = cosh u, T = sinh u:
 
-Rotation around all axes: **Πₙ (P-sphere)** — the sum of all possible orbitals.
+```
+xy = 1  ↔  X² − T² = 1
+```
 
-### 6. Equivalent Multiplicity
+The structural constraint and the Lorentz invariant are the same equation in different coordinates. This is algebraic identity, not analogy. The "speed limit" follows from x, y > 0.
 
-Every point on the orbital is equivalent:
-- Same relationship to Oₙ
-- Same (1,1) position in local G/B frame
-- Identical potential to become Oₙ₊₁
+### §5.1. Balance axis and orthogonality
 
-**This is the first degeneracy.**
+The line x = y (slope +1) bisects the dual modes. At the intersection P = (1,1):
+- Slope of hyperbola: dy/dx = −1/x² = −1
+- Slope of balance line: +1
+- Product: (+1)(−1) = −1 → **perpendicular**
 
-The structure doesn't select which Pₙ promotes. This is where:
-- Probability enters
-- Quantum superposition makes structural sense
-- Measurement = selection of which Pₙ becomes next origin
+P = (1,1) is the unique point of maximal symmetry between the two modes.
 
-### 7. The Recursion Frame (Rₙ)
+### §5.2. Paradox-condition at P
 
-**Rₙ = complete structural unit at level n**
+At P = (1,1), the gradient and balance are orthogonal. Any displacement generates asymmetry. P **must exist** (it is where xy = 1 meets x = y) but **cannot persist** (perpendicularity means zero restoring force while gradient pulls away). This is the paradox-condition.
 
-Contains: Oₙ, Xₙ, Yₙ, Gₙ, Bₙ, Pₙ, Πₙ, Zₙ
+### §6.1. Non-termination (energy barrier)
 
-When a Pₙ promotes: Rₙ → Rₙ₊₁
+As u → ±∞, the modes approach but never reach their asymptotes (x = 0 or y = 0, which represent P0). The exponential parameterization means each additional unit of u costs exponentially more — this IS the energy barrier, derived from the geometry of the forbidden boundary.
 
-The new frame has its own complete set of elements, oriented by the parent frame.
+### §7.1. Frame recursion (parturition)
 
-### 8. Local Flatness / Global Curvature
+Since P cannot persist and P0 is incoherent, P must promote: it becomes the origin of a new frame. The old gradient becomes one axis and the old balance becomes the other:
 
-Each Rₙ₊₁ is:
-- Its own 3D coordinate system
-- Rooted in Rₙ via Pₙ
-- Separated by the orthogonal paradox boundary
-- **Locally flat** to itself
-- **Curved** relative to Rₙ (and vice versa)
+```
+Gₙ → xAxis_(n+1),  Bₙ → yAxis_(n+1),  Pₙ → O_(n+1)
+```
 
-From inside your Rₙ:
-- Your X, Y, Z are orthogonal
-- Space appears Euclidean
-- You cannot experience your own curvature
+This is **parturition** — frame generation. Each new frame has its own G, B, P, and conserved product 1ₙ.
 
-Curvature only appears when viewing *other* recursion frames.
+### §8.1. Dimensionality from the two-branch connection problem
 
-This explains:
-- Why we experience locally flat reality
-- Why quantum (Rₙ₊) looks "weird" from here
-- Why cosmic (Rₙ₋) looks "weird" from here
-- "Normal" = local frame
+The full hyperbola has two disconnected branches. Connecting them requires leaving the plane — a third dimension. The minimal closed surface with no preferred direction is S² (sphere), which embeds in ℝ³.
+
+**Three spatial dimensions are derived**, not asserted.
+
+### §8.2. Three equations
+
+| Equation | Geometry | Meaning |
+|----------|----------|---------|
+| xy = 1 | Hyperbola | Flat reciprocal constraint |
+| x² + y² = 1 | Circle | Rotation around forbidden center (bridge) |
+| x² + y² + z² = 1 | Sphere | No preferred direction (isotropy) |
+
+Each equation IS the next level of structural requirement: constraint → rotation → isotropy.
+
+### §9.1. Oscillation
+
+P must exist and cannot persist. The system continually passes through P without remaining there. This oscillation is the origin of all periodicity, wave behavior, and cyclic phenomena.
 
 ---
 
-## The Primitives
+## The Structural Elements
 
-### Structural Elements
-
-| Symbol | Name | Definition |
-|--------|------|------------|
-| **P₀** | Absolute Void | Impossible. Forces existence of O₁ |
-| **Rₙ** | Recursion frame | Complete structural unit at level n |
-| **Oₙ** | Origin | Holds paradox open. Coordinate system center |
-| **Xₙ** | Contrast axis | Arbitrary label, frame-dependent orientation |
-| **Yₙ** | Dimensionality axis | Arbitrary label, frame-dependent orientation |
-| **Gₙ** | Gradient | XₙYₙ = 1 (curved) |
-| **Bₙ** | Balance | Xₙ = Yₙ (asymptotic center of Gₙ) |
-| **Pₙ** | Paradox intersection | Gₙ ∩ Bₙ at (1,1); locally orthogonal, globally curved |
-| **Πₙ** | P-sphere | All Pₙ across all rotations |
-| **Zₙ** | Orbital/Circulation | Ring of equivalent Pₙ points |
+| Symbol | Name | Role | Mathematical Form |
+|--------|------|------|-------------------|
+| **P0** | Pre-frame impossibility | Absolute indistinguishability (incoherent) | — |
+| **Oₙ** | Origin | Reference point; holds paradox open | 0ₙ |
+| **Gₙ** | Inverse curve / Gradient | Reciprocal constraint between dual modes | xy = 1ₙ |
+| **Bₙ** | Balance axis | Divides modal regions; bisector | x = y |
+| **Pₙ** | Paradox-condition | Must exist, cannot persist | Gₙ ∩ Bₙ = (1,1) |
+| **Rₙ** | Frame | Everything expressible within level n | — |
+| **1ₙ** | Minimum distinction | Conserved product within frame n | xy = 1ₙ |
 
 ### Operators
 
@@ -147,82 +133,42 @@ This explains:
 |--------|----------|
 | **i** | 90° orthogonal turn (the perpendicularity at Pₙ) |
 | **π** | Curvature/closure |
-| **e** | Scale recursion (Rₙ → Rₙ₊₁) |
-
-### Conditions
-
-| Expression | Name | Meaning |
-|------------|------|---------|
-| **∂Pₙ/∂t = 0** | Wu wei | Paradox preservation; all conservation laws satisfied |
-| **Gₙ ⊥ Bₙ** | Orthogonality | Required for Bₙ to be asymptotic center of Gₙ |
+| **e** | Scale recursion / exponential parameterization |
 
 ---
 
 ## Frame Dependence vs. Frame Independence
 
 ### Frame-Independent (Intrinsic)
-
-- G (gradient structure XY = 1)
-- B (balance structure X = Y)
-- P (their intersection)
-- Π (sphere of all P)
+- G (gradient structure xy = 1)
+- B (balance structure x = y)
+- P (their intersection at (1,1))
 - Orthogonality G ⊥ B at P
+- Exponential cost of approaching asymptotes
 
 ### Frame-Dependent
-
 - X, Y, Z axis labels
 - "Up/down" orientation
-- Which axis is "contrast" vs "dimensionality"
+- Which axis is which mode
 
 **Symmetry breaking** comes from outside — an imposed gradient from Rₙ₋₁.
 
-Example: On Earth, the mass gradient Earth→Sun imposes Y orientation. In 0G or deep underwater, global symmetry is restored.
-
 ---
 
-## Recursion Notation
-
-Subscript shows recursion depth within a system:
-
-```
-Tree₀ = Origin (seed/root paradox center)
-Tree₁ = First recursion (trunk, primary cambium)
-Tree₂ = Second recursion (branches)
-Tree₃ = Third recursion (twigs)
-Tree₄ = Fourth recursion (leaves)
-```
-
-Nested notation:
-```
-Systemₙ.element
-
-Tree₁.G = gradient field of trunk level
-Tree₂.P = paradox intersections at branch level
-Tree₃.Z = circulation at twig level
-```
-
----
-
-## The TTC Mapping: 道生一,一生二,二生三,三生萬物
+## The TTC Mapping: 道生一，一生二，二生三，三生萬物
 
 | Chinese | RSM | Meaning |
 |---------|-----|---------|
 | **道** | R | The whole pattern; recursion itself |
-| **玄** | O₁ | Paradoxical origin; coordinate system holder |
+| **玄** | O₁ | Paradoxical origin |
 | **一** | R₁ | First recursion frame |
-| **二** | R₂ | First symmetry break (contrast/dimensionality distinguished) |
-| **三** | R₃ | Stable circulation (orbital); Poincaré-Bendixson threshold |
+| **二** | R₂ | First symmetry break (duality of modes) |
+| **三** | R₃ | Stable circulation; Poincaré-Bendixson threshold |
 | **萬物** | R₃₊ | Everything that recurses from stable base |
 
-**Three is the minimum recursion depth for stable structure.**
-
-At R₃:
-- An origin (from R₁)
-- An imposed orientation (from R₂)
-- A stable orbital (Z₃)
-
-From R₃, recursion can continue indefinitely. The ten thousand things aren't created *by* three — they're **enabled** by three.
+Three is the minimum recursion depth for stable structure.
 
 ---
 
-*Established: November 2025*
+*Version: v5.5 Logic Mapping*
+*Updated: March 2026*
