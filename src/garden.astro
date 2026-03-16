@@ -1,0 +1,332 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Zen Garden">
+  <div class="garden-wrapper">
+    <div id="garden-container"></div>
+  </div>
+
+  <style>
+    .garden-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+    }
+
+    #garden-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* --- Garden UI overlay --- */
+    :global(.garden-ui) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    :global(.garden-panel) {
+      pointer-events: auto;
+    }
+
+    /* Top bar */
+    :global(.garden-top-bar) {
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      color: var(--color-text);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    :global(.garden-day-counter) {
+      font-weight: 600;
+    }
+
+    :global(.garden-phase) {
+      color: var(--color-text-muted);
+    }
+
+    /* Control buttons */
+    :global(.garden-controls) {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+
+    :global(.garden-btn) {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    :global(.garden-btn:hover:not(:disabled)) {
+      background: var(--color-surface-hover);
+      border-color: var(--color-border-hover);
+    }
+
+    :global(.garden-btn:disabled) {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    :global(.garden-btn-secondary) {
+      background: transparent;
+      border-color: var(--color-border-light);
+      color: var(--color-text-muted);
+      font-size: 13px;
+    }
+
+    /* Settings panel */
+    :global(.garden-settings) {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      color: var(--color-text);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 180px;
+    }
+
+    :global(.garden-setting-row) {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    :global(.garden-setting-row label) {
+      flex-shrink: 0;
+      width: 60px;
+      color: var(--color-text-muted);
+      font-size: 12px;
+    }
+
+    :global(.garden-setting-row select) {
+      flex: 1;
+      padding: 4px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--color-border);
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-size: 12px;
+    }
+
+    :global(.garden-setting-row input[type="range"]) {
+      flex: 1;
+      height: 4px;
+      accent-color: var(--color-accent);
+    }
+
+    :global(.garden-debris-value),
+    :global(.garden-maxdays-value) {
+      min-width: 18px;
+      text-align: right;
+      font-size: 12px;
+      color: var(--color-text-muted);
+    }
+
+    /* Hint panel */
+    :global(.garden-hint) {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 16px;
+      border-radius: 6px;
+      background: var(--color-accent);
+      border: 1px solid var(--color-accent);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      color: white;
+      font-weight: 500;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Toast notification */
+    :global(.garden-toast) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: rgba(0, 0, 0, 0.75);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      color: white;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 100;
+    }
+
+    /* Checkbox styling in settings */
+    :global(.garden-setting-row input[type="checkbox"]) {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--color-accent);
+    }
+
+    :global(.garden-setting-divider) {
+      height: 1px;
+      background: var(--color-border-light);
+      margin: 4px 0;
+    }
+
+    :global(.garden-spacing-value),
+    :global(.garden-stepsize-value),
+    :global(.garden-correction-value) {
+      min-width: 32px;
+      text-align: right;
+      font-size: 11px;
+      color: var(--color-text-muted);
+    }
+
+    /* Manual rake info (legacy) */
+    :global(.garden-manual-info) {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 6px 14px;
+      border-radius: 6px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 12px;
+      color: var(--color-text-muted);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Back link */
+    :global(.garden-back) {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      text-decoration: none;
+      pointer-events: auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: background 0.15s;
+    }
+
+    :global(.garden-back:hover) {
+      background: var(--color-surface-hover);
+    }
+
+    /* Hide base layout elements when garden is active */
+    :global(header),
+    :global(footer),
+    :global(main) {
+      /* Let the garden wrapper override */
+    }
+  </style>
+
+  <script>
+    import { createGardenScene } from '../garden/scene';
+    import { createSand } from '../garden/sand';
+    import { createSimulation } from '../garden/simulation';
+    import { createControls } from '../garden/controls';
+
+    const container = document.getElementById('garden-container');
+    if (container) {
+      // Create scene
+      const gardenScene = createGardenScene(container);
+
+      // Create sand surface
+      const sand = createSand(gardenScene.scene);
+
+      // Create simulation
+      const simulation = createSimulation(gardenScene.scene, sand);
+
+      // Create UI controls
+      const controls = createControls(simulation, gardenScene, container);
+
+      // Add back link
+      const backLink = document.createElement('a');
+      backLink.href = '/';
+      backLink.className = 'garden-back';
+      backLink.textContent = '\u2190 Back';
+      container.appendChild(backLink);
+
+      // Startup hint (shows how to use shift+drag)
+      const startupHint = document.createElement('div');
+      startupHint.className = 'garden-panel';
+      startupHint.style.cssText = `
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 6px 14px;
+        border-radius: 6px;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 12px;
+        color: var(--color-text-muted);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        pointer-events: auto;
+        opacity: 1;
+        transition: opacity 0.5s;
+      `;
+      startupHint.textContent = 'Tip: Shift+drag to set custom rake direction';
+      container.appendChild(startupHint);
+
+      // Fade startup hint after 5 seconds or first rake
+      let hintRemoved = false;
+      const removeHint = () => {
+        if (hintRemoved) return;
+        hintRemoved = true;
+        startupHint.style.opacity = '0';
+        setTimeout(() => startupHint.remove(), 500);
+      };
+      setTimeout(removeHint, 5000);
+      simulation.onStateChange((state) => {
+        if (state.phase === 'raking') {
+          removeHint();
+        }
+      });
+    }
+  </script>
+</BaseLayout>
