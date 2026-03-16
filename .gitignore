@@ -5,42 +5,23 @@ node_modules/
 dist/
 build/
 
-# Large archives (keep locally, don't commit)
-research/archive/icloud_import/
-research/archive/notebook_lm/
-research/archive/misc/exported_chat_dumps*/
+# Astro build cache
+.astro/
 
-# Old data extracts
-data/extracted_voice_chatgpt/
-data/extracted_voice_combined/
-data/physics_extracts/
+# MkDocs build output
+site/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Directories removed from main (live on other branches)
+data/
+research/
+output/
 
 # Generated bundles and docsets
 docset_*.md
 notebooklm_bundle_*/
 notebooklm_docs/
 *.zip
-
-# Python cache
-__pycache__/
-*.pyc
-
-# MkDocs build output
-site/
-
-# Large data repositories
-data/CHUBS_repo/
-data/HUST-OBC/
-
-# Glyph image directories (can be regenerated)
-data/ddj/Guodian Strip Glyphs/
-data/ch_40_slip_37A_CHUBS_glyphs/
-ddj/archaeology/Guodian Strip Glyphs/
-
-# Generated output (can be regenerated from scripts)
-output/chu_site/
-output/glyph_review/
-
-# Audio/video assets (large)
-assets/audio/
-assets/video/
