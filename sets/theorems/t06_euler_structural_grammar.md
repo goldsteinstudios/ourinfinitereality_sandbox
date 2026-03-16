@@ -1,1 +1,0 @@
-../rsm-core/05_euler_structural_grammar.md

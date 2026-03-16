@@ -1,1 +1,0 @@
-Anti-Pattern Guide (AAPG) — see conversation for full text
