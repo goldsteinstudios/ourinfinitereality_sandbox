@@ -93,6 +93,8 @@ nav:
 
   - Essays:
     - essays/index.md
+    - Line One: essays/line_one.md
+    - Chapter One Translation: essays/chapter_one_translation.md
     - Why Water?: essays/why_water.md
     - Euler and the Tao: essays/euler_tao.md
     - Scale Invariance: essays/scale_invariance.md
