@@ -62,16 +62,47 @@ cp "$RSM_FILE" "$CURRENT_DIR/01_rsm.md"
 cp "$REPO/rsm/takes/operators.md" "$CURRENT_DIR/02_operators.md"
 cp "$REPO/rsm/canonical/notation_guide.md" "$CURRENT_DIR/03_notation_guide.md"
 cp "$REPO/rsm/canonical/recursive_structural_model.md" "$CURRENT_DIR/04_recursive_structural_model.md"
-cp "$REPO/ddj/canonical/chapters/chapter01.md" "$CURRENT_DIR/05_ddj_chapter01.md"
-cp "$REPO/ddj/canonical/chapters/chapter05.md" "$CURRENT_DIR/06_ddj_chapter05.md"
-cp "$REPO/ddj/canonical/chapters/chapter11.md" "$CURRENT_DIR/07_ddj_chapter11.md"
-cp "$REPO/ddj/canonical/chapters/chapter16.md" "$CURRENT_DIR/08_ddj_chapter16.md"
-cp "$REPO/ddj/canonical/chapters/chapter40.md" "$CURRENT_DIR/09_ddj_chapter40.md"
-cp "$REPO/ddj/canonical/chapters/chapter42.md" "$CURRENT_DIR/10_ddj_chapter42.md"
-cp "$REPO/ddj/canonical/chapters/chapter51.md" "$CURRENT_DIR/11_ddj_chapter51.md"
-cp "$REPO/ddj/canonical/chapters/chapter81.md" "$CURRENT_DIR/12_ddj_chapter81.md"
-cp "$REPO/consolidated/essays/euler_tao_identity.md" "$CURRENT_DIR/13_euler_tao_identity.md"
-cp "$REPO/src/content/essays/between-e-and-phi.md" "$CURRENT_DIR/14_between_e_and_phi.md"
+
+# Lexicon (structural positions is 843 lines now)
+cp "$REPO/ddj/canonical/lexicon/00_lexicon_introduction.md" "$CURRENT_DIR/05_lexicon_intro.md"
+cp "$REPO/ddj/canonical/lexicon/02_operator_families.md" "$CURRENT_DIR/06_lexicon_operators.md"
+cp "$REPO/ddj/canonical/lexicon/03_structural_positions.md" "$CURRENT_DIR/07_lexicon_positions.md"
+cp "$REPO/ddj/canonical/lexicon/04_concept_index.md" "$CURRENT_DIR/08_lexicon_concepts.md"
+cp "$REPO/ddj/canonical/lexicon/07_key_term_refinements.md" "$CURRENT_DIR/09_lexicon_refinements.md"
+
+# DDJ Canonical Chapters
+cp "$REPO/ddj/canonical/chapters/chapter01.md" "$CURRENT_DIR/10_ddj_chapter01.md"
+cp "$REPO/ddj/canonical/chapters/chapter05.md" "$CURRENT_DIR/11_ddj_chapter05.md"
+cp "$REPO/ddj/canonical/chapters/chapter11.md" "$CURRENT_DIR/12_ddj_chapter11.md"
+cp "$REPO/ddj/canonical/chapters/chapter16.md" "$CURRENT_DIR/13_ddj_chapter16.md"
+cp "$REPO/ddj/canonical/chapters/chapter40.md" "$CURRENT_DIR/14_ddj_chapter40.md"
+cp "$REPO/ddj/canonical/chapters/chapter42.md" "$CURRENT_DIR/15_ddj_chapter42.md"
+cp "$REPO/ddj/canonical/chapters/chapter51.md" "$CURRENT_DIR/16_ddj_chapter51.md"
+cp "$REPO/ddj/canonical/chapters/chapter81.md" "$CURRENT_DIR/17_ddj_chapter81.md"
+
+# DDJ Structural Translations (with confidence tracking)
+cp "$REPO/src/content/translations/chapter-01.md" "$CURRENT_DIR/18_trans_chapter01.md"
+cp "$REPO/src/content/translations/chapter-02.md" "$CURRENT_DIR/19_trans_chapter02.md"
+cp "$REPO/src/content/translations/chapter-08.md" "$CURRENT_DIR/20_trans_chapter08.md"
+cp "$REPO/src/content/translations/chapter-11.md" "$CURRENT_DIR/21_trans_chapter11.md"
+cp "$REPO/src/content/translations/chapter-22.md" "$CURRENT_DIR/22_trans_chapter22.md"
+cp "$REPO/src/content/translations/chapter-25.md" "$CURRENT_DIR/23_trans_chapter25.md"
+cp "$REPO/src/content/translations/chapter-40.md" "$CURRENT_DIR/24_trans_chapter40.md"
+cp "$REPO/src/content/translations/chapter-42.md" "$CURRENT_DIR/25_trans_chapter42.md"
+cp "$REPO/src/content/translations/chapter-64.md" "$CURRENT_DIR/26_trans_chapter64.md"
+cp "$REPO/src/content/translations/chapter-76.md" "$CURRENT_DIR/27_trans_chapter76.md"
+
+# Essays
+cp "$REPO/consolidated/essays/euler_tao_identity.md" "$CURRENT_DIR/28_euler_tao_identity.md"
+cp "$REPO/src/content/essays/between-e-and-phi.md" "$CURRENT_DIR/29_between_e_and_phi.md"
+cp "$REPO/src/content/essays/grammar-of-existence.md" "$CURRENT_DIR/30_grammar_of_existence.md"
+
+# Assessments
+cp "$REPO/rsm/canonical/between_e_phi_assessment.md" "$CURRENT_DIR/31_between_e_phi_assessment.md"
+
+# Formal Derivations
+cp "$REPO/rsm/canonical/ex_nihilo_impossibility.md" "$CURRENT_DIR/32_ex_nihilo_impossibility.md"
+cp "$REPO/rsm/canonical/euler_single_operation.md" "$CURRENT_DIR/33_euler_single_operation.md"
 
 # Step 4: Write version file
 echo "$VERSION" > "$CURRENT_DIR/VERSION"
@@ -85,22 +116,67 @@ Documents audited and aligned with RSM $VERSION operator grammar.
 
 ## Contents
 
+### Core RSM (01-04)
 | # | File | Description |
 |---|------|-------------|
 | 01 | rsm.md | Complete formal treatment ($VERSION) |
 | 02 | operators.md | DDJ operator grammar (名=i, 利₁=-1, 反=+1, 相生=e) |
 | 03 | notation_guide.md | Six constants, φ derivation, conventions |
 | 04 | recursive_structural_model.md | Accessible introduction |
-| 05 | ddj_chapter01.md | Coordinate system (名=i, 玄=0, 有=1) |
-| 06 | ddj_chapter05.md | Bellows principle (橐籥, 虛/不屈/守中) |
-| 07 | ddj_chapter11.md | Scythe principle (利₁/利₂/用 distinction) |
-| 08 | ddj_chapter16.md | Return to root (復 operator, 常 cascade) |
-| 09 | ddj_chapter40.md | Oscillation engine (反=+1) |
-| 10 | ddj_chapter42.md | Generative sequence (道生一 = P₀→O₁) |
-| 11 | ddj_chapter51.md | 道生/德畜 formula (玄德) |
-| 12 | ddj_chapter81.md | Closure validation (三 paradoxes) |
-| 13 | euler_tao_identity.md | Both canonical identities |
-| 14 | between_e_and_phi.md | e/φ architecture, 非 grammar, 玄牝=φ |
+
+### Lexicon (05-09)
+| # | File | Description |
+|---|------|-------------|
+| 05 | lexicon_intro.md | RSM v0.990 alignment header |
+| 06 | lexicon_operators.md | Operator families (名, 反, 相生, etc.) |
+| 07 | lexicon_positions.md | Seven axes (無/有, 妙/徼, etc.) + 玄=O₁ |
+| 08 | lexicon_concepts.md | Cross-reference by operational principle |
+| 09 | lexicon_refinements.md | Key term refinements (玄=paradox, 牝=φ, 生=bidirectional) |
+
+### DDJ Canonical Chapters (10-17)
+| # | File | Description |
+|---|------|-------------|
+| 10 | ddj_chapter01.md | Coordinate system (名=i, 玄=0, 有=1) |
+| 11 | ddj_chapter05.md | Bellows principle (橐籥, 虛/不屈/守中) |
+| 12 | ddj_chapter11.md | Scythe principle (利₁/利₂/用 distinction) |
+| 13 | ddj_chapter16.md | Return to root (復 operator, 常 cascade) |
+| 14 | ddj_chapter40.md | Oscillation engine (反=+1) |
+| 15 | ddj_chapter42.md | Generative sequence (道生一 = V₀→O₁) |
+| 16 | ddj_chapter51.md | 道生/德畜 formula (玄德) |
+| 17 | ddj_chapter81.md | Closure validation (三 paradoxes) |
+
+### DDJ Structural Translations (18-27)
+*With confidence tracking and RSM mappings*
+| # | File | Description |
+|---|------|-------------|
+| 18 | trans_chapter01.md | Chapter 1 — Coordinate system |
+| 19 | trans_chapter02.md | Chapter 2 — Co-generation of poles (相生) |
+| 20 | trans_chapter08.md | Chapter 8 — Water principle |
+| 21 | trans_chapter11.md | Chapter 11 — Wheel, pot, room |
+| 22 | trans_chapter22.md | Chapter 22 — Yielding overcomes |
+| 23 | trans_chapter25.md | Chapter 25 — Four greats (大→逝→遠→反) |
+| 24 | trans_chapter40.md | Chapter 40 — Return is movement |
+| 25 | trans_chapter42.md | Chapter 42 — Generative sequence |
+| 26 | trans_chapter64.md | Chapter 64 — Assist self-so-ness |
+| 27 | trans_chapter76.md | Chapter 76 — Soft overcomes hard |
+
+### Essays (28-30)
+| # | File | Description |
+|---|------|-------------|
+| 28 | euler_tao_identity.md | Both canonical identities |
+| 29 | between_e_and_phi.md | e/φ architecture, 非 grammar, 玄牝=φ |
+| 30 | grammar_of_existence.md | Complete RSM introduction for general audience |
+
+### Assessments (31)
+| # | File | Description |
+|---|------|-------------|
+| 31 | between_e_phi_assessment.md | Steelman analysis: claim tiers, defensibility |
+
+### Formal Derivations (32-33)
+| # | File | Description |
+|---|------|-------------|
+| 32 | ex_nihilo_impossibility.md | Creation ex nihilo impossible (V₀ + conservation proof) |
+| 33 | euler_single_operation.md | Single-operation identity: e^(iπ) + e^(i·0) = 0 |
 
 ## Canonical Identities
 
@@ -116,7 +192,16 @@ echo "5. Creating combined markdown file..."
 cat "$CURRENT_DIR/00_index.md" > "$DOCSET_DIR/rsm_complete.md"
 echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"
 
-for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md 05_ddj_chapter01.md 06_ddj_chapter05.md 07_ddj_chapter11.md 08_ddj_chapter16.md 09_ddj_chapter40.md 10_ddj_chapter42.md 11_ddj_chapter51.md 12_ddj_chapter81.md 13_euler_tao_identity.md 14_between_e_and_phi.md; do
+for f in 01_rsm.md 02_operators.md 03_notation_guide.md 04_recursive_structural_model.md \
+         05_lexicon_intro.md 06_lexicon_operators.md 07_lexicon_positions.md 08_lexicon_concepts.md \
+         09_lexicon_refinements.md \
+         10_ddj_chapter01.md 11_ddj_chapter05.md 12_ddj_chapter11.md 13_ddj_chapter16.md \
+         14_ddj_chapter40.md 15_ddj_chapter42.md 16_ddj_chapter51.md 17_ddj_chapter81.md \
+         18_trans_chapter01.md 19_trans_chapter02.md 20_trans_chapter08.md 21_trans_chapter11.md \
+         22_trans_chapter22.md 23_trans_chapter25.md 24_trans_chapter40.md 25_trans_chapter42.md \
+         26_trans_chapter64.md 27_trans_chapter76.md \
+         28_euler_tao_identity.md 29_between_e_and_phi.md 30_grammar_of_existence.md \
+         31_between_e_phi_assessment.md 32_ex_nihilo_impossibility.md 33_euler_single_operation.md; do
     echo -e "# ═══════════════════════════════════════════════════════════════\n# FILE: $f\n# ═══════════════════════════════════════════════════════════════\n" >> "$DOCSET_DIR/rsm_complete.md"
     cat "$CURRENT_DIR/$f" >> "$DOCSET_DIR/rsm_complete.md"
     echo -e "\n\n---\n\n" >> "$DOCSET_DIR/rsm_complete.md"

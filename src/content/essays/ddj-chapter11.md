@@ -10,7 +10,7 @@ tags: ["ddj", "void", "function", "translation"]
 
 **Structural Reading with Scythe-Corrected 利**
 
-> **RSM v0.988 Reference:** This chapter demonstrates the 有 yǒu / 無 wú complementarity as Postulate 4 (X·Y=k) in action: structure and void are reciprocally bound—neither exists without the other. Key mappings:
+> **RSM v0.992 Reference:** This chapter demonstrates the 有 yǒu / 無 wú complementarity as Postulate 4 (X·Y=k) in action: structure and void are reciprocally bound—neither exists without the other. Key mappings:
 > - 利₁ lì = e^(iπ) = −1 (the cut operation itself)
 > - 利₂ = material benefit (有-side result of the cut)
 > - 用 yòng = functional capacity (無-side result of the cut, NOT an operator)

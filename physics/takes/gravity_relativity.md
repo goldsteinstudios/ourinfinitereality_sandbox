@@ -32,7 +32,7 @@ Relativity and the Recursive Structural Model (RSM) both describe reality as **l
 | Global curvature | Global curvature (π, qì) | Cumulative curvature emerges |  
 | Energy–momentum curves spacetime | Circulation (qì) sustains curvature | Energy is cost of paradox preservation |  
 | Spacetime manifold | Reciprocity curve (G₁) | Gradient field holding paradox open |  
-| Forbidden singularities | Forbidden void (P₀) | Absolute collapse is impossible |  
+| Forbidden singularities | Forbidden void (V₀) | Absolute collapse is impossible |  
 | Event horizon paradox | Paradox center (P₁) | Untraversable midpoint |  
 
 ---

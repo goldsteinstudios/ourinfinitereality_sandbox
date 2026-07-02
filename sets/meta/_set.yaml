@@ -1,0 +1,22 @@
+set_id: "meta"
+set_name: "RSM Meta Documentation"
+version: "0.993"
+description: "Epistemic status, dependency structure, falsification criteria, assessments, open questions, and version history"
+file_count: 6
+primary_file: "epistemic_tiers.md"
+entry_point: "epistemic_tiers.md"
+dependencies:
+  - "rsm-core"
+keywords:
+  - "meta"
+  - "epistemic"
+  - "falsification"
+  - "dependency"
+  - "assessment"
+  - "version history"
+notebooklm_load_with:
+  - "rsm-core"
+last_updated: "2026-01-01"
+authors:
+  - "Will Goldstein"
+  - "Claude"

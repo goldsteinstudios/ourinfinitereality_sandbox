@@ -9,11 +9,14 @@
 ### [Recursive Structural Model](../translations/meta/recursive_structural_model.md)
 The central claim: stable structures persist by circulating around hollow centers, not by standing on foundations. O → G → P → O recursion cycle.
 
+### [Derivation Chain (v5.5)](./derivation.md)
+14 steps from a single premise — infinite divisibility → duality → conservation (xy = 1) → hyperbola → exponential parameterization → Lorentz correspondence → dimensionality → oscillation. The complete entailment chain with structural elements, three equations, and six falsifiable predictions.
+
 ### [Geometry: The Paradox Sphere (Π₀)](./geometry.md)
-How rotating the hyperbola xy=1 through all axes generates a dimensionless sphere around an unreachable center. The minimal geometric structure surviving infinite divisibility.
+How rotating the hyperbola xy=1 through all axes generates a dimensionless sphere around an unreachable center. The minimal geometric structure surviving infinite divisibility. Updated with v5.5 exponential parameterization, Lorentz correspondence, and energy barrier derivation.
 
 ### [Falsification Criteria](./falsification.md)
-What would disprove RSM. A framework that cannot be wrong cannot be right. Specific predictions that can be empirically tested.
+What would disprove RSM. A framework that cannot be wrong cannot be right. Specific predictions that can be empirically tested. Now includes six v5.5 structural predictions.
 
 ---
 

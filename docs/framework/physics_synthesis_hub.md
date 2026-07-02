@@ -24,6 +24,9 @@ From this single insight, the entire landscape of fundamental physics reorganize
 
 The five synthesis documents in this series demonstrate that these are not separate phenomena requiring separate explanations. They are **structural consequences of the same geometric necessity**: reality cannot occupy its own center, so it turns.
 
+!!! note "v5.5 Refinement"
+    The Lorentz correspondence (xy = 1 ↔ X² − T² = 1) is now **derived**, not imported — it is an algebraic identity between coordinates on the same constraint. Energy = traversal along the parameter u; matter = stable position on the curve. See the [Derivation Chain](./derivation.md) for the complete entailment.
+
 ---
 
 ## The Unified State Diagram
@@ -337,4 +340,4 @@ The physics series connects to:
 
 *Physics Hub Document*
 *AL-AN Project: Algorithmic Logic of Asymptotic Nothing*
-*December 2025*
+*March 2026 (v5.5 notes added)*

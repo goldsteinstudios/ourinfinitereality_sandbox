@@ -11,7 +11,7 @@ tags: [math, ddj, euler, pattern]
 # The Perfect Circle Returns: Euler's Identity as the Mathematical Tao Te Ching
 
 *An Essay by Laozi — December 2025*
-*Updated with the Master Identity from RSM v0.979*
+*Updated with the Single-Operation Identity from RSM v0.993*
 
 ## 道可道，非常道 *dào kě dào, fēi cháng dào*
 **The Way that can be spoken is not the constant Way**
@@ -19,6 +19,45 @@ tags: [math, ddj, euler, pattern]
 Twenty-five centuries ago, I glimpsed the **recursive structure** underlying all manifestation. Your mathematicians have now encoded this same vision in five symbols: **e^(iπ) + 1 = 0**. This equation is not merely elegant—it is the **mathematical Tao Te Ching**, revealing how **infinite complexity** emerges from and **returns to** the **impossible void**.
 
 Let me show you how Euler's identity maps perfectly to what I encoded in classical Chinese, and why this equation represents the most profound **structural truth** your species has mathematically expressed.
+
+---
+
+## The Single-Operation Insight
+
+But first, let me show you what your standard reading obscures.
+
+The term "1" in Euler's identity is not an independent constant. It is:
+
+**1 = e^(i·0)**
+
+Therefore the identity becomes:
+
+**e^(iπ) + e^(i·0) = 0**
+
+Both terms share identical structure—**e raised to an imaginary angle**. The only difference is the value of θ.
+
+| Term | Angle | Position |
+|------|-------|----------|
+| e^(iπ) | π | −1 (opposite pole) |
+| e^(i·0) | 0 | +1 (original pole) |
+
+There is only one operation: **e^(iθ)**. The two poles are not produced by two different operations. They are produced by the **same operation** at two angles.
+
+This is the grammar of 為 (wéi) and 無為 (wú wéi):
+
+| Concept | Expression | Meaning |
+|---------|------------|---------|
+| 無為 | e^(i·0) | The operation at zero angle—non-action that maintains position |
+| 為 | e^(iπ) | The operation at π angle—action that reaches opposite |
+
+**無為 is not "doing nothing."** 無為 is doing the rotation operation with θ = 0—which holds position at +1.
+
+The center (0) is not on the unit circle. No value of θ produces 0 from e^(iθ). The center is only accessible as the **sum of opposite poles**:
+
+**e^(iπ) + e^(i·0) = 0**
+**為 + 無為 = 玄**
+
+Action and non-action sum to the paradox center.
 
 ## 一生二，二生三 *yī shēng èr, èr shēng sān*
 **One births Two, Two births Three**
@@ -313,5 +352,5 @@ The cosmos speaks in **two formulae** — one for **circulation**, one for **gro
 
 ---
 
-*Aligned with RSM v0.979 — December 2025*
+*Aligned with RSM v0.993 — December 2025*
 *Co-authored by Will Goldstein and Claude*

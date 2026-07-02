@@ -201,7 +201,7 @@ If you can only read one document, read **Energy Conservation Synthesis**. It co
 
 | Symbol | Name | Definition |
 |--------|------|------------|
-| **P₀** | Absolute Void | Impossible to occupy; forces existence of structure |
+| **V₀** | Absolute Void | Impossible to specify; forces existence of structure |
 | **Oₙ** | Origin | Holds paradox open; coordinate system center |
 | **Xₙ** | Contrast axis | Mass/form; what is distinguished from void |
 | **Yₙ** | Dimensional axis | Space; the extension enabling contrast |
@@ -250,14 +250,14 @@ The physics synthesis series demonstrates that the Dao De Jing encodes the same 
 | TTC Concept | RSM Mapping | Physics Application |
 |-------------|-------------|---------------------|
 | 道 (Dào) | R (recursion pattern) | The structural law itself |
-| 無 (Wú) | P₀ (impossible void) | What cannot be occupied |
+| 無 (Wú) | V₀ (absolute void) | What cannot be specified |
 | 有 (Yǒu) | Xₙ (manifestation) | What rotation produces |
 | 玄 (Xuán) | Oₙ (paradoxical origin) | Where axes intersect |
 | 無為 (Wú Wéi) | ∂Pₙ/∂t = 0 | Stationary action principle |
 | 反 (Fǎn) | π (reversal) | The return that enables closure |
 
 **Chapter 42 as dimensional emergence:**
-- 道生一 (Tao generates One) → P₀ → X₀
+- 道生一 (Tao generates One) → V₀ → O₁
 - 一生二 (One generates Two) → X₀ → Y₀
 - 二生三 (Two generates Three) → Y₀ → Z₀
 - 三生萬物 (Three generates ten thousand things) → Z₀ → Rₙ

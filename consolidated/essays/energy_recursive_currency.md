@@ -22,7 +22,7 @@ This explains why energy conservation is so fundamental. It's not just a conveni
 
 Just like all the other "zeros" we've encountered, perfect zero energy is structurally impossible. Even the quantum vacuum—the emptiest space we can conceive—seethes with zero-point energy. Even at absolute zero temperature, molecular motion persists. Even "empty" spacetime has field fluctuations and dark energy.
 
-Zero energy would be another manifestation of P₀—the impossible void where no relationships could exist, no patterns could unfold, no recursive transformations could occur. Reality avoids this by maintaining minimum energy levels everywhere, like a cosmic bank that never allows any account to reach absolute zero balance.
+Zero energy would be another manifestation of V₀—the absolute void where no relationships could exist, no patterns could unfold, no recursive transformations could occur. Reality avoids this by maintaining minimum energy levels everywhere, like a cosmic bank that never allows any account to reach absolute zero balance.
 
 Dark energy, that mysterious force driving the accelerated expansion of the universe, might not be mysterious at all through this lens. It could be space's minimum energy investment required to maintain its own existence—the baseline "account balance" that prevents the universe from collapsing into the impossible void of true nothingness.
 
@@ -108,7 +108,7 @@ If energy is the currency for recursive transformations, then reality operates l
 
 **Biological evolution** becomes economic growth—energy gets organized into increasingly complex and sophisticated recursive patterns that can perform more elaborate transformations while maintaining structural coherence.
 
-The **heat death of the universe** would be perfect economic equilibrium—all energy evenly distributed, no gradients left to drive recursive transformations, no "profit margin" available for pattern maintenance. But if zero energy states are impossible (like all P₀ manifestations), then true heat death might be structurally impossible. The universe might always maintain sufficient energy gradients to drive continued recursive creativity.
+The **heat death of the universe** would be perfect economic equilibrium—all energy evenly distributed, no gradients left to drive recursive transformations, no "profit margin" available for pattern maintenance. But if zero energy states are impossible (like all V₀ manifestations), then true heat death might be structurally impossible. The universe might always maintain sufficient energy gradients to drive continued recursive creativity.
 
 ## The Precision-Chasing Energy Waste
 

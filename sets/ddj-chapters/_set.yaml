@@ -1,0 +1,24 @@
+set_id: "ddj-chapters"
+set_name: "DDJ Canonical Chapters"
+version: "0.993"
+description: "Key DDJ chapters with structural RSM readings including coordinate system, bellows principle, and generative sequence"
+file_count: 9
+primary_file: "chapter01.md"
+entry_point: "chapter01.md"
+dependencies:
+  - "rsm-core"
+  - "ddj-lexicon"
+keywords:
+  - "DDJ"
+  - "Dao De Jing"
+  - "coordinate system"
+  - "bellows principle"
+  - "scythe principle"
+  - "generative sequence"
+notebooklm_load_with:
+  - "rsm-core"
+  - "ddj-lexicon"
+last_updated: "2026-01-01"
+authors:
+  - "Will Goldstein"
+  - "Claude"

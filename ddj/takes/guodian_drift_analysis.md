@@ -70,7 +70,7 @@ The Guodian version explains **why** 大 leads to 遠: hydraulic pressure. When 
 
 **RSM alignment**:
 
-The structural primitives establish that absolute void (P₀) is impossible. What the text calls 無 must be *relational* void — the hollow center defined by what orbits it.
+The structural primitives establish that absolute void (V₀) is unspecifiable. What the text calls 無 must be *relational* void — the hollow center defined by what orbits it.
 
 亡 is better: "gone/without" implies structural position that could be occupied but isn't.
 無 drifts toward "absolute nothing" — philosophically seductive but geometrically impossible.

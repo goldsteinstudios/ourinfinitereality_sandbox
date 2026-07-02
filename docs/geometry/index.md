@@ -304,9 +304,23 @@ The branches share a trunk.
 
 ---
 
+## The Formal Derivation
+
+The geometry described above — hollow centers, hyperbolic circulation, three dimensions — has been formalized in v5.5 as a 14-step entailment chain from the single premise of infinite divisibility. The chain derives three fundamental equations:
+
+| Equation | Geometry | Role |
+|----------|----------|------|
+| xy = 1 | Rectangular hyperbola | Flat reciprocal constraint |
+| x² + y² = 1 | Unit circle | Circular bridge between branches |
+| x² + y² + z² = 1 | Unit sphere | Full isotropy, no preferred direction |
+
+See the [Derivation Chain](../framework/derivation.md) for the complete formal structure, and [Geometric Foundations](../framework/geometry.md) for the technical details.
+
+---
+
 ## What's Here
 
-- **[The Sphere](sphere.md)** — The paradox sphere. How apparent contradictions resolve as positions on a unified geometric structure.
+- **[The Sphere](sphere.md)** — The paradox sphere. How apparent contradictions resolve as positions on a unified geometric structure. Includes the v5.5 dimensionality derivation.
 
 - **[Recursion](recursion.md)** — Scale invariance. Why the pattern looks the same at every level.
 
