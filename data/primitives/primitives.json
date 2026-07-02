@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "description": "Visual stroke primitives - purely visual patterns, no linguistic knowledge",
+  "notes": "Primitive IDs are arbitrary labels (P001, P002...). You define what they look like by providing exemplar images.",
+  "primitives": [
+    {
+      "id": "P001",
+      "visual_description": "Single curve, arc shape. Ignore line thickness/ink artifacts.",
+      "exemplars": [],
+      "frequency": null
+    },
+    {
+      "id": "人",
+      "visual_description": "Two strokes meeting at top, spreading downward. Person/figure shape.",
+      "exemplars": [],
+      "frequency": null
+    },
+    {
+      "id": "P002",
+      "visual_description": "Vertical stroke with horizontal stroke extending right from middle. Inverted T or hook shape.",
+      "exemplars": [],
+      "frequency": null
+    },
+    {
+      "id": "P003",
+      "visual_description": "Three strokes radiating outward from a common point. Fan or spray pattern.",
+      "exemplars": [],
+      "frequency": null
+    }
+  ],
+  "decompositions": []
+}

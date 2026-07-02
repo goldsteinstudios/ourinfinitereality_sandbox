@@ -1,0 +1,822 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Load the generated data at build time
+import guodianData from '../../public/data/guodian_interactive.json';
+
+const { metadata, slips } = guodianData;
+const sortedSlips = Object.values(slips).sort((a: any, b: any) => a.slip - b.slip);
+---
+
+<BaseLayout title="Guodian Bundle A — Interactive Text">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-2">郭店老子甲</h1>
+      <p class="text-xl themed-text-muted mb-2">Guodian Laozi A — Interactive Text</p>
+      <p class="themed-text-muted">
+        {metadata.slips} bamboo slips · {metadata.total_positions} characters · c. 300 BCE
+      </p>
+    </header>
+
+    <!-- Instructions -->
+    <section class="mb-8 themed-surface border rounded-lg p-4 text-sm">
+      <p class="themed-text-muted">
+        <strong>Hover over characters</strong> to see pinyin, radical decomposition, and structural analysis.
+        <span class="text-amber-600 dark:text-amber-400">■</span> marks variant forms (Guodian differs from received text).
+      </p>
+    </section>
+
+    <!-- View Toggle -->
+    <div class="mb-6 flex gap-4 justify-center flex-wrap">
+      <button id="view-bamboo" class="px-4 py-2 rounded border themed-surface font-medium view-toggle active">
+        Bamboo Strips
+      </button>
+      <button id="view-continuous" class="px-4 py-2 rounded border themed-surface font-medium view-toggle">
+        Continuous Text
+      </button>
+      <button id="view-slips" class="px-4 py-2 rounded border themed-surface font-medium view-toggle">
+        By Slip
+      </button>
+    </div>
+
+    <!-- Bamboo Strip Viewer (single strip at a time) -->
+    <section id="bamboo-view" class="mb-12">
+      <!-- Navigation Controls -->
+      <div class="strip-nav">
+        <button id="prev-slip" class="nav-btn" title="Previous slip (←)">
+          ← Prev
+        </button>
+        <div class="slip-selector">
+          <select id="slip-select">
+            {sortedSlips.map((slip: any) => (
+              <option value={slip.slip}>
+                Slip {slip.slip} — Ch. {slip.chapters.join(', ')}
+              </option>
+            ))}
+          </select>
+        </div>
+        <button id="next-slip" class="nav-btn" title="Next slip (→)">
+          Next →
+        </button>
+      </div>
+
+      <!-- Slip Info -->
+      <div class="slip-info">
+        <span id="slip-title" class="slip-title">Slip 1</span>
+        <span id="slip-meta" class="slip-meta">Chapter 19 · 30 characters</span>
+      </div>
+
+      <!-- Single Strip Display -->
+      <div class="single-strip-container">
+        <div id="current-strip" class="single-strip">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Keyboard hint -->
+      <p class="text-center text-sm themed-text-muted mt-4">
+        Use ← → arrow keys to navigate
+      </p>
+    </section>
+
+    <!-- Store slip data for JavaScript -->
+    <script id="slip-data" type="application/json" set:html={JSON.stringify(sortedSlips)}></script>
+
+    <!-- Continuous View -->
+    <section id="continuous-view" class="mb-12 hidden">
+      <div class="guodian-text text-2xl leading-relaxed">
+        {sortedSlips.map((slip: any) => (
+          <span class="slip-group" data-slip={slip.slip} data-chapters={slip.chapters.join(',')}>
+            {slip.characters.map((char: any) => (
+              <span
+                class={`char-hover ${char.is_variant ? 'variant' : ''} ${char.display === '○' || char.display === '□' ? 'lacuna' : ''}`}
+                data-guodian={char.guodian || ''}
+                data-received={char.received || ''}
+                data-pinyin={char.pinyin || ''}
+                data-radicals={JSON.stringify(char.radicals || [])}
+                data-substrate={char.substrate || ''}
+                data-operator={char.operator || ''}
+                data-meaning={char.meaning || ''}
+                data-breakdown={char.breakdown || ''}
+                data-glyph={char.glyph_path || ''}
+                data-oracle={JSON.stringify(char.oracle_bone_paths || [])}
+              >{char.display}</span>
+            ))}
+            <span class="slip-break text-xs themed-text-muted align-super">|{slip.slip}</span>
+          </span>
+        ))}
+      </div>
+    </section>
+
+    <!-- Slip View (hidden by default) -->
+    <section id="slips-view" class="mb-12 hidden">
+      <div class="grid gap-6">
+        {sortedSlips.map((slip: any) => (
+          <div class="themed-surface border rounded-lg p-4">
+            <div class="flex justify-between items-center mb-3">
+              <span class="font-bold">Slip {slip.slip}</span>
+              <span class="text-sm themed-text-muted">
+                Ch. {slip.chapters.join(', ')}
+              </span>
+            </div>
+            <div class="guodian-text text-2xl">
+              {slip.characters.map((char: any) => (
+                <span
+                  class={`char-hover ${char.is_variant ? 'variant' : ''} ${char.display === '○' || char.display === '□' ? 'lacuna' : ''}`}
+                  data-guodian={char.guodian || ''}
+                  data-received={char.received || ''}
+                  data-pinyin={char.pinyin || ''}
+                  data-radicals={JSON.stringify(char.radicals || [])}
+                  data-substrate={char.substrate || ''}
+                  data-operator={char.operator || ''}
+                  data-meaning={char.meaning || ''}
+                  data-breakdown={char.breakdown || ''}
+                  data-glyph={char.glyph_path || ''}
+                  data-oracle={JSON.stringify(char.oracle_bone_paths || [])}
+                >{char.display}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Tooltip (hidden, positioned via JS) -->
+    <div id="char-tooltip" class="char-tooltip hidden">
+      <div class="tooltip-header">
+        <div class="tooltip-char text-4xl font-bold"></div>
+        <div class="tooltip-pinyin text-xl"></div>
+        <a class="tooltip-link" href="#" target="_blank" rel="noopener" title="View character history on zdic.net">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <button id="tooltip-close" class="tooltip-close" aria-label="Close">×</button>
+      </div>
+      <div class="tooltip-variant text-sm text-amber-600 dark:text-amber-400 mb-2 hidden"></div>
+      <div class="tooltip-radicals text-sm mb-2 hidden"></div>
+      <div class="tooltip-meaning text-sm themed-text-muted mb-3 hidden"></div>
+      <div class="tooltip-oracle hidden">
+        <div class="text-xs themed-text-muted mb-1">Oracle Bone Forms:</div>
+        <div class="oracle-gallery"></div>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <section class="mb-12 themed-surface border rounded-lg p-6">
+      <h2 class="font-bold mb-4">Legend</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <div>
+          <span class="char-hover inline-block">道</span>
+          <span class="themed-text-muted ml-2">Regular character</span>
+        </div>
+        <div>
+          <span class="char-hover variant inline-block">返</span>
+          <span class="themed-text-muted ml-2">Variant form</span>
+        </div>
+        <div>
+          <span class="char-hover lacuna inline-block">○</span>
+          <span class="themed-text-muted ml-2">Lacuna/damage</span>
+        </div>
+        <div>
+          <span class="slip-break text-xs themed-text-muted">|37</span>
+          <span class="themed-text-muted ml-2">Slip boundary</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="mb-12 text-center">
+      <h2 class="text-xl font-bold mb-4">Bundle A Statistics</h2>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="themed-surface border rounded-lg p-4">
+          <div class="text-2xl font-bold">{metadata.slips}</div>
+          <div class="text-sm themed-text-muted">Bamboo Slips</div>
+        </div>
+        <div class="themed-surface border rounded-lg p-4">
+          <div class="text-2xl font-bold">{metadata.total_positions}</div>
+          <div class="text-sm themed-text-muted">Characters</div>
+        </div>
+        <div class="themed-surface border rounded-lg p-4">
+          <div class="text-2xl font-bold">18</div>
+          <div class="text-sm themed-text-muted">DDJ Chapters</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-4 text-center">Related</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <a href="/ddj" class="block themed-surface border rounded-lg p-6 transition-colors text-center">
+          <p class="font-bold mb-2">Structural Translations</p>
+          <p class="text-sm themed-text-muted">Full chapter translations with RSM alignment.</p>
+        </a>
+        <a href="/essays" class="block themed-surface border rounded-lg p-6 transition-colors text-center">
+          <p class="font-bold mb-2">Essays</p>
+          <p class="text-sm themed-text-muted">Commentary on specific chapters and principles.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center themed-text-muted text-sm themed-border border-t pt-8">
+      <p class="italic">反者道之動也。弱也者道之用也。</p>
+      <p class="mt-2">The geometry was always in the bamboo.</p>
+    </footer>
+
+  </div>
+</BaseLayout>
+
+<style>
+  .guodian-text {
+    font-family: "Noto Serif SC", "Source Han Serif CN", serif;
+    line-height: 1.8;
+  }
+
+  /* Single Strip Navigation */
+  .strip-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .nav-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-surface);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+
+  .nav-btn:hover:not(:disabled) {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+
+  .nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .slip-selector select {
+    padding: 8px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    background: var(--color-surface);
+    font-size: 14px;
+    min-width: 200px;
+  }
+
+  .slip-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .slip-title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .slip-meta {
+    color: var(--color-text-muted);
+    font-size: 14px;
+  }
+
+  /* Single Strip Container */
+  .single-strip-container {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    background: linear-gradient(180deg, #f5f0e6 0%, #e8e0d0 100%);
+    border-radius: 12px;
+    min-height: 500px;
+  }
+
+  :root[data-theme="dark"] .single-strip-container {
+    background: linear-gradient(180deg, #2a2520 0%, #1a1510 100%);
+  }
+
+  .single-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #d4c4a8 0%, #e8dcc4 50%, #d4c4a8 100%);
+    border-radius: 8px;
+    padding: 16px 12px;
+    min-width: 100px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.25);
+  }
+
+  :root[data-theme="dark"] .single-strip {
+    background: linear-gradient(90deg, #3d3528 0%, #4a4030 50%, #3d3528 100%);
+  }
+
+  /* Glyph cells - larger for single strip view */
+  .glyph-cell {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    margin: 2px 0;
+  }
+
+  .glyph-cell:hover {
+    background: rgba(0,0,0,0.1);
+    transform: scale(1.1);
+  }
+
+  :root[data-theme="dark"] .glyph-cell:hover {
+    background: rgba(255,255,255,0.1);
+  }
+
+  .glyph-cell.variant {
+    box-shadow: inset 0 0 0 3px var(--color-accent);
+  }
+
+  .glyph-image {
+    max-width: 64px;
+    max-height: 64px;
+    object-fit: contain;
+    filter: contrast(1.1);
+  }
+
+  :root[data-theme="dark"] .glyph-image {
+    filter: invert(1) contrast(1.1);
+  }
+
+  .glyph-fallback {
+    font-family: "Noto Serif SC", "Source Han Serif CN", serif;
+    font-size: 36px;
+    color: #333;
+  }
+
+  :root[data-theme="dark"] .glyph-fallback {
+    color: #ccc;
+  }
+
+  .glyph-cell.no-glyph .glyph-fallback {
+    opacity: 0.5;
+  }
+
+  .char-hover {
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  .char-hover:hover {
+    background-color: var(--color-accent);
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .char-hover.variant {
+    color: var(--color-accent);
+    border-bottom: 2px solid currentColor;
+  }
+
+  .char-hover.lacuna {
+    opacity: 0.4;
+  }
+
+  .slip-break {
+    margin: 0 0.25em;
+    opacity: 0.5;
+  }
+
+  .slip-group {
+    display: inline;
+  }
+
+  /* Tooltip styles */
+  .char-tooltip {
+    position: fixed;
+    z-index: 1000;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    pointer-events: none;
+  }
+
+  .char-tooltip.hidden {
+    display: none;
+  }
+
+  .tooltip-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .tooltip-char {
+    font-family: "Noto Serif SC", "Source Han Serif CN", serif;
+  }
+
+  .tooltip-pinyin {
+    font-style: italic;
+    color: var(--color-text-muted);
+    flex: 1;
+  }
+
+  .tooltip-link {
+    color: var(--color-text-muted);
+    opacity: 0.6;
+    transition: all 0.15s;
+    pointer-events: auto;
+  }
+
+  .tooltip-link:hover {
+    color: var(--color-accent);
+    opacity: 1;
+  }
+
+  .tooltip-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: var(--color-surface);
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tooltip-close:hover {
+    background: var(--color-border);
+    color: var(--color-text);
+  }
+
+  /* Active glyph highlight */
+  .glyph-cell.glyph-active {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Oracle bone gallery */
+  .oracle-gallery {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .oracle-gallery img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    background: #f5f5f5;
+    border-radius: 4px;
+    padding: 2px;
+  }
+
+  :root[data-theme="dark"] .oracle-gallery img {
+    background: #333;
+    filter: invert(1);
+  }
+
+  /* View toggle */
+  .view-toggle {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+
+  .view-toggle.active {
+    opacity: 1;
+    border-color: var(--color-accent);
+  }
+
+  .view-toggle:hover {
+    opacity: 0.8;
+  }
+</style>
+
+<script>
+  // Load slip data
+  const slipDataEl = document.getElementById('slip-data');
+  const slipsData: any[] = slipDataEl ? JSON.parse(slipDataEl.textContent || '[]') : [];
+  let currentSlipIndex = 0;
+
+  // DOM elements
+  const currentStripEl = document.getElementById('current-strip');
+  const slipSelect = document.getElementById('slip-select') as HTMLSelectElement;
+  const prevBtn = document.getElementById('prev-slip');
+  const nextBtn = document.getElementById('next-slip');
+  const slipTitle = document.getElementById('slip-title');
+  const slipMeta = document.getElementById('slip-meta');
+
+  // Render a single slip
+  function renderSlip(index: number) {
+    if (!currentStripEl || index < 0 || index >= slipsData.length) return;
+
+    const slip = slipsData[index];
+    currentSlipIndex = index;
+
+    // Update info
+    if (slipTitle) slipTitle.textContent = `Slip ${slip.slip}`;
+    if (slipMeta) slipMeta.textContent = `Chapter ${slip.chapters.join(', ')} · ${slip.characters.length} characters`;
+
+    // Update dropdown
+    if (slipSelect) slipSelect.value = slip.slip.toString();
+
+    // Update URL hash
+    history.replaceState(null, '', `#slip-${slip.slip}`);
+
+    // Update nav buttons
+    if (prevBtn) (prevBtn as HTMLButtonElement).disabled = index === 0;
+    if (nextBtn) (nextBtn as HTMLButtonElement).disabled = index === slipsData.length - 1;
+
+    // Render glyphs
+    currentStripEl.innerHTML = slip.characters.map((char: any) => `
+      <div
+        class="glyph-cell ${char.is_variant ? 'variant' : ''} ${!char.glyph_path ? 'no-glyph' : ''}"
+        data-guodian="${char.guodian || ''}"
+        data-received="${char.received || ''}"
+        data-pinyin="${char.pinyin || ''}"
+        data-radicals='${JSON.stringify(char.radicals || [])}'
+        data-substrate="${char.substrate || ''}"
+        data-operator="${char.operator || ''}"
+        data-meaning="${char.meaning || ''}"
+        data-breakdown="${char.breakdown || ''}"
+        data-glyph="${char.glyph_path || ''}"
+        data-oracle='${JSON.stringify(char.oracle_bone_paths || [])}'
+      >
+        ${char.glyph_path
+          ? `<img src="${char.glyph_path}" alt="${char.display}" class="glyph-image" />`
+          : `<span class="glyph-fallback">${char.display}</span>`
+        }
+      </div>
+    `).join('');
+
+    // Reattach click listeners (tap to show tooltip)
+    currentStripEl.querySelectorAll('.glyph-cell').forEach(el => {
+      el.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleTooltip(e.currentTarget as HTMLElement);
+      });
+    });
+  }
+
+  // Navigation
+  function goToSlip(index: number) {
+    if (index >= 0 && index < slipsData.length) {
+      renderSlip(index);
+    }
+  }
+
+  function goToSlipByNumber(slipNum: number) {
+    const index = slipsData.findIndex((s: any) => s.slip === slipNum);
+    if (index !== -1) goToSlip(index);
+  }
+
+  // Event listeners
+  prevBtn?.addEventListener('click', () => goToSlip(currentSlipIndex - 1));
+  nextBtn?.addEventListener('click', () => goToSlip(currentSlipIndex + 1));
+  slipSelect?.addEventListener('change', (e) => {
+    goToSlipByNumber(parseInt((e.target as HTMLSelectElement).value));
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+    if (e.key === 'ArrowLeft') goToSlip(currentSlipIndex - 1);
+    if (e.key === 'ArrowRight') goToSlip(currentSlipIndex + 1);
+  });
+
+  // Initialize from URL hash or default to first slip
+  function initFromHash() {
+    const hash = window.location.hash;
+    const match = hash.match(/slip-(\d+)/);
+    if (match) {
+      goToSlipByNumber(parseInt(match[1]));
+    } else {
+      renderSlip(0);
+    }
+  }
+
+  // View toggle functionality
+  const bambooBtn = document.getElementById('view-bamboo');
+  const continuousBtn = document.getElementById('view-continuous');
+  const slipsBtn = document.getElementById('view-slips');
+  const bambooView = document.getElementById('bamboo-view');
+  const continuousView = document.getElementById('continuous-view');
+  const slipsView = document.getElementById('slips-view');
+
+  function setView(view: string) {
+    // Hide all views
+    bambooView?.classList.add('hidden');
+    continuousView?.classList.add('hidden');
+    slipsView?.classList.add('hidden');
+
+    // Remove active from all buttons
+    bambooBtn?.classList.remove('active');
+    continuousBtn?.classList.remove('active');
+    slipsBtn?.classList.remove('active');
+
+    // Show selected view
+    if (view === 'bamboo') {
+      bambooView?.classList.remove('hidden');
+      bambooBtn?.classList.add('active');
+    } else if (view === 'continuous') {
+      continuousView?.classList.remove('hidden');
+      continuousBtn?.classList.add('active');
+    } else if (view === 'slips') {
+      slipsView?.classList.remove('hidden');
+      slipsBtn?.classList.add('active');
+    }
+  }
+
+  bambooBtn?.addEventListener('click', () => setView('bamboo'));
+  continuousBtn?.addEventListener('click', () => setView('continuous'));
+  slipsBtn?.addEventListener('click', () => setView('slips'));
+
+  // Tooltip functionality
+  const tooltip = document.getElementById('char-tooltip');
+  const tooltipChar = tooltip?.querySelector('.tooltip-char');
+  const tooltipPinyin = tooltip?.querySelector('.tooltip-pinyin');
+  const tooltipVariant = tooltip?.querySelector('.tooltip-variant');
+  const tooltipRadicals = tooltip?.querySelector('.tooltip-radicals');
+  const tooltipMeaning = tooltip?.querySelector('.tooltip-meaning');
+  const tooltipOracle = tooltip?.querySelector('.tooltip-oracle');
+  const oracleGallery = tooltip?.querySelector('.oracle-gallery');
+  const tooltipLink = tooltip?.querySelector('.tooltip-link') as HTMLAnchorElement;
+
+  function showTooltip(target: HTMLElement) {
+    const guodian = target.dataset.guodian || '';
+    const received = target.dataset.received || '';
+    const pinyin = target.dataset.pinyin || '';
+    const radicals = JSON.parse(target.dataset.radicals || '[]');
+    const substrate = target.dataset.substrate || '';
+    const operator = target.dataset.operator || '';
+    const meaning = target.dataset.meaning || '';
+    const breakdown = target.dataset.breakdown || '';
+    const oraclePaths = JSON.parse(target.dataset.oracle || '[]');
+
+    // Skip empty/lacuna characters
+    if (guodian === '○' || guodian === '□' || (!guodian && !received)) {
+      return;
+    }
+
+    const displayChar = guodian || received;
+
+    // Set content
+    if (tooltipChar) tooltipChar.textContent = displayChar;
+    if (tooltipPinyin) tooltipPinyin.textContent = pinyin || '';
+
+    // Set dictionary link (use received char for lookup, fallback to guodian)
+    const lookupChar = received || guodian;
+    if (tooltipLink && lookupChar) {
+      tooltipLink.href = `https://www.zdic.net/hans/${encodeURIComponent(lookupChar)}`;
+    }
+
+    // Variant info
+    if (tooltipVariant) {
+      if (guodian && received && guodian !== received) {
+        tooltipVariant.textContent = `Variant of: ${received}`;
+        tooltipVariant.classList.remove('hidden');
+      } else {
+        tooltipVariant.classList.add('hidden');
+      }
+    }
+
+    // Radicals
+    if (tooltipRadicals) {
+      let radicalText = '';
+      if (radicals.length > 0) {
+        radicalText = radicals.map((r: any) => `${r.component} (${r.meaning})`).join(' + ');
+      } else if (substrate && operator) {
+        radicalText = `${substrate} + ${operator}`;
+      }
+      if (radicalText) {
+        tooltipRadicals.innerHTML = `<strong>Components:</strong> ${radicalText}`;
+        tooltipRadicals.classList.remove('hidden');
+      } else {
+        tooltipRadicals.classList.add('hidden');
+      }
+    }
+
+    // Meaning
+    if (tooltipMeaning) {
+      if (meaning || breakdown) {
+        tooltipMeaning.innerHTML = meaning || breakdown;
+        tooltipMeaning.classList.remove('hidden');
+      } else {
+        tooltipMeaning.classList.add('hidden');
+      }
+    }
+
+    // Oracle bone images
+    if (tooltipOracle && oracleGallery) {
+      if (oraclePaths.length > 0) {
+        oracleGallery.innerHTML = oraclePaths.map((path: string) =>
+          `<img src="${path}" alt="Oracle bone form" loading="lazy" />`
+        ).join('');
+        tooltipOracle.classList.remove('hidden');
+      } else {
+        tooltipOracle.classList.add('hidden');
+      }
+    }
+
+    // Position tooltip
+    const rect = target.getBoundingClientRect();
+    if (tooltip) {
+      tooltip.style.left = `${rect.right + 12}px`;
+      tooltip.style.top = `${rect.top}px`;
+      tooltip.classList.remove('hidden');
+
+      // Adjust if off-screen
+      requestAnimationFrame(() => {
+        const tooltipRect = tooltip.getBoundingClientRect();
+        if (tooltipRect.right > window.innerWidth) {
+          tooltip.style.left = `${rect.left - tooltipRect.width - 12}px`;
+        }
+        if (tooltipRect.bottom > window.innerHeight) {
+          tooltip.style.top = `${window.innerHeight - tooltipRect.height - 16}px`;
+        }
+      });
+    }
+  }
+
+  let activeGlyph: HTMLElement | null = null;
+
+  function hideTooltip() {
+    tooltip?.classList.add('hidden');
+    if (activeGlyph) {
+      activeGlyph.classList.remove('glyph-active');
+      activeGlyph = null;
+    }
+  }
+
+  function toggleTooltip(el: HTMLElement) {
+    // If tapping the same glyph, hide tooltip
+    if (activeGlyph === el) {
+      hideTooltip();
+      return;
+    }
+    // Otherwise show tooltip for this glyph
+    if (activeGlyph) {
+      activeGlyph.classList.remove('glyph-active');
+    }
+    activeGlyph = el;
+    el.classList.add('glyph-active');
+    showTooltip(el);
+  }
+
+  // Close tooltip when tapping outside
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    // Don't close if clicking inside tooltip or on a glyph
+    if (tooltip?.contains(target) || target.closest('.glyph-cell')) {
+      return;
+    }
+    hideTooltip();
+  });
+
+  // Prevent tooltip clicks from bubbling (so links work)
+  tooltip?.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  // Close button handler
+  document.getElementById('tooltip-close')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    hideTooltip();
+  });
+
+  // Attach to all hoverable elements (for text views) - use click
+  document.querySelectorAll('.char-hover').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleTooltip(e.currentTarget as HTMLElement);
+    });
+  });
+
+  // Initialize bamboo strip viewer
+  initFromHash();
+</script>
