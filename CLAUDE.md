@@ -26,6 +26,9 @@ This is the load-bearing premise. Everything follows from it.
 | Just-Physics | Convergence | `rsm/canonical/chains/v7.5/just_physics_v7.5.md` |
 | Just-DDJ | Convergence | `rsm/canonical/chains/v7.5/just_ddj_v7.5.md` |
 | Parallax | Through-lines | `rsm/canonical/chains/v7.5/parallax_v7.5.md` |
+| Signature Forcing | Exploratory | `rsm/canonical/chains/v7.5/signature_forcing_v0.1.md` |
+
+**Note**: The signature_forcing document is machine-drafted (Claude/Fable 5) and requires independent verification before entering canon. It refines the gradient-to-orbit passage and introduces the Pₙ → Cₙ/Sₙ± correction.
 
 ## Status Tags
 
