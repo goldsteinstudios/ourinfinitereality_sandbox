@@ -1,0 +1,88 @@
+# RSM v7.5 Status Tracking
+# Categorizes all claims by their epistemic status
+
+derived:
+  description: "Established in the math chain; proven"
+  items:
+    - "Orthogonality closure"
+    - "Two-signature structure (j² = +1 gradient, i² = −1 orbit)"
+    - "Forced traversal (unit circle)"
+    - "i² = −1 by elimination"
+    - "Pₙ required but unoccupiable"
+    - "Pₙ → O₍ₙ₊₁₎ recursion"
+    - "Irreversibility of generation (arrow of time)"
+    - "Three spatial dimensions necessary"
+    - "Lorentz form X² − T² = 1"
+    - "Local tangent / global manifold structure"
+    - "Standoff radius √1ₙ"
+    - "Forbidden center (P₀ excluded)"
+
+candidate:
+  description: "Convergence register; not yet earned as :: claim"
+  items:
+    - label: "E = mc² as Gₙ instance"
+      notes: "Observed correspondence, not derived inverse-form"
+    - label: "Local Euclidean / global Lorentzian"
+      notes: "Strong candidate"
+    - label: "Zero-point energy as forbidden-center cost"
+      notes: "The non-zero ground state is the cost of not being at the center"
+    - label: "Structural recession as cosmological recession"
+      notes: "Strongest cosmological candidate; distinguishing signature vs ΛCDM open"
+    - label: "Energy as misalignment cost"
+      notes: "無為 / 為 correspondence"
+    - label: "Toroidal persistence under privileged gradients"
+      notes: "Physical and biological instances"
+    - label: "Singularities as forbidden centers"
+      notes: "GR singularity correspondence"
+    - label: "Quantum ground state non-zero"
+      notes: "System cannot rest at forbidden center"
+
+falsifiable:
+  description: "Empirical predictions; if not observed, framework is wrong"
+  items:
+    - "No persistent physical structure without a paradoxical center"
+    - "Persistence proportional to gradient depth at boundaries"
+    - "Terminated recursion co-inherent with a hardened surface"
+    - "Power-law scaling between nesting levels in persistent recursive structures"
+    - "At least three spatial dimensions necessary for structural persistence"
+    - "Energy cost of approaching any paradoxical center diverges"
+
+open:
+  description: "Not yet resolved"
+  items:
+    - label: "Dimensional uniqueness"
+      notes: "S² embeds in ℝ⁴ and higher; whether higher-dimensional embeddings are structurally excluded is not settled"
+    - label: "Branching-at-any-gradient-position"
+      notes: "Under test; not derived with Pₙ rigor"
+    - label: "Postulate Q"
+      notes: "Quadratic distinction measures; carried implicitly, not derived"
+    - label: "Postulate R"
+      notes: "γ = 1 by register agreement; internally motivated, still postulate"
+    - label: "域中有四⼤ fourth function (王)"
+      notes: "DDJ Ch. 25; not yet derived"
+    - label: "3+1 physical significance"
+      notes: "Whether the Lorentz extension carries physical significance beyond structural analogy"
+    - label: "All life toroidal"
+      notes: "Open biological question"
+
+v75_closures:
+  description: "Previously open items now closed in v7.5"
+  items:
+    - label: "Independence-to-orthogonality gap"
+      resolution: "Derived; the Euclidean inner product is generated, not imported"
+    - label: "Two-signature structure"
+      resolution: "j² = +1 (gradient) and i² = −1 (orbit) are a derived division of labor"
+    - label: "Forced traversal"
+      resolution: "Unit circle forced by spanning under standoff constraint"
+    - label: "i² = −1"
+      resolution: "Fixed by closure and spanning alone"
+
+v75_corrections:
+  description: "Corrections made in v7.5"
+  items:
+    - label: "Pₙ splits into Cₙ and Sₙ±"
+      details: "Cₙ = center (origin, unoccupiable); Sₙ± = seats (G ∩ B, occupiable)"
+    - label: "PV = nRT → Boyle's law"
+      details: "Only isothermal case is proper inverse-form instance"
+    - label: "Global Riemannian → Lorentzian"
+      details: "Spacetime is Lorentzian, not Riemannian"

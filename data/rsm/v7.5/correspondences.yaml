@@ -1,0 +1,137 @@
+# RSM v7.5 DDJ Correspondences
+# Extracted from just_ddj_v7.5.md
+# :: denotes imperfect structural correspondence, not identity
+
+ddj_correspondences:
+  - term: "道"
+    structure: "The structural substrate"
+    status: foundational
+    notes: "Pattern; the framework itself"
+
+  - term: "常"
+    structure: "Frame-independent, parameter-free"
+    status: derived
+    notes: "A register marker, not 'eternal'"
+
+  - term: "可"
+    structure: "Frame-relative, parametric, signed within Rₙ"
+    status: derived
+
+  - term: "非"
+    structure: "Same-origin, different-register"
+    status: derived
+    notes: "Two modes flanking a shared invariant; not simple negation"
+
+  - term: "⽞"
+    structure: "Pₙ (paradox-condition)"
+    status: derived
+    notes: "Must exist, cannot persist; constitutive of every Pₙ"
+
+  - term: "牝"
+    structure: "Generative capacity"
+    status: derived
+    notes: "The capacity to produce, not the action"
+
+  - term: "⽞牝"
+    structure: "Pₙ → O₍ₙ₊₁₎"
+    status: derived
+    notes: "The paradoxical generative locus"
+
+  - term: "⽣"
+    structure: "Parturition with prior state"
+    status: derived
+    notes: "The recursion event Pₙ → O₍ₙ₊₁₎"
+
+  - term: "相⽣"
+    structure: "有 ⇌ 無 within Rₙ"
+    status: derived
+    notes: "Mutual parturition; no prior state; bidirectional modal exchange"
+
+  - term: "名"
+    structure: "i"
+    status: derived
+    notes: "The minimal orthogonal cut required at every obtainable point"
+
+  - term: "守中"
+    structure: "Bₙ (balance axis)"
+    status: derived
+    notes: "Descriptive, not prescriptive"
+
+  - term: "天地"
+    structure: "Gₙ (two-mode gradient)"
+    status: derived
+    notes: "Inverse curve relating two modes such that their product = 1ₙ"
+
+  - term: "天地不仁"
+    structure: "No preferred position along gradient axis"
+    status: derived
+    notes: "Double isotropy that generates S²"
+
+  - term: "反者道之動"
+    structure: "Four-position closure cycle {1 → i → −1 → −i → 1}"
+    status: derived
+    notes: "Orbital return around ⽞"
+
+  - term: "無為"
+    structure: "Aligned persistence"
+    status: derived
+    notes: "Effortless persistence where closure obtains naturally; not inaction"
+
+  - term: "為"
+    structure: "Effortful action under misalignment"
+    status: derived
+
+  - term: "法"
+    structure: "Taking pattern from (structural relationship between child and parent frame)"
+    status: derived
+    notes: "Ch. 25 cascade"
+
+  - term: "道法⾃然"
+    structure: "Substrate as self-sufficient, non-framed structural condition"
+    status: derived
+    notes: "No frame above 道"
+
+  - term: "道⼤"
+    structure: "ℝ³"
+    status: under_test
+    notes: "Extension-without-terminus; each frame its own ℝ³"
+
+  - term: "⼀"
+    structure: "First distinction"
+    status: derived
+
+  - term: "⼆"
+    structure: "Two-mode distinction"
+    status: derived
+
+  - term: "三"
+    structure: "Closure minimum (orthogonal mediator)"
+    status: derived
+    notes: "Point-level reading closed; branch-level dimensionality under test"
+
+  - term: "萬物"
+    structure: "Recursion's full elaboration at every scale"
+    status: derived
+
+  - term: "常無"
+    structure: "|0| (absence face of P₀)"
+    status: derived
+
+  - term: "常有"
+    structure: "|1| (saturation face of P₀)"
+    status: derived
+
+  - term: "⼜⽞"
+    structure: "Branching recursion"
+    status: derived
+    notes: "Paradox-condition re-encountered at next scale"
+
+  - term: "⾕神不死"
+    structure: "Pₙ as required-and-forbidden"
+    status: derived
+    notes: "不死 :: inherent, inevitable non-termination"
+
+register_markers:
+  常: "Frame-independent"
+  可: "Frame-relative"
+  非: "Same-origin, different-register (structural correspondence)"
