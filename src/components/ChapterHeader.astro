@@ -1,0 +1,47 @@
+---
+import ConfidenceBadge from './ConfidenceBadge.astro';
+import type { ConfidenceLevel } from './confidence';
+
+interface Props {
+  collection?: string;
+  chineseTitle: string;
+  englishTitle?: string;
+  version?: string;
+  date?: string;
+  rsmVersion?: string;
+  confidence?: ConfidenceLevel;
+}
+
+const { collection, chineseTitle, englishTitle, version, date, rsmVersion, confidence } =
+  Astro.props;
+
+const meta = [version, date, rsmVersion].filter(Boolean) as string[];
+const hasMeta = meta.length > 0 || Boolean(confidence);
+---
+
+<header class="text-center mb-12">
+  {collection && <p class="m-0 mb-2 font-sans text-sm themed-text-muted">{collection}</p>}
+
+  <h1 class="m-0 mb-2 font-sans text-4xl font-bold">{chineseTitle}</h1>
+
+  {englishTitle && <p class="m-0 mb-4 text-xl themed-text-secondary">{englishTitle}</p>}
+
+  {
+    hasMeta && (
+      <div class="flex flex-wrap items-center justify-center gap-4 font-sans text-sm themed-text-muted">
+        {meta.map((value, i) => (
+          <Fragment>
+            {i > 0 && <span aria-hidden="true">•</span>}
+            <span>{value}</span>
+          </Fragment>
+        ))}
+        {confidence && (
+          <Fragment>
+            {meta.length > 0 && <span aria-hidden="true">•</span>}
+            <ConfidenceBadge level={confidence} />
+          </Fragment>
+        )}
+      </div>
+    )
+  }
+</header>

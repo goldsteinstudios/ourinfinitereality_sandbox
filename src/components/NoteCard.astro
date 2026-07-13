@@ -1,0 +1,30 @@
+---
+import ConfidenceBadge from './ConfidenceBadge.astro';
+import type { ConfidenceLevel } from './confidence';
+
+interface Props {
+  title: string;
+  level?: ConfidenceLevel;
+  meta?: string;
+  note?: string;
+}
+
+const { title, level, meta, note } = Astro.props;
+---
+
+<div
+  class="rounded border p-3 text-sm"
+  style="background: var(--color-surface); border-color: var(--color-border);"
+>
+  <div class="flex justify-between gap-4 mb-1">
+    <span class="font-sans font-medium">{title}</span>
+    {
+      level ? (
+        <ConfidenceBadge level={level} />
+      ) : meta ? (
+        <span class="font-sans themed-text-muted">{meta}</span>
+      ) : null
+    }
+  </div>
+  {note && <p class="m-0 themed-text-secondary">{note}</p>}
+</div>

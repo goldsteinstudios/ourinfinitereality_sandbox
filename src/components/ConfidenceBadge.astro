@@ -1,0 +1,30 @@
+---
+import { CONFIDENCE_TIERS, type ConfidenceLevel } from './confidence';
+
+interface Props {
+  level?: ConfidenceLevel;
+  label?: string;
+  pill?: boolean;
+}
+
+const { level = 'strong', label, pill = false } = Astro.props;
+
+const tier = CONFIDENCE_TIERS[level] ?? CONFIDENCE_TIERS.strong;
+const text = label ?? tier.label;
+const hue = `var(${tier.color})`;
+---
+
+{
+  pill ? (
+    <span
+      class="inline-block rounded font-sans text-xs font-medium"
+      style={`color: ${hue}; border: 1px solid color-mix(in srgb, ${hue} 40%, transparent); background: color-mix(in srgb, ${hue} 10%, transparent); padding: 0.1rem 0.5rem;`}
+    >
+      {text}
+    </span>
+  ) : (
+    <span class="font-sans text-sm" style={`color: ${hue};`}>
+      {text}
+    </span>
+  )
+}

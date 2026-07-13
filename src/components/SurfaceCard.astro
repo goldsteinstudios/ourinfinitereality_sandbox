@@ -1,0 +1,15 @@
+---
+interface Props {
+  padding?: string;
+  class?: string;
+}
+
+const { padding = '1.5rem', class: className } = Astro.props;
+---
+
+<div
+  class:list={['rounded-lg border', className]}
+  style={`background: var(--color-surface); border-color: var(--color-border); padding: ${padding};`}
+>
+  <slot />
+</div>

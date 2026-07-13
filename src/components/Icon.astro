@@ -1,0 +1,38 @@
+---
+import { ICON_NAMES, type IconName } from './icon-names';
+
+interface Props {
+  name: IconName;
+  size?: string;
+  class?: string;
+}
+
+const { name, size = '100%', class: className } = Astro.props;
+
+// Inlined rather than <img src>: the glyphs paint with currentColor and
+// self-animate on `svg:hover`, neither of which survives an <img>.
+const sources = import.meta.glob<string>('../icons/*.svg', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+
+const raw = sources[`../icons/${name}.svg`];
+if (!raw) {
+  throw new Error(`Icon "${name}" not found. Available: ${ICON_NAMES.join(', ')}`);
+}
+
+const attrs = [
+  `width="${size}"`,
+  `height="${size}"`,
+  'aria-hidden="true"',
+  'focusable="false"',
+  className ? `class="${className}"` : '',
+]
+  .filter(Boolean)
+  .join(' ');
+
+const svg = raw.replace('<svg', `<svg ${attrs}`);
+---
+
+<Fragment set:html={svg} />
