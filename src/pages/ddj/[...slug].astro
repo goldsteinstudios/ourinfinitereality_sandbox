@@ -16,7 +16,7 @@ interface Props {
 
 const { translation } = Astro.props;
 const { Content } = await translation.render();
-const { chapter, chineseTitle, englishTitle, version, lastUpdated, rsmVersion, confidence, confidenceNotes, changes } = translation.data;
+const { chapter, chineseTitle, englishTitle, version, lastUpdated, confidence, confidenceNotes, changes } = translation.data;
 
 const confidenceColors: Record<string, string> = {
   locked: 'var(--color-locked, #22c55e)',
@@ -44,12 +44,6 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
         <span>v{version}</span>
         <span>•</span>
         <span>{lastUpdated}</span>
-        {rsmVersion && (
-          <>
-            <span>•</span>
-            <span>RSM {rsmVersion}</span>
-          </>
-        )}
         {confidence && (
           <>
             <span>•</span>

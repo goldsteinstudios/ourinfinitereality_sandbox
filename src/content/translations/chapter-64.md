@@ -4,7 +4,6 @@ chineseTitle: "其安易持"
 englishTitle: "The Definition of 無為"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "輔萬物之自然而不敢為 as 無為 definition"
@@ -25,7 +24,7 @@ confidenceNotes:
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment"
+    notes: "Initial translation"
 tags: ["無為", "自然", "scale", "prevention"]
 ---
 

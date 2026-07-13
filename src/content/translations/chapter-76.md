@@ -4,7 +4,6 @@ chineseTitle: "人之生也柔弱"
 englishTitle: "The Material Physics of Yielding"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "柔弱 = yielding (not 'weak')"
@@ -25,7 +24,7 @@ confidenceNotes:
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment"
+    notes: "Initial translation"
 tags: ["yielding", "柔弱", "rigidity", "life", "death"]
 ---
 

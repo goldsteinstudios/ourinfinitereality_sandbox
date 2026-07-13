@@ -4,12 +4,11 @@ chineseTitle: "有物混成"
 englishTitle: "The Recursion Formula"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "大→逝→遠→反 as recursion cycle"
     level: "strong"
-    note: "Origin → extension → boundary → return. Consistent with 反=+1 (Ch 40) and structural necessity."
+    note: "Origin → extension → boundary → return. Consistent with 反 as return (Ch 40) and structural necessity."
   - element: "道大 as compound (pattern-as-field)"
     level: "plausible"
     note: "Interpretive reading. 大 as unbounded field vs 萬物 as bounded forms."
@@ -28,7 +27,7 @@ confidenceNotes:
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment"
+    notes: "Initial translation"
 tags: ["recursion", "反", "自然", "cycle"]
 ---
 
@@ -82,7 +81,7 @@ Humans follow earth; earth follows heaven; heaven follows pattern; pattern follo
 | 大 | dà | totality, unbounded field (arms extended) |
 | 逝 | shì | extends, goes forth (continuous motion) |
 | 遠 | yuǎn | far, reaches boundary (maximum extension) |
-| 反 | fǎn | returns, reverses (= +1 in Euler) |
+| 反 | fǎn | returns, reverses |
 | 王 | wáng | conscious agent (connects 天/人/地) |
 | 自然 | zì rán | self-so (spontaneous, no external reference) |
 

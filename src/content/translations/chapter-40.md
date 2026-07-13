@@ -4,28 +4,27 @@ chineseTitle: "反者道之動"
 englishTitle: "The Oscillation Engine"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
-  - element: "反 = +1 (return/completion)"
+  - element: "反 (return / oscillation)"
     level: "locked"
-    note: "e^(iπ) + 1 = 0. The +1 completes the cycle back to origin. Character shows 又 (hand) flipping under 厂 (cliff) = rotation."
+    note: "Character shows 又 (hand) flipping under 厂 (cliff) = rotation."
   - element: "弱 as yielding (not weakness)"
     level: "strong"
     note: "Rope, water examples. What persists under stress is soft, not rigid. Consistent with 柔 in Chapters 76, 78."
   - element: "生於 as co-generation (not linear causation)"
     level: "strong"
     note: "If void were prior, 徼-observation could find the boundary. It can't. The oscillation is continuous. Consistent with Chapter 2's 相生."
-  - element: "有/無 reciprocity (Postulate 4)"
+  - element: "有/無 reciprocity"
     level: "strong"
-    note: "Neither exists without the other. X·Y=k mapping. Three demonstrations in Chapter 11 confirm structure."
+    note: "Neither exists without the other. Three demonstrations in Chapter 11 confirm structure."
   - element: "Guodian validation"
     level: "strong"
     note: "Slip 37 preserves phonetic loans (亡=無, 又=有) confirming structure predates philosophical interpretation."
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment"
+    notes: "Initial translation"
 tags: ["反", "oscillation", "co-generation", "有無"]
 ---
 
@@ -58,23 +57,13 @@ Form/boundary co-emerges with void.
 
 | Character | Pinyin | Structural Reading |
 |-----------|--------|-------------------|
-| 反 | fǎn | return, reversal, oscillation (= +1 in Euler) |
+| 反 | fǎn | return, reversal, oscillation |
 | 動 | dòng | movement, motion (the engine's operation) |
 | 弱 | ruò | yielding, soft (not weak—what persists under stress) |
 | 用 | yòng | function, utility (what yielding provides) |
 | 生於 | shēng yú | co-emerges with (not "born from") |
 | 有 | yǒu | form, boundary, presence |
 | 無 | wú | void (generative, not empty) |
-
----
-
-## RSM v0.988 Mapping
-
-| DDJ | Math | Function |
-|-----|------|----------|
-| 反 | +1 | Return that completes cycle: e^(iπ) + 1 = 0 |
-| 生於 | ↔ | Bidirectional co-generation (not → linear) |
-| 有/無 | X·Y=k | Reciprocal poles per Postulate 4 |
 
 ---
 

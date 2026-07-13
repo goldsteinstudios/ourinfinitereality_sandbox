@@ -4,7 +4,6 @@ chineseTitle: "上善若水"
 englishTitle: "Water as Demonstration"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "善 as optimal function (not moral goodness)"
@@ -25,7 +24,7 @@ confidenceNotes:
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment"
+    notes: "Initial translation"
 tags: ["water", "善", "利", "demonstration"]
 ---
 

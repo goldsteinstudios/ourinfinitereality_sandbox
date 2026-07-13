@@ -4,28 +4,27 @@ chineseTitle: "天下皆知"
 englishTitle: "Co-Generation of Poles"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
-  - element: "相生 as co-generation (Postulate 4)"
+  - element: "相生 as co-generation"
     level: "strong"
-    note: "Character structure encodes mutual arising. Six demonstrations use bidirectional verbs. Maps directly to X·Y=k (reciprocal constraint)."
+    note: "Character structure encodes mutual arising. Six demonstrations use bidirectional verbs."
   - element: "名 as boundary-event creating both poles"
     level: "strong"
-    note: "Consistent with 名=i reading. The orthogonal cut creates both sides simultaneously, not sequentially."
+    note: "Consistent with the 名 reading. The orthogonal cut creates both sides simultaneously, not sequentially."
   - element: "Six pairs as structural demonstration"
     level: "strong"
     note: "Varying verbs (生/成/形/傾/和/隨) suggest structural analysis, not rhetorical flourish. All encode bidirectional relationship."
   - element: "弗居→不去 as return principle"
     level: "strong"
-    note: "Consistent with 反=+1 and Chapter 25's 大→逝→遠→反 formula. Not dwelling enables persistence."
+    note: "Consistent with 反 (return) and Chapter 25's 大→逝→遠→反 formula. Not dwelling enables persistence."
   - element: "Anti-relativism reading"
     level: "plausible"
     note: "The text says both poles are real once drawn, not that nothing is real. Interpretive, but consistent with overall framework."
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment and confidence tracking"
+    notes: "Initial translation with confidence tracking"
 tags: ["co-generation", "相生", "poles", "無為"]
 ---
 
@@ -102,17 +101,6 @@ Precisely by not dwelling, it does not depart.
 | 隨 | suí | follow, accompany |
 | 無為 | wú wéi | non-forcing action (not inaction) |
 | 弗居 | fú jū | not dwelling (enables return) |
-
----
-
-## RSM v0.988 Mapping
-
-| DDJ Element | RSM Mapping | Principle |
-|-------------|-------------|-----------|
-| Drawing distinction | 名 = i | Orthogonal cut creates both poles |
-| 相生 (mutual arising) | Postulate 4: X·Y=k | Reciprocal constraint |
-| Six pairs | Same structure, different domains | Universal pattern |
-| 弗居→不去 | 反 = +1 | Return enables persistence |
 
 ---
 

@@ -4,7 +4,6 @@ chineseTitle: "三十輻"
 englishTitle: "The Wheel, Pot, and Room"
 version: "2.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "有/無 complementarity"
@@ -28,7 +27,7 @@ changes:
     notes: "Scythe correction: 利 as π-operation (arc), not 'advantage' (abstract noun)"
   - version: "1.1"
     date: "November 2025"
-    notes: "Aligned with RSM v0.988; added 利₁/利₂ distinction"
+    notes: "Added 利₁/利₂ distinction"
   - version: "1.0"
     date: "October 2025"
     notes: "Initial structural translation"
@@ -121,7 +120,3 @@ Structure → cut → void → function
 | Room | Walls | Carved space | Dwelling |
 
 *All demonstrate the same principle: Structure exists to perform the cut that maintains the void.*
-
----
-
-*See [Chapter 11 Essay](/essay/ddj-chapter11) for extended analysis.*

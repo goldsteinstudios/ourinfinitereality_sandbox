@@ -4,7 +4,6 @@ chineseTitle: "曲則全"
 englishTitle: "The Geometry of Yielding"
 version: "1.0"
 lastUpdated: "December 2025"
-rsmVersion: "v0.992"
 confidence: "strong"
 confidenceNotes:
   - element: "曲則全 as geometric principle (not moral advice)"
@@ -28,7 +27,7 @@ confidenceNotes:
 changes:
   - version: "1.0"
     date: "December 2025"
-    notes: "Initial translation with RSM v0.988 alignment"
+    notes: "Initial translation"
 tags: ["yielding", "曲", "抱一", "non-occupation"]
 ---
 

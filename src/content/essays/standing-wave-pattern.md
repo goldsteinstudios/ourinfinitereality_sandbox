@@ -9,7 +9,7 @@ tags: [physics, biology, ddj, pattern]
 ---
 
 *An Essay in the AL-AN Voice — December 2025*
-*Connects RSM v0.992, DDJ Chapter 25, and Wave Physics*
+*Connects DDJ Chapter 25 and Wave Physics*
 
 ---
 
