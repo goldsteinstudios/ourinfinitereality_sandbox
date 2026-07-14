@@ -51,11 +51,15 @@ BANS = [
         "CLAUDE.md:121-122",
     ),
     (
-        r"\bstandpoint\b",
+        # Includes the regress sense ("no foundation to stand on"): P1 is about terminal
+        # resolution, not about somewhere to put your feet. Canon states it as
+        # "infinitely vast and infinitely divisible: no maximum extent, no minimum scale,
+        # no terminal resolution in either direction."
+        r"\bstandpoint\b|\b(?:stand|stood|standing)\s+on\b",
         "occupancy vocabulary wearing a coat. Canon's phrasing is 'cannot be constituted "
-        "as a frame' / 'cannot become a frame of its own' — a standpoint is something you "
-        "stand on.",
-        "Will's ruling, site walkthrough 2026-07-14; structural_v7.7_r3.md:90",
+        "as a frame' / 'cannot become a frame of its own'. Nothing in this framework "
+        "stands anywhere — not on a crossing, and not on a foundation.",
+        "Will's rulings, site walkthrough 2026-07-14; structural_v7.7_r3.md:13, :90",
     ),
     (
         # The error that keeps coming back: pricing convergence as evidence. The registers
