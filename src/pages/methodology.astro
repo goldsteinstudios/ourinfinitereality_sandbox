@@ -50,7 +50,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="themed-surface border rounded-lg p-6">
           <h3 class="text-xl font-bold mb-2">Step 2: Trace the Dependencies</h3>
           <p class="themed-text-secondary">
-            Follow the claim back to its foundations. What axioms does it require? What postulates? What previous theorems?
+            Follow the claim back to its foundations. What premises does it require? (The working set is deliberately small: the Conditional, the Bridge, Definition T, the seating commitment, L1 — and L1 is the open head.) What previous theorems?
           </p>
           <p class="themed-text-muted mt-2 text-sm">
             <strong>Ask:</strong> What would have to be false for this to be false? Draw the dependency chain.
@@ -80,15 +80,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="themed-surface border rounded-lg p-6">
           <h3 class="text-xl font-bold mb-2">Step 5: Classify Epistemic Status</h3>
           <p class="themed-text-secondary">
-            Place the claim in its proper tier:
+            Give the claim its status tag:
           </p>
           <ul class="themed-text-secondary list-disc list-inside mt-2 space-y-1">
-            <li><strong>Tier 1 (Locked):</strong> Follows necessarily from framework</li>
-            <li><strong>Tier 2 (Postulate-Dependent):</strong> Follows given optional assumptions</li>
-            <li><strong>Tier 3 (Empirical):</strong> Testable prediction</li>
-            <li><strong>Tier 4 (Analogical):</strong> Pattern observation, not derivation</li>
-            <li><strong>Tier 5 (Outside Scope):</strong> Not addressed by framework</li>
+            <li><strong>[derived]:</strong> Established in the math chain, proven — given the stated premises</li>
+            <li><strong>[candidate]:</strong> Convergence register; not yet earned as a :: claim</li>
+            <li><strong>[falsifiable]:</strong> Empirical prediction; if not observed, the framework is wrong</li>
+            <li><strong>[open]:</strong> Not yet resolved</li>
           </ul>
+          <p class="themed-text-muted mt-2 text-sm">
+            DDJ correspondences additionally carry a stratum tag: <strong>[G]</strong> attested in the Guodian bundles, <strong>[R]</strong> received-text only. Never treat [candidate] as [derived]; never treat [R] as [G].
+          </p>
         </div>
       </div>
     </section>
