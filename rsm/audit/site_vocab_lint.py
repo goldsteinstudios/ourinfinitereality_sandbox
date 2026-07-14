@@ -50,6 +50,22 @@ BANS = [
         "v7.7 is not sealed; L1 is the open head of the audit.",
         "CLAUDE.md:121-122",
     ),
+    (
+        r"\bstandpoint\b",
+        "occupancy vocabulary wearing a coat. Canon's phrasing is 'cannot be constituted "
+        "as a frame' / 'cannot become a frame of its own' — a standpoint is something you "
+        "stand on.",
+        "Will's ruling, site walkthrough 2026-07-14; structural_v7.7_r3.md:90",
+    ),
+    (
+        # The error that keeps coming back: pricing convergence as evidence. The registers
+        # were built through each other, so their agreement is EXPECTED. A chain offers
+        # coherence, never evidence; evidence lives only in preregistered predictions.
+        r"converg\w*[^.]{0,80}\bevidence\b|\bevidence\b[^.]{0,80}converg\w*",
+        "convergence-as-evidence. Divergences are the data; convergences are priced near "
+        "zero (shared corpora / shared authorship). A chain offers coherence, not evidence.",
+        "CLAUDE.md:134-136; just_ddj_v7.7_r3.md:5",
+    ),
 ]
 
 # A hit is a false positive when the line NEGATES or REPORTS the banned term rather than
