@@ -8,6 +8,8 @@ order: 1
 tags: ["biology", "topology", "pattern"]
 ---
 
+> **Written under an earlier version of the framework.** Its two centers are typed to a scheme the current version supersedes — the generative crossing is the one that **is** met, and it generates because it can never become a frame of its own, not because it is empty. A rewrite is pending. The essay is kept as history rather than quietly corrected.
+
 *You are a donut. Seriously.*
 
 ---
@@ -70,7 +72,7 @@ And **you**—you are the principle made flesh. Your organizational center is a 
 
 ## The Shape of Staying
 
-The generative center doesn't have to be occupied. It can't be occupied. What makes it generative is precisely that everything else organizes in relation to it without collapsing into it.
+The generative center is met — and it can never become a frame of its own. That impossibility, not emptiness, is what makes it generative.
 
 The wheel shows us this. The hurricane shows us this. The tree shows us this.
 

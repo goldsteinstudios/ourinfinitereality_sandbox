@@ -100,8 +100,10 @@ Why? Because three dimensions are **sufficient**. Once you have spherical closur
 |------------|-----------|--------|
 | 1 (line) | No closure | Unstable |
 | 2 (plane) | Circle only | Can't bound 3D void |
-| 3 (sphere) | Complete closure | **Sufficient** |
-| 4+ | Redundant | Recursion already provides |
+| 3 (sphere) | Closure achieved | **Necessary** |
+| 4+ | Not excluded | Uniqueness is open |
+
+**Three is necessary. Whether three is *unique* is open.** Two rival derivations remain unadjudicated, and S² embeds in ℝ⁴ — the framework does not currently forbid the fourth dimension, it simply doesn't need it. Earlier versions of this page said "sufficient" and called 4+ "redundant." That overstated what has been shown. `[candidate]`
 
 ---
 
@@ -129,6 +131,5 @@ Neither exists without the other
 ## What This IS Saying
 
 ✓ Structural necessity: Each stage co-emerges with the next
-✓ Dimensional sufficiency: Three is where closure happens
 ✓ Continuous operation: Present tense, always happening
 ✓ Recursion: 三生萬物 means infinite nesting, not more dimensions

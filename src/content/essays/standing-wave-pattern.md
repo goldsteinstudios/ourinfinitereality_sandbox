@@ -153,7 +153,7 @@ The mathematical details differ. The organizational logic rhymes.
 
 A shared pattern of persistence:
 
-**Things that last seem to do so by circulating around something they can't occupy, returning to where they started but transformed.**
+**Things that last seem to do so by circulating around something they never meet, returning to where they started but transformed.**
 
 The guitar string circulates through its standing wave pattern around nodes it never crosses. The electron circulates through probability space around a nucleus. The tree circulates through annual cycles around a hollow center. Chapter 25 describes circulation through 大→逝→遠→反 around the unnameable 道.
 
@@ -204,7 +204,7 @@ Is it "the standing wave formula"? No—standing waves have their own mathematic
 
 Next time you see something that persists—a whirlpool, a tradition, a friendship, a song stuck in your head—notice whether it has this shape:
 
-- Something at the center that can't be occupied
+- A center that is never met
 - Circulation around that center
 - Return that enables continuation
 

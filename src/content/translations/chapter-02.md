@@ -17,7 +17,7 @@ confidenceNotes:
     note: "Varying verbs (生/成/形/傾/和/隨) suggest structural analysis, not rhetorical flourish. All encode bidirectional relationship."
   - element: "弗居→不去 as return principle"
     level: "strong"
-    note: "Consistent with 反 (return) and Chapter 25's 大→逝→遠→反 formula. Not dwelling enables persistence."
+    note: "弗 marks structural impossibility, not contingent refusal (that would be 不). 成而弗居 — completes, yet structurally cannot dwell. To me, that looks just like the generative crossing's non-constitutability: the strongest [G]-stratum correspondence in the framework, and attested on slip A17."
   - element: "Anti-relativism reading"
     level: "plausible"
     note: "The text says both poles are real once drawn, not that nothing is real. Interpretive, but consistent with overall framework."

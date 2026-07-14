@@ -108,7 +108,7 @@ Sound familiar?
 
 Here's where it gets interesting. The gap isn't a problem. The gap is the engine.
 
-**Without the gap, no motion.** If you could occupy the center, you'd stop there. If meaning were given, you wouldn't need to create it. If truth could be fully captured in proof, there would be no reason to keep proving. The fact that you can't reach it is what keeps you moving.
+**Without the gap, no motion.** If the center could be met, you'd stop there. If meaning were given, you wouldn't need to create it. If truth could be fully captured in proof, there would be no reason to keep proving. The fact that you can't reach it is what keeps you moving.
 
 **Without the gap, no structure.** The tree's rings form around a center that can rot away completely—and the tree keeps standing. The hurricane organizes its fury around an eye it can never occupy. You exist as boundary-activity wrapped around hollows. The generative center functions *because* it isn't filled.
 
@@ -185,7 +185,7 @@ The gap between what is and what can be said, between implicit and explicit, bet
 
 And it's not empty. It's generative.
 
-The engine room of reality isn't occupied. That's what makes it run.
+The engine room of reality is never met. That's what makes it run.
 
 ---
 

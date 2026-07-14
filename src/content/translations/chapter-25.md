@@ -91,17 +91,11 @@ Humans follow earth; earth follows heaven; heaven follows pattern; pattern follo
 
 ```
 大 → 逝 → 遠 → 反 → (new cycle)
-↓     ↓     ↓    ↓
-O₁    G     P    +1
-origin extend bound return
 ```
 
-| Stage | Character | RSM | What Happens |
-|-------|-----------|-----|--------------|
-| 大 | totality | O₁ | Origin establishes |
-| 逝 | extends | G | Gradient radiates |
-| 遠 | boundary | P | Periphery reached |
-| 反 | returns | +1 | Cycle completes, new origin possible |
+The text names a cycle that closes by returning. 反 :: return — the discharge that brings the traversal back rather than terminating it. `[G]` — 反 is attested on the Guodian strips.
+
+*An earlier version of this page mapped each of the four characters onto a framework term. That table has been removed rather than re-keyed: its notation is retired, one of its assignments had the wrong referent, and re-keying it would have meant inventing four fresh correspondences that nobody has ruled. The text is left to say what it says.*
 
 ---
 

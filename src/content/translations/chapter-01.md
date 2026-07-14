@@ -10,8 +10,8 @@ confidenceNotes:
     level: "strong"
     note: "Consistent with Guodian 恆 (héng) variant. Structural reading produces coherent framework across chapters."
   - element: "名 (the distinction that creates both poles)"
-    level: "strong"
-    note: "The cut that creates both poles. Consistent with Chapter 2's 相生 demonstration."
+    level: "plausible"
+    note: "名's obtainedness is held OPEN in the current framework — an earlier version read 名 as settled, and that reading has been withdrawn. The live candidate is the 明/名 split: 明 :: the quadratic measure, 名 :: its linear read-off. The measure and its amplitude, carried lexically."
   - element: "玄 (generative center)"
     level: "strong"
     note: "Character analysis + 玄牝 (mysterious female/birth-opening): generative, not empty."
@@ -93,7 +93,7 @@ Paradox within paradox — the gateway to all patterns.
 | 欲 | yù | orientation / focus (not "desire") |
 | 妙 | miào | relational patterns (fix center, vary boundary) |
 | 徼 | jiào | boundaries (fix boundary, vary center) |
-| 玄 | xuán | paradoxical origin / generative center |
+| 玄 | xuán | the generative crossing — met, and never constitutable as a frame of its own (not the origin; the origin is the unmet one) |
 
 ---
 
