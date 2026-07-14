@@ -9,10 +9,10 @@ const translations = defineCollection({
     version: z.string(),
     lastUpdated: z.string(),
     rsmVersion: z.string().optional(),
-    confidence: z.enum(['locked', 'strong', 'plausible', 'speculative']).optional(),
+    confidence: z.enum(['strong', 'plausible', 'speculative']).optional(),
     confidenceNotes: z.array(z.object({
       element: z.string(),
-      level: z.enum(['locked', 'strong', 'plausible', 'speculative']),
+      level: z.enum(['strong', 'plausible', 'speculative']),
       note: z.string(),
     })).default([]),
     changes: z.array(z.object({

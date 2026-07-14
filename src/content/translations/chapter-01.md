@@ -14,7 +14,7 @@ confidenceNotes:
     note: "The cut that creates both poles. Consistent with Chapter 2's 相生 demonstration."
   - element: "玄 (generative center)"
     level: "strong"
-    note: "Character analysis + 玄牝 (mysterious female/birth-opening) confirms generative, not empty."
+    note: "Character analysis + 玄牝 (mysterious female/birth-opening): generative, not empty."
   - element: "妙/徼 as orthogonal observation modes"
     level: "strong"
     note: "Fix-center-vary-boundary vs fix-boundary-vary-center produces genuinely different information."

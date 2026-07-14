@@ -7,7 +7,7 @@ lastUpdated: "December 2025"
 confidence: "strong"
 confidenceNotes:
   - element: "反 (return / oscillation)"
-    level: "locked"
+    level: "strong"
     note: "Character shows 又 (hand) flipping under 厂 (cliff) = rotation."
   - element: "弱 as yielding (not weakness)"
     level: "strong"
@@ -17,10 +17,10 @@ confidenceNotes:
     note: "If void were prior, 徼-observation could find the boundary. It can't. The oscillation is continuous. Consistent with Chapter 2's 相生."
   - element: "有/無 reciprocity"
     level: "strong"
-    note: "Neither exists without the other. Three demonstrations in Chapter 11 confirm structure."
-  - element: "Guodian validation"
+    note: "Neither exists without the other."
+  - element: "Guodian attestation"
     level: "strong"
-    note: "Slip 37 preserves phonetic loans (亡=無, 又=有) confirming structure predates philosophical interpretation."
+    note: "Slip 37 preserves phonetic loans (亡=無, 又=有)."
 changes:
   - version: "1.0"
     date: "December 2025"
@@ -112,7 +112,7 @@ The oscillation IS the thing. Not alternating states, but continuous co-generati
 
 ---
 
-## Guodian Validation (Slip 37)
+## Guodian Attestation (Slip 37)
 
 ```
 Received: 反者道之動，弱者道之用。天下萬物生於有，有生於無。
@@ -125,4 +125,4 @@ Guodian:  返也者道僮也，溺也者道之甬也。天下之勿生於又，�
 | 有 | 又 (yòu) | Phonetic loan |
 | 反 | 返 | Same root |
 
-Structure preserved in oldest manuscripts. This was engineering, not philosophy.
+Structure preserved in oldest manuscripts.

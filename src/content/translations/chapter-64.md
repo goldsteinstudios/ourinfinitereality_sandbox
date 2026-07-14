@@ -7,8 +7,8 @@ lastUpdated: "December 2025"
 confidence: "strong"
 confidenceNotes:
   - element: "輔萬物之自然而不敢為 as 無為 definition"
-    level: "locked"
-    note: "Clearest articulation in the text. Assist natural self-organization without imposing. Guodian confirms."
+    level: "strong"
+    note: "Clearest articulation in the text. Assist natural self-organization without imposing."
   - element: "Scale principle (small scale → easy intervention)"
     level: "strong"
     note: "Four parallel demonstrations + three scale examples. Consistent with prevention logic."
@@ -17,7 +17,7 @@ confidenceNotes:
     note: "為 at 未有 = works; 為 at 已有 = ruins. Distinction is critical."
   - element: "幾成而敗 (completion vulnerability)"
     level: "strong"
-    note: "Empirical observation: most failures cluster at near-completion. Guodian confirms."
+    note: "Empirical observation: most failures cluster at near-completion."
   - element: "欲不欲 / 學不學 (meta-operations)"
     level: "strong"
     note: "Same syntactic structure as Ch 63. Takes non-X as object of X."
@@ -154,9 +154,9 @@ Solution:
 
 ---
 
-## Guodian Validation
+## Guodian Attestation
 
-Slip Bundle A + C (~300 BCE) confirms:
+Slip Bundle A + C (~300 BCE) attests:
 - 輔萬物之自然而弗敢為
 - 為之者敗之 / 執之者失之
 - 人之敗也，恆於其且成也敗之

@@ -15,11 +15,11 @@ confidenceNotes:
   - element: "處眾人之所惡 → 幾於道"
     level: "strong"
     note: "Low places are where generation happens (谷神, 玄牝, 道沖). Water goes where pattern operates."
-  - element: "Seven demonstrations as complete proof"
+  - element: "Seven demonstrations"
     level: "strong"
     note: "Each domain shows a principle from earlier chapters. Water is the Rosetta Stone."
   - element: "不爭 → 無尤 (non-contention → faultless)"
-    level: "locked"
+    level: "strong"
     note: "Water never fails because it never violates the pattern. No position to lose, no battle to fight."
 changes:
   - version: "1.0"
