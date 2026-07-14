@@ -2,6 +2,8 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import NavigationPanel from '../../components/NavigationPanel.astro';
+import Icon from '../../components/Icon.astro';
+import { ICON_NAMES, type IconName } from '../../components/icon-names';
 
 export async function getStaticPaths() {
   const objects = await getCollection('objects');
@@ -18,6 +20,10 @@ interface Props {
 const { object } = Astro.props;
 const { Content } = await object.render();
 const { title, subtitle, source, domain, icon, deeper, lateral, surface } = object.data;
+
+// icon is stored as a path (e.g. "/icons/wheel.svg"); Icon takes the bare name.
+const iconName = icon?.replace(/^.*\//, '').replace(/\.svg$/, '');
+const hasIcon = !!iconName && (ICON_NAMES as readonly string[]).includes(iconName);
 
 // Get all objects to filter navigation links
 const allObjects = await getCollection('objects');
@@ -39,8 +45,8 @@ const surfaceObjects = allObjects.filter(o => filteredSurface.includes(o.data.id
     <!-- Header -->
     <header class="text-center mb-12">
       <div class="w-24 h-24 mx-auto mb-6 flex items-center justify-center text-6xl">
-        {icon ? (
-          <img src={icon} alt="" class="w-full h-full" />
+        {hasIcon ? (
+          <Icon name={iconName as IconName} size="100%" />
         ) : (
           <span class="opacity-50">○</span>
         )}

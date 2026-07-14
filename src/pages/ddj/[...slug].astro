@@ -1,6 +1,8 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ChapterHeader from '../../components/ChapterHeader.astro';
+import NoteCard from '../../components/NoteCard.astro';
 
 export async function getStaticPaths() {
   const translations = await getCollection('translations');
@@ -18,13 +20,6 @@ const { translation } = Astro.props;
 const { Content } = await translation.render();
 const { chapter, chineseTitle, englishTitle, version, lastUpdated, confidence, confidenceNotes, changes } = translation.data;
 
-const confidenceColors: Record<string, string> = {
-  locked: 'var(--color-locked, #22c55e)',
-  strong: 'var(--color-strong, #3b82f6)',
-  plausible: 'var(--color-plausible, #eab308)',
-  speculative: 'var(--color-speculative, #ef4444)',
-};
-
 // Get all translations for prev/next navigation
 const allTranslations = await getCollection('translations');
 const sorted = allTranslations.sort((a, b) => a.data.chapter - b.data.chapter);
@@ -36,22 +31,14 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
 <BaseLayout title={`Chapter ${chapter}: ${englishTitle}`}>
   <article class="max-w-2xl mx-auto">
     <!-- Header -->
-    <header class="text-center mb-12">
-      <p class="themed-text-muted mb-2">道德經 第{chapter}章</p>
-      <h1 class="text-4xl font-bold mb-2">{chineseTitle}</h1>
-      <p class="text-xl themed-text-secondary mb-4">{englishTitle}</p>
-      <div class="flex items-center justify-center gap-4 text-sm themed-text-muted">
-        <span>v{version}</span>
-        <span>•</span>
-        <span>{lastUpdated}</span>
-        {confidence && (
-          <>
-            <span>•</span>
-            <span style={`color: ${confidenceColors[confidence]}`}>{confidence}</span>
-          </>
-        )}
-      </div>
-    </header>
+    <ChapterHeader
+      collection={`道德經 第${chapter}章`}
+      chineseTitle={chineseTitle}
+      englishTitle={englishTitle}
+      version={`v${version}`}
+      date={lastUpdated}
+      confidence={confidence}
+    />
 
     <!-- Translation Content -->
     <div class="prose prose-themed prose-lg max-w-none">
@@ -64,13 +51,7 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
         <h2 class="text-lg font-bold mb-4">Confidence Assessment</h2>
         <div class="space-y-3 text-sm">
           {confidenceNotes.map((cn) => (
-            <div class="themed-surface border rounded p-3">
-              <div class="flex justify-between mb-1">
-                <span class="font-medium">{cn.element}</span>
-                <span style={`color: ${confidenceColors[cn.level]}`}>{cn.level}</span>
-              </div>
-              <p class="themed-text-secondary">{cn.note}</p>
-            </div>
+            <NoteCard title={cn.element} level={cn.level} note={cn.note} />
           ))}
         </div>
       </section>
@@ -82,13 +63,7 @@ const next = currentIndex < sorted.length - 1 ? sorted[currentIndex + 1] : null;
         <h2 class="text-lg font-bold mb-4">Version History</h2>
         <div class="space-y-3 text-sm">
           {changes.map((change) => (
-            <div class="themed-surface border rounded p-3">
-              <div class="flex justify-between mb-1">
-                <span class="font-medium">v{change.version}</span>
-                <span class="themed-text-muted">{change.date}</span>
-              </div>
-              <p class="themed-text-secondary">{change.notes}</p>
-            </div>
+            <NoteCard title={`v${change.version}`} meta={change.date} note={change.notes} />
           ))}
         </div>
       </section>

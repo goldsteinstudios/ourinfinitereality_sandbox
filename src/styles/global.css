@@ -67,34 +67,6 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
-/* Icon animations */
-.icon-rotate:hover svg {
-  animation: rotate 1.5s ease-in-out;
-}
-
-.icon-pulse:hover svg {
-  animation: pulse 1s ease-in-out;
-}
-
-.icon-oscillate:hover svg {
-  animation: oscillate 1s ease-in-out;
-}
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-}
-
-@keyframes oscillate {
-  0%, 100% { transform: scaleX(1); }
-  50% { transform: scaleX(0.8); }
-}
-
 /* Themed utility classes */
 .themed-surface {
   background: var(--color-surface);

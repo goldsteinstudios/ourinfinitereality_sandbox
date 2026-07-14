@@ -1,12 +1,14 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import Icon from './Icon.astro';
+import { ICON_NAMES, type IconName } from './icon-names';
 
 interface Props {
   object: CollectionEntry<'objects'>;
 }
 
 const { object } = Astro.props;
-const { id, title, subtitle, domain, icon } = object.data;
+const { title, subtitle, domain, icon } = object.data;
 
 const domainColors: Record<string, string> = {
   ddj: 'border-amber-500/30 hover:border-amber-500',
@@ -15,16 +17,18 @@ const domainColors: Record<string, string> = {
   pattern: 'border-purple-500/30 hover:border-purple-500',
 };
 
-const animationClass = domain === 'physics' ? 'icon-rotate' : domain === 'biology' ? 'icon-pulse' : 'icon-oscillate';
+// icon is stored as a path (e.g. "/icons/wheel.svg"); Icon takes the bare name.
+const iconName = icon?.replace(/^.*\//, '').replace(/\.svg$/, '');
+const hasIcon = !!iconName && (ICON_NAMES as readonly string[]).includes(iconName);
 ---
 
 <a
   href={`/object/${object.slug}`}
   class={`block p-6 rounded-lg border-2 themed-surface transition-all ${domainColors[domain] || 'border-gray-500/30'}`}
 >
-  <div class={`w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl ${animationClass}`}>
-    {icon ? (
-      <img src={icon} alt="" class="w-full h-full" />
+  <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl">
+    {hasIcon ? (
+      <Icon name={iconName as IconName} size="100%" />
     ) : (
       <span class="opacity-50">○</span>
     )}
