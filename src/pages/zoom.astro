@@ -40,15 +40,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
-  .zoom-wrap { position: relative; height: 460vh; }
+  /* Full-bleed cinematic black stage. overflow-x: clip guards the 100vw
+     breakout without creating a scroll container (which would break sticky). */
+  :global(html) { overflow-x: clip; }
+  .zoom-wrap {
+    position: relative; height: 460vh;
+    width: 100vw; margin-left: calc(50% - 50vw);
+    background: #000;
+  }
   .zoom-stage {
     position: sticky; top: 0; height: 100vh;
     display: flex; align-items: center; justify-content: center;
-    overflow: hidden;
+    overflow: hidden; background: #000;
   }
   #zoomsvg {
     width: min(82vw, 74vh); height: min(82vw, 74vh);
-    color: var(--color-accent); display: block;
+    color: #fff; display: block;
   }
   .zoom-cards {
     position: absolute; left: 0; right: 0; bottom: 12%;
@@ -56,13 +63,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
   .zoom-card {
     position: absolute; max-width: 22rem; text-align: center; opacity: 0;
-    color: var(--color-text); font-family: var(--font-body);
+    color: #fff; font-family: var(--font-body);
     font-size: var(--text-lg); line-height: var(--leading-relaxed);
     padding: 0 1.5rem;
   }
   .zoom-hint {
     position: absolute; bottom: 4%; left: 0; right: 0; text-align: center;
-    color: var(--color-text-muted); font-size: var(--text-sm);
+    color: rgba(255, 255, 255, 0.55); font-size: var(--text-sm);
     font-family: var(--font-heading); letter-spacing: var(--tracking-wide);
   }
   /* Note: scroll-zoom is user-driven (not autoplaying), so it stays on even
