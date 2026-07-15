@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// PROTOTYPE — the signature scroll-driven camera move. Unlinked, at /zoom.
+// Scroll = the camera: push in toward a receding center, bend into an orbit,
+// pull back to reveal the world was one point of a larger identical one, through
+// a self-similar nest that reads as endless. Proof of technique only.
+---
+
+<BaseLayout title="Zoom prototype">
+  <p class="text-center themed-text-muted text-sm mb-2" style="margin-top:-1rem;">
+    prototype · the camera is the scroll
+  </p>
+
+  <div class="zoom-wrap">
+    <div class="zoom-stage">
+      <svg id="zoomsvg" viewBox="-50 -50 100 100" aria-hidden="true">
+        <g id="cam"></g>
+      </svg>
+
+      <div class="zoom-cards">
+        <p class="zoom-card" data-a="0.02" data-b="0.33">
+          Push in — and the center only recedes. There's always another ring between you and the middle.
+        </p>
+        <p class="zoom-card" data-a="0.37" data-b="0.57">
+          You can't reach it, and you can't cross it. So everything circles.
+        </p>
+        <p class="zoom-card" data-a="0.62" data-b="0.98">
+          Pull back — and the whole world was one point inside a larger one. No smallest, no largest. The middle is everywhere.
+        </p>
+      </div>
+
+      <div class="zoom-hint">scroll ↓</div>
+    </div>
+  </div>
+
+  <p class="text-center themed-text-muted text-sm mt-8">
+    (prototype for the front-page film — reacting to feel, not final)
+  </p>
+</BaseLayout>
+
+<style>
+  .zoom-wrap { position: relative; height: 460vh; }
+  .zoom-stage {
+    position: sticky; top: 0; height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  #zoomsvg {
+    width: min(82vw, 74vh); height: min(82vw, 74vh);
+    color: var(--color-accent); display: block;
+  }
+  .zoom-cards {
+    position: absolute; left: 0; right: 0; bottom: 12%;
+    display: flex; justify-content: center; pointer-events: none;
+  }
+  .zoom-card {
+    position: absolute; max-width: 22rem; text-align: center; opacity: 0;
+    color: var(--color-text); font-family: var(--font-body);
+    font-size: var(--text-lg); line-height: var(--leading-relaxed);
+    padding: 0 1.5rem;
+  }
+  .zoom-hint {
+    position: absolute; bottom: 4%; left: 0; right: 0; text-align: center;
+    color: var(--color-text-muted); font-size: var(--text-sm);
+    font-family: var(--font-heading); letter-spacing: var(--tracking-wide);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .zoom-wrap { height: auto; }
+    .zoom-stage { position: static; height: auto; padding: 3rem 0; }
+    .zoom-hint { display: none; }
+    .zoom-cards { position: static; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+    .zoom-card { position: static; opacity: 1; }
+  }
+</style>
+
+<script>
+  const NS = 'http://www.w3.org/2000/svg';
+  const RATIO = 0.42;              // each world is 42% of the one outside it
+  const INV = 1 / RATIO;           // ≈ 2.38 — zoom factor per level
+  const GOLD = 137.5 * Math.PI / 180;
+
+  const cam = document.getElementById('cam');
+  const svg = document.getElementById('zoomsvg');
+  const cards = Array.from(document.querySelectorAll('.zoom-card'));
+  const hint = document.querySelector('.zoom-hint');
+  const wrap = document.querySelector('.zoom-wrap');
+
+  // Build the self-similar nest: concentric worlds (ring + one orbiting dot),
+  // radius shrinking by RATIO each level. Big outer levels give the pull-back
+  // something to reveal; tiny inner levels give the push-in somewhere to go.
+  const levels = [];
+  let r = 190, i = 0;
+  while (r > 0.22) {
+    const g = document.createElementNS(NS, 'g');
+    const ring = document.createElementNS(NS, 'circle');
+    ring.setAttribute('cx', '0'); ring.setAttribute('cy', '0');
+    ring.setAttribute('r', String(r));
+    ring.setAttribute('fill', 'none');
+    ring.setAttribute('stroke', 'currentColor');
+    ring.setAttribute('stroke-width', '1');
+    ring.setAttribute('vector-effect', 'non-scaling-stroke'); // crisp at every zoom
+    const a = i * GOLD;
+    const dot = document.createElementNS(NS, 'circle');
+    dot.setAttribute('cx', (r * Math.cos(a)).toFixed(2));
+    dot.setAttribute('cy', (r * Math.sin(a)).toFixed(2));
+    dot.setAttribute('r', (r * 0.05).toFixed(3));
+    dot.setAttribute('fill', 'currentColor');
+    g.appendChild(ring); g.appendChild(dot);
+    g.dataset.r = String(r);
+    cam.appendChild(g); levels.push(g);
+    r *= RATIO; i++;
+  }
+
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+  const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
+
+  // Scroll progress → camera state (zoom in levels, rotation for the orbit).
+  function stateFor(p) {
+    let z, rot;
+    if (p < 0.35) { const t = p / 0.35; z = t * 2; rot = t * 70; }
+    else if (p < 0.55) { const t = (p - 0.35) / 0.20; z = 2; rot = 70 + t * 200; }
+    else { const t = (p - 0.55) / 0.45; z = 2 - t * 4.6; rot = 270 + t * 80; }
+    return { S: Math.pow(INV, z), rot };
+  }
+
+  function render(p) {
+    const { S, rot } = stateFor(p);
+    cam.setAttribute('transform', `rotate(${rot.toFixed(2)}) scale(${S.toFixed(4)})`);
+    for (const g of levels) {
+      const sr = parseFloat(g.dataset.r) * S;                 // on-screen radius
+      const op = smooth(1.2, 7, sr) * (1 - smooth(60, 108, sr)); // emerge at center, dissolve at edges
+      g.style.opacity = op.toFixed(3);
+    }
+    for (const c of cards) {
+      const a = parseFloat(c.dataset.a), b = parseFloat(c.dataset.b);
+      c.style.opacity = (smooth(a, a + 0.07, p) * (1 - smooth(b - 0.07, b, p))).toFixed(3);
+    }
+    if (hint) hint.style.opacity = String(1 - smooth(0.0, 0.12, p));
+  }
+
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduce.matches) {
+    render(0.28); // a pleasant static frame; cards are shown stacked by the CSS fallback
+  } else {
+    let ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const rect = wrap.getBoundingClientRect();
+        const total = wrap.offsetHeight - window.innerHeight;
+        const p = clamp(-rect.top / total, 0, 1);
+        render(p);
+        ticking = false;
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
+    render(0);
+  }
+</script>
