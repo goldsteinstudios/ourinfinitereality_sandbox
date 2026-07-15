@@ -54,6 +54,11 @@ v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
   motion" is about the skeleton, not its physical rendering). **Proposed rule: skeleton claims
   tenseless; experiential renderings may move.** Rule whether that split holds, or whether the
   whole page must stay tenseless — which would cost the circulation imagery that makes it land.
+- **(RULED this pass) The gauge reading — Will: lean in.** The page treats the frame-index as a
+  label with no absolute meaning: *every frame is its own ground.* Rendered as the climax at
+  **Step 8**; no subscripts in the prose. Open sub-question inside the ruling: the **level** —
+  agnostic about a true bottom (drafted; keeps open item #6 open) vs. flatly no-bottom (stronger,
+  bears on #6). See Step 8's `[RULE — the big one]`.
 
 ---
 
@@ -138,10 +143,11 @@ impossibility sits at the center of *every* frame — each frame's O is its own 
 `[FAITHFUL]` — §2 read in the implicit register (no "when"). This is still the strongest
 candidate for the page's emotional center; the tenseless version is *more* arresting, not less
 ("there was never a switch, because the off-state is incoherent").
-`[RULE]` (a) Confirm "always obtained, obtains, always will" lands as intended. (b) The word
-**"first"** (as in "first distinction / O₁") invites a reader to hear a sequence there isn't
-one — recommend dropping "first" from the public page entirely; rule on whether "O₁"/"first
-origin" language survives at all here. (c) "the turn" is fine (rhetorical, not temporal).
+`[RULE]` (a) Confirm "always obtained, obtains, always will" lands as intended. (b) **O₁/Oₙ —
+RULED:** public prose uses **no subscript** and leans into the **gauge reading** (Step 8) — the
+label carries no absolute meaning; every frame is its own ground. The technical layer keeps O₁
+(the P₀-parented ground, §5) and Oₙ (the per-frame recurrence) distinct; "first" stays out of the
+prose. (c) "the turn" is fine (rhetorical, not temporal).
 
 ---
 
@@ -241,6 +247,34 @@ removed? (b) "reads the same at every depth, inward and outward at once" for the
 not ladder — §8) — fair, or does "depth" still smuggle a single ladder? (c) "circles and nests"
 for the two discharges (rotation / recursion) — good, or too cute? `[DE-TENSED]` struck: "sweep
 past each other / for one instant / becomes the center / happens again / regenerates itself."
+
+---
+
+## Step 8 — The vertigo: every frame is its own ground  *(Beat: the gauge reading · chain §8 index-relationality + §5 · WILL RULED to lean in)*
+
+**Logical move:** the frame-index is *gauge* — §8: "subscripts name relations, never absolute
+positions… no frame's self-reading is privileged." Every frame carries its own unreachable
+center (§5: O is the frame's local face of P₀). So "the ground" is not a privileged bottom
+frame but a *role every frame plays from its own vantage*. **Discipline:** rendered so it does
+NOT assert "there is no bottom" — that would close open item #6 (uniqueness of O₁). The honest,
+gauge-faithful form is agnostic: no frame can tell, from inside, whether it stands on a floor.
+
+**DRAFT (new; the shareable climax — Will ruled to foreground the gauge reading):**
+> And here's where it turns personal. None of these worlds is *the* bottom or *the* top. Finer,
+> coarser, first, last — those are just names for where you happen to be looking from. Every
+> frame, seen from inside itself, is a ground: a finer world nested within it, a coarser world
+> it's nested in, and the same unreachable center at the heart of its own scale as at every
+> other. There's no final rung you're standing on. You can't even tell, from the inside,
+> whether there's a floor at all — and inside is the only place there is to be. Wherever you
+> look from, you're in the middle of it. The middle is everywhere.
+
+`[RULE — the big one]` Will ruled: lean into the gauge reading. Confirm the **level**: this is
+rendered **agnostic about a true bottom** ("you can't tell from inside"), keeping open item #6
+(uniqueness of O₁) open and honoring "not sealed." If you want the stronger claim — *there is no
+bottom, every frame equally a ground* — that bears on #6 and should be ruled explicitly, not
+implied. `[FAITHFUL]` §8 (index gauge; no privileged self-reading) + §5 (per-frame local face of
+P₀). `[TENSELESS]` "is / sits / nested," no events. `[SUBSCRIPT-FREE]` no O₁/Oₙ in the prose —
+the whole point is that the label carries no absolute meaning.
 
 ---
 
