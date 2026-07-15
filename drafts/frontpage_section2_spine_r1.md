@@ -17,6 +17,12 @@ v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
 - **"Never met," never "occupied."** The corpus is riddled with the struck seating phrasing
   (`_grammar-of-existence.md:67,89,91,232,266,286,320`; `the-gap.md:113` — one still live).
   None of it is reused. `site_vocab_lint.py` gates the result.
+- **Tenseless, no "when."** The skeleton is the implicit register — "no motion, no duration,
+  no occupancy, no 'when'" (chain §opening). Structural necessity must never be rendered as a
+  temporal event. P₀'s incoherence does not *cause* a first distinction *into being*; it means
+  distinction necessarily obtains — always has, does, always will — because its absence was
+  never a possibility. "First / begins / bootstraps / switched on" all leak a "when" and are
+  struck. (Ruling, Will, this pass — corrects r1 Step 3.)
 - **The rotation route is the v7.7 one, not the retired one.** ⚠ Your best rotation prose
   (`_grammar-of-existence.md:123-141`, "the measurement crisis… where am I exactly") is the
   **circular v5 argument** the chain restructured (§7 note; CLAUDE.md: "forced traversal was
@@ -25,8 +31,8 @@ v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
 
 **Two rulings that shape everything (please answer first):**
 - **(R-A) How deep does the "falls out" go?** Two honest options: **(1) the deep spine** —
-  start from the impossibility of absolute nothing/everything, which *forces* the first
-  distinction (Steps 1–3 below). This is the genuine seed and, I'd argue, the stronger hook.
+  start from the impossibility of absolute nothing/everything, which means distinction
+  *necessarily obtains* (Steps 1–3 below). This is the genuine seed and, I'd argue, the stronger hook.
   **(2) the intuitive spine** — start at "you can never reach the center, so things circle"
   (Steps 5–6), skipping the P₀ machinery. Faster, lands sooner, but it's the downstream half.
   My recommendation: the deep spine, paced gently. But it's your call, and it's the biggest one.
@@ -47,7 +53,9 @@ v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
 
 **+ add one line (new), to plant the "suppose":**
 > I can't prove reality is like that. Nobody can. But *suppose* it is — and just follow what
-> has to be true next.
+> has to be true.
+
+*(De-tensed: dropped "next," which leaked a sequence. Following an entailment, not a timeline.)*
 
 `[FAITHFUL]` — §P1 verbatim. The added line makes the conditional honest without hedging.
 
@@ -92,24 +100,28 @@ everything" for |0|/|1|. Confirm the gloss.
 
 ---
 
-## Step 3 — That impossibility forces the first distinction  *(Beat: the ground · chain §2)*
+## Step 3 — That impossibility means distinction necessarily obtains  *(Beat: the ground · chain §2)*
 
-**Logical move:** reality obtains and is distinguishable (P2 contrapositive); the absolute is
-incoherent; therefore at least one distinction obtains — the first cut. "Because P₀ is
-incoherent, O₁." Identity through opposition — no prior state, no cause before it.
+**Logical move:** reality obtains and is distinguishable (P2 contrapositive); absolute
+indistinguishability is incoherent — not a state that once held and gave way, but a condition
+that cannot cohere at all. Therefore distinction *necessarily obtains* — tenselessly. §2: "no
+prior state, no parent frame." "Because P₀ is incoherent, O₁" is an entailment, not an event.
 
-**DRAFT (new; this is the hook — the "it bootstraps itself" turn):**
+**DRAFT (r2 — re-rendered tenseless per Will's ruling; the causal/event framing is struck):**
 > Here's the turn. Reality is *here* — you're reading this. It isn't the impossible extreme,
-> and it isn't nothing. So something has to give: there has to be at least one distinction, one
-> first difference, a first *this* set against *not-this*. Nothing causes it from before —
-> there's no "before" for it to come from. It's forced into being by the plain fact that the
-> alternative can't hold together. The whole thing bootstraps itself out of the impossibility
-> of nothing.
+> and it isn't nothing. So distinction obtains. Not switched on, not begun — there's no
+> "before" for it to begin from, and no moment when a switch was thrown. Its absence was
+> simply never available: absolute sameness can't cohere, anywhere, ever. So distinction has
+> always obtained, obtains now, and always will — not because anything made it, but because
+> the alternative was never a possibility. It doesn't begin. It holds.
 
-`[FAITHFUL]` — §2 ("because P₀ is incoherent, O₁… no prior state, no parent frame… the
-exclusion is generative"). This is the strongest candidate for the page's emotional center.
-`[RULE]` Confirm "bootstraps itself out of the impossibility of nothing" is a fair plain
-statement of §2 and not an overclaim.
+`[FAITHFUL]` — §2 read in the implicit register (no "when"). This is still the strongest
+candidate for the page's emotional center; the tenseless version is *more* arresting, not less
+("there was never a switch, because the off-state is incoherent").
+`[RULE]` (a) Confirm "always obtained, obtains, always will" lands as intended. (b) The word
+**"first"** (as in "first distinction / O₁") invites a reader to hear a sequence there isn't
+one — recommend dropping "first" from the public page entirely; rule on whether "O₁"/"first
+origin" language survives at all here. (c) "the turn" is fine (rhetorical, not temporal).
 
 ---
 
