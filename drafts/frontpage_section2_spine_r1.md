@@ -19,6 +19,16 @@ pattern *falls out of infinity*, one forced step at a time, in plain language, n
 Prose draws, where possible, on your own existing words (cited by file), re-voiced into clean
 v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
 
+**Epistemic structure (ruled, Will): one bet, then commit.** Infinite divisibility is the whole
+wager — the single premise the reader accepts or rejects. *All* the page's doubt lives at that
+door (Step 0). Past it, the prose **commits to the logic**: every downstream claim reads as "given
+the premise, this follows," never "this might be true." This is the chain's own split of
+**logic-inevitability from translation-fidelity** (structural chain, line 5) and its "all claims
+conditional on P1." The page never asserts P1 is *true*; it shows what follows *if* it is — which
+is exactly why it can be fully confident downstream and fully honest at once. Practical effect:
+strip per-step hedging from the reader-facing prose; the `[RULE]` flags below are for our internal
+review, not the page's voice.
+
 **Guardrails already applied:**
 - **Conditional, never asserted.** P1 is "IF reality is infinite… never claimed proven"
   (chain §P1). The page keeps the *suppose*.
@@ -73,10 +83,13 @@ v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
 > minimum scale, no terminal resolution in either direction.
 
 **+ add one line (new), to plant the "suppose":**
-> I can't prove reality is like that. Nobody can. But *suppose* it is — and just follow what
-> has to be true.
+> I can't prove reality is like that — nobody can, in either direction. So this is the one thing
+> I'll ask you to grant, and the only one. Grant it, and everything that follows is just logic —
+> watch it go. Refuse it, and there's nothing here to argue about; we part ways at the door, no
+> hard feelings. Everything past this line stands or falls on that single *if*.
 
-*(De-tensed: dropped "next," which leaked a sequence. Following an entailment, not a timeline.)*
+*(This is where the whole page's doubt lives — concentrated at the premise, per the
+epistemic-structure ruling above. De-tensed: "follow… what has to be true," not "what happens next.")*
 
 `[FAITHFUL]` — §P1 verbatim. The added line makes the conditional honest without hedging.
 
@@ -260,21 +273,24 @@ NOT assert "there is no bottom" — that would close open item #6 (uniqueness of
 gauge-faithful form is agnostic: no frame can tell, from inside, whether it stands on a floor.
 
 **DRAFT (new; the shareable climax — Will ruled to foreground the gauge reading):**
-> And here's where it turns personal. None of these worlds is *the* bottom or *the* top. Finer,
-> coarser, first, last — those are just names for where you happen to be looking from. Every
-> frame, seen from inside itself, is a ground: a finer world nested within it, a coarser world
-> it's nested in, and the same unreachable center at the heart of its own scale as at every
-> other. There's no final rung you're standing on. You can't even tell, from the inside,
-> whether there's a floor at all — and inside is the only place there is to be. Wherever you
-> look from, you're in the middle of it. The middle is everywhere.
+> And here's where it turns personal. Accept that one premise — no smallest scale — and the
+> nesting simply never bottoms out: inside every world is a finer one, with no end, no floor to
+> reach. Go the other way and no frame wears a number that means anything absolute — *finer,
+> coarser, first, last* are only names for where you happen to be standing. So every frame, seen
+> from inside itself, is a ground: a finer world within it, a coarser world it sits inside, the
+> same unreachable center at the heart of its own scale as at every other. No privileged rung.
+> No view from any bottom — because inside is the only place there is to be. Wherever you look
+> from, you're in the middle of it. The middle is everywhere.
 
-`[RULE — the big one]` Will ruled: lean into the gauge reading. Confirm the **level**: this is
-rendered **agnostic about a true bottom** ("you can't tell from inside"), keeping open item #6
-(uniqueness of O₁) open and honoring "not sealed." If you want the stronger claim — *there is no
-bottom, every frame equally a ground* — that bears on #6 and should be ruled explicitly, not
-implied. `[FAITHFUL]` §8 (index gauge; no privileged self-reading) + §5 (per-frame local face of
-P₀). `[TENSELESS]` "is / sits / nested," no events. `[SUBSCRIPT-FREE]` no O₁/Oₙ in the prose —
-the whole point is that the label carries no absolute meaning.
+`[RULE — mostly resolved by the epistemic-structure ruling]` Will ruled: lean into the gauge
+reading, and "infinite divisibility is the whole point." The prose now follows both by splitting
+directions: **inward** — "no smallest scale → no floor" stated *flatly*, because it's just the
+premise restated (divisibility, P1); **gauge** — "no frame reads as privileged" stated
+*confidently*, because it's derived (§8 index-relationality). The prose does NOT assert there's no
+*coarsest* ground at the far outward end — that's open item #6 (uniqueness of O₁), and the page
+simply doesn't reach for it; the vertigo comes from the inward + gauge facts, which stand
+regardless. Confirm the split reads right. `[FAITHFUL]` §8 + §5 + P1. `[TENSELESS]` "is / sits /
+nested," no events. `[SUBSCRIPT-FREE]` no O₁/Oₙ in the prose — the label carries no absolute meaning.
 
 ---
 
