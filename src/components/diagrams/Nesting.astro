@@ -1,0 +1,32 @@
+---
+// Beat: every center opens into a finer world; every frame is its own ground.
+// FIRST PASS toward the hero infinite-zoom — GEOMETRY/FEEL FOR WILL TO RULE.
+// Self-similar "worlds" (ring + hollow center + orbit mark) nested at shrinking
+// scale; a slow one-shot zoom hints that it continues without end, both ways.
+interface Props { class?: string; }
+const { class: className } = Astro.props;
+---
+<svg viewBox="0 0 100 100" class:list={['oir-diagram nest', className]} role="img"
+  aria-label="Worlds nested inside worlds, self-similar, continuing without a smallest or largest.">
+  <style>
+    .nest { width: 100%; height: auto; display: block; color: var(--color-accent); }
+    .nest circle { fill: none; stroke: currentColor; }
+    .nest .world { transform-origin: 50px 50px; }
+    .nest .ring { stroke-width: 1; }
+    .nest .mid { stroke-width: 1.2; }
+    .nest .mark { fill: currentColor; stroke: none; }
+    .nest .zoom { transform-origin: 50px 50px; }
+    .nest.go .zoom, .nest:hover .zoom { animation: nest-zoom 4.5s ease-in-out forwards; }
+    @keyframes nest-zoom { from { transform: scale(1); } to { transform: scale(1.9); } }
+  </style>
+  <g class="zoom">
+    <!-- level 0 -->
+    <g class="world" style="opacity:.85"><circle class="ring" cx="50" cy="50" r="44"></circle><circle class="mid" cx="50" cy="50" r="3"></circle><circle class="mark" cx="50" cy="8.5" r="1.8"></circle></g>
+    <!-- level 1 -->
+    <g class="world" style="opacity:.6"><circle class="ring" cx="50" cy="50" r="18"></circle><circle class="mid" cx="50" cy="50" r="1.4"></circle><circle class="mark" cx="50" cy="33" r="1.1"></circle></g>
+    <!-- level 2 -->
+    <g class="world" style="opacity:.4"><circle class="ring" cx="50" cy="50" r="7.4"></circle><circle class="mark" cx="50" cy="43" r="0.7"></circle></g>
+    <!-- level 3 (seed) -->
+    <g class="world" style="opacity:.25"><circle class="ring" cx="50" cy="50" r="3"></circle></g>
+  </g>
+</svg>

@@ -1,210 +1,189 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
+import Divisibility from '../components/diagrams/Divisibility.astro';
+import TwoExtremes from '../components/diagrams/TwoExtremes.astro';
+import FirstCut from '../components/diagrams/FirstCut.astro';
+import CutBringsWorld from '../components/diagrams/CutBringsWorld.astro';
 import CenterNeverMet from '../components/diagrams/CenterNeverMet.astro';
+import Circulation from '../components/diagrams/Circulation.astro';
+import Nesting from '../components/diagrams/Nesting.astro';
 
-// DRAFT front page — stood up at /pattern for review, unlinked from nav.
-// Built from the ruled Section-2 spine (drafts/frontpage_section2_spine_r1.md)
-// plus the ruled recognition-cascade and DDJ-reveal material. Not yet the homepage.
+// DRAFT front page — visual-led. Stood up at /pattern for review, unlinked from nav.
+// Each beat of the ruled Section-2 spine is a visual panel: diagram + short headline
+// + one supporting line. Full ruled prose preserved in the <details> "long version".
 ---
 
 <BaseLayout title="The Pattern">
   <article class="max-w-2xl mx-auto" style="font-family: var(--font-body);">
 
-    <!-- ============ 1 · Hook + the one bet ============ -->
-    <header class="mb-16">
-      <p class="text-lg themed-text-secondary mb-6">This began with a question I couldn't put down:</p>
-      <p class="text-2xl italic mb-8" style="color: var(--color-text); line-height: 1.4;">
-        If reality is truly infinite, how does that actually work?
+    <!-- 1 · Hook + the one bet -->
+    <header class="mb-14 text-center">
+      <p class="text-lg themed-text-secondary mb-6">This began with a question I couldn't put down.</p>
+      <p class="text-3xl md:text-4xl italic mb-8" style="color: var(--color-text); line-height: 1.3;">
+        If reality is truly infinite,<br />how does that actually work?
       </p>
-      <p class="themed-text-secondary mb-4" style="line-height: var(--leading-prose);">
-        Not infinite as a figure of speech. Not "really, really big." Genuinely, structurally
-        infinite — infinitely vast <em>and</em> infinitely divisible: no largest thing, no
-        smallest, no edge, no floor, no bottom to reach in either direction.
-      </p>
-      <p class="themed-text-secondary" style="line-height: var(--leading-prose);">
-        I can't prove reality is like that — nobody can, in either direction. So this is the one
-        thing I'll ask you to grant, and the only one. Grant it, and everything that follows is
-        just logic — watch it go. Refuse it, and there's nothing here to argue about; we part ways
-        at the door, no hard feelings. Everything past this line stands or falls on that single
-        <em>if</em>.
+      <p class="themed-text-secondary max-w-md mx-auto" style="line-height: var(--leading-relaxed);">
+        Not "really, really big." Genuinely infinite — no largest thing, no smallest, no edge, no
+        bottom, in either direction.
       </p>
     </header>
 
-    <div class="themed-border border-t mb-16"></div>
+    <div class="themed-surface border rounded-lg p-6 mb-16 text-center">
+      <p class="themed-text-secondary" style="line-height: var(--leading-relaxed);">
+        I can't prove reality is like that. So this is the <strong>one thing</strong> I'll ask you
+        to grant — the only one. Grant it, and everything below is just logic. Refuse it, and we
+        part ways here, no hard feelings.
+      </p>
+    </div>
 
-    <!-- ============ 2 · The logic falls out ============ -->
-    <section class="mb-16 space-y-6 themed-text-secondary" style="line-height: var(--leading-prose);">
-      <p>
-        Start with something almost too simple to notice: for anything to <em>be</em> something,
-        there has to be something it <em>isn't</em>. A thing with no edge, no difference, nothing
-        it's not — that isn't a thing. It's not even there. To exist at all is to be
-        distinguishable from something else.
-      </p>
-      <p>
-        Now push the two together. Picture the two extremes. A perfect <em>nothing</em> —
-        everything divided away until nothing's left. And a perfect <em>everything</em> — all
-        difference collapsed into one undivided whole. Both are states with no distinction left in
-        them. And we just said no-distinction can't exist. So the extremes aren't rare, or far
-        away. They're <em>impossible</em> — not places you haven't reached, but conditions that
-        can't hold together. And infinity is exactly what keeps you from ever arriving at either:
-        you can always divide once more, so you never bottom out into pure emptiness; there's
-        always more beyond the edge, so you never close into pure fullness.
-      </p>
-      <p>
-        Here's the turn. Reality is <em>here</em> — you're reading this. It isn't the impossible
-        extreme, and it isn't nothing. So distinction obtains. Not switched on, not begun — there's
-        no "before" for it to begin from, and no moment when a switch was thrown. Its absence is
-        simply never available: absolute sameness can't cohere — not anywhere, not at any scale,
-        not ever. Distinction has always obtained, obtains now, and always will — not because
-        anything made it, but because the alternative was never a possibility. It doesn't begin. It
-        holds.
-      </p>
-      <p>
-        And a distinction is never one-sided. <em>This</em> has no meaning without <em>not-this</em>
-        — they hold each other up, each the measure of the other, so that more of one is exactly
-        less of the other. That reciprocal relation <em>is</em> a gradient: the whole range from
-        all-one-side to all-the-other, with a place where the two stand equal, and a center where
-        they would coincide and cancel. None of it is added on afterward. To have a difference at
-        all is already to have the whole of it — two poles, a gradient, a balance, a center. Not
-        built in steps. One structure, read in parts.
-      </p>
-      <p>
-        Now watch what that center is. It's the place where the two sides perfectly cancel — where
-        all distinction goes to zero. But that's the very thing we just said can't exist. So the
-        center of every structure is the one point the structure can never actually reach. Try to
-        get there and it recedes: like compressing a spring toward its core, the coils crowd
-        infinitely closer and the collapse never finishes. There's always another coil between you
-        and the center. It's an asymptote, not a destination — it shapes every approach, and the
-        meeting never arrives.
-      </p>
+    <!-- 2 · The logic falls out — visual panels -->
 
-      <CenterNeverMet class="my-4" />
-
-      <p>
-        So you can't rest at the center — and you can't cross it either; there's no <em>there</em>
-        to pass through, only an ever-receding approach. That rules out holding still, and it rules
-        out going straight through. One option is left: go <em>around</em>. And going around needs
-        nothing you can't have. You don't have to <em>be</em> at the center to circle it — you only
-        have to keep it in relation to you and keep moving. Keep it on your left and keep going. The
-        circling isn't a flourish on top of stability. Around a center you can never reach, circling
-        is the only form persistence can take.
-      </p>
-      <p>
-        One last move, and it's the strangest. Of all the places along that crossing, there is
-        exactly <em>one</em> where the two sides stand in precisely the relation a finer world would
-        need to hold together — and it is the one place that relation cannot be held as a world of
-        its own. A single locus, set apart from every other: just what a frame requires, and unable
-        to be one. And that locus, seen from close enough in, simply <em>is</em> an origin — with its
-        own two sides, its own gradient, its own center that is never met. Which has its own, in
-        turn.
-      </p>
-      <p>
-        And here's where it turns personal. Accept that one premise — no smallest scale — and the
-        nesting simply never bottoms out: inside every world is a finer one, with no end, no floor
-        to reach. Go the other way and no frame wears a number that means anything absolute —
-        <em>finer, coarser, first, last</em> are only names for where you happen to be standing. So
-        every frame, seen from inside itself, is a ground: a finer world within it, a coarser world
-        it sits inside, the same unreachable center at the heart of its own scale as at every other.
-        No privileged rung. No view from any bottom — because inside is the only place there is to
-        be. Wherever you look from, you're in the middle of it. The middle is everywhere.
-      </p>
+    <!-- premise -->
+    <section class="beat">
+      <Divisibility />
+      <h2 class="beat-head">No smallest thing.</h2>
+      <p class="beat-line">However far you zoom in, you can always divide again. The floor never arrives.</p>
     </section>
 
-    <!-- ============ Landing · name the shape ============ -->
-    <section class="mb-16">
-      <div class="themed-surface border rounded-lg p-6 mb-6">
+    <!-- distinction -->
+    <section class="beat">
+      <FirstCut />
+      <h2 class="beat-head">To be anything is to differ.</h2>
+      <p class="beat-line">A thing with nothing it <em>isn't</em> isn't there at all. To exist is to be a cut — this against not-this.</p>
+    </section>
+
+    <!-- two extremes impossible -->
+    <section class="beat">
+      <TwoExtremes />
+      <h2 class="beat-head">So the two extremes can't exist.</h2>
+      <p class="beat-line">Perfect nothing and perfect everything each have no difference left in them. Impossible — and infinity keeps you from ever reaching either end.</p>
+    </section>
+
+    <!-- distinction obtains (the turn) -->
+    <section class="beat">
+      <h2 class="beat-head">So there is always something rather than nothing.</h2>
+      <p class="beat-line">Not switched on, not begun — its absence was never available. Distinction doesn't begin. It holds.</p>
+    </section>
+
+    <!-- a cut brings a world -->
+    <section class="beat">
+      <CutBringsWorld />
+      <h2 class="beat-head">And a cut is never one-sided.</h2>
+      <p class="beat-line">Two poles that define each other, a gradient between them, a center where they'd meet — one structure, arriving whole.</p>
+    </section>
+
+    <!-- center never met -->
+    <section class="beat">
+      <CenterNeverMet />
+      <h2 class="beat-head">That center can't exist either.</h2>
+      <p class="beat-line">It's the extreme where all difference cancels. So every structure circles a center it can approach forever and never reach.</p>
+    </section>
+
+    <!-- circulation -->
+    <section class="beat">
+      <Circulation />
+      <h2 class="beat-head">So the only way to persist is to circle.</h2>
+      <p class="beat-line">You can't rest there and can't pass through. Keep it in relation to you and keep moving. The circling <em>is</em> the stability.</p>
+    </section>
+
+    <!-- nesting / gauge -->
+    <section class="beat">
+      <Nesting />
+      <h2 class="beat-head">And every center is a world of its own.</h2>
+      <p class="beat-line">Inside every one is a finer one, with no end. No frame is the bottom or the top — wherever you look from, you're in the middle. The middle is everywhere.</p>
+    </section>
+
+    <!-- Landing -->
+    <section class="my-16">
+      <div class="themed-surface border rounded-lg p-6 mb-4">
         <p class="text-lg" style="color: var(--color-text); line-height: var(--leading-relaxed);">
           <strong>Stable things persist by circulating around a center that is never met</strong> —
-          and every such center, seen from close enough in, is itself the origin of a finer world
-          that can never hold still as a world of its own.
+          and every such center, seen from close in, is the origin of a finer world that can never
+          hold still as a world of its own.
         </p>
       </div>
-      <p class="themed-text-muted">That's the pattern. Everything after this is just watching it turn up.</p>
+      <p class="themed-text-muted text-center">That's the whole pattern. The rest is just watching it turn up.</p>
+
+      <details class="mt-6">
+        <summary class="text-sm themed-text-muted cursor-pointer text-center" style="color: var(--color-accent);">Read the long version — the argument in full</summary>
+        <div class="mt-6 space-y-5 themed-text-secondary text-left" style="line-height: var(--leading-prose);">
+          <p>Start with something almost too simple to notice: for anything to <em>be</em> something, there has to be something it <em>isn't</em>. A thing with no edge, no difference, nothing it's not — that isn't a thing. It's not even there. To exist at all is to be distinguishable from something else.</p>
+          <p>Now push the two together. A perfect <em>nothing</em> — everything divided away until nothing's left. And a perfect <em>everything</em> — all difference collapsed into one undivided whole. Both are states with no distinction left in them. And we just said no-distinction can't exist. So the extremes aren't rare, or far away. They're <em>impossible</em> — not places you haven't reached, but conditions that can't hold together. And infinity is exactly what keeps you from ever arriving at either.</p>
+          <p>Here's the turn. Reality is <em>here</em> — you're reading this. It isn't the impossible extreme, and it isn't nothing. So distinction obtains. Not switched on, not begun — there's no "before" for it to begin from. Its absence is simply never available: absolute sameness can't cohere — not anywhere, not at any scale, not ever. It doesn't begin. It holds.</p>
+          <p>And a distinction is never one-sided. <em>This</em> has no meaning without <em>not-this</em> — they hold each other up, each the measure of the other. That reciprocal relation <em>is</em> a gradient, with a place where the two stand equal, and a center where they would coincide and cancel. To have a difference at all is already to have the whole of it — two poles, a gradient, a balance, a center. One structure, read in parts.</p>
+          <p>Now watch what that center is. It's where the two sides perfectly cancel — the very thing we just said can't exist. So the center of every structure is the one point it can never reach. Try to get there and it recedes, like compressing a spring toward its core: the coils crowd infinitely closer and the collapse never finishes. An asymptote, not a destination — the meeting never arrives.</p>
+          <p>So you can't rest at the center — and you can't cross it either; there's no <em>there</em> to pass through. That rules out holding still and rules out going straight through. One option is left: go <em>around</em>. You don't have to <em>be</em> at the center to circle it. Around a center you can never reach, circling is the only form persistence can take.</p>
+          <p>And there is exactly one place where the two sides stand in precisely the relation a finer world would need to hold together — and cannot hold it as a world of its own. Seen from close enough in, that locus simply <em>is</em> an origin, with its own two sides, its own gradient, its own center that is never met. Which has its own, in turn.</p>
+          <p>Accept the one premise — no smallest scale — and the nesting never bottoms out. And no frame wears a number that means anything absolute: finer, coarser, first, last are only names for where you stand. Every frame, seen from inside itself, is a ground. No privileged rung, no view from any bottom — because inside is the only place there is to be. Wherever you look from, you're in the middle of it.</p>
+        </div>
+      </details>
     </section>
 
     <div class="themed-border border-t mb-16"></div>
 
-    <!-- ============ 3 · Recognition cascade ============ -->
+    <!-- 3 · Recognition cascade -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-4">You've already seen it</h2>
-      <p class="themed-text-secondary mb-10" style="line-height: var(--leading-prose);">
+      <h2 class="text-2xl font-bold mb-3 text-center">You've already seen it.</h2>
+      <p class="themed-text-secondary mb-10 text-center max-w-md mx-auto" style="line-height: var(--leading-relaxed);">
         You don't have to trust the logic. Once you have the shape, it's hard to stop finding it.
       </p>
-
-      <div class="space-y-10">
+      <div class="grid grid-cols-2 gap-x-6 gap-y-10">
         <div class="text-center">
           <div class="w-14 h-14 mx-auto mb-3" style="color: var(--color-surface-nav);"><Icon name="wheel" size="100%" /></div>
-          <p class="themed-text-secondary" style="line-height: var(--leading-relaxed);">
-            Thirty spokes, one empty hub. The wheel works because of what's absent — fill the hub
-            and nothing turns.
-          </p>
+          <p class="text-sm themed-text-secondary" style="line-height: var(--leading-relaxed);">Thirty spokes, one empty hub. Fill the hub and nothing turns.</p>
         </div>
         <div class="text-center">
           <div class="w-14 h-14 mx-auto mb-3" style="color: var(--color-deeper);"><Icon name="atom" size="100%" /></div>
-          <p class="themed-text-secondary" style="line-height: var(--leading-relaxed);">
-            Electrons never reach the nucleus and never escape it. They orbit — a center approached
-            forever, never met.
-          </p>
+          <p class="text-sm themed-text-secondary" style="line-height: var(--leading-relaxed);">Electrons never reach the nucleus and never escape it. They orbit.</p>
         </div>
         <div class="text-center">
           <div class="w-14 h-14 mx-auto mb-3" style="color: var(--color-lateral);"><Icon name="tree" size="100%" /></div>
-          <p class="themed-text-secondary" style="line-height: var(--leading-relaxed);">
-            A tree stands for centuries around a core that's often hollow; the only living layer is
-            the thin skin at its edge. The middle is never where the life is.
-          </p>
+          <p class="text-sm themed-text-secondary" style="line-height: var(--leading-relaxed);">A tree stands for centuries; the only living layer is the thin skin at its edge.</p>
         </div>
         <div class="text-center">
           <div class="w-14 h-14 mx-auto mb-3" style="color: var(--color-surface-nav);"><Icon name="valley" size="100%" /></div>
-          <p class="themed-text-secondary" style="line-height: var(--leading-relaxed);">
-            A valley is lowest, so everything flows to it. It gathers by giving way — receiving at
-            the one point it never has to reach for.
-          </p>
+          <p class="text-sm themed-text-secondary" style="line-height: var(--leading-relaxed);">A valley is lowest, so everything flows to it. It gathers by giving way.</p>
         </div>
       </div>
-
-      <p class="themed-text-secondary mt-10" style="line-height: var(--leading-prose);">
+      <p class="themed-text-secondary mt-12 text-center max-w-lg mx-auto" style="line-height: var(--leading-prose);">
         Your own heart doesn't beat and then rest — the beating-and-resting <em>is</em> the heart.
-        A hurricane is enormous violence held around a still eye it never closes. You are not a
-        thing sitting at a place. You're a pattern, circling.
+        You are not a thing at a place. You're a pattern, circling.
       </p>
-      <p class="themed-text-muted italic mt-6 text-center">
-        The universe doesn't hold still. It circles centers it never reaches.
-      </p>
+      <p class="themed-text-muted italic mt-6 text-center">The universe doesn't hold still. It circles centers it never reaches.</p>
     </section>
 
     <div class="themed-border border-t mb-16"></div>
 
-    <!-- ============ 5 · The reveal ============ -->
+    <!-- 5 · The reveal -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-6">And then, somewhere I didn't expect</h2>
+      <h2 class="text-2xl font-bold mb-6 text-center">And then, somewhere I didn't expect.</h2>
       <div class="space-y-6 themed-text-secondary" style="line-height: var(--leading-prose);">
         <p>
           I didn't go looking for this in an old book. I built the whole thing from that one
           question about infinity, followed the logic, and watched it turn up in wheels and atoms
           and heartbeats. And then I reread something I'd read decades ago and found dry — the Dao
           De Jing — and its opening didn't read like mystical hedging. It read like a coordinate
-          system. The recurring images — wheels, valleys, bellows, water — weren't decoration. They
+          system. Its recurring images — wheels, valleys, bellows, water — weren't decoration. They
           were the same demonstrations.
         </p>
         <p>
-          I want to be honest about the direction of travel: I built the framework <em>through</em>
-          that text, so its agreeing with me proves nothing — agreement with your own seed is
-          exactly what you'd expect. It isn't evidence. It's the thing I'm translating. But watching
-          a 2,500-year-old page line up, character by character, with something you reached from
-          pure logic is — whatever else it is — a strange and good feeling.
+          I'll be honest about the direction of travel: I built the framework <em>through</em> that
+          text, so its agreeing with me proves nothing — agreement with your own seed is exactly
+          what you'd expect. It isn't evidence. It's the thing I'm translating. But watching a
+          2,500-year-old page line up, character by character, with something you reached from pure
+          logic is — whatever else it is — a strange and good feeling.
         </p>
       </div>
     </section>
 
     <div class="themed-border border-t mb-16"></div>
 
-    <!-- ============ 6 · The soft door ============ -->
+    <!-- 6 · The soft door -->
     <section class="mb-12">
-      <p class="themed-text-secondary mb-8" style="line-height: var(--leading-prose);">
-        I don't know if any of this is true. The whole thing hangs on one <em>if</em>, and I've
-        tried to be honest that I can't prove it. What I can do is show you exactly how hard I've
-        tried to break it.
+      <p class="themed-text-secondary mb-8 text-center max-w-lg mx-auto" style="line-height: var(--leading-prose);">
+        I don't know if any of this is true. The whole thing hangs on one <em>if</em>. What I can
+        do is show you exactly how hard I've tried to break it.
       </p>
       <div class="space-y-3">
         <a href="/confidence" class="block themed-surface border rounded-lg p-4 transition-colors hover:opacity-80">
@@ -225,3 +204,43 @@ import CenterNeverMet from '../components/diagrams/CenterNeverMet.astro';
 
   </article>
 </BaseLayout>
+
+<style>
+  .beat {
+    text-align: center;
+    max-width: 30rem;
+    margin: 0 auto 5.5rem;
+  }
+  .beat :global(.oir-diagram) {
+    max-width: 210px;
+    margin: 0 auto 1.75rem;
+  }
+  .beat-head {
+    font-size: var(--text-2xl);
+    font-weight: var(--weight-bold);
+    line-height: var(--leading-tight);
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+  }
+  .beat-line {
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+  }
+</style>
+
+<script>
+  // One shared observer for every argument diagram: play once on scroll-in.
+  // Respects prefers-reduced-motion. Hover replays are handled in each diagram's CSS.
+  const rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!rm.matches && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) { e.target.classList.add('go'); io.unobserve(e.target); }
+        }
+      },
+      { threshold: 0.45 }
+    );
+    document.querySelectorAll('svg.oir-diagram').forEach((el) => io.observe(el));
+  }
+</script>

@@ -1,0 +1,37 @@
+---
+// Beat: the two extremes are impossible. A gradient bar from empty to full;
+// both ends capped with a "forbidden" cross that draws in. No translate.
+interface Props { class?: string; }
+const { class: className } = Astro.props;
+---
+<svg viewBox="0 0 100 46" class:list={['oir-diagram ext', className]} role="img"
+  aria-label="A gradient between two forbidden extremes; neither end can be reached.">
+  <style>
+    .ext { width: 100%; height: auto; display: block; color: var(--color-accent); }
+    .ext line { stroke: currentColor; }
+    .ext .axis { stroke-width: 1; opacity: 0.5; }
+    .ext .dot { fill: currentColor; stroke: none; opacity: 0; }
+    .ext .cap { stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 14; stroke-dashoffset: 14; }
+    .ext.go .dot, .ext:hover .dot { animation: ext-dot 0.4s ease forwards; }
+    .ext.go .cap, .ext:hover .cap { animation: ext-cap 0.5s ease 1s forwards; }
+    .ext.go .d2, .ext:hover .d2 { animation-delay: 0.15s; }
+    .ext.go .d3, .ext:hover .d3 { animation-delay: 0.3s; }
+    .ext.go .d4, .ext:hover .d4 { animation-delay: 0.45s; }
+    .ext.go .d5, .ext:hover .d5 { animation-delay: 0.6s; }
+    .ext.go .d6, .ext:hover .d6 { animation-delay: 0.75s; }
+    @keyframes ext-dot { to { opacity: 0.9; } }
+    @keyframes ext-cap { to { stroke-dashoffset: 0; } }
+  </style>
+  <line class="axis" x1="16" y1="24" x2="84" y2="24"></line>
+  <circle class="dot d1" cx="24" cy="24" r="1"></circle>
+  <circle class="dot d2" cx="34" cy="24" r="1.5"></circle>
+  <circle class="dot d3" cx="44" cy="24" r="2"></circle>
+  <circle class="dot d4" cx="54" cy="24" r="2.6"></circle>
+  <circle class="dot d5" cx="64" cy="24" r="3.3"></circle>
+  <circle class="dot d6" cx="74" cy="24" r="4.1"></circle>
+  <!-- forbidden: nothing (left), everything (right) -->
+  <g><line class="cap" x1="9" y1="19" x2="15" y2="29"></line><line class="cap" x1="15" y1="19" x2="9" y2="29"></line></g>
+  <g><line class="cap" x1="85" y1="19" x2="91" y2="29"></line><line class="cap" x1="91" y1="19" x2="85" y2="29"></line></g>
+  <text x="12" y="40" style="font-size:5px;fill:currentColor;opacity:.55;text-anchor:middle;font-family:var(--font-heading)">nothing</text>
+  <text x="88" y="40" style="font-size:5px;fill:currentColor;opacity:.55;text-anchor:middle;font-family:var(--font-heading)">everything</text>
+</svg>
