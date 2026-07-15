@@ -48,21 +48,93 @@
   --color-speculative: #fb923c;
 }
 
+/* ---- Design-system token layer (theme-independent) ----
+   Adopted from the Our Infinite Reality design system. Semantic
+   names describe role, not value. Colors live in the theme blocks
+   above; these are the type, space, and motion vocabulary. */
+:root {
+  /* Font families */
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+
+  /* Semantic roles */
+  --font-body: var(--font-serif);     /* prose, translations */
+  --font-heading: var(--font-sans);   /* h1–h4, UI chrome */
+  --font-notation: var(--font-mono);  /* ::, RSM symbols, code */
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-6xl: 3.75rem;
+
+  /* Weights */
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-body: 1.7;
+  --leading-prose: 1.8;
+
+  /* Tracking */
+  --tracking-wide: 0.025em;
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Layout widths */
+  --width-prose: 42rem;
+  --width-reading: 48rem;
+  --width-page: 56rem;
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+
+  /* Border widths */
+  --border-width: 1px;
+  --border-width-thick: 2px;
+  --border-accent: 4px;
+
+  /* Motion */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-theme: 0.3s ease;
+}
+
 html {
   background: var(--color-bg);
   color: var(--color-text);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color var(--transition-theme), color var(--transition-theme);
 }
 
 body {
-  font-family: 'Georgia', serif;
-  line-height: 1.7;
+  font-family: var(--font-body);
+  line-height: var(--leading-body);
   background: var(--color-bg);
 }
 
 h1, h2, h3, h4 {
-  font-family: system-ui, -apple-system, sans-serif;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
 }
 
 /* Themed utility classes */

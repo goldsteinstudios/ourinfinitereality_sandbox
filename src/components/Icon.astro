@@ -22,17 +22,51 @@ if (!raw) {
   throw new Error(`Icon "${name}" not found. Available: ${ICON_NAMES.join(', ')}`);
 }
 
+const classes = ['oir-glyph', className].filter(Boolean).join(' ');
 const attrs = [
   `width="${size}"`,
   `height="${size}"`,
   'aria-hidden="true"',
   'focusable="false"',
-  className ? `class="${className}"` : '',
+  `class="${classes}"`,
 ]
   .filter(Boolean)
   .join(' ');
 
-const svg = raw.replace('<svg', `<svg ${attrs}`);
+let svg = raw.replace('<svg', `<svg ${attrs}`);
+
+// Mirror each glyph's hover animation onto a `.in-view` trigger so the
+// glyphs also come alive when scrolled into view — the only way they can
+// animate on touch devices, where there is no hover. The reveal is always
+// one-shot: strip `infinite` from the mirrored rule so a scroll never
+// starts ambient motion (the design forbids infinite decorative animation).
+svg = svg.replace(
+  /svg:hover(\s+\.[\w-]+\s*\{\s*animation:[^}]*\})/g,
+  (match, rule) => `${match}\n    svg.in-view${rule.replace(/\s*infinite/g, '')}`
+);
 ---
 
 <Fragment set:html={svg} />
+
+<script>
+  // Replay each glyph's own animation once when it scrolls into view.
+  // Respects prefers-reduced-motion. Runs once per page (Astro bundles
+  // this module script even when <Icon> renders many times).
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!reduce.matches && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) e.target.classList.add('in-view');
+        }
+      },
+      { threshold: 0.4 }
+    );
+    const arm = (el: Element) => {
+      // Remove the class when the animation finishes so re-entry replays it.
+      el.addEventListener('animationend', () => el.classList.remove('in-view'));
+      io.observe(el);
+    };
+    document.querySelectorAll('svg.oir-glyph').forEach(arm);
+  }
+</script>
