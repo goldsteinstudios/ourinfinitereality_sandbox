@@ -2,6 +2,14 @@
 
 **Status: DRAFT FOR RULING. Nothing ships until Will rules step by step.**
 
+**Revisions since r1 (this pass):** Step 3 re-rendered **tenseless** — P₀'s incoherence is not a
+causal event, so "forces into being / bootstraps / first / begins" are struck. Will's ground
+ruling recorded verbatim and extended to **frame-scale-invariance** (P₀ impossible at every
+framescale; O₁ obtaining at every framescale). Same de-tensing propagated to Steps 4, 7, and the
+Landing; Step 5 linked to the framescale point. New ruling **R-C** (how far the tenseless rule
+reaches — skeleton claims vs experiential renderings). Every touched step carries a `[DE-TENSED]`
+flag.
+
 This is the spine of the one page you'd text a friend — Section 2 only: the part where the
 pattern *falls out of infinity*, one forced step at a time, in plain language, no notation.
 (Section 1 = the hook/question; Section 3 = the recognition cascade across objects; Section
@@ -38,6 +46,14 @@ v7.7 vocabulary. Machine-drafted; the logic is yours to rule.
   My recommendation: the deep spine, paced gently. But it's your call, and it's the biggest one.
 - **(R-B) Step 7 (the one-locus seed) is the hardest to render plainly** and the most likely
   to need your hand. Rule whether my rendering keeps the logic or over-simplifies it.
+- **(R-C) Register: how far does the tenseless ruling reach?** It bites hardest on the
+  *skeleton-register* claims (P₀, the ground, the cascade, recursion — Steps 2–4, 7): structural
+  necessities that must never read as events. But Steps 5–6 are pitched in the *experiential /
+  rendering* register ("try to reach it," "keep it on your left, keep moving") — where motion is
+  the legitimate content, not a leak (a hurricane really does circulate; the skeleton's "no
+  motion" is about the skeleton, not its physical rendering). **Proposed rule: skeleton claims
+  tenseless; experiential renderings may move.** Rule whether that split holds, or whether the
+  whole page must stay tenseless — which would cost the circulation imagery that makes it land.
 
 ---
 
@@ -102,18 +118,22 @@ everything" for |0|/|1|. Confirm the gloss.
 
 ## Step 3 — That impossibility means distinction necessarily obtains  *(Beat: the ground · chain §2)*
 
-**Logical move:** reality obtains and is distinguishable (P2 contrapositive); absolute
-indistinguishability is incoherent — not a state that once held and gave way, but a condition
-that cannot cohere at all. Therefore distinction *necessarily obtains* — tenselessly. §2: "no
-prior state, no parent frame." "Because P₀ is incoherent, O₁" is an entailment, not an event.
+**Logical move (ruled, Will — clarified this pass):** reality obtains and is distinguishable
+(P2 contrapositive); absolute indistinguishability is incoherent — not a state that once held
+and gave way, but a condition that cannot cohere at all, at any scale. Will's formulation,
+verbatim: *"Because P₀ is impossible, O₁. P₀ has always been impossible, is impossible, and will
+always be impossible at every framescale. O₁ has always obtained, obtains, and will always
+obtain."* The entailment is tenseless **and frame-scale-invariant** — not an event, and not a
+one-time bootstrap at the "bottom." (The framescale-invariance pays off at Step 5: the same
+impossibility sits at the center of *every* frame — each frame's O is its own local face of P₀.)
 
 **DRAFT (r2 — re-rendered tenseless per Will's ruling; the causal/event framing is struck):**
 > Here's the turn. Reality is *here* — you're reading this. It isn't the impossible extreme,
 > and it isn't nothing. So distinction obtains. Not switched on, not begun — there's no
-> "before" for it to begin from, and no moment when a switch was thrown. Its absence was
-> simply never available: absolute sameness can't cohere, anywhere, ever. So distinction has
-> always obtained, obtains now, and always will — not because anything made it, but because
-> the alternative was never a possibility. It doesn't begin. It holds.
+> "before" for it to begin from, and no moment when a switch was thrown. Its absence is simply
+> never available: absolute sameness can't cohere — not anywhere, not at any scale, not ever.
+> Distinction has always obtained, obtains now, and always will — not because anything made it,
+> but because the alternative was never a possibility. It doesn't begin. It holds.
 
 `[FAITHFUL]` — §2 read in the implicit register (no "when"). This is still the strongest
 candidate for the page's emotional center; the tenseless version is *more* arresting, not less
@@ -131,18 +151,20 @@ origin" language survives at all here. (c) "the turn" is fine (rhetorical, not t
 other); the modes entail their reciprocal gradient (product conserved) and their balance
 (equality); those entail a crossing. One cut → two poles, a gradient, a center.
 
-**DRAFT (new; the co-emergence image adapted from `_grammar-of-existence.md:220-226`, the wheel/hub "one operation, two results"):**
-> And a cut is never one-sided. You can't have just *this* without *not-this* — they come
-> together, each defined by the other, so that more of one is exactly less of the other. That
-> trade between them traces a gradient: a whole range from all-one-side to all-the-other. It
-> has a place where the two balance evenly. And it has a center — the point where they'd meet
-> and cancel. So one distinction isn't lonely. The moment you have a difference at all, you
-> have a little world: two poles, a gradient between them, a center they turn around.
+**DRAFT (r2 — de-tensed; co-constitution is simultaneous, not sequential — §3 "ontological simultaneity, epistemic order"):**
+> And a distinction is never one-sided. *This* has no meaning without *not-this* — they hold
+> each other up, each the measure of the other, so that more of one is exactly less of the
+> other. That reciprocal relation *is* a gradient: the whole range from all-one-side to
+> all-the-other, with a place where the two stand equal, and a center where they would coincide
+> and cancel. None of it is added on afterward. To have a difference at all is already to have
+> the whole of it — two poles, a gradient, a balance, a center. Not built in steps. One
+> structure, read in parts.
 
-`[COMPRESSED]` — I've rendered §3's (X,Y)→(G,B)→P/O apparatus as "two poles, a gradient, a
-center." `[RULE]` Does compressing gradient/balance/crossing into "a gradient and a center"
-keep enough, or does the *balance* locus (B) need to survive as its own beat? (B does load-
-bearing work later in the framework, but on a first-encounter page it may be a step too many.)
+`[COMPRESSED]` — §3's (X,Y)→(G,B)→P/O rendered as "two poles, a gradient, a balance, a center."
+The *balance* locus (B) is now kept in the list. `[RULE]` Confirm B belongs on a first-encounter
+page, or cut back to gradient+center. `[DE-TENSED]` "come together / traces / the moment you
+have… you have / turn around" → "is / stand / already to have / read in parts." The claim is now
+stated as co-constitution (simultaneity), which §3 mandates — not a sequence of appearances.
 
 ---
 
@@ -150,7 +172,9 @@ bearing work later in the framework, but on a first-encounter page it may be a s
 
 **Logical move:** O is the unmet crossing — the pair's arms approach asymptotically and never
 meet; O is the frame's *local face of P₀*. The center of every little world just *is* the
-excluded extreme from Step 2.
+excluded extreme from Step 2 — this is where Step 3's "impossible at every framescale" lands:
+the ground's impossibility is not left behind; it sits, unreachable, at the center of every
+frame the structure generates.
 
 **DRAFT (new; the spring-coil image adapted from `_grammar-of-existence.md:107-116`, re-voiced, seating error removed):**
 > Now watch what that center is. It's the place where the two sides perfectly cancel — where
@@ -198,38 +222,45 @@ it *achieves* what a frame requires at exactly **one locus**, and departs from i
 else. That single distinguished point is met yet cannot be held as a frame → it discharges into
 a finer frame whose origin it becomes → recursion, inward and outward without end.
 
-**DRAFT (new; no good plain-language precedent exists — this is the hardest step):**
-> One last thing, and it's the strangest. As the two sides of a cut sweep past each other,
-> there's a single spot where they line up *just so* — for one instant they form exactly what a
-> new, finer world would need to get started. And they can't hold it. That one distinguished
-> point doesn't vanish; it becomes the center of a finer structure, which has its own two
-> sides, its own gradient, its own unreachable center — and the whole thing happens again.
-> Inward forever: every center opens into a finer world. Outward forever: every world is the
-> finer structure of a larger one. One impossibility, running in two directions at once —
-> things *circle*, and the pattern *regenerates itself at every scale*.
+**DRAFT (r2 — de-tensed; the seed is a fact about one *locus*, not a passing instant; recursion is nesting/entailment, not repetition-in-time — §8 "→ is structural entailment across frame-readings"):**
+> One last thing, and it's the strangest. Of all the places along that crossing, there is
+> exactly *one* where the two sides stand in precisely the relation a finer world would need to
+> hold together — and it is the one place that relation cannot be held as a world of its own. A
+> single locus, set apart from every other: *just* what a frame requires, and unable to be one.
+> And that locus, read from close enough in, simply *is* an origin — with its own two sides, its
+> own gradient, its own center that is never met. Which has its own, in turn. No smallest, no
+> largest: the nesting has no floor and no ceiling — because (go back to the opening line)
+> reality has none either. Not a sequence of events: one structure that reads the same at every
+> depth, inward and outward at once. From the single impossibility, everything both *circles*
+> and *nests*.
 
-`[RULE — PRIORITY]` This is §6's founding fact + §8's recursion, and the step most likely to
-lose something in plain language. Specifically confirm: (a) "form exactly what a new world would
-need, and can't hold it" — faithful to "momentarily constitutes what a frame requires, and
-cannot hold it"? (b) Is "inward forever / outward forever" a fair plain gloss of the nesting
-(tree, not ladder — §8 index-relationality), or does calling it a simple in/out mislead?
+`[RULE — PRIORITY]` §6 founding fact + §8 recursion. Confirm: (a) "the two sides stand in
+precisely the relation a finer world would need… and cannot be held" — faithful to "momentarily
+constitutes what a frame requires, and cannot hold it," now with the tense-leak "momentarily"
+removed? (b) "reads the same at every depth, inward and outward at once" for the nesting (tree,
+not ladder — §8) — fair, or does "depth" still smuggle a single ladder? (c) "circles and nests"
+for the two discharges (rotation / recursion) — good, or too cute? `[DE-TENSED]` struck: "sweep
+past each other / for one instant / becomes the center / happens again / regenerates itself."
 
 ---
 
 ## Landing — name the shape  *(→ hands off to Section 3)*
 
-**DRAFT (built on the ruled thesis `index.astro:21`, plus the generative half):**
-> So here's the whole shape, and it fell out of one word taken seriously:
+**DRAFT (r2 — de-tensed; the ruled thesis B1.1 kept verbatim, the generative half no longer "born"):**
+> So here's the whole shape, and it follows from one word taken seriously:
 >
-> **Stable things persist by circulating around a center that's never met — and they're born
-> at a crossing that's met for an instant and can never become a world of its own.**
+> **Stable things persist by circulating around a center that is never met** — and every such
+> center, seen from close enough in, is itself the origin of a finer world that can never hold
+> still as a world of its own.
 >
-> That's it. Everything after this is just watching it show up — in a wheel, an atom, a
-> heartbeat, a storm. And then, much later and more quietly, somewhere I didn't expect.
+> That's the pattern. Everything after this is just watching it turn up — a wheel, an atom, a
+> heartbeat, a storm. And then, more quietly, somewhere I didn't expect.
 
-`[FAITHFUL]` — thesis is ruled canon (B1.1). The last line is the *pre-echo* of the DDJ reveal
-(Section 5), planted here without naming it — so the turn lands later as payoff, per your
-sequencing call. `[NARRATIVE CHOICE]` — remove the tease if you'd rather the DDJ arrive cold.
+`[FAITHFUL]` — first clause is ruled canon (B1.1), verbatim. `[DE-TENSED]` "they're born at a
+crossing that's met for an instant" → "every such center… is itself the origin of a finer
+world"; "it fell out of" → "it follows from"; "much later" cut. `[NARRATIVE CHOICE]` — the last
+line is the DDJ pre-echo (Section 5), un-named so the reveal lands later as payoff. Remove if
+you'd rather it arrive cold.
 
 ---
 
