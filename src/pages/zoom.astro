@@ -65,13 +65,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: var(--color-text-muted); font-size: var(--text-sm);
     font-family: var(--font-heading); letter-spacing: var(--tracking-wide);
   }
-  @media (prefers-reduced-motion: reduce) {
-    .zoom-wrap { height: auto; }
-    .zoom-stage { position: static; height: auto; padding: 3rem 0; }
-    .zoom-hint { display: none; }
-    .zoom-cards { position: static; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
-    .zoom-card { position: static; opacity: 1; }
-  }
+  /* Note: scroll-zoom is user-driven (not autoplaying), so it stays on even
+     under prefers-reduced-motion — a static kill-switch made it look broken. */
 </style>
 
 <script>
@@ -139,24 +134,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     if (hint) hint.style.opacity = String(1 - smooth(0.0, 0.12, p));
   }
 
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (reduce.matches) {
-    render(0.28); // a pleasant static frame; cards are shown stacked by the CSS fallback
-  } else {
-    let ticking = false;
-    function onScroll() {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const rect = wrap.getBoundingClientRect();
-        const total = wrap.offsetHeight - window.innerHeight;
-        const p = clamp(-rect.top / total, 0, 1);
-        render(p);
-        ticking = false;
-      });
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
-    render(0);
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const rect = wrap.getBoundingClientRect();
+      const total = Math.max(1, wrap.offsetHeight - window.innerHeight);
+      const p = clamp(-rect.top / total, 0, 1);
+      render(p);
+      ticking = false;
+    });
   }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  render(0);
+  onScroll();
 </script>
