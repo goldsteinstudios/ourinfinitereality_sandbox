@@ -182,8 +182,14 @@ def build_slip_data(
             slip_num = int(parts[0])
             position = int(parts[1])
 
+            # Slips 6, 23, 29, 35 straddle a chapter boundary and are transcribed
+            # in full under both adjoining chapters. Keyed by position, so the
+            # second pass lands on the same entry instead of appending a copy.
+            if position in slips.get(slip_num, {}):
+                continue
+
             if slip_num not in slips:
-                slips[slip_num] = []
+                slips[slip_num] = {}
 
             # Get character info
             char = guo_char if guo_char and guo_char != "○" else rec_char
@@ -237,13 +243,12 @@ def build_slip_data(
                 "oracle_bone_paths": oracle_paths,
             }
 
-            slips[slip_num].append(char_data)
+            slips[slip_num][position] = char_data
 
-    # Sort each slip by position
-    for slip_num in slips:
-        slips[slip_num].sort(key=lambda x: x["position"])
-
-    return slips
+    return {
+        slip_num: [chars[p] for p in sorted(chars)]
+        for slip_num, chars in slips.items()
+    }
 
 
 def load_character_dictionary() -> Dict[str, Dict]:
