@@ -2,28 +2,27 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // PROTOTYPE — the premise as one clean scroll. White concentric circles on black:
-// zoom OUT (infinitely vast) → zoom IN (infinitely divisible) → the words. Unlinked, /zoom.
+// starts on the question at the top, then a gentle zoom OUT (vast) → zoom IN
+// (divisible) → the words. Unlinked, /zoom.
 ---
 
 <BaseLayout title="What if reality is infinite?">
-  <p class="film-tag">prototype · the premise, as one scroll</p>
-
   <div class="film-wrap">
     <div class="film-stage">
       <svg id="filmsvg" viewBox="-50 -50 100 100" aria-hidden="true"><g id="rings"></g></svg>
 
       <div class="film-cards">
-        <p class="fc" data-a="0.00" data-b="0.12">What if reality is <em>truly</em> infinite?</p>
-        <p class="fc" data-a="0.16" data-b="0.40">Not just infinitely <em>vast</em>…</p>
-        <p class="fc" data-a="0.44" data-b="0.66">…but also infinitely <em>divisible</em>.</p>
-        <p class="fc" data-a="0.73" data-b="0.79">Zoom out forever.</p>
-        <p class="fc" data-a="0.79" data-b="0.85">Zoom in forever.</p>
-        <p class="fc" data-a="0.85" data-b="0.905">A reality with no center and no edge.</p>
-        <p class="fc" data-a="0.905" data-b="0.97">So how could a reality like that possibly work?</p>
-        <p class="fc" data-a="0.97" data-b="1.01">Let's pull a thread and find out.</p>
+        <p class="fc" data-a="-0.10" data-b="0.10">What if reality is <em>truly</em> infinite?</p>
+        <p class="fc" data-a="0.14" data-b="0.35">Not just infinitely <em>vast</em>…</p>
+        <p class="fc" data-a="0.39" data-b="0.60">…but also infinitely <em>divisible</em>.</p>
+        <p class="fc" data-a="0.67" data-b="0.75">Zoom out forever.</p>
+        <p class="fc" data-a="0.75" data-b="0.83">Zoom in forever.</p>
+        <p class="fc" data-a="0.83" data-b="0.905">A reality with no center and no edge.</p>
+        <p class="fc" data-a="0.905" data-b="0.972">So how could a reality like that possibly work?</p>
+        <p class="fc" data-a="0.972" data-b="1.02">Let's pull a thread and find out.</p>
       </div>
 
-      <div class="film-hint">scroll ↓</div>
+      <div class="film-hint">scroll <span class="arrow">↓</span></div>
     </div>
   </div>
 
@@ -40,10 +39,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <style>
+  /* Full-screen from the top: drop the site chrome and the page column for this film. */
   :global(html) { overflow-x: clip; }
-  .film-tag { text-align: center; color: var(--color-text-muted); font-size: var(--text-sm); margin: -0.5rem 0 0.5rem; }
+  :global(header) { display: none; }
+  :global(footer) { display: none; }
+  :global(main) { max-width: none !important; padding: 0 !important; }
+
   .film-wrap {
-    position: relative; height: 760vh;
+    position: relative; height: 920vh;
     width: 100vw; margin-left: calc(50% - 50vw); background: #000;
   }
   .film-stage {
@@ -52,14 +55,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     overflow: hidden; background: #000;
   }
   #filmsvg { width: min(88vw, 82vh); height: min(88vw, 82vh); color: #fff; display: block; }
-  .film-cards { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); display: flex; justify-content: center; pointer-events: none; }
+  .film-cards { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
   .fc {
-    position: absolute; max-width: 26rem; text-align: center; opacity: 0;
-    color: #fff; font-family: var(--font-body);
-    font-size: var(--text-2xl); line-height: 1.35; padding: 0 1.5rem;
-    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.9);
+    position: absolute; text-align: center; opacity: 0;
+    color: #fff; font-family: var(--font-body); font-weight: 700;
+    font-size: clamp(1.9rem, 6vw, 3.25rem); line-height: 1.22;
+    max-width: min(90vw, 34rem); padding: 0 1rem;
+    text-shadow: 0 2px 28px rgba(0, 0, 0, 0.95);
   }
-  .film-hint { position: absolute; bottom: 5%; left: 0; right: 0; text-align: center; color: rgba(255, 255, 255, 0.5); font-size: var(--text-sm); font-family: var(--font-heading); letter-spacing: var(--tracking-wide); }
+  .film-hint {
+    position: absolute; bottom: 6%; left: 0; right: 0; text-align: center;
+    color: rgba(255, 255, 255, 0.6); font-size: var(--text-sm);
+    font-family: var(--font-heading); letter-spacing: var(--tracking-wide);
+  }
+  .arrow { display: inline-block; font-size: 1.15rem; animation: bob 1.6s ease-in-out infinite; }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  @media (prefers-reduced-motion: reduce) { .arrow { animation: none; } }
 
   .entries { width: 100vw; margin-left: calc(50% - 50vw); background: #000; color: #fff; padding: 4rem 1.5rem 6rem; }
   .entries-head { text-align: center; color: #fff; font-size: var(--text-2xl); font-weight: var(--weight-bold); margin-bottom: 2.5rem; }
@@ -97,19 +108,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
   const mod = (x, m) => ((x % m) + m) % m;
 
-  // Scroll → zoom depth: hold → zoom OUT (vast) → hold → zoom IN (divisible) → hold.
+  // Scroll → zoom depth. Gentle (only ±3 levels) — just enough to give the sense of zooming.
   function depthFor(p) {
     if (p < 0.14) return 0;
-    if (p < 0.40) return -5 * ((p - 0.14) / 0.26);      // zoom out
-    if (p < 0.44) return -5;
-    if (p < 0.68) return -5 + 10 * ((p - 0.44) / 0.24); // zoom in
-    return 5;
+    if (p < 0.35) return -3 * ((p - 0.14) / 0.21);      // zoom out (vast)
+    if (p < 0.39) return -3;
+    if (p < 0.62) return -3 + 6 * ((p - 0.39) / 0.23);  // zoom in (divisible)
+    return 3;
   }
 
   function render(p) {
     const cd = depthFor(p);
-    // Circles appear only while demonstrating the zoom.
-    const reveal = smooth(0.13, 0.18, p) * (1 - smooth(0.67, 0.72, p));
+    const reveal = smooth(0.12, 0.17, p) * (1 - smooth(0.62, 0.67, p)); // circles only during the zoom
     for (const o of circles) {
       const L = mod(o.k - cd, N);
       const radius = RMAX * Math.pow(RATIO, -L);
@@ -121,7 +131,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       const a = parseFloat(c.dataset.a), b = parseFloat(c.dataset.b);
       c.style.opacity = (smooth(a, a + 0.05, p) * (1 - smooth(b - 0.05, b, p))).toFixed(3);
     }
-    if (hint) hint.style.opacity = String(1 - smooth(0.0, 0.1, p));
+    if (hint) hint.style.opacity = String(1 - smooth(0.0, 0.08, p));
   }
 
   let ticking = false;
