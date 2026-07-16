@@ -142,6 +142,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   function render(p) {
     const cd = depthFor(p);
+    // The rings stay hidden through the first question; they emerge as the zoom begins.
+    const reveal = smooth(0.11, 0.17, p);
     for (const r of rings) {
       const L = mod(r.k - cd, N);              // 0..N, wraps seamlessly
       const radius = RMAX * Math.pow(RATIO, -L);
@@ -151,7 +153,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       r.dot.setAttribute('cx', (radius * Math.cos(r.angle)).toFixed(3));
       r.dot.setAttribute('cy', (radius * Math.sin(r.angle)).toFixed(3));
       r.dot.setAttribute('r', dr.toFixed(3));
-      r.g.style.opacity = op.toFixed(3);
+      r.g.style.opacity = (op * reveal).toFixed(3);
     }
     for (const c of cards) {
       const a = parseFloat(c.dataset.a), b = parseFloat(c.dataset.b);
