@@ -25,3 +25,6 @@ docset_*.md
 notebooklm_bundle_*/
 notebooklm_docs/
 *.zip
+
+# Build-time python venv for tools/ (see tools/requirements.txt)
+tools/.venv/

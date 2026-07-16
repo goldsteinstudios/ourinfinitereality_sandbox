@@ -1,0 +1,17 @@
+# Build-time dependencies for the tools/ pipeline. Never ships to the site.
+#
+#   python3 -m venv tools/.venv
+#   tools/.venv/bin/pip install -r tools/requirements.txt
+#   tools/.venv/bin/python tools/build_guodian_interactive_data.py
+#
+# System python is PEP 668 externally-managed, so a venv is required.
+
+PyYAML==6.0.3
+
+# Simplified/traditional conversion. The gxdq.com transcription and Will's
+# dictionary write simplified (弃 绝 为 于); the Guodian transcription and CHUBS
+# write traditional/Chu forms (棄 絕 爲 於). Joining them by character needs a
+# real converter -- hand-guessing the pairs is how a wrong identity gets
+# declared. Note s2t is one-to-many in places (占 -> 佔 is not always right),
+# so conversions are treated as candidates to verify, not as facts.
+opencc-python-reimplemented==0.1.7
