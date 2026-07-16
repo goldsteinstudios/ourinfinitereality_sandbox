@@ -12,15 +12,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <div class="film-wrap">
     <div class="film-stage">
-      <svg id="filmsvg" viewBox="-50 -50 100 100" aria-hidden="true"><g id="rings"></g></svg>
+      <svg id="filmsvg" viewBox="-50 -50 100 100" aria-hidden="true"><g id="rings" transform="scale(1,0.7)"></g></svg>
 
       <div class="film-cards">
-        <p class="fc" data-a="0.00" data-b="0.11">What if reality is <em>truly</em> infinite?</p>
-        <p class="fc" data-a="0.13" data-b="0.46">Not just infinitely <em>vast</em>…</p>
-        <p class="fc" data-a="0.50" data-b="0.69">…but also infinitely <em>divisible</em>.</p>
-        <p class="fc" data-a="0.70" data-b="0.79">Zoom out forever. Zoom in forever. A reality with no center and no edge.</p>
-        <p class="fc" data-a="0.80" data-b="0.955">So how could a reality like that possibly work?</p>
-        <p class="fc" data-a="0.955" data-b="1.01">Let's pull a thread and find out.</p>
+        <p class="fc" data-a="0.00" data-b="0.10">What if reality is <em>truly</em> infinite?</p>
+        <p class="fc" data-a="0.12" data-b="0.31">Not just infinitely <em>vast</em>…</p>
+        <p class="fc" data-a="0.34" data-b="0.50">…but also infinitely <em>divisible</em>.</p>
+        <p class="fc" data-a="0.53" data-b="0.64">Vast and divisible — at once.</p>
+        <p class="fc" data-a="0.71" data-b="0.76">Zoom out forever.</p>
+        <p class="fc" data-a="0.76" data-b="0.81">Zoom in forever.</p>
+        <p class="fc" data-a="0.81" data-b="0.875">A reality with no center and no edge.</p>
+        <p class="fc" data-a="0.875" data-b="0.965">So how could a reality like that possibly work?</p>
+        <p class="fc" data-a="0.965" data-b="1.01">Let's pull a thread and find out.</p>
       </div>
 
       <div class="film-hint">scroll ↓</div>
@@ -47,7 +50,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin: -0.5rem 0 0.5rem;
   }
   .film-wrap {
-    position: relative; height: 760vh;
+    position: relative; height: 880vh;
     width: 100vw; margin-left: calc(50% - 50vw);
     background: #000;
   }
@@ -134,21 +137,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   // both-ways flow — in and out at once — so the frame holds while both infinities move.
   function depthFor(p) {
     if (p < 0.12) return 0;                              // hold on the title
-    if (p < 0.46) return -8 * ((p - 0.12) / 0.34);      // zoom OUT — long, deep
-    if (p < 0.50) return -8;                            // hold at far out
-    if (p < 0.70) return -8 + 14 * ((p - 0.50) / 0.20); // zoom IN (the emphasis)
-    return 6;                                           // hold; finale motion is the both-ways flow
+    if (p < 0.30) return -6 * ((p - 0.12) / 0.18);      // zoom OUT (vast)
+    if (p < 0.34) return -6;                            // hold
+    if (p < 0.50) return -6 + 11 * ((p - 0.34) / 0.16); // zoom IN (divisible)
+    return 5;                                            // hold; both-ways flow takes over
   }
 
   // Continuous both-ways drift rate (levels/sec). Frozen under reduced-motion.
-  const RATE = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 0.6;
+  const RATE = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 0.28;
 
   function render(p, tau) {
     const cd = depthFor(p);
-    // Rings stay hidden through the first question; they emerge as the zoom begins.
-    const reveal = smooth(0.11, 0.17, p);
-    // split: 0 = one coherent zoom (opening); 1 = standing both-ways flow (finale).
-    const split = smooth(0.70, 0.82, p);
+    // Rings appear only while demonstrating the zoom — hidden for the first question,
+    // and gone before the closing cards.
+    const reveal = smooth(0.10, 0.15, p) * (1 - smooth(0.66, 0.71, p));
+    // split: 0 = one coherent zoom (out then in); 1 = standing both-ways flow ("at once").
+    const split = smooth(0.48, 0.58, p);
     const drift = tau * RATE;
     for (const r of rings) {
       // In the finale, even/odd rings drift opposite ways at the same rate — in and
@@ -165,7 +169,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
     for (const c of cards) {
       const a = parseFloat(c.dataset.a), b = parseFloat(c.dataset.b);
-      c.style.opacity = (smooth(a, a + 0.05, p) * (1 - smooth(b - 0.05, b, p))).toFixed(3);
+      const out = smooth(b - 0.05, b, p);
+      c.style.opacity = (smooth(a, a + 0.05, p) * (1 - out)).toFixed(3);
+      c.style.transform = 'scale(' + (1 - 0.28 * out).toFixed(3) + ')'; // recede + shrink on exit
     }
     if (hint) hint.style.opacity = String(1 - smooth(0.0, 0.1, p));
   }
