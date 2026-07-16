@@ -15,11 +15,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <svg id="filmsvg" viewBox="-50 -50 100 100" aria-hidden="true"><g id="rings"></g></svg>
 
       <div class="film-cards">
-        <p class="fc" data-a="0.00" data-b="0.13">What if reality is <em>truly</em> infinite?</p>
-        <p class="fc" data-a="0.15" data-b="0.50">Not just infinitely <em>vast</em>…</p>
-        <p class="fc" data-a="0.55" data-b="0.80">…but also infinitely <em>divisible</em>.</p>
-        <p class="fc" data-a="0.81" data-b="0.895">Zoom out forever. Zoom in forever. A reality with no center and no edge.</p>
-        <p class="fc" data-a="0.90" data-b="0.95">So how could a reality like that possibly work?</p>
+        <p class="fc" data-a="0.00" data-b="0.11">What if reality is <em>truly</em> infinite?</p>
+        <p class="fc" data-a="0.13" data-b="0.46">Not just infinitely <em>vast</em>…</p>
+        <p class="fc" data-a="0.50" data-b="0.69">…but also infinitely <em>divisible</em>.</p>
+        <p class="fc" data-a="0.70" data-b="0.79">Zoom out forever. Zoom in forever. A reality with no center and no edge.</p>
+        <p class="fc" data-a="0.80" data-b="0.955">So how could a reality like that possibly work?</p>
         <p class="fc" data-a="0.955" data-b="1.01">Let's pull a thread and find out.</p>
       </div>
 
@@ -47,7 +47,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin: -0.5rem 0 0.5rem;
   }
   .film-wrap {
-    position: relative; height: 640vh;
+    position: relative; height: 760vh;
     width: 100vw; margin-left: calc(50% - 50vw);
     background: #000;
   }
@@ -129,13 +129,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
   const mod = (x, m) => ((x % m) + m) % m;
 
-  // Camera depth vs scroll: hold → zoom OUT (vast, long & deep) → brief hold →
-  // zoom IN (divisible) all the way to the end — divisibility is the emphasis.
+  // Camera depth vs scroll: hold → zoom OUT (vast, long & deep) → hold → zoom IN
+  // (divisible) → FINALE: breathe both ways while inviting to pull a thread, ending in.
   function depthFor(p) {
-    if (p < 0.15) return 0;                          // hold on the title
-    if (p < 0.50) return -8 * ((p - 0.15) / 0.35);  // zoom OUT — long, deep
-    if (p < 0.55) return -8;                         // brief hold at far out
-    return -8 + 14 * ((p - 0.55) / 0.45);           // zoom IN to the end (ends at +6)
+    if (p < 0.12) return 0;                              // hold on the title
+    if (p < 0.46) return -8 * ((p - 0.12) / 0.34);      // zoom OUT — long, deep
+    if (p < 0.50) return -8;                            // hold at far out
+    if (p < 0.70) return -8 + 14 * ((p - 0.50) / 0.20); // zoom IN (the emphasis)
+    const t = (p - 0.70) / 0.30;                        // finale: in ↔ out, ends zoomed in
+    return 1 + 5 * Math.cos(t * 4 * Math.PI);
   }
 
   function render(p) {
