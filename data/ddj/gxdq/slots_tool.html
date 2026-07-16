@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guodian Laozi — glyph slots</title>
+<style>
+  :root{
+    --ground:#14110d; --surface:#1c1812; --raised:#292319; --line:#3a3226;
+    --ink:#ded6c5; --dim:#8d8474; --faint:#5f584c;
+    --cinnabar:#c4472a; --cinnabar-dim:#7a2d1c;
+    --jade:#6e9478; --amber:#b08a3c;
+    --han:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC","SimSun",serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--ground);color:var(--ink);font-family:var(--mono);
+       -webkit-font-smoothing:antialiased;padding-bottom:6rem}
+  header{position:sticky;top:0;z-index:20;background:rgba(20,17,13,.94);
+         backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:.7rem 1rem}
+  .bar{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap}
+  h1{font-family:var(--han);font-size:1.05rem;font-weight:400;letter-spacing:.06em}
+  .sub{font-size:.62rem;color:var(--faint);letter-spacing:.14em;text-transform:uppercase}
+  .count{margin-left:auto;font-size:.68rem;color:var(--dim);letter-spacing:.08em}
+  .count b{color:var(--jade);font-weight:600}
+  .filters{display:flex;gap:.3rem;margin-top:.55rem;flex-wrap:wrap}
+  button.f{background:transparent;border:1px solid var(--line);color:var(--dim);
+    font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
+    padding:.3rem .55rem;border-radius:2px;cursor:pointer}
+  button.f[aria-pressed="true"]{border-color:var(--cinnabar);color:var(--ink);background:#241812}
+  button.f:focus-visible,.slot:focus-visible,button:focus-visible,input:focus-visible,
+  textarea:focus-visible,select:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
+  main{max-width:56rem;margin:0 auto;padding:1.25rem 1rem}
+  .note{border-left:2px solid var(--cinnabar-dim);padding:.5rem .75rem;margin-bottom:1.75rem;
+    font-size:.68rem;line-height:1.65;color:var(--dim)}
+  .note b{color:var(--ink);font-weight:600}
+  h2{font-family:var(--han);font-size:1.5rem;font-weight:400;margin:2.25rem 0 .2rem;
+     display:flex;align-items:baseline;gap:.6rem}
+  h2 span{font-family:var(--mono);font-size:.6rem;color:var(--faint);letter-spacing:.16em;
+    text-transform:uppercase}
+  .slip{display:flex;gap:.85rem;padding:.35rem 0;border-bottom:1px solid #221d16}
+  .slip:hover{background:#181410}
+  .n{flex:0 0 2.1rem;text-align:right;font-size:.62rem;color:var(--faint);
+     padding-top:.55rem;letter-spacing:.04em}
+  .body{font-family:var(--han);font-size:1.22rem;line-height:2.05;letter-spacing:.03em;
+        padding:.2rem 0;word-break:break-all}
+  .gloss{color:var(--faint);font-size:.82em}
+  .slot{display:inline-block;border:0;padding:0 .12em;margin:0 .04em;cursor:pointer;
+    font-family:var(--han);font-size:1em;background:transparent;vertical-align:baseline;
+    border-radius:2px;transition:background .12s}
+  .slot:hover{background:#2c1d16}
+  .ring{color:var(--cinnabar)}
+  .slot[data-st="confirms"] .ring,.slot[data-st="differs"] .ring,
+  .slot[data-st="uncertain"] .ring{display:none}
+  .glyph{display:none;color:var(--jade)}
+  .slot[data-st="confirms"] .glyph,.slot[data-st="differs"] .glyph,
+  .slot[data-st="uncertain"] .glyph{display:inline}
+  .slot[data-st="differs"] .glyph{color:var(--amber)}
+  .slot[data-st="uncertain"] .glyph{color:var(--dim);border-bottom:1px dotted var(--dim)}
+  .ed{font-size:.5em;color:var(--faint);vertical-align:super;margin-left:.05em;font-family:var(--han)}
+  .slot[data-st="confirms"] .ed,.slot[data-st="differs"] .ed,.slot[data-st="uncertain"] .ed{color:#4a443a}
+  .bare .ring{border-bottom:2px solid var(--cinnabar)}
+  .lac{color:#3f382d}
+  .hide{display:none}
+  /* sheet */
+  .scrim{position:fixed;inset:0;background:rgba(8,6,4,.7);z-index:30;display:none}
+  .scrim.on{display:block}
+  .sheet{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--surface);
+    border-top:1px solid var(--line);padding:1.1rem 1rem 1.4rem;transform:translateY(101%);
+    transition:transform .22s ease;max-height:88vh;overflow:auto}
+  .sheet.on{transform:none}
+  @media(min-width:48rem){.sheet{left:auto;right:0;top:0;bottom:0;width:26rem;
+    border-left:1px solid var(--line);border-top:0;transform:translateX(101%);max-height:none}
+    .sheet.on{transform:none}}
+  .sheet h3{font-family:var(--han);font-size:1.05rem;font-weight:400;display:flex;
+    align-items:baseline;gap:.5rem}
+  .sheet h3 em{font-family:var(--mono);font-style:normal;font-size:.6rem;color:var(--faint);
+    letter-spacing:.14em}
+  .ctx{font-family:var(--han);font-size:1.15rem;line-height:1.9;color:var(--dim);
+    background:var(--ground);border:1px solid var(--line);padding:.6rem .7rem;margin:.7rem 0;
+    border-radius:2px;word-break:break-all}
+  .ctx mark{background:transparent;color:var(--cinnabar);font-weight:600}
+  .ed-says{font-size:.63rem;color:var(--dim);margin-bottom:.9rem;line-height:1.6}
+  .ed-says b{font-family:var(--han);font-size:1.15em;color:var(--ink)}
+  label{display:block;font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--faint);margin:.85rem 0 .3rem}
+  input,textarea,select{width:100%;background:var(--ground);border:1px solid var(--line);
+    color:var(--ink);font-family:var(--mono);font-size:.82rem;padding:.5rem .55rem;border-radius:2px}
+  input.han{font-family:var(--han);font-size:1.5rem;text-align:center;letter-spacing:.1em}
+  textarea{resize:vertical;min-height:4rem;line-height:1.6}
+  .segs{display:grid;grid-template-columns:repeat(4,1fr);gap:.25rem}
+  .segs button{background:var(--ground);border:1px solid var(--line);color:var(--dim);
+    font-family:var(--mono);font-size:.55rem;letter-spacing:.06em;text-transform:uppercase;
+    padding:.45rem .2rem;cursor:pointer;border-radius:2px}
+  .segs button[aria-pressed="true"]{color:var(--ground);font-weight:700}
+  .segs button[data-v="confirms"][aria-pressed="true"]{background:var(--jade);border-color:var(--jade)}
+  .segs button[data-v="differs"][aria-pressed="true"]{background:var(--amber);border-color:var(--amber)}
+  .segs button[data-v="uncertain"][aria-pressed="true"]{background:var(--dim);border-color:var(--dim)}
+  .segs button[data-v="open"][aria-pressed="true"]{background:var(--cinnabar);border-color:var(--cinnabar);color:#fff}
+  .acts{display:flex;gap:.5rem;margin-top:1.3rem}
+  .acts button{flex:1;padding:.6rem;border-radius:2px;font-family:var(--mono);font-size:.62rem;
+    letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border:1px solid var(--line);
+    background:transparent;color:var(--dim)}
+  .acts button.pri{background:var(--ink);color:var(--ground);border-color:var(--ink);font-weight:700}
+  .foot{position:fixed;bottom:0;left:0;right:0;z-index:10;background:rgba(20,17,13,.94);
+    backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:.55rem 1rem;
+    display:flex;gap:.4rem;align-items:center;font-size:.6rem;color:var(--faint)}
+  .foot button{background:transparent;border:1px solid var(--line);color:var(--dim);
+    font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;
+    padding:.35rem .6rem;border-radius:2px;cursor:pointer}
+  .foot .sp{margin-left:auto}
+  .legend{display:flex;gap:.7rem;font-size:.55rem;letter-spacing:.06em}
+  .legend i{font-style:normal}
+  .lg-c{color:var(--cinnabar)}.lg-j{color:var(--jade)}.lg-a{color:var(--amber)}
+  dialog{background:var(--surface);color:var(--ink);border:1px solid var(--line);max-width:44rem;
+    width:92vw;padding:1rem;border-radius:3px}
+  dialog::backdrop{background:rgba(8,6,4,.75)}
+  dialog textarea{min-height:52vh;font-size:.68rem}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <h1>郭店老子 · glyph slots</h1>
+    <span class="sub">unresolved graphs</span>
+    <span class="count"><b id="done">0</b> / <span id="tot">0</span> examined</span>
+  </div>
+  <div class="filters" id="filters">
+    <button class="f" data-f="all" aria-pressed="true">all</button>
+    <button class="f" data-f="open">open</button>
+    <button class="f" data-f="examined">examined</button>
+    <button class="f" data-f="differs">differs from editor</button>
+    <button class="f" data-f="bare">no editorial reading</button>
+  </div>
+</header>
+<main>
+  <p class="note">Every <span class="ring">○</span> is a graph the transcription could not render — a Chu-script form with no modern equivalent. The small character beside it is the <b>editor's reading</b>, not the slip. Tap a ring to record what the slip actually shows. Source: gxdq.com transcription, editor unattributed — <b>unverified; check against slip images before anything here enters canon.</b></p>
+  <div id="text"></div>
+</main>
+<div class="scrim" id="scrim"></div>
+<aside class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t">
+  <h3 id="sh-t">slot <em id="sh-id"></em></h3>
+  <div class="ctx" id="sh-ctx"></div>
+  <div class="ed-says" id="sh-ed"></div>
+  <label for="f-glyph">the graph on the slip</label>
+  <input class="han" id="f-glyph" placeholder="paste · IDS · ⿰氵弱" autocomplete="off">
+  <label for="f-read">your reading</label>
+  <input id="f-read" placeholder="the word you take it to write" autocomplete="off">
+  <label>status</label>
+  <div class="segs" id="f-st">
+    <button data-v="open">open</button>
+    <button data-v="confirms">confirms</button>
+    <button data-v="differs">differs</button>
+    <button data-v="uncertain">uncertain</button>
+  </div>
+  <label for="f-src">source</label>
+  <input id="f-src" placeholder="slip image · daoisopen · 39017 · Notability page" autocomplete="off">
+  <label for="f-note">notes</label>
+  <textarea id="f-note" placeholder="components, parallels, what the reading turns on"></textarea>
+  <div class="acts">
+    <button id="b-clear">clear</button>
+    <button class="pri" id="b-save">save</button>
+  </div>
+</aside>
+<div class="foot">
+  <div class="legend">
+    <i class="lg-c">○ open</i><i class="lg-j">■ confirms</i><i class="lg-a">■ differs</i><i>■ uncertain</i>
+  </div>
+  <span class="sp"></span>
+  <button id="b-exp">export</button>
+</div>
+<dialog id="dlg">
+  <label for="dlg-t" style="margin-top:0">export — copy into the repo</label>
+  <div class="filters" style="margin:.4rem 0 .6rem">
+    <button class="f" data-x="yaml" aria-pressed="true">yaml</button>
+    <button class="f" data-x="json">json</button>
+    <button class="f" data-x="md">markdown</button>
+  </div>
+  <textarea id="dlg-t" readonly></textarea>
+  <div class="acts"><button id="dlg-c">close</button><button class="pri" id="dlg-copy">copy</button></div>
+</dialog>
+<script>
+const DATA = {"bundles":[{"id":"A","name":"甲","slips":[{"slip":1,"toks":[{"t":"s","id":"A1.1","e":"绝","k":"loan"},{"t":"x","v":"智（知）弃卞（辩），民利百"},{"t":"s","id":"A1.2","e":"倍","k":"loan"},{"t":"x","v":"。"},{"t":"s","id":"A1.3","e":"绝","k":"loan"},{"t":"s","id":"A1.4","e":"巧","k":"loan"},{"t":"x","v":"弃利，"},{"t":"s","id":"A1.5","e":"盗","k":"loan"},{"t":"x","v":"恻（贼）亡又（有）。"},{"t":"s","id":"A1.6","e":"绝","k":"loan"},{"t":"s","id":"A1.7","e":"伪","k":"loan"},{"t":"x","v":"弃"},{"t":"s","id":"A1.8","e":null,"k":"bare"},{"t":"x","v":"，民复（復）季（孝）子（慈）。三言以"}]},{"slip":2,"toks":[{"t":"x","v":"为"},{"t":"s","id":"A2.1","e":"辨","k":"loan"},{"t":"x","v":"不足，或命（令）之或"},{"t":"s","id":"A2.2","e":"乎","k":"loan"},{"t":"x","v":"豆（属）。视索（素）保仆（朴），少厶（私）须〈寡〉欲。江"},{"t":"s","id":"A2.3","e":"海","k":"loan"},{"t":"x","v":"所以为百浴（谷）王，以其"}]},{"slip":3,"toks":[{"t":"x","v":"能为百浴（谷）下，是以能为百浴（谷）王。圣人之才（在）民前也，以身后之；其才（在）民上也，以"}]},{"slip":4,"toks":[{"t":"x","v":"言下之。其才（在）民上也，民弗厚也；其才（在）民前也，民弗害也。天下乐进而弗"},{"t":"s","id":"A4.1","e":"厌","k":"loan"},{"t":"x","v":"。"}]},{"slip":5,"toks":[{"t":"x","v":"以其不静（争）也，古（故）天下莫能与之静（争）。"},{"t":"s","id":"A5.1","e":"罪","k":"loan"},{"t":"x","v":"莫厚"},{"t":"s","id":"A5.2","e":"乎","k":"loan"},{"t":"x","v":"甚欲，咎莫佥（憯）"},{"t":"s","id":"A5.3","e":"乎","k":"loan"},{"t":"x","v":"谷（欲）得，"}]},{"slip":6,"toks":[{"t":"x","v":"化（祸）莫大"},{"t":"s","id":"A6.1","e":"乎","k":"loan"},{"t":"x","v":"不智（知）足。智（知）足之为足，此亘（恒）足矣。以"},{"t":"s","id":"A6.2","e":"道","k":"loan"},{"t":"x","v":"差（佐）人"},{"t":"s","id":"A6.3","e":"主","k":"loan"},{"t":"x","v":"者，不谷（欲）以兵强"}]},{"slip":7,"toks":[{"t":"x","v":"于天下。善者果而已，不以取强。果而弗发（伐），果而弗乔（骄），果而弗"},{"t":"s","id":"A7.1","e":"矜","k":"loan"},{"t":"x","v":"，是胃（谓）果而不强。其"}]},{"slip":8,"toks":[{"t":"x","v":"事好。长古之善为士者，必非（微）溺玄达，深不可志（识），是以为之颂（容）：夜（豫）"},{"t":"s","id":"A8.1","e":"乎","k":"loan"},{"t":"x","v":"奴（若）冬涉川，猷（犹）"},{"t":"s","id":"A8.2","e":"乎","k":"loan"},{"t":"x","v":"其"}]},{"slip":9,"toks":[{"t":"x","v":"奴（若）"},{"t":"s","id":"A9.1","e":"畏","k":"loan"},{"t":"x","v":"四"},{"t":"s","id":"A9.2","e":"邻","k":"loan"},{"t":"x","v":"，敢（严）"},{"t":"s","id":"A9.3","e":"乎","k":"loan"},{"t":"x","v":"其奴（若）客，"},{"t":"s","id":"A9.4","e":"涣","k":"loan"},{"t":"s","id":"A9.5","e":"乎","k":"loan"},{"t":"x","v":"其奴（若）怿（释），屯"},{"t":"s","id":"A9.6","e":"乎","k":"loan"},{"t":"x","v":"其奴（若）朴，"},{"t":"s","id":"A9.7","e":null,"k":"bare"},{"t":"s","id":"A9.8","e":"乎","k":"loan"},{"t":"x","v":"其奴（若）浊。竺（孰）能浊以束（静）"}]},{"slip":10,"toks":[{"t":"x","v":"者，"},{"t":"s","id":"A10.1","e":"将","k":"loan"},{"t":"x","v":"舍（徐）清。竺（孰）能"},{"t":"s","id":"A10.2","e":null,"k":"bare"},{"t":"x","v":"以"},{"t":"s","id":"A10.3","e":null,"k":"bare"},{"t":"x","v":"者，"},{"t":"s","id":"A10.4","e":"将","k":"loan"},{"t":"x","v":"舍（徐）生。保此"},{"t":"s","id":"A10.5","e":"道","k":"loan"},{"t":"x","v":"者不谷（欲）"},{"t":"s","id":"A10.6","e":"尚","k":"loan"},{"t":"s","id":"A10.7","e":"盈","k":"loan"},{"t":"x","v":"。为之者败之，执之者远"}]},{"slip":11,"toks":[{"t":"x","v":"之。是以圣人亡为古（故）亡败；亡执古（故）亡"},{"t":"s","id":"A11.1","e":"失","k":"loan"},{"t":"x","v":"。临事之纪，誓（慎）冬（终）女（如）"},{"t":"s","id":"A11.2","e":"始","k":"loan"},{"t":"x","v":"，此亡败事矣。圣人谷（欲）"}]},{"slip":12,"toks":[{"t":"x","v":"不谷（欲），不贵难得之货，"},{"t":"s","id":"A12.1","e":"教","k":"loan"},{"t":"x","v":"不"},{"t":"s","id":"A12.2","e":"教","k":"loan"},{"t":"x","v":"，复众之所"},{"t":"s","id":"A12.3","e":"过","k":"loan"},{"t":"x","v":"。是古（故）圣人能"},{"t":"s","id":"A12.4","e":"辅","k":"loan"},{"t":"x","v":"万勿（物）之自"},{"t":"s","id":"A12.5","e":"然","k":"loan"},{"t":"x","v":"，而弗"}]},{"slip":13,"toks":[{"t":"x","v":"能为。"},{"t":"s","id":"A13.1","e":"道","k":"loan"},{"t":"x","v":"亘（恒）亡为也，侯王能守之，而万勿（物）"},{"t":"s","id":"A13.2","e":"将","k":"loan"},{"t":"x","v":"自"},{"t":"s","id":"A13.3","e":"化","k":"loan"},{"t":"x","v":"。"},{"t":"s","id":"A13.4","e":"化","k":"loan"},{"t":"x","v":"而"},{"t":"s","id":"A13.5","e":"欲","k":"loan"},{"t":"s","id":"A13.6","e":"作","k":"loan"},{"t":"x","v":"，"},{"t":"s","id":"A13.7","e":"将","k":"loan"},{"t":"x","v":"贞（镇）之以亡名之"},{"t":"s","id":"A13.8","e":"朴","k":"loan"},{"t":"x","v":"。夫"}]},{"slip":14,"toks":[{"t":"x","v":"亦"},{"t":"s","id":"A14.1","e":"将","k":"loan"},{"t":"x","v":"智（知）足，智（知）以束（静），万勿（物）"},{"t":"s","id":"A14.2","e":"将","k":"loan"},{"t":"x","v":"自定。为亡为，事亡事，未（味）亡未（味）。大少（小）之多惕（易）必多"},{"t":"s","id":"A14.3","e":"难","k":"loan"},{"t":"x","v":"。是以圣人"}]},{"slip":15,"toks":[{"t":"x","v":"猷（犹）"},{"t":"s","id":"A15.1","e":"难","k":"loan"},{"t":"x","v":"之，古（故）终亡"},{"t":"s","id":"A15.2","e":"难","k":"loan"},{"t":"x","v":"。天下皆智（知）"},{"t":"s","id":"A15.3","e":"美","k":"loan"},{"t":"x","v":"之为"},{"t":"s","id":"A15.4","e":"美","k":"loan"},{"t":"x","v":"也，亚（恶）已；皆智（知）善，此其不善已。又（有）亡之相生也，"}]},{"slip":16,"toks":[{"t":"s","id":"A16.1","e":"难","k":"loan"},{"t":"x","v":"惕（易）之相成也，长"},{"t":"s","id":"A16.2","e":"短","k":"loan"},{"t":"x","v":"之相型（形）也，高下之相"},{"t":"s","id":"A16.3","e":"盈","k":"loan"},{"t":"x","v":"也，音圣（声）之相和也，先后之相堕（随）也。是"}]},{"slip":17,"toks":[{"t":"x","v":"以圣人居亡为之事，行不言之"},{"t":"s","id":"A17.1","e":"教","k":"loan"},{"t":"x","v":"。万勿（物）"},{"t":"s","id":"A17.2","e":"作","k":"loan"},{"t":"x","v":"而弗"},{"t":"s","id":"A17.3","e":"始","k":"loan"},{"t":"x","v":"也，为而弗志（恃）也，成而弗居。天〈夫〉唯"}]},{"slip":18,"toks":[{"t":"x","v":"弗居也，是以弗去也。道亘（恒）亡名，仆（朴）唯（虽）妻（微），天"},{"t":"s","id":"A18.1","e":"地","k":"loan"},{"t":"x","v":"弗敢臣，侯王女（如）能"}]},{"slip":19,"toks":[{"t":"s","id":"A19.1","e":"守","k":"loan"},{"t":"x","v":"之，万勿（物）"},{"t":"s","id":"A19.2","e":"将","k":"loan"},{"t":"x","v":"自"},{"t":"s","id":"A19.3","e":"宾","k":"loan"},{"t":"x","v":"。天"},{"t":"s","id":"A19.4","e":"地","k":"loan"},{"t":"x","v":"相合也，以逾甘"},{"t":"s","id":"A19.5","e":"露","k":"loan"},{"t":"x","v":"。民莫之命（令）天〈而〉自均安。"},{"t":"s","id":"A19.6","e":"始","k":"loan"},{"t":"x","v":"折（制）又（有）名。名"}]},{"slip":20,"toks":[{"t":"x","v":"亦既又（有），夫亦"},{"t":"s","id":"A20.1","e":"将","k":"loan"},{"t":"x","v":"智（知）止，智（知）止所以不"},{"t":"s","id":"A20.2","e":"殆","k":"loan"},{"t":"x","v":"。卑（譬）道之才（在）天下也，猷（犹）少（小）浴（谷）之与江"},{"t":"s","id":"A20.3","e":"海","k":"loan"},{"t":"x","v":"。"}]},{"slip":21,"toks":[{"t":"x","v":"又（有）"},{"t":"s","id":"A21.1","e":null,"k":"bare"},{"t":"s","id":"A21.2","e":"○","k":"loan"},{"t":"x","v":"成，先天"},{"t":"s","id":"A21.3","e":"地","k":"loan"},{"t":"x","v":"生，"},{"t":"s","id":"A21.4","e":null,"k":"bare"},{"t":"s","id":"A21.5","e":"穆","k":"loan"},{"t":"x","v":"，蜀（独）立不亥（改），可以为天下母。未智（知）其名，"},{"t":"s","id":"A21.6","e":"字","k":"loan"},{"t":"x","v":"之曰道，"},{"t":"s","id":"A21.7","e":"吾","k":"loan"}]},{"slip":22,"toks":[{"t":"x","v":"强为之名曰大。大曰"},{"t":"s","id":"A22.1","e":null,"k":"bare"},{"t":"x","v":"，"},{"t":"s","id":"A22.2","e":null,"k":"bare"},{"t":"x","v":"曰"},{"t":"s","id":"A22.3","e":"远","k":"emend"},{"t":"x","v":"，"},{"t":"s","id":"A22.4","e":"远","k":"emend"},{"t":"x","v":"曰反（返）。天大，"},{"t":"s","id":"A22.5","e":"地","k":"loan"},{"t":"x","v":"大，道大，王亦大。国中又（有）四大安，王"},{"t":"s","id":"A22.6","e":"居","k":"loan"},{"t":"x","v":"一安。人"}]},{"slip":23,"toks":[{"t":"x","v":"法"},{"t":"s","id":"A23.1","e":"地","k":"loan"},{"t":"x","v":"，"},{"t":"s","id":"A23.2","e":"地","k":"loan"},{"t":"x","v":"法天，天法道，道法自"},{"t":"s","id":"A23.3","e":"然","k":"loan"},{"t":"x","v":"。天"},{"t":"s","id":"A23.4","e":"地","k":"loan"},{"t":"x","v":"之"},{"t":"s","id":"A23.5","e":"间","k":"loan"},{"t":"x","v":"，其猷（犹）"},{"t":"s","id":"A23.6","e":"橐","k":"loan"},{"t":"s","id":"A23.7","e":"籥","k":"emend"},{"t":"x","v":"与？虚而不屈，"},{"t":"s","id":"A23.8","e":"动","k":"loan"},{"t":"x","v":"而愈出。"}]},{"slip":24,"toks":[{"t":"x","v":"至虚，亘（恒）也；兽（守）中，"},{"t":"s","id":"A24.1","e":"笃","k":"loan"},{"t":"x","v":"也。万勿（物）方（旁）"},{"t":"s","id":"A24.2","e":"作","k":"loan"},{"t":"x","v":"，居以须复也。天道员员，各复其堇（根）。"}]},{"slip":25,"toks":[{"t":"x","v":"其安也，易"},{"t":"s","id":"A25.1","e":null,"k":"bare"},{"t":"x","v":"也。其未"},{"t":"s","id":"A25.2","e":"兆","k":"loan"},{"t":"x","v":"也，易"},{"t":"s","id":"A25.3","e":"谋","k":"loan"},{"t":"x","v":"也。其"},{"t":"s","id":"A25.4","e":"脆","k":"loan"},{"t":"x","v":"也，易畔（判）也。其几也，易"},{"t":"s","id":"A25.5","e":"散","k":"loan"},{"t":"x","v":"也。为之于其"}]},{"slip":26,"toks":[{"t":"x","v":"亡又（有）也。"},{"t":"s","id":"A26.1","e":"治","k":"loan"},{"t":"x","v":"之于其未乱。合□□□□□□□，九成之台甲□□□□□□□□□"}]},{"slip":27,"toks":[{"t":"x","v":"足下。智（知）之者弗言，言之者弗智（知）。"},{"t":"s","id":"A27.1","e":"闭","k":"loan"},{"t":"x","v":"其"},{"t":"s","id":"A27.2","e":"兑","k":"loan"},{"t":"x","v":"，赛（塞）其门，和其光，"},{"t":"s","id":"A27.3","e":"同","k":"loan"},{"t":"x","v":"其"},{"t":"s","id":"A27.4","e":"尘","k":"loan"},{"t":"x","v":"，"},{"t":"s","id":"A27.5","e":null,"k":"bare"},{"t":"x","v":"其"},{"t":"s","id":"A27.6","e":null,"k":"bare"},{"t":"x","v":"，解其纷，"}]},{"slip":28,"toks":[{"t":"x","v":"是胃（谓）玄同。古（故）不可得天〈而〉新（亲），亦不可得而疋（疏）；不可得而利，亦不可得而害："}]},{"slip":29,"toks":[{"t":"x","v":"不可得而贵，亦可不可得而"},{"t":"s","id":"A29.1","e":"贱","k":"loan"},{"t":"x","v":"。古（故）为天下贵。以正之（治）邦，以"},{"t":"s","id":"A29.2","e":"奇","k":"loan"},{"t":"s","id":"A29.3","e":"用","k":"loan"},{"t":"x","v":"兵，以亡事"}]},{"slip":30,"toks":[{"t":"x","v":"取天下。"},{"t":"s","id":"A30.1","e":"吾","k":"loan"},{"t":"x","v":"可（何）以智（知）其"},{"t":"s","id":"A30.2","e":"然","k":"loan"},{"t":"x","v":"也。夫天多期（忌）韦（讳），而民尔（弥）畔（叛）。民多利器，而邦慈（滋）昏。人多"}]},{"slip":31,"toks":[{"t":"x","v":"智（知）天〈而〉"},{"t":"s","id":"A31.1","e":"奇","k":"loan"},{"t":"x","v":"勿（物）慈（滋）"},{"t":"s","id":"A31.2","e":"起","k":"loan"},{"t":"x","v":"。法勿（物）慈（滋）章（彰），"},{"t":"s","id":"A31.3","e":"盗","k":"loan"},{"t":"x","v":"恻（贼）多又（有）。是以圣人之言曰：我无事而民自"},{"t":"s","id":"A31.4","e":"富","k":"loan"},{"t":"x","v":"。"}]},{"slip":32,"toks":[{"t":"x","v":"我亡为而民自"},{"t":"s","id":"A32.1","e":"化","k":"loan"},{"t":"x","v":"。我好青（静）而民自正。我谷（欲）不谷（欲）而民自朴。"}]},{"slip":33,"toks":[{"t":"s","id":"A33.1","e":"含","k":"loan"},{"t":"s","id":"A33.2","e":"德","k":"loan"},{"t":"x","v":"之厚者，比于赤子，"},{"t":"s","id":"A33.3","e":"○","k":"loan"},{"t":"s","id":"A33.4","e":null,"k":"bare"},{"t":"x","v":"虫它（蛇）弗"},{"t":"s","id":"A33.5","e":"○","k":"loan"},{"t":"x","v":"，攫鸟"},{"t":"s","id":"A33.6","e":"猛","k":"loan"},{"t":"x","v":"兽弗扣，骨溺（弱）"},{"t":"s","id":"A33.7","e":"筋","k":"loan"},{"t":"s","id":"A33.8","e":"柔","k":"loan"},{"t":"x","v":"而捉"}]},{"slip":34,"toks":[{"t":"x","v":"固。未智（知）牝戊（牡）之合然"},{"t":"s","id":"A34.1","e":"怒","k":"loan"},{"t":"x","v":"，精之至也。终日"},{"t":"s","id":"A34.2","e":"乎","k":"loan"},{"t":"x","v":"而不"},{"t":"s","id":"A34.3","e":"忧","k":"loan"},{"t":"x","v":"，和之至也，和曰"},{"t":"s","id":"A34.4","e":"○（常）","k":"emend"},{"t":"x","v":"，智（知）和曰明。"}]},{"slip":35,"toks":[{"t":"s","id":"A35.1","e":"益","k":"loan"},{"t":"x","v":"生曰"},{"t":"s","id":"A35.2","e":"祥","k":"loan"},{"t":"x","v":"，心"},{"t":"s","id":"A35.3","e":"使","k":"loan"},{"t":"s","id":"A35.4","e":"气","k":"loan"},{"t":"x","v":"曰"},{"t":"s","id":"A35.5","e":"强","k":"loan"},{"t":"x","v":"，勿（物）"},{"t":"s","id":"A35.6","e":"壮","k":"loan"},{"t":"x","v":"则老，是胃（谓）不道。名与身"},{"t":"s","id":"A35.7","e":"孰","k":"loan"},{"t":"x","v":"新（亲）？身与货"}]},{"slip":36,"toks":[{"t":"s","id":"A36.1","e":"孰","k":"loan"},{"t":"x","v":"多？"},{"t":"s","id":"A36.2","e":"得","k":"loan"},{"t":"x","v":"与"},{"t":"s","id":"A36.3","e":"亡","k":"loan"},{"t":"s","id":"A36.4","e":"孰","k":"loan"},{"t":"s","id":"A36.5","e":"病","k":"loan"},{"t":"x","v":"？甚"},{"t":"s","id":"A36.6","e":"爱","k":"loan"},{"t":"x","v":"必大"},{"t":"s","id":"A36.7","e":"费","k":"loan"},{"t":"x","v":"，"},{"t":"s","id":"A36.8","e":"厚","k":"loan"},{"t":"s","id":"A36.9","e":"藏","k":"loan"},{"t":"x","v":"必多"},{"t":"s","id":"A36.10","e":"亡","k":"loan"},{"t":"x","v":"。古（故）智（知）足不辱，智（知）止不怠（殆），可"}]},{"slip":37,"toks":[{"t":"x","v":"以长旧（久）。返也者，道"},{"t":"s","id":"A37.1","e":"动","k":"loan"},{"t":"x","v":"也。溺（弱）也者，道之"},{"t":"s","id":"A37.2","e":"用","k":"loan"},{"t":"x","v":"也。天下之勿（物）生于又（有），生于亡。"},{"t":"s","id":"A37.3","e":null,"k":"bare"},{"t":"x","v":"而"},{"t":"s","id":"A37.4","e":"盈","k":"loan"}]},{"slip":38,"toks":[{"t":"x","v":"之，不不若已。湍而群之，不可长保也。金玉"},{"t":"s","id":"A38.1","e":"盈","k":"loan"},{"t":"x","v":"室，莫能兽（守）也。贵福（富）乔（骄），自遗咎"}]},{"slip":39,"toks":[{"t":"x","v":"也。攻（功）述（遂）身退，天之道也。"}]}]},{"id":"B","name":"乙","slips":[{"slip":1,"toks":[{"t":"x","v":"绐（治）人事天，莫若啬。夫唯啬，是以"},{"t":"s","id":"B1.1","e":"早","k":"loan"},{"t":"x","v":"，是以"},{"t":"s","id":"B1.2","e":"早","k":"loan"},{"t":"x","v":"备（服）是胃（谓）……"}]},{"slip":2,"toks":[{"t":"x","v":"不=克=则莫智（知）其亘（恒）〈亟（极）〉，莫智（知）其亘〈亟（极）〉可以又（有）"},{"t":"s","id":"B2.1","e":"国","k":"loan"},{"t":"x","v":"。又（有）"},{"t":"s","id":"B2.2","e":"国","k":"loan"},{"t":"x","v":"之母，可以长……，"}]},{"slip":3,"toks":[{"t":"x","v":"长生"},{"t":"s","id":"B3.1","e":"旧=久","k":"loan"},{"t":"x","v":"视之道也。学者日益，为道者日员（损）。员（损）之或员（损），以至亡为"}]},{"slip":4,"toks":[{"t":"x","v":"也，亡为而亡不为。"},{"t":"s","id":"B4.1","e":"绝","k":"loan"},{"t":"x","v":"学亡"},{"t":"s","id":"B4.2","e":"忧","k":"loan"},{"t":"x","v":"，唯与可（呵），相去几可（何）？"},{"t":"s","id":"B4.3","e":"美","k":"loan"},{"t":"x","v":"与亚（恶），相去可（何）若？"}]},{"slip":5,"toks":[{"t":"x","v":"人之所"},{"t":"s","id":"B5.1","e":"畏","k":"loan"},{"t":"x","v":"，亦不可以不"},{"t":"s","id":"B5.2","e":"畏","k":"loan"},{"t":"x","v":"。人"},{"t":"s","id":"B5.3","e":"宠","k":"loan"},{"t":"x","v":"辱若缨（惊）。贵大患若身。可（何）胃（谓）"},{"t":"s","id":"B5.4","e":"宠","k":"loan"}]},{"slip":6,"toks":[{"t":"x","v":"辱？"},{"t":"s","id":"B6.1","e":"宠","k":"loan"},{"t":"x","v":"为下也。得之若缨（惊），"},{"t":"s","id":"B6.2","e":"失","k":"loan"},{"t":"x","v":"之若缨（惊），是胃（谓）"},{"t":"s","id":"B6.3","e":"宠","k":"loan"},{"t":"x","v":"辱缨（惊）。□□□□□"}]},{"slip":7,"toks":[{"t":"x","v":"若身？"},{"t":"s","id":"B7.1","e":"吾","k":"loan"},{"t":"x","v":"所以又（有）大患者，为"},{"t":"s","id":"B7.2","e":"吾","k":"loan"},{"t":"x","v":"又（有）身。"},{"t":"s","id":"B7.3","e":"及","k":"loan"},{"t":"s","id":"B7.4","e":"吾","k":"loan"},{"t":"x","v":"亡身，或可（何）□□□□□□"}]},{"slip":8,"toks":[{"t":"x","v":"为天下，若可以"},{"t":"s","id":"B8.1","e":"託","k":"loan"},{"t":"x","v":"天下矣。"},{"t":"s","id":"B8.2","e":"爱","k":"loan"},{"t":"x","v":"以身为天下，若可（何）以"},{"t":"s","id":"B8.3","e":null,"k":"bare"},{"t":"x","v":"天下矣。"}]},{"slip":9,"toks":[{"t":"x","v":"上士昏（闻）道，"},{"t":"s","id":"B9.1","e":"勤","k":"loan"},{"t":"x","v":"能行于其中。中士昏（闻）道，若昏（闻）若亡。下士昏（闻）道，大"},{"t":"s","id":"B9.2","e":"笑","k":"loan"},{"t":"x","v":"之。弗大"}]},{"slip":10,"toks":[{"t":"s","id":"B10.1","e":"笑","k":"loan"},{"t":"x","v":"，不足以为道矣。是以建言又（有）之：明道女（如）"},{"t":"s","id":"B10.2","e":"○","k":"loan"},{"t":"x","v":"，"},{"t":"s","id":"B10.3","e":"夷","k":"loan"},{"t":"x","v":"道□□□"}]},{"slip":11,"toks":[{"t":"x","v":"道若退。上"},{"t":"s","id":"B11.1","e":"德","k":"loan"},{"t":"x","v":"女（如）浴（谷），大白女（如）辱，"},{"t":"s","id":"B11.2","e":"广","k":"loan"},{"t":"s","id":"B11.3","e":"德","k":"loan"},{"t":"x","v":"女（如）不足，建"},{"t":"s","id":"B11.4","e":"德","k":"loan"},{"t":"x","v":"女（如）□□贞（真）女（如）愉。"}]},{"slip":12,"toks":[{"t":"x","v":"大方亡禺（隅），大器曼成，大音祗圣（声），天象亡"},{"t":"s","id":"B12.1","e":"形","k":"loan"},{"t":"x","v":"，道……"}]},{"slip":13,"toks":[{"t":"x","v":"闷（闭）其门，赛（塞）其"},{"t":"s","id":"B13.1","e":"兑","k":"loan"},{"t":"x","v":"，终身不"},{"t":"s","id":"B13.2","e":null,"k":"bare"},{"t":"x","v":"。启其"},{"t":"s","id":"B13.3","e":"兑","k":"loan"},{"t":"x","v":"，赛其事，终身不"},{"t":"s","id":"B13.4","e":null,"k":"bare"},{"t":"x","v":"。大成若"}]},{"slip":14,"toks":[{"t":"s","id":"B14.1","e":"缺","k":"loan"},{"t":"x","v":"，其"},{"t":"s","id":"B14.2","e":"用","k":"loan"},{"t":"x","v":"不敝。大"},{"t":"s","id":"B14.3","e":"盈","k":"loan"},{"t":"x","v":"若中（盅），其甬（用）不"},{"t":"s","id":"B14.4","e":"穷","k":"loan"},{"t":"x","v":"。大"},{"t":"s","id":"B14.5","e":"巧","k":"loan"},{"t":"x","v":"若"},{"t":"s","id":"B14.6","e":"拙","k":"loan"},{"t":"x","v":"，大成若诎，大植（直）"}]},{"slip":15,"toks":[{"t":"x","v":"若屈。"},{"t":"s","id":"B15.1","e":"燥","k":"loan"},{"t":"s","id":"B15.2","e":"胜","k":"loan"},{"t":"x","v":"苍（沧），青（清）"},{"t":"s","id":"B15.3","e":"胜","k":"loan"},{"t":"x","v":"然（热），清清（静）为天下定（正）。善建者不拔，善"},{"t":"s","id":"B15.4","e":null,"k":"bare"},{"t":"x","v":"者"}]},{"slip":16,"toks":[{"t":"x","v":"不兑（脱），子孙以其祭祀不屯。攸（修）之身，其"},{"t":"s","id":"B16.1","e":"德","k":"loan"},{"t":"x","v":"乃贞（真）。攸（修）之"},{"t":"s","id":"B16.2","e":"家","k":"loan"},{"t":"x","v":"，其"},{"t":"s","id":"B16.3","e":"德","k":"loan"},{"t":"x","v":"又（有）舍（餘）。攸（修）"}]},{"slip":17,"toks":[{"t":"x","v":"之向（乡），其"},{"t":"s","id":"B17.1","e":"德","k":"loan"},{"t":"x","v":"乃长。攸（修）之邦，其"},{"t":"s","id":"B17.2","e":"德","k":"loan"},{"t":"x","v":"乃奉（丰）。攸（修）之天下□□□□□□□"}]},{"slip":18,"toks":[{"t":"s","id":"B18.1","e":"家","k":"loan"},{"t":"x","v":"，以向（乡）观向（乡），以邦观邦，以天下观天下。"},{"t":"s","id":"B18.2","e":"吾","k":"loan"},{"t":"x","v":"可（何）以智（知）天□□□□□"}]}]},{"id":"C","name":"丙","slips":[{"slip":1,"toks":[{"t":"x","v":"大上下智（知）又（有）之，其即（次）新（亲）誉之，其既〈即（次）〉"},{"t":"s","id":"C1.1","e":"畏","k":"loan"},{"t":"x","v":"之，其即（次）"},{"t":"s","id":"C1.2","e":"侮","k":"loan"},{"t":"x","v":"之。信不足，安"}]},{"slip":2,"toks":[{"t":"x","v":"又（有）不信。猷（犹）"},{"t":"s","id":"C2.1","e":"乎","k":"loan"},{"t":"x","v":"其贵言也。成事述（遂）"},{"t":"s","id":"C2.2","e":"功","k":"loan"},{"t":"x","v":"，而百"},{"t":"s","id":"C2.3","e":"姓","k":"loan"},{"t":"x","v":"曰我自"},{"t":"s","id":"C2.4","e":"然","k":"loan"},{"t":"x","v":"也。古（故）大"}]},{"slip":3,"toks":[{"t":"x","v":"道发（废），安有"},{"t":"s","id":"C3.1","e":"仁","k":"loan"},{"t":"x","v":"义。六新（亲）不和，安有孝"},{"t":"s","id":"C3.2","e":"慈","k":"loan"},{"t":"x","v":"。邦"},{"t":"s","id":"C3.3","e":"家","k":"loan"},{"t":"s","id":"C3.4","e":"昏","k":"loan"},{"t":"s","id":"C3.5","e":null,"k":"bare"},{"t":"x","v":"安又（有）正臣。"}]},{"slip":4,"toks":[{"t":"x","v":"执大象，天下往。往而不害，安坪（平）大。乐与饵，"},{"t":"s","id":"C4.1","e":"过","k":"loan"},{"t":"x","v":"客止。古（故）道□□□，"}]},{"slip":5,"toks":[{"t":"x","v":"淡可（呵）其无味也。视之不足见，圣（听）之不足"},{"t":"s","id":"C5.1","e":"闻","k":"loan"},{"t":"x","v":"，而不可既也。"}]},{"slip":6,"toks":[{"t":"x","v":"君子居则贵左，"},{"t":"s","id":"C6.1","e":"用","k":"loan"},{"t":"x","v":"兵则贵右。古（故）曰兵者□□□□□□"}]},{"slip":7,"toks":[{"t":"x","v":"得已而甬（用）之。"},{"t":"s","id":"C7.1","e":null,"k":"bare"},{"t":"s","id":"C7.2","e":null,"k":"bare"},{"t":"x","v":"为上，弗"},{"t":"s","id":"C7.3","e":"美","k":"loan"},{"t":"x","v":"也。"},{"t":"s","id":"C7.4","e":"美","k":"emend"},{"t":"x","v":"之，是乐杀人。夫乐□□□"}]},{"slip":8,"toks":[{"t":"x","v":"以得志于天下。古（故）吉事上左，丧事上右。是以卞（偏）"},{"t":"s","id":"C8.1","e":"将","k":"loan"}]},{"slip":9,"toks":[{"t":"x","v":"军居左，上"},{"t":"s","id":"C9.1","e":"将","k":"loan"},{"t":"x","v":"军居右，言以丧豊（礼）居之也。古（故）杀□□，"}]},{"slip":10,"toks":[{"t":"x","v":"则以"},{"t":"s","id":"C10.1","e":"哀","k":"loan"},{"t":"x","v":"悲位（莅）之；战"},{"t":"s","id":"C10.2","e":"胜","k":"loan"},{"t":"x","v":"则以丧豊（礼）居之。"}]},{"slip":11,"toks":[{"t":"x","v":"为之者败之，执之者"},{"t":"s","id":"C11.1","e":"失","k":"loan"},{"t":"x","v":"之。圣人无为，古（故）无败也；无执，古（故）□□□。"}]},{"slip":12,"toks":[{"t":"s","id":"C12.1","e":"慎","k":"loan"},{"t":"x","v":"终若"},{"t":"s","id":"C12.2","e":"始","k":"loan"},{"t":"x","v":"，则无败事喜（矣）。人之败也，亘（恒）于其"},{"t":"s","id":"C12.3","e":"且","k":"loan"},{"t":"x","v":"成也败之。是以□"}]},{"slip":13,"toks":[{"t":"x","v":"人欲不欲，不贵"},{"t":"s","id":"C13.1","e":"难","k":"loan"},{"t":"x","v":"得之货；学不学，复众之所"},{"t":"s","id":"C13.2","e":"过","k":"loan"},{"t":"x","v":"。是以能"},{"t":"s","id":"C13.3","e":"辅","k":"loan"},{"t":"s","id":"C13.4","e":"万","k":"loan"},{"t":"x","v":"勿（物）"}]},{"slip":14,"toks":[{"t":"x","v":"之自"},{"t":"s","id":"C14.1","e":"然","k":"loan"},{"t":"x","v":"，而弗敢为。"}]}]}]};
+const KEY = 'guodian-slots-v1';
+let ann = {}, filter = 'all', cur = null;
+
+const $ = s => document.querySelector(s);
+const slots = () => DATA.bundles.flatMap(b => b.slips.flatMap(s => s.toks.filter(t => t.t==='s')));
+const st = id => (ann[id] && ann[id].status) || 'open';
+
+async function load(){
+  try{ const r = await window.storage.get(KEY); if(r && r.value) ann = JSON.parse(r.value); }
+  catch(e){ /* first run: no key yet */ }
+  render();
+}
+async function save(){
+  try{ await window.storage.set(KEY, JSON.stringify(ann)); }
+  catch(e){ console.error('save failed', e); alert('Save failed — copy your notes out via Export.'); }
+}
+
+function render(){
+  const t = $('#text'); t.innerHTML = '';
+  for(const b of DATA.bundles){
+    const h = document.createElement('h2');
+    h.innerHTML = b.name + ' <span>bundle ' + b.id + '</span>';
+    t.appendChild(h);
+    for(const sl of b.slips){
+      const row = document.createElement('div'); row.className = 'slip';
+      const n = document.createElement('div'); n.className='n'; n.textContent = b.id + (sl.slip??'—');
+      const body = document.createElement('div'); body.className='body';
+      let shown = 0;
+      for(const tk of sl.toks){
+        if(tk.t === 'x'){
+          const sp = document.createElement('span');
+          sp.innerHTML = tk.v.replace(/□/g,'<span class="lac">□</span>')
+                             .replace(/（([^）]*)）/g,'<span class="gloss">（$1）</span>')
+                             .replace(/〈([^〉]*)〉/g,'<span class="gloss">〈$1〉</span>');
+          body.appendChild(sp);
+        } else {
+          const a = ann[tk.id], s = st(tk.id);
+          if(!pass(tk, s)) { const sp=document.createElement('span'); sp.className='gloss'; sp.textContent='○'; body.appendChild(sp); continue; }
+          shown++;
+          const btn = document.createElement('button');
+          btn.className = 'slot' + (tk.e ? '' : ' bare');
+          btn.dataset.st = s; btn.dataset.id = tk.id;
+          btn.setAttribute('aria-label', 'slot ' + tk.id + (tk.e ? ', editor reads ' + tk.e : ', no editorial reading'));
+          btn.innerHTML = '<span class="ring">○</span><span class="glyph">' +
+            ((a && a.glyph) ? esc(a.glyph) : '○') + '</span>' +
+            (tk.e ? '<span class="ed">' + esc(tk.e) + '</span>' : '');
+          btn.onclick = () => open(tk);
+          body.appendChild(btn);
+        }
+      }
+      if(filter !== 'all' && shown === 0) continue;
+      row.appendChild(n); row.appendChild(body); t.appendChild(row);
+    }
+  }
+  const all = slots();
+  $('#tot').textContent = all.length;
+  $('#done').textContent = all.filter(s => st(s.id) !== 'open').length;
+}
+function pass(tk, s){
+  if(filter==='all') return true;
+  if(filter==='open') return s==='open';
+  if(filter==='examined') return s!=='open';
+  if(filter==='differs') return s==='differs';
+  if(filter==='bare') return !tk.e;
+  return true;
+}
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function ctxFor(id){
+  for(const b of DATA.bundles) for(const sl of b.slips){
+    const i = sl.toks.findIndex(t => t.t==='s' && t.id===id);
+    if(i<0) continue;
+    const seg = (arr) => arr.map(t => t.t==='x' ? t.v : '○').join('');
+    const before = seg(sl.toks.slice(Math.max(0,i-3), i)).slice(-14);
+    const after = seg(sl.toks.slice(i+1, i+4)).slice(0,14);
+    return before + '\u0001' + after;
+  }
+  return '\u0001';
+}
+function open(tk){
+  cur = tk;
+  const a = ann[tk.id] || {};
+  $('#sh-id').textContent = tk.id;
+  const [b,af] = ctxFor(tk.id).split('\u0001');
+  $('#sh-ctx').innerHTML = esc(b) + '<mark>○</mark>' + esc(af);
+  $('#sh-ed').innerHTML = tk.e
+    ? 'Editor reads <b>' + esc(tk.e) + '</b>' + (tk.k==='emend' ? ' (marked an emendation, not a loan)' : ' — a loan-resolution. The slip does not write this character.')
+    : 'No editorial reading offered. The graph is unresolved as well as unrendered.';
+  $('#f-glyph').value = a.glyph||''; $('#f-read').value = a.reading||'';
+  $('#f-src').value = a.source||''; $('#f-note').value = a.notes||'';
+  segset(a.status||'open');
+  $('#scrim').classList.add('on'); $('#sheet').classList.add('on');
+  setTimeout(()=>$('#f-glyph').focus(), 60);
+}
+function close(){ $('#scrim').classList.remove('on'); $('#sheet').classList.remove('on'); cur=null; }
+function segset(v){ document.querySelectorAll('#f-st button').forEach(b =>
+  b.setAttribute('aria-pressed', String(b.dataset.v===v))); }
+const segget = () => document.querySelector('#f-st button[aria-pressed="true"]')?.dataset.v || 'open';
+
+document.querySelectorAll('#f-st button').forEach(b => b.onclick = () => segset(b.dataset.v));
+$('#b-save').onclick = async () => {
+  if(!cur) return;
+  const rec = { glyph:$('#f-glyph').value.trim(), reading:$('#f-read').value.trim(),
+    status:segget(), source:$('#f-src').value.trim(), notes:$('#f-note').value.trim(),
+    editor:cur.e||null, updated:new Date().toISOString().slice(0,10) };
+  const empty = !rec.glyph && !rec.reading && !rec.notes && !rec.source && rec.status==='open';
+  if(empty) delete ann[cur.id]; else ann[cur.id] = rec;
+  await save(); close(); render();
+};
+$('#b-clear').onclick = async () => { if(!cur) return; delete ann[cur.id]; await save(); close(); render(); };
+$('#scrim').onclick = close;
+document.addEventListener('keydown', e => { if(e.key==='Escape' && cur) close(); });
+$('#filters').onclick = e => { const b = e.target.closest('button'); if(!b) return;
+  filter = b.dataset.f;
+  document.querySelectorAll('#filters button').forEach(x => x.setAttribute('aria-pressed', String(x===b)));
+  render(); };
+
+function build(kind){
+  const rows = Object.entries(ann).sort((a,b)=>a[0].localeCompare(b[0], undefined, {numeric:true}));
+  if(!rows.length) return '# nothing recorded yet';
+  if(kind==='json') return JSON.stringify({source:'gxdq.com transcription (unverified)', generated:new Date().toISOString().slice(0,10), slots:ann}, null, 2);
+  if(kind==='md'){
+    return '| slot | editor reads | graph | reading | status | source | notes |\n|---|---|---|---|---|---|---|\n' +
+      rows.map(([k,v]) => `| ${k} | ${v.editor||'—'} | ${v.glyph||''} | ${v.reading||''} | ${v.status} | ${v.source||''} | ${(v.notes||'').replace(/\|/g,'\\|').replace(/\n/g,' ')} |`).join('\n');
+  }
+  const q = s => s ? JSON.stringify(s) : '""';
+  return '# guodian glyph slots — unresolved graphs\n' +
+    '# source: gxdq.com transcription; editor unattributed; UNVERIFIED against slip images\n' +
+    '# editor_reads = the transcription\'s loan-resolution, not the slip\n' +
+    `# generated: ${new Date().toISOString().slice(0,10)}\n\nslots:\n` +
+    rows.map(([k,v]) => `  - id: ${k}\n    editor_reads: ${v.editor?JSON.stringify(v.editor):'null'}\n` +
+      `    graph: ${q(v.glyph)}\n    reading: ${q(v.reading)}\n    status: ${v.status}\n` +
+      `    source: ${q(v.source)}\n    notes: ${q(v.notes)}\n    updated: ${v.updated||''}`).join('\n');
+}
+let xkind = 'yaml';
+$('#b-exp').onclick = () => { $('#dlg-t').value = build(xkind); $('#dlg').showModal(); };
+$('#dlg').addEventListener('click', e => { const b = e.target.closest('[data-x]'); if(!b) return;
+  xkind = b.dataset.x;
+  $('#dlg').querySelectorAll('[data-x]').forEach(x => x.setAttribute('aria-pressed', String(x===b)));
+  $('#dlg-t').value = build(xkind); });
+$('#dlg-c').onclick = () => $('#dlg').close();
+$('#dlg-copy').onclick = async () => {
+  try{ await navigator.clipboard.writeText($('#dlg-t').value); $('#dlg-copy').textContent='copied'; }
+  catch(e){ $('#dlg-t').select(); $('#dlg-copy').textContent='select+copy'; }
+  setTimeout(()=>$('#dlg-copy').textContent='copy', 1400);
+};
+load();
+</script>
+</body>
+</html>

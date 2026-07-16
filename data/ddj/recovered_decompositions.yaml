@@ -1,0 +1,120 @@
+# Recovered character decompositions — Guodian Laozi A
+#
+# PROVENANCE: extracted from public/data/guodian_interactive.json, which was the
+# only surviving copy. The inputs that originally produced it — data/ddj/radicals.yaml,
+# data/glossary/entries/*.json and guodian_bundle_a_data.csv — are gitignored and no
+# longer on disk. This file exists so that pipeline is reproducible again.
+#
+# Two different claims live here, and they are NOT interchangeable:
+#   components  — an unordered set of graphs present. Ex-glossary (11 chars).
+#   substrate / operator / breakdown — a DIRECTIONAL reading: this substrate, acted
+#                 on by that operator. Ex-radicals.yaml (9 chars). Ontology, not
+#                 derivable from a component set. Only assert where earned.
+#
+# guodian_dictionary.csv (Will's Numbers dictionary) supplies components only. It
+# cannot reconstruct substrate/operator/breakdown, and it has no 刀/刂 column yet —
+# so 利 here keeps a blade that the dictionary alone would lose.
+
+characters:
+  利:
+    pinyin: "lì"
+    meaning: "scythe arcs through → harvest/path-cutting"
+    components:
+      - {component: "禾", meaning: "grain"}
+      - {component: "刀", meaning: "knife"}
+    substrate: "禾"
+    operator: "刂 (dāo, blade)"
+    breakdown: "禾 (hé, grain) + 刂 (dāo, blade) = scythe arcing through grain = π-operation"
+  反:
+    pinyin: "fǎn"
+    meaning: "return, reverse, oppose"
+    components:
+      - {component: "又", meaning: "hand"}
+      - {component: "厂", meaning: "cliff"}
+  名:
+    pinyin: "míng"
+    meaning: "name, naming"
+    components:
+      - {component: "夕", meaning: "evening"}
+      - {component: "口", meaning: "mouth"}
+  和:
+    pinyin: "hé"
+    meaning: "grain distributed → harmonious flow"
+    components:
+      - {component: "禾", meaning: "grain"}
+      - {component: "口", meaning: "mouth/opening"}
+    substrate: "禾"
+    operator: "口 (kǒu, mouth)"
+    breakdown: "禾 (hé, grain) + 口 (kǒu, mouth) = grain distributed through openings"
+  愛:
+    pinyin: "ài"
+    meaning: "love"
+    components:
+      - {component: "心", meaning: "heart"}
+      - {component: "友", meaning: "friend"}
+  慈:
+    pinyin: "cí"
+    meaning: "heart multiplied → expansive care"
+    components:
+      - {component: "心", meaning: "heart"}
+      - {component: "茲", meaning: "multiply"}
+    substrate: "心"
+    operator: "茲 (zī, multiply)"
+    breakdown: "茲 (zī, grass multiplying) + 心 (xīn) = heart multiplied = one of Three Treasures"
+  末:
+    pinyin: "mò"
+    meaning: "wood tipped → tip/end"
+    substrate: "木"
+    operator: "一 (yī, mark at tip)"
+    breakdown: "木 (mù) + mark at tip = end, surface, periphery"
+  果:
+    pinyin: "guǒ"
+    meaning: "wood fielded → fruit/result"
+    substrate: "木"
+    operator: "田 (tián, field)"
+  欲:
+    pinyin: "yù"
+    meaning: "desire, want"
+    components:
+      - {component: "谷", meaning: "valley"}
+      - {component: "欠", meaning: "opening"}
+  清:
+    pinyin: "qīng"
+    meaning: "water clarified → transparency"
+    components:
+      - {component: "氵", meaning: "water"}
+      - {component: "青", meaning: "blue/pure"}
+    substrate: "氵"
+    operator: "青 (qīng, clear)"
+  玄:
+    pinyin: "xuán"
+    meaning: "dark, mysterious, profound"
+    components:
+      - {component: "Threading/subtle connection"}
+  相:
+    pinyin: "xiāng"
+    meaning: "wood eyed → mutual/each other"
+    substrate: "木"
+    operator: "目 (mù, eye)"
+    breakdown: "木 (mù, tree) + 目 (mù, eye) = eye observing tree = mutual observation"
+  貨:
+    pinyin: "huò"
+    meaning: "value changed → goods/merchandise"
+    substrate: "貝"
+    operator: "化 (huà, change)"
+  貴:
+    pinyin: "guì"
+    meaning: "value elevated → precious/honored"
+    substrate: "貝"
+    operator: "(elevated)"
+  道:
+    pinyin: "dào"
+    meaning: "way, path, pattern"
+    components:
+      - {component: "辶", meaning: "movement", position: "bottom"}
+      - {component: "首", meaning: "head", position: "top"}
+  非:
+    pinyin: "fēi"
+    meaning: "not, wrong"
+    components:
+      - {component: "Two mirrored elements showing duality"}

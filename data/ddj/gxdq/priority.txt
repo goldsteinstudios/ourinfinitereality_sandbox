@@ -1,0 +1,61 @@
+# Canon-adjacent slots — where an unresolved graph sits under a load-bearing reading
+
+A1.1	○（绝）	○智（知）弃卞（辩），民利	— A1 severance — the recursion comma's grounding cites 絕's etymology
+A1.3	○（绝）	）弃卞（辩），民利百○。○○弃利，○	— A1 severance — the recursion comma's grounding cites 絕's etymology
+A1.6	○（绝）	，○恻（贼）亡又（有）。○○弃○	— A1 severance — the recursion comma's grounding cites 絕's etymology
+A6.2	○（道）	为足，此亘（恒）足矣。以○差（佐）人○者，不谷（欲	— variant-graph pattern: sometimes ○, sometimes plain 道
+A10.5	○（道）	者，○舍（徐）生。保此○者不谷（欲）○○	— variant-graph pattern: sometimes ○, sometimes plain 道
+A11.2	○（始）	誓（慎）冬（终）女（如）○，此亡败事矣。圣人谷（欲	— 始 :: Oₙ (Ch.1 [R], but the word appears in A17/A19)
+A12.5	○（然）	）圣人能○万勿（物）之自○，而弗	— 自然 — the lexicon entry
+A13.1	○（道）	能为。○亘（恒）亡为也，侯王能守	— variant-graph pattern: sometimes ○, sometimes plain 道
+A13.6	○（作）	○而○○，○贞（镇）之以亡名之	— A24 萬物旁作
+A17.2	○（作）	，行不言之○。万勿（物）○而弗○也，为而弗志（恃）	— A24 萬物旁作
+A17.3	○（始）	。万勿（物）○而弗○也，为而弗志（恃）也，成	— 始 :: Oₙ (Ch.1 [R], but the word appears in A17/A19)
+A18.1	○（地）	朴）唯（虽）妻（微），天○弗敢臣，侯王女（如）能	— X6 conflict — 天/地 severally as the modes
+A19.1	○（守）	○之，万勿（物）○自	— 守中 :: Bₙ — now [G]-attested at A24
+A19.4	○（地）	自○。天○相合也，以逾甘○。民莫之	— X6 conflict — 天/地 severally as the modes
+A19.6	○（始）	命（令）天〈而〉自均安。○折（制）又（有）名。名	— 始 :: Oₙ (Ch.1 [R], but the word appears in A17/A19)
+A21.3	○（地）	○○成，先天○生，○○	— X6 conflict — 天/地 severally as the modes
+A22.5	○（地）	，○曰反（返）。天大，○大，道大，王亦大。国中又	— X6 conflict — 天/地 severally as the modes
+A23.1	○（地）	法○，○法天，天法道，道法自	— X6 conflict — 天/地 severally as the modes
+A23.2	○（地）	法○，○法天，天法道，道法自○。	— X6 conflict — 天/地 severally as the modes
+A23.3	○（然）	，○法天，天法道，道法自○。天○之	— 自然 — the lexicon entry
+A23.4	○（地）	天，天法道，道法自○。天○之○，其猷（犹）	— X6 conflict — 天/地 severally as the modes
+A24.1	○（笃）	亘（恒）也；兽（守）中，○也。万勿（物）方（旁）○	— A24 篤 — the 守中 line
+A24.2	○（作）	○也。万勿（物）方（旁）○，居以须复也。天道员员，	— A24 萬物旁作
+A30.2	○（然）	。○可（何）以智（知）其○也。夫天多期（忌）韦（讳	— 自然 — the lexicon entry
+A33.2	○（德）	○○之厚者，比于赤子，○○	— 德 cluster
+B4.1	○（绝）	也，亡为而亡不为。○学亡○，唯与可（呵），相	— A1 severance — the recursion comma's grounding cites 絕's etymology
+B11.1	○（德）	道若退。上○女（如）浴（谷），大白女	— 德 cluster
+B11.3	○（德）	谷），大白女（如）辱，○○女（如）不足，建○女（如	— 德 cluster
+B11.4	○（德）	○○女（如）不足，建○女（如）□□贞（真）女（	— 德 cluster
+B16.1	○（德）	祀不屯。攸（修）之身，其○乃贞（真）。攸（修）之○	— 德 cluster
+B16.3	○（德）	（真）。攸（修）之○，其○又（有）舍（餘）。攸（修	— 德 cluster
+B17.1	○（德）	之向（乡），其○乃长。攸（修）之邦，其○	— 德 cluster
+B17.2	○（德）	○乃长。攸（修）之邦，其○乃奉（丰）。攸（修）之天	— 德 cluster
+C2.4	○（然）	，而百○曰我自○也。古（故）大	— 自然 — the lexicon entry
+C12.2	○（始）	○终若○，则无败事喜（矣）。人之	— 始 :: Oₙ (Ch.1 [R], but the word appears in A17/A19)
+C14.1	○（然）	之自○，而弗敢为。	— 自然 — the lexicon entry
+
+# 36 of 237 slots. The 20 bare ○ (no editorial reading) are listed below —
+# unresolved AND unrendered: the deepest gaps in the transcription.
+A1.8	○	○○弃○，民复（復）季（孝）子（
+A9.7	○	释），屯○其奴（若）朴，○○其奴（若）浊。竺（孰）
+A10.2	○	○舍（徐）清。竺（孰）能○以○者，
+A10.3	○	（徐）清。竺（孰）能○以○者，○舍（徐）生。保此
+A21.1	○	又（有）○○成，先天○
+A21.4	○	成，先天○生，○○，蜀（独）立不亥（改）
+A22.1	○	强为之名曰大。大曰○，○曰
+A22.2	○	强为之名曰大。大曰○，○曰○，
+A25.1	○	其安也，易○也。其未○也，易
+A27.5	○	其○，○其○，解其纷，
+A27.6	○	，○其○，解其纷，
+A33.4	○	○之厚者，比于赤子，○○虫它（蛇）弗○，攫鸟
+A37.3	○	）生于又（有），生于亡。○而○
+B8.3	○	以身为天下，若可（何）以○天下矣。
+B13.2	○	门，赛（塞）其○，终身不○。启其○，赛其事，终身不
+B13.4	○	。启其○，赛其事，终身不○。大成若
+B15.4	○	定（正）。善建者不拔，善○者
+C3.5	○	。邦○○○安又（有）正臣。
+C7.1	○	得已而甬（用）之。○○为上，弗○
+C7.2	○	得已而甬（用）之。○○为上，弗○也。
