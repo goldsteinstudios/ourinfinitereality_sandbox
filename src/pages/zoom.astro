@@ -1,10 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-// PROTOTYPE — the opening of the film: the premise as one long scroll.
-// "What if reality is truly infinite?" → zoom OUT forever (infinitely vast) →
-// zoom IN forever (infinitely divisible) → no center, no boundary → pull a thread.
-// Endless both ways via seamless ring recycling. Unlinked, at /zoom.
+// PROTOTYPE — the premise as one clean scroll. White concentric circles on black:
+// zoom OUT (infinitely vast) → zoom IN (infinitely divisible) → the words. Unlinked, /zoom.
 ---
 
 <BaseLayout title="What if reality is infinite?">
@@ -12,25 +10,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <div class="film-wrap">
     <div class="film-stage">
-      <svg id="filmsvg" viewBox="-50 -50 100 100" aria-hidden="true"><g id="rings" transform="scale(1,0.7)"></g></svg>
+      <svg id="filmsvg" viewBox="-50 -50 100 100" aria-hidden="true"><g id="rings"></g></svg>
 
       <div class="film-cards">
-        <p class="fc" data-a="0.00" data-b="0.10">What if reality is <em>truly</em> infinite?</p>
-        <p class="fc" data-a="0.12" data-b="0.31">Not just infinitely <em>vast</em>…</p>
-        <p class="fc" data-a="0.34" data-b="0.50">…but also infinitely <em>divisible</em>.</p>
-        <p class="fc" data-a="0.53" data-b="0.64">Vast and divisible — at once.</p>
-        <p class="fc" data-a="0.71" data-b="0.76">Zoom out forever.</p>
-        <p class="fc" data-a="0.76" data-b="0.81">Zoom in forever.</p>
-        <p class="fc" data-a="0.81" data-b="0.875">A reality with no center and no edge.</p>
-        <p class="fc" data-a="0.875" data-b="0.965">So how could a reality like that possibly work?</p>
-        <p class="fc" data-a="0.965" data-b="1.01">Let's pull a thread and find out.</p>
+        <p class="fc" data-a="0.00" data-b="0.12">What if reality is <em>truly</em> infinite?</p>
+        <p class="fc" data-a="0.16" data-b="0.40">Not just infinitely <em>vast</em>…</p>
+        <p class="fc" data-a="0.44" data-b="0.66">…but also infinitely <em>divisible</em>.</p>
+        <p class="fc" data-a="0.73" data-b="0.79">Zoom out forever.</p>
+        <p class="fc" data-a="0.79" data-b="0.85">Zoom in forever.</p>
+        <p class="fc" data-a="0.85" data-b="0.905">A reality with no center and no edge.</p>
+        <p class="fc" data-a="0.905" data-b="0.97">So how could a reality like that possibly work?</p>
+        <p class="fc" data-a="0.97" data-b="1.01">Let's pull a thread and find out.</p>
       </div>
 
       <div class="film-hint">scroll ↓</div>
     </div>
   </div>
 
-  <!-- Entry options — TBD; placeholders into the aspects of the model -->
   <section class="entries">
     <h2 class="entries-head">Pull a thread</h2>
     <div class="entries-grid">
@@ -45,14 +41,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
   :global(html) { overflow-x: clip; }
-  .film-tag {
-    text-align: center; color: var(--color-text-muted); font-size: var(--text-sm);
-    margin: -0.5rem 0 0.5rem;
-  }
+  .film-tag { text-align: center; color: var(--color-text-muted); font-size: var(--text-sm); margin: -0.5rem 0 0.5rem; }
   .film-wrap {
-    position: relative; height: 880vh;
-    width: 100vw; margin-left: calc(50% - 50vw);
-    background: #000;
+    position: relative; height: 760vh;
+    width: 100vw; margin-left: calc(50% - 50vw); background: #000;
   }
   .film-stage {
     position: sticky; top: 0; height: 100vh;
@@ -60,40 +52,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     overflow: hidden; background: #000;
   }
   #filmsvg { width: min(88vw, 82vh); height: min(88vw, 82vh); color: #fff; display: block; }
-  .film-cards {
-    position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%);
-    display: flex; justify-content: center; pointer-events: none;
-  }
+  .film-cards { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); display: flex; justify-content: center; pointer-events: none; }
   .fc {
     position: absolute; max-width: 26rem; text-align: center; opacity: 0;
     color: #fff; font-family: var(--font-body);
     font-size: var(--text-2xl); line-height: 1.35; padding: 0 1.5rem;
     text-shadow: 0 2px 24px rgba(0, 0, 0, 0.9);
   }
-  .film-hint {
-    position: absolute; bottom: 5%; left: 0; right: 0; text-align: center;
-    color: rgba(255, 255, 255, 0.5); font-size: var(--text-sm);
-    font-family: var(--font-heading); letter-spacing: var(--tracking-wide);
-  }
+  .film-hint { position: absolute; bottom: 5%; left: 0; right: 0; text-align: center; color: rgba(255, 255, 255, 0.5); font-size: var(--text-sm); font-family: var(--font-heading); letter-spacing: var(--tracking-wide); }
 
-  .entries {
-    width: 100vw; margin-left: calc(50% - 50vw);
-    background: #000; color: #fff;
-    padding: 4rem 1.5rem 6rem;
-  }
-  .entries-head {
-    text-align: center; color: #fff; font-size: var(--text-2xl);
-    font-weight: var(--weight-bold); margin-bottom: 2.5rem;
-  }
-  .entries-grid {
-    max-width: 40rem; margin: 0 auto;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-  }
-  .entry {
-    display: block; padding: 1.25rem 1.5rem; border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.22); text-decoration: none;
-    transition: border-color var(--transition-fast), background var(--transition-fast);
-  }
+  .entries { width: 100vw; margin-left: calc(50% - 50vw); background: #000; color: #fff; padding: 4rem 1.5rem 6rem; }
+  .entries-head { text-align: center; color: #fff; font-size: var(--text-2xl); font-weight: var(--weight-bold); margin-bottom: 2.5rem; }
+  .entries-grid { max-width: 40rem; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .entry { display: block; padding: 1.25rem 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(255, 255, 255, 0.22); text-decoration: none; transition: border-color var(--transition-fast), background var(--transition-fast); }
   .entry:hover { border-color: rgba(255, 255, 255, 0.6); background: rgba(255, 255, 255, 0.04); }
   .entry-t { display: block; color: #fff; font-family: var(--font-heading); font-weight: var(--weight-semibold); margin-bottom: 0.25rem; }
   .entry-d { display: block; color: rgba(255, 255, 255, 0.6); font-size: var(--text-sm); font-family: var(--font-body); }
@@ -103,95 +74,69 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <script>
   const NS = 'http://www.w3.org/2000/svg';
-  const N = 12;            // ring slots
-  const RATIO = 1.7;       // radius step between adjacent scales
-  const RMAX = 150;        // largest radius (off-screen; the recycle happens here, invisibly)
-  const GOLD = 137.5 * Math.PI / 180;
+  const N = 7;            // number of concentric circles
+  const RATIO = 1.9;      // radius step between scales
+  const RMAX = 150;       // largest radius (recycle happens here, off-screen and invisible)
 
   const box = document.getElementById('rings');
   const cards = Array.from(document.querySelectorAll('.fc'));
   const hint = document.querySelector('.film-hint');
   const wrap = document.querySelector('.film-wrap');
 
-  // Build N rings (ring + one dot each). Radii are set every frame.
-  const rings = [];
+  const circles = [];
   for (let k = 0; k < N; k++) {
-    const g = document.createElementNS(NS, 'g');
-    const ring = document.createElementNS(NS, 'circle');
-    ring.setAttribute('cx', '0'); ring.setAttribute('cy', '0');
-    ring.setAttribute('fill', 'none'); ring.setAttribute('stroke', 'currentColor');
-    ring.setAttribute('stroke-width', '1'); ring.setAttribute('vector-effect', 'non-scaling-stroke');
-    const dot = document.createElementNS(NS, 'circle');
-    dot.setAttribute('fill', 'currentColor');
-    g.appendChild(ring); g.appendChild(dot);
-    box.appendChild(g);
-    rings.push({ g, ring, dot, k, angle: k * GOLD, dir: k % 2 === 0 ? 1 : -1 });
+    const c = document.createElementNS(NS, 'circle');
+    c.setAttribute('cx', '0'); c.setAttribute('cy', '0');
+    c.setAttribute('fill', 'none'); c.setAttribute('stroke', 'currentColor');
+    c.setAttribute('stroke-width', '1'); c.setAttribute('vector-effect', 'non-scaling-stroke');
+    box.appendChild(c);
+    circles.push({ c, k });
   }
 
   const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
   const smooth = (a, b, x) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
   const mod = (x, m) => ((x % m) + m) % m;
 
-  // Camera depth vs scroll: hold → zoom OUT (vast, long & deep) → hold → zoom IN
-  // (divisible) → hold. In the finale the rings split (below) into a standing
-  // both-ways flow — in and out at once — so the frame holds while both infinities move.
+  // Scroll → zoom depth: hold → zoom OUT (vast) → hold → zoom IN (divisible) → hold.
   function depthFor(p) {
-    if (p < 0.12) return 0;                              // hold on the title
-    if (p < 0.30) return -6 * ((p - 0.12) / 0.18);      // zoom OUT (vast)
-    if (p < 0.34) return -6;                            // hold
-    if (p < 0.50) return -6 + 11 * ((p - 0.34) / 0.16); // zoom IN (divisible)
-    return 5;                                            // hold; both-ways flow takes over
+    if (p < 0.14) return 0;
+    if (p < 0.40) return -5 * ((p - 0.14) / 0.26);      // zoom out
+    if (p < 0.44) return -5;
+    if (p < 0.68) return -5 + 10 * ((p - 0.44) / 0.24); // zoom in
+    return 5;
   }
 
-  // Continuous both-ways drift rate (levels/sec). Frozen under reduced-motion.
-  const RATE = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 0.28;
-
-  function render(p, tau) {
+  function render(p) {
     const cd = depthFor(p);
-    // Rings appear only while demonstrating the zoom — hidden for the first question,
-    // and gone before the closing cards.
-    const reveal = smooth(0.10, 0.15, p) * (1 - smooth(0.66, 0.71, p));
-    // split: 0 = one coherent zoom (out then in); 1 = standing both-ways flow ("at once").
-    const split = smooth(0.48, 0.58, p);
-    const drift = tau * RATE;
-    for (const r of rings) {
-      // In the finale, even/odd rings drift opposite ways at the same rate — in and
-      // out at once — so the field flows endlessly while the frame holds still.
-      const L = mod((r.k - cd) + r.dir * split * drift, N);
+    // Circles appear only while demonstrating the zoom.
+    const reveal = smooth(0.13, 0.18, p) * (1 - smooth(0.67, 0.72, p));
+    for (const o of circles) {
+      const L = mod(o.k - cd, N);
       const radius = RMAX * Math.pow(RATIO, -L);
-      const op = smooth(0.5, 4, radius) * (1 - smooth(48, 78, radius)); // fade at center + edge
-      r.ring.setAttribute('r', radius.toFixed(3));
-      const dr = Math.max(0.15, radius * 0.05);
-      r.dot.setAttribute('cx', (radius * Math.cos(r.angle)).toFixed(3));
-      r.dot.setAttribute('cy', (radius * Math.sin(r.angle)).toFixed(3));
-      r.dot.setAttribute('r', dr.toFixed(3));
-      r.g.style.opacity = (op * reveal).toFixed(3);
+      const op = smooth(0.6, 4, radius) * (1 - smooth(46, 76, radius));
+      o.c.setAttribute('r', radius.toFixed(3));
+      o.c.style.opacity = (op * reveal).toFixed(3);
     }
     for (const c of cards) {
       const a = parseFloat(c.dataset.a), b = parseFloat(c.dataset.b);
-      const out = smooth(b - 0.05, b, p);
-      c.style.opacity = (smooth(a, a + 0.05, p) * (1 - out)).toFixed(3);
-      c.style.transform = 'scale(' + (1 - 0.28 * out).toFixed(3) + ')'; // recede + shrink on exit
+      c.style.opacity = (smooth(a, a + 0.05, p) * (1 - smooth(b - 0.05, b, p))).toFixed(3);
     }
     if (hint) hint.style.opacity = String(1 - smooth(0.0, 0.1, p));
   }
 
-  let curP = 0;
-  function computeP() {
-    const rect = wrap.getBoundingClientRect();
-    const total = Math.max(1, wrap.offsetHeight - window.innerHeight);
-    curP = clamp(-rect.top / total, 0, 1);
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const rect = wrap.getBoundingClientRect();
+      const total = Math.max(1, wrap.offsetHeight - window.innerHeight);
+      render(clamp(-rect.top / total, 0, 1));
+      ticking = false;
+    });
   }
-  window.addEventListener('scroll', computeP, { passive: true });
-  window.addEventListener('resize', computeP, { passive: true });
-  computeP();
-
-  // rAF clock so the finale can flow both ways in real time (not just on scroll).
-  let t0 = null;
-  function frame(now) {
-    if (t0 === null) t0 = now;
-    render(curP, (now - t0) / 1000);
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  render(0);
+  onScroll();
 </script>
