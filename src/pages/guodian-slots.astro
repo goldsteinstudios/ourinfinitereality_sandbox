@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import slotsData from '../../public/data/guodian_slots.json';
+
+// Working tool, deliberately not in the site nav. The gxdq transcription is
+// unattributed and unverified; nothing here is a published claim.
+const { metadata, slots } = slotsData;
+const priorityCount = slots.filter((s: any) => s.priority).length;
+const namedCount = slots.filter((s: any) => s.aligned && s.local_graph && s.local_graph !== '○').length;
+const openCount = slots.filter((s: any) => s.aligned && s.local_graph === '○').length;
+---
+
+<BaseLayout title="Guodian glyph slots">
+  <div id="slots-tool" class="max-w-5xl mx-auto px-4 py-8">
+
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold mb-1">郭店老子 — unresolved graphs</h1>
+      <p class="themed-text-muted text-sm">
+        {metadata.slots} positions where the gxdq.com transcription prints ○
+        (甲 {metadata.by_bundle.A} · 乙 {metadata.by_bundle.B} · 丙 {metadata.by_bundle.C})
+      </p>
+    </header>
+
+    <section class="mb-6 text-sm leading-relaxed p-4 rounded border-l-2" style="border-left-color: #c4472a; background: var(--color-surface);">
+      <p class="mb-2">
+        <strong>gxdq's ○ does not mean "unidentified".</strong> It means that editor had no Unicode
+        codepoint for the graph. Of the {metadata.aligned} slots aligned to a slip position,
+        <strong>{namedCount}</strong> are named by the local transcription or CHUBS already —
+        only <strong>{openCount}</strong> are ○ in every witness.
+      </p>
+      <p class="themed-text-muted">
+        The three witnesses are shown as-is and never merged. gxdq is unattributed and unverified
+        against slip images. {metadata.slots - metadata.aligned} slots could not be aligned to a
+        position, so they carry no glyph — a slot with no image is honest; a slot with the wrong
+        image is not.
+      </p>
+    </section>
+
+    <div class="mb-4 flex flex-wrap gap-2 items-center text-xs">
+      <button class="f" data-f="all" aria-pressed="true">all {metadata.slots}</button>
+      <button class="f" data-f="priority">canon-adjacent {priorityCount}</button>
+      <button class="f" data-f="open">○ everywhere {openCount}</button>
+      <button class="f" data-f="named">named by a witness {namedCount}</button>
+      <button class="f" data-f="glyph">has a glyph {metadata.with_glyph}</button>
+      <button class="f" data-f="unaligned">unaligned {metadata.slots - metadata.aligned}</button>
+      <button class="f" data-f="mine">my rulings <span id="mine-n">0</span></button>
+      <span class="ml-auto flex gap-2">
+        <button class="f" id="b-exp">export</button>
+      </span>
+    </div>
+
+    <div id="list"></div>
+
+    <script id="slots-json" type="application/json" set:html={JSON.stringify(slots)}></script>
+
+    <dialog id="dlg" class="p-4 rounded max-w-3xl w-full" style="background: var(--color-surface); color: var(--color-text);">
+      <div class="flex gap-2 mb-3 text-xs">
+        <button class="f" data-x="yaml" aria-pressed="true">yaml</button>
+        <button class="f" data-x="csv">csv</button>
+        <button class="f" data-x="json">json</button>
+        <span class="ml-auto"><button class="f" id="dlg-c">close</button></span>
+      </div>
+      <textarea id="dlg-t" class="w-full h-96 text-xs p-2 rounded font-mono" style="background: var(--color-bg); color: var(--color-text); border: 1px solid var(--color-border);" readonly></textarea>
+    </dialog>
+  </div>
+</BaseLayout>
+
+<!--
+  is:global, every selector prefixed with #slots-tool. Astro's scoped styles are
+  applied by stamping an attribute onto elements at build time; the slot rows are
+  injected via innerHTML at runtime and never get stamped, so scoped styles miss
+  them entirely. The #slots-tool prefix keeps these off the rest of the site.
+-->
+<style is:global>
+  #slots-tool .f {
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.6rem;
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.65rem;
+  }
+  #slots-tool .f[aria-pressed='true'] { border-color: #c4472a; background: rgba(196, 71, 42, 0.12); }
+  #slots-tool .slot {
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem 0; display: flex; gap: 1rem; align-items: flex-start;
+  }
+  #slots-tool .glyph { width: 76px; flex: 0 0 76px; }
+  #slots-tool .glyph img {
+    width: 76px; height: 76px; object-fit: contain;
+    background: #f4f1ea; border-radius: 3px; padding: 3px;
+  }
+  #slots-tool .noglyph {
+    width: 76px; height: 76px; border: 1px dashed var(--color-border);
+    border-radius: 3px; display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; color: #c4472a;
+  }
+  #slots-tool .han { font-family: 'Songti SC', 'STSong', 'Noto Serif CJK SC', serif; }
+  #slots-tool .ctx { font-size: 0.95rem; line-height: 1.9; word-break: break-all; }
+  #slots-tool .ctx mark {
+    background: rgba(196, 71, 42, 0.22); color: inherit;
+    padding: 0 0.15em; border-radius: 2px; font-weight: 700;
+  }
+  #slots-tool .wit { display: flex; gap: 1.5rem; flex-wrap: wrap; margin: 0.5rem 0; }
+  #slots-tool .wit > span { display: flex; flex-direction: column; gap: 0.1rem; }
+  #slots-tool .wit b { font-weight: 600; font-size: 1.15rem; line-height: 1.2; }
+  #slots-tool .src {
+    font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.5;
+  }
+  #slots-tool .jade { color: #4b7a58; }
+  #slots-tool .amber { color: #8a6a20; }
+  #slots-tool .cinnabar { color: #c4472a; }
+  :root[data-theme='dark'] #slots-tool .jade { color: #6e9478; }
+  :root[data-theme='dark'] #slots-tool .amber { color: #b08a3c; }
+  :root[data-theme='dark'] #slots-tool .glyph img { filter: invert(0.92) hue-rotate(180deg); }
+  #slots-tool .fields { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.5rem; }
+  #slots-tool .fields input, #slots-tool .fields select {
+    font-size: 0.75rem; padding: 0.25rem 0.4rem; border-radius: 2px;
+    background: var(--color-bg); color: var(--color-text); border: 1px solid var(--color-border);
+  }
+  #slots-tool .fields input.graph { width: 4.5rem; font-size: 1.15rem; }
+  #slots-tool .fields input.notes { flex: 1; min-width: 10rem; }
+  #slots-tool .pri { font-size: 0.68rem; color: #c4472a; margin-top: 0.3rem; }
+  #slots-tool .badge {
+    font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase;
+    border: 1px solid var(--color-border); border-radius: 2px;
+    padding: 0.1rem 0.3rem; opacity: 0.7; white-space: nowrap;
+  }
+  #slots-tool .ruled { border-left: 2px solid #6e9478; padding-left: 0.75rem; }
+</style>
+
+<script>
+  const KEY = 'guodian-slots-rulings-v1';
+  const SLOTS = JSON.parse(document.getElementById('slots-json').textContent);
+  const $ = (s) => document.querySelector(s);
+  let ann = {};
+  try { ann = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { ann = {}; }
+  let filter = 'all';
+
+  const save = () => {
+    try { localStorage.setItem(KEY, JSON.stringify(ann)); }
+    catch (e) { alert('Save failed — export your rulings now, this browser is not persisting them.'); }
+  };
+
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  function match(s) {
+    const a = ann[s.id];
+    switch (filter) {
+      case 'priority':  return !!s.priority;
+      case 'open':      return s.aligned && s.local_graph === '○';
+      case 'named':     return s.aligned && s.local_graph && s.local_graph !== '○';
+      case 'glyph':     return !!s.glyph_path;
+      case 'unaligned': return !s.aligned;
+      case 'mine':      return !!(a && (a.graph || a.reading || a.notes || (a.status && a.status !== 'open')));
+      default:          return true;
+    }
+  }
+
+  // Highlight this slot's ○ within the slip context: the nth ○ for the nth slot.
+  function contextHtml(s) {
+    const idx = parseInt(s.id.split('.')[1], 10);
+    let seen = 0;
+    return esc(s.context).replace(/○/g, () => (++seen === idx ? '<mark>○</mark>' : '○'));
+  }
+
+  function render() {
+    const rows = SLOTS.filter(match);
+    $('#list').innerHTML =
+      `<p class="themed-text-muted text-xs mb-3">${rows.length} slot${rows.length === 1 ? '' : 's'}</p>` +
+      rows.map((s) => {
+        const a = ann[s.id] || {};
+        const ruled = a.graph || a.reading || a.notes || (a.status && a.status !== 'open');
+        const glyph = s.glyph_path
+          ? `<img src="${esc(s.glyph_path)}" alt="slip ${s.slip} position ${s.position}" loading="lazy">`
+          : `<div class="noglyph han">○</div>`;
+        const local = s.aligned
+          ? `<span><span class="src">local</span><b class="han ${s.local_graph === '○' ? 'cinnabar' : 'jade'}">${esc(s.local_graph)}</b></span>`
+          : '';
+        const chubs = s.chubs
+          ? `<span><span class="src">chubs</span><b class="han amber">${esc(s.chubs)}</b></span>` : '';
+        return `
+        <div class="slot ${ruled ? 'ruled' : ''}" data-id="${s.id}">
+          <div class="glyph">${glyph}</div>
+          <div style="flex:1; min-width:0">
+            <div class="flex items-baseline gap-2 mb-1">
+              <strong class="text-sm">${s.id}</strong>
+              <span class="badge">${s.mark}</span>
+              ${s.aligned ? `<span class="badge">slip ${s.slip} · pos ${s.position}</span>`
+                          : `<span class="badge" style="border-color:#c4472a;color:#c4472a">unaligned</span>`}
+            </div>
+            <div class="ctx han themed-text-secondary">${contextHtml(s)}</div>
+            <div class="wit">
+              <span><span class="src">gxdq reads</span><b class="han">${esc(s.gxdq_reads ?? '—')}</b></span>
+              ${local}${chubs}
+            </div>
+            ${s.priority ? `<div class="pri">${esc(s.priority)}</div>` : ''}
+            <div class="fields">
+              <input class="graph han" data-k="graph" placeholder="graph" value="${esc(a.graph)}" title="what the slip actually shows">
+              <input data-k="reading" placeholder="reading" value="${esc(a.reading)}" title="the word you take it to write">
+              <select data-k="status">
+                ${['open', 'confirms', 'differs', 'uncertain'].map((o) =>
+                  `<option ${((a.status || 'open') === o) ? 'selected' : ''}>${o}</option>`).join('')}
+              </select>
+              <input data-k="source" placeholder="source" value="${esc(a.source)}">
+              <input class="notes" data-k="notes" placeholder="notes" value="${esc(a.notes)}">
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+    $('#mine-n').textContent = Object.keys(ann).filter((k) => {
+      const a = ann[k]; return a.graph || a.reading || a.notes || (a.status && a.status !== 'open');
+    }).length;
+  }
+
+  $('#list').addEventListener('input', (e) => {
+    const f = e.target.closest('[data-k]'); if (!f) return;
+    const id = e.target.closest('.slot').dataset.id;
+    ann[id] = ann[id] || {};
+    ann[id][f.dataset.k] = f.value;
+    ann[id].updated = new Date().toISOString().slice(0, 10);
+    save();
+    e.target.closest('.slot').classList.add('ruled');
+    $('#mine-n').textContent = Object.keys(ann).filter((k) => {
+      const a = ann[k]; return a.graph || a.reading || a.notes || (a.status && a.status !== 'open');
+    }).length;
+  });
+
+  document.querySelectorAll('[data-f]').forEach((b) => {
+    b.onclick = () => {
+      filter = b.dataset.f;
+      document.querySelectorAll('[data-f]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      render();
+    };
+  });
+
+  // Export carries the witnesses alongside each ruling, so a row is readable
+  // on its own without re-joining it to anything.
+  let xkind = 'yaml';
+  const rows = () => Object.entries(ann)
+    .filter(([, v]) => v.graph || v.reading || v.notes || (v.status && v.status !== 'open'))
+    .sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true }))
+    .map(([id, v]) => ({ ...SLOTS.find((s) => s.id === id), ...v }));
+
+  function build(kind) {
+    const r = rows();
+    if (!r.length) return '# nothing ruled yet';
+    if (kind === 'json') return JSON.stringify({ source: 'guodian-slots tool', slots: r }, null, 2);
+    const q = (s) => JSON.stringify(String(s ?? ''));
+    if (kind === 'csv') {
+      return 'id,slip,position,gxdq_reads,local_graph,chubs,graph,reading,status,source,notes\n' +
+        r.map((x) => [x.id, x.slip, x.position, x.gxdq_reads, x.local_graph, x.chubs,
+                      x.graph, x.reading, x.status, x.source, x.notes].map(q).join(',')).join('\n');
+    }
+    return '# guodian glyph slots — rulings\n' +
+      '# witnesses shown for context; graph/reading/status are Will\'s\n' +
+      `# generated: ${new Date().toISOString().slice(0, 10)}\n\nslots:\n` +
+      r.map((x) =>
+        `  - id: ${x.id}\n    slip: ${x.slip}\n    position: ${x.position ?? 'null'}\n` +
+        `    gxdq_reads: ${q(x.gxdq_reads)}\n    local_graph: ${q(x.local_graph)}\n` +
+        `    chubs: ${q(x.chubs)}\n    graph: ${q(x.graph)}\n    reading: ${q(x.reading)}\n` +
+        `    status: ${x.status || 'open'}\n    source: ${q(x.source)}\n    notes: ${q(x.notes)}\n` +
+        `    updated: ${x.updated || ''}`).join('\n');
+  }
+
+  $('#b-exp').onclick = () => { $('#dlg-t').value = build(xkind); $('#dlg').showModal(); };
+  $('#dlg').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-x]'); if (!b) return;
+    xkind = b.dataset.x;
+    $('#dlg').querySelectorAll('[data-x]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    $('#dlg-t').value = build(xkind);
+  });
+  $('#dlg-c').onclick = () => $('#dlg').close();
+
+  render();
+</script>
