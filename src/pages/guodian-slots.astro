@@ -128,6 +128,13 @@ const openCount = slots.filter((s: any) => s.aligned && s.local_graph === '○')
     padding: 0.1rem 0.3rem; opacity: 0.7; white-space: nowrap;
   }
   #slots-tool .ruled { border-left: 2px solid #6e9478; padding-left: 0.75rem; }
+  #slots-tool .prop {
+    margin-top: 0.55rem; font-size: 0.65rem; letter-spacing: 0.04em;
+    color: #6e9478; background: rgba(110, 148, 120, 0.1);
+    border: 1px solid rgba(110, 148, 120, 0.5); border-radius: 2px;
+    padding: 0.3rem 0.55rem; cursor: pointer;
+  }
+  #slots-tool .prop:hover { background: rgba(110, 148, 120, 0.2); }
 </style>
 
 <script>
@@ -144,6 +151,27 @@ const openCount = slots.filter((s: any) => s.aligned && s.local_graph === '○')
   };
 
   const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+  // Two slots are "the same character" only when all three witnesses read them
+  // identically — same local graph, same CHUBS, same gxdq reading. That is a
+  // fact about the transcriptions, not a guess: the machine groups, you decide
+  // to propagate. Slots where only gxdq has an opinion (local ○, no CHUBS) are
+  // never grouped — that would be declaring an identity from one editor's guess.
+  const sig = (s) => {
+    const anchored = s.local_graph && s.local_graph !== '○';
+    const chubsNamed = s.chubs && s.chubs.includes('（');
+    if (!s.aligned || (!anchored && !chubsNamed)) return null;
+    return `${s.local_graph}|${s.chubs || ''}|${s.gxdq_reads || ''}`;
+  };
+  const isRuled = (a) => a && (a.graph || a.reading || a.notes || (a.status && a.status !== 'open'));
+  const FIELDS = ['graph', 'reading', 'status', 'source', 'notes'];
+
+  // Other slots with the same witness signature that have NO ruling yet.
+  const emptyMatches = (s) => {
+    const k = sig(s);
+    if (!k) return [];
+    return SLOTS.filter((o) => o.id !== s.id && sig(o) === k && !isRuled(ann[o.id]));
+  };
 
   function match(s) {
     const a = ann[s.id];
@@ -206,6 +234,9 @@ const openCount = slots.filter((s: any) => s.aligned && s.local_graph === '○')
               <input data-k="source" placeholder="source" value="${esc(a.source)}">
               <input class="notes" data-k="notes" placeholder="notes" value="${esc(a.notes)}">
             </div>
+            ${(isRuled(a) && emptyMatches(s).length)
+              ? `<button class="prop" data-prop="${s.id}">apply to ${emptyMatches(s).length} slot${emptyMatches(s).length === 1 ? '' : 's'} with identical witnesses →</button>`
+              : ''}
           </div>
         </div>`;
       }).join('');
@@ -225,6 +256,32 @@ const openCount = slots.filter((s: any) => s.aligned && s.local_graph === '○')
     $('#mine-n').textContent = Object.keys(ann).filter((k) => {
       const a = ann[k]; return a.graph || a.reading || a.notes || (a.status && a.status !== 'open');
     }).length;
+  });
+
+  // Propagate one ruling to every empty slot with the same witness signature.
+  // Preview the exact ids first; never touch a slot that already has a ruling.
+  $('#list').addEventListener('click', (e) => {
+    const b = e.target.closest('[data-prop]'); if (!b) return;
+    const src = SLOTS.find((s) => s.id === b.dataset.prop);
+    const targets = emptyMatches(src);
+    if (!targets.length) return;
+    const a = ann[src.id];
+    const ok = confirm(
+      `Apply your ruling on ${src.id} (graph ${a.graph || '—'}) to ${targets.length} slot(s) ` +
+      `with identical witnesses — local ${src.local_graph}, CHUBS ${src.chubs || '—'}, gxdq ${src.gxdq_reads || '—'}:\n\n` +
+      targets.map((t) => `  ${t.id}  (slip ${t.slip}, pos ${t.position})`).join('\n') +
+      `\n\nOnly these empty slots are filled. Nothing you have already ruled is changed.`
+    );
+    if (!ok) return;
+    const today = new Date().toISOString().slice(0, 10);
+    targets.forEach((t) => {
+      ann[t.id] = ann[t.id] || {};
+      FIELDS.forEach((k) => { if (a[k] != null && a[k] !== '') ann[t.id][k] = a[k]; });
+      ann[t.id].updated = today;
+      ann[t.id].propagated_from = src.id;
+    });
+    save();
+    render();
   });
 
   document.querySelectorAll('[data-f]').forEach((b) => {

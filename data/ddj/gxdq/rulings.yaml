@@ -1,0 +1,737 @@
+# guodian glyph slots — rulings
+# witnesses shown for context; graph/reading/status are Will's
+# generated: 2026-07-20
+
+slots:
+  - id: A1.1
+    slip: 1
+    position: 1
+    gxdq_reads: "绝"
+    local_graph: "○"
+    chubs: ""
+    graph: "绝"
+    reading: "Sever"
+    status: uncertain
+    source: ""
+    notes: "the cut doesn't match other cut glyphs"
+    updated: 2026-07-17
+  - id: A1.2
+    slip: 1
+    position: 8
+    gxdq_reads: "倍"
+    local_graph: "伓"
+    chubs: ""
+    graph: "伓"
+    reading: "Influential, large and powerful appearance"
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A1.3
+    slip: 1
+    position: 10
+    gxdq_reads: "绝"
+    local_graph: "○"
+    chubs: ""
+    graph: "绝"
+    reading: "Sever"
+    status: open
+    source: ""
+    notes: "the cut doesn't match other cut glyphs"
+    updated: 2026-07-17
+  - id: A1.4
+    slip: 1
+    position: 11
+    gxdq_reads: "巧"
+    local_graph: "攷"
+    chubs: ""
+    graph: ""
+    reading: ""
+    status: open
+    source: ""
+    notes: "unclear on left glyph. right glyph is 攴"
+    updated: 2026-07-17
+  - id: A1.5
+    slip: 1
+    position: 14
+    gxdq_reads: "盗"
+    local_graph: "○"
+    chubs: ""
+    graph: "覜"
+    reading: "Vision, to look, to gaze into the distance, to survey, to look around"
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A1.6
+    slip: 1
+    position: 19
+    gxdq_reads: "绝"
+    local_graph: "○"
+    chubs: ""
+    graph: "绝"
+    reading: "Sever"
+    status: open
+    source: ""
+    notes: "the cut doesn't match other cut glyphs"
+    updated: 2026-07-17
+  - id: A1.7
+    slip: 1
+    position: 20
+    gxdq_reads: "伪"
+    local_graph: "○"
+    chubs: ""
+    graph: "𢠿"
+    reading: "Arising/acting, yet not imposing an artificial limit."
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A1.8
+    slip: 1
+    position: 22
+    gxdq_reads: ""
+    local_graph: "慮"
+    chubs: ""
+    graph: "慮"
+    reading: "1. To think: to consider; to ponder. A person without foresight will have immediate worries. 　2. To worry: to be concerned; to be concerned. Not worth worrying about."
+    status: differs
+    source: ""
+    notes: "虑"
+    updated: 2026-07-17
+  - id: A2.1
+    slip: 2
+    position: 2
+    gxdq_reads: "辨"
+    local_graph: "史"
+    chubs: "史（使）"
+    graph: "史"
+    reading: "1. The development process of nature and human society, also referring to the written records and disciplines that record and study these processes: history, comprehensive history, dynastic history, modern history, world history, literature, historical poetry, historical works (a major category of ancient books, including various historical works), historical forum, historical commentary, prehistoric times (the ancient times without written records), historical records never cease. 　2. An ancient official in charge of recording historical events: Grand Historian, Inner Secretary."
+    status: differs
+    source: ""
+    notes: "⺊曰又"
+    updated: 2026-07-17
+  - id: A2.2
+    slip: 2
+    position: 9
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A2.3
+    slip: 2
+    position: 22
+    gxdq_reads: "海"
+    local_graph: "○"
+    chubs: "○（海）"
+    graph: "𣳠"
+    reading: "Ocean (Mother Water)"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A4.1
+    slip: 4
+    position: 28
+    gxdq_reads: "厌"
+    local_graph: "詀"
+    chubs: "詀（厭）"
+    graph: "詀"
+    reading: "Targeted, reactive feedback signal or localized"
+    status: differs
+    source: ""
+    notes: "   While philology flags this as a phonetic loan for 厭 (weary/loathe), the geometry reveals an engineering specification: the components of the system happily advance (樂進) without producing localized friction, chatter, or counter-signal (弗詀). It describes a zero-resistance state in the network."
+    updated: 2026-07-17
+  - id: A5.1
+    slip: 5
+    position: 14
+    gxdq_reads: "罪"
+    local_graph: "辠"
+    chubs: "辠（罪）"
+    graph: "辠"
+    reading: "Fault/Crime"
+    status: confirms
+    source: ""
+    notes: "Same as 罪"
+    updated: 2026-07-17
+  - id: A5.2
+    slip: 5
+    position: 17
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A5.3
+    slip: 5
+    position: 23
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A6.1
+    slip: 6
+    position: 4
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A6.2
+    slip: 6
+    position: 19
+    gxdq_reads: "道"
+    local_graph: "{行人}"
+    chubs: "{行人}（道）"
+    graph: "行人"
+    reading: "The coordinate trajectory of an embedded agent (person at crossroads)"
+    status: differs
+    source: ""
+    notes: "alternative to 道"
+    updated: 2026-07-17
+  - id: A6.3
+    slip: 6
+    position: 22
+    gxdq_reads: "主"
+    local_graph: "宔"
+    chubs: "宔（主）"
+    graph: "宔"
+    reading: "Central Node"
+    status: differs
+    source: ""
+    notes: "\"Anchor\" 主 under a protective field (宀)"
+    updated: 2026-07-17
+  - id: A7.1
+    slip: 7
+    position: 25
+    gxdq_reads: "矜"
+    local_graph: "矜"
+    chubs: "矜"
+    graph: "矜"
+    reading: "1. To pity, to cherish: ~悯 (pity). ~惜 (cherish). ~恤 (comfort). 　2. Self-esteem, arrogance, boasting: ~夸 (boast). ~伐 (to boast). ~恃 (to rely on). 骄~ 　(arrogant). 3. Dignified, reserved: ~持 (dignified). ~重 (zhòng)."
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A8.1
+    slip: 8
+    position: 27
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A8.2
+    slip: 8
+    position: 34
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A9.1
+    slip: 9
+    position: 2
+    gxdq_reads: "畏"
+    local_graph: "愄"
+    chubs: ""
+    graph: "恖"
+    reading: "Think"
+    status: open
+    source: ""
+    notes: "囟心 ancient form of 思"
+    updated: 2026-07-17
+  - id: A9.2
+    slip: 9
+    position: 4
+    gxdq_reads: "邻"
+    local_graph: "○"
+    chubs: ""
+    graph: "𠳵"
+    reading: "Adjacent, near by"
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A9.3
+    slip: 9
+    position: 7
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: "1. To intimidate (hè ㄏㄜˋ): Bluster won't intimidate anyone. 　2. To deceive, to fool: To deceive someone with rumors."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A9.5
+    slip: 9
+    position: 13
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: ""
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A9.6
+    slip: 9
+    position: 19
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: ""
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A9.7
+    slip: 9
+    position: 24
+    gxdq_reads: ""
+    local_graph: "坉"
+    chubs: ""
+    graph: "坉"
+    reading: ""
+    status: open
+    source: ""
+    notes: "Only a single example in the etymological record"
+    updated: 2026-07-18
+  - id: A9.8
+    slip: 9
+    position: 25
+    gxdq_reads: "乎"
+    local_graph: "唬"
+    chubs: "唬（乎）"
+    graph: "唬"
+    reading: ""
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-17
+  - id: A10.1
+    slip: 10
+    position: 2
+    gxdq_reads: "将"
+    local_graph: "𨟻"
+    chubs: ""
+    graph: "将"
+    reading: "About to, on the verge of, sustaining, bringing forth"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-18
+  - id: A10.3
+    slip: 10
+    position: 10
+    gxdq_reads: ""
+    local_graph: "迬"
+    chubs: "迬（動）"
+    graph: "迬"
+    reading: ""
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A10.4
+    slip: 10
+    position: 12
+    gxdq_reads: "将"
+    local_graph: "𨟻"
+    chubs: ""
+    graph: "将"
+    reading: "About to, on the verge of, sustaining, bringing forth"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-18
+  - id: A10.5
+    slip: 10
+    position: 17
+    gxdq_reads: "道"
+    local_graph: "{行人}"
+    chubs: "{行人}（道）"
+    graph: "行人"
+    reading: "The coordinate trajectory of an embedded agent (person at crossroads)"
+    status: differs
+    source: ""
+    notes: "alternative to 道"
+    updated: 2026-07-18
+  - id: A11.1
+    slip: 11
+    position: 15
+    gxdq_reads: "失"
+    local_graph: "○"
+    chubs: "○（失）"
+    graph: "失"
+    reading: "\"To lose To break(a promise) To be lost To fail to grasp/ Error, mistake\""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A11.2
+    slip: 11
+    position: 23
+    gxdq_reads: "始"
+    local_graph: "○"
+    chubs: "○（始）"
+    graph: "𢠿"
+    reading: "Arising/acting, yet not imposing an artificial limit."
+    status: differs
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A12.1
+    slip: 12
+    position: 9
+    gxdq_reads: "教"
+    local_graph: "○"
+    chubs: "○（教）"
+    graph: "教"
+    reading: "Teach"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A12.2
+    slip: 12
+    position: 11
+    gxdq_reads: "教"
+    local_graph: "○"
+    chubs: "○（教）"
+    graph: "教"
+    reading: "Teach"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A12.3
+    slip: 12
+    position: 17
+    gxdq_reads: "过"
+    local_graph: "○"
+    chubs: "○（過）"
+    graph: "過"
+    reading: "\"To pass through, cross In the past\""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A15.1
+    slip: 15
+    position: 2
+    gxdq_reads: "难"
+    local_graph: "○"
+    chubs: "○（難）"
+    graph: "難"
+    reading: "Difficult"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A15.2
+    slip: 15
+    position: 7
+    gxdq_reads: "难"
+    local_graph: "○"
+    chubs: "○（難）"
+    graph: "難"
+    reading: "Difficult"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A17.1
+    slip: 17
+    position: 13
+    gxdq_reads: "教"
+    local_graph: "○"
+    chubs: "○（教）"
+    graph: "教"
+    reading: "Teach"
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A17.3
+    slip: 17
+    position: 19
+    gxdq_reads: "始"
+    local_graph: "○"
+    chubs: "○（始）"
+    graph: "𢠿"
+    reading: ""
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A18.1
+    slip: 18
+    position: 18
+    gxdq_reads: "地"
+    local_graph: "○"
+    chubs: "○（地）"
+    graph: "坨"
+    reading: "clumps or piles"
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-16
+  - id: A21.1
+    slip: 21
+    position: 2
+    gxdq_reads: ""
+    local_graph: "○"
+    chubs: "○（狀）"
+    graph: "𰠓"
+    reading: ""
+    status: open
+    source: "https://www.unicode.org/charts/PDF/U30000.pdf"
+    notes: ""
+    updated: 2026-07-20
+  - id: A21.3
+    slip: 21
+    position: 7
+    gxdq_reads: "地"
+    local_graph: "○"
+    chubs: "○（地）"
+    graph: "坨"
+    reading: "clumps or piles"
+    status: open
+    source: ""
+    notes: "\"Accreted Pile\"?"
+    updated: 2026-07-17
+  - id: A21.6
+    slip: 21
+    position: 25
+    gxdq_reads: "字"
+    local_graph: "○"
+    chubs: "○（字）"
+    graph: "𪪋"
+    reading: "Character/name"
+    status: uncertain
+    source: ""
+    notes: "equivalent to 茲"
+    updated: 2026-07-17
+  - id: A21.7
+    slip: 21
+    position: 29
+    gxdq_reads: "吾"
+    local_graph: "○"
+    chubs: "○（吾）"
+    graph: ""
+    reading: ""
+    status: uncertain
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A25.1
+    slip: 25
+    position: 5
+    gxdq_reads: ""
+    local_graph: "○"
+    chubs: "○（困）"
+    graph: "之木"
+    reading: ""
+    status: uncertain
+    source: ""
+    notes: "something about a core node (木) projecting an outward vector (之)?"
+    updated: 2026-07-17
+  - id: A25.2
+    slip: 25
+    position: 9
+    gxdq_reads: "兆"
+    local_graph: "○"
+    chubs: "○（兆）"
+    graph: ""
+    reading: ""
+    status: uncertain
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A31.2
+    slip: 31
+    position: 6
+    gxdq_reads: "起"
+    local_graph: "○"
+    chubs: ""
+    graph: ""
+    reading: ""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A31.3
+    slip: 31
+    position: 11
+    gxdq_reads: "盗"
+    local_graph: "○"
+    chubs: ""
+    graph: "覜"
+    reading: "Vision/Looking"
+    status: differs
+    source: "https://www.gxdq.com/zidian/899C.html"
+    notes: "An ancient form of \"眺\" (tiào)."
+    updated: 2026-07-20
+  - id: A31.4
+    slip: 31
+    position: 28
+    gxdq_reads: "富"
+    local_graph: "○"
+    chubs: "○（富）"
+    graph: "富"
+    reading: "Wealth/Power"
+    status: confirms
+    source: "https://www.gxdq.com/zidian/5BCC.html"
+    notes: ""
+    updated: 2026-07-20
+  - id: A34.1
+    slip: 34
+    position: 9
+    gxdq_reads: "怒"
+    local_graph: "○"
+    chubs: ""
+    graph: ""
+    reading: ""
+    status: open
+    source: ""
+    notes: "心女从"
+    updated: 2026-07-20
+  - id: A34.4
+    slip: 34
+    position: 26
+    gxdq_reads: "○（常）"
+    local_graph: "○"
+    chubs: "○（常）"
+    graph: ""
+    reading: "Long-lasting, unchanging， “constant quantity\""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A35.4
+    slip: 35
+    position: 7
+    gxdq_reads: "气"
+    local_graph: "○"
+    chubs: "○（氣）"
+    graph: ""
+    reading: ""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A36.2
+    slip: 36
+    position: 3
+    gxdq_reads: "得"
+    local_graph: "○"
+    chubs: "○（持）"
+    graph: ""
+    reading: "Gain"
+    status: confirms
+    source: "https://www.gxdq.com/zidian/z92613t.html"
+    notes: "replacement for de, gain"
+    updated: 2026-07-20
+  - id: A36.3
+    slip: 36
+    position: 5
+    gxdq_reads: "亡"
+    local_graph: "○"
+    chubs: "○（亡）"
+    graph: "𰶲"
+    reading: "Loss"
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A36.5
+    slip: 36
+    position: 7
+    gxdq_reads: "病"
+    local_graph: "○"
+    chubs: "○（病）"
+    graph: ""
+    reading: ""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A36.7
+    slip: 36
+    position: 12
+    gxdq_reads: "费"
+    local_graph: "○"
+    chubs: "○（費）"
+    graph: ""
+    reading: ""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A36.8
+    slip: 36
+    position: 13
+    gxdq_reads: "厚"
+    local_graph: "○"
+    chubs: "○（厚）"
+    graph: ""
+    reading: ""
+    status: confirms
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A36.10
+    slip: 36
+    position: 17
+    gxdq_reads: "亡"
+    local_graph: "○"
+    chubs: "○（亡）"
+    graph: "𰶲"
+    reading: "Loss"
+    status: open
+    source: ""
+    notes: ""
+    updated: 2026-07-20
+  - id: A37.3
+    slip: 37
+    position: 29
+    gxdq_reads: ""
+    local_graph: "○"
+    chubs: "○（困）"
+    graph: "之木"
+    reading: ""
+    status: uncertain
+    source: ""
+    notes: ""
+    updated: 2026-07-20
