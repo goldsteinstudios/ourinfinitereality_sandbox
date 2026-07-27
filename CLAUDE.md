@@ -18,112 +18,157 @@ This repository contains the Recursive Structural Model (RSM) and its convergenc
 
 This is the load-bearing premise. Everything follows from it.
 
-## The Chains (v7.7 — current working set; NOT sealed)
+## The Chains (v9 — current working set; NOT sealed)
 
-v7.7 is an **interlingua + three renderings**. Only the structural chain is register-neutral; **no
-rendering cites another rendering's theorems** — that is what makes their independence real. Every
-document is machine-drafted (Claude/Fable 5) and closes "Not sealed." Location: `rsm/canonical/chains/v7.7/`.
+v9 is a **spine + three renderings**. Only the structural chain is register-neutral; **no rendering
+cites another rendering's theorems** — that is what makes their independence real. Every document
+closes "Not sealed." Location: `rsm/canonical/chains/v9/`.
 
 | Chain | Register | File |
 |-------|----------|------|
-| Structural (the spine) | implicit / skeleton | `structural_v7.7_r3.md` |
-| Just-Math | derivation | `just_math_v7.7_r4.md` |
-| Just-Physics | rendering (predictions-only evidence) | `just_physics_v7.7_r1.md` |
-| Just-DDJ | correspondence (subject of translation) | `just_ddj_v7.7_r3.md` |
+| Structural (the spine) | logic only | `structural_v9.md` |
+| Just-Math | derivation | `just_math_v9.md` |
+| Just-Physics | rendering (map + refusals ledger; predictions-only evidence) | `just_physics_v9.md` |
+| Just-DDJ | correspondence (subject of translation) | `just_ddj_v9.md` |
 
-Read `rsm/canonical/chains/v7.7/README.md` first. v7.7 supersedes **v7.5** (which called itself
-"sealed" but carried the seating contradiction) and **v7.6-candidate** (audited; seating refused);
-both are kept in place as history. The reconciliation trail is in `rsm/audit/`.
+Read `rsm/canonical/chains/v9/README.md` first. v9 supersedes **v7.7**, and through it **v7.5** (which
+called itself "sealed" but carried the seating contradiction) and **v7.6-candidate** (audited; seating
+refused); all are kept in place as history. The reconciliation trail is in `rsm/audit/`.
 
-## Status Tags
+## Status Tags (v9's own definitions — epistemic standing, not history)
 
-- **[derived]** - Established in math chain, proven
-- **[candidate]** - Convergence register, not yet earned as :: claim
-- **[falsifiable]** - Empirical prediction; if not observed, framework is wrong
-- **[open]** - Not yet resolved
+- **[derived]** - Follows from the premises
+- **[candidate]** - Proposed, not forced
+- **[open]** - Named and unresolved
+- **[unaudited]** - Machine-closed, awaiting the author's adversarial read
+- **[verified]** - Machine-checked computation (math chain)
+- **[G]** / **[R]** - Guodian-attested / received-text or Mawangdui only (DDJ chain)
 
-## Premises and what dissolved (v7.7)
+## The two tests (v9, structural §8) — apply these before anything enters
 
-**Premises (structural chain):** P1 the Conditional (definitional: vast + divisible) · P2 the Bridge
-(what is not distinguishable does not obtain) · **L1** no-unframed-distinction *(lemma-candidate, the
-single head of the audit)* · the anchoring line *(candidate)*. The **math chain's** working set:
-Conditional + Bridge + Definition T + the **seating commitment** + L1.
+- **The chart test:** does the claim survive changing the drawing? **Perpendicularity,
+  straightness-as-driver, ambient space for the sphere, and the sign on a mode each failed it** —
+  each was a fact about a presentation, not about the structure.
+- **The grammar test:** does the word's grammar assert what the framework denies? Agentive verbs for
+  structural facts, transfer-language for non-events, removal narratives for constitutive exclusions,
+  staging conjunctions for simultaneous constitution, reified infinities.
 
-**Dissolved on the way to v7.7** (walkthrough ledger, supplements r2–r7):
-- **Postulate F** — dissolved into the definition of frame, given L1.
-- **Postulate R** — deleted (v7.5's γ=1).
-- **Frame-Universality** — dissolved (kernel = a σ-invariance theorem; calibration = inheritance).
-- **Postulate Q** — struck, now **conditional** on the "generation principle" (open item).
-- **Lemma L2** (center-role univocity) — retired as malformed.
+Both failures look like clarity from the inside; that is why the tests are written down.
 
-**Restructured:** "forced traversal" was circular in v7.5 (it used a radius before the metric existed);
-v7.7 grounds the standoff F-free via L1. The metric is derived via the **slice identity** (`Q_i`/`Q_j`
-are the two real slices of one law `Q(z)=1ₙ`), not by a separate calibration. i² = −1 is **promoted** as
-a two-paths pair (elimination + antipodal binding).
+## Premises (v9)
 
-## The two centers — met vs unmet (RESOLVED in v7.7)
+**P1 — the Conditional** (definitional: vast + divisible) · **P2 — the Bridge** (what obtains is
+distinguishable) · **Definition (frame)**: a frame is the coinherence of one distinction — two
+conjugate modes, their reciprocal relation, their balance, and their origin, arriving together or not
+at all; **one constitutive pair per frame** · **Corollary**: every distinction constitutes a frame, so
+distinction beneath a frame's unit is *another frame*, not a smaller item within this one.
 
-Naming: **Oₙ** :: `xaxisₙ ∩ yaxisₙ` :: the origin · **Pₙ** :: `Gₙ ∩ Bₙ` :: 玄 · **P₀** :: 玄牝 :: the
-generative paradox. (`Cₙ`/`Sₙ±` retired — it called `Gₙ ∩ Bₙ` "occupiable," the seating error.)
+That is the whole premise set. Everything else is what P1 and P2 jointly require; where a further
+assumption operates, v9 names it in the open items.
 
-The two centers are typed **met vs unmet** — *not* occupied vs unoccupiable (occupancy vocabulary is
-struck as ill-typed; the skeleton is implicit-register: no motion, duration, or occupancy):
+**What changed from v7.7 — three re-typings, not version bumps:**
+- **L1 became the Corollary.** v7.7's open item 1 — "no unframed distinction," *the single head of the
+  audit*, carrying four loads — is now a corollary of the frame Definition and appears in no open-items
+  list. The load did not vanish; it moved into a definition. Definitions are where audits don't look.
+- **The measure is no longer derived.** v7.7 struck Postulate Q by forcing `Q_i` in four steps. v9
+  re-types the measure as **definitional-by-register**, tagged `[unaudited]`, and states the
+  non-quadratic candidate in the open. So **"orthogonal" is a rendering fact** — the skeleton says
+  *independent*, and perpendicularity enters downstream with the measure.
+- **P₀ re-typed.** Not "absolute indistinguishability" (v7.7) but the **master pair
+  (distinction/indistinction) at equality and cancellation** — explicitly *not* indistinction, which is
+  only one side. Faces: `|0|` collapse-via-emptiness, `|1|` collapse-via-fullness.
 
-- **Oₙ = the unmet crossing.** Arms approach asymptotically, never meet; the frame's local face of P₀;
-  inherited by the child as its origin.
-- **Pₙ = the realized crossing.** Distinction intact; generative; **cannot be constituted as a frame** —
-  this impossibility is the engine (one impossibility, two discharges: rotation and recursion).
+Earlier dissolutions still stand as history: Postulate F, Postulate R, Frame-Universality, Postulate Q,
+Lemma L2. The reconciliation trail is in `rsm/audit/`.
 
-Met-ness is frame-relative: `Oₙ = P₍ₙ₋₁₎` is one locus under two frame-readings (met-from-without,
-unmet-from-within). See the structural chain §5.
+## The two centers (v9)
 
-**Two discipline notes that still bite:**
-- Do not merge these four types: `xaxisₙ`/`yaxisₙ` (loci) · `Xₙ`/`Yₙ` (mode variables) · `Gₙ`/`Bₙ`
-  (loci) · `±1`/`±i` (algebra elements). Merging them produced the seating error.
+Naming: **Oₙ** = the co-vanishing locus · **Pₙ** = the balance paradox · **P₀** = the total paradox ::
+玄牝. `Pₙ` and `P₀` are **one species at two scopes**.
+
+- **O = the co-vanishing locus** (unmet in its own frame's reading). Where both modes would reach
+  operational absence together; nothing on the curve approaches it. The curve bends *around* O — "no
+  through, only around" is a description of the curve, not an added rule.
+- **P = the balance paradox.** Balance *at frame resolution* obtains — equal amounts is not the modes
+  becoming one. What cannot obtain is **exactness**; and P cannot serve as frame n's origin (one
+  constitutive pair per frame, and n has no spare pair to grant it). Met at resolution; no exactness
+  anywhere; no origin here.
+
+**"Met"/"unmet" are frame-reading statuses only; occupancy language does not type these loci.**
+(`Cₙ`/`Sₙ±` was retired for calling `Gₙ ∩ Bₙ` "occupiable" — the seating error.)
+
+**Three discipline notes that still bite:**
+- **The modes are magnitudes, not signed quantities.** The conjugate of a mode is another mode, not its
+  negative; the sign belongs to the chart. The structural status of the signed register is **math open
+  item 9** — and if the sign is chart residue, then both i² routes, orbit-necessity, the minimal
+  traversal, and the ν-centroid instances are *rendering*. The audit scripts compute in a signed chart,
+  so read a `[PASS]` accordingly.
 - Two things are written `1ₙ` and are **different quantities**: the conserved product `Q_j = XₙYₙ`, and
-  `Q_i` = the squared distance from `Oₙ`. They are the two slices of one law and agree only at
-  `Gₙ ∩ Bₙ`. Run `python3 rsm/audit/checks.py`.
+  `Q_i` = the squared distance from `Oₙ`. Two slices of one law; they agree only at the seats.
+- Cross-frame **magnitude comparison is undefined**. "Sub-1ₙ" is unit-relative typing, not size — the
+  child is not smaller; it is the approach that does not finish.
 
-## Open Items (v7.7, ranked)
+Run `python3 rsm/audit/checks.py` and `python3 rsm/audit/cross_model_checks.py`.
 
-1. **L1** — no-unframed-distinction: theorem via the cascade, or the framework's one named lemma. The
-   single head of the audit; carries four loads.
-2. **The anchoring line** — every finer frame is parent-seeded at P (the discharge's one open step).
-3. **The generation principle** — frame measures are faces of the constitutive law; premise or
-   derivation target. Postulate Q's strike is conditional on it.
-4. **Cross-frame unit relation** `1ₙ ↔ 1₍ₙ₊₁₎` — the deflation guard makes it mandatory.
-5. **Dimension count and uniqueness** — two rival derivations (binding-extortion schema vs the |1|
-   cascade), unadjudicated. Three is *necessary*; uniqueness open (`S²` embeds in `ℝ⁴`).
-6. **Branching beyond seats; uniqueness of O₁.**
+## Open Items (v9)
+
+**Structural chain (6):**
+1. **The unaudited closures** — the reciprocity joint's native-magnitudes step; anchoring-by-constitution;
+   the ground's self-sufficiency candidate.
+2. **Cross-frame unit relation** `1ₙ ↔ 1₍ₙ₊₁₎` — wanted by the deflation guard's novelty claim; no longer
+   needed for size comparison, which is not defined.
+3. **Dimension count** — whether the joint's orientation-freedom is space, and whether three; two rival
+   derivations in the math chain, unadjudicated.
+4. **Branching beyond the balance.**
+5. **Priority and uniqueness of the first distinction** — "at least one" is derived; "exactly one, and
+   first" is asserted.
+6. **The involution** — sign-flip (chart-stated) vs mode-swap (survives redrawing). Determines the fate
+   of the signed register and the reading of `非`.
+
+**Math chain (9):** the unaudited closures · cross-frame unit relation · dimension three · cross-frame
+expression · Definition T · the tree-question · branching beyond seats · quantitative complementarity ·
+**the signed register's structural status.**
 
 ## DDJ Correspondences
 
-The DDJ chain is now the source of record — it carries the correspondences with `[G]`/`[R]` stratum
-tags, the checksum doctrine, and the open checksum items. See `rsm/canonical/chains/v7.7/just_ddj_v7.7_r3.md`.
-Notable v7.7 updates: `名` obtainedness is **held open** (not "名 :: i (derived)" as v7.5 had it), with
-the new `明/名` square-vs-root split ratified; `玄牝 :: P₀`; `弗居 ::` the seat's non-constitutability
-(the strongest `[G]` match); `有無相生` rewritten under the slice identity. The DDJ is re-typed from
-witness to **subject of translation** — present-day convergence with the math carries no evidential
-weight (agreement with one's own seed).
+The DDJ chain is the source of record — it carries the correspondences with `[G]`/`[R]` stratum tags,
+the checksum doctrine, and the open checksum items. See `rsm/canonical/chains/v9/just_ddj_v9.md`.
+Anchors: `玄 :: Pₙ`, `玄牝 :: P₀`, `有 × 無 = 1ₙ`, `弗居 ::` the origin-denial (the strongest `[G]`
+match), `非 ::` the divergence of two registers around a shared invariant.
+
+The DDJ is typed as **subject of translation, generatively upstream of the framework** — the author
+built the framework through the text, so agreement between them carries **no public evidential
+weight**. What the text *can* supply is **resistance**: manuscript readings that refuse a
+correspondence, and preregistered tests scored against the strips.
+
+**The instrument's traffic rules** (v9): text→math at the *notation* layer and math→commentary at the
+*reading* layer are legitimate. Text→math at the *premise* layer and math→text at the *attestation*
+layer are **forbidden** — no character enters a derivation; no structure overrides the strips.
 
 ## Reference Locations
 
-- **Current chains**: `rsm/canonical/chains/v7.7/` (read its `README.md` first)
+- **Current chains**: `rsm/canonical/chains/v9/` (read its `README.md` first)
 - **Audit / reconciliation trail**: `rsm/audit/` — `divergence_ledger_r1.md` (the active AI-error
   filter), `math_chain_walkthrough_ledger_r1.md` (Will's rulings, through supplement r7),
-  `checks.py` (re-runnable geometry), plus the resolved v7.5→v7.7 reconciliation notes.
-- **Superseded chains**: `rsm/canonical/chains/v7.5/` and `v7.6-candidate/` (kept as history)
+  `checks.py` (re-runnable geometry), `cross_model_checks.py` + `cross_model_findings_r1.md`
+  (v7.5's own theorems checked; v7.7 r4's appendix re-verified from scratch),
+  `v9_comparison_r1.md` (v9 against the prior audit; the transcription fidelity record), plus the
+  resolved v7.5→v7.7 reconciliation notes.
+- **Superseded chains**: `rsm/canonical/chains/v7.7/`, `v7.6-candidate/`, `v7.5/` (kept as history)
 - **Earlier development chains**: `rsm/canonical/chains/v7.3-development/`
 - **Structured data**: `data/rsm/v7.5/` · **Research archive**: `research/archive/`
 
 ## Working with RSM Content
 
-1. **v7.7 is the current working set** — supersedes v7.5/v7.6c. It is **not sealed**; L1 is the open
-   audit head. Don't treat it as finished.
-2. **Check status tags** — don't treat `[candidate]` as `[derived]`; don't treat `[R]` as `[G]`.
-3. **Use `::` discipline** — never equate across registers; the structural chain is the interlingua,
-   the renderings do not cite each other.
-4. **The conditional is load-bearing** — everything traces to P1 (infinite: vast + divisible).
+1. **v9 is the current working set** — supersedes v7.7/v7.6c/v7.5. It is **not sealed**; the unaudited
+   closures are open item 1 in both chains. Don't treat it as finished.
+2. **Check status tags** — don't treat `[candidate]` or `[unaudited]` as `[derived]`; don't treat `[R]`
+   as `[G]`. `[unaudited]` specifically means *machine-closed, awaiting the author's adversarial read*.
+3. **Apply the chart test and the grammar test** before anything enters. Perpendicularity and the sign
+   on a mode have already failed the chart test.
+4. **Use `::` discipline** — never equate across registers; the structural chain is the spine, the
+   renderings do not cite each other. Every physics entry must carry a **break-condition**.
+5. **The conditional is load-bearing** — everything traces to P1 (infinite: vast + divisible).
 
 ## Working with AI on this framework
 
@@ -131,8 +176,18 @@ The characteristic failure mode is **find a matching set, declare an identity** 
 especially where an open item wants closing. The `signature_forcing` seating error and the Gemini
 image-9 error are both instances. Guards:
 
-- **Verify geometry against `rsm/audit/checks.py`** — it exits non-zero on a false claim.
+- **Verify geometry against `rsm/audit/checks.py` and `rsm/audit/cross_model_checks.py`** — both exit
+  non-zero on a false claim. Both compute in a **signed chart**, which v9 holds open (math item 9): a
+  `[PASS]` is a fact about the rendering, not necessarily about the structure.
+- **Run `python3 rsm/audit/site_vocab_lint.py --chains`** before relying on chain text. It is
+  lexicon-only and explicitly not a ruling.
 - **Divergences between AI instances are the data; convergences are priced near zero** (shared corpora).
   Log rejected proposals in `rsm/audit/divergence_ledger_r1.md` per its standing protocol.
+- **The unflagged false closure is the harder case** (ledger Entry 003). The seating error flagged
+  itself `[commitment]` and was caught; v7.5's Lemma 4.4 carried no flag, read as rigorous, and was
+  arithmetically false. **Careful hedging on one axis reads as rigor on all axes.**
+- **Watch for silent replacement.** When a revision drops a prior draft's load-bearing lemma without
+  refuting it, check the prior lemma before pricing the swap as a retreat. This has now happened twice
+  (v7.5→v7.7 on the conservation cost; v7.7→v9 on the measure derivation).
 - **Arithmetic → scripts; ontology, referents, and readings → Will.** Do not ask Will to rule a
   computation, and do not record a preference as a derivation.

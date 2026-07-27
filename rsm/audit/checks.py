@@ -9,6 +9,23 @@ re-run and disbelieved. Nothing in this file is a ruling; nothing enters a chain
 here. Pure stdlib -- exact rational arithmetic where possible, floats only for the
 rotation sweeps.
 
+Companion: cross_model_checks.py re-checks v7.5's own theorems (Prop 2.1, Lem 4.4,
+Thms 5.1/6.1/7.1), re-verifies the v7.7 r4 appendix from scratch, and carries a
+Part C for v9's own live claims. It is where the finding lives that v7.5's Lemma 4.4
+is arithmetically false, not merely circular -- see cross_model_findings_r1.md.
+
+WHAT A [PASS] IN THIS FILE MEANS, UNDER v9.
+Everything here computes in a SIGNED chart. v9 rules that "the modes are magnitudes,
+not signed quantities; the sign belongs to the chart" (structural s3), and holds the
+signed register's structural status OPEN (math open item 9). If the sign turns out to
+be chart residue, then -- v9's words -- "both i^2 routes, orbit-necessity, the minimal
+traversal, the nu-centroid instances" are RENDERING. So a [PASS] is a fact about the
+rendering; it is not by itself a structural claim.
+Section 7 below (isotropy -> S^2 -> R^3) is a specific instance: v9's chart test lists
+"ambient space for the sphere" among the claims that ALREADY FAILED it -- a fact about
+a presentation. Section 7's arithmetic stands; its structural standing does not follow
+from it. v9's dimension count is structural open item 3, unadjudicated.
+
 Naming, per ledger R5 (three math languages):
     Q_j(a,b) = a^2 - b^2    the CONSERVED PRODUCT (= X*Y). What j preserves. Gradient.
     Q_i(a,b) = a^2 + b^2    What i preserves. Squared distance from O_n. Orbit/measure.
@@ -184,6 +201,10 @@ check("rotating the SPHERE returns the sphere -- nothing new is swept", radii, {
       "-> the construction reaches a fixed point at three dimensions")
 print("     NOTE: 'never generated' is NOT 'excluded'. S^2 still embeds in R^4.")
 print("     Dimensional uniqueness remains open. This does not close it.")
+print("     v9 NOTE: 'ambient space for the sphere' is on v9's chart-test FAILED")
+print("     list -- a fact about a presentation. The sweep above is sound as")
+print("     arithmetic; it does not bear on v9 structural open item 3 (dimension")
+print("     count), which has two rival derivations and is unadjudicated.")
 
 # ---------------------------------------------------------------------------
 hdr(8, "FU family-invariance: does mu cancel, and does the cancellation carry weight?")
