@@ -719,6 +719,81 @@ else:
           "-> item 9 IS the signed-register/involution fork all four mean")
     print("     4 stale references; the DDJ chain shows what the number should be.")
 
+# ===========================================================================
+print("\n" + "#" * 78)
+print("# PART D -- backing for rulings_in_progress_r1.md")
+print("#" * 78)
+print("""
+  These back the [checked] lines in rulings_in_progress_r1.md, which records
+  positions stated in conversation and not yet ruled. Nothing here promotes
+  anything: the arithmetic constrains the options, it does not choose among them.""")
+
+# ---------------------------------------------------------------------------
+hdr("D1", "the relational coordinate: rapidity, and why the additive thresholds "
+          "were artifacts (rulings doc s1)")
+# On the gradient the conserved product does not move at all -- so 'distance from
+# balance' is not a product-deviation, and the additive candidates are mistyped.
+prods = [(b, (math.sqrt(1 + b * b) + b) * (math.sqrt(1 + b * b) - b))
+         for b in (0.0, 0.3, 0.7, 1.5)]
+approx("XY = 1n at every b on the branch (the product never moves)",
+       max(abs(p - 1) for _, p in prods), 0.0, 1e-12,
+       "-> off-balance is NOT a product deviation")
+
+# v9 s3: 'its amount exists only as a ratio to its conjugate'. The ratio's
+# additive form is the rapidity phi:  X = sqrt(1n)e^phi, Y = sqrt(1n)e^-phi.
+rap = lambda p: (math.exp(p), math.exp(-p))
+approx("X = e^phi, Y = e^-phi keeps XY = 1n exactly",
+       max(abs(rap(p)[0] * rap(p)[1] - 1) for p in (0.0, 0.25, 1.0, 2.3)), 0.0, 1e-12)
+approx("X/Y = e^{2phi}; the seat is phi = 0",
+       max(abs(rap(p)[0] / rap(p)[1] - math.exp(2 * p)) for p in (0.3, 1.1)), 0.0, 1e-9)
+
+# The framework's own scale action is a SHIFT in phi -- so phi is the frame's
+# relational displacement coordinate along G, not an imported one.
+def phi_of(X, Y):
+    return 0.5 * math.log(X / Y)
+
+
+base = 0.3
+shifts = []
+for lam in (1.0, 2.0, 7.5):
+    X, Y = lam * math.exp(base), math.exp(-base) / lam
+    shifts.append((lam, X * Y, phi_of(X, Y) - base))
+approx("rescaling (lX, Y/l) leaves XY = 1n",
+       max(abs(p - 1) for _, p, _ in shifts), 0.0, 1e-12)
+approx("...and shifts phi by exactly ln(lambda)",
+       max(abs(s - math.log(lam)) for lam, _, s in shifts), 0.0, 1e-12,
+       "-> v9's 'scale is motion along the curve' IS translation in phi")
+
+# The three additive thresholds, re-expressed in phi: no structure.
+in_phi = [("Q_i excess", math.asinh(math.sqrt(0.5))),
+          ("amplitude  ", math.asinh(1.0)),
+          ("difference ", math.asinh(0.5))]
+check("none of the three additive thresholds is round in phi",
+      [round(p, 3) for _, p in in_phi], [0.658, 0.881, 0.481],
+      f"-> {', '.join(f'{n.strip()}={p:.3f}' for n, p in in_phi)}: a coordinate artifact")
+# And the phi_golden appearance is a restatement, not a result:
+Xg = (1 + math.sqrt(5)) / 2
+approx("threshold 3 gives X - 1n/X = 1n, i.e. X = phi_golden by definition",
+       abs(Xg - 1 / Xg - 1), 0.0, 1e-12,
+       "-> recorded so it is not re-found and mistaken for a finding")
+
+# ---------------------------------------------------------------------------
+hdr("D2", "the nu-identification: disjoint in the parent, identified in the image "
+          "(rulings doc s3)")
+b1 = [complex(X, 1 / X) for X in (0.5, 2.0)]
+b2 = [-z for z in b1]
+check("in frame n the branch and its nu-image are disjoint sets",
+      set(b1) & set(b2), set(),
+      "-> two distinct sets of obtaining positions in the parent")
+approx("under w = z^2 they land on one line, Im w = 2*1n",
+       max(abs((z * z).imag - 2) for z in b1 + b2), 0.0, 1e-12)
+approx("...and each sweeps that line completely (same images, pairwise)",
+       max(abs(z * z - (-z) * (-z)) for z in b1), 0.0, 1e-12)
+print("     So the identification is a fact about the IMAGE -- the child's")
+print("     register. T1's fork is asked in the PARENT. Whether answering one")
+print("     with the other resolves the question or changes the frame is the")
+print("     open typing call (rulings doc s3). Not settled here.")
+
 # ---------------------------------------------------------------------------
 print(f"\n{'=' * 78}")
 if FAILURES:
