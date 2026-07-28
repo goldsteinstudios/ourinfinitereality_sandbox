@@ -820,6 +820,33 @@ print("        register [unaudited]. The conclusion must not be stated")
 print("        circle-first in the skeleton. (Draft S9.)")
 
 # ---------------------------------------------------------------------------
+hdr("D4", "nothing but the sign distinguishes the branches "
+          "(fei_involution_draft_r1.md, A1)")
+# Corresponding points on the Q1 and Q3 branches of XY = 1n.
+pairs = [((F(2), F(1, 2)), (F(-2), F(-1, 2))),
+         ((F(1), F(1)), (F(-1), F(-1))),
+         ((F(1, 4), F(4)), (F(-1, 4), F(-4)))]
+for (X1, Y1), (X3, Y3) in pairs:
+    check(f"product identical at X={X1}: {X1 * Y1} on both branches",
+          X1 * Y1, X3 * Y3)
+    check(f"ratio identical at X={X1}: {X1 / Y1} on both branches",
+          X1 / Y1, X3 / Y3)
+    check(f"squared distance from O identical at X={X1}",
+          X1 * X1 + Y1 * Y1, X3 * X3 + Y3 * Y3)
+check("odd quantities DO differ: a coordinate alone, and the sum",
+      [(X1 == X3, X1 + Y1 == X3 + Y3) for (X1, Y1), (X3, Y3) in pairs],
+      [(False, False)] * 3, "-> and they differ only in sign")
+# The measure is forced even, so it cannot see the branch at all.
+Meven = lambda a, b: 3 * a * a - 2 * a * b + 5 * b * b   # any even (degree-2) form
+check("an even measure returns the same value on both branches",
+      [Meven(X1, Y1) == Meven(X3, Y3) for (X1, Y1), (X3, Y3) in pairs],
+      [True] * 3,
+      "-> v9: 'Parity (nu): M(-z) = M(z) -- kills all odd degrees'")
+print("     => every quantity the framework recognises reads identically on the")
+print("        two branches. If they are nonetheless two (Q2), the distinction")
+print("        is carried by the sign and by nothing else. That is A1.")
+
+# ---------------------------------------------------------------------------
 print(f"\n{'=' * 78}")
 if FAILURES:
     print(f"FAILED: {len(FAILURES)} check(s): {FAILURES}")
