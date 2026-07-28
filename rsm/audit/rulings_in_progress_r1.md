@@ -360,6 +360,168 @@ because it retires a flag rather than leaving it open.
 
 ---
 
+## 5. Branch scope, and the mode signs — RULED (scoping), 2026-07-28
+
+**[W]:**
+
+> the two curves of xy=1 in q1 and q3, when in frame R_1, are both valid but the one in q3 is the
+> required conjugate of q1, and q1 is where +void and +form are held in proportion, whereas q3 would
+> be -void and -form. I don't know the implications of that other than imagining it has something to
+> do with the idea of "dark" or "anti" matter/energy/whatever. So for the moment and for the purposes
+> of this work I am acknowledging them both but only focusing on q1 where +void*+form=reality
+
+**What is ruled.** Working scope is **Q1**. Both branches are valid; Q3 is the **required** conjugate,
+not an optional one. **This is a focus decision, not an ontological demotion** — recorded explicitly
+so a later reader does not mistake the working scope for a claim that Q3 is unreal.
+
+**Prior clarification that produced it.** "Two branches" in T1 means the **Q1 and Q3 curves, entirely
+disconnected** — not the x-dominant and y-dominant arms within one curve, which are one connected
+curve through the seat. *[checked]* Getting from Q1 to Q3 along the curve would need X = 0, and
+`XY = 1ₙ` admits no zero — the class-selection argument is what keeps them apart.
+
+**The two involutions sort onto the two readings** *[checked]*:
+
+| | relates | fixed | det | kind |
+|---|---|---|---|---|
+| **ν** (X,Y) → (−X,−Y) | Q1 ↔ Q3 | `Oₙ` | +1 | **central** — can be exact (Q2) |
+| **σ_B** (X,Y) → (Y,X) | arm ↔ arm *within* a branch | the balance line | −1 | **mirror** — cannot be perfect (Q2) |
+
+So the mirror lives *inside* a branch and the central symmetry lives *between* branches. This makes
+the structural-item-6 observation concrete rather than abstract: v9 leans toward the **mode-swap**
+being structural, but the mode-swap **is** the mirror. Consequence, new and unrecorded elsewhere:
+**the x-dominant and y-dominant arms of a single branch are not exact mirrors of each other**, though
+the algebra says they are. The rendering guard covers it, but it is a claim about a single branch's
+interior and is new territory.
+
+### Consequences
+
+**(A) Independently confirms Q2.** "Q3 is the *required* conjugate of Q1" is the binding requirement,
+reached from the ontology rather than from T1. Two routes to the same place.
+
+**(B) A second push on structural §3, and a typing question.** §3 says *"The modes are **magnitudes**,
+not signed quantities… The sign belongs to the chart."* The ruling above speaks of **−void and
+−form**. **[open, Will's]** Does "−void" mean a negative *magnitude* — which §3 forbids — or the same
+magnitude read under a conjugate orientation? v9's DDJ reads 無 as *"a bounded, shaped, functional
+magnitude"* and insists *"void is not zero."* A negative magnitude is not obviously typed. Either
+answer bears on §3, which Q2 already put under revision.
+
+**(C) The conserved product is blind to the branch** *[checked]*. `(+2)(+0.5) = +1ₙ` and
+`(−2)(−0.5) = +1ₙ`. Both branches sit on the same level set with the same unit. **So nothing in the
+product distinguishes Q1 from Q3 — the entire distinction is carried by the sign.** That is a third
+independent line arriving at math item 9, and it sharpens what the item is asking: not "is there a
+second component" (T1 settles that) but "what carries the difference between them."
+
+**(D) A physics entry switches on, and the speculation splits.** v9 physics §7 is written as a
+fork-display: *"Charge conjugation C is a genuine physical involution pairing each particle with its
+conjugate — the one antimatter echo the framework may keep [held light]. The entry is conditional on
+the signed-register item: **if the signed extension is derived structure, the rendering is live; if
+chart, it retires.**"* Q2 resolves that condition, so **the entry goes live** and should lose its
+conditional framing.
+
+But the same entry continues: *"**Dark matter and dark energy are parked regardless** — not
+conjugation phenomena within physics itself."* So the speculation above splits cleanly: the **"anti"**
+half is exactly the entry Q2 just licensed; the **"dark"** half is explicitly parked, with a stated
+reason. **[speculation, recorded as such]** — under the physics chain's own discipline it would need a
+break-condition before it could enter at all, and none is offered. Not promoted.
+
+---
+
+## 6. 非 tracks the sign-flip — RULED, 2026-07-28. Closes structural item 6.
+
+**The question.** Will proposed *"fei is what sits between two modes. Something like -1|0|1::-1fei+1"*
+— but the sentence and the notation pick out different relations, and the difference is the open item.
+
+| reading | relates | the middle is | status of that middle |
+|---|---|---|---|
+| "between two modes" | form ↔ void, the **mode-swap**, within one branch | **the seat** *[checked]* | met at resolution |
+| `−1 非 +1` | the conjugate pair, the **sign-flip**, between branches | **the origin** *[checked]* | unmet |
+
+**[W], ruling:**
+
+> how can the emptiness between the two diverging wings in fei be "met"? it can be held as reference
+> but it's the limit at the center, like the 0 that sits between -1 and +1
+
+**Ruled: the middle is unmet — the origin. So 非 tracks the sign-flip (ν), and the notation was right
+where the sentence slipped.**
+
+**The ruling restates the framework's own definition of O.** Compare:
+
+> **[W]** "it can be held as reference but it's the limit at the center"
+> **structural §3** "Both modes are measured from one reference — the point at which both would
+> vanish. That is the origin O: a locus, never a position; nothing stands there."
+
+Same statement. **Priced as consistency, not evidence** — Will is the author, so restating his own
+definition is not independent confirmation. What it does establish is that the assignment is
+*motivated* rather than brute, the standard the chain applies to 玄牝.
+
+### What this closes
+
+1. **Structural open item 6 (the involution).** 非 tracks the sign-flip. Note this closes it
+   **opposite to v9's tentative framing**, which had *"the sign-flip (fixed point O) is
+   chart-stated."* Combined with Q2 (the sign is structural), the sign-flip is structural.
+2. **The DDJ's open checksum item** on the involution — *"whether 非's structure tracks the mode-swap
+   (fixed at the balance) or the sign-flip (fixed at the center)"* — same ruling, same direction.
+3. Together with Q2, this is the **second top-level open item** closed in two days. Both should be
+   written up and read adversarially before propagating; see the caution in §2.
+
+### Two notes the write-up must carry
+
+**(a) A false conflict to head off.** The reciprocity joint's clause 2 reads *"Exchange symmetry. The
+law is symmetric under X ↔ Y,"* and Q2 denies that perfect mirrors obtain. These look contradictory
+and are not. The joint's claim is about the **law** — X and Y are interchangeable in the equation.
+Q2's denial is about two **loci** being feature-identical at every depth. Different objects, both
+standing. State it, because "you just denied the mode-swap and your own joint asserts it" is the
+first objection anyone will raise.
+
+**(b) A reconciliation still owed — the one place this could come apart.** The DDJ chain glosses 非's
+middle as *"the invariant both flanks share"* — which reads as something positive both *have*. The
+ruling makes it emptiness — something neither *reaches*. Will's own phrase bridges them: **"held as
+reference."** O is both at once — the shared reference from which both modes are measured, and unmet
+by either. Shared, unoccupied; one statement rather than two.
+
+**But the Ch. 1 instance still needs checking.** There the flanks are 可道 and 常道 and the invariant
+they share is **道**, which the chain glosses as *"the recursive structural model itself"* — not as an
+unmet reference-point. **[open]** Does the 非-middle correspondence hold uniformly, always landing on
+O? Or does it vary by instance — 道 in Ch. 1, O in the geometry? This is a translation-fidelity
+question, and it is where the reading could still fail.
+
+**Method note.** The ruling reads the *graph* 非 (two diverging wings, space between). Under the
+chain's own instrument rules that is legitimate at the **notation layer** — it flags a candidate
+distinction — but *"the math must then verify with its own resources."* Verification here is the
+geometry: ν's fixed point is the origin, and the origin is unmet. The graph flagged; it did not
+establish. *(The project has withdrawn graph-evidence before — the 名 case in v7.7.)*
+
+---
+
+## 7. The DDJ's evidential posture — "generatively upstream" is overconfident, 2026-07-28
+
+**[W]:**
+
+> the "ddj is generatively upstream" is overconfident. It's a language like physics or math or logic.
+
+**Ruled.** This is a claim about Will's own process, and he is its only authority.
+
+**What survives, and what should change.** The DDJ chain's *conclusion* — agreement carries no public
+evidential weight — does not depend on the authorship claim. The physics chain reaches the same place
+with no authorship claim at all: *"every claim is a correspondence, `::`, meaning maps-to and never
+is; no entry carries evidential weight in either direction."* That is the **rendering** ground, and it
+applies to the DDJ identically if the DDJ is a language alongside math and physics — which is what v9's
+own architecture says it is (a spine plus three renderings).
+
+The authorship clause does block one real bad inference: a 2300-year-old text agreeing with a modern
+framework being read as *independent* convergence. But a weaker ground blocks it just as well — the
+author is fluent in the text and worked with it alongside the framework, so agreement is not
+independent. That claims nothing about generation.
+
+**Recommendation: keep the conclusion, weaken the ground.** Chain edit, Will's.
+
+> **Recorded against myself.** I repeated *"the DDJ is generatively upstream, so that fit is coherence
+> rather than evidence"* as though settled, when it is the chain's claim about the author's process
+> and not something I can assess. Logged because the same move — restating a chain's self-description
+> as established fact — is how an unaudited line acquires the appearance of an audited one.
+
+---
+
 ## Re-runnable backing
 
 Every `[checked]` line above is backed by `python3 rsm/audit/cross_model_checks.py` — **Part D** (D1
@@ -378,11 +540,21 @@ rapidity is `asinh(1/2) = ln(φ_golden)`, for the same reason `X = φ_golden` ap
 2. **Q3** — now largely decided by Q2, but confirm: the ν-identification was the candidate resolution
    in the direction Q2 closes off, so it no longer carries that load.
 3. **Q1** — independent of the others; can be answered any time.
-4. **Write Q2 up to theorem standard**, then propagate: structural §3, `CLAUDE.md`, math item 9,
-   structural item 6, the i² conditionality, the DDJ `非` reading.
-5. Then the remaining rulings in `v9_comparison_r1.md`, then amend the `rsm/v9-canon` branch, then the
+4. **Write Q2 up to theorem standard** — done, `q2_mirror_denial_draft_r1.md`, awaiting one
+   adversarial read. Then propagate: structural §3, `CLAUDE.md`, math item 9, structural item 6, the
+   i² conditionality, the DDJ `非` reading, **and physics §7, whose conditional Q2 resolves (§5D)**.
+   Scope for all of it is **Q1**, per §5.
+5. **Write §6 up alongside Q2** — 非 tracking the sign-flip closes structural item 6 and the DDJ
+   checksum item, and carries two obligations: the exchange-symmetry false conflict (§6a) and the
+   Ch. 1 reconciliation (§6b, still open).
+6. **§7** — weaken the DDJ chain's evidential ground; keep its conclusion.
+7. Then the remaining rulings in `v9_comparison_r1.md`, then amend the `rsm/v9-canon` branch, then the
    site redraft. **The site's `[derived]` table changes with item 4** — i² = −1 is listed there and its
    conditionality moves.
+
+**Running total: two top-level open items closed in two days** (math item 9 via Q2; structural item 6
+via §6), plus a scoping ruling (§5) and a posture correction (§7). None has been written to theorem
+standard except Q2, and none has propagated into chain text.
 
 **A standing note for whoever drafts here next, human or model.** Will has said plainly that this
 math is not his. The rule is: compute it, then state the *consequence* in plain words he can evaluate
