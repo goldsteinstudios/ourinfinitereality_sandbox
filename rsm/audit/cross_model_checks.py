@@ -795,6 +795,31 @@ print("     with the other resolves the question or changes the frame is the")
 print("     open typing call (rulings doc s3). Not settled here.")
 
 # ---------------------------------------------------------------------------
+hdr("D3", "central symmetry is AFFINE, the circle is METRIC "
+          "(q2_mirror_denial_draft_r1.md, S8/S9)")
+# The ruling was stated metrically ('equidistant from the shared center', the
+# circumference). The skeleton is affine -- no metric. Which half survives?
+shear = lambda p: (p[0] + 1.7 * p[1], p[1])          # affine, det 1, distorts distance
+mid = lambda p, q: ((p[0] + q[0]) / 2, (p[1] + q[1]) / 2)
+dist = lambda p: math.hypot(*p)
+
+for P in ((1.0, 0.0), (0.6, 0.8), (-0.3, 1.2)):
+    Q = (-P[0], -P[1])                                # nu(P)
+    approx(f"O is the midpoint of P and nu(P) at P={P}", abs(complex(*mid(P, Q))), 0.0, 1e-12)
+    sP, sQ = shear(P), shear(Q)
+    approx(f"...and still the midpoint after a shear at P={P}",
+           abs(complex(*mid(sP, sQ))), 0.0, 1e-12)
+check("but distance from O is NOT preserved by the shear",
+      abs(dist(shear((0.6, 0.8))) - dist((0.6, 0.8))) > 1e-6, True,
+      f"-> 1.000 becomes {dist(shear((0.6,0.8))):.3f}")
+print("     => 'O is the midpoint of P and nu(P)' is affine: available in the")
+print("        implicit skeleton, before any measure exists.")
+print("     => 'all points equidistant from O' (the circumference) is metric:")
+print("        it arrives with the measure, which v9 tags definitional-by-")
+print("        register [unaudited]. The conclusion must not be stated")
+print("        circle-first in the skeleton. (Draft S9.)")
+
+# ---------------------------------------------------------------------------
 print(f"\n{'=' * 78}")
 if FAILURES:
     print(f"FAILED: {len(FAILURES)} check(s): {FAILURES}")
