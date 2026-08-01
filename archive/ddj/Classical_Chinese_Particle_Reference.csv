@@ -1,0 +1,11 @@
+Character,Pinyin,Function,Structural Role
+也,yě,"Final particle; assertion or soft emphasis ('indeed', 'is', '=')",Marks closure or resolution; recursion flattening
+之,zhī,"Genitive or associative marker ('of', sometimes object marker)",Marks relational structure; connector of recursion layers
+者,zhě,Nominalizer; turns phrases into nouns ('the one who...'),Encodes recursion identity; turns process into subject
+其,qí,"Possessive or referential pronoun ('his', 'its', 'that')",Structural referent or pointer; recursive aliasing
+以,yǐ,"Means or method marker ('by means of', 'using')",Means of transformation; method of recursion
+乎,hū,"Question particle; marks rhetorical or real questions ('how?', 'what about?')",Opens a paradox or invites recursive questioning
+矣,yǐ,"Final particle indicating change, completed action, or emphasis",Closure of phase/state; marks recursive update
+焉,yān,"Locative or abstract final particle ('therein', 'at it', 'in that')",Binds location or abstract context to recursion
+則,zé,"Conditional or causal marker ('then', 'therefore')",Indicates structural implication or conditional unfolding
+若,ruò,"Comparison or supposition ('as if', 'like')",Analogy or mapping across recursive levels

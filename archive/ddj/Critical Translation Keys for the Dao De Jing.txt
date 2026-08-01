@@ -1,0 +1,51 @@
+# Critical Translation Keys for the Dao Jing 
+
+## Axis-Defining Characters
+
+**可 (kě)** = explicit, expressible, articulable, parametric
+- What can be pointed to, measured, named
+- Frame-dependent manifestations
+
+**常 (cháng)** = implicit, underlying, structural
+- NOT "constant/eternal" in the temporal sense
+- What underlies articulation but cannot itself be directly articulated
+- Frame-independent structure
+
+**無 (wú)** = nothing, void, absence, potential
+- Not "nonexistence" but structural emptiness
+- The conditions, the gaps, the space
+
+**有 (yǒu)** = something, form, presence, manifestation
+- Actualized content
+- What's actually there
+
+## Observation-Defining Characters
+
+**欲 (yù)** = orientation, focus, directed attention
+- NOT "desire" in the moral sense
+- Where you point your observational stance
+- The vector of attention
+
+**妙 (miào)** = subtle patterns, relationships, connections
+- What becomes visible when observing 常無 (implicit nothing)
+- The relational structure
+
+**徼 (jiǎo)** = boundaries, edges, limits, distinctions
+- What becomes visible when observing 常有 (implicit something)
+- The categorical structure
+
+## Structure-Defining Characters
+
+**異名 (yì míng)** = named-difference
+- The emergent property of having two axes
+- Distinction itself
+- The ability to parse reality into parts
+
+**玄 (xuán)** = the paradox, the preserved tension
+- The origin point where axes cross
+- Where opposites meet without resolving
+- Zero on both axes simultaneously
+
+**道 (dào)** = the pattern, the structure, the way
+- Often = 常無名 (the implicit named-nothing)
+- The origin of the coordinate system

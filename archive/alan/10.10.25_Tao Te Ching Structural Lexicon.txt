@@ -1,0 +1,96 @@
+---
+meta:
+  version: 1.0
+  author: W.G.
+  module: Tao Te Ching Structural Lexicon
+  recursion_type: implicit→parametric
+  bilingual: true
+  self_healing: true
+---
+
+# Tao Te Ching Structural Lexicon (TSL)
+
+> The text is a structural model, not a creed.  
+> Every character encodes a recursive function.
+
+---
+
+## 1 · Core Structural Mappings
+
+| TTC Term (Traditional) | Pinyin | Literal Sense | RSM Variable | Structural Function |
+|-------------------------|---------|----------------|----------------|--------------------|
+| 道 | dào | Way / Reality | O₁ | Origin frame created by rotating paradox P₀ |
+| 名 | míng | Name / Distinction | M operator | Condition of contrast necessary for existence |
+| 無 | wú | Non-being / Void | Component of P₀ | Unmeasurable pole of paradox |
+| 有 | yǒu | Being / Form | Component of P₀ | Manifest pole of paradox |
+| 反 | fǎn | Return / Reversal | Z₁ | Recursive rotation that preserves paradox |
+| 生 | shēng | Generate / Arise | e | Continuous recursion / growth |
+| 常 | cháng | Constant / Invariant | C | Frame-independent structural law |
+| 一 | yī | One / Unity | 1 | Minimal local unit of measure |
+| 無名 | wú míng | Nameless | O₁ | Named-nothing, origin of Heaven and Earth |
+| 有名 | yǒu míng | Named-something | P₁ | Manifest rim / mother of the ten-thousand things |
+
+---
+
+## 2 · Key Contrasts and Gradients
+
+| Contrast Pair | RSM Gradient | Interpretation |
+|----------------|---------------|----------------|
+| 可 / 常 (kě / cháng) | Parametric ↔ Implicit | What can be named vs what is structurally constant |
+| 無 / 有 | Void ↔ Form | Co-emergent poles of the same paradox |
+| 名 / 道 | Boundary ↔ Field | Local naming vs global reality |
+| 天 / 地 | Y₁ ↔ X₁ | Contrast axes of dimensional emergence |
+| 難 / 易 | Resistance ↔ Yield | Gradient tension within a frame |
+| 動 / 靜 | Zₙ ↔ ∂Pₙ/∂t = 0 | Motion and stillness as reciprocal states |
+| 高 / 下 | Amplitude / Depth | Curvature of hierarchical recursion |
+| 善 / 不善 | Functional ↔ Dysfunctional rotation | Ethical language for energy efficiency of recursion |
+| 柔 / 剛 | Adaptive ↔ Rigid | Flexibility preserves recursion; rigidity breaks it |
+
+---
+
+## 3 · Functional Verbs as Structural Operations
+
+| Character | Meaning | RSM Operation |
+|-------------|-----------|----------------|
+| 生 | To generate | Emergence through recursive rotation (Z₁ → Rₙ) |
+| 成 | To complete | Stabilization of recursion (Oₙ closure) |
+| 形 | To form | Projection of gradient into dimension (Xₙ surface) |
+| 傾 | To lean / tip | Asymmetric rotation — beginning of divergence |
+| 和 | Harmony | Recursive coherence / dynamic balance |
+| 隨 | Follow / Flow | Maintenance recursion (adaptive persistence) |
+
+---
+
+## 4 · Structural Gloss of Chapter 1 (Tao ke Tao)
+
+> 道可道，非常道。名可名，非常名。無名天地之始；有名萬物之母。  
+> 故常無欲以觀其妙；常有欲以觀其徼。此兩者同出而異名，同謂之玄。玄之又玄，眾妙之門。
+
+| Line | Structural Reading |
+|------|--------------------|
+| 道可道 | Reality can manifest in parametric forms (O₁ → P₁). |
+| 非常道 | But no manifest form captures the implicit whole (O₁). |
+| 名可名 | Distinction can occur (M operator active). |
+| 非常名 | But constant naming would destroy contrast (balance lost). |
+| 無名天地之始 | Named-nothing is the origin (O₁) of Heaven/Earth gradient (Y₁/X₁). |
+| 有名萬物之母 | Named-something (P₁) generates the ten-thousand manifest forms (Rₙ). |
+| 此兩者同出而異名 | These two co-emerge and are distinguished only by orientation. |
+| 同謂之玄 | Their unity is the mysterious paradox (P₀ preserved). |
+| 玄之又玄 | Recursion of mystery — P₀ → O₁ → P₁ → O₂ … |
+| 眾妙之門 | The gateway (門) to all emergence — recursive circulation of forms. |
+
+---
+
+## 5 · Summary Logic
+
+1. **Míng 可 Míng 非 常 Míng** — Naming is the condition for contrast.  
+2. **Wú / Yǒu co-emerge** — Void and form exist as a single gradient.  
+3. **Dào → O₁ ** — Origin frame arises by rotating paradox.  
+4. **Fǎn 者 Dào 之 動** — Return is the movement of Tao: recursion.  
+5. **Shēng 者 萬 物 之 宗** — Generation through recursion creates all forms.  
+
+---
+
+**Footer:**  
+Describe the path; never direct the traveler.  
+Every frame accurate, none final — return to pattern.

@@ -1,0 +1,2140 @@
+# Guodian Laozi — unresolved-graph worklist
+# Every entry is a position where the gxdq.com transcription prints ○: a Chu graph with no
+# modern equivalent. editor_reads is the transcription's loan-resolution — NOT the slip.
+# Source editor unattributed. UNVERIFIED against slip images. Companion tool: guodian_glyph_slots.html
+# slots: 237 (A 153 / B 53 / C 31) — 20 with no editorial reading at all
+
+slots:
+  - id: A1.1
+    editor_reads: "绝"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○智（知）弃卞（辩），民利"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.2
+    editor_reads: "倍"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（知）弃卞（辩），民利百○。○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.3
+    editor_reads: "绝"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）弃卞（辩），民利百○。○○弃利，○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.4
+    editor_reads: "巧"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○。○○弃利，○恻（贼）亡又（有"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.5
+    editor_reads: "盗"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○弃利，○恻（贼）亡又（有）。○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.6
+    editor_reads: "绝"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，○恻（贼）亡又（有）。○○弃○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.7
+    editor_reads: "伪"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○恻（贼）亡又（有）。○○弃○，民复（復）季（孝）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A1.8
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○弃○，民复（復）季（孝）子（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A2.1
+    editor_reads: "辨"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为○不足，或命（令）之或○豆"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A2.2
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为○不足，或命（令）之或○豆（属）。视索（素）保仆"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A2.3
+    editor_reads: "海"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "少厶（私）须〈寡〉欲。江○所以为百浴（谷）王，以其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A4.1
+    editor_reads: "厌"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，民弗害也。天下乐进而弗○。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A5.1
+    editor_reads: "罪"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）天下莫能与之静（争）。○莫厚○甚欲，咎莫佥（憯）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A5.2
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "莫能与之静（争）。○莫厚○甚欲，咎莫佥（憯）○谷（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A5.3
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "莫厚○甚欲，咎莫佥（憯）○谷（欲）得，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A6.1
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "化（祸）莫大○不智（知）足。智（知）足"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A6.2
+    editor_reads: "道"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为足，此亘（恒）足矣。以○差（佐）人○者，不谷（欲"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A6.3
+    editor_reads: "主"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "恒）足矣。以○差（佐）人○者，不谷（欲）以兵强"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A7.1
+    editor_reads: "矜"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，果而弗乔（骄），果而弗○，是胃（谓）果而不强。其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A8.1
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "以为之颂（容）：夜（豫）○奴（若）冬涉川，猷（犹）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A8.2
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "奴（若）冬涉川，猷（犹）○其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.1
+    editor_reads: "畏"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "奴（若）○四○，敢（严）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.2
+    editor_reads: "邻"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "奴（若）○四○，敢（严）○其奴（若）客"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.3
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "四○，敢（严）○其奴（若）客，○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.4
+    editor_reads: "涣"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "敢（严）○其奴（若）客，○○其奴（若）怿（释），屯"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.5
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○其奴（若）客，○○其奴（若）怿（释），屯○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.6
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○其奴（若）怿（释），屯○其奴（若）朴，○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.7
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "释），屯○其奴（若）朴，○○其奴（若）浊。竺（孰）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A9.8
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○其奴（若）朴，○○其奴（若）浊。竺（孰）能"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.1
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "者，○舍（徐）清。竺（孰）能○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.2
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○舍（徐）清。竺（孰）能○以○者，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.3
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（徐）清。竺（孰）能○以○者，○舍（徐）生。保此"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.4
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "以○者，○舍（徐）生。保此○者不谷"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.5
+    editor_reads: "道"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "者，○舍（徐）生。保此○者不谷（欲）○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.6
+    editor_reads: "尚"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）生。保此○者不谷（欲）○○。为之者败之，执之者远"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A10.7
+    editor_reads: "盈"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○者不谷（欲）○○。为之者败之，执之者远"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A11.1
+    editor_reads: "失"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "故）亡败；亡执古（故）亡○。临事之纪，誓（慎）冬（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A11.2
+    editor_reads: "始"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "誓（慎）冬（终）女（如）○，此亡败事矣。圣人谷（欲"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A12.1
+    editor_reads: "教"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "谷（欲），不贵难得之货，○不○，复众之所"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A12.2
+    editor_reads: "教"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "欲），不贵难得之货，○不○，复众之所○。是古（故）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A12.3
+    editor_reads: "过"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "不○，复众之所○。是古（故）圣人能○万勿"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A12.4
+    editor_reads: "辅"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之所○。是古（故）圣人能○万勿（物）之自○，而弗"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A12.5
+    editor_reads: "然"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）圣人能○万勿（物）之自○，而弗"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.1
+    editor_reads: "道"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "能为。○亘（恒）亡为也，侯王能守"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.2
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "侯王能守之，而万勿（物）○自○。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.3
+    editor_reads: "化"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "能守之，而万勿（物）○自○。○而"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.4
+    editor_reads: "化"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "自○。○而○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.5
+    editor_reads: "欲"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。○而○○，○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.6
+    editor_reads: "作"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○而○○，○贞（镇）之以亡名之"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.7
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○，○贞（镇）之以亡名之○。夫"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A13.8
+    editor_reads: "朴"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，○贞（镇）之以亡名之○。夫"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A14.1
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "亦○智（知）足，智（知）以束"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A14.2
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）以束（静），万勿（物）○自定。为亡为，事亡事，未"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A14.3
+    editor_reads: "难"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "少（小）之多惕（易）必多○。是以圣人"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A15.1
+    editor_reads: "难"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "猷（犹）○之，古（故）终亡○。天下"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A15.2
+    editor_reads: "难"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（犹）○之，古（故）终亡○。天下皆智（知）○之为"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A15.3
+    editor_reads: "美"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）终亡○。天下皆智（知）○之为○也，亚（恶）已；皆"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A15.4
+    editor_reads: "美"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。天下皆智（知）○之为○也，亚（恶）已；皆智（知"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A16.1
+    editor_reads: "难"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○惕（易）之相成也，长○之"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A16.2
+    editor_reads: "短"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○惕（易）之相成也，长○之相型（形）也，高下之相"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A16.3
+    editor_reads: "盈"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之相型（形）也，高下之相○也，音圣（声）之相和也，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A17.1
+    editor_reads: "教"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "圣人居亡为之事，行不言之○。万勿（物）○而弗"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A17.2
+    editor_reads: "作"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，行不言之○。万勿（物）○而弗○也，为而弗志（恃）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A17.3
+    editor_reads: "始"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。万勿（物）○而弗○也，为而弗志（恃）也，成"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A18.1
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "朴）唯（虽）妻（微），天○弗敢臣，侯王女（如）能"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A19.1
+    editor_reads: "守"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○之，万勿（物）○自"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A19.2
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○之，万勿（物）○自○。天"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A19.3
+    editor_reads: "宾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之，万勿（物）○自○。天○相合也，以逾甘"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A19.4
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "自○。天○相合也，以逾甘○。民莫之"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A19.5
+    editor_reads: "露"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。天○相合也，以逾甘○。民莫之命（令）天〈而〉"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A19.6
+    editor_reads: "始"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "命（令）天〈而〉自均安。○折（制）又（有）名。名"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A20.1
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "亦既又（有），夫亦○智（知）止，智（知）止所"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A20.2
+    editor_reads: "殆"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "知）止，智（知）止所以不○。卑（譬）道之才（在）天"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A20.3
+    editor_reads: "海"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）少（小）浴（谷）之与江○。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.1
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "又（有）○○成，先天○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.2
+    editor_reads: "○"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "又（有）○○成，先天○生，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.3
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○成，先天○生，○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.4
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "成，先天○生，○○，蜀（独）立不亥（改）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.5
+    editor_reads: "穆"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○生，○○，蜀（独）立不亥（改），"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.6
+    editor_reads: "字"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "天下母。未智（知）其名，○之曰道，○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A21.7
+    editor_reads: "吾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "智（知）其名，○之曰道，○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A22.1
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "强为之名曰大。大曰○，○曰"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A22.2
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "强为之名曰大。大曰○，○曰○，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A22.3
+    editor_reads: "远"
+    mark: emend                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，○曰○，○曰反（返）。天大，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A22.4
+    editor_reads: "远"
+    mark: emend                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "曰○，○曰反（返）。天大，○大，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A22.5
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，○曰反（返）。天大，○大，道大，王亦大。国中又"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A22.6
+    editor_reads: "居"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。国中又（有）四大安，王○一安。人"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.1
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "法○，○法天，天法道，道法自"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.2
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "法○，○法天，天法道，道法自○。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.3
+    editor_reads: "然"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，○法天，天法道，道法自○。天○之"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.4
+    editor_reads: "地"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "天，天法道，道法自○。天○之○，其猷（犹）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.5
+    editor_reads: "间"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。天○之○，其猷（犹）○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.6
+    editor_reads: "橐"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之○，其猷（犹）○○与？虚而不屈，○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.7
+    editor_reads: "籥"
+    mark: emend                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，其猷（犹）○○与？虚而不屈，○而愈出。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A23.8
+    editor_reads: "动"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○与？虚而不屈，○而愈出。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A24.1
+    editor_reads: "笃"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "亘（恒）也；兽（守）中，○也。万勿（物）方（旁）○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A24.2
+    editor_reads: "作"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○也。万勿（物）方（旁）○，居以须复也。天道员员，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A25.1
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "其安也，易○也。其未○也，易"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A25.2
+    editor_reads: "兆"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "其安也，易○也。其未○也，易○也。其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A25.3
+    editor_reads: "谋"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "也。其未○也，易○也。其○也，易畔（判）也"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A25.4
+    editor_reads: "脆"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "也，易○也。其○也，易畔（判）也。其几也"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A25.5
+    editor_reads: "散"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "易畔（判）也。其几也，易○也。为之于其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A26.1
+    editor_reads: "治"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "亡又（有）也。○之于其未乱。合□□□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A27.1
+    editor_reads: "闭"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "弗言，言之者弗智（知）。○其○，赛（塞）其门，和其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A27.2
+    editor_reads: "兑"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，言之者弗智（知）。○其○，赛（塞）其门，和其光，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A27.3
+    editor_reads: "同"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，赛（塞）其门，和其光，○其○，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A27.4
+    editor_reads: "尘"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（塞）其门，和其光，○其○，○其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A27.5
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "其○，○其○，解其纷，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A27.6
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，○其○，解其纷，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A29.1
+    editor_reads: "贱"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "不可得而贵，亦可不可得而○。古（故）为天下贵。以正"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A29.2
+    editor_reads: "奇"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "下贵。以正之（治）邦，以○○兵，以亡事"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A29.3
+    editor_reads: "用"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "贵。以正之（治）邦，以○○兵，以亡事"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A30.1
+    editor_reads: "吾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "取天下。○可（何）以智（知）其○也"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A30.2
+    editor_reads: "然"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。○可（何）以智（知）其○也。夫天多期（忌）韦（讳"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A31.1
+    editor_reads: "奇"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "智（知）天〈而〉○勿（物）慈（滋）○。法勿"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A31.2
+    editor_reads: "起"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "〈而〉○勿（物）慈（滋）○。法勿（物）慈（滋）章（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A31.3
+    editor_reads: "盗"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（物）慈（滋）章（彰），○恻（贼）多又（有）。是以"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A31.4
+    editor_reads: "富"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "圣人之言曰：我无事而民自○。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A32.1
+    editor_reads: "化"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "我亡为而民自○。我好青（静）而民自正。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.1
+    editor_reads: "含"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○之厚者，比于赤子，○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.2
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○之厚者，比于赤子，○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.3
+    editor_reads: "○"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○之厚者，比于赤子，○○虫它（蛇）弗○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.4
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○之厚者，比于赤子，○○虫它（蛇）弗○，攫鸟"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.5
+    editor_reads: "○"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○虫它（蛇）弗○，攫鸟○兽弗扣，骨溺（弱"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.6
+    editor_reads: "猛"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "虫它（蛇）弗○，攫鸟○兽弗扣，骨溺（弱）○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.7
+    editor_reads: "筋"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "攫鸟○兽弗扣，骨溺（弱）○○而捉"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A33.8
+    editor_reads: "柔"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○兽弗扣，骨溺（弱）○○而捉"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A34.1
+    editor_reads: "怒"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "智（知）牝戊（牡）之合然○，精之至也。终日○而不"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A34.2
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之合然○，精之至也。终日○而不○，和之至也，和曰"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A34.3
+    editor_reads: "忧"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，精之至也。终日○而不○，和之至也，和曰○，智（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A34.4
+    editor_reads: "○（常）"
+    mark: emend                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "而不○，和之至也，和曰○，智（知）和曰明。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.1
+    editor_reads: "益"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○生曰○，心"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.2
+    editor_reads: "祥"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○生曰○，心○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.3
+    editor_reads: "使"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "生曰○，心○○曰○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.4
+    editor_reads: "气"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，心○○曰○，勿（物）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.5
+    editor_reads: "强"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○曰○，勿（物）○则老，是胃（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.6
+    editor_reads: "壮"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "曰○，勿（物）○则老，是胃（谓）不道。名"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A35.7
+    editor_reads: "孰"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，是胃（谓）不道。名与身○新（亲）？身与货"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.1
+    editor_reads: "孰"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○多？○与"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.2
+    editor_reads: "得"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○多？○与○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.3
+    editor_reads: "亡"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "多？○与○○○？甚"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.4
+    editor_reads: "孰"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○与○○○？甚○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.5
+    editor_reads: "病"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "与○○○？甚○必大"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.6
+    editor_reads: "爱"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○？甚○必大○，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.7
+    editor_reads: "费"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "？甚○必大○，○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.8
+    editor_reads: "厚"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "必大○，○○必多○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.9
+    editor_reads: "藏"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，○○必多○。古（故）智（知）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A36.10
+    editor_reads: "亡"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○必多○。古（故）智（知）足不辱"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A37.1
+    editor_reads: "动"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "以长旧（久）。返也者，道○也。溺（弱）也者，道之○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A37.2
+    editor_reads: "用"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○也。溺（弱）也者，道之○也。天下之勿（物）生于又"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A37.3
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）生于又（有），生于亡。○而○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A37.4
+    editor_reads: "盈"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "于又（有），生于亡。○而○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: A38.1
+    editor_reads: "盈"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "而群之，不可长保也。金玉○室，莫能兽（守）也。贵福"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B1.1
+    editor_reads: "早"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "天，莫若啬。夫唯啬，是以○，是以○备（服）是胃（谓"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B1.2
+    editor_reads: "早"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "啬。夫唯啬，是以○，是以○备（服）是胃（谓）……"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B2.1
+    editor_reads: "国"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "〈亟（极）〉可以又（有）○。又（有）○之母，可以长"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B2.2
+    editor_reads: "国"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "可以又（有）○。又（有）○之母，可以长……，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B3.1
+    editor_reads: "旧=久"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "长生○视之道也。学者日益，为道"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B4.1
+    editor_reads: "绝"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "也，亡为而亡不为。○学亡○，唯与可（呵），相"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B4.2
+    editor_reads: "忧"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "也，亡为而亡不为。○学亡○，唯与可（呵），相去几可"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B4.3
+    editor_reads: "美"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（呵），相去几可（何）？○与亚（恶），相去可（何）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B5.1
+    editor_reads: "畏"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "人之所○，亦不可以不○。人"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B5.2
+    editor_reads: "畏"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "人之所○，亦不可以不○。人○辱若缨（惊）。贵大"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B5.3
+    editor_reads: "宠"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，亦不可以不○。人○辱若缨（惊）。贵大患若身"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B5.4
+    editor_reads: "宠"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "患若身。可（何）胃（谓）○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B6.1
+    editor_reads: "宠"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "辱？○为下也。得之若缨（惊），"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B6.2
+    editor_reads: "失"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为下也。得之若缨（惊），○之若缨（惊），是胃（谓）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B6.3
+    editor_reads: "宠"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之若缨（惊），是胃（谓）○辱缨（惊）。□□□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B7.1
+    editor_reads: "吾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "若身？○所以又（有）大患者，为○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B7.2
+    editor_reads: "吾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○所以又（有）大患者，为○又（有）身。○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B7.3
+    editor_reads: "及"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "大患者，为○又（有）身。○○亡身，或可（何）□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B7.4
+    editor_reads: "吾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○又（有）身。○○亡身，或可（何）□□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B8.1
+    editor_reads: "託"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为天下，若可以○天下矣。○以身为天下，若"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B8.2
+    editor_reads: "爱"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为天下，若可以○天下矣。○以身为天下，若可（何）以"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B8.3
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "以身为天下，若可（何）以○天下矣。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B9.1
+    editor_reads: "勤"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "上士昏（闻）道，○能行于其中。中士昏（闻）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B9.2
+    editor_reads: "笑"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "若亡。下士昏（闻）道，大○之。弗大"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B10.1
+    editor_reads: "笑"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，不足以为道矣。是以建言"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B10.2
+    editor_reads: "○"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "又（有）之：明道女（如）○，○道□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B10.3
+    editor_reads: "夷"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "有）之：明道女（如）○，○道□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B11.1
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "道若退。上○女（如）浴（谷），大白女"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B11.2
+    editor_reads: "广"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（谷），大白女（如）辱，○○女（如）不足，建○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B11.3
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "谷），大白女（如）辱，○○女（如）不足，建○女（如"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B11.4
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○女（如）不足，建○女（如）□□贞（真）女（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B12.1
+    editor_reads: "形"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，大音祗圣（声），天象亡○，道……"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B13.1
+    editor_reads: "兑"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "闷（闭）其门，赛（塞）其○，终身不○。启其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B13.2
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "门，赛（塞）其○，终身不○。启其○，赛其事，终身不"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B13.3
+    editor_reads: "兑"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，终身不○。启其○，赛其事，终身不○。大成"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B13.4
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。启其○，赛其事，终身不○。大成若"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B14.1
+    editor_reads: "缺"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，其○不敝。大"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B14.2
+    editor_reads: "用"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，其○不敝。大○若中（盅），其"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B14.3
+    editor_reads: "盈"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，其○不敝。大○若中（盅），其甬（用）不"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B14.4
+    editor_reads: "穷"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "若中（盅），其甬（用）不○。大○若"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B14.5
+    editor_reads: "巧"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "盅），其甬（用）不○。大○若○，大成若诎，大植（直"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B14.6
+    editor_reads: "拙"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。大○若○，大成若诎，大植（直）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B15.1
+    editor_reads: "燥"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "若屈。○○苍（沧），青（清）○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B15.2
+    editor_reads: "胜"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "若屈。○○苍（沧），青（清）○然（"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B15.3
+    editor_reads: "胜"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○苍（沧），青（清）○然（热），清清（静）为天"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B15.4
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "定（正）。善建者不拔，善○者"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B16.1
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "祀不屯。攸（修）之身，其○乃贞（真）。攸（修）之○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B16.2
+    editor_reads: "家"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○乃贞（真）。攸（修）之○，其○又（有）舍（餘）。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B16.3
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（真）。攸（修）之○，其○又（有）舍（餘）。攸（修"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B17.1
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之向（乡），其○乃长。攸（修）之邦，其○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B17.2
+    editor_reads: "德"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○乃长。攸（修）之邦，其○乃奉（丰）。攸（修）之天"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B18.1
+    editor_reads: "家"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○，以向（乡）观向（乡），"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: B18.2
+    editor_reads: "吾"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "以邦观邦，以天下观天下。○可（何）以智（知）天□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C1.1
+    editor_reads: "畏"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "）誉之，其既〈即（次）〉○之，其即（次）○之。信不"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C1.2
+    editor_reads: "侮"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（次）〉○之，其即（次）○之。信不足，安"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C2.1
+    editor_reads: "乎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "又（有）不信。猷（犹）○其贵言也。成事述（遂）○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C2.2
+    editor_reads: "功"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○其贵言也。成事述（遂）○，而百○曰我自"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C2.3
+    editor_reads: "姓"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "也。成事述（遂）○，而百○曰我自○也。古（故）大"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C2.4
+    editor_reads: "然"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，而百○曰我自○也。古（故）大"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C3.1
+    editor_reads: "仁"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "道发（废），安有○义。六新（亲）不和，安有"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C3.2
+    editor_reads: "慈"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。六新（亲）不和，安有孝○。邦○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C3.3
+    editor_reads: "家"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "（亲）不和，安有孝○。邦○○○安又（有）正臣。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C3.4
+    editor_reads: "昏"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○。邦○○○安又（有）正臣。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C3.5
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。邦○○○安又（有）正臣。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C4.1
+    editor_reads: "过"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，安坪（平）大。乐与饵，○客止。古（故）道□□□，"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C5.1
+    editor_reads: "闻"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之不足见，圣（听）之不足○，而不可既也。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C6.1
+    editor_reads: "用"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "君子居则贵左，○兵则贵右。古（故）曰兵者"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C7.1
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "得已而甬（用）之。○○为上，弗○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C7.2
+    editor_reads: null
+    mark: bare                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "得已而甬（用）之。○○为上，弗○也。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C7.3
+    editor_reads: "美"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○○为上，弗○也。○之，是乐杀人。夫乐"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C7.4
+    editor_reads: "美"
+    mark: emend                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为上，弗○也。○之，是乐杀人。夫乐□□□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C8.1
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "，丧事上右。是以卞（偏）○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C9.1
+    editor_reads: "将"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "军居左，上○军居右，言以丧豊（礼）居"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C10.1
+    editor_reads: "哀"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "则以○悲位（莅）之；战○则以丧"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C10.2
+    editor_reads: "胜"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "则以○悲位（莅）之；战○则以丧豊（礼）居之。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C11.1
+    editor_reads: "失"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "为之者败之，执之者○之。圣人无为，古（故）无"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C12.1
+    editor_reads: "慎"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○终若○，则无败事喜（矣）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C12.2
+    editor_reads: "始"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○终若○，则无败事喜（矣）。人之"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C12.3
+    editor_reads: "且"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "。人之败也，亘（恒）于其○成也败之。是以□"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C13.1
+    editor_reads: "难"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "人欲不欲，不贵○得之货；学不学，复众之所"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C13.2
+    editor_reads: "过"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "得之货；学不学，复众之所○。是以能○○"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C13.3
+    editor_reads: "辅"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "不学，复众之所○。是以能○○勿（物）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C13.4
+    editor_reads: "万"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "○。是以能○○勿（物）"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""
+  - id: C14.1
+    editor_reads: "然"
+    mark: loan                # loan = ○（X） · emend = ○〈X〉 · bare = no reading offered
+    context: "之自○，而弗敢为。"
+    graph: ""              # what the slip actually shows
+    reading: ""            # the word you take it to write
+    status: open           # open | confirms | differs | uncertain
+    source: ""             # slip image · daoisopen · 39017 · Notability page
+    notes: ""

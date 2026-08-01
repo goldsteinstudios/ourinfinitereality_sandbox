@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "title": "Tao Te Ching Structural Translation Codex",
+    "exported": "2025-07-19T22:32:28.527Z",
+    "version": "3.0",
+    "totalChapters": 3,
+    "totalMappings": 42
+  },
+  "mappings": {
+    "可道": {
+      "pinyin": "kě dào",
+      "meaning": "Named Void "
+    },
+    "恆道": {
+      "pinyin": "héng dào",
+      "meaning": "True Void "
+    },
+    "可名": {
+      "pinyin": "kě míng",
+      "meaning": "Named Quality "
+    },
+    "恆名": {
+      "pinyin": "héng míng",
+      "meaning": "True Quality "
+    },
+    "無名": {
+      "pinyin": "wú míng",
+      "meaning": "Without namer "
+    },
+    "天地": {
+      "pinyin": "tiān dì",
+      "meaning": "Void|Not-Void Gradient "
+    },
+    "萬物": {
+      "pinyin": "wàn wù",
+      "meaning": "Rₙ (All recursive forms)"
+    },
+    "無欲": {
+      "pinyin": "wú yù",
+      "meaning": "Without desire/non-directional"
+    },
+    "有欲": {
+      "pinyin": "yǒu yù",
+      "meaning": "With desire/directional bias"
+    },
+    "聖人": {
+      "pinyin": "shèng rén",
+      "meaning": "Sage: recursion-aware frame"
+    },
+    "無為": {
+      "pinyin": "wú wéi",
+      "meaning": "Wu Wei: Non-action preserving paradox"
+    },
+    "道": {
+      "pinyin": "dào",
+      "meaning": "Void "
+    },
+    "常": {
+      "pinyin": "cháng",
+      "meaning": "Constant/Unchanging"
+    },
+    "無": {
+      "pinyin": "wú",
+      "meaning": "Structural void/Absence (not emptiness)"
+    },
+    "有": {
+      "pinyin": "yǒu",
+      "meaning": "Presence/Being"
+    },
+    "名": {
+      "pinyin": "míng",
+      "meaning": "Quality"
+    },
+    "一": {
+      "pinyin": "yī",
+      "meaning": "X₁ (First contrast gradient)"
+    },
+    "二": {
+      "pinyin": "èr",
+      "meaning": "Y₁ (Balance axis)"
+    },
+    "三": {
+      "pinyin": "sān",
+      "meaning": "Z₁ (Structural rotation)"
+    },
+    "天": {
+      "pinyin": "tiān",
+      "meaning": "Y->∞ "
+    },
+    "地": {
+      "pinyin": "dì",
+      "meaning": "X₁ (Earth/Contrast/Form)"
+    },
+    "生": {
+      "pinyin": "shēng",
+      "meaning": "Structural emergence (not causation)"
+    },
+    "陰": {
+      "pinyin": "yīn",
+      "meaning": "Inward gradient/Yin polarity"
+    },
+    "陽": {
+      "pinyin": "yáng",
+      "meaning": "Outward gradient/Yang polarity"
+    },
+    "氣": {
+      "pinyin": "qì",
+      "meaning": "Z₁ (Qi/Structural turning)"
+    },
+    "中": {
+      "pinyin": "zhōng",
+      "meaning": "Pₙ (Center paradox)"
+    },
+    "虛": {
+      "pinyin": "xū",
+      "meaning": "Structural void (unfillable center)"
+    },
+    "實": {
+      "pinyin": "shí",
+      "meaning": "Structural density/form"
+    },
+    "為": {
+      "pinyin": "wéi",
+      "meaning": "Action/Making (collapses paradox)"
+    },
+    "德": {
+      "pinyin": "dé",
+      "meaning": "Structural coherence/recursive alignment"
+    },
+    "反": {
+      "pinyin": "fǎn",
+      "meaning": "Return/Recursive folding back to Pₙ"
+    },
+    "弱": {
+      "pinyin": "ruò",
+      "meaning": "Yielding/Flexible (preserves recursion)"
+    },
+    "強": {
+      "pinyin": "qiáng",
+      "meaning": "Rigid/Forced (breaks recursion)"
+    },
+    "歸": {
+      "pinyin": "guī",
+      "meaning": "Return to paradox center"
+    },
+    "化": {
+      "pinyin": "huà",
+      "meaning": "Transformation through recursion"
+    },
+    "器": {
+      "pinyin": "qì",
+      "meaning": "Vessel/Frame holding paradox (Oₙ)"
+    },
+    "用": {
+      "pinyin": "yòng",
+      "meaning": "Function enabled by emptiness"
+    },
+    "常道": {
+      "pinyin": "chang dao",
+      "meaning": "True Void"
+    },
+    "非": {
+      "pinyin": "fēi",
+      "meaning": "≠"
+    },
+    "恒道": {
+      "pinyin": "héng dào",
+      "meaning": "True Void"
+    },
+    "，": {
+      "pinyin": "comma",
+      "meaning": ","
+    },
+    "。": {
+      "pinyin": "dot",
+      "meaning": "."
+    }
+  },
+  "chapters": {
+    "1": {
+      "versions": {
+        "traditional": {
+          "chinese": [
+            "道可道非恆道",
+            "名可名，非恆名。",
+            "無名天地之始；",
+            "有名萬物之母。",
+            "故常無欲，以觀其妙；",
+            "常有欲，以觀其徼。",
+            "此兩者同出而異名，",
+            "同謂之玄。",
+            "玄之又玄，眾妙之門。"
+          ],
+          "pinyin": [
+            "Dào kě dào, fēi cháng dào.",
+            "Míng kě míng, fēi cháng míng.",
+            "Wú míng tiān dì zhī shǐ;",
+            "Yǒu míng wàn wù zhī mǔ.",
+            "Gù cháng wú yù, yǐ guān qí miào;",
+            "Cháng yǒu yù, yǐ guān qí jiào.",
+            "Cǐ liǎng zhě tóng chū ér yì míng,",
+            "Tóng wèi zhī xuán.",
+            "Xuán zhī yòu xuán, zhòng miào zhī mén."
+          ]
+        },
+        "simplified": {
+          "chinese": [
+            "道可道，非恒道。",
+            "名可名，非恒名。",
+            "无名天地之始；",
+            "有名万物之母。",
+            "故常无欲，以观其妙；",
+            "常有欲，以观其徼。",
+            "此两者同出而异名，",
+            "同谓之玄。",
+            "玄之又玄，众妙之门。"
+          ],
+          "pinyin": [
+            "Dào kě dào, fēi héng dào.",
+            "Míng kě míng, fēi héng míng.",
+            "Wú míng tiān dì zhī shǐ;",
+            "Yǒu míng wàn wù zhī mǔ.",
+            "Gù cháng wú yù, yǐ guān qí miào;",
+            "Cháng yǒu yù, yǐ guān qí jiào.",
+            "Cǐ liǎng zhě tóng chū ér yì míng,",
+            "Tóng wèi zhī xuán.",
+            "Xuán zhī yòu xuán, zhòng miào zhī mén."
+          ]
+        },
+        "classical": {
+          "chinese": [
+            "道可道，非常道。",
+            "名可名，非常名。",
+            "無名天地之始；",
+            "有名萬物之母。",
+            "故常無欲，以觀其妙；",
+            "常有欲，以觀其徼。",
+            "此兩者同出而異名，",
+            "同謂之玄。",
+            "玄之又玄，眾妙之門。"
+          ],
+          "pinyin": [
+            "Dào kě dào, fēi cháng dào.",
+            "Míng kě míng, fēi cháng míng.",
+            "Wú míng tiān dì zhī shǐ;",
+            "Yǒu míng wàn wù zhī mǔ.",
+            "Gù cháng wú yù, yǐ guān qí miào;",
+            "Cháng yǒu yù, yǐ guān qí jiào.",
+            "Cǐ liǎng zhě tóng chū ér yì míng,",
+            "Tóng wèi zhī xuán.",
+            "Xuán zhī yòu xuán, zhòng miào zhī mén."
+          ]
+        }
+      },
+      "structural": [
+        {
+          "text": "Void Named Void cannot be True VoidMANUAL",
+          "source": "manual",
+          "lastUpdated": 1752964262679
+        },
+        {
+          "text": "QualityNamed Quality ,≠True Quality .",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        },
+        {
+          "text": "Without namer Void|Not-Void Gradient 之始,",
+          "source": "auto",
+          "lastUpdated": 1752964335639,
+          "triggeredBy": "地"
+        },
+        {
+          "text": "Presence/BeingQualityRₙ (All recursive forms)之母.",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        },
+        {
+          "text": "故Constant/UnchangingWithout desire/non-directional,以觀其妙,",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "Constant/UnchangingWith desire/directional bias,以觀其徼.",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        },
+        {
+          "text": "此兩者同出而異Quality,",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "同謂之玄.",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        },
+        {
+          "text": "玄之又玄,眾妙之門.",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        }
+      ]
+    },
+    "2": {
+      "versions": {
+        "traditional": {
+          "chinese": [
+            "天下皆知美之為美，斯惡已。",
+            "皆知善之為善，斯不善已。",
+            "故有無相生，",
+            "難易相成，",
+            "長短相形，",
+            "高下相傾，",
+            "音聲相和，",
+            "前後相隨。"
+          ],
+          "pinyin": [
+            "Tiān xià jiē zhī měi zhī wéi měi, sī è yǐ.",
+            "Jiē zhī shàn zhī wéi shàn, sī bù shàn yǐ.",
+            "Gù yǒu wú xiāng shēng,",
+            "Nán yì xiāng chéng,",
+            "Cháng duǎn xiāng xíng,",
+            "Gāo xià xiāng qīng,",
+            "Yīn shēng xiāng hé,",
+            "Qián hòu xiāng suí."
+          ]
+        }
+      },
+      "structural": [
+        {
+          "text": "[Auto] Y₁ (Heaven/Dimension/Space)下皆知美之Action/Making (collapses paradox)美, 斯惡已,",
+          "source": "auto-edited",
+          "lastUpdated": "2025-07-19T22:01:36.847Z"
+        },
+        {
+          "text": "皆知善之Action/Making (collapses paradox)善,斯不善已.",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        },
+        {
+          "text": "故Presence/BeingStructural void/Absence (not emptiness)相Structural emergence (not causation),",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "難易相成,",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "長短相形,",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "高下相傾,",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "音聲相和,",
+          "source": "auto",
+          "lastUpdated": 1752964335640,
+          "triggeredBy": "，"
+        },
+        {
+          "text": "前後相隨.",
+          "source": "auto",
+          "lastUpdated": 1752964335641,
+          "triggeredBy": "。"
+        }
+      ]
+    },
+    "42": {
+      "versions": {
+        "traditional": {
+          "chinese": [
+            "道生一，",
+            "一生二，",
+            "二生三，",
+            "三生萬物。",
+            "萬物負陰而抱陽，",
+            "沖氣以為和。"
+          ],
+          "pinyin": [
+            "Dào shēng yī,",
+            "Yī shēng èr,",
+            "Èr shēng sān,",
+            "Sān shēng wàn wù.",
+            "Wàn wù fù yīn ér bào yáng,",
+            "Chōng qì yǐ wéi hé."
+          ]
+        }
+      },
+      "structural": [
+        {
+          "text": "Paradox generates contrast gradient,",
+          "source": "manual",
+          "lastUpdated": "2025-07-19T22:00:33.823Z"
+        },
+        {
+          "text": "Contrast demands balance axis,",
+          "source": "manual",
+          "lastUpdated": "2025-07-19T22:00:33.823Z"
+        },
+        {
+          "text": "Balance necessitates structural turning,",
+          "source": "manual",
+          "lastUpdated": "2025-07-19T22:00:33.823Z"
+        },
+        {
+          "text": "Turning gives rise to recursive forms.",
+          "source": "manual",
+          "lastUpdated": "2025-07-19T22:00:33.823Z"
+        },
+        {
+          "text": "All forms hold inward/outward gradients,",
+          "source": "manual",
+          "lastUpdated": "2025-07-19T22:00:33.823Z"
+        },
+        {
+          "text": "Rotating paradox creates coherence.",
+          "source": "manual",
+          "lastUpdated": "2025-07-19T22:00:33.823Z"
+        }
+      ]
+    }
+  },
+  "currentChapter": "2",
+  "currentVersion": "traditional",
+  "progress": {
+    "totalLines": 23,
+    "definedLines": 23,
+    "autoLines": 15,
+    "manualLines": 8,
+    "percentage": 100
+  }
+}

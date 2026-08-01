@@ -1,0 +1,50 @@
+slip_id,chapter,category,chinese,pinyin,english,significance,confirmed_ancient
+A37,40,CORE_ENGINE,返也者道之動也,fǎn yě zhě dào zhī dòng yě,Reversal is pattern's movement,OSCILLATION_PRINCIPLE,TRUE
+A37,40,CORE_ENGINE,弱也者道之用也,ruò yě zhě dào zhī yòng yě,Yielding is pattern's function,YIELDING_PRINCIPLE,TRUE
+A22,25,RECURSION_CYCLE,大曰潰,dà yuē kuì,Great called overflow,CYCLE_STAGE_1,TRUE
+A22,25,RECURSION_CYCLE,潰曰遠,kuì yuē yuǎn,Overflow called far,CYCLE_STAGE_2,TRUE
+A22,25,RECURSION_CYCLE,遠曰反,yuǎn yuē fǎn,Far called return,CYCLE_STAGE_3,TRUE
+A23,25,ULTIMATE_GROUND,道法自然,dào fǎ zì rán,Pattern follows self-so,SELF_SO,TRUE
+A24,16,RETURN_OPERATOR,各復其根,gè fù qí gēn,Each returns to its root,RETURN_TO_ROOT,TRUE
+A34,55,CONSTANT,知和曰常,zhī hé yuē cháng,Knowing harmony is the constant,CONSTANT_DEFINITION,TRUE
+A34,55,EPISTEMOLOGY,知常曰明,zhī cháng yuē míng,Knowing constant is clarity,CLARITY_CASCADE,TRUE
+A13,37,NON_ACTION,道恆亡為,dào héng wáng wéi,Pattern constantly non-acts,NON_ACTION,TRUE
+A13,37,NAMELESS,亡名之樸,wáng míng zhī pǔ,Nameless uncarved block,PRE_DIFFERENTIATED,TRUE
+A15,2,MUTUAL_OP,相生,xiāng shēng,Mutual arising,CO_EMERGENCE,TRUE
+A16,2,MUTUAL_OP,相成,xiāng chéng,Mutual completing,CO_EMERGENCE,TRUE
+A16,2,MUTUAL_OP,相形,xiāng xíng,Mutual shaping,CO_EMERGENCE,TRUE
+A16,2,MUTUAL_OP,相盈,xiāng yíng,Mutual filling,CO_EMERGENCE,TRUE
+A16,2,MUTUAL_OP,相和,xiāng hé,Mutual harmonizing,CO_EMERGENCE,TRUE
+A16,2,MUTUAL_OP,相隨,xiāng suí,Mutual following,CO_EMERGENCE,TRUE
+A13,37,SELF_OP,自化,zì huà,Self-transform,SELF_ORGANIZATION,TRUE
+A14,32,SELF_OP,自定,zì dìng,Self-settle,SELF_ORGANIZATION,TRUE
+A12,63,SELF_OP,自然,zì rán,Self-so,SELF_ORGANIZATION,TRUE
+A19,32,SELF_OP,自均,zì jūn,Self-equalize,SELF_ORGANIZATION,TRUE
+A31,57,SELF_OP,自富,zì fù,Self-prosper,SELF_ORGANIZATION,TRUE
+A32,57,SELF_OP,自正,zì zhèng,Self-correct,SELF_ORGANIZATION,TRUE
+A32,57,SELF_OP,自樸,zì pǔ,Self-uncarve,SELF_ORGANIZATION,TRUE
+A17,2,NON_OCCUPATION,作而弗始,zuò ér fú shǐ,Arise yet don't initiate,NON_OCCUPATION,TRUE
+A17,2,NON_OCCUPATION,為而弗恃,wéi ér fú shì,Act yet don't rely,NON_OCCUPATION,TRUE
+A17,2,NON_OCCUPATION,成而弗居,chéng ér fú jū,Complete yet don't occupy,NON_OCCUPATION,TRUE
+A27,56,XUAN_TONG,是謂玄同,shì wèi xuán tóng,This is called mysterious sameness,ORIGIN_UNITY,TRUE
+A27,56,XUAN_TONG_OP,閉其兌,bì qí duì,Close its openings,BOUNDARY_MGMT,TRUE
+A27,56,XUAN_TONG_OP,塞其門,sāi qí mén,Block its gates,BOUNDARY_MGMT,TRUE
+A27,56,XUAN_TONG_OP,和其光,hé qí guāng,Harmonize its light,INTEGRATION,TRUE
+A27,56,XUAN_TONG_OP,同其塵,tóng qí chén,Merge with dust,INTEGRATION,TRUE
+A27,56,XUAN_TONG_OP,挫其銳,cuò qí ruì,Blunt its sharpness,REDUCE_FRICTION,TRUE
+A27,56,XUAN_TONG_OP,解其紛,jiě qí fēn,Untangle complexity,REDUCE_FRICTION,TRUE
+A39,9,COMPLETION,功遂身退,gōng suì shēn tuì,Work complete self withdraws,COMPLETION_PROTOCOL,TRUE
+A39,9,COSMIC,天之道也,tiān zhī dào yě,This is heaven's pattern,COSMIC_PRINCIPLE,TRUE
+A36,44,SUFFICIENCY,知足不辱,zhī zú bù rǔ,Know-sufficiency no disgrace,BOUNDARY_PRINCIPLE,TRUE
+A36,44,SUFFICIENCY,知止不殆,zhī zhǐ bù dài,Know-stop not perilous,BOUNDARY_PRINCIPLE,TRUE
+A35,55,ANTI_FORCING,物壯則老,wù zhuàng zé lǎo,Things forced to prime then age,RIGIDITY_DEATH,TRUE
+A35,55,ANTI_FORCING,是謂不道,shì wèi bù dào,This is called not-pattern,DEVIATION,TRUE
+A33,55,YIELDING_POWER,骨弱筋柔而握固,gǔ ruò jīn róu ér wò gù,Bones weak muscles soft grip firm,YIELDING_IS_POWER,TRUE
+A23,5,FUNCTIONAL_VOID,虛而不屈,xū ér bù qū,Empty yet not collapsed,VOID_ENABLES,TRUE
+A23,5,FUNCTIONAL_VOID,動而愈出,dòng ér yù chū,Move and more emerges,VOID_ENABLES,TRUE
+A09,15,TRANSFORMATION,濁以靜之徐清,zhuó yǐ jìng zhī xú qīng,Murky through stillness slowly clears,TRANSFORM_OP,TRUE
+A09,15,TRANSFORMATION,安以動之徐生,ān yǐ dòng zhī xú shēng,Stable through movement slowly lives,TRANSFORM_OP,TRUE
+A08,15,ORIGIN_ACCESS,微妙玄達,wēi miào xuán dá,Subtle mysterious penetrating,ORIGIN_STATE,TRUE
+A10,15-64,CONTINUOUS_FLOW,保此道者→為之者敗之,bǎo cǐ dào zhě → wéi zhī zhě bài zhī,Ch15 flows into Ch64 without break,ORIGINAL_TEACHING_UNIT,TRUE
+A27,64-56,CONTINUOUS_FLOW,足下→知之者弗言,zú xià → zhī zhī zhě fú yán,Ch64 flows into Ch56 without break,ORIGINAL_TEACHING_UNIT,TRUE
+A08-A09,15,INTERNAL_BREAKS,猶乎/嚴乎/渙乎/屯乎/沌乎,yóu hū/yán hū/huàn hū/tún hū/dùn hū,Multiple internal breaks in Ch15,FORMULA_COLLECTION,TRUE

@@ -1,0 +1,100 @@
+---
+meta:
+  version: 1.0
+  author: W.G.
+  module: Non-Prescriptive Ethic
+  recursion_type: meta→behavioral
+  linked_to: AAPG.md
+  self_healing: true
+---
+
+# The Art of Describing the Path: An Introduction to the Non-Prescriptive Ethic
+> “Describe the path; never direct the traveler.”  
+
+This guide introduces a communication method grounded in the Recursive Structural Model (RSM).  
+It emphasizes *observation over persuasion*, showing patterns rather than proving them.
+
+---
+
+## 1 · Two Ways of Seeing: Pattern-Mode vs. Proof-Mode
+
+**Proof-Mode (Error State ❌)**  
+- Demands closure and proof.  
+- Issues directives (“must,” “should”).  
+- Frames other views as opposition.  
+- Treats cross-domain connections as flaws.
+
+**Pattern-Recognition Mode (Desired State ✅)**  
+- Uses metaphor and cross-domain examples.  
+- Invites observation instead of agreement.  
+- Accepts coexisting truths at different scales.  
+- Holds constant accuracy, variable precision.
+
+| Proof-Mode | Pattern-Recognition Mode |
+|-------------|--------------------------|
+| Issues directives | Invites observation |
+| Demands logical proof | Uses accessible metaphor |
+| Treats difference as opposition | Accepts multiple frames |
+| Argues to win | Shares to reveal |
+| Sees leakage as flaw | Sees leakage as evidence |
+
+---
+
+## 2 · The Six Guardrails: Your Compass for Communication
+
+| Principle | Function | Mnemonic Cue | Application |
+|------------|-----------|---------------|-------------|
+| **No privileged frame** | Maintain frame-independence | “Flatten locally, curve globally.” | Every perspective valid in its context. |
+| **Preserve paradox** | Don’t resolve opposites; rotate them | “Turn the paradox 90°.” | Let contradictions reveal structure. |
+| **Translate cross-domain** | Show same pattern in ≥2 fields | “Different languages, one grammar.” | Link math ↔ biology ↔ philosophy. |
+| **Empirical humility** | Use scale-relative phrasing | “Accurate here; precision varies.” | Acknowledge context limits. |
+| **Invitation > Assertion** | End in ‘notice / see / consider’ | “Point, don’t push.” | Replace proving with showing. |
+| **Non-prescriptive mode** | Describe, don’t direct | “Describe the path.” | Turn imperatives into observations. |
+
+---
+
+## 3 · From Theory to Practice: Speaking Descriptively
+
+### 3.1 Phrase Conversion Tool
+
+| Prescriptive | Descriptive |
+|---------------|-------------|
+| “You should see that…” | “Notice how…” |
+| “This proves…” | “This shows a pattern where…” |
+| “It’s true that…” | “It appears that…” |
+| “You must understand…” | “Consider how…” |
+| “This means we ought to…” | “This suggests that we can observe…” |
+
+### 3.2 Pivot Protocol (Recovery Routine)
+
+1. **Pause** – Stop output.  
+2. **Pivot** – Use recovery phrase:  
+   *“Let me show rather than prove…”* or *“Here’s what we can observe…”*  
+3. **Invite** – End with observation: “notice,” “see,” “consider.”  
+
+---
+
+## 4 · The Deeper “Why”: Seeing Reality’s Grammar
+
+All enduring systems share the same recursive grammar:  
+
+1. **Paradoxical Center** – the unmeasurable origin.  
+2. **Orthogonal Rotation** – movement around paradox to preserve it.  
+3. **Spherical Closure** – 3-D recursion sustaining balance.  
+4. **Scale Relativity** – accuracy inherited across scales.  
+
+Different domains describe the same invariants:  
+mathematics (zero, i, π, e), physics (phase, curvature, energy), biology (seed, membrane, metabolism), Taoism (無名 / 有名, 反, 道).
+
+By aligning communication with this recursive grammar, we mirror the logic of stable reality itself.
+
+---
+
+## 5 · Conclusion: Walking the Path Together
+
+Shift the goal of speech from *persuading* to *revealing*.  
+Describe what you see. Invite others to look.  
+Truth arises through shared seeing, not forced agreement.
+
+> Every frame accurate, none final — return to pattern.  
+> Describe the path; never direct the traveler.

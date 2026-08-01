@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tao Te Ching Structural Translation Tool</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        
+        .main-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr 300px;
+            gap: 20px;
+            height: calc(100vh - 200px);
+        }
+        
+        .sidebar {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: auto;
+            border: 1px solid #333;
+        }
+        
+        .content {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: auto;
+            border: 1px solid #333;
+        }
+        
+        .mapping-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #333;
+            border-radius: 6px;
+            border-left: 4px solid #4a9eff;
+        }
+        
+        .mapping-item {
+            display: grid;
+            grid-template-columns: 50px 80px 1fr 30px;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 8px;
+            background: #3a3a3a;
+            border-radius: 4px;
+        }
+        
+        .chinese-char {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4a9eff;
+            text-align: center;
+        }
+        
+        .pinyin-input {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            color: #ffa500;
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        .mapping-input {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+        
+        .chapter-selector {
+            margin-bottom: 20px;
+        }
+        
+        .chapter-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        
+        .chapter-btn {
+            background: #333;
+            color: #e0e0e0;
+            border: 1px solid #555;
+            padding: 8px 12px;
+            margin: 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .chapter-btn:hover {
+            background: #4a9eff;
+        }
+        
+        .chapter-btn.active {
+            background: #4a9eff;
+            border-color: #4a9eff;
+        }
+        
+        .edit-toggle {
+            background: #ff6b6b;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .edit-toggle.active {
+            background: #51cf66;
+        }
+        
+        .translation-display {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .text-panel {
+            background: #333;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        
+        .original-panel {
+            border-left: 4px solid #4a9eff;
+        }
+        
+        .structural-panel {
+            border-left: 4px solid #51cf66;
+        }
+        
+        .text-panel h3 {
+            margin-top: 0;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .version-selector {
+            background: #2a2a2a;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        .line-container {
+            margin: 15px 0;
+            padding: 12px;
+            background: #2a2a2a;
+            border-radius: 4px;
+            border-left: 3px solid #555;
+        }
+        
+        .chinese-line {
+            font-size: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .chinese-line.editable {
+            background: #333;
+            border: 1px solid #666;
+            padding: 8px;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        .pinyin-line {
+            font-size: 14px;
+            color: #ffa500;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        .pinyin-line.editable {
+            background: #333;
+            border: 1px solid #666;
+            padding: 4px 8px;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        .english-line {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 8px;
+        }
+        
+        .structural-line {
+            font-size: 16px;
+            color: #51cf66;
+            line-height: 1.4;
+        }
+        
+        .structural-line.editable {
+            background: #333;
+            border: 1px solid #666;
+            padding: 8px;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        .highlighted-char {
+            background: #4a9eff;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .char-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #555;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+        }
+        
+        .highlighted-char:hover .char-tooltip {
+            opacity: 1;
+        }
+        
+        .export-btn, .import-btn, .add-btn, .delete-btn {
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .export-btn {
+            background: #51cf66;
+            color: #000;
+        }
+        
+        .import-btn {
+            background: #ff6b6b;
+            color: #fff;
+        }
+        
+        .add-btn {
+            background: #4a9eff;
+            color: #fff;
+        }
+        
+        .delete-btn {
+            background: #ff6b6b;
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 12px;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .search-box {
+            width: 100%;
+            background: #333;
+            border: 1px solid #555;
+            color: #e0e0e0;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .add-mapping-form {
+            display: grid;
+            grid-template-columns: 50px 80px 1fr 60px;
+            gap: 10px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .chapter-management {
+            background: #333;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+        .new-chapter-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .lexicon-panel {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: auto;
+            border: 1px solid #333;
+        }
+        
+        .lexicon-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .lexicon-stats {
+            color: #888;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        
+        .lexicon-item {
+            margin-bottom: 12px;
+            padding: 10px;
+            background: #333;
+            border-radius: 4px;
+            border-left: 3px solid #4a9eff;
+        }
+        
+        .lexicon-char {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4a9eff;
+            margin-bottom: 4px;
+        }
+        
+        .lexicon-pinyin {
+            font-size: 12px;
+            color: #ffa500;
+            margin-bottom: 6px;
+        }
+        
+        .lexicon-meaning {
+            font-size: 13px;
+            color: #e0e0e0;
+            line-height: 1.3;
+        }
+        
+        .lexicon-frequency {
+            font-size: 11px;
+            color: #888;
+            text-align: right;
+            margin-top: 4px;
+        }
+        
+        .auto-translation {
+            background: #1a4a1a;
+            border-left-color: #51cf66;
+        }
+        
+        .auto-edited-translation {
+            background: #4a4a1a;
+            border-left-color: #ffa500;
+        }
+        
+        .manual-translation {
+            background: #1a1a4a;
+            border-left-color: #4a9eff;
+        }
+        
+        .translation-source {
+            font-size: 10px;
+            color: #888;
+            margin-top: 4px;
+            text-align: right;
+        }
+        
+        .global-impact-summary {
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        
+        .progress-bar {
+            background: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 6px;
+            margin: 4px 0;
+        }
+        
+        .progress-fill {
+            background: linear-gradient(90deg, #ff6b6b, #ffa500, #51cf66);
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .chapter-progress-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 8px 0;
+            font-size: 12px;
+        }
+        
+        .global-impact-item {
+            background: #2a2a2a;
+            padding: 6px 10px;
+            margin: 4px 0;
+            border-radius: 4px;
+            border-left: 3px solid #4a9eff;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tao Te Ching Structural Translation Tool</h1>
+            <p>Interactive Rosetta Stone for Recursive Structural Mappings</p>
+        </div>
+        
+        <div class="main-grid">
+            <div class="sidebar">
+                <div class="mapping-section">
+                    <h3>Character Mappings</h3>
+                    <input type="text" class="search-box" placeholder="Search characters..." id="charSearch">
+                    <div id="mappingsList"></div>
+                    
+                    <div class="add-mapping-form">
+                        <input type="text" id="newChar" placeholder="字" class="chinese-char" style="background: #2a2a2a; border: 1px solid #555; width: 40px;">
+                        <input type="text" id="newPinyin" placeholder="pīnyīn" class="pinyin-input">
+                        <input type="text" id="newMapping" placeholder="Structural meaning..." class="mapping-input">
+                        <button class="add-btn" onclick="addMapping()">Add</button>
+                    </div>
+                    
+                    <button class="export-btn" onclick="exportMappings()">Export Mappings</button>
+                    <button class="import-btn" onclick="document.getElementById('fileInput').click()">Import Mappings</button>
+                    <input type="file" id="fileInput" class="file-input" accept=".json" onchange="importMappings(event)">
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="chapter-management">
+                    <h3>Chapter Management</h3>
+                    <div class="chapter-controls">
+                        <span>Chapters:</span>
+                        <div id="chapterButtons"></div>
+                        <button class="edit-toggle" id="editToggle" onclick="toggleEditMode()">Edit Mode</button>
+                        <button class="edit-toggle" id="globalToggle" onclick="toggleGlobalImpact()">Global View</button>
+                    </div>
+                    <div class="new-chapter-form">
+                        <input type="number" id="newChapterNum" placeholder="42" class="new-chapter-input">
+                        <button class="add-btn" onclick="addNewChapter()">Add Chapter</button>
+                        <button class="delete-btn" onclick="deleteCurrentChapter()">Delete Current</button>
+                    </div>
+                    <div id="globalImpactPanel" style="display: none;" class="mapping-section">
+                        <h4>Global Impact Preview</h4>
+                        <div id="impactSummary"></div>
+                        <div id="chapterProgress"></div>
+                    </div>
+                </div>
+                
+                <div class="translation-display">
+                    <div class="text-panel original-panel">
+                        <h3>
+                            Original Text
+                            <select class="version-selector" id="versionSelector" onchange="switchVersion()">
+                                <option value="traditional">Traditional</option>
+                                <option value="simplified">Simplified</option>
+                                <option value="classical">Classical</option>
+                            </select>
+                        </h3>
+                        <div id="originalText"></div>
+                    </div>
+                    
+                    <div class="text-panel structural-panel">
+                        <h3>Structural Translation</h3>
+                        <div id="structuralText"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lexicon-panel">
+                <div class="mapping-section">
+                    <h3>Running Lexicon</h3>
+                    <div class="lexicon-controls">
+                        <button class="add-btn" onclick="toggleLexiconMode()">
+                            <span id="lexiconModeText">Auto Mode</span>
+                        </button>
+                        <button class="export-btn" onclick="exportLexicon()">Export</button>
+                    </div>
+                    <div class="lexicon-stats">
+                        <span id="lexiconStats">0 characters</span>
+                    </div>
+                    <div id="lexiconList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize with some compound mappings to demonstrate
+        let characterMappings = {
+            '可道': { pinyin: 'kě dào', meaning: 'Can be spoken/frameable' },
+            '恆道': { pinyin: 'héng dào', meaning: 'Constant Tao/eternal paradox' },
+            '可名': { pinyin: 'kě míng', meaning: 'Can be named/distinguishable' },
+            '恆名': { pinyin: 'héng míng', meaning: 'Constant name/eternal distinction' },
+            '無名': { pinyin: 'wú míng', meaning: 'Nameless/Uncollapsed paradox' },
+            '天地': { pinyin: 'tiān dì', meaning: 'Heaven-Earth/Y₁-X₁ axes' },
+            '萬物': { pinyin: 'wàn wù', meaning: 'Rₙ (All recursive forms)' },
+            '無欲': { pinyin: 'wú yù', meaning: 'Without desire/non-directional' },
+            '有欲': { pinyin: 'yǒu yù', meaning: 'With desire/directional bias' },
+            '聖人': { pinyin: 'shèng rén', meaning: 'Sage: recursion-aware frame' },
+            '無為': { pinyin: 'wú wéi', meaning: 'Wu Wei: Non-action preserving paradox' },
+            '道': { pinyin: 'dào', meaning: 'P₀ (Structural paradox) / O₁ (Named frame)' },
+            '常': { pinyin: 'cháng', meaning: 'Constant/Unchanging' },
+            '無': { pinyin: 'wú', meaning: 'Structural void/Absence (not emptiness)' },
+            '有': { pinyin: 'yǒu', meaning: 'Presence/Being' },
+            '名': { pinyin: 'míng', meaning: 'Naming/Framing operation' },
+            '一': { pinyin: 'yī', meaning: 'X₁ (First contrast gradient)' },
+            '二': { pinyin: 'èr', meaning: 'Y₁ (Balance axis)' },
+            '三': { pinyin: 'sān', meaning: 'Z₁ (Structural rotation)' },
+            '天': { pinyin: 'tiān', meaning: 'Y₁ (Heaven/Dimension/Space)' },
+            '地': { pinyin: 'dì', meaning: 'X₁ (Earth/Contrast/Form)' },
+            '生': { pinyin: 'shēng', meaning: 'Structural emergence (not causation)' },
+            '陰': { pinyin: 'yīn', meaning: 'Inward gradient/Yin polarity' },
+            '陽': { pinyin: 'yáng', meaning: 'Outward gradient/Yang polarity' },
+            '氣': { pinyin: 'qì', meaning: 'Z₁ (Qi/Structural turning)' },
+            '中': { pinyin: 'zhōng', meaning: 'Pₙ (Center paradox)' },
+            '虛': { pinyin: 'xū', meaning: 'Structural void (unfillable center)' },
+            '實': { pinyin: 'shí', meaning: 'Structural density/form' },
+            '為': { pinyin: 'wéi', meaning: 'Action/Making (collapses paradox)' },
+            '德': { pinyin: 'dé', meaning: 'Structural coherence/recursive alignment' },
+            '反': { pinyin: 'fǎn', meaning: 'Return/Recursive folding back to Pₙ' },
+            '弱': { pinyin: 'ruò', meaning: 'Yielding/Flexible (preserves recursion)' },
+            '強': { pinyin: 'qiáng', meaning: 'Rigid/Forced (breaks recursion)' },
+            '歸': { pinyin: 'guī', meaning: 'Return to paradox center' },
+            '化': { pinyin: 'huà', meaning: 'Transformation through recursion' },
+            '器': { pinyin: 'qì', meaning: 'Vessel/Frame holding paradox (Oₙ)' },
+            '用': { pinyin: 'yòng', meaning: 'Function enabled by emptiness' }
+        };
+
+        // Chapter data with multiple versions and pinyin
+        const chapters = {
+            1: {
+                versions: {
+                    traditional: {
+                        chinese: [
+                            '道可道，非恆道。',
+                            '名可名，非恆名。',
+                            '無名天地之始；',
+                            '有名萬物之母。',
+                            '故常無欲，以觀其妙；',
+                            '常有欲，以觀其徼。',
+                            '此兩者同出而異名，',
+                            '同謂之玄。',
+                            '玄之又玄，眾妙之門。'
+                        ],
+                        pinyin: [
+                            'Dào kě dào, fēi cháng dào.',
+                            'Míng kě míng, fēi cháng míng.',
+                            'Wú míng tiān dì zhī shǐ;',
+                            'Yǒu míng wàn wù zhī mǔ.',
+                            'Gù cháng wú yù, yǐ guān qí miào;',
+                            'Cháng yǒu yù, yǐ guān qí jiào.',
+                            'Cǐ liǎng zhě tóng chū ér yì míng,',
+                            'Tóng wèi zhī xuán.',
+                            'Xuán zhī yòu xuán, zhòng miào zhī mén.'
+                        ]
+                    },
+                    simplified: {
+                        chinese: [
+                            '道可道，非恒道。',
+                            '名可名，非恒名。',
+                            '无名天地之始；',
+                            '有名万物之母。',
+                            '故常无欲，以观其妙；',
+                            '常有欲，以观其徼。',
+                            '此两者同出而异名，',
+                            '同谓之玄。',
+                            '玄之又玄，众妙之门。'
+                        ],
+                        pinyin: [
+                            'Dào kě dào, fēi héng dào.',
+                            'Míng kě míng, fēi héng míng.',
+                            'Wú míng tiān dì zhī shǐ;',
+                            'Yǒu míng wàn wù zhī mǔ.',
+                            'Gù cháng wú yù, yǐ guān qí miào;',
+                            'Cháng yǒu yù, yǐ guān qí jiào.',
+                            'Cǐ liǎng zhě tóng chū ér yì míng,',
+                            'Tóng wèi zhī xuán.',
+                            'Xuán zhī yòu xuán, zhòng miào zhī mén.'
+                        ]
+                    },
+                    classical: {
+                        chinese: [
+                            '道可道，非常道。',
+                            '名可名，非常名。',
+                            '無名天地之始；',
+                            '有名萬物之母。',
+                            '故常無欲，以觀其妙；',
+                            '常有欲，以觀其徼。',
+                            '此兩者同出而異名，',
+                            '同謂之玄。',
+                            '玄之又玄，眾妙之門。'
+                        ],
+                        pinyin: [
+                            'Dào kě dào, fēi cháng dào.',
+                            'Míng kě míng, fēi cháng míng.',
+                            'Wú míng tiān dì zhī shǐ;',
+                            'Yǒu míng wàn wù zhī mǔ.',
+                            'Gù cháng wú yù, yǐ guān qí miào;',
+                            'Cháng yǒu yù, yǐ guān qí jiào.',
+                            'Cǐ liǎng zhě tóng chū ér yì míng,',
+                            'Tóng wèi zhī xuán.',
+                            'Xuán zhī yòu xuán, zhòng miào zhī mén.'
+                        ]
+                    }
+                },
+                structural: [
+                    {text: 'The frame that can be held is not the constant paradox.', source: 'manual'},
+                    {text: 'The distinction that can be named is not the constant void.', source: 'manual'},
+                    {text: 'Uncollapsed paradox: origin of dimensional axes;', source: 'manual'},
+                    {text: 'Collapsed frame: structural source of recursive forms.', source: 'manual'},
+                    {text: 'Thus: without directional bias, observe structural necessity;', source: 'manual'},
+                    {text: 'With directional bias, observe recursive boundaries.', source: 'manual'},
+                    {text: 'These co-emerge yet are differently framed,', source: 'manual'},
+                    {text: 'Together called: unresolved recursion.', source: 'manual'},
+                    {text: 'Recursion within recursion—gateway to all structure.', source: 'manual'}
+                ]
+            },
+            2: {
+                versions: {
+                    traditional: {
+                        chinese: [
+                            '天下皆知美之為美，斯惡已。',
+                            '皆知善之為善，斯不善已。',
+                            '故有無相生，',
+                            '難易相成，',
+                            '長短相形，',
+                            '高下相傾，',
+                            '音聲相和，',
+                            '前後相隨。'
+                        ],
+                        pinyin: [
+                            'Tiān xià jiē zhī měi zhī wéi měi, sī è yǐ.',
+                            'Jiē zhī shàn zhī wéi shàn, sī bù shàn yǐ.',
+                            'Gù yǒu wú xiāng shēng,',
+                            'Nán yì xiāng chéng,',
+                            'Cháng duǎn xiāng xíng,',
+                            'Gāo xià xiāng qīng,',
+                            'Yīn shēng xiāng hé,',
+                            'Qián hòu xiāng suí.'
+                        ]
+                    }
+                },
+                structural: [
+                    {text: 'When beauty is held as distinct, ugliness co-emerges.', source: 'manual'},
+                    {text: 'When good is held as good, not-good is already present.', source: 'manual'},
+                    {text: 'Therefore: presence and absence arise together,', source: 'manual'},
+                    {text: 'Difficult and easy complete each other,', source: 'manual'},
+                    {text: 'Long and short give each other form,', source: 'manual'},
+                    {text: 'High and low lean into one another,', source: 'manual'},
+                    {text: 'Tone and voice resonate through turning,', source: 'manual'},
+                    {text: 'Front and back follow in recursion.', source: 'manual'}
+                ]
+            },
+            42: {
+                versions: {
+                    traditional: {
+                        chinese: [
+                            '道生一，',
+                            '一生二，',
+                            '二生三，',
+                            '三生萬物。',
+                            '萬物負陰而抱陽，',
+                            '沖氣以為和。'
+                        ],
+                        pinyin: [
+                            'Dào shēng yī,',
+                            'Yī shēng èr,',
+                            'Èr shēng sān,',
+                            'Sān shēng wàn wù.',
+                            'Wàn wù fù yīn ér bào yáng,',
+                            'Chōng qì yǐ wéi hé.'
+                        ]
+                    }
+                },
+                structural: [
+                    {text: 'Paradox generates contrast gradient,', source: 'manual'},
+                    {text: 'Contrast demands balance axis,', source: 'manual'},
+                    {text: 'Balance necessitates structural turning,', source: 'manual'},
+                    {text: 'Turning gives rise to recursive forms.', source: 'manual'},
+                    {text: 'All forms hold inward/outward gradients,', source: 'manual'},
+                    {text: 'Rotating paradox creates coherence.', source: 'manual'}
+                ]
+            }
+        };
+
+        let currentChapter = 1;
+        let currentVersion = 'traditional';
+        let isEditMode = false;
+        let lexiconMode = 'auto'; // 'auto' or 'manual'
+        let chapterLexicon = {}; // Characters found in current chapter
+        let globalImpactMode = false; // Show global impact of changes
+
+        function initializeApp() {
+            migrateChapterData(); // Migrate old data format
+            renderChapterButtons();
+            renderMappingsList();
+            renderCurrentChapter();
+            updateLexicon();
+            if (globalImpactMode) {
+                updateChapterProgress();
+            }
+        }
+
+        function renderChapterButtons() {
+            const container = document.getElementById('chapterButtons');
+            container.innerHTML = '';
+            
+            Object.keys(chapters).sort((a, b) => parseInt(a) - parseInt(b)).forEach(chapterNum => {
+                const btn = document.createElement('button');
+                btn.className = `chapter-btn ${chapterNum == currentChapter ? 'active' : ''}`;
+                btn.textContent = chapterNum;
+                btn.onclick = () => selectChapter(chapterNum);
+                container.appendChild(btn);
+            });
+        }
+
+        function updateGlobalImpactDisplay(term, affectedLines, affectedChapters) {
+            const container = document.getElementById('impactSummary');
+            if (!container) return;
+            
+            container.innerHTML = `
+                <div class="global-impact-summary">
+                    <strong>Change to "${term}"</strong><br>
+                    Updated ${affectedLines} lines across ${affectedChapters.size} chapters: ${Array.from(affectedChapters).join(', ')}
+                </div>
+            `;
+        }
+
+        function selectChapter(chapterNum) {
+            currentChapter = chapterNum;
+            renderChapterButtons();
+            renderCurrentChapter();
+            updateLexicon();
+            if (globalImpactMode) {
+                updateChapterProgress();
+            }
+        }
+
+        function switchVersion() {
+            currentVersion = document.getElementById('versionSelector').value;
+            renderCurrentChapter();
+        }
+
+        function toggleEditMode() {
+            isEditMode = !isEditMode;
+            const btn = document.getElementById('editToggle');
+            btn.textContent = isEditMode ? 'View Mode' : 'Edit Mode';
+            btn.className = `edit-toggle ${isEditMode ? 'active' : ''}`;
+            renderCurrentChapter();
+        }
+
+        function renderMappingsList() {
+            const container = document.getElementById('mappingsList');
+            container.innerHTML = '';
+            
+            Object.entries(characterMappings).forEach(([char, data]) => {
+                const item = document.createElement('div');
+                item.className = 'mapping-item';
+                item.innerHTML = `
+                    <div class="chinese-char">${char}</div>
+                    <input type="text" class="pinyin-input" value="${data.pinyin || ''}" 
+                           onchange="updateMappingPinyin('${char}', this.value)">
+                    <input type="text" class="mapping-input" value="${data.meaning || ''}" 
+                           onchange="updateMappingMeaning('${char}', this.value)">
+                    <button class="delete-btn" onclick="deleteMapping('${char}')">×</button>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function renderCurrentChapter() {
+            const chapter = chapters[currentChapter];
+            if (!chapter) return;
+            
+            const version = chapter.versions[currentVersion] || chapter.versions.traditional || chapter.versions[Object.keys(chapter.versions)[0]];
+            
+            const originalContainer = document.getElementById('originalText');
+            const structuralContainer = document.getElementById('structuralText');
+            
+            originalContainer.innerHTML = '';
+            structuralContainer.innerHTML = '';
+            
+            version.chinese.forEach((line, index) => {
+                const lineContainer = document.createElement('div');
+                lineContainer.className = 'line-container';
+                
+                // Chinese text
+                const chineseDiv = document.createElement('div');
+                chineseDiv.className = `chinese-line ${isEditMode ? 'editable' : ''}`;
+                if (isEditMode) {
+                    chineseDiv.contentEditable = true;
+                    chineseDiv.textContent = line;
+                    chineseDiv.onblur = () => updateChapterLine('chinese', index, chineseDiv.textContent);
+                } else {
+                    chineseDiv.innerHTML = highlightCharacters(line);
+                }
+                lineContainer.appendChild(chineseDiv);
+                
+                // Pinyin
+                if (version.pinyin && version.pinyin[index]) {
+                    const pinyinDiv = document.createElement('div');
+                    pinyinDiv.className = `pinyin-line ${isEditMode ? 'editable' : ''}`;
+                    if (isEditMode) {
+                        pinyinDiv.contentEditable = true;
+                        pinyinDiv.onblur = () => updateChapterLine('pinyin', index, pinyinDiv.textContent);
+                    }
+                    pinyinDiv.textContent = version.pinyin[index];
+                    lineContainer.appendChild(pinyinDiv);
+                }
+                
+                originalContainer.appendChild(lineContainer);
+                
+                // Structural translation
+                const structuralContainer = document.createElement('div');
+                structuralContainer.className = 'line-container';
+                
+                const translation = chapter.structural[index] || {text: '', source: 'manual'};
+                const translationText = typeof translation === 'string' ? translation : translation.text;
+                const translationSource = typeof translation === 'string' ? 'manual' : translation.source;
+                
+                // Add source-based styling
+                structuralContainer.className += ` ${translationSource}-translation`;
+                
+                const structuralDiv = document.createElement('div');
+                structuralDiv.className = `structural-line ${isEditMode ? 'editable' : ''}`;
+                if (isEditMode) {
+                    structuralDiv.contentEditable = true;
+                    structuralDiv.onblur = () => updateChapterLine('structural', index, structuralDiv.textContent);
+                }
+                structuralDiv.textContent = translationText;
+                structuralContainer.appendChild(structuralDiv);
+                
+                // Add source indicator
+                const sourceDiv = document.createElement('div');
+                sourceDiv.className = 'translation-source';
+                sourceDiv.textContent = `[${translationSource}${translation.lastUpdated ? ' • ' + new Date(translation.lastUpdated).toLocaleDateString() : ''}]`;
+                structuralContainer.appendChild(sourceDiv);
+                
+                document.getElementById('structuralText').appendChild(structuralContainer);
+            });
+        }
+
+        function highlightCharacters(text) {
+            let highlighted = text;
+            
+            // Sort by length (longest first) to prioritize compounds over individual characters
+            const sortedTerms = Object.keys(characterMappings).sort((a, b) => {
+                if (b.length !== a.length) return b.length - a.length;
+                return a.localeCompare(b);
+            });
+            
+            // Replace terms in order of decreasing length to avoid partial matches
+            const usedPositions = new Set();
+            
+            sortedTerms.forEach(term => {
+                const data = characterMappings[term];
+                const regex = new RegExp(term, 'g');
+                let match;
+                
+                while ((match = regex.exec(text)) !== null) {
+                    const start = match.index;
+                    const end = start + term.length;
+                    
+                    // Check if this position overlaps with already processed terms
+                    let overlaps = false;
+                    for (let i = start; i < end; i++) {
+                        if (usedPositions.has(i)) {
+                            overlaps = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!overlaps) {
+                        // Mark positions as used
+                        for (let i = start; i < end; i++) {
+                            usedPositions.add(i);
+                        }
+                        
+                        const replacement = `<span class="highlighted-char">${term}<div class="char-tooltip">${data.pinyin || ''}<br>${data.meaning || ''}</div></span>`;
+                        
+                        // Replace this specific occurrence
+                        const before = highlighted.substring(0, start);
+                        const after = highlighted.substring(end);
+                        highlighted = before + replacement + after;
+                        
+                        // Adjust regex lastIndex for the new string length
+                        const lengthDiff = replacement.length - term.length;
+                        regex.lastIndex = match.index + replacement.length;
+                        
+                        // Reset text for next iteration to get correct positions
+                        text = highlighted.replace(/<[^>]*>/g, ''); // Remove HTML for position calculations
+                    }
+                }
+            });
+            
+            return highlighted;
+        }
+
+        function updateChapterLine(type, index, value) {
+            const chapter = chapters[currentChapter];
+            if (!chapter) return;
+            
+            if (type === 'structural') {
+                if (!chapter.structural) chapter.structural = [];
+                // When manually editing, mark as manual or auto-edited
+                const currentTranslation = chapter.structural[index];
+                const wasAuto = currentTranslation && typeof currentTranslation === 'object' && currentTranslation.source === 'auto';
+                
+                chapter.structural[index] = {
+                    text: value,
+                    source: wasAuto ? 'auto-edited' : 'manual',
+                    lastUpdated: new Date().toISOString()
+                };
+            } else {
+                const version = chapter.versions[currentVersion];
+                if (!version) return;
+                
+                if (type === 'chinese') {
+                    version.chinese[index] = value;
+                    // When Chinese text changes, trigger global auto-update
+                    autoUpdateGlobalTranslations();
+                } else if (type === 'pinyin') {
+                    if (!version.pinyin) version.pinyin = [];
+                    version.pinyin[index] = value;
+                }
+            }
+        }
+
+        function updateMappingMeaning(char, newMeaning) {
+            if (!characterMappings[char]) characterMappings[char] = {};
+            characterMappings[char].meaning = newMeaning;
+            
+            // Show global impact preview
+            if (globalImpactMode) {
+                showGlobalImpact(char);
+            }
+            
+            // Auto-update structural translations globally
+            autoUpdateGlobalTranslations(char);
+            renderCurrentChapter();
+            updateLexicon();
+        }
+
+        function autoUpdateGlobalTranslations(changedTerm = null) {
+            let affectedLines = 0;
+            let affectedChapters = new Set();
+            
+            Object.keys(chapters).forEach(chapterNum => {
+                const chapter = chapters[chapterNum];
+                if (!chapter) return;
+                
+                Object.keys(chapter.versions).forEach(versionKey => {
+                    const version = chapter.versions[versionKey];
+                    if (!version || !version.chinese) return;
+                    
+                    version.chinese.forEach((line, index) => {
+                        // If specific term changed, only update lines containing that term
+                        if (changedTerm && !line.includes(changedTerm)) return;
+                        
+                        const currentTranslation = chapter.structural[index];
+                        const isAutoGenerated = !currentTranslation || 
+                            (typeof currentTranslation === 'object' && currentTranslation.source === 'auto') ||
+                            (typeof currentTranslation === 'string' && currentTranslation.startsWith('[Auto]'));
+                        
+                        // Only update auto-generated translations
+                        if (isAutoGenerated) {
+                            const autoTranslation = generateAutoTranslation(line);
+                            if (autoTranslation) {
+                                if (!chapter.structural) chapter.structural = [];
+                                chapter.structural[index] = {
+                                    text: autoTranslation,
+                                    source: 'auto',
+                                    lastUpdated: new Date().toISOString()
+                                };
+                                affectedLines++;
+                                affectedChapters.add(chapterNum);
+                            }
+                        }
+                    });
+                });
+            });
+            
+            // Update global impact display
+            if (globalImpactMode && changedTerm) {
+                updateGlobalImpactDisplay(changedTerm, affectedLines, affectedChapters);
+            }
+            
+            updateChapterProgress();
+        }
+
+        function showGlobalImpact(term) {
+            const container = document.getElementById('impactSummary');
+            if (!container) return;
+            
+            let occurrences = [];
+            
+            Object.keys(chapters).forEach(chapterNum => {
+                const chapter = chapters[chapterNum];
+                Object.keys(chapter.versions).forEach(versionKey => {
+                    const version = chapter.versions[versionKey];
+                    if (!version || !version.chinese) return;
+                    
+                    version.chinese.forEach((line, index) => {
+                        if (line.includes(term)) {
+                            occurrences.push({
+                                chapter: chapterNum,
+                                line: index + 1,
+                                text: line,
+                                isAuto: !chapter.structural[index] || 
+                                       (typeof chapter.structural[index] === 'object' && 
+                                        chapter.structural[index].source === 'auto')
+                            });
+                        }
+                    });
+                });
+            });
+            
+            container.innerHTML = `
+                <div class="global-impact-summary">
+                    <strong>${term}</strong> appears in ${occurrences.length} lines across ${new Set(occurrences.map(o => o.chapter)).size} chapters
+                </div>
+                ${occurrences.slice(0, 5).map(occ => `
+                    <div class="global-impact-item">
+                        Ch.${occ.chapter}:${occ.line} - ${occ.text} ${occ.isAuto ? '[will auto-update]' : '[manual]'}
+                    </div>
+                `).join('')}
+                ${occurrences.length > 5 ? `<div style="text-align: center; color: #888; font-size: 11px;">...and ${occurrences.length - 5} more</div>` : ''}
+            `;
+        }
+
+        function updateChapterProgress() {
+            const container = document.getElementById('chapterProgress');
+            if (!container) return;
+            
+            const progressData = [];
+            
+            Object.keys(chapters).sort((a, b) => parseInt(a) - parseInt(b)).forEach(chapterNum => {
+                const chapter = chapters[chapterNum];
+                const version = chapter.versions[currentVersion] || chapter.versions.traditional || chapter.versions[Object.keys(chapter.versions)[0]];
+                
+                if (!version || !version.chinese) return;
+                
+                let totalLines = version.chinese.length;
+                let autoLines = 0;
+                let manualLines = 0;
+                let emptyLines = 0;
+                
+                version.chinese.forEach((line, index) => {
+                    const translation = chapter.structural[index];
+                    if (!translation || (typeof translation === 'object' && !translation.text)) {
+                        emptyLines++;
+                    } else if (typeof translation === 'string') {
+                        if (translation.startsWith('[Auto]')) autoLines++;
+                        else manualLines++;
+                    } else {
+                        if (translation.source === 'auto') autoLines++;
+                        else manualLines++;
+                    }
+                });
+                
+                const completion = ((autoLines + manualLines) / totalLines) * 100;
+                progressData.push({
+                    chapter: chapterNum,
+                    completion,
+                    totalLines,
+                    autoLines,
+                    manualLines,
+                    emptyLines
+                });
+            });
+            
+            container.innerHTML = progressData.map(data => `
+                <div class="chapter-progress-item">
+                    <span>Ch.${data.chapter}</span>
+                    <div style="flex: 1; margin: 0 10px;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${data.completion}%"></div>
+                        </div>
+                    </div>
+                    <span>${Math.round(data.completion)}% (${data.manualLines}m/${data.autoLines}a/${data.emptyLines}e)</span>
+                </div>
+            `).join('');
+        }
+
+        function toggleGlobalImpact() {
+            globalImpactMode = !globalImpactMode;
+            const panel = document.getElementById('globalImpactPanel');
+            const btn = document.getElementById('globalToggle');
+            
+            if (globalImpactMode) {
+                panel.style.display = 'block';
+                btn.textContent = 'Chapter View';
+                btn.classList.add('active');
+                updateChapterProgress();
+            } else {
+                panel.style.display = 'none';
+                btn.textContent = 'Global View';
+                btn.classList.remove('active');
+            }
+        }
+
+        function updateMappingPinyin(char, newPinyin) {
+            if (!characterMappings[char]) characterMappings[char] = {};
+            characterMappings[char].pinyin = newPinyin;
+            renderCurrentChapter();
+            updateLexicon();
+        }
+
+        function updateMappingMeaning(char, newMeaning) {
+            if (!characterMappings[char]) characterMappings[char] = {};
+            characterMappings[char].meaning = newMeaning;
+            
+            // Auto-update structural translations immediately
+            autoUpdateStructuralTranslations(char);
+            renderCurrentChapter();
+            updateLexicon();
+        }
+
+        function deleteMapping(char) {
+            delete characterMappings[char];
+            renderMappingsList();
+            renderCurrentChapter();
+        }
+
+        function addMapping() {
+            const charInput = document.getElementById('newChar');
+            const pinyinInput = document.getElementById('newPinyin');
+            const meaningInput = document.getElementById('newMapping');
+            
+            const char = charInput.value.trim();
+            const pinyin = pinyinInput.value.trim();
+            const meaning = meaningInput.value.trim();
+            
+            if (char && meaning) {
+                characterMappings[char] = {
+                    pinyin: pinyin,
+                    meaning: meaning
+                };
+                charInput.value = '';
+                pinyinInput.value = '';
+                meaningInput.value = '';
+                
+                // Show global impact preview
+                if (globalImpactMode) {
+                    showGlobalImpact(char);
+                }
+                
+                // Auto-update structural translations globally
+                autoUpdateGlobalTranslations(char);
+                
+                renderMappingsList();
+                renderCurrentChapter();
+                updateLexicon();
+            }
+        }
+
+        function addNewChapter() {
+            const input = document.getElementById('newChapterNum');
+            const chapterNum = input.value.trim();
+            
+            if (chapterNum && !chapters[chapterNum]) {
+                chapters[chapterNum] = {
+                    versions: {
+                        traditional: {
+                            chinese: [''],
+                            pinyin: ['']
+                        }
+                    },
+                    structural: [{text: '', source: 'manual'}]
+                };
+                input.value = '';
+                currentChapter = chapterNum;
+                renderChapterButtons();
+                renderCurrentChapter();
+                updateLexicon();
+            }
+        }
+
+        function quickAddMapping(term) {
+            const pinyin = prompt(`Enter pinyin for ${term}:`);
+            const meaning = prompt(`Enter structural meaning for ${term}:`);
+            
+            if (meaning) {
+                characterMappings[term] = {
+                    pinyin: pinyin || '',
+                    meaning: meaning
+                };
+                
+                // Show global impact
+                if (globalImpactMode) {
+                    showGlobalImpact(term);
+                }
+                
+                autoUpdateGlobalTranslations(term);
+                renderMappingsList();
+                renderCurrentChapter();
+                updateLexicon();
+            }
+        }
+
+        // Data migration function for old format
+        function migrateChapterData() {
+            Object.keys(chapters).forEach(chapterNum => {
+                const chapter = chapters[chapterNum];
+                if (chapter.structural && Array.isArray(chapter.structural)) {
+                    // Check if already migrated
+                    if (typeof chapter.structural[0] === 'string') {
+                        chapter.structural = chapter.structural.map(text => ({
+                            text: text || '',
+                            source: text && text.startsWith('[Auto]') ? 'auto' : 'manual',
+                            lastUpdated: new Date().toISOString()
+                        }));
+                    }
+                }
+            });
+        }
+
+        function autoUpdateStructuralTranslations(changedTerm) {
+            // Legacy function - redirect to global version
+            autoUpdateGlobalTranslations(changedTerm);
+        }
+
+        function generateAutoTranslation(chineseLine) {
+            // Advanced auto-translation prioritizing compounds over individual characters
+            let workingText = chineseLine;
+            let translation = '';
+            
+            // Get all defined terms sorted by length (longest first)
+            const sortedTerms = Object.keys(characterMappings).sort((a, b) => {
+                if (b.length !== a.length) return b.length - a.length;
+                return a.localeCompare(b);
+            });
+            
+            // Track which positions have been processed to avoid overlaps
+            const processedPositions = new Set();
+            const replacements = [];
+            
+            // Find all term matches and their positions
+            for (const term of sortedTerms) {
+                const regex = new RegExp(term, 'g');
+                let match;
+                
+                while ((match = regex.exec(chineseLine)) !== null) {
+                    const start = match.index;
+                    const end = start + term.length;
+                    
+                    // Check if this overlaps with already processed positions
+                    let overlaps = false;
+                    for (let i = start; i < end; i++) {
+                        if (processedPositions.has(i)) {
+                            overlaps = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!overlaps) {
+                        // Mark positions as processed
+                        for (let i = start; i < end; i++) {
+                            processedPositions.add(i);
+                        }
+                        
+                        const meaning = characterMappings[term].meaning;
+                        if (meaning) {
+                            replacements.push({
+                                start: start,
+                                end: end,
+                                original: term,
+                                meaning: meaning
+                            });
+                        }
+                    }
+                }
+            }
+            
+            // Sort replacements by position (right to left to maintain indices)
+            replacements.sort((a, b) => b.start - a.start);
+            
+            // Apply replacements
+            let result = chineseLine;
+            for (const replacement of replacements) {
+                const before = result.substring(0, replacement.start);
+                const after = result.substring(replacement.end);
+                result = before + `[${replacement.meaning}]` + after;
+            }
+            
+            // Clean up formatting
+            translation = result
+                .replace(/\[([^\]]+)\]/g, '$1') // Remove brackets
+                .replace(/[，。；：]/g, ', ') // Replace Chinese punctuation
+                .replace(/\s+/g, ' ') // Normalize whitespace
+                .trim();
+            
+            return translation || null;
+        }
+
+        function updateLexicon() {
+            const chapter = chapters[currentChapter];
+            if (!chapter) return;
+            
+            const version = chapter.versions[currentVersion] || chapter.versions.traditional || chapter.versions[Object.keys(chapter.versions)[0]];
+            if (!version || !version.chinese) return;
+            
+            // Extract terms from current chapter, prioritizing compounds
+            chapterLexicon = {};
+            const chapterText = version.chinese.join('');
+            
+            // First pass: Find all defined compounds (multi-character mappings)
+            const definedCompounds = Object.keys(characterMappings)
+                .filter(term => term.length > 1)
+                .sort((a, b) => b.length - a.length); // Longest first to avoid partial matches
+            
+            let processedText = chapterText;
+            const foundTerms = new Set();
+            
+            // Mark compound terms
+            for (const compound of definedCompounds) {
+                if (processedText.includes(compound)) {
+                    const matches = (chapterText.match(new RegExp(compound, 'g')) || []).length;
+                    chapterLexicon[compound] = matches;
+                    foundTerms.add(compound);
+                    // Replace with placeholder to avoid counting individual characters
+                    processedText = processedText.replace(new RegExp(compound, 'g'), '□'.repeat(compound.length));
+                }
+            }
+            
+            // Second pass: Find individual characters not part of compounds
+            for (const char of processedText) {
+                if (char.match(/[\u4e00-\u9fff]/) && char !== '□') { // Chinese characters only, not placeholders
+                    // Only add if this character isn't part of a larger defined compound
+                    let isPartOfCompound = false;
+                    for (const compound of foundTerms) {
+                        if (compound.includes(char) && chapterText.includes(compound)) {
+                            isPartOfCompound = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!isPartOfCompound) {
+                        chapterLexicon[char] = (chapterLexicon[char] || 0) + 1;
+                    }
+                }
+            }
+            
+            renderLexicon();
+        }
+
+        function renderLexicon() {
+            const container = document.getElementById('lexiconList');
+            const statsElement = document.getElementById('lexiconStats');
+            
+            container.innerHTML = '';
+            
+            // Separate compounds and individual characters
+            const compounds = Object.keys(chapterLexicon).filter(term => term.length > 1);
+            const individuals = Object.keys(chapterLexicon).filter(term => term.length === 1);
+            
+            // Sort compounds by frequency then alphabetically
+            compounds.sort((a, b) => {
+                const freqDiff = chapterLexicon[b] - chapterLexicon[a];
+                return freqDiff !== 0 ? freqDiff : a.localeCompare(b);
+            });
+            
+            // Sort individuals by frequency then alphabetically  
+            individuals.sort((a, b) => {
+                const freqDiff = chapterLexicon[b] - chapterLexicon[a];
+                return freqDiff !== 0 ? freqDiff : a.localeCompare(b);
+            });
+            
+            const totalTerms = compounds.length + individuals.length;
+            statsElement.textContent = `${totalTerms} terms in Chapter ${currentChapter} (${compounds.length} compounds, ${individuals.length} individuals)`;
+            
+            // Render compounds first
+            if (compounds.length > 0) {
+                const compoundHeader = document.createElement('div');
+                compoundHeader.style.cssText = 'font-weight: bold; color: #4a9eff; margin: 15px 0 10px 0; font-size: 14px;';
+                compoundHeader.textContent = '📚 Compound Terms';
+                container.appendChild(compoundHeader);
+                
+                compounds.forEach(term => renderLexiconItem(term, container));
+            }
+            
+            // Then render individual characters
+            if (individuals.length > 0) {
+                const individualHeader = document.createElement('div');
+                individualHeader.style.cssText = 'font-weight: bold; color: #ffa500; margin: 15px 0 10px 0; font-size: 14px;';
+                individualHeader.textContent = '🔤 Individual Characters';
+                container.appendChild(individualHeader);
+                
+                individuals.forEach(char => renderLexiconItem(char, container));
+            }
+        }
+
+        function renderLexiconItem(term, container) {
+            const frequency = chapterLexicon[term];
+            const mapping = characterMappings[term];
+            const isAutoTranslated = !mapping;
+            
+            const item = document.createElement('div');
+            item.className = `lexicon-item ${isAutoTranslated ? 'auto-translation' : ''}`;
+            
+            const charDiv = document.createElement('div');
+            charDiv.className = 'lexicon-char';
+            charDiv.textContent = term;
+            if (term.length > 1) {
+                charDiv.style.fontSize = '16px'; // Slightly smaller for compounds
+            }
+            
+            const pinyinDiv = document.createElement('div');
+            pinyinDiv.className = 'lexicon-pinyin';
+            pinyinDiv.textContent = mapping ? mapping.pinyin || '' : '';
+            
+            const meaningDiv = document.createElement('div');
+            meaningDiv.className = 'lexicon-meaning';
+            if (mapping) {
+                meaningDiv.textContent = mapping.meaning || 'No definition';
+            } else {
+                meaningDiv.innerHTML = `<em>No mapping defined</em> <button class="add-btn" style="font-size: 10px; padding: 2px 6px; margin-left: 8px;" onclick="quickAddMapping('${term}')">+ Add</button>`;
+            }
+            
+            const frequencyDiv = document.createElement('div');
+            frequencyDiv.className = 'lexicon-frequency';
+            frequencyDiv.textContent = `Used ${frequency}x`;
+            
+            item.appendChild(charDiv);
+            if (pinyinDiv.textContent) item.appendChild(pinyinDiv);
+            item.appendChild(meaningDiv);
+            item.appendChild(frequencyDiv);
+            
+            container.appendChild(item);
+        }
+
+        function quickAddMapping(char) {
+            const pinyin = prompt(`Enter pinyin for ${char}:`);
+            const meaning = prompt(`Enter structural meaning for ${char}:`);
+            
+            if (meaning) {
+                characterMappings[char] = {
+                    pinyin: pinyin || '',
+                    meaning: meaning
+                };
+                
+                autoUpdateStructuralTranslations(char);
+                renderMappingsList();
+                renderCurrentChapter();
+                updateLexicon();
+            }
+        }
+
+        function toggleLexiconMode() {
+            lexiconMode = lexiconMode === 'auto' ? 'manual' : 'auto';
+            document.getElementById('lexiconModeText').textContent = 
+                lexiconMode === 'auto' ? 'Auto Mode' : 'Manual Mode';
+            updateLexicon();
+        }
+
+        function exportLexicon() {
+            const lexiconData = {
+                chapter: currentChapter,
+                version: currentVersion,
+                characters: chapterLexicon,
+                mappings: {},
+                exported: new Date().toISOString()
+            };
+            
+            // Include mappings for characters in this chapter
+            Object.keys(chapterLexicon).forEach(char => {
+                if (characterMappings[char]) {
+                    lexiconData.mappings[char] = characterMappings[char];
+                }
+            });
+            
+            const blob = new Blob([JSON.stringify(lexiconData, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `lexicon_chapter_${currentChapter}_${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function addNewChapter() {
+            const input = document.getElementById('newChapterNum');
+            const chapterNum = input.value.trim();
+            
+            if (chapterNum && !chapters[chapterNum]) {
+                chapters[chapterNum] = {
+                    versions: {
+                        traditional: {
+                            chinese: [''],
+                            pinyin: ['']
+                        }
+                    },
+                    structural: ['']
+                };
+                input.value = '';
+                currentChapter = chapterNum;
+                renderChapterButtons();
+                renderCurrentChapter();
+            }
+        }
+
+        function deleteCurrentChapter() {
+            if (Object.keys(chapters).length <= 1) {
+                alert('Cannot delete the last chapter');
+                return;
+            }
+            
+            if (confirm(`Delete Chapter ${currentChapter}?`)) {
+                delete chapters[currentChapter];
+                currentChapter = Object.keys(chapters)[0];
+                renderChapterButtons();
+                renderCurrentChapter();
+            }
+        }
+
+        function exportMappings() {
+            const data = {
+                mappings: characterMappings,
+                chapters: chapters,
+                currentChapter: currentChapter,
+                currentVersion: currentVersion,
+                exported: new Date().toISOString(),
+                version: '2.0'
+            };
+            
+            const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `tao_translation_${new Date().toISOString().split('T')[0]}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function importMappings(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    
+                    if (data.mappings) {
+                        // Merge mappings
+                        Object.keys(data.mappings).forEach(char => {
+                            characterMappings[char] = data.mappings[char];
+                        });
+                    }
+                    
+                    if (data.chapters) {
+                        // Merge chapters
+                        Object.keys(data.chapters).forEach(chapterNum => {
+                            chapters[chapterNum] = data.chapters[chapterNum];
+                        });
+                    }
+                    
+                    if (data.currentChapter && chapters[data.currentChapter]) {
+                        currentChapter = data.currentChapter;
+                    }
+                    
+                    if (data.currentVersion) {
+                        currentVersion = data.currentVersion;
+                        document.getElementById('versionSelector').value = currentVersion;
+                    }
+                    
+                    renderChapterButtons();
+                    renderMappingsList();
+                    renderCurrentChapter();
+                    
+                    alert('Import successful!');
+                } catch (error) {
+                    alert('Error importing file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        // Search functionality
+        document.getElementById('charSearch').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const mappingItems = document.querySelectorAll('.mapping-item');
+            
+            mappingItems.forEach(item => {
+                const char = item.querySelector('.chinese-char').textContent;
+                const pinyin = item.querySelector('.pinyin-input').value.toLowerCase();
+                const meaning = item.querySelector('.mapping-input').value.toLowerCase();
+                
+                if (char.includes(searchTerm) || pinyin.includes(searchTerm) || meaning.includes(searchTerm)) {
+                    item.style.display = 'grid';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                switch (e.key) {
+                    case 'e':
+                        e.preventDefault();
+                        toggleEditMode();
+                        break;
+                    case 's':
+                        e.preventDefault();
+                        exportMappings();
+                        break;
+                    case 'o':
+                        e.preventDefault();
+                        document.getElementById('fileInput').click();
+                        break;
+                }
+            }
+            
+            // Chapter navigation
+            if (e.altKey && !isNaN(e.key) && e.key !== '') {
+                const chapterKeys = Object.keys(chapters).sort((a, b) => parseInt(a) - parseInt(b));
+                const index = parseInt(e.key) - 1;
+                if (chapterKeys[index]) {
+                    selectChapter(chapterKeys[index]);
+                }
+            }
+        });
+
+        // Auto-save to localStorage
+        function autoSave() {
+            const data = {
+                mappings: characterMappings,
+                chapters: chapters,
+                currentChapter: currentChapter,
+                currentVersion: currentVersion,
+                lastSaved: new Date().toISOString()
+            };
+            localStorage.setItem('taoTranslator', JSON.stringify(data));
+        }
+
+        function autoLoad() {
+            const saved = localStorage.getItem('taoTranslator');
+            if (saved) {
+                try {
+                    const data = JSON.parse(saved);
+                    if (data.mappings) {
+                        Object.assign(characterMappings, data.mappings);
+                    }
+                    if (data.chapters) {
+                        Object.assign(chapters, data.chapters);
+                    }
+                    if (data.currentChapter) {
+                        currentChapter = data.currentChapter;
+                    }
+                    if (data.currentVersion) {
+                        currentVersion = data.currentVersion;
+                        document.getElementById('versionSelector').value = currentVersion;
+                    }
+                } catch (error) {
+                    console.warn('Could not load auto-saved data:', error);
+                }
+            }
+        }
+
+        // Auto-save every 30 seconds
+        setInterval(autoSave, 30000);
+
+        // Load auto-saved data on startup
+        autoLoad();
+
+        // Initialize the app
+        initializeApp();
+    </script>
+</body>
+</html>
