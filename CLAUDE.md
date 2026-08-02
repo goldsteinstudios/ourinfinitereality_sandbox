@@ -18,9 +18,9 @@ This repository contains the Recursive Structural Model (RSM) and its convergenc
 
 This is the load-bearing premise. Everything follows from it.
 
-## The Chains (v9.4.1 — current working set; NOT sealed)
+## The Chains (v9.4.2 — current working set; NOT sealed)
 
-> **CANON UPDATE (2026-08-02, patch sets 1–2):** current canon is **v9.4.1**, and the
+> **CANON UPDATE (2026-08-02, patch sets 1–2 + session drafting):** current canon is **v9.4.2**, and the
 > **markdown layer is canonical**: `rsm/canonical/chains/v9.4/` (see its `README.md`, and
 > `reports/v9_4_patch_diff_report.md` + `reports/v9_4_1_patch_diff_report.md` for what changed).
 > The v9.3 PDFs are **deprecated as canon** (kept as history; not regenerated). The description
@@ -372,7 +372,7 @@ the guard was protecting against has not gone away: there is still no witness fo
 
 ## Working with RSM Content
 
-1. **v9.4.1 is the current working set** (markdown canonical at `rsm/canonical/chains/v9.4/`) —
+1. **v9.4.2 is the current working set** (markdown canonical at `rsm/canonical/chains/v9.4/`) —
    supersedes v9.3/v9.2/v9/v7.7/v7.6c/v7.5. It is **not sealed**; the open closures are open
    item 1 in both chains. Don't treat it as finished.
 2. **Sort every claim by register first** (§0): implicit if it can be derived with no measurement, no

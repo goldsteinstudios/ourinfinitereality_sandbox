@@ -1,15 +1,23 @@
-# RSM v9.4.1 — the current working set
+# RSM v9.4.2 — the current working set
 
-Produced 2026-08-02 by applying patch set 1 (v9.4) and patch set 2 (v9.4.1 — drafting corrections
-within v9.4, not a new canon version) to the v9.3 markdown transcriptions. Rulings are Will's,
-wording approved in session. **Not sealed.**
+Produced 2026-08-02: patch set 1 (v9.4), patch set 2 (v9.4.1), then the session-drafted v9.4.2
+files delivered whole and installed over the v9.4.1 layer. Rulings are Will's, wording approved
+in session. **Not sealed.**
 
-Patch set 2 (v9.4.1): the Rotation paragraph rewritten (descent carries the relation; revolution
-is admitted, not forced — clears the §6 duplication and R3 flags); the involution's "admits and
-requires" scoped to "admits"; the math parturition-map theorem replaced by **"The recursion (two
-transfers)"** + **"Indexed comparison across the frame boundary"** (no map realizes the transfers,
-none owed); emphasis normalized across all four chains; CLAUDE.md and the open-items register now
-carry canon pointers. Diff: `reports/v9_4_1_patch_diff_report.md`.
+v9.4.2 (session drafting): physics §1 rewritten to the direct disconnection justification and
+descent-carries-the-relation (the R2/R3 propagation patch set 2 deferred); the physics spin
+entry re-grounded on the indexed-comparison result (w = z² now absent from all chains); the math
+engine's dangling "parturition map" citation resolved to "per the two transfers"; the two-returns
+theorem reinstates the single-operation Euler identity e^{iπ} + e^{i·0} = 0; the math dimension
+open item names the two rivals (binding-extortion schema vs. the |1| cascade) with a candidate
+adjudication, unruled; the DDJ scope-note hypothesis removed; the Ch. 40 dangling taxonomy
+reference removed; emphasis judgment classes resolved; straight quotes and proper CJK throughout
+(the transcription's Kangxi-radical codepoints repaired). Diffs:
+`reports/v9_4_patch_diff_report.md`, `reports/v9_4_1_patch_diff_report.md`,
+`reports/v9_4_2_diff_report.md`.
+
+Still pending (unchanged): the 有無相生 / Ch. 40 R5/R6 rewrites (flags stand in the DDJ chain),
+the notation warrant wording, the open-items register regeneration.
 
 **Canonicity.** From this version forward the **markdown files in this directory are the canonical
 layer**. The v9.3 PDFs (`../v9.3/`) are superseded and historical: they were not regenerated for

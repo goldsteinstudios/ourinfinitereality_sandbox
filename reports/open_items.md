@@ -1,6 +1,6 @@
 # Open-items register
 
-> **Canon pointer (2026-08-02, patch sets 1–2):** current canon is **v9.4.1**, markdown canonical
+> **Canon pointer (2026-08-02, patch sets 1–2 + session drafting):** current canon is **v9.4.2**, markdown canonical
 > at `rsm/canonical/chains/v9.4/`. The structural chain's open-items list was **rewritten by
 > PATCH 6** after this register was compiled (notably: anchoring-by-constitution **resolved
 > negative, consequences open** — affects items A2/B9 below — and the dimension route restated
