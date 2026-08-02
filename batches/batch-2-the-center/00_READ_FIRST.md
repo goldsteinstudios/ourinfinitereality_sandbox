@@ -31,11 +31,16 @@ strongest move is the **four graded impossibilities**:
 And the line the batch is built around: *"The hollow isn't damage. It's requirement."* /
 **"The impossibility is the engine."**
 
-**03 — Motion Unification.** The **only** file in the corpus carrying the full circulation-metaphor
-set in one place: bellows + vortex + gyroscope/spinning top + **escapement/pendulum** + clock.
-If you want the escapement (a clock's escapement doesn't measure time, it rocks against collapse
-in either direction and advances *because* nothing resolves), this is where it is — it appears
-nowhere in `src/` and nowhere else in the archive.
+**03 — Motion Unification.** Carries the circulation-metaphor set in one place: bellows + vortex +
+gyroscope/spinning top + pendulum.
+
+> **CORRECTION (2026-08-02):** an earlier version of this note said this file contains the
+> **escapement/clock** passage and is its sole copy. That was wrong — this file contains neither
+> word (verified by diff; "pendulum" appears twice as an oscillatory example). The escapement
+> passage ("a clock's escapement does not measure time, it rocks against collapse in either
+> direction, and the mechanism advances precisely because nothing resolves") lives in the **v9.3
+> physics chain, §2** (`rsm/canonical/chains/v9.3/transcription_2026-08/just_physics_v9_3.md`).
+> Editorial documents wanting the escapement should point there.
 
 **04 — The Helix.** Short and dense. The **rain chain** — water spiralling "around the absence of a
 downspout"; the path orbits nothing, and *because* of that nothing the water arrives. Then the
