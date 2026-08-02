@@ -1,8 +1,8 @@
-# RSM — Just-DDJ Chain (v9.4)
+# RSM — Just-DDJ Chain (v9.4.1)
 
 *A translation. :: denotes imperfect structural correspondence — never identity, translation-equivalence, or congruence; substitution is forbidden. [G] marks what is attested in the Guodian bundles (~300 BCE); [R] received-text or Mawangdui only.*
 
-One discipline throughout: no character enters a derivation, and no structure overrides the strips.
+**One discipline throughout:** no character enters a derivation, and no structure overrides the strips.
 
 ## The opening as a register declaration
 
@@ -12,7 +12,7 @@ The received text opens by declaring this and nothing else. 道可道非常道 s
 
 That licenses the notation these chains use. 有 and 無 are names — 可名, an indexed instance. X and Y are not names of form and void; they are the slots the two modes occupy. The implicit register runs on slots, the explicit register on words, and the second line is why.
 
-Attestation, carried. This is the clearest register declaration in the text and it sits in the one chapter absent from the strips. What the oldest witness carries is the same distinction taught by demonstration rather than statement: chapter 2 gives six conjugate pairs, no definitions, and lets the one relation be induced. The received arrangement declares the limit of the instrument; the older one commands its abandonment (絕智棄辯) and then shows the pairs. Candidate reading of the difference: a scope note gets prepended when readers have begun taking the 可 for the 常 — the same drift the 也-erosion and the staged 有⽣於無 record elsewhere.
+**Attestation, carried.** This is the clearest register declaration in the text and it sits in the one chapter absent from the strips. What the oldest witness carries is the same distinction taught by demonstration rather than statement: chapter 2 gives six conjugate pairs, no definitions, and lets the one relation be induced. The received arrangement declares the limit of the instrument; the older one commands its abandonment (絕智棄辯) and then shows the pairs. Candidate reading of the difference: a scope note gets prepended when readers have begun taking the 可 for the 常 — the same drift the 也-erosion and the staged 有⽣於無 record elsewhere.
 
 ## The referent: 道
 
@@ -30,11 +30,11 @@ Heading-and-theorem: the frame-relative is not the frame-independent. ∀X: 可X
 
 - The corpus contributes here by resistance, which is the one thing this chain may supply as evidence: the text refuses the mirror-negative reading, in that the construction such a reading predicts is absent from every token. Structurally the mode-swap’s fixed point is the invariant itself, which is what the copular grammar puts in the middle. The two accounts agree; only the philological one carries weight.
 
-Line 2: 名可名非常名. 常名 :: XY = 1, the unindexed law; 可名 :: XₙYₙ = 1ₙ, the same law indexed. The 可/常 split applied to the law itself.
+**Line 2:** 名可名非常名. 常名 :: XY = 1, the unindexed law; 可名 :: XₙYₙ = 1ₙ, the same law indexed. The 可/常 split applied to the law itself.
 
-Lines 3–4. The Mawangdui manuscripts read 萬物 in both clauses (the Shiji quotes the line that way; 天地 is the received substitution). One referent, twice related: 始 and ⺟ are the two relations the unnamed and the named bear to the ten thousand things — what conditions them and what keeps constituting them — i.e., the derivation’s two mechanisms: identity-through-opposition at the ground; generation at the paradox thereafter. 始 :: Oₙ (the unmet origin, prior to any position); ⺟ :: Pₙ (the generative persisting locus, the parent-side of ⽣). Shared 女 :: the center-role genus; different determinatives :: the two species. [R]
+**Lines 3–4.** The Mawangdui manuscripts read 萬物 in both clauses (the Shiji quotes the line that way; 天地 is the received substitution). One referent, twice related: 始 and ⺟ are the two relations the unnamed and the named bear to the ten thousand things — what conditions them and what keeps constituting them — i.e., the derivation’s two mechanisms: identity-through-opposition at the ground; generation at the paradox thereafter. 始 :: Oₙ (the unmet origin, prior to any position); ⺟ :: Pₙ (the generative persisting locus, the parent-side of ⽣). Shared 女 :: the center-role genus; different determinatives :: the two species. [R]
 
-The methodology lines (常無欲以觀其妙／常有欲以觀其徼) [R]: two observational vantages, one from each face, both required — the parallax method stated inside the text. 欲 :: directed orientation, zero agency; 妙 :: relational pattern (the 無-vantage); 徼 :: boundary (the 有-vantage). Philological exposure carried: this reading requires the split parsing (常 無，欲…); the Mawangdui phrase-grouping leans toward the unit parsing (恆無欲…), and no older stratum arbitrates. The reading is falsifiable at the manuscript layer and is cited only with that exposure attached.
+**The methodology lines (常無欲以觀其妙／常有欲以觀其徼) [R]:** two observational vantages, one from each face, both required — the parallax method stated inside the text. 欲 :: directed orientation, zero agency; 妙 :: relational pattern (the 無-vantage); 徼 :: boundary (the 有-vantage). Philological exposure carried: this reading requires the split parsing (常 無，欲…); the Mawangdui phrase-grouping leans toward the unit parsing (恆無欲…), and no older stratum arbitrates. The reading is falsifiable at the manuscript layer and is cited only with that exposure attached.
 
 ## 有無相⽣ [G — Ch. 2, slip A15; 亡 for 無; the shorter formulation]
 
@@ -42,7 +42,7 @@ The methodology lines (常無欲以觀其妙／常有欲以觀其徼) [R]: two o
 
 有 :: the form mode; 無 :: the void mode — two co-present magnitudes with the gradient reading 有 × 無 = 1ₙ. Neither reaches zero; each is constituted by the other; every position carries both. Void is not zero: zero is the center, where both modes would vanish; 無 as mode is a bounded, shaped, functional magnitude (Ch. 11: 有之以為利，無之以為⽤ — the conserved product in nine words). Guodian 亡 (relational absence) fits the mode reading better than received 無; the drift 亡→無 runs toward exactly the confusion this register discipline guards against.
 
-Chapter 2 is also the method: no definitions, six conjugate pairs listed, each arising mutually, the one relation induced from six instances — how a mutually-constituted circle is entered, since it cannot be derived into from outside. The chapter with the oldest witness carries the structural heart; the staged cosmogony (Ch. 42) is absent from the strips.
+**Chapter 2 is also the method:** no definitions, six conjugate pairs listed, each arising mutually, the one relation induced from six instances — how a mutually-constituted circle is entered, since it cannot be derived into from outside. The chapter with the oldest witness carries the structural heart; the staged cosmogony (Ch. 42) is absent from the strips.
 
 ## Chapter 40 [G — slip A37; the scored test]
 
@@ -50,13 +50,13 @@ Chapter 2 is also the method: no definitions, six conjugate pairs listed, each a
 
 The slip reads: 返也者道僮也／溺也者道甬也／天下之勿⽣於⼜⽣於亡。
 
-- The engine lines are definitions. Both carry the 也者…也 formula — the classical definitional construction: “Returning — it is the pattern’s movement; 溺-ing — it is the pattern’s function.” The received text strips the stamps to bare assertions; the 也-erosion, documented at the two most load-bearing lines in the text.
+- **The engine lines are definitions.** Both carry the 也者…也 formula — the classical definitional construction: “Returning — it is the pattern’s movement; 溺-ing — it is the pattern’s function.” The received text strips the stamps to bare assertions; the 也-erosion, documented at the two most load-bearing lines in the text.
 
 - 返 (return-in-motion, the walker radical), where the received has 反. 反/返 :: the turn along G around the unmet center — circulation, the in-frame face of the engine. Which of 反/復 names return-of-structure versus return-of-place is a checksum item; the two-returns theorem it was keyed to is explicit on the math side, so the checksum may be a purely lexical question.
 
-- 溺 — attested-uninterpreted. The graph is 溺, not 弱 (the inventory’s 弱 was the received normalization). The interpretive ladder is mandatory and unfilled: (1) 溺’s Chu-period semantic range; (2) its local reading, framework-blind; (3) only then any correspondence. A37 is the highest-projection-risk location in the corpus. No :: is assigned.
+- **溺 — attested-uninterpreted.** The graph is 溺, not 弱 (the inventory’s 弱 was the received normalization). The interpretive ladder is mandatory and unfilled: (1) 溺’s Chu-period semantic range; (2) its local reading, framework-blind; (3) only then any correspondence. A37 is the highest-projection-risk location in the corpus. No :: is assigned.
 
-- The preregistered test, scored positive. The preregistration: if the strip reads symmetrically (⽣於有，⽣於亡), the older text sits on the modal side and the received hierarchy (有⽣於無) is the later emendation. The transcription shows no second 有: born of 有, born of 亡 — the balanced parallel. The oldest witness reads co-emergence; the staged arrow was added in transmission. Threats to validity, carried: (i) haplography — a repeated 有 is the classic eye-skip environment; against it, the 3+3 balance, the definitional framing of the preceding lines, and Ch. 2’s 相⽣ on the same bundle; (ii) the Mawangdui bracket — whether the silk texts carry the repetition dates the emendation; the facsimiles are unchecked, and the date is not to be cited until they are. The finding stands on the transcription; only the dating waits. Consequence: ⽣ at this line reads as co-emergence, and the three-forms taxonomy below is untouched.
+- **The preregistered test, scored positive.** The preregistration: if the strip reads symmetrically (⽣於有，⽣於亡), the older text sits on the modal side and the received hierarchy (有⽣於無) is the later emendation. The transcription shows no second 有: born of 有, born of 亡 — the balanced parallel. The oldest witness reads co-emergence; the staged arrow was added in transmission. Threats to validity, carried: (i) haplography — a repeated 有 is the classic eye-skip environment; against it, the 3+3 balance, the definitional framing of the preceding lines, and Ch. 2’s 相⽣ on the same bundle; (ii) the Mawangdui bracket — whether the silk texts carry the repetition dates the emendation; the facsimiles are unchecked, and the date is not to be cited until they are. The finding stands on the transcription; only the dating waits. Consequence: ⽣ at this line reads as co-emergence, and the three-forms taxonomy below is untouched.
 
 ## The cluster: ⽞／牝／⽞牝 [G — ⽞ attested, slip A08; ⽞牝 R]
 
@@ -104,4 +104,4 @@ In prose without :: , correspondence is “to me, that looks just like…,” ne
 
 - The Mawangdui facsimiles — the one outstanding errand behind a scored result. — blocks only the dating of the Ch. 40 emendation
 
-*v9.4 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.4.1 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

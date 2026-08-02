@@ -1,4 +1,4 @@
-# RSM — The Structural Chain (v9.4)
+# RSM — The Structural Chain (v9.4.1)
 
 *The implicit register: the structural requirement of logic, stated without measurement, units, or chart. What instantiates it — physical, biological, textual — belongs to the explicit register and is not this chain’s subject. Not sealed.*
 
@@ -26,13 +26,13 @@ Call the invariant's presence in all of them **accuracy**, and each statement's 
 
 ## Premises
 
-P1 — the Conditional. Reality is infinitely vast and infinitely divisible: no terminal resolution in either direction — no edge outward, no floor inward.
+**P1 — the Conditional.** Reality is infinitely vast and infinitely divisible: no terminal resolution in either direction — no edge outward, no floor inward.
 
-P2 — the Bridge. What obtains is distinguishable. Contrapositively: what is not distinguishable does not obtain.
+**P2 — the Bridge.** What obtains is distinguishable. Contrapositively: what is not distinguishable does not obtain.
 
-Definition (frame). A frame Rₙ is the coinherence of one distinction: two conjugate modes, their reciprocal relation, their balance, and their origin — arriving together or not at all. One constitutive pair per frame.
+**Definition (frame).** A frame Rₙ is the coinherence of one distinction: two conjugate modes, their reciprocal relation, their balance, and their origin — arriving together or not at all. One constitutive pair per frame.
 
-Corollary. Every distinction constitutes a frame; distinction beneath a frame’s unit is therefore another frame, not a smaller item within this one.
+**Corollary.** Every distinction constitutes a frame; distinction beneath a frame’s unit is therefore another frame, not a smaller item within this one.
 
 Everything below is what P1 and P2 jointly require. Where a further assumption operates, it is named in the open items.
 
@@ -76,17 +76,17 @@ The same holds of the gradient's two ends. Motion along the gradient toward a mo
 
 1ₙ is the constitutive distinction’s own magnitude — the conserved product of *the* pair that constitutes frame n — and simultaneously the frame’s minimal unit: nothing beneath the constitutive magnitude obtains *within* frame n, because any distinction beneath it is, by the Corollary, another frame. “Sub-1ₙ” is unit-relative typing, not size: magnitude comparison across frames is not defined, and the child is not smaller — the child is the approach that does not finish, continuing. The floor is the boundary of the frame’s own definition, not an added restriction.
 
-The law. The two modes’ amounts are locked: their product is conserved, X·Y = 1ₙ. A conserved sum fails twice — it admits the terminals (one mode at nothing, the other at everything: P₀’s faces as attainable values) and it caps both modes, contradicting infinite reach. The product’s curve has no endpoints and no ceilings; the exclusion of the impossible is the law’s own shape, not a rule imposed on it. The constant is the unit, and the unit is the frame’s reality: things differ in their proportion of the modes; reality is the invariant the proportions hold.
+**The law.** The two modes’ amounts are locked: their product is conserved, X·Y = 1ₙ. A conserved sum fails twice — it admits the terminals (one mode at nothing, the other at everything: P₀’s faces as attainable values) and it caps both modes, contradicting infinite reach. The product’s curve has no endpoints and no ceilings; the exclusion of the impossible is the law’s own shape, not a rule imposed on it. The constant is the unit, and the unit is the frame’s reality: things differ in their proportion of the modes; reality is the invariant the proportions hold.
 
-Scale. Within a frame, scale is motion along the curve: rescaling one mode by λ and the other by 1/λ, product invariant. No rescaling reaches the center. Scale is within-frame; the lineage is not scale.
+**Scale.** Within a frame, scale is motion along the curve: rescaling one mode by λ and the other by 1/λ, product invariant. No rescaling reaches the center. Scale is within-frame; the lineage is not scale.
 
 ## 5. The two centers, and the line between them
 
-O — the co-vanishing locus. Where both modes would reach operational absence together. Nothing on the curve approaches it; the curve bends around it.
+**O — the co-vanishing locus.** Where both modes would reach operational absence together. Nothing on the curve approaches it; the curve bends around it.
 
-Bₙ — the balance line. The whole locus Xₙ = Yₙ. It reaches from Oₙ outward and passes through the gradient’s paradoxical center. No point of B obtains. At any point of B the two modes stand in no proportion, so nothing distinguishes them; by P2 the condition does not obtain. B is a limit locus along its whole length: approached, never occupied.
+**Bₙ — the balance line.** The whole locus Xₙ = Yₙ. It reaches from Oₙ outward and passes through the gradient’s paradoxical center. No point of B obtains. At any point of B the two modes stand in no proportion, so nothing distinguishes them; by P2 the condition does not obtain. B is a limit locus along its whole length: approached, never occupied.
 
-Pₙ — the paradox. Where the gradient meets the balance line. It is the gradient’s own center in the sense the origin is not: O is the center the curve bends around and never reaches, Pₙ is the center the curve has — its one point fixed by the mode-swap. Pₙ does not obtain, for the reason B does not. What frame n has instead is a resolution limit: at frame n’s resolution the two amounts are not distinguishable near Pₙ. That is a fact about the frame’s discrimination, not about a locus being reached. Beneath the floor the difference is there and the frame cannot state it.
+**Pₙ — the paradox.** Where the gradient meets the balance line. It is the gradient’s own center in the sense the origin is not: O is the center the curve bends around and never reaches, Pₙ is the center the curve has — its one point fixed by the mode-swap. Pₙ does not obtain, for the reason B does not. What frame n has instead is a resolution limit: at frame n’s resolution the two amounts are not distinguishable near Pₙ. That is a fact about the frame’s discrimination, not about a locus being reached. Beneath the floor the difference is there and the frame cannot state it.
 
 **The disconnection.** Crossing from the X-dominant region to the Y-dominant region requires passing through the condition X = Y — and that condition is the mode-collapse, which does not obtain. The transit condition is itself the excluded condition. Within frame n the two mode-dominant regions are *related* — each is the other under the mode-swap — but no traversal joins them.
 
@@ -96,11 +96,11 @@ Continuity entails the balance line, and the gradient meets it. Denial A (origin
 
 The demand is satisfied in the one mode of existence left to such a center: existence-as-organizing-locus — in-frame, as the locus circulation organizes around; trans-frame, as the origin a new structure organizes around. The child frame is the pursuit of exactness continuing below the floor: the residue of imbalance beneath 1ₙ — the not-quite-balance the frame cannot state — is sub-unit distinction, hence a frame, whose origin is this very locus read from below. Recursion is exactness, permanently deferred.
 
-Generation has no address. Constitution is not sited and not timed. The residue of imbalance is standing, so the child is entailed, not triggered. Nothing occurs *at* exact balance, because there is no there.
+**Generation has no address.** Constitution is not sited and not timed. The residue of imbalance is standing, so the child is entailed, not triggered. Nothing occurs *at* exact balance, because there is no there.
 
-Rotation. The frame’s two mode-dominant regions are related without being connected (§5), and the relation cannot be carried by a path. It is carried by revolution: Gₙ revolving about Bₙ. A half-turn about B exchanges the modes — the mode-swap performed as motion rather than as relabeling — so revolution relates the two regions without anything passing through the locus that cannot be occupied. "No through, only around": revolution is a motion the structure admits — the mode-swap performed as motion rather than as relabeling — and the relation between the regions is carried by descent (§7) whether or not any motion realizes it. The plane’s own exchange is reflection across B, which reverses orientation and is no motion; realizing the swap as orientation-preserving continuous motion is what requires a direction the plane does not have. Orientation is linear-structure content, not measure content, so the requirement is stated without a metric.
+**Rotation.** The frame's two mode-dominant regions are related without being connected (§5), and the relation is carried by descent (§7) — the divider becomes the child's axis — whether or not any motion realizes it. What the structure additionally admits is revolution: **Gₙ revolving about Bₙ.** A half-turn about B exchanges the modes — the mode-swap performed as motion rather than as relabeling — so revolution relates the two regions with nothing passing through the locus that cannot be occupied. "No through, only around." The plane's own exchange is reflection across B, which reverses orientation and is no motion; realizing the swap as orientation-preserving continuous motion is what requires a direction the plane does not have. Orientation is linear-structure content, not measure content, so the requirement is stated without a metric.
 
-Rendering guard. A drawing shows a smooth curve through an unproblematic point; the implicit facts (no origin here; nothing obtains here) have no rendering. The drawing’s verdict never overwrites the logic’s.
+**Rendering guard.** A drawing shows a smooth curve through an unproblematic point; the implicit facts (no origin here; nothing obtains here) have no rendering. The drawing’s verdict never overwrites the logic’s.
 
 ## 7. Recursion
 
@@ -122,17 +122,17 @@ The identification is of type as well as position: an axis is a locus where a mo
 
 **The parent persists entire.** Gₙ and Bₙ remain the parent's own structure throughout; the child has a reading of them, not a portion of them. Nothing is transferred, consumed, or vacated — which is why the relation is constitutive and standing rather than an event.
 
-Orientation. B is not selected by the parent — Pₙ lies on B by construction, so a line through the child’s origin is constituted, not chosen. What remains free is everything about that line: the rotational freedom about B is the ring of orientations, no one privileged. What obtains is always one selection (all at once would be saturation), and different selections are different branches. Every obtained frame therefore has at least one orientation, and it is the inherited one.
+**Orientation.** B is not selected by the parent — Pₙ lies on B by construction, so a line through the child’s origin is constituted, not chosen. What remains free is everything about that line: the rotational freedom about B is the ring of orientations, no one privileged. What obtains is always one selection (all at once would be saturation), and different selections are different branches. Every obtained frame therefore has at least one orientation, and it is the inherited one.
 
 The nesting is a tree, not a ladder — and a rooted tree: index-relationality holds within it (every frame reads itself as “n”; the labels are gauge), but no relabeling makes a root a child, because a root’s parent-side is P₀, an impossibility, not a frame.
 
-What a child shares with its parent. Not magnitude (comparison across frames is undefined), not orientation about B (nothing selects it), not content, not substance. What is shared is the frame-form — every frame is a frame — and, between this child and this parent, the paradox itself: the parent’s inexactness is the child’s reference. The relation is constitutive and standing, not a transfer and not an event.
+**What a child shares with its parent.** Not magnitude (comparison across frames is undefined), not orientation about B (nothing selects it), not content, not substance. What is shared is the frame-form — every frame is a frame — and, between this child and this parent, the paradox itself: the parent’s inexactness is the child’s reference. The relation is constitutive and standing, not a transfer and not an event.
 
 ## Words that assert what the framework denies
 
 A standing list, not a procedure. Agentive verbs for structural facts. Transfer-language for non-events. Removal narratives for constitutive exclusions. Staging conjunctions for simultaneous constitution. Reified infinities. Occupancy language for the loci. Address-language for constitution. “Negative” for a conjugate. Any noun that turns a paradox into a place.
 
-The involution. Two are available: the mode-swap (X ↔ Y, fixed set B) and the sign-flip (componentwise negation, fixed point O). The mode-swap is structural; the sign-flip is explicit. A negative would name something that both obtains and anti-obtains, whereas a mode is incoherent without its contrasting mode. And a half-turn about B sends X → Y and Y → X — the mode-swap is a rotation, a motion the structure admits and requires; componentwise negation reverses orientation and is no rotation at all.
+**The involution.** Two are available: the mode-swap (X ↔ Y, fixed set B) and the sign-flip (componentwise negation, fixed point O). The mode-swap is structural; the sign-flip is explicit. A negative would name something that both obtains and anti-obtains, whereas a mode is incoherent without its contrasting mode. And a half-turn about B sends X → Y and Y → X — the mode-swap is a rotation, a motion the structure admits; componentwise negation reverses orientation and is no rotation at all.
 
 ## Open items
 
@@ -146,4 +146,4 @@ The involution. Two are available: the mode-swap (X ↔ Y, fixed set B) and the 
 
 5. **Branching beyond the balance** — Generation has no address, so the question is whether any relation other than the constitutive pair can be inexact in the way that constitutes a child. Candidate, unruled: it cannot — the frame has one constitutive pair, any conjugate equality within it reduces to the same balance, and the other points of B belong to other frames.
 
-*v9.4 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.4.1 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

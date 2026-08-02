@@ -18,7 +18,19 @@ This repository contains the Recursive Structural Model (RSM) and its convergenc
 
 This is the load-bearing premise. Everything follows from it.
 
-## The Chains (v9.3 — current working set; NOT sealed)
+## The Chains (v9.4.1 — current working set; NOT sealed)
+
+> **CANON UPDATE (2026-08-02, patch sets 1–2):** current canon is **v9.4.1**, and the
+> **markdown layer is canonical**: `rsm/canonical/chains/v9.4/` (see its `README.md`, and
+> `reports/v9_4_patch_diff_report.md` + `reports/v9_4_1_patch_diff_report.md` for what changed).
+> The v9.3 PDFs are **deprecated as canon** (kept as history; not regenerated). The description
+> below this block still describes **v9.3** and is retained as history — its "PDF-only"
+> consequences no longer apply to current canon. Headline changes: §0 gains "Accuracy and
+> precision"; "the two senses of smaller" → "Vantage"; §7 opens with the two transfers and
+> derives O₍ₙ₊₁₎ = Pₙ; the disconnection re-justified directly; revolution re-typed
+> available-not-forced (R3); anchoring-by-constitution resolved negative (R14); the math
+> parturition-map theorem replaced by "The recursion (two transfers)"; the DDJ three-forms
+> taxonomy retired (R5) with 有無相生/Ch. 40 rewrites flagged pending (R6).
 
 v9.3 is a **spine + three renderings**. Only the structural chain is register-neutral; **no rendering
 cites another rendering's theorems** — that is what makes their independence real. Every document
@@ -336,9 +348,10 @@ the guard was protecting against has not gone away: there is still no witness fo
 
 ## Reference Locations
 
-- **Current chains**: `rsm/canonical/chains/v9.3/` — **PDF only**, read the change log first. There is
-  no README and no editorial record for this set.
-- **Newest machine-readable chains**: `rsm/canonical/chains/v9.2/` (markdown + PDF; has a `README.md`).
+- **Current chains**: `rsm/canonical/chains/v9.4/` — **markdown, canonical** (v9.4.1; has a
+  `README.md`). The v9.3 set (`rsm/canonical/chains/v9.3/`, PDF + `transcription_2026-08/`
+  markdown) is superseded and kept as history; read its change log for the v9.3 rulings.
+- **Older machine-readable chains**: `rsm/canonical/chains/v9.2/` (markdown + PDF; has a `README.md`).
   Use for grep, diff and lint; remember it is **one version behind canon** on the register split, the Pₙ
   typing, the tag system and the two tests.
 - **Audit / reconciliation trail**: `rsm/audit/` — `divergence_ledger_r1.md` (the active AI-error
@@ -359,8 +372,9 @@ the guard was protecting against has not gone away: there is still no witness fo
 
 ## Working with RSM Content
 
-1. **v9.3 is the current working set** — supersedes v9.2/v9/v7.7/v7.6c/v7.5. It is **not sealed**; the
-   open closures are open item 1 in both chains. Don't treat it as finished.
+1. **v9.4.1 is the current working set** (markdown canonical at `rsm/canonical/chains/v9.4/`) —
+   supersedes v9.3/v9.2/v9/v7.7/v7.6c/v7.5. It is **not sealed**; the open closures are open
+   item 1 in both chains. Don't treat it as finished.
 2. **Sort every claim by register first** (§0): implicit if it can be derived with no measurement, no
    units and no drawing; explicit otherwise, **whether it succeeds or fails.** Physics, biology and any
    named pair are explicit. No quantity is owed by the chains, and no quantity confirms them.

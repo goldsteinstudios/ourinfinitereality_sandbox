@@ -1,5 +1,12 @@
 # Open-items register
 
+> **Canon pointer (2026-08-02, patch sets 1–2):** current canon is **v9.4.1**, markdown canonical
+> at `rsm/canonical/chains/v9.4/`. The structural chain's open-items list was **rewritten by
+> PATCH 6** after this register was compiled (notably: anchoring-by-constitution **resolved
+> negative, consequences open** — affects items A2/B9 below — and the dimension route restated
+> with its measure-content caveat — affects A5). This register's content is deliberately
+> unchanged; its regeneration from the v9.4.1 chains is a separate task.
+
 Compiled 2026-08-02 from the v9.3 chains (via `rsm/canonical/chains/v9.3/transcription_2026-08/`),
 the v9.3 change log, and the staged editorial corpus (`staging/editorial/`). Extraction only —
 nothing here is resolved, promoted, or demoted by this document.

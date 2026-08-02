@@ -1,7 +1,15 @@
-# RSM v9.4 — the current working set
+# RSM v9.4.1 — the current working set
 
-Produced 2026-08-02 by applying the ruled patch set (Will's rulings, session 2026-08-02; wording
-approved in session) to the v9.3 markdown transcriptions. **Not sealed.**
+Produced 2026-08-02 by applying patch set 1 (v9.4) and patch set 2 (v9.4.1 — drafting corrections
+within v9.4, not a new canon version) to the v9.3 markdown transcriptions. Rulings are Will's,
+wording approved in session. **Not sealed.**
+
+Patch set 2 (v9.4.1): the Rotation paragraph rewritten (descent carries the relation; revolution
+is admitted, not forced — clears the §6 duplication and R3 flags); the involution's "admits and
+requires" scoped to "admits"; the math parturition-map theorem replaced by **"The recursion (two
+transfers)"** + **"Indexed comparison across the frame boundary"** (no map realizes the transfers,
+none owed); emphasis normalized across all four chains; CLAUDE.md and the open-items register now
+carry canon pointers. Diff: `reports/v9_4_1_patch_diff_report.md`.
 
 **Canonicity.** From this version forward the **markdown files in this directory are the canonical
 layer**. The v9.3 PDFs (`../v9.3/`) are superseded and historical: they were not regenerated for

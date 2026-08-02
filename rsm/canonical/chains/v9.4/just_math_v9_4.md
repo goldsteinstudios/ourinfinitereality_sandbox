@@ -1,4 +1,4 @@
-# RSM — Just-Math Chain (v9.4)
+# RSM — Just-Math Chain (v9.4.1)
 
 *The explicit realization. The implicit skeleton is affine — straight/curved only, no metric; this chain renders it and states its own measure. Everything a rendering adds — coordinates, a sign convention, a metric, a completed circle — belongs to the rendering, and where a result depends on one it is said so in place. Not sealed.*
 
@@ -40,7 +40,7 @@ For magnitudes X, Y the sum a is positive, and the mode-expressible domain is th
 
 The circle slice as a complete object requires a < 0 and is — a legitimate indexed continuation. Its content where it is mode-expressible stands.
 
-Scale and lineage. Within a frame, scale is motion along G: the split action e^{jφ} — hyperbolic rotation — is the orbit of rescalings (λX, Y/λ), product invariant. The family parameter c = XY names the lineage direction along B: c→0 child-ward, c→∞ parent-ward, root-capped; a lineage coordinate, never a global count. The lineage direction is not scale.
+**Scale and lineage.** Within a frame, scale is motion along G: the split action e^{jφ} — hyperbolic rotation — is the orbit of rescalings (λX, Y/λ), product invariant. The family parameter c = XY names the lineage direction along B: c→0 child-ward, c→∞ parent-ward, root-capped; a lineage coordinate, never a global count. The lineage direction is not scale.
 
 The two non-terminations exchange, pivoting on Pₙ: the inversion x ↦ 1ₙ/x — σ_B on G — swaps the fine center-ward direction and the vast extension. Both non-terminations are the gradient’s own ends, within the frame. This is the chain’s cleanest computation of the structural involution.
 
@@ -54,25 +54,27 @@ The explicit register’s cleanest exhibition of the framework’s central facts
 
 - The non-terminating expansion is the engine’s signature in a number. Each further digit is the pursuit of exactness continuing below the previous digit’s floor. The expansion does not terminate, and not from weakness of method: what it measures is the relation between straight and curved, and those are the skeleton’s own two categories — the affine layer knows exactly this distinction and no metric. That the ratio between them can be bounded to any precision and completed at none is deferred exactness, rendered numerically.
 
-Placement, stated: π’s numeric content — lengths, the value itself — enters with the measure, downstream, like perpendicularity. What is register-clean is the shape of the situation: minimal closure by straight elements takes three sides (an affine fact); the two-sided bound; the refinement without end.
+**Placement, stated:** π’s numeric content — lengths, the value itself — enters with the measure, downstream, like perpendicularity. What is register-clean is the shape of the situation: minimal closure by straight elements takes three sides (an affine fact); the two-sided bound; the refinement without end.
 
 ## Theorems
 
-Disconnection. Bₙ does not obtain, so the X-dominant and Y-dominant portions of the mode-expressible branch have no path between them: any path joining them meets b = 0. The two portions are related — each is the other under σ_B — and not connected. This holds in the modes’ own magnitudes, with no sign convention and no second component.
+**Disconnection.** Bₙ does not obtain, so the X-dominant and Y-dominant portions of the mode-expressible branch have no path between them: any path joining them meets b = 0. The two portions are related — each is the other under σ_B — and not connected. This holds in the modes’ own magnitudes, with no sign convention and no second component.
 
-Revolution. The relation between the two portions is carried by revolution of Gₙ about Bₙ. A half-turn about B realizes σ_B as continuous motion, so the two portions exchange with nothing passing through b = 0. Revolution requires a direction the plane does not have; how many such directions the structure requires is open. The rotational freedom about B is the ring of orientations, and one selection is one branch.
+**Revolution.** The relation between the two portions is carried by revolution of Gₙ about Bₙ. A half-turn about B realizes σ_B as continuous motion, so the two portions exchange with nothing passing through b = 0. Revolution requires a direction the plane does not have; how many such directions the structure requires is open. The rotational freedom about B is the ring of orientations, and one selection is one branch.
 
-The parturition map. The recursion is that O₍ₙ₊₁₎ reads Pₙ and yAxis₍ₙ₊₁₎ reads Bₙ, as constitution and not site-selection. w = z² realizes it, 2-to-1 with the two preimages differing by ν. The two preimages are not two things bound into one; they are one branch compared from the child’s side — indexed comparison performed across a frame boundary. This is how a sign can be measured while being explicit.
+**The recursion (two transfers).** yAxis₍ₙ₊₁₎ reads Bₙ and xAxis₍ₙ₊₁₎ reads Gₙ; the child's origin follows as their crossing, O₍ₙ₊₁₎ = Gₙ ∩ Bₙ = Pₙ (structural §7). No map realizes the transfers, and none is owed: "reads" is the vantage relation, not a transformation, and a function carrying parent points to child points would assert the transfer §7 denies. Whether any chart-level map models both transfers at once is a rendering question, unasked by the structure.
 
-T2 — crossing — computation checked; the claim belongs to the rendering. Any closed spanning path crosses the null cone Q_j = 0; at the sign-image of Pₙ the gradient form reads −1ₙ. Spanning presupposes two components to span.
+**Indexed comparison across the frame boundary.** What survives from the earlier chart model: one referent in the parent may carry two indices in a child's chart, differing by ν. This is how a sign can be measured while being explicit — the measurement compares indices; it does not detect a second obtainer.
 
-The two returns — computation checked; the claim belongs to the rendering. Along the circle, Q_j = 1ₙ·cos 2θ: the invariant returns at π, the position at 2π. A double cover — a fact about the circle slice. Euler’s identity is this fact compressed: e^{iπ} = −1 says a half-turn lands on the sign-image — the most celebrated equation in mathematics as the signed chart describing its own return structure. A remark about the rendering, entered as one.
+**T2 — crossing** — computation checked; the claim belongs to the rendering. Any closed spanning path crosses the null cone Q_j = 0; at the sign-image of Pₙ the gradient form reads −1ₙ. Spanning presupposes two components to span.
 
-i² = −1, two routes. Elimination over the five candidate closures, and the antipodal-binding argument. Results about the signed continuation.
+**The two returns** — computation checked; the claim belongs to the rendering. Along the circle, Q_j = 1ₙ·cos 2θ: the invariant returns at π, the position at 2π. A double cover — a fact about the circle slice. Euler’s identity is this fact compressed: e^{iπ} = −1 says a half-turn lands on the sign-image — the most celebrated equation in mathematics as the signed chart describing its own return structure. A remark about the rendering, entered as one.
 
-The ν-centroid. Any sign-symmetric configuration sums to the center.
+**i² = −1, two routes.** Elimination over the five candidate closures, and the antipodal-binding argument. Results about the signed continuation.
 
-Complementarity floor — belongs to the rendering; the winding-measure premise is unsettled. Over admissible closed spanning structures, σ_a·σ_b ≥ 1ₙ/2, saturated by the minimal traversal.
+**The ν-centroid.** Any sign-symmetric configuration sums to the center.
+
+**Complementarity floor** — belongs to the rendering; the winding-measure premise is unsettled. Over admissible closed spanning structures, σ_a·σ_b ≥ 1ₙ/2, saturated by the minimal traversal.
 
 ## The measure
 
@@ -82,7 +84,7 @@ The measure is definitional-by-register: Q_i is the circle slice’s own quadrat
 
 Continuity entails B, and G meets it at Pₙ. Denial A (origin): one constitutive pair per frame; n has no spare pair to grant the locus. Denial B (exactness): at exact equality nothing distinguishes the modes, so the condition does not obtain. Satisfaction as organizing-locus: in-frame, circulation about a locus nothing occupies; trans-frame, generation — the child is the pursuit of exactness continuing below the floor, its origin the approached locus read from below, its axis the parent’s balance line, realized by the parturition map. Recursion is exactness, permanently deferred.
 
-No address. Pₙ’s coordinates are where the rendering puts it; nothing is sited there. The standing residue of sub-unit imbalance entails the child. The incident-pair deficit (1 − 1ₙ/x₀², rendered as perpendicularity once the measure is in force) is corroborating, never load-bearing.
+**No address.** Pₙ’s coordinates are where the rendering puts it; nothing is sited there. The standing residue of sub-unit imbalance entails the child. The incident-pair deficit (1 − 1ₙ/x₀², rendered as perpendicularity once the measure is in force) is corroborating, never load-bearing.
 
 ## What this chain does not owe
 
@@ -106,4 +108,4 @@ No exponent, no dimensionful constant, no scaling law. The implicit register fix
 
 8. Quantitative complementarity — the winding-measure premise; the non-star-shaped extension. A question about the rendering.
 
-*v9.4 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.4.1 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
