@@ -5,7 +5,16 @@
 > PATCH 6** after this register was compiled (notably: anchoring-by-constitution **resolved
 > negative, consequences open** — affects items A2/B9 below — and the dimension route restated
 > with its measure-content caveat — affects A5). This register's content is deliberately
-> unchanged; its regeneration from the v9.4.1 chains is a separate task.
+> unchanged; its regeneration from the v9.4.2 chains is a separate task (queue item 4).
+>
+> **Additions owed on regeneration** are listed in
+> `rsm/audit/session_addendum_2026-08-02_late.md` ("Register additions owed"): the rest::no-B
+> candidate · the dimensional-clause weakening · photon-as-difference (with its breaker) · the
+> zero-proper-time note · the killed fermion/boson mapping · the light/dark editorial flag · the
+> pot cluster · the parametric-truncation-vs-floor distinction · the transcription-authority
+> confirmation. Also owed: **B11 closed by withdrawal** (the scope-note hypothesis removed in
+> v9.4.2 — see `reports/v9_4_2_diff_report.md` §4), and the v9.4.2 dimension-item expansion
+> (the two rivals named; the cascade possibly the only implicit-register candidate) — affects A5.
 
 Compiled 2026-08-02 from the v9.3 chains (via `rsm/canonical/chains/v9.3/transcription_2026-08/`),
 the v9.3 change log, and the staged editorial corpus (`staging/editorial/`). Extraction only —
