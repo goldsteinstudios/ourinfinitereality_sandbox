@@ -1,5 +1,23 @@
 # Separation report — chains vs. editorial
 
+> **Supersession notice (2026-08-02 session rulings — `rsm/audit/session_consolidation_2026-08-02.md`):**
+> several findings below are reframed by ruling, not overturned by error. The largest: **R4** — the
+> "seat" strike is **chains-only**; editorial may use frame-appropriate craft nouns (1c's "largest
+> vocabulary collision" reduces to one fix in essay 9). **R7** — recursion is parametric, not
+> fractal: essay 10's tree/vortex pairing *survives* the exponents-differ objection (only "one law"
+> fails), and **"fractal" is a new error family** this report could not check for. **R8** — the
+> identity-claim family (5) is reclassified: type errors (explicit collapsed into implicit), not
+> overclaims. **R11** — the botanical mapping (pith :: O · cambium :: G · rays :: B · node :: P) is
+> **Will's, unrecorded** — not unsupported as 1b reported. **R19** — packed-hanging's 常/可
+> compression-state key is ruled a thought experiment, not a translation key (the register split
+> itself survives as Will's ruling); the "strongest HAS in the corpus" verdict stands only for the
+> register distinction, not the honeycomb grounding. **R22/R23** — the scythe demotes to
+> illustration (sickles, not scythes; the arc-vs-push teaching survives off the graph) and the
+> hamon **retires outright** (anachronism), adding an anachronism filter this report did not apply.
+> **R24** — the fineness/descent distinction is withdrawn as not-Will's: findings below that lean
+> on it (e.g. the unpluggable hole's "two ways to fail," series-07, series-15 descent verdicts)
+> are flagged WATCH, not settled. Read 1b/1c through the consolidation.
+
 Compiled 2026-08-02 on `research-archive`. Chains read via the v9.3 markdown transcriptions
 (`rsm/canonical/chains/v9.3/transcription_2026-08/`, token-verified against the PDFs). Editorial
 corpus read via the staged copies (`staging/editorial/`) and their originals. Survey-and-report

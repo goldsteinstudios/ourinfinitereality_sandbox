@@ -7,6 +7,17 @@
 > with its measure-content caveat — affects A5). This register's content is deliberately
 > unchanged; its regeneration from the v9.4.2 chains is a separate task (queue item 4).
 >
+> **The current authority on open-item status is
+> `rsm/audit/session_consolidation_2026-08-02.md` Part 5** (with Part 6 for B13's full
+> disposition), until this register is regenerated. Closures ruled there against this register's
+> content: **A2/B9** anchoring (no), **A6** revolution-as-forced (demoted), **B10** (machine-
+> proposed, retired), **B11** (unknowable per R17 — a stronger closure than the v9.4.2
+> withdrawal), **B13** (all eleven dispositioned), the seat strike (chains-only), and 恆/常
+> reframed (two words merged by the received text — R18). New opens live in Part 5 (1ₙ vs the
+> inter-frame floor · 0ₙ point-or-extent · straight/curved in transfer · commensurability on a
+> shared gradient · parametric-environment questions · the anachronism errand · fineness/descent
+> withdrawal gaps).
+>
 > **Additions owed on regeneration** are listed in
 > `rsm/audit/session_addendum_2026-08-02_late.md` ("Register additions owed"): the rest::no-B
 > candidate · the dimensional-clause weakening · photon-as-difference (with its breaker) · the
