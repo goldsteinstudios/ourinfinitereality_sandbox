@@ -182,6 +182,49 @@ failure mode. Not for the chains without a ruling and a much harder look.
 
 ---
 
+## Addendum 2026-08-05 — adjudicating the parallel assessment (project-chat instance)
+
+Will ran the same prompt in the project chat; a second Claude instance answered. Convergences
+priced near zero per the ledger rule. Three divergences, adjudicated:
+
+**1. Single-boundary vs. staircase (substantive — the parallel account is wrong here).** The
+project-chat instance re-frames the alternative to drift as "a systematizing project… in one or
+two political events," and proposes the Mawangdui test accordingly: boundary-clustering predicts
+a large Guodian→MWD jump and a small MWD→received one. But the documented changes already refuse
+a single boundary: the script is already clerical by MWD, 邦→國 flips *between* MWD A and B,
+恆→常 comes *after* MWD (that is why MWD preserves 恆 at all), the 也-stripping continues after
+MWD, and Liu Xiang's collation is 26 BCE. The record is a **staircase of discrete deliberate
+events spread over ~3 centuries** — serial fixation, not one boundary and not drift. As designed,
+the two-model test would mis-score: MWD *will* sit intermediate, which the stated dichotomy reads
+as evidence for drift. The facsimile-errand upgrade survives and improves: score it for a
+staircase — date **each change class separately** (graph forms / taboo pairs / particles /
+ordering) and the mechanism history falls out. That is a stronger result than a tie-break.
+
+**2. The Qin event's reality (the parallel account leans on the narrative the paleography
+challenges).** It asserts 書同文 as an effective 221 BCE event and the regional scripts as
+"genuinely divergent" systems — the traditional picture Galambos 2004/2006 specifically argues is
+an Eastern-Han retrospective, with variation pervasive *within* regions and no sudden shift in
+the archaeology. Notably, the parallel account applies the retrospection critique to the Shuowen
+(correctly: Xu Shen retro-analyzing seal forms he took for original structure) while accepting
+the Shiji/Hanshu unification story — Han sources of the same retrospective stratum. Inconsistent
+skepticism; the defensible phrasing remains Qin-*through*-Han.
+
+**3. The closing identity ("the script reform is your π dichotomy, applied to writing").**
+Asserted as a payoff. Attractor-shaped: find a matching set, declare an identity, exactly where
+it flatters the framework — and in identity grammar ("is… applied to"), not `::`. Both instances
+reached for an RSM mapping (this report's §6 closing note is the same shape) — that convergence
+is priced near zero; the divergence is that one instance asserted it and one flagged and
+distrusted it. **Recommended for ruling; if rejected, it is ledger-ready** (a rejected
+structural proposal, checked against the working-with-AI protocol rather than against canon or
+computation).
+
+**What was true inside it (always stated):** the accumulation/boundary distinction is a real
+sharpening of the question; the MWD test is genuinely good once re-scored for a staircase; the
+溺-read-as-弱 case as *resolution* (a standardizer choosing the lexicon-available word) is a
+strong candidate framing for the 溺 checksum item; and its census of erosion language in the
+papers (Ch. 2, Ch. 40, Ch. 25 "adds hierarchy") complements this report's chain-side list in §6 —
+the two scopes together cover the corpus.
+
 ## Sources
 
 - Galambos, ["The Myth of the Qin Unification of Writing in Han Sources"](https://www.akjournals.com/view/journals/062/57/2/article-p181.xml) (Acta Orientalia 57, 2004); [abstract/summary](https://www.semanticscholar.org/paper/The-Myth-of-the-Qin-Unification-of-Writing-in-Han-Galambos/fa36b6fa8bc35170097fbafce9d91f5505171f39); [discussion](https://baopu81.wordpress.com/2011/08/14/galambos-on-the-early-chinese-script/)
