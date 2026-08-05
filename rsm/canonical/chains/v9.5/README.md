@@ -1,4 +1,11 @@
-# RSM v9.5 — the current working set
+# RSM v9.51 — the current working set
+
+**v9.51 (patch set 4, 2026-08-04):** physics §11 re-based off the unit step (the quasiperiodicity
+correspondence stands on the frame's own arithmetic; the cross-frame version retained as a second,
+gated sentence) — and the math complementarity-floor entry gains seat parity by coemergence (four
+as the first closure that exists; the geometric argument demoted to display). PATCH 25 (the two
+horns' closure behavior) was **skipped — awaiting ruling**; it stays in the register (A-n12).
+Source: `rsm/audit/register_update_2026-08-04.md`. Diff: `reports/v9_51_patch_diff_report.md`.
 
 Produced 2026-08-03 by applying chain patch set 3 (FINAL for the v9.4 line) to v9.4.2. Rulings
 are Will's (sessions 2026-08-02/03); drafting Claude's; wording approved in session. **Not

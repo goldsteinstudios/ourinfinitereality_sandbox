@@ -1,6 +1,6 @@
 # Open-items register
 
-> **Canon pointer:** current canon is **v9.5**, markdown canonical at `rsm/canonical/chains/v9.5/`.
+> **Canon pointer:** current canon is **v9.51**, markdown canonical at `rsm/canonical/chains/v9.5/`.
 > Regenerated **2026-08-03** from the v9.5 chains, `rsm/audit/session_consolidation_2026-08-02.md`
 > (Parts 5–6), `rsm/audit/session_addendum_2026-08-02_late.md`, and the regeneration instruction
 > of 2026-08-03. Compilation, not judgment: every item is sourced; where sources conflict, the
@@ -52,8 +52,10 @@ closed) · terminal: removed at regeneration, with cause.
   explicit-register question by the chains' own typing. (The phrase "the constitutive share" is
   itself HELD — see B4; the phrasing awaits the share-noun ruling, the question stands regardless.)
 - **Lives:** structural open item 3; math open item 2.
-- **Depends on it:** the Bekenstein/holography reach (A16); quasiperiodicity (physics §11,
-  "conditional on that relation existing at all"); quantitative complementarity's reach (A11).
+- **Depends on it:** the Bekenstein/holography reach (A16); quasiperiodicity's stronger
+  cross-frame reading (physics §11 — gated at v9.51; the unit-step reading stands ungated);
+  quantitative complementarity's reach (A11). A-n8's nested-closures form (below) is the sharpest
+  current statement, and the first in which the question is drawable.
 - **Closes with:** derivation of a relation, or a proof that none obtains — either closes it.
 
 ### A5. Dimension — "at least three" stands; **the exactly-three slot is emptied**
@@ -188,6 +190,86 @@ closed) · terminal: removed at regeneration, with cause.
 composite bosons (helium-4 is a frame and condenses); statistics tracks spin composition, not
 frame-hood. Survivor: the narrow claim that massless quanta are differences. (Addendum.)
 
+### A-n. 2026-08-04 session additions (merged from `rsm/audit/register_update_2026-08-04.md`)
+
+*Discipline note carried from the source: every item touching a number is explicit-register by
+construction — the relation is the claim, the value the rendering; no constant is typed to any
+register; the retired per-constant class stays retired.*
+
+- **A-n1. Seat parity by coemergence — RULED; applied as PATCH 24 (v9.51).** If 1 obtains, −1
+  co-obtains; if the seat i exists it is a distinction, so −i co-obtains. Seat-inventories have
+  even parity by constitution; three seats is an incomplete inventory, not a forbidden
+  arrangement — "why not three?" is malformed. Four-seat closure minimal by constitution; the
+  geometric argument demotes to the rendering's display. *Lives:* math, complementarity-floor
+  entry (now chain text).
+- **A-n2. The two pairs differ by role — OFFERED.** (1, −1) :: the divided (arms; forbidden
+  diameter); (i, −i) :: the divider (radial; B-species — Will's identification: the radii are
+  Bₙ). Under the recursion the divider is what the child measures by. *Breaker:* the pairs shown
+  interchangeable in role, or the radial line not B-species. *Guard:* seats are chart locations,
+  not obtainers. Not patchable yet.
+- **A-n3. Around denominated in approaches — OFFERED / CHECKABLE.** C/D incommensurate (around
+  vs the forbidden through); C/r = 2π exactly (around vs the licensed reach); the closure
+  constant as exchange rate. Editorial; feeds the Euler paper.
+- **A-n4. The winding-ambiguous 1 — OFFERED / CHECKABLE.** e^{i·0} vs e^{i·2π}: same value,
+  different winding; two licensed decodings of the identity (constitutional, no journey; and
+  movement, out-and-back matching 返). Supersedes the Euler paper's single-instance form
+  (patched there in session). No chain change — the chain already proves the content.
+- **A-n5. π's dichotomy — OFFERED.** Exactness cannot hold at both ends at once; both-fixed is
+  excluded (nothing deferred). An aliveness condition, not a limitation of circles. Editorial;
+  chain home would be the measure section if ever ruled.
+- **A-n6. e as maintenance-coordinate, not threshold — CORRECTED.** The rate-threshold form
+  ("persist at exactly e or dissolve") is a pseudo-law — **KILLED, recorded once.** What e marks:
+  the base in which reciprocal maintenance is additive and rate equals value; a center is held by
+  the reciprocity of the variation at any speed. Reflected in the Euler paper.
+- **A-n7. Quasiperiodicity re-based off the unit step — OFFERED / CHECKABLE; applied as
+  PATCH 23 (v9.51).** The unit step is incommensurate with the closure; iterates dense, no point
+  repeated — the correspondence stands on the frame's own arithmetic; the cross-frame version
+  retained as a second, gated sentence (waits on A4).
+- **A-n8. The minimal closure carries 1ₙ; it is not identical to it — OFFERED, with a KILLED
+  form attached.** Not "the minimal orbit *is* 1ₙ" (availability→constitution, blocked by R3).
+  Defensible: the four-seat closure is the minimal rendering; 1ₙ is what it conserves, 1ₙ/2 the
+  floor it saturates. *Opens:* a child's four seats render 1₍ₙ₊₁₎ — two nested minimal closures,
+  nothing licensed to compare their radii — cross-referenced into A4.
+- **A-n9. φ as a location on the gradient — OFFERED / CHECKABLE.** Solve XY = 1ₙ with
+  X − Y = √1ₙ: X = √1ₙ·φ, Y = √1ₙ/φ — φ as the location where the mode-difference equals the
+  frame's own unit; the location condition and the worst-approximability condition are one
+  equation. Supersedes the retired e/φ architecture's motivation. Editorial; no chain target.
+- **A-n10. Exact periodicity as an excluded exactness condition — OFFERED.** Absolute
+  periodicity is not obtainable (exact commensurability is an exactness claim); φ is not a
+  boundary between classes (rationals are dense) but the antipode of periodicity. *Corrects* the
+  "φ is the boundary" framing.
+- **A-n11. Resonance :: commensurability :: the locking that ends deferral — OFFERED.** Where a
+  ratio closes, the deferral stops; irrationality structural rather than incidental. The
+  connective tissue under A-n5/7/9/10/12.
+- **A-n12. The two horns have different closure behavior — RULED (the session's organizing
+  result); chain placement AWAITING RULING — PATCH 25 drafted and SKIPPED unapplied.** Boundary
+  held, center varying: closure grantable, exact repetition available at the cost of maintenance
+  (the crystal; the tomb). Center held, boundary varying: closure would fix both ends at once —
+  excluded — so a held center forces quasiperiodicity as the mode of maintenance (tree, orbit,
+  native protein state, escapement). Consequences: periodicity/quasiperiodicity are the two
+  horns' closure behaviors, not one scale; φ extremal within the second horn only; the
+  tree-runs-both finding (B-n4) becomes structural.
+- **A-n13. The conjugate-pair polynomial; the pentagon as the law one level up — OFFERED /
+  CHECKABLE.** z² − 2cos θ·z + 1 = 0 carries both slices (product = Q_i invariant; sum = 2a);
+  Euler's identity is the family at θ = π; the corpus's "Master Identity" is the same family at
+  θ = π/5 (pair-sum φ). Why five: the tenth- and fifth-turn pair-sums themselves satisfy
+  product 1, difference 1 — A-n9's equation one level up; self-similarity as the law reappearing,
+  not a postulate. *Supersedes* the Master Identity's register framing (both sides retired — no
+  equation is 常-register); *falsifies in place* the "only equation with coefficients from
+  {−1,0,1}" claim (its middle coefficient is −φ). *Anachronism flag:* the 五行 framing must not
+  enter DDJ material (the tomb's 五行 manuscript is a separate Zisi-school text). Editorial.
+
+**Open formal work (the source's Section C, placed here because it closes with derivation):**
+- **C-n1. What excludes chaos in three dimensions — OPEN** (recovered from the March 2026
+  critique, never answered; historically *the three-body problem* — engaging Poincaré's
+  literature is part of answering). The honest incomplete reply: KAM + Hurwitz reframes the
+  question to "quasiperiodic orbits occupy positive measure, indexed by distance from
+  commensurability." *Closes with:* a formalization of the closure requirement, or a recorded
+  weakening.
+- **C-n2. π's role, stated precisely — carried.** The non-repetition lives in the
+  incommensurability of around and through, not in the orbit (a circle repeats); the step does
+  not close, the seats do.
+
 ---
 
 ## B. Editorial-level (closes with a ruling)
@@ -259,6 +341,37 @@ Consolidation Part 5; unruled. Bears on C3 (A17) and any cross-frame editorial c
 R24 withdrew the distinction as not-Will's; it was load-bearing in several audit findings
 (`reports/separation_report.md`, supersession notice). Gaps are to be flagged as they surface,
 not repaired wholesale.
+
+### B-n. 2026-08-04 session additions (merged from `rsm/audit/register_update_2026-08-04.md`)
+
+- **B-n1. The crafts are the chain's rotation clauses, executed — RULED (Will).** The wheel :: the
+  ring of orientations performed; the pot :: Gₙ revolving about Bₙ, executed in clay. Form and
+  void as one revolution's two products; the excluded locus climbs with the generator; the crafts
+  as the *motion face* of the dimension route, with R13's static construction the register-clean
+  premise, unaffected. (Note: this is the pot/wheel material — Will's own — distinct from the
+  set-aside craft cluster, D3.)
+- **B-n2. Chapter 11's verbs mark the type shift — OFFERED.** 共 · 埏 · 鑿 — two revolutions and
+  a cut; the chapter changes verbs exactly where the absence-type changes. Applied to
+  `paper_ch11_three_absences.md` in session.
+- **B-n3. Folding as the explicit-register instance — OFFERED, essay-0 material.** Protein
+  (misfolding yields a different object, not a degraded one — the pot ruling exactly); DNA
+  (base pairs as chords across an unoccupied center, ~10.5 bp/turn incommensurate with closure —
+  no rung repeats an orientation; the held ensemble as the held center's textbook case).
+- **B-n4. Periodic / quasiperiodic / aperiodic — terms clarified; Will's three-way sort stands.**
+  A quasicrystal is ordered but cannot branch; the tree runs both (rings boundary-held,
+  branching center-held); A-n12 now supplies the reason.
+- **B-n5. Retired, with documents named.** The e/φ architecture (`29_between_e_and_phi` + docset
+  copies) — per-constant assignment plus threshold form, both retired classes. Survives: the
+  three-way sort (B-n4), tree-runs-both, and the Poincaré–Bendixson/KAM material as formal
+  defenses (C-n1). Replacement motivation: A-n9/A-n10.
+- **B-n6. Essay 0 owes its fold paragraph.** Honeycomb first (tactile), turning over into the
+  living case per B-n3. Drafted in conversation, not yet written into `essay_00_folded.md`.
+- **B-n7. Two-body barycenter :: the ν-centroid — OFFERED / CHECKABLE.** The center present only
+  as the weighted sum of the pair — named by the pair, occupied by nothing; two-body exactly
+  solvable *because it reduces*. **KILLED, recorded once:** "three-body failure :: odd parity" —
+  type mismatch (the seats are two pairs with different roles, never three-of-a-kind), false as
+  celestial mechanics (figure-eight orbit; Lagrange points), and contradicts B-n4 (bounded
+  recurrent non-repeating is the corpus's *living* signature, not breakdown).
 
 ---
 

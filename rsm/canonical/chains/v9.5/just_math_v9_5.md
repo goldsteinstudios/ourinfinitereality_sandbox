@@ -1,4 +1,4 @@
-# RSM — Just-Math Chain (v9.5)
+# RSM — Just-Math Chain (v9.51)
 
 *The explicit realization. The implicit skeleton is affine — straight/curved only, no metric; this chain renders it and states its own measure. Everything a rendering adds — coordinates, a sign convention, a metric, a completed circle — belongs to the rendering, and where a result depends on one it is said so in place. Not sealed.*
 
@@ -75,7 +75,7 @@ Placement, stated: π's numeric content — lengths, the value itself — enters
 
 **The ν-centroid**. Any sign-symmetric configuration sums to the center.
 
-**Complementarity floor** — belongs to the rendering; the winding-measure premise is unsettled. Over admissible closed spanning structures, σ_a·σ_b ≥ 1ₙ/2, saturated by the minimal traversal.
+**Complementarity floor** — belongs to the rendering; the winding-measure premise is unsettled. Over admissible closed spanning structures, σ_a·σ_b ≥ 1ₙ/2, saturated by the minimal traversal. The minimal traversal's four stations are not a chart accident: a distinction co-obtains with its conjugate, so a seat-inventory has even parity by constitution, and a three-seat configuration is an incomplete inventory rather than a forbidden arrangement. Four is the first closure that exists. The geometric argument — that a three-station circuit either transits the center or fails antipodality — displays the constitutional fact rather than establishing it.
 
 ## The measure
 
@@ -104,4 +104,4 @@ No exponent, no dimensionful constant, no scaling law. The implicit register fix
 
 ---
 
-*v9.5 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.51 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

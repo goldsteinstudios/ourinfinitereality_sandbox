@@ -1,4 +1,4 @@
-# RSM — Just-Physics Chain (v9.5)
+# RSM — Just-Physics Chain (v9.51)
 
 *The explicit register. Physics is not a rendering of this framework — physics is what the explicit register studies, and this chain records where the two happen to wear the same shape. `::` means maps-to and never is. The implicit register fixes structure and fixes no parameters, so no quantity here is owed by the framework and none confirms it. Where an entry strains, the strain is stated with it. Every entry below is an expression within a parametric environment; the environment's numbers belong to it.*
 
@@ -82,7 +82,7 @@ The exposure that survives: **whether the framework has any quantitative cross-f
 
 ## 11. Quasiperiodicity
 
-If the cross-frame ratio is irrational, lineage traversal winds incommensurately — return without repetition :: quasicrystalline order, orbital resonance structure. Held light, and conditional on that relation existing at all.
+A frame's own unit of turn is incommensurate with its own closure: the iterates of the unit step are dense on the circle and repeat no point. **Return without repetition :: quasicrystalline order, orbital resonance structure** — the correspondence stands on the frame's own arithmetic, with no cross-frame quantity required. A second, stronger reading remains gated: if the cross-frame ratio is irrational, lineage traversal winds incommensurately in the same way. That version waits on the cross-frame unit relation (open items).
 
 ## Predictions
 
@@ -107,4 +107,4 @@ If the cross-frame ratio is irrational, lineage traversal winds incommensurately
 
 ---
 
-*v9.5 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.51 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
