@@ -1,6 +1,6 @@
 # Open-items register
 
-> **Canon pointer:** current canon is **v9.51**, markdown canonical at `rsm/canonical/chains/v9.5/`.
+> **Canon pointer:** current canon is **v9.52**, markdown canonical at `rsm/canonical/chains/v9.5/`.
 > Regenerated **2026-08-03** from the v9.5 chains, `rsm/audit/session_consolidation_2026-08-02.md`
 > (Parts 5–6), `rsm/audit/session_addendum_2026-08-02_late.md`, and the regeneration instruction
 > of 2026-08-03. Compilation, not judgment: every item is sourced; where sources conflict, the
@@ -210,7 +210,7 @@ register; the retired per-constant class stays retired.*
 - **A-n3. Around denominated in approaches — OFFERED / CHECKABLE.** C/D incommensurate (around
   vs the forbidden through); C/r = 2π exactly (around vs the licensed reach); the closure
   constant as exchange rate. Editorial; feeds the Euler paper.
-- **A-n4. The winding-ambiguous 1 — OFFERED / CHECKABLE.** e^{i·0} vs e^{i·2π}: same value,
+- **A-n4. The winding-ambiguous 1 — OFFERED / CHECKABLE; the corrected Euler form applied as PATCH 27 (v9.52), the ambiguity clause included as its stated reason (strikable — see the diff report).** e^{i·0} vs e^{i·2π}: same value,
   different winding; two licensed decodings of the identity (constitutional, no journey; and
   movement, out-and-back matching 返). Supersedes the Euler paper's single-instance form
   (patched there in session). No chain change — the chain already proves the content.

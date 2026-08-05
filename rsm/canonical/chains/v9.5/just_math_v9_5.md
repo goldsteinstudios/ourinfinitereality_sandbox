@@ -1,4 +1,4 @@
-# RSM — Just-Math Chain (v9.51)
+# RSM — Just-Math Chain (v9.52)
 
 *The explicit realization. The implicit skeleton is affine — straight/curved only, no metric; this chain renders it and states its own measure. Everything a rendering adds — coordinates, a sign convention, a metric, a completed circle — belongs to the rendering, and where a result depends on one it is said so in place. Not sealed.*
 
@@ -65,11 +65,11 @@ Placement, stated: π's numeric content — lengths, the value itself — enters
 
 **T2 — crossing** — computation checked; the claim belongs to the rendering. Any closed spanning path crosses the null cone Q_j = 0; at the sign-image of Pₙ the gradient form reads −1ₙ. Spanning presupposes two components to span.
 
-**The two returns** — computation checked; the claim belongs to the rendering. Along the circle, Q_j = 1ₙ·cos 2θ: the invariant returns at π, the position at 2π. A double cover — a fact about the circle slice. Euler's identity is this fact compressed, and its right form was typed in an earlier chain and dropped in transit — reinstated here. Since 1 = e^{i·0}, the identity is
+**The two returns** — computation checked; the claim belongs to the rendering. Along the circle, Q_j = 1ₙ·cos 2θ: the invariant returns at π, the position at 2π. A double cover — a fact about the circle slice. Euler's identity is this fact compressed, and the compression hides a winding: the familiar **+1** is ambiguous between e^{i·0} and e^{i·2π}, which share a value and differ in winding, so the identity decodes two ways. The traversal reading is
 
-**e^{iπ} + e^{i·0} = 0**
+**e^{iπ} + e^{i·2π} = 0**
 
-— not five constants in miraculous conjunction but **one operation at two angles**: the same e^{iθ} at θ = π and θ = 0, an antipodal pair whose sum is the center. The general form is e^{iθ} + e^{i(θ+π)} = 0 for every θ. And no single θ produces 0: the center is not on the circle. It is named only as the sum of a conjugate pair of poles — the ν-centroid's most famous instance, and the chart's way of saying that the symmetric whole names the locus none of its members occupies. All of this belongs to the rendering, and is entered as such.
+— out and back: the far pole and the returned position, summing to the center. The constitutional reading takes the same pair at θ = 0, without traversal. Both are instances of **one operation at two angles**: the general form is e^{iθ} + e^{i(θ+π)} = 0 for every θ, and no single θ produces 0 — the center is not on the circle. It is named only as the sum of a conjugate pair of poles: the ν-centroid's most famous instance, and the chart's way of saying that the symmetric whole names the locus none of its members occupies. All of this belongs to the rendering, and is entered as such.
 
 **i² = −1, two routes**. Elimination over the five candidate closures, and the antipodal-binding argument. Results about the signed continuation.
 
@@ -104,4 +104,4 @@ No exponent, no dimensionful constant, no scaling law. The implicit register fix
 
 ---
 
-*v9.51 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.52 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

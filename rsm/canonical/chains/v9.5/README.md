@@ -1,4 +1,10 @@
-# RSM v9.51 — the current working set
+# RSM v9.52 — the current working set
+
+**v9.52 (patch set 5, 2026-08-04):** the math two-returns theorem's Euler passage corrected to the
+traversal reading, **e^{iπ} + e^{i·2π} = 0** (out and back), with the constitutional reading at
+θ = 0 retained beside it — "five constants" editorializing and the reinstatement narrative struck
+by ruling. One clause (the winding-ambiguity sentence) is A-n4, OFFERED, included as the
+correction's stated reason. Diff: `reports/v9_52_patch_diff_report.md`.
 
 **v9.51 (patch set 4, 2026-08-04):** physics §11 re-based off the unit step (the quasiperiodicity
 correspondence stands on the frame's own arithmetic; the cross-frame version retained as a second,
