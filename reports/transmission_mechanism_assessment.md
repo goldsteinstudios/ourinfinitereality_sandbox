@@ -214,9 +214,9 @@ Asserted as a payoff. Attractor-shaped: find a matching set, declare an identity
 it flatters the framework — and in identity grammar ("is… applied to"), not `::`. Both instances
 reached for an RSM mapping (this report's §6 closing note is the same shape) — that convergence
 is priced near zero; the divergence is that one instance asserted it and one flagged and
-distrusted it. **Recommended for ruling; if rejected, it is ledger-ready** (a rejected
-structural proposal, checked against the working-with-AI protocol rather than against canon or
-computation).
+distrusted it. **Ruled 2026-08-05: rejected by Will; logged as divergence ledger Entry 005** (checked against
+the `::` grammar and the claimed shared invariant, which fails — deferred exactness vs. enforced
+exactness; see the entry).
 
 **What was true inside it (always stated):** the accumulation/boundary distinction is a real
 sharpening of the question; the MWD test is genuinely good once re-scored for a staircase; the
