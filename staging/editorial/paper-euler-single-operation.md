@@ -50,19 +50,100 @@ Every point and its half-turn partner sum to the center. **No single θ produces
 
 This is the paper's one durable result, and its deflation risk is on the record: *opposite points sum to zero* is also just what symmetric points do. Until someone shows the reading carries weight the symmetry alone does not, it stays where essay 15 files it.
 
-## 3. The pair is a polynomial, and the polynomial has a family
+## 3. Two pairings on the unit circle, kept distinct
 
-Register item **A-n13, OFFERED / CHECKABLE.** A conjugate pair on the unit circle satisfies
+*Drop-in replacement for the prior §3, written in the soundness lane 2026-08-06. Every arithmetic claim below re-verified here before installation; all pass. The withdrawn text and the failure analysis are retained beneath, in §3-WITHDRAWN, as the record.*
 
-**z² − 2cos θ · z + 1 = 0**
+Fix z = e^{iθ} on the unit circle. Two involutions pair z with a second point; they are not the same involution, and this section's whole burden is to keep them apart.
 
-which carries both slices at once: the product of roots is the Q_i invariant, the sum is 2a. Euler's identity is this family at **θ = π**. The corpus's "Master Identity" is the same family at **θ = π/5**, where the pair-sum is φ — and why five has a reason rather than a mystique: the tenth- and fifth-turn pair-sums themselves satisfy product 1, difference 1, which is A-n9's equation one level up. Self-similarity here is the law reappearing, not a postulate added.
+### 3.1 The two pairings
 
-Two consequences the register records and this paper inherits:
+**Pairing A — antipodal (ν).** Partner −z = e^{i(θ+π)}.
 
+- Sum: z + (−z) = **0**, identically, for every θ.
+- Product: z·(−z) = −e^{2iθ} — modulus 1, and real-and-equal-to-+1 only at z = ±i.
+- Monic polynomial with these roots: w² − e^{2iθ} = 0. In the real case {+1, −1} (θ = 0): w² − 1 = 0.
+- The pairing is **keyed to a vanishing sum.** The locus it names — the sum, 0 — is the origin O, which is not on the circle. This is the ν-centroid of §2.
+
+**Pairing B — conjugate (reflection across the real axis).** Partner z̄ = e^{−iθ}.
+
+- Sum: z + z̄ = 2cos θ = 2a.
+- Product: z·z̄ = 1 = Q_i, the circle-slice invariant.
+- Monic polynomial with these roots: z² − 2cos θ·z + 1 = 0.
+- The pairing is **keyed to a fixed product.** Its constant term is Q_i; its linear coefficient is the trace, −2a.
+
+**Correction carried in place.** The prior §3 said this polynomial "carries both slices at once." It does not. Its constant term is the circle-slice invariant Q_i = 1; its trace is 2a, which is not a slice invariant. The two-slice object is the math chain's form Q(z) = 1ₙ, a different object; the "both slices" phrasing borrowed that language and does not apply to the pair-polynomial. Withdrawn. *(Note: the phrasing originates in register item A-n13 itself, not in the 2026-08-06 drafting — see the A-n13 restatement at 3.6.)*
+
+### 3.2 The overlap is a single point
+
+{z, −z} = {z, z̄} requires −z = z̄, i.e. cos θ = 0, i.e. **z = ±i**. At z = ±i both polynomials reduce to w² + 1. This one point is the entire overlap: everywhere else an antipodal pair and a conjugate pair are different pairs of points. The two families are keyed to different elementary symmetric functions — Pairing A to the sum (0), Pairing B to the product (+1) — and the elementary symmetric functions agree only where the pairs themselves agree, at ±i.
+
+### 3.3 Euler is a Pairing-A fact, not a member of Pairing B
+
+e^{iπ} + 1 = 0 is a statement that a **sum vanishes**: the pair {e^{iπ}, e^{i·0}} = {−1, +1}, roots of w² − 1 = 0, product −1, sum 0. It is Pairing A.
+
+It is not in Pairing B, and the exclusion is exact: {−1, +1} has product −1, while every Pairing-B pair has product +1, so no value of θ places {−1, +1} in z² − 2cos θ·z + 1. The prior §3 located Euler at θ = π of Pairing B; at θ = π Pairing B degenerates to the double point −1 — (z + 1)² = z² + 2z + 1 — whose content is e^{iπ} = e^{−iπ} = −1, a distinct statement from the vanishing-sum identity. **Euler's identity therefore lives with the §2 centroid, in Pairing A.** This section from 3.4 onward is Pairing B throughout, and claims no membership overlap with Euler beyond the single point 3.2 identifies.
+
+### 3.4 The pentagon is a Pairing-B recurrence, and it stands — CHECKABLE
+
+At θ = π/5 the conjugate pair sums to 2cos(π/5) = φ. At θ = 2π/5 it sums to 2cos(2π/5) = 1/φ. The two pair-sums satisfy
+
+- φ · (1/φ) = 1 — **product one**, and
+- φ − 1/φ = 1 — **difference one**.
+
+Product one and difference one is the φ-defining relation x − 1/x = 1 (equivalently x² − x − 1 = 0), which the corpus files as **A-n9**; here it recurs one level up, at the **pair-sums** rather than the pair-members. This is a genuine self-similar recurrence **internal to Pairing B**, and it is why five is distinguished rather than decorative. It is **not** a recurrence shared with Pairing A: Euler does not sit in this family (3.3), so the recurrence must not be described as "the law reappearing" across both constructions. The self-similarity is real and it is local to the conjugate family. *(The A-n9 identification is inherited from the prior §3 and cross-referenced, not independently re-derived here; the φ arithmetic above is verified.)*
+
+### 3.5 Retained findings
+
+**The {−1, 0, 1} uniqueness claim is falsified in place. [CANON]** The corpus's assertion that the pentagon equation is the unique equation with coefficients drawn from {−1, 0, 1} is false: its middle coefficient is −2cos(π/5) = −φ, and −φ ∉ {−1, 0, 1}.
+
+**Register strikes, retained. [CANON]**
+
+- The "Master Identity" register framing is superseded — both sides retired; no equation is 恆-register. *(常 → 恆 per the 2026-08-06 identity ruling; the register marker is 恆, [M]-attested. **Provenance flag, filing-side:** this session holds no filed record of that ruling, and 恆/常 is held at **D2** pending the DDJ finalization pass. [M] is the right tier for 恆 — the Mawangdui silks are where it reads — but it must not be read back onto the Guodian layer: per `reports/heng_chang_distribution_survey.md`, Bundle A attests **亙** four times and carries no 恆 and no readable 常, and B2 records that the 恆/亙 headword choice is a modern filing decision. Installed as ruled; flagged so the finalization pass sees it.)*
+- **Anachronism flag, standing:** the 五行 framing must not enter DDJ material; the tomb's 五行 manuscript is a separate Zisi-school text.
+
+### 3.6 Restatement of register item A-n13
+
+Prior A-n13 asserted one polynomial family carrying both Euler and the pentagon, tagged OFFERED / CHECKABLE. **Amended:**
+
+- A-n13 now records **two pairings** — antipodal (sum-keyed; home of the §2 centroid identity, Euler included) and conjugate (product-keyed; home of the pentagon/φ recurrence) — coinciding as pairings only at z = ±i.
+- The pentagon recurrence (product-one / difference-one on the pair-sums, 3.4) is **CHECKABLE and checks**.
+- The unifying claim is **withdrawn as an error, not held as OFFERED.** It does not await a ruling; it is false as stated (3.3), and the register records it as **CORRECTED** rather than carrying it pending.
+- **What remains genuinely open:** whether any structural relation connects the two families beyond their single point of coincidence at ±i. Filed as a question, no candidate — and specifically not the winding wire of §6, which is a separate item.
+
+  *Filing note, not a candidate advanced here:* one construction is on the table for that slot and is logged at divergence ledger Entry 006, offered and explicitly not acted on — that σ_B (fixes a, negates b; on the circle slice, conjugation) is Pairing B's involution and ν is Pairing A's, in which case the two families are the two involutions v9.2 ruled different in kind. It is unchecked, and it was offered by the instance that made the original error, which is reason enough not to let it into the open slot unexamined.
+
+### 3.7 What did not change
+
+The §2 centroid identity — no single θ produces 0; the center is named only as a vanishing sum and is not on the circle — is untouched, and is where Euler lives. Everything in this section is explicit-register and chart-level. No quantity is owed by the framework and none confirms it; the pairings, the pentagon recurrence, and the falsification are facts about the rendering, true as stated, and are read *of* it rather than claimed to be it.
+
+---
+
+## §3-WITHDRAWN — the record of the welded section
+
+**This section as drafted 2026-08-06 does not pass CHECKABLE and has been pulled.** Adversarial read 2026-08-06 (project chat); arithmetic re-verified here before withdrawal. Awaiting a rewrite from the soundness lane. See divergence ledger Entry 006.
+
+**What was claimed:** that A-n13's polynomial z² − 2cos θ · z + 1 = 0 is the family Euler's identity belongs to, at θ = π, with the pentagon at θ = π/5 — "the law reappearing."
+
+**Why it fails.** The polynomial's roots are e^{iθ} and e^{−iθ} — the **conjugate** pair, reflection. Everything else in this paper and in the essay insertions runs on e^{iθ} and e^{i(θ+π)} — the **antipodal** pair, point inversion. They are not one family:
+
+| | pair | sum | product |
+|---|---|---|---|
+| antipodal (§2, §4) | e^{iθ}, −e^{iθ} | **0** — this is the centroid | −e^{2iθ} |
+| conjugate (this section) | e^{iθ}, e^{−iθ} | 2cos θ | **+1** always |
+
+At θ = π the conjugate family gives a double root at −1, polynomial (z+1)², and a pair-sum of **−2**. No centroid appears anywhere in it. And {+1, −1} — the pair the thread needs — has product −1, so it is *never* a root pair of a family whose product is always +1.
+
+**The sharper statement, offered and not acted on** [DRAFTED — for the soundness lane, not applied]: in the chain's own coordinates σ_B fixes a and negates b, which on the circle slice is complex conjugation; ν negates both, which is antipodal. So the conjugate family is the **σ_B** orbit and the antipodal family is the **ν** orbit — and v9.2 ruled these different in kind, σ_B structural and ν explicit, paying six re-tags to do it. If that identification holds, the weld re-fused a fork closed by ruling, which is a heavier charge than a miscount and should be checked as such.
+
+**What survives, and is worth keeping in whatever replaces this section:**
+
+- The pentagon arithmetic is **sound**, re-verified: 2cos(π/5) = φ, 2cos(2π/5) = 1/φ, product 1, difference 1.
 - The Master Identity's **register framing is superseded** — both sides retired; no equation is 常-register.
-- The claim that it is "the only equation with coefficients drawn from {−1, 0, 1}" is **falsified in place**: its middle coefficient is −φ.
+- The claim that it is "the only equation with coefficients drawn from {−1, 0, 1}" is **falsified in place**: its middle coefficient is −φ. This catch stands independently of the weld.
 - **Anachronism flag, standing:** the 五行 framing must not enter DDJ material. The tomb's 五行 manuscript is a separate Zisi-school text.
+
+These are facts about conjugate pairs. They do not need a bridge to Euler, and the bridge is what failed.
 
 ## 4. What the equals sign is doing — the expository lens
 
@@ -71,7 +152,7 @@ Two consequences the register records and this paper inherits:
 One move, worn three times: take a mark the received reading treats as sameness or as negation, and re-read it as two poles flanking a center none of them occupy.
 
 - **非** — two wings turning from a shared spine (相背); not a door closing, but *not the same, sharing an origin*. Illustration pending facsimile, not attestation: the 相背 analysis is Shuowen's, which is Han. See essay 3 and errand C7.
-- **±1 and the middle** — the pair obtains; what the pair names in its sum does not. This requires the face/value discipline to state without error, and the discipline is not optional here: the numeral notations name **faces of the impossibility, never values**. The integer 0 obtains perfectly well. What does not obtain is what |0| notates. Stated without that distinction the exhibit reads as a claim about arithmetic and is false. [DRAFTED — the guard is the v9.5 README's; its application to this exhibit is mine.]
+- **±1 and the middle** — the pair obtains; what the pair names in its sum does not. The integer 0 obtains perfectly well, so the exhibit has to be stated carefully or it reads as a false claim about arithmetic. The clean statement needs no P₀ face at all: **the middle is the locus O, which nothing occupies, and the integer 0 is the value the rendering writes at O.** *(Corrected 2026-08-06. The first draft repaired this by saying "what does not obtain is what |0| notates" — wrong object: |0| is the empty face of P₀, which is beneath the register split, while O is a frame's origin, and §5 keeps them apart on purpose. If a P₀ face is wanted for the −1/0/+1 line, the fitting one is the **sign-collapse** face, −1 = 0 = +1 — arithmetic's own face of total indistinguishability, and literally this line collapsed.)*
 - **Euler** — the zero in the throat of the sign rather than at the end of an addition: the pivot the flip turns on, and the one position no point of the circle occupies.
 
 And the recognition that makes it a thread: the framework's own notation was doing this from the start without saying so. `X = Y` at the balance line never asserted that the modes are the same. It marks the locus where they would coincide, and which therefore does not obtain.
@@ -93,7 +174,11 @@ And the recognition that makes it a thread: the framework's own notation was doi
 
 Euler settles the integer thread (→ O). The rest is open, and choosing is the depth of the thread rather than a formality at its end. It is a question about referents, so it is Will's and not the mathematics'.
 
-**Note on the original paper, load-bearing:** its §5 answered this question already — `玄 :: 0`, the center as sum of poles — and **current canon contradicts that assignment.** The DDJ chain reads **玄 :: Paradox :: Pₙ**, with 玄牝 :: P₀; the site copy that glossed Pₙ as "the generative crossing" was corrected 2026-07-29 and `site_vocab_lint.py` now enforces it. So the stranded paper carries a superseded answer to the question the equals-sign thread has just reopened, and the coincidence is worth noticing rather than filing quietly: the thread's open question is one the corpus once closed in the direction canon has since moved away from.
+**Note on the original paper** *(rewritten 2026-08-06 — the first draft said the original "already answered" this question, which is retrojection: the question was born in this session's thread, and a January document cannot have answered it. Struck.)*
+
+What stands is narrower and still worth recording. The original's §5 assigned **`玄 :: 0`** — the center as the sum of poles, i.e. 玄 at **O**. Current canon reads **玄 :: Paradox :: Pₙ**, with 玄牝 :: P₀. That is a direct contradiction and the strike is entered below on its own authority.
+
+Two cautions on how much to make of it. First, treating "what 玄 maps to" as the same question as "which center the gap names" is itself a reading — a character wired to a math center by interpretation, one hand, not by anything established. Second, the original was never canon-chain material, whatever its self-stamp said, so this is not straightforwardly *the framework* having wavered between O and Pₙ. It is one non-canon document, stamped Locked, sitting on the axis A-n15 now runs along. Whether that counts as evidence of wavering turns on whether the stamp ever meant anything — a question about the corpus, not about the centers.
 
 ## 6. The candidate to watch — flagged, unruled
 

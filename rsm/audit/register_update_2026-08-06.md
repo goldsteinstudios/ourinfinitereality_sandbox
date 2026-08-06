@@ -50,11 +50,19 @@ flanks do not occupy produces three exhibits (非, ±1, Euler's pivot) that do n
 **Closes with:** a ruling on referents, not a derivation. Filed in A rather than B because the
 third option would change chain content if taken.
 
-**Load-bearing finding attached.** The stranded Euler paper (see C-n3) already answered this, in
-its §5, as **`玄 :: 0`** — the center as the sum of poles, i.e. 玄 assigned to **O**. Current canon
-contradicts that: the DDJ chain reads **玄 :: Paradox :: Pₙ**, 玄牝 :: P₀, and the site gloss was
-corrected 2026-07-29 with `site_vocab_lint.py` now enforcing it. So a superseded answer to this
-question is sitting in a document the register cites as live. Reported, not resolved.
+**Attached finding — rewritten 2026-08-06.** *("already answered" struck as retrojection: this
+question was born in the equals-sign thread this session, and a January document cannot have
+answered it.)* What stands: the stranded Euler paper's §5 assigned **`玄 :: 0`** — 玄 at **O** —
+while canon reads **玄 :: Paradox :: Pₙ**, 玄牝 :: P₀. Direct contradiction; struck on its own
+authority (C-n3).
+
+Two cautions on how much to make of it, both narrowing. Treating "what 玄 maps to" as the same
+question as "which center the gap names" is itself a reading — one hand, a character wired to a
+math center by interpretation. And the original was never canon-chain material whatever its
+self-stamp claimed, so this is not straightforwardly *the framework* wavering between O and Pₙ; it
+is one non-canon document sitting on the axis this item runs along. Whether that is evidence of
+wavering turns on whether the stamp ever meant anything — a question about the corpus, not about
+the centers. Reported, not resolved.
 
 ---
 
@@ -77,12 +85,57 @@ A-n14 filed with its breaker) · essay 3 (the 非 wings, with the Shuowen exposu
 as the deflation that essay already warns about). Diff report:
 `reports/equals_sign_thread_diff_report.md`.
 
-### B-n9. The ±1 exhibit needs the face/value guard stated — OFFERED
-[DRAFTED] As the note states the integer exhibit, "the middle doesn't obtain" reads as a claim
-about the integer 0, which obtains perfectly well. What does not obtain is what **|0|** notates.
-The v9.5 guard is already in the math chain's notation — *the numeral notations name faces of the
-impossibility, never values* — and the exhibit is sound with it and false without it. Applied in
-the recovered Euler paper §4; **not** yet applied wherever else the exhibit travels.
+### B-n9. The ±1 exhibit — CORRECTED 2026-08-06
+The catch stands: as the note states the integer exhibit, "the middle doesn't obtain" reads as a
+claim about the integer 0, which obtains perfectly well.
+
+**The repair first drafted was wrong, and is struck.** It said "what does not obtain is what **|0|**
+notates" — wrong object. |0| is the **empty face of P₀**, which is beneath the register split;
+**O** is a frame's origin. Structural §5 keeps them apart on purpose, and the repair conflated
+exactly the two things that section exists to protect.
+
+**The correct statement needs no P₀ face at all:** the middle is the locus **O**, which nothing
+occupies, and the integer 0 is the value the rendering writes at O. If a P₀ face is ever wanted for
+the −1/0/+1 line, the fitting one is the **sign-collapse** face (−1 = 0 = +1, the trivial ring) —
+arithmetic's own face of total indistinguishability, and literally that line collapsed — not the
+empty face.
+
+Applied in the recovered Euler paper §4. **Not** yet applied wherever else the exhibit travels;
+that sweep is owed.
+
+### A-n13. RESTATED — CORRECTED, not held pending
+Prior A-n13 asserted one polynomial family carrying both Euler and the pentagon (OFFERED /
+CHECKABLE). It does not check. The polynomial z² − 2cos θ·z + 1 has roots e^{±iθ} — the
+**conjugate** pair, product always +1 — while the whole centroid reading runs on the **antipodal**
+pair, sum always 0; {+1, −1} has product −1 and is therefore never a member of the first family at
+any θ. The two coincide **as pairings at z = ±i only.**
+
+- **Recorded as CORRECTED**, not carried pending: the unifying claim is false as stated, not
+  awaiting a ruling.
+- Antipodal (sum-keyed) is the home of the §2 centroid identity, Euler included. Conjugate
+  (product-keyed) is the home of the pentagon/φ recurrence.
+- The pentagon recurrence — product one, difference one, on the **pair-sums** — is CHECKABLE and
+  **checks**: 2cos(π/5) = φ, 2cos(2π/5) = 1/φ. Self-similar recurrence *internal to* the conjugate
+  family; not shared across both.
+- The {−1,0,1} falsification **survives independently** of the weld: the middle coefficient is −φ.
+- Also withdrawn: "carries both slices at once." The constant term is Q_i; the trace is 2a, which
+  is not a slice invariant. The two-slice object is the math chain's Q(z) = 1ₙ, a different object.
+  *This phrasing originates in A-n13 itself.*
+- **Newly open, no candidate:** whether any structural relation connects the two families beyond
+  ±i. Not the winding wire (A-n14), which is separate. One unchecked construction sits in divergence
+  ledger Entry 006, offered by the erring instance and deliberately not advanced into this slot.
+
+Section text: `staging/editorial/paper-euler-single-operation.md` §3, written in the soundness lane
+2026-08-06, arithmetic re-verified on installation. Failure record retained at §3-WITHDRAWN.
+
+### B-n12. The 恆-register marker — provenance flag, filing-side
+The 2026-08-06 §3 rewrite carries the register-marker strike as "no equation is **恆**-register,"
+citing a 2026-08-06 identity ruling (常 → 恆; 恆 as [M]-attested). Installed as ruled. Two filing
+notes owed to the D2 pass: **this session holds no filed record of that ruling**, and 恆/常 is held
+at D2. [M] is the right tier for 恆 — the Mawangdui silks are where it reads — but it must not
+propagate onto the Guodian layer: Bundle A attests **亙** (4×), carries no 恆 and no readable 常,
+and B2 records the 恆/亙 headword choice as a modern filing decision. This is the second document
+now leaning on the 恆/常 fault line; see `reports/chain_finalization_audit_2026-08-06.md` §1.2.
 
 ### B-n10. Essay 3's 非 tag is stale — AWAITING RULING
 Essay 3 carries 非 as pointing at the within-axis relation, tagged `[candidate, pre-survey]`. The
@@ -115,8 +168,15 @@ a tier that no longer exists, on a document carrying the **single-instance** for
 supersedes.
 
 Register items **A-n3**, **A-n4** and **A-n6** all cite it as live, and A-n4 records that it was
-"patched there in session" on 2026-08-04. **There is no commit for that patch on any branch.** The
-in-session edit is uncommitted or lost.
+"patched there in session" on 2026-08-04. **No commit for that patch was found across the 13 refs
+in this clone** (2 local heads + 11 remote-tracking; enumerated by `git for-each-ref`).
+
+*Downgraded 2026-08-06 from "no commit exists on any branch."* That was a universal negative stated
+on the strength of `git log --all`, which covers only the refs present locally — not unpushed work,
+not a stash, not the session record. Both cited hashes were spot-checked and are real:
+`7473b0a72322c67adb2a70ebc480ae868434cb74` (2026-01-01, author `goldsteinstudios`, "RSM v0.993:
+Single-operation Euler identity") and `98154a2d7033cb34188407bd64a0151faef2c6ec` (2026-03-15).
+The patch text may still be in the session record; that residue stays open.
 
 **Closed with:** the artifact — `staging/editorial/paper-euler-single-operation.md`, rebuilt
 2026-08-06 against v9.52, strikes tabled with authority. Two residues remain open: whether the

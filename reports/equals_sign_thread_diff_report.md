@@ -150,6 +150,63 @@ tier-three document back in the chain directory is how the original came to be s
 5. **The 2026-08-04 Euler patch text** is still unaccounted for. If it exists in a session record,
    it should be reconciled against the rebuild before either is trusted.
 
+## 7a. Round two — adversarial read, 2026-08-06, and what it cost
+
+The distribution above was reviewed in the project chat the same day. Four findings; all four
+verified here before acting, all four accepted. Recorded because the pattern matters more than the
+patch.
+
+**H1 — the headline, and it was in the recovered document rather than the ephemeral note.** The
+rebuilt Euler paper's §3 welded two different pairings: A-n13's polynomial z² − 2cos θ·z + 1 has
+roots e^{±iθ}, the **conjugate** pair (product always +1), while the entire thread runs on the
+**antipodal** pair (sum always 0). {+1, −1} has product −1 and so is in the conjugate family at no
+θ; at θ = π that family degenerates to a double root at −1 with pair-sum **−2**, and no centroid
+appears in it anywhere. The section was stamped **OFFERED / CHECKABLE** and had not been checked.
+Withdrawn; a corrected §3 written in the soundness lane and installed after re-verifying every
+arithmetic claim in it; failure record retained in place at §3-WITHDRAWN; divergence ledger
+**Entry 006**. The rewrite caught a further inherited error the withdrawal had missed — "carries
+both slices at once" is false of the pair-polynomial, and that phrasing originates in **A-n13
+itself**, not in the drafting. A-n13 recorded **CORRECTED**, not held pending.
+
+**H2 — the repair reached past the near object for the wrong far one.** The ±1 middle is the locus
+**O**, and the integer 0 is the value the rendering writes there. The first draft said "what does
+not obtain is what |0| notates" — but |0| is the empty face of **P₀**, beneath the register split,
+and structural §5 exists to keep that apart from a frame's origin. If a P₀ face were ever wanted
+for the −1/0/+1 line it would be the **sign-collapse** face, which is literally that line collapsed.
+Corrected in the paper; **B-n9** rewritten. The sweep to wherever else the exhibit travels is owed.
+
+**H3 — retrojection struck.** "The original paper already answered this question" is false: the
+question was born in this session's thread. What stands is narrower and was narrowed twice — once
+on review, once again here, since the original was never canon-chain material and so cannot
+straightforwardly represent *the framework* wavering. **A-n15** rewritten.
+
+**M4 — a universal negative downgraded, and both hashes confirmed real.** "No commit exists on any
+branch" became "not found across the 13 refs in this clone," enumerated. `7473b0a72322…`
+(2026-01-01, author `goldsteinstudios`) and `98154a2d7033…` (2026-03-15) both verified by
+`git cat-file` / `git log`. **C-n3** rewritten.
+
+**A second failure, self-reported, not in the review.** The Shuowen-is-Han guard was applied to the
+非 material being inserted and not to the structurally identical 有/亡 hand/fled-thing claim two
+lines above it in the same essay — the guard treated as a property of the edit rather than of the
+page. Errand **C7** now gates both. Logged in Entry 006 because it is cheap to repeat and invisible
+in a diff.
+
+**One flag raised in the other direction.** The corrected §3 carries the register-marker strike as
+"no equation is **恆**-register," citing a 2026-08-06 identity ruling. Installed as ruled and
+flagged filing-side: no filed record of that ruling exists in this session, 恆/常 is held at **D2**,
+and [M] is right for 恆 but must not propagate onto the Guodian layer, where Bundle A attests
+**亙** and carries no 恆 and no readable 常. Filed as **B-n12**. This is the second document now
+leaning on that fault line.
+
+**The operating rule that fell out of both rounds, proposed for ruling.** Route what a Cowork
+instance *distributes, recovers, files and tags* straight through — the bookkeeping held, the
+promotion discipline held, nothing was welded into canon and nothing was closed. Route what it
+*generates or repairs* — every CHECKABLE item, every object-identity call about which center or
+which face — back through the soundness lane first. **The CHECKABLE tag is the handoff.** Note the
+asymmetry the two rounds establish: the grammar guards (`::`, the strike list) caught nothing here,
+because both failures were arithmetic and object-identity, not prose. Those guards do not cover the
+soundness lane and should not be trusted to.
+
 ## 8. What would falsify the placement
 
 If Will rules the lens is not book-level — that it is either chain-level (via A-n14 holding) or not
