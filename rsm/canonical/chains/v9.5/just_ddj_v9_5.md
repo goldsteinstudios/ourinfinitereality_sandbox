@@ -38,15 +38,11 @@ Heading-and-theorem: the frame-relative is not the frame-independent. ∀X: 可X
 
 **The methodology lines** (常無欲以觀其妙／常有欲以觀其徼) **[R]**: two observational vantages, one from each face, both required — the parallax method stated inside the text. 欲 :: directed orientation, zero agency; 妙 :: relational pattern (the 無-vantage); 徼 :: boundary (the 有-vantage). Philological exposure carried: this reading requires the split parsing (常無，欲…); the Mawangdui phrase-grouping leans toward the unit parsing (恆無欲…), and no older stratum arbitrates. The reading is falsifiable at the manuscript layer and is cited only with that exposure attached.
 
-<!-- R5/R6 pending: 生 one form (woman → mother-woman, child); 相 = co-perception; rewrite in session -->
-
 ## 有無相生 [G — Ch. 2, slip A15; 亡 for 無; the shorter formulation]
 
 有 :: the form mode; 無 :: the void mode — two co-present magnitudes with the gradient reading **有 × 無 = 1ₙ**. Neither reaches zero; each is constituted by the other; every position carries both. Void is not zero: zero is the center, where both modes would vanish; 無 as mode is a bounded, shaped, functional magnitude (Ch. 11: 有之以為利，無之以為用 — the conserved product in nine words). Guodian 亡 (relational absence) fits the mode reading better than received 無; the drift 亡→無 runs toward exactly the confusion this register discipline guards against.
 
 Chapter 2 is also the method: no definitions, six conjugate pairs listed, each arising mutually, the one relation induced from six instances — how a mutually-constituted circle is entered, since it cannot be derived into from outside. The chapter with the oldest witness carries the structural heart; the staged cosmogony (Ch. 42) is absent from the strips.
-
-<!-- R5/R6 pending: 生 one form (woman → mother-woman, child); 相 = co-perception; rewrite in session -->
 
 ## Chapter 40 [G — slip A37; the scored test]
 

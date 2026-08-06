@@ -422,8 +422,12 @@ The interpretive ladder's first rung (B10): 溺's semantic range, framework-blin
 ## D. Held by ruling (parked — not open, not closed)
 
 ### D1. The R5/R6 rewrites (有無相生; Ch. 40)
-Co-perception set aside by ruling; the two `<!-- R5/R6 pending -->` flags stand in the v9.5 DDJ
-chain. **Accumulated input while held:** the v9.5 attestation finding that the strips state the
+Co-perception set aside by ruling. The two `<!-- R5/R6 pending -->` flags formerly in the v9.5
+DDJ chain were evicted 2026-08-06 under the layer separation policy (pending status lives here,
+not in the chain); their full text, preserved: *"R5/R6 pending: 生 one form (woman →
+mother-woman, child); 相 = co-perception; rewrite in session"* — sat above the 有無相生 entry
+and above the Chapter 40 entry. The rewrites remain pending exactly as before; only the
+in-chain markers are gone. **Accumulated input while held:** the v9.5 attestation finding that the strips state the
 six pairs as six 也-stamped definitions with six distinct verbs (生城型浧和墮) — 相生 is the
 first clause's verb only.
 

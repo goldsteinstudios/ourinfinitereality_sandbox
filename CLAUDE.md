@@ -348,6 +348,13 @@ the guard was protecting against has not gone away: there is still no witness fo
 
 ## Reference Locations
 
+- **Layer separation policy**: `rsm/layer_separation_policy.md` — standing governance. Three
+  layers: canonical chains (assertions + live standing only), editorial/staging (corrected text
+  stands clean), tracking (`rsm/audit/`, `reports/` — all change-history). The test: does a
+  caveat describe the claim's *standing* (content) or its *history* (tracking)? Applies to every
+  filing pass; a filing agent may move history out of content unprompted but may never rule,
+  promote, or resolve.
+
 - **Current chains**: `rsm/canonical/chains/v9.5/` — **markdown, canonical** (has a
   `README.md`). The v9.3 set (`rsm/canonical/chains/v9.3/`, PDF + `transcription_2026-08/`
   markdown) is superseded and kept as history; read its change log for the v9.3 rulings.
