@@ -8,7 +8,7 @@ This repository contains the Recursive Structural Model (RSM) and its convergenc
 
 - `::` forbids substitution, upgrade to identity, and congruence by default
 - A `::` chain (A :: B :: C) claims all terms converge on one identified invariant
-- The convergence of independent imperfect pointings is the evidence
+- The convergence of independent imperfect pointings marks one pattern pointed at from several registers — a shared referent, not evidence for a claim; the framework runs from a conditional and accumulates no confirmation
 
 **In prose**: Use "to me, that looks just like..." rather than "X is Y"
 

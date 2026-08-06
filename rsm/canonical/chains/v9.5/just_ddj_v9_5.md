@@ -24,7 +24,7 @@ The warrant for the notation these chains share is a demonstration rather than a
 
 Heading-and-theorem: the frame-relative is not the frame-independent. ∀X: 可X 非 常X.
 
-- **常** :: frame-independent, parameter-free (register marker; not "eternal"). The oldest stratum reads 恆 (persisting-across); see the checksum item on 恆/常.
+- **恆** :: frame-independent, parameter-free (register marker; not "eternal"). 恆 is [M]-attested; the received 常 is the post-taboo form of 恆 (避諱, Emperor Wen); the Guodian stratum attests 亙.
 
 - **可** :: frame-relative, parametric, indexed within the frame. (The modes are magnitudes; a sign is an indexed comparison. This is the text's own testimony — its conjugate pairs are co-present magnitudes throughout, and no negative quantities appear anywhere in it.)
 
@@ -93,7 +93,6 @@ In prose without `::`, correspondence is "to me, that looks just like…," never
 ## Open checksum items
 
 - **反/復** — which return-word names return-of-structure and which return-of-place. — lexical; the structural stake is reduced
-- **恆/常** — invariance-across-frames (恆, per the 亙 paleography) vs. invariance-within-frame (常). — deferred to the DDJ finalization pass; the strips attest both graphs, used differently; the received text merged a distinction the Chu scribes maintained
 - **生/成** — the child-origin obtaining vs. the child frame completing (大器曼成).
 - **亡/無** — relational absence as a third absence-type; candidate referent: the parent-frame reading of a Pₙ whose child obtains.
 - **溺** — the interpretive ladder, unfilled.
