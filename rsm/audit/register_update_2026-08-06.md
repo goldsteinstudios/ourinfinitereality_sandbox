@@ -189,6 +189,43 @@ equals-sign thread's first exhibit is gated on it entirely.
 
 ---
 
+---
+
+## Section D — held by ruling
+
+### D5. The novel/series project — SET ASIDE WHOLE, 2026-08-07 (Will)
+**RULED.** Turning the narrative material into a novel or a series is **a different project** and does
+not ride into this one. Set aside whole, on the D3 pattern: named, not deleted, with its standing
+inputs recorded for whenever it opens elsewhere.
+
+**What is set aside:** the trilogy (books one, two and three — the young woman and young man ~1,000
+years after collapse; the mountain-valley matriarchal farming society) · the generation ship (six
+aboard, twenty-year generations, five thousand years) · the Vonnegut-style pet story · all character,
+plot and scene direction · `Book.rtfd` and `Book 2.rtfd`.
+
+**What is expressly NOT set aside — it stays in this project:** the **myth work** and the **ancient-people
+work**. These are framework material wearing narrative clothes, not fiction-as-craft:
+
+- The **transmission thesis** — Chu shorthand, bamboo-strip tubes, teaching in the dirt, the hardening
+  of the script, the received text as backfill. Core to the DDJ chain and to `reports/transmission_mechanism_assessment.md`.
+- **Mound builders against pyramid builders**, the going concern, 天地不仁, "only a tell if it's still
+  being occupied."
+- **Agriculture, hubris and the constructs** — the boat, the divine mandate, never learning to swim.
+- The **teaching parables** already in `staging/editorial/`: the sailor, Sisyphus, the sailor's paradox,
+  the dialogues. These were staged as editorial material before this ruling and are unaffected by it.
+- **Cosmogonic and origin myth** as a *register for stating the framework*, not as story.
+
+**Where the line falls:** narrative built to be *read as story* goes to the other project. Narrative
+built to *carry an argument* stays here. The sailor is not fiction in this sense — it is the tolerance
+argument with a boat in it.
+
+**Standing inputs for the other project, when it opens:** `podcast_outline_convo.txt` (124 turns,
+11,010 words, interleaved with framework material) · the `.rtfd` fragments listed in
+`reports/fiction_sort_2026-08-07.md` §1 · the December 2025 `.docx` narratives. Note the duplication
+hazard already found: the generation ship exists in two independent records eighteen months apart.
+
+**Borderline items, unruled — flagged rather than sorted:** see `reports/fiction_sort_2026-08-07.md` §3.
+
 ## Nothing closed
 
 No open item closed in this update. A-n14 and A-n15 are additions; B-n8 through B-n11 are
