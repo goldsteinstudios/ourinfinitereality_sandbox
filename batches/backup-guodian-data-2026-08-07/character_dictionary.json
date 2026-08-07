@@ -1,0 +1,1571 @@
+{
+  "metadata": {
+    "description": "Guodian Laozi character dictionary - pinyin and meanings",
+    "total_unique": 312,
+    "coverage": 276,
+    "source": "LLM-generated initial data - to be corrected over time",
+    "version": "1.0"
+  },
+  "characters": {
+    "{女𡵂}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "{尒賏}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "{畜刀}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "{胃刀}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "{行人}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "{辶兌}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "{𡵂攴}": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "㠯": {
+      "pinyin": "yǐ",
+      "meaning": "use, by means of (archaic)",
+      "notes": "Guodian form"
+    },
+    "一": {
+      "pinyin": "yī",
+      "meaning": "one",
+      "notes": ""
+    },
+    "三": {
+      "pinyin": "sān",
+      "meaning": "three",
+      "notes": ""
+    },
+    "上": {
+      "pinyin": "shàng",
+      "meaning": "above, upper, superior",
+      "notes": ""
+    },
+    "下": {
+      "pinyin": "xià",
+      "meaning": "below, lower, inferior",
+      "notes": ""
+    },
+    "不": {
+      "pinyin": "bù",
+      "meaning": "not, no",
+      "notes": ""
+    },
+    "久": {
+      "pinyin": "jiǔ",
+      "meaning": "long time",
+      "notes": ""
+    },
+    "之": {
+      "pinyin": "zhī",
+      "meaning": "of, it, go to",
+      "notes": ""
+    },
+    "乎": {
+      "pinyin": "hū",
+      "meaning": "(question particle)",
+      "notes": ""
+    },
+    "九": {
+      "pinyin": "jiǔ",
+      "meaning": "nine",
+      "notes": ""
+    },
+    "也": {
+      "pinyin": "yě",
+      "meaning": "also, (final particle)",
+      "notes": ""
+    },
+    "事": {
+      "pinyin": "shì",
+      "meaning": "affair, matter, serve",
+      "notes": ""
+    },
+    "亓": {
+      "pinyin": "qí",
+      "meaning": "its (archaic)",
+      "notes": "Guodian variant"
+    },
+    "亙": {
+      "pinyin": "gèn",
+      "meaning": "span, extend",
+      "notes": ""
+    },
+    "亞": {
+      "pinyin": "yà",
+      "meaning": "second, Asia",
+      "notes": ""
+    },
+    "亡": {
+      "pinyin": "wáng",
+      "meaning": "perish, without",
+      "notes": ""
+    },
+    "亥": {
+      "pinyin": "hài",
+      "meaning": "12th earthly branch",
+      "notes": ""
+    },
+    "亦": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "人": {
+      "pinyin": "rén",
+      "meaning": "person, human",
+      "notes": ""
+    },
+    "以": {
+      "pinyin": "yǐ",
+      "meaning": "use, by means of",
+      "notes": ""
+    },
+    "伓": {
+      "pinyin": "bèi",
+      "meaning": "back (variant)",
+      "notes": ""
+    },
+    "作": {
+      "pinyin": "zuò",
+      "meaning": "make, create, arise",
+      "notes": ""
+    },
+    "侯": {
+      "pinyin": "hóu",
+      "meaning": "lord, marquis",
+      "notes": ""
+    },
+    "保": {
+      "pinyin": "bǎo",
+      "meaning": "protect, preserve",
+      "notes": ""
+    },
+    "僕": {
+      "pinyin": "pú",
+      "meaning": "servant",
+      "notes": ""
+    },
+    "僮": {
+      "pinyin": "dòng",
+      "meaning": "servant, move",
+      "notes": "Variant/loan for 動"
+    },
+    "先": {
+      "pinyin": "xiān",
+      "meaning": "before, first",
+      "notes": ""
+    },
+    "光": {
+      "pinyin": "guāng",
+      "meaning": "light",
+      "notes": ""
+    },
+    "兵": {
+      "pinyin": "bīng",
+      "meaning": "weapon, soldier",
+      "notes": ""
+    },
+    "其": {
+      "pinyin": "qí",
+      "meaning": "its, his, that",
+      "notes": ""
+    },
+    "冬": {
+      "pinyin": "dōng",
+      "meaning": "winter",
+      "notes": ""
+    },
+    "凥": {
+      "pinyin": "jū",
+      "meaning": "dwell (variant)",
+      "notes": ""
+    },
+    "出": {
+      "pinyin": "chū",
+      "meaning": "exit, go out",
+      "notes": ""
+    },
+    "利": {
+      "pinyin": "lì",
+      "meaning": "benefit, sharp",
+      "notes": ""
+    },
+    "前": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "動": {
+      "pinyin": "dòng",
+      "meaning": "move, movement",
+      "notes": ""
+    },
+    "勥": {
+      "pinyin": "qiǎng",
+      "meaning": "force",
+      "notes": ""
+    },
+    "勿": {
+      "pinyin": "wù",
+      "meaning": "do not",
+      "notes": ""
+    },
+    "化": {
+      "pinyin": "huà",
+      "meaning": "transform, change",
+      "notes": ""
+    },
+    "化化": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "卑": {
+      "pinyin": "bēi",
+      "meaning": "low, humble",
+      "notes": ""
+    },
+    "卞": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "厚": {
+      "pinyin": "hòu",
+      "meaning": "thick, generous",
+      "notes": ""
+    },
+    "厶": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "去": {
+      "pinyin": "qù",
+      "meaning": "go, remove",
+      "notes": ""
+    },
+    "又": {
+      "pinyin": "yòu",
+      "meaning": "again, also",
+      "notes": ""
+    },
+    "反": {
+      "pinyin": "fǎn",
+      "meaning": "return, reverse, oppose",
+      "notes": ""
+    },
+    "取": {
+      "pinyin": "qǔ",
+      "meaning": "take, obtain",
+      "notes": ""
+    },
+    "古": {
+      "pinyin": "gǔ",
+      "meaning": "ancient, old",
+      "notes": ""
+    },
+    "可": {
+      "pinyin": "kě",
+      "meaning": "can, may",
+      "notes": ""
+    },
+    "史": {
+      "pinyin": "shǐ",
+      "meaning": "history, scribe",
+      "notes": ""
+    },
+    "各": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "合": {
+      "pinyin": "hé",
+      "meaning": "unite, close",
+      "notes": ""
+    },
+    "同": {
+      "pinyin": "tóng",
+      "meaning": "same",
+      "notes": ""
+    },
+    "名": {
+      "pinyin": "míng",
+      "meaning": "name, naming",
+      "notes": ""
+    },
+    "名名": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "呈": {
+      "pinyin": "chéng",
+      "meaning": "present, display",
+      "notes": ""
+    },
+    "命": {
+      "pinyin": "mìng",
+      "meaning": "fate, command, life",
+      "notes": ""
+    },
+    "和": {
+      "pinyin": "hé",
+      "meaning": "harmony, peace",
+      "notes": ""
+    },
+    "咎": {
+      "pinyin": "jiù",
+      "meaning": "fault, blame",
+      "notes": ""
+    },
+    "員員": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "哺": {
+      "pinyin": "bǔ",
+      "meaning": "feed",
+      "notes": ""
+    },
+    "唬": {
+      "pinyin": "hǔ",
+      "meaning": "frighten",
+      "notes": ""
+    },
+    "唯": {
+      "pinyin": "wéi",
+      "meaning": "only, yes",
+      "notes": ""
+    },
+    "善": {
+      "pinyin": "shàn",
+      "meaning": "good, skilled",
+      "notes": ""
+    },
+    "喬": {
+      "pinyin": "qiáo",
+      "meaning": "tall, proud",
+      "notes": ""
+    },
+    "噞": {
+      "pinyin": "yǎn",
+      "meaning": "gaping mouth",
+      "notes": ""
+    },
+    "器": {
+      "pinyin": "qì",
+      "meaning": "vessel, tool",
+      "notes": ""
+    },
+    "四": {
+      "pinyin": "sì",
+      "meaning": "four",
+      "notes": ""
+    },
+    "固": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "國": {
+      "pinyin": "guó",
+      "meaning": "state, country",
+      "notes": ""
+    },
+    "在": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "地地": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "均": {
+      "pinyin": "jūn",
+      "meaning": "equal, even",
+      "notes": ""
+    },
+    "坉": {
+      "pinyin": "tún",
+      "meaning": "village",
+      "notes": ""
+    },
+    "型": {
+      "pinyin": "xíng",
+      "meaning": "mold, type",
+      "notes": ""
+    },
+    "城": {
+      "pinyin": "chéng",
+      "meaning": "city wall, city",
+      "notes": ""
+    },
+    "執": {
+      "pinyin": "zhí",
+      "meaning": "hold, grasp",
+      "notes": ""
+    },
+    "堂": {
+      "pinyin": "táng",
+      "meaning": "hall",
+      "notes": ""
+    },
+    "堇": {
+      "pinyin": "jǐn",
+      "meaning": "hibiscus",
+      "notes": ""
+    },
+    "塵塵": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "墮": {
+      "pinyin": "suí",
+      "meaning": "follow (loan)",
+      "notes": "Guodian loan for 隨"
+    },
+    "士": {
+      "pinyin": "shì",
+      "meaning": "scholar, warrior",
+      "notes": ""
+    },
+    "夂": {
+      "pinyin": "zhǐ",
+      "meaning": "walk slowly",
+      "notes": ""
+    },
+    "多": {
+      "pinyin": "duō",
+      "meaning": "many, much",
+      "notes": ""
+    },
+    "夜": {
+      "pinyin": "yè",
+      "meaning": "night",
+      "notes": ""
+    },
+    "大": {
+      "pinyin": "dà",
+      "meaning": "great, large",
+      "notes": ""
+    },
+    "大大": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "天": {
+      "pinyin": "tiān",
+      "meaning": "heaven, sky, nature",
+      "notes": ""
+    },
+    "夫": {
+      "pinyin": "fú",
+      "meaning": "(initial particle), man",
+      "notes": ""
+    },
+    "女": {
+      "pinyin": "nǚ",
+      "meaning": "woman, female",
+      "notes": ""
+    },
+    "奴": {
+      "pinyin": "nú",
+      "meaning": "slave",
+      "notes": ""
+    },
+    "好": {
+      "pinyin": "hǎo",
+      "meaning": "good, like",
+      "notes": ""
+    },
+    "如": {
+      "pinyin": "rú",
+      "meaning": "like, as if",
+      "notes": ""
+    },
+    "妻": {
+      "pinyin": "qī",
+      "meaning": "wife",
+      "notes": ""
+    },
+    "子": {
+      "pinyin": "zǐ",
+      "meaning": "child, master",
+      "notes": ""
+    },
+    "季": {
+      "pinyin": "jì",
+      "meaning": "season, youngest",
+      "notes": ""
+    },
+    "它": {
+      "pinyin": "tā",
+      "meaning": "it, other",
+      "notes": ""
+    },
+    "守": {
+      "pinyin": "shǒu",
+      "meaning": "guard, keep",
+      "notes": ""
+    },
+    "安": {
+      "pinyin": "ān",
+      "meaning": "peace, settle",
+      "notes": ""
+    },
+    "宔": {
+      "pinyin": "zhǔ",
+      "meaning": "master (variant)",
+      "notes": ""
+    },
+    "定": {
+      "pinyin": "dìng",
+      "meaning": "settle, fix",
+      "notes": ""
+    },
+    "客": {
+      "pinyin": "kè",
+      "meaning": "guest",
+      "notes": ""
+    },
+    "室": {
+      "pinyin": "shì",
+      "meaning": "room, household",
+      "notes": ""
+    },
+    "害": {
+      "pinyin": "hài",
+      "meaning": "harm, injury",
+      "notes": ""
+    },
+    "寡": {
+      "pinyin": "guǎ",
+      "meaning": "few, widowed",
+      "notes": ""
+    },
+    "尃": {
+      "pinyin": "fū",
+      "meaning": "spread",
+      "notes": ""
+    },
+    "少": {
+      "pinyin": "shǎo",
+      "meaning": "few, little",
+      "notes": ""
+    },
+    "居": {
+      "pinyin": "jū",
+      "meaning": "dwell, reside",
+      "notes": ""
+    },
+    "屈": {
+      "pinyin": "qū",
+      "meaning": "bend, wrong",
+      "notes": ""
+    },
+    "屯": {
+      "pinyin": "tún",
+      "meaning": "gather, village",
+      "notes": ""
+    },
+    "川": {
+      "pinyin": "chuān",
+      "meaning": "river, plain",
+      "notes": ""
+    },
+    "差": {
+      "pinyin": "chā",
+      "meaning": "differ, mistake",
+      "notes": ""
+    },
+    "已": {
+      "pinyin": "yǐ",
+      "meaning": "already, stop",
+      "notes": ""
+    },
+    "幾": {
+      "pinyin": "jī",
+      "meaning": "how many, subtle",
+      "notes": ""
+    },
+    "庀": {
+      "pinyin": "pǐ",
+      "meaning": "prepare",
+      "notes": ""
+    },
+    "弗": {
+      "pinyin": "fú",
+      "meaning": "not (archaic)",
+      "notes": ""
+    },
+    "弱": {
+      "pinyin": "ruò",
+      "meaning": "weak, soft, yielding",
+      "notes": ""
+    },
+    "強": {
+      "pinyin": "qiáng",
+      "meaning": "strong, force",
+      "notes": ""
+    },
+    "心": {
+      "pinyin": "xīn",
+      "meaning": "heart-mind",
+      "notes": ""
+    },
+    "必": {
+      "pinyin": "bì",
+      "meaning": "must, certainly",
+      "notes": ""
+    },
+    "志": {
+      "pinyin": "zhì",
+      "meaning": "will, intention",
+      "notes": ""
+    },
+    "怠": {
+      "pinyin": "dài",
+      "meaning": "idle, slack",
+      "notes": ""
+    },
+    "悔": {
+      "pinyin": "huǐ",
+      "meaning": "regret",
+      "notes": ""
+    },
+    "惕": {
+      "pinyin": "tì",
+      "meaning": "cautious, vigilant",
+      "notes": ""
+    },
+    "惪": {
+      "pinyin": "dé",
+      "meaning": "virtue (variant)",
+      "notes": "Guodian variant of 德"
+    },
+    "惻": {
+      "pinyin": "cè",
+      "meaning": "sorrowful",
+      "notes": ""
+    },
+    "愄": {
+      "pinyin": "wēi",
+      "meaning": "fear (variant)",
+      "notes": ""
+    },
+    "愈": {
+      "pinyin": "yù",
+      "meaning": "recover, more",
+      "notes": ""
+    },
+    "愛": {
+      "pinyin": "ài",
+      "meaning": "love",
+      "notes": ""
+    },
+    "慈": {
+      "pinyin": "cí",
+      "meaning": "compassion, kindness",
+      "notes": ""
+    },
+    "慮": {
+      "pinyin": "lǜ",
+      "meaning": "think, consider",
+      "notes": ""
+    },
+    "憂": {
+      "pinyin": "yōu",
+      "meaning": "worry, grieve",
+      "notes": ""
+    },
+    "懌": {
+      "pinyin": "yì",
+      "meaning": "pleased",
+      "notes": ""
+    },
+    "戁": {
+      "pinyin": "nǎn",
+      "meaning": "fearful",
+      "notes": ""
+    },
+    "戊": {
+      "pinyin": "wù",
+      "meaning": "5th heavenly stem",
+      "notes": ""
+    },
+    "戋": {
+      "pinyin": "jiān",
+      "meaning": "small",
+      "notes": ""
+    },
+    "成": {
+      "pinyin": "chéng",
+      "meaning": "complete, become",
+      "notes": ""
+    },
+    "我": {
+      "pinyin": "wǒ",
+      "meaning": "I, me",
+      "notes": ""
+    },
+    "或": {
+      "pinyin": "huò",
+      "meaning": "some, perhaps, or",
+      "notes": ""
+    },
+    "所": {
+      "pinyin": "suǒ",
+      "meaning": "place, that which",
+      "notes": ""
+    },
+    "所所": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "才": {
+      "pinyin": "cái",
+      "meaning": "talent, just now",
+      "notes": ""
+    },
+    "折": {
+      "pinyin": "zhé",
+      "meaning": "break, fold",
+      "notes": ""
+    },
+    "拃": {
+      "pinyin": "zuò",
+      "meaning": "grasp, make",
+      "notes": "Variant"
+    },
+    "捉": {
+      "pinyin": "zhuō",
+      "meaning": "catch, grasp",
+      "notes": ""
+    },
+    "攫": {
+      "pinyin": "jué",
+      "meaning": "seize",
+      "notes": ""
+    },
+    "攷": {
+      "pinyin": "kǎo",
+      "meaning": "examine",
+      "notes": ""
+    },
+    "攻": {
+      "pinyin": "gōng",
+      "meaning": "attack",
+      "notes": ""
+    },
+    "敓": {
+      "pinyin": "duó",
+      "meaning": "snatch, seize",
+      "notes": ""
+    },
+    "敗": {
+      "pinyin": "bài",
+      "meaning": "defeat, ruin",
+      "notes": ""
+    },
+    "敢": {
+      "pinyin": "gǎn",
+      "meaning": "dare",
+      "notes": ""
+    },
+    "新": {
+      "pinyin": "xīn",
+      "meaning": "new",
+      "notes": ""
+    },
+    "方": {
+      "pinyin": "fāng",
+      "meaning": "square, direction, method",
+      "notes": ""
+    },
+    "於": {
+      "pinyin": "yú",
+      "meaning": "at, in, to",
+      "notes": ""
+    },
+    "既": {
+      "pinyin": "jì",
+      "meaning": "already, since",
+      "notes": ""
+    },
+    "日": {
+      "pinyin": "rì",
+      "meaning": "sun, day",
+      "notes": ""
+    },
+    "明": {
+      "pinyin": "míng",
+      "meaning": "bright, clarity",
+      "notes": ""
+    },
+    "昏": {
+      "pinyin": "hūn",
+      "meaning": "dark, confused",
+      "notes": ""
+    },
+    "易": {
+      "pinyin": "yì",
+      "meaning": "easy, change",
+      "notes": ""
+    },
+    "是": {
+      "pinyin": "shì",
+      "meaning": "this, is",
+      "notes": ""
+    },
+    "智": {
+      "pinyin": "zhì",
+      "meaning": "wisdom, intelligence",
+      "notes": ""
+    },
+    "智智": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "曰": {
+      "pinyin": "yuē",
+      "meaning": "say, called",
+      "notes": ""
+    },
+    "有": {
+      "pinyin": "yǒu",
+      "meaning": "have, being, existence",
+      "notes": ""
+    },
+    "期": {
+      "pinyin": "qī",
+      "meaning": "period, expect",
+      "notes": ""
+    },
+    "未": {
+      "pinyin": "wèi",
+      "meaning": "not yet",
+      "notes": ""
+    },
+    "末": {
+      "pinyin": "mò",
+      "meaning": "tip, end",
+      "notes": ""
+    },
+    "朿": {
+      "pinyin": "cì",
+      "meaning": "thorn",
+      "notes": ""
+    },
+    "果": {
+      "pinyin": "guǒ",
+      "meaning": "fruit, result",
+      "notes": ""
+    },
+    "棄": {
+      "pinyin": "qì",
+      "meaning": "abandon, discard",
+      "notes": ""
+    },
+    "樂": {
+      "pinyin": "lè",
+      "meaning": "joy, music",
+      "notes": ""
+    },
+    "樸": {
+      "pinyin": "pǔ",
+      "meaning": "uncarved block, simplicity",
+      "notes": "Key Laozi term"
+    },
+    "欲": {
+      "pinyin": "yù",
+      "meaning": "desire, want",
+      "notes": ""
+    },
+    "正": {
+      "pinyin": "zhèng",
+      "meaning": "correct, upright",
+      "notes": ""
+    },
+    "此": {
+      "pinyin": "cǐ",
+      "meaning": "this",
+      "notes": ""
+    },
+    "歨": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "歨歨": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "母": {
+      "pinyin": "mǔ",
+      "meaning": "mother",
+      "notes": ""
+    },
+    "比": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "民": {
+      "pinyin": "mín",
+      "meaning": "people, common folk",
+      "notes": ""
+    },
+    "江": {
+      "pinyin": "jiāng",
+      "meaning": "river",
+      "notes": ""
+    },
+    "浧": {
+      "pinyin": "yíng",
+      "meaning": "full (variant)",
+      "notes": "Guodian variant"
+    },
+    "浴": {
+      "pinyin": "yù",
+      "meaning": "bathe",
+      "notes": ""
+    },
+    "涉": {
+      "pinyin": "shè",
+      "meaning": "wade, cross",
+      "notes": ""
+    },
+    "深": {
+      "pinyin": "shēn",
+      "meaning": "deep",
+      "notes": ""
+    },
+    "清": {
+      "pinyin": "qīng",
+      "meaning": "clear, pure",
+      "notes": ""
+    },
+    "渙": {
+      "pinyin": "huàn",
+      "meaning": "disperse",
+      "notes": ""
+    },
+    "湍": {
+      "pinyin": "tuān",
+      "meaning": "rapid water",
+      "notes": ""
+    },
+    "溺": {
+      "pinyin": "ruò",
+      "meaning": "weak (loan)",
+      "notes": "Guodian loan for 弱"
+    },
+    "濁": {
+      "pinyin": "zhuó",
+      "meaning": "murky, turbid",
+      "notes": ""
+    },
+    "灋": {
+      "pinyin": "fǎ",
+      "meaning": "law, method (variant)",
+      "notes": "Guodian form of 法"
+    },
+    "無": {
+      "pinyin": "wú",
+      "meaning": "without, non-being",
+      "notes": ""
+    },
+    "然": {
+      "pinyin": "rán",
+      "meaning": "so, thus, nature",
+      "notes": ""
+    },
+    "爲": {
+      "pinyin": "wéi",
+      "meaning": "do, act, make (variant)",
+      "notes": ""
+    },
+    "牝": {
+      "pinyin": "pìn",
+      "meaning": "female, valley spirit",
+      "notes": ""
+    },
+    "物": {
+      "pinyin": "wù",
+      "meaning": "thing, creature, myriad beings",
+      "notes": ""
+    },
+    "猶": {
+      "pinyin": "yóu",
+      "meaning": "still, like",
+      "notes": ""
+    },
+    "獸": {
+      "pinyin": "shòu",
+      "meaning": "beast",
+      "notes": ""
+    },
+    "玄": {
+      "pinyin": "xuán",
+      "meaning": "dark, mysterious, profound",
+      "notes": ""
+    },
+    "玉": {
+      "pinyin": "yù",
+      "meaning": "jade",
+      "notes": ""
+    },
+    "王": {
+      "pinyin": "wáng",
+      "meaning": "king, rule",
+      "notes": ""
+    },
+    "甘": {
+      "pinyin": "gān",
+      "meaning": "sweet",
+      "notes": ""
+    },
+    "甚": {
+      "pinyin": "shèn",
+      "meaning": "very, excessive",
+      "notes": ""
+    },
+    "生": {
+      "pinyin": "shēng",
+      "meaning": "life, birth, arise",
+      "notes": ""
+    },
+    "用": {
+      "pinyin": "yòng",
+      "meaning": "use, function",
+      "notes": ""
+    },
+    "甬": {
+      "pinyin": "yǒng",
+      "meaning": "use (archaic)",
+      "notes": "Guodian variant for 用"
+    },
+    "畔": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "疋": {
+      "pinyin": "pǐ",
+      "meaning": "bolt (cloth), foot",
+      "notes": ""
+    },
+    "發": {
+      "pinyin": "fā",
+      "meaning": "emit, start",
+      "notes": ""
+    },
+    "百": {
+      "pinyin": "bǎi",
+      "meaning": "hundred",
+      "notes": ""
+    },
+    "皆": {
+      "pinyin": "jiē",
+      "meaning": "all, everyone",
+      "notes": ""
+    },
+    "盈": {
+      "pinyin": "yíng",
+      "meaning": "full, overflow",
+      "notes": ""
+    },
+    "相": {
+      "pinyin": "xiāng",
+      "meaning": "mutual, appearance",
+      "notes": ""
+    },
+    "眾": {
+      "pinyin": "zhòng",
+      "meaning": "many, crowd",
+      "notes": ""
+    },
+    "矜": {
+      "pinyin": "jīn",
+      "meaning": "pity, proud",
+      "notes": ""
+    },
+    "矣": {
+      "pinyin": "yǐ",
+      "meaning": "(completion particle)",
+      "notes": ""
+    },
+    "知": {
+      "pinyin": "zhī",
+      "meaning": "know, wisdom",
+      "notes": ""
+    },
+    "福": {
+      "pinyin": "fú",
+      "meaning": "blessing, fortune",
+      "notes": ""
+    },
+    "立": {
+      "pinyin": "lì",
+      "meaning": "stand, establish",
+      "notes": ""
+    },
+    "章": {
+      "pinyin": "zhāng",
+      "meaning": "chapter, pattern",
+      "notes": ""
+    },
+    "竺": {
+      "pinyin": "zhú",
+      "meaning": "bamboo, India",
+      "notes": ""
+    },
+    "精": {
+      "pinyin": "jīng",
+      "meaning": "essence, spirit",
+      "notes": ""
+    },
+    "紀": {
+      "pinyin": "jì",
+      "meaning": "record, discipline",
+      "notes": ""
+    },
+    "紛": {
+      "pinyin": "fēn",
+      "meaning": "numerous, confused",
+      "notes": ""
+    },
+    "索": {
+      "pinyin": "suǒ",
+      "meaning": "rope, search",
+      "notes": ""
+    },
+    "羕": {
+      "pinyin": "yàng",
+      "meaning": "manner (variant)",
+      "notes": ""
+    },
+    "群": {
+      "pinyin": "qún",
+      "meaning": "group, flock",
+      "notes": ""
+    },
+    "老": {
+      "pinyin": "lǎo",
+      "meaning": "old, venerable",
+      "notes": ""
+    },
+    "者": {
+      "pinyin": "zhě",
+      "meaning": "one who, that which",
+      "notes": ""
+    },
+    "而": {
+      "pinyin": "ér",
+      "meaning": "and, but, yet",
+      "notes": ""
+    },
+    "耑": {
+      "pinyin": "duān",
+      "meaning": "tip, upright",
+      "notes": ""
+    },
+    "聖": {
+      "pinyin": "shèng",
+      "meaning": "sage, holy",
+      "notes": ""
+    },
+    "肰": {
+      "pinyin": "rán",
+      "meaning": "so (variant)",
+      "notes": "Guodian form"
+    },
+    "能": {
+      "pinyin": "néng",
+      "meaning": "able, can",
+      "notes": ""
+    },
+    "臣": {
+      "pinyin": "chén",
+      "meaning": "minister, servant",
+      "notes": ""
+    },
+    "臨": {
+      "pinyin": "lín",
+      "meaning": "approach, overlook",
+      "notes": ""
+    },
+    "自": {
+      "pinyin": "zì",
+      "meaning": "self, from",
+      "notes": ""
+    },
+    "至": {
+      "pinyin": "zhì",
+      "meaning": "arrive, utmost",
+      "notes": ""
+    },
+    "臺": {
+      "pinyin": "tái",
+      "meaning": "platform, tower",
+      "notes": ""
+    },
+    "與": {
+      "pinyin": "yǔ",
+      "meaning": "and, with, give",
+      "notes": ""
+    },
+    "舊": {
+      "pinyin": "jiù",
+      "meaning": "old, former",
+      "notes": ""
+    },
+    "舍": {
+      "pinyin": "shě",
+      "meaning": "give up, house",
+      "notes": ""
+    },
+    "若": {
+      "pinyin": "ruò",
+      "meaning": "if, like, such as",
+      "notes": ""
+    },
+    "莫": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "萬": {
+      "pinyin": "wàn",
+      "meaning": "ten thousand, myriad",
+      "notes": ""
+    },
+    "蓳": {
+      "pinyin": "jǐn",
+      "meaning": "hibiscus (variant)",
+      "notes": ""
+    },
+    "虛": {
+      "pinyin": "xū",
+      "meaning": "empty, void",
+      "notes": ""
+    },
+    "蜀": {
+      "pinyin": "shǔ",
+      "meaning": "alone, Shu",
+      "notes": ""
+    },
+    "螝": {
+      "pinyin": "huī",
+      "meaning": "insect",
+      "notes": ""
+    },
+    "蟲": {
+      "pinyin": "chóng",
+      "meaning": "insect",
+      "notes": ""
+    },
+    "蠆蟲": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "蠚": {
+      "pinyin": "hē",
+      "meaning": "sting",
+      "notes": ""
+    },
+    "行": {
+      "pinyin": "xíng",
+      "meaning": "walk, act, practice",
+      "notes": ""
+    },
+    "衍衍": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "視": {
+      "pinyin": "shì",
+      "meaning": "look at",
+      "notes": ""
+    },
+    "解": {
+      "pinyin": "jiě",
+      "meaning": "untie, explain",
+      "notes": ""
+    },
+    "言": {
+      "pinyin": "yán",
+      "meaning": "word, speech, say",
+      "notes": ""
+    },
+    "言言": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "詀": {
+      "pinyin": "zhān",
+      "meaning": "talk (variant)",
+      "notes": ""
+    },
+    "谷": {
+      "pinyin": "gǔ",
+      "meaning": "valley",
+      "notes": ""
+    },
+    "豆": {
+      "pinyin": "dòu",
+      "meaning": "bean, vessel",
+      "notes": ""
+    },
+    "貞": {
+      "pinyin": "zhēn",
+      "meaning": "chaste, divination",
+      "notes": ""
+    },
+    "貨": {
+      "pinyin": "huò",
+      "meaning": "goods, wealth",
+      "notes": ""
+    },
+    "貴": {
+      "pinyin": "guì",
+      "meaning": "noble, value",
+      "notes": ""
+    },
+    "賹": {
+      "pinyin": "yì",
+      "meaning": "money (variant)",
+      "notes": ""
+    },
+    "賽": {
+      "pinyin": "sài",
+      "meaning": "compete, sacrifice",
+      "notes": ""
+    },
+    "贓": {
+      "pinyin": "zāng",
+      "meaning": "stolen goods",
+      "notes": ""
+    },
+    "赤": {
+      "pinyin": "chì",
+      "meaning": "red, bare",
+      "notes": ""
+    },
+    "足": {
+      "pinyin": "zú",
+      "meaning": "foot, sufficient",
+      "notes": ""
+    },
+    "身": {
+      "pinyin": "shēn",
+      "meaning": "body, self",
+      "notes": ""
+    },
+    "辠": {
+      "pinyin": "zuì",
+      "meaning": "crime (archaic)",
+      "notes": ""
+    },
+    "辱": {
+      "pinyin": "rǔ",
+      "meaning": "disgrace, humiliation",
+      "notes": ""
+    },
+    "返": {
+      "pinyin": "fǎn",
+      "meaning": "return",
+      "notes": ""
+    },
+    "迬": {
+      "pinyin": "zhù",
+      "meaning": "go to",
+      "notes": ""
+    },
+    "述": {
+      "pinyin": "shù",
+      "meaning": "narrate, follow",
+      "notes": ""
+    },
+    "迵": {
+      "pinyin": "tòng",
+      "meaning": "penetrate",
+      "notes": ""
+    },
+    "退": {
+      "pinyin": "tuì",
+      "meaning": "retreat, withdraw",
+      "notes": ""
+    },
+    "進": {
+      "pinyin": "jìn",
+      "meaning": "advance, enter",
+      "notes": ""
+    },
+    "逾": {
+      "pinyin": "yú",
+      "meaning": "exceed, cross",
+      "notes": ""
+    },
+    "道": {
+      "pinyin": "dào",
+      "meaning": "way, path, pattern",
+      "notes": ""
+    },
+    "道道": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "達": {
+      "pinyin": "dá",
+      "meaning": "reach, attain",
+      "notes": ""
+    },
+    "遠〈失〉": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "遠遠": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "遺": {
+      "pinyin": "yí",
+      "meaning": "leave behind, lose",
+      "notes": ""
+    },
+    "邦": {
+      "pinyin": "bāng",
+      "meaning": "state, nation",
+      "notes": ""
+    },
+    "酓": {
+      "pinyin": "yǎn",
+      "meaning": "feast, banquet",
+      "notes": ""
+    },
+    "金": {
+      "pinyin": "jīn",
+      "meaning": "metal, gold",
+      "notes": ""
+    },
+    "長": {
+      "pinyin": "cháng",
+      "meaning": "long, lasting",
+      "notes": ""
+    },
+    "門": {
+      "pinyin": "mén",
+      "meaning": "door, gate",
+      "notes": ""
+    },
+    "難": {
+      "pinyin": "nán",
+      "meaning": "difficult",
+      "notes": ""
+    },
+    "青": {
+      "pinyin": "qīng",
+      "meaning": "blue-green, young",
+      "notes": ""
+    },
+    "靜": {
+      "pinyin": "jìng",
+      "meaning": "still, quiet, tranquil",
+      "notes": ""
+    },
+    "非": {
+      "pinyin": "fēi",
+      "meaning": "not, wrong",
+      "notes": ""
+    },
+    "韋": {
+      "pinyin": "wéi",
+      "meaning": "leather, soft",
+      "notes": ""
+    },
+    "音": {
+      "pinyin": "yīn",
+      "meaning": "sound",
+      "notes": ""
+    },
+    "頌": {
+      "pinyin": "sòng",
+      "meaning": "praise, ode",
+      "notes": ""
+    },
+    "骨": {
+      "pinyin": "gǔ",
+      "meaning": "bone",
+      "notes": ""
+    },
+    "高": {
+      "pinyin": "gāo",
+      "meaning": "high, tall",
+      "notes": ""
+    },
+    "鳥": {
+      "pinyin": "niǎo",
+      "meaning": "bird",
+      "notes": ""
+    },
+    "鼎": {
+      "pinyin": "dǐng",
+      "meaning": "tripod cauldron",
+      "notes": ""
+    },
+    "𠁩": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "𡚦": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    },
+    "𨟻": {
+      "pinyin": "",
+      "meaning": "",
+      "notes": "NEEDS DATA"
+    }
+  }
+}

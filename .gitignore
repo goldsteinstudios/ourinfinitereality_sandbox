@@ -25,3 +25,6 @@ docset_*.md
 notebooklm_bundle_*/
 notebooklm_docs/
 *.zip
+
+# Session transport (git bundles) — history, not content
+*.bundle
