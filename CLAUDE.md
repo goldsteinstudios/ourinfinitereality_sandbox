@@ -8,7 +8,7 @@ This repository contains the Recursive Structural Model (RSM) and its convergenc
 
 - `::` forbids substitution, upgrade to identity, and congruence by default
 - A `::` chain (A :: B :: C) claims all terms converge on one identified invariant
-- The convergence of independent imperfect pointings is the evidence
+- The convergence of independent imperfect pointings marks one pattern pointed at from several registers — a shared referent, not evidence for a claim; the framework runs from a conditional and accumulates no confirmation
 
 **In prose**: Use "to me, that looks just like..." rather than "X is Y"
 
@@ -347,6 +347,13 @@ modified 女 graph rather than 女-plus-determinative). **Section B item 10 — 
 the guard was protecting against has not gone away: there is still no witness for a reconstructed stage.
 
 ## Reference Locations
+
+- **Layer separation policy**: `rsm/layer_separation_policy.md` — standing governance. Three
+  layers: canonical chains (assertions + live standing only), editorial/staging (corrected text
+  stands clean), tracking (`rsm/audit/`, `reports/` — all change-history). The test: does a
+  caveat describe the claim's *standing* (content) or its *history* (tracking)? Applies to every
+  filing pass; a filing agent may move history out of content unprompted but may never rule,
+  promote, or resolve.
 
 - **Current chains**: `rsm/canonical/chains/v9.5/` — **markdown, canonical** (has a
   `README.md`). The v9.3 set (`rsm/canonical/chains/v9.3/`, PDF + `transcription_2026-08/`
