@@ -84,6 +84,31 @@ Round 2's judgment — that this "may need deciding before the finalization pass
 — is endorsed here: an internal contradiction in a canonical chain is a worse state than either
 resolution of it.
 
+### Ruled and applied, 2026-08-07 — Will: "fix line 11 to 恆"
+
+`just_ddj_v9_5.md:11` now reads *"**可 and 恆 are the explicit and implicit registers.** 恆 is
+what holds frame-independently, parameter-free…"*. `CLAUDE.md:313–314` carries the same change
+(meta layer, propagated as established practice — the doc describes canon and would otherwise
+misdescribe it). The chain no longer contradicts itself: the framework's marker is 恆 at both
+line 11 and line 27, and line 13's 道可道非常道 stands as a **received-text quotation**, marked
+as such in its own sentence and explained at line 27.
+
+**Re-sweep finding — `just_ddj_v9_5.md:25` was in neither record's table.** The line reads
+*"Heading-and-theorem: the frame-relative is not the frame-independent. **∀X: 可X 非 常X.**"* This
+is a general schema, not a quotation of any particular line, and it now uses 常 where line 11 uses
+恆. It sits under the heading "The opening: 道可道非常道 [R]", so it can be read as generalizing
+the received line's own pattern — which is why it is arguably inside the quotation HOLD rather
+than outside it. **Not changed**; the ruling named line 11. Flagged as the sharpest of the
+remaining borderline set:
+
+| Line | Text | Why borderline |
+|---|---|---|
+| 25 | ∀X: 可X 非 常X | A schema, not a quotation — the strongest candidate for the same treatment as line 11 |
+| 21 | 常道 :: the entailment as such, unindexed | Gloss on a quoted term |
+| 35 | 常名 :: XY = 1, the unindexed law | Gloss on a quoted term |
+
+Lines 13, 23, 31, 39 and 63 are quotations proper and fall squarely under the standing HOLD.
+
 ## Standing after this round
 
 - Round 2's C-items remain unverifiable here until the merged tree pushes. **Recommend pushing it**

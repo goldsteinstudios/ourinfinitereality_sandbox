@@ -310,8 +310,8 @@ manuscript stratum tags are still in force even though the epistemic tags are go
 Anchors: `玄 :: Pₙ`, `玄牝 :: P₀`, `有 × 無 = 1ₙ`, `弗居 ::` the origin-denial (the strongest `[G]`
 match), `非 ::` the divergence of two registers around a shared invariant.
 
-**New in v9.3 — the opening as a register declaration.** 可 and 常 *are* §0's explicit and implicit
-registers: 常 is what holds frame-independently and parameter-free; 可 is anything framed, indexed,
+**New in v9.3 — the opening as a register declaration.** 可 and 恆 *are* §0's explicit and implicit
+registers: 恆 is what holds frame-independently and parameter-free; 可 is anything framed, indexed,
 instantiated. 道可道非常道 declares this and nothing else — "here is how the logic works even if you
 don't apply it to anything real." That licenses the chains' notation: 有 and 無 are **names** (可名, an
 indexed instance); X and Y are the **slots** the two modes occupy. Ch. 1 is `[R]` — absent from the
