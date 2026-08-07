@@ -1,0 +1,115 @@
+{
+  "常": {
+    "traditional": "eternal, constant",
+    "geometric": "implicit, concealed, that which has no interface",
+    "structure": "巾(cloth) + 尚(elevated) = covered/hidden",
+    "validation": "TEST1",
+    "radical_family": "cloth/covering"
+  },
+  "欲": {
+    "traditional": "desire, craving (moral weakness)",
+    "geometric": "directed orientation, tendency toward",
+    "structure": "谷(valley) + 欠(opening) = flow toward gap",
+    "validation": "TEST1",
+    "radical_family": "mouth/opening"
+  },
+  "利": {
+    "traditional": "benefit, advantage",
+    "geometric": "constraint, path-cutting through field",
+    "structure": "禾(grain) + 刀(knife) = paths cut through distributed resource",
+    "validation": "TEST6, TEST7",
+    "radical_family": "grain (禾)"
+  },
+  "仁": {
+    "traditional": "benevolence, humaneness",
+    "geometric": "relational accommodation between two entities",
+    "structure": "人(person) + 二(two) = two-body configuration",
+    "validation": "TEST1",
+    "radical_family": "person"
+  },
+  "反": {
+    "traditional": "return, oppose",
+    "geometric": "reversal, oscillation, unitary conjugation",
+    "structure": "又(hand) + 厂(cliff) = turning back at boundary",
+    "validation": "TEST1, TEST2",
+    "radical_family": "hand/motion"
+  },
+  "弱": {
+    "traditional": "weak, feeble",
+    "geometric": "flexible, indefinite, superposition state",
+    "structure": "弓+弓 (double bow) = flexible tension",
+    "validation": "TEST1, TEST2",
+    "radical_family": "bow/flexibility"
+  },
+  "德": {
+    "traditional": "virtue, moral character",
+    "geometric": "straight path in internal-state motion",
+    "structure": "彳(step) + 直(straight) + 心(internal) = aligned dynamics",
+    "validation": "TEST9",
+    "radical_family": "heart (心) + motion (彳)"
+  },
+  "慈": {
+    "traditional": "compassion, kindness",
+    "geometric": "expansive internal state (multiplication operator)",
+    "structure": "心(heart) + 茲(multiply) = generative pressure",
+    "validation": "TEST9",
+    "radical_family": "heart (心)"
+  },
+  "愛": {
+    "traditional": "love, affection",
+    "geometric": "attractive bonding force between states",
+    "structure": "心(heart) + 友(friend) = bonded configuration",
+    "validation": "TEST9",
+    "radical_family": "heart (心)"
+  },
+  "惡": {
+    "traditional": "evil, wickedness",
+    "geometric": "degraded state mode, inferior configuration",
+    "structure": "心(heart) + 亞(inferior) = sub-optimal point",
+    "validation": "TEST9",
+    "radical_family": "heart (心)"
+  },
+  "治": {
+    "traditional": "govern, rule",
+    "geometric": "channeling flow through constructed platform",
+    "structure": "氵(water) + 台(platform) = directing fluid",
+    "validation": "TEST8",
+    "radical_family": "water (氵)",
+    "note": "13 occurrences - most frequent! Governance IS flow management"
+  },
+  "清": {
+    "traditional": "pure, clear",
+    "geometric": "transparent medium, light unimpeded through fluid",
+    "structure": "氵(water) + 青(blue/pure) = clarity",
+    "validation": "TEST8",
+    "radical_family": "water (氵)"
+  },
+  "和": {
+    "traditional": "harmony, peace",
+    "geometric": "distribution through opening, flow equilibrium",
+    "structure": "禾(grain) + 口(mouth/opening) = distributed flow",
+    "validation": "TEST7",
+    "radical_family": "grain (禾)"
+  },
+  "名": {
+    "traditional": "name, reputation",
+    "geometric": "explicit, manifest, that which has interface",
+    "structure": "夕(evening) + 口(mouth) = called into presence",
+    "validation": "TEST1",
+    "radical_family": "mouth/calling"
+  },
+  "非": {
+    "traditional": "not, wrong",
+    "geometric": "complementary pair, dual aspects",
+    "structure": "Two mirrored elements showing duality",
+    "validation": "TEST1",
+    "radical_family": "symmetry"
+  },
+  "玄": {
+    "traditional": "mysterious, profound",
+    "geometric": "dark/subtle entry point, inaccessible boundary",
+    "structure": "Threading/subtle connection",
+    "validation": "TEST1",
+    "radical_family": "thread"
+  }
+}
