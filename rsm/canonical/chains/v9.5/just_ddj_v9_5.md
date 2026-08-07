@@ -8,7 +8,7 @@
 
 ## The opening as a register declaration
 
-**可 and 常 are the explicit and implicit registers.** 常 is what holds frame-independently, parameter-free — the structural requirement itself. 可 is anything framed, indexed, instantiated: a statement, a traversal, a measurement, a name.
+**可 and 恆 are the explicit and implicit registers.** 恆 is what holds frame-independently, parameter-free — the structural requirement itself. 可 is anything framed, indexed, instantiated: a statement, a traversal, a measurement, a name.
 
 The received text opens by declaring this and nothing else. **道可道非常道** splits the structure: the entailment as such is not any framed traversal of it. **名可名非常名** splits the naming, and it is the line that closes the escape: one might otherwise think the invariant has a right name. It does not. The moment you name, you are indexed; every name is 可名.
 
