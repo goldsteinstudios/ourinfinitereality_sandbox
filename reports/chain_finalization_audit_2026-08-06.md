@@ -33,7 +33,17 @@ whose entry is named "Revolution." Verified by grep across all three files; word
 This is a propagation gap, not a new dispute — but it is a propagation gap in a *theorem statement*,
 which is where the corpus's own history says silent replacements hide.
 
-### 1.2 The DDJ chain's 恆/常 line contradicts its own survey — CONFIRMED
+### 1.2 The DDJ chain's 恆/常 line contradicts its own survey — CONFIRMED · **RESOLVED 2026-08-06**
+
+> **Closed by the parallel session** (iPad/iPhone), commit `d1dcddd`, recorded at
+> `reports/code_tasks_filing_2026-08-06.md` A1–A2. The offending sentence was **deleted**, not
+> softened, along with the whole checksum item. The replacement is correct on all three strata:
+> **恆** as the register marker, [M]-attested; the received **常** as the post-taboo form under
+> Emperor Wen's 避諱; the Guodian stratum attesting **亙**. Provenance for the ruling rests on the
+> taboo mechanism, the Bundle A distribution survey (亙 ×4, readable 常 ×0, 恆 ×0), and R18.
+> The chain's open checksum list is now five items. **This finding is closed; the text below is
+> the original report, retained as the record.**
+
 
 `just_ddj_v9_5.md`, open checksum items: "**the strips attest both graphs, used differently**; the
 received text merged a distinction the Chu scribes maintained."
@@ -104,7 +114,15 @@ currently false of the set, and that a reader told the renderings are independen
 inspection, one chain that largely is (given the spine), one that is about half, and one whose
 flagship entries are not.
 
-### 1.5 The evidential architecture stated in CLAUDE.md is not the one the chains run
+### 1.5 The evidential architecture stated in CLAUDE.md is not the one the chains run — **RESOLVED 2026-08-06**
+
+> **Closed by the parallel session** (iPad/iPhone), in the same commit range. `CLAUDE.md`'s
+> `::` doctrine no longer says *"The convergence of independent imperfect pointings is the
+> evidence."* It now reads: *"…marks one pattern pointed at from several registers — a shared
+> referent, not evidence for a claim; the framework runs from a conditional and accumulates no
+> confirmation."* That is the architecture the chains actually run, stated at the top of the
+> orienting document. **Closed; the text below is the original report, retained as the record.**
+
 
 `CLAUDE.md`: "The convergence of independent imperfect pointings is the evidence."
 

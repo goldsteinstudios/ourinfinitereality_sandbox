@@ -128,7 +128,16 @@ any θ. The two coincide **as pairings at z = ±i only.**
 Section text: `staging/editorial/paper-euler-single-operation.md` §3, written in the soundness lane
 2026-08-06, arithmetic re-verified on installation. Failure record retained at §3-WITHDRAWN.
 
-### B-n12. The 恆-register marker — provenance flag, filing-side
+### B-n12. The 恆-register marker — **RETIRED 2026-08-07, the record exists**
+The flag below asked where the 2026-08-06 identity ruling was filed. It is filed:
+`reports/code_tasks_filing_2026-08-06.md` A1, from the parallel mobile session, with provenance on
+the taboo mechanism (Emperor Wen, 劉恆, 避諱), the Bundle A distribution survey (亙 ×4, readable
+常 ×0, 恆 ×0), and R18. The same pass deleted the 恆/常 checksum item outright and re-glossed the
+marker line with all three strata assigned. **The concern the flag raised — that 恆 not propagate
+onto the Guodian layer — is met by that gloss, which names 亙 as the Guodian graph.** Retired.
+See `reports/parallel_session_capture_2026-08-07.md` §1. Original flag retained below as the record.
+
+### B-n12 (original flag, retained). The 恆-register marker — provenance flag, filing-side
 The 2026-08-06 §3 rewrite carries the register-marker strike as "no equation is **恆**-register,"
 citing a 2026-08-06 identity ruling (常 → 恆; 恆 as [M]-attested). Installed as ruled. Two filing
 notes owed to the D2 pass: **this session holds no filed record of that ruling**, and 恆/常 is held
