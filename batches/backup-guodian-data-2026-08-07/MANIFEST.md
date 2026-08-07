@@ -29,8 +29,8 @@ exist in two.
 
 **`data/ddj/Guodian Strip Glyphs/` — 1,717 image files, 3.1 MB.** ~~Sole copy.~~ **CORRECTED 2026-08-07:** 1,073 were already tracked on `wip/claude-design-system` at `ddj/archaeology/`, byte-identical. The genuinely unbacked count was **644**. See INVENTORY finding F and ledger Entry 007. **Resolved** by `1eaee9f` — all 1,717 now tracked on `research-archive`.
 
-Counted on the device 2026-08-07. In no branch of any repo. `archive/INVENTORY.md` finding F called
-this out at the consolidation:
+Counted on the device 2026-08-07. `archive/INVENTORY.md` finding F called this out at the
+consolidation, and is quoted here as written — with the correction above standing against it:
 
 > *"**The Guodian glyph corpus has no git backup.** `data/` is gitignored on every branch, and
 > `git ls-tree` confirms zero branches track a single glyph PNG. The archive copy was the only
