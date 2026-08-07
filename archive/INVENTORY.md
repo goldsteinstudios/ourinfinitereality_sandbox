@@ -136,9 +136,20 @@ The repo goes v7.7 → v9 with nothing between. Not promoted here — that is a 
 > `wills-imac-local`; the cloud session had repeated the finding without independently verifying it.
 > See divergence ledger Entry 007.
 >
-> **Open, and not a mechanical call:** the corpus now sits at two paths on two branches —
-> `data/ddj/` on `research-archive` and `ddj/archaeology/` on `wip/claude-design-system`. Which is
-> canonical wants deciding before the split sets.
+> **The split is closed.** Ruled 2026-08-07: **`data/ddj/Guodian Strip Glyphs/` is the canonical
+> path.** Executed on `wip/claude-design-system` by `21400ef` — all 1,073 files moved from
+> `ddj/archaeology/`, recorded by git as pure `R100` renames with no new blobs, the old `ddj/` tree
+> removed entirely, and no tracked file referencing the images. Verified here: zero files remain at
+> the old path, the 1,073 new paths are an exact subset of the 1,717 on `research-archive`, and the
+> blobs were already confirmed byte-identical. **The two branches now agree on path and content
+> both, so the eventual merge is conflict-free.**
+>
+> **Consequence handled the same day.** `data/` was gitignored on both branches, so the canonical
+> location depended on every future writer remembering `git add -f`. `.gitignore` now excludes
+> `data/` per-child with a negation for the glyph directory — a blanket `data/` cannot be negated,
+> because git does not descend into an excluded directory. New glyphs at the canonical path are
+> trackable without `-f`; everything else under `data/` is ignored exactly as before.
+> **`wip/claude-design-system` still needs the same rule.**
 
 **G. Three hazards, all handled.**
 - `TaoTranslator/` carried its own `.git` (branches `main`, `replit-agent`; 7 commits, all

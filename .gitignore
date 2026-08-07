@@ -16,7 +16,13 @@ __pycache__/
 *.pyc
 
 # Directories removed from main (live on other branches)
-data/
+# data/ is excluded per-child rather than wholesale, so the canonical glyph
+# corpus can be re-included. A blanket `data/` cannot be negated: git does not
+# descend into an excluded directory, so `!data/...` under it has no effect.
+data/*
+!data/ddj/
+data/ddj/*
+!data/ddj/Guodian Strip Glyphs/
 research/
 output/
 
