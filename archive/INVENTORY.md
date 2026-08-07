@@ -118,10 +118,27 @@ The authoritative markdown set is held separately.
 **E. `RSM v8/` is a complete, clean generation that never entered `rsm/canonical/`.**
 The repo goes v7.7 → v9 with nothing between. Not promoted here — that is a canon ruling.
 
-**F. The Guodian glyph corpus has no git backup.** `data/` is gitignored on every branch,
-and `git ls-tree` confirms zero branches track a single glyph PNG. The archive copy was the
-only redundancy; after dedup, `data/ddj/Guodian Strip Glyphs/` (1,717 files) is the sole copy.
-**This warrants a real backup decision.**
+**F. The Guodian glyph corpus has no git backup.** — **CORRECTED 2026-08-07; RESOLVED the same day.**
+
+> **The original finding was wrong on one factual point.** It read: *"`data/` is gitignored on every
+> branch, and `git ls-tree` confirms zero branches track a single glyph PNG. The archive copy was the
+> only redundancy; after dedup, `data/ddj/Guodian Strip Glyphs/` (1,717 files) is the sole copy."*
+>
+> **`wip/claude-design-system` tracked 1,073 of them** at `ddj/archaeology/Guodian Strip Glyphs/` —
+> a different path, which is why a `data/`-anchored search missed them. Verified blob-for-blob:
+> byte-identical to the working-tree copies, a clean subset with nothing present there and absent
+> here. **The genuinely unbacked count was 644, not 1,717.**
+>
+> Everything else in the finding held: 1,717 files, 3.1 MB, `data/` gitignored at `.gitignore:19`.
+>
+> **Resolved** 2026-08-07 by `1eaee9f`, which force-added all 1,717 to `research-archive` at
+> `data/ddj/Guodian Strip Glyphs/`. Correction and fix both from the Claude Code instance on
+> `wills-imac-local`; the cloud session had repeated the finding without independently verifying it.
+> See divergence ledger Entry 007.
+>
+> **Open, and not a mechanical call:** the corpus now sits at two paths on two branches —
+> `data/ddj/` on `research-archive` and `ddj/archaeology/` on `wip/claude-design-system`. Which is
+> canonical wants deciding before the split sets.
 
 **G. Three hazards, all handled.**
 - `TaoTranslator/` carried its own `.git` (branches `main`, `replit-agent`; 7 commits, all

@@ -27,7 +27,7 @@ exist in two.
 
 ## Still unbacked, and it is the bigger one
 
-**`data/ddj/Guodian Strip Glyphs/` — 1,717 image files, 3.1 MB, sole copy.**
+**`data/ddj/Guodian Strip Glyphs/` — 1,717 image files, 3.1 MB.** ~~Sole copy.~~ **CORRECTED 2026-08-07:** 1,073 were already tracked on `wip/claude-design-system` at `ddj/archaeology/`, byte-identical. The genuinely unbacked count was **644**. See INVENTORY finding F and ledger Entry 007. **Resolved** by `1eaee9f` — all 1,717 now tracked on `research-archive`.
 
 Counted on the device 2026-08-07. In no branch of any repo. `archive/INVENTORY.md` finding F called
 this out at the consolidation:
@@ -40,7 +40,7 @@ this out at the consolidation:
 That was written 2026-08-01 and nothing followed. It was not pulled here because `device_bash`
 failed repeatedly and `device_stage_files` caps at 50 files per call — 1,717 files is 35 calls.
 
-**One command on the iMac fixes it:**
+**Fixed 2026-08-07** by the Claude Code instance on the iMac, which force-added the directory directly rather than round-tripping a tarball. The command below is retained as the record of what was proposed:
 
 ```
 cd ~/claudecode/ourinfinitereality_sandbox/data/ddj && \
