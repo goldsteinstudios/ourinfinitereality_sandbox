@@ -1,4 +1,4 @@
-# RSM — Just-Math Chain (v9.52)
+# RSM — Just-Math Chain (v9.53)
 
 *The explicit realization. The implicit skeleton is affine — straight/curved only, no metric; this chain renders it and states its own measure. Everything a rendering adds — coordinates, a sign convention, a metric, a completed circle — belongs to the rendering, and where a result depends on one it is said so in place. Not sealed.*
 
@@ -57,7 +57,7 @@ Placement, stated: π's numeric content — lengths, the value itself — enters
 
 **Disconnection**. Bₙ does not obtain, so the X-dominant and Y-dominant portions of the mode-expressible branch have no path between them: any path joining them meets b = 0. The two portions are related — each is the other under σ_B — and not connected. This holds in the modes' own magnitudes, with no sign convention and no second component.
 
-**Revolution**. The relation between the two portions is carried by revolution of Gₙ about Bₙ. A half-turn about B realizes σ_B as continuous motion, so the two portions exchange with nothing passing through b = 0. Revolution requires a direction the plane does not have; how many such directions the structure requires is open. The rotational freedom about B is the ring of orientations, and one selection is one branch.
+**Revolution**. The relation between the two portions is carried by descent (the Recursion entry below), whether or not any motion realizes it. What the rendering additionally admits is revolution of Gₙ about Bₙ: a half-turn about B realizes σ_B as continuous motion, so the two portions exchange with nothing passing through b = 0. Revolution requires a direction the plane does not have; how many such directions the structure requires is open. The rotational freedom about B is the ring of orientations, and one selection is one branch.
 
 **Recursion (two readings).** yAxis₍ₙ₊₁₎ reads Bₙ and xAxis₍ₙ₊₁₎ reads Gₙ; the child's origin follows as their crossing, O₍ₙ₊₁₎ = Gₙ ∩ Bₙ = Pₙ (structural §7). No map realizes the readings, and none is owed: "reads" is the vantage relation, not a transformation, and a function carrying parent points to child points would assert the transfer §7 denies. Whether any chart-level map models both readings at once is a rendering question, unasked by the structure.
 
@@ -104,4 +104,4 @@ No exponent, no dimensionful constant, no scaling law. The implicit register fix
 
 ---
 
-*v9.52 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.53 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

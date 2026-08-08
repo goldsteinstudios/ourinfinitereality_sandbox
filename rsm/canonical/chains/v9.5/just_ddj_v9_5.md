@@ -1,4 +1,4 @@
-# RSM — Just-DDJ Chain (v9.52)
+# RSM — Just-DDJ Chain (v9.53)
 
 *A translation. `::` denotes imperfect structural correspondence — never identity, translation-equivalence, or congruence; substitution is forbidden. **[G]** marks what is attested in the Guodian bundles (~300 BCE); **[M]** the Mawangdui silk texts (~168 BCE); **[R]** received text only. Trust order G → M → R; where text appears only in the received, it is taken as classically interpreted.*
 
@@ -100,4 +100,4 @@ In prose without `::`, correspondence is "to me, that looks just like…," never
 
 ---
 
-*v9.52 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.53 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

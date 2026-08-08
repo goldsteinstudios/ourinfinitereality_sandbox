@@ -1,4 +1,4 @@
-# RSM — The Structural Chain (v9.52)
+# RSM — The Structural Chain (v9.53)
 
 *The implicit register: the structural requirement of logic, stated without measurement, units, or chart. What instantiates it — physical, biological, textual — belongs to the explicit register and is not this chain's subject. Not sealed.*
 
@@ -145,4 +145,4 @@ A standing list, not a procedure. Agentive verbs for structural facts. Transfer-
 
 ---
 
-*v9.52 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.53 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

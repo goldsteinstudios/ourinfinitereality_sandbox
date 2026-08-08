@@ -1,4 +1,4 @@
-# RSM — Just-Physics Chain (v9.52)
+# RSM — Just-Physics Chain (v9.53)
 
 *The explicit register. Physics is not a rendering of this framework — physics is what the explicit register studies, and this chain records where the two happen to wear the same shape. `::` means maps-to and never is. The implicit register fixes structure and fixes no parameters, so no quantity here is owed by the framework and none confirms it. Where an entry strains, the strain is stated with it. Every entry below is an expression within a parametric environment; the environment's numbers belong to it.*
 
@@ -107,4 +107,4 @@ A frame's own unit of turn is incommensurate with its own closure: the iterates 
 
 ---
 
-*v9.52 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*
+*v9.53 — the chains state the framework as currently known. Unresolved material lives in the open-items register, not in the chains.*

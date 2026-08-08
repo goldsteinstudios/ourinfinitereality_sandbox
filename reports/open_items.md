@@ -1,6 +1,6 @@
 # Open-items register
 
-> **Canon pointer:** current canon is **v9.52**, markdown canonical at `rsm/canonical/chains/v9.5/`.
+> **Canon pointer:** current canon is **v9.53**, markdown canonical at `rsm/canonical/chains/v9.5/`.
 > Regenerated **2026-08-03** from the v9.5 chains, `rsm/audit/session_consolidation_2026-08-02.md`
 > (Parts 5–6), `rsm/audit/session_addendum_2026-08-02_late.md`, and the regeneration instruction
 > of 2026-08-03. Compilation, not judgment: every item is sourced; where sources conflict, the
@@ -455,7 +455,7 @@ walk's spot-edits); essay 9's one seat-fix; the R12 consequence to see before it
 
 | Old item | Cause |
 |---|---|
-| A6-old: revolution-as-forced | **Closed by demotion** (R3, 2026-08-02); the v9.5 chains state revolution as admitted, the relation carried by descent. |
+| A6-old: revolution-as-forced | **Closed by demotion** (R3, 2026-08-02); the v9.5 chains state revolution as admitted, the relation carried by descent. **This row was true of two chains of three when written.** The math chain's Revolution theorem still said "carried by revolution" until v9.53 (patch set 6, 2026-08-07) propagated the demotion. The ruling did not change; the record of it was ahead of the text. |
 | A2/B9-old: anchoring + its double-status bookkeeping | **Resolved negative** (R14) — now A3's closure record; the math body's claiming paragraph was deleted (patch set 1, 7a), dissolving the bookkeeping conflict. |
 | A5-old: "two rival derivations, unadjudicated" | **Superseded** — both candidates gone; the emptied slot is recorded in A5 as a change. |
 | A10-old: root non-uniqueness | **Not an open item** — a standing withdrawal, living in structural §2 ("nothing here counts the roots"); consequences are chain text, no register entry needed. |

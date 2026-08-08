@@ -1,4 +1,11 @@
-# RSM v9.52 — the current working set
+# RSM v9.53 — the current working set
+
+**v9.53 (patch set 6, 2026-08-07):** one propagation, math chain only. The Revolution theorem
+attributed to revolution what R3 (2026-08-02) reassigned to **descent** — the structural chain and
+the physics chain both carried the demotion, the math chain did not. Corrected: descent carries the
+relation; revolution is what the rendering additionally admits. **No open item closed; no OFFERED or
+CHECKABLE item promoted; no ruling made.** Diff: `reports/v9_53_patch_diff_report.md`.
+
 
 **v9.52 (patch set 5, 2026-08-04):** the math two-returns theorem's Euler passage corrected to the
 traversal reading, **e^{iπ} + e^{i·2π} = 0** (out and back), with the constitutional reading at
